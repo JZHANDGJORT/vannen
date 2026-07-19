@@ -1,71 +1,49 @@
-function saveData(key, data) {
-
-    localStorage.setItem(
-        key,
-        JSON.stringify(data)
-    );
-
-}
-
-
-
-function loadData(key) {
-
-    const data =
-        localStorage.getItem(key);
-
-
-    if (!data) {
-        return null;
-    }
-
-
-    return JSON.parse(data);
-
-}
-
-
-
-function saveMessage(message) {
+function saveCompletedActivity(activity) {
 
     const history =
-        loadData("vannen-history") || [];
+        getCompletedActivities();
 
 
-    history.push(message);
+    history.push({
+
+        text: activity.text,
+
+        date: new Date().toISOString(),
+
+        status: "completed"
+
+    });
 
 
-    saveData(
+    localStorage.setItem(
         "vannen-history",
-        history
+        JSON.stringify(history)
     );
 
 }
 
 
 
-function getMessageHistory() {
+function saveSkippedActivity(activity) {
 
-    return (
-        loadData("vannen-history") || []
-    );
-
-}
+    const history =
+        getCompletedActivities();
 
 
+    history.push({
 
-function saveActivity(activity) {
+        text: activity.text,
 
-    const activitiesDone =
-        loadData("vannen-activities") || [];
+        date: new Date().toISOString(),
+
+        status: "skipped"
+
+    });
 
 
-    activitiesDone.push(activity);
-
-
-    saveData(
-        "vannen-activities",
-        activitiesDone
+    localStorage.setItem(
+        "vannen-history",
+        JSON.stringify(history)
     );
 
 }
@@ -74,23 +52,19 @@ function saveActivity(activity) {
 
 function getCompletedActivities() {
 
-    return (
-        loadData("vannen-activities") || []
-    );
-
-}
-
+    const history =
+        localStorage.getItem(
+            "vannen-history"
+        );
 
 
-function clearMemory() {
+    if (!history) {
 
-    localStorage.removeItem(
-        "vannen-history"
-    );
+        return [];
+
+    }
 
 
-    localStorage.removeItem(
-        "vannen-activities"
-    );
+    return JSON.parse(history);
 
 }
