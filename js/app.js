@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function startApp() {
 
+    renderFriends();
+
     // Hämta aktiv vän
     const friend = otis;
 
