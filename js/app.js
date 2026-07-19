@@ -88,31 +88,3 @@ function showGreeting(friend) {
 }
 
 
-
-function renderActions() {
-
-    const actions =
-        document.getElementById("actions");
-
-
-    actions.innerHTML = `
-
-        <button>
-            🌱 Göra något tillsammans
-        </button>
-
-        <button>
-            💬 Prata en stund
-        </button>
-
-        <button>
-            📖 Berätta något
-        </button>
-
-        <button>
-            ❤️ Jag behöver lite pepp
-        </button>
-
-    `;
-
-}
