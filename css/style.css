@@ -185,3 +185,24 @@ body {
 
 
 }
+body.home #app {
+
+    background: transparent;
+
+    box-shadow: none;
+
+    backdrop-filter: none;
+
+    max-width: 1000px;
+
+}
+
+
+body.friend #app {
+
+    background:
+        rgba(255,255,255,0.65);
+
+    max-width: 480px;
+
+}
