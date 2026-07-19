@@ -1,16 +1,11 @@
 function renderActions() {
-function renderActions() {
 
     alert("renderActions körs");
 
     const actions =
         document.getElementById("actions");
-    const actions =
-        document.getElementById("actions");
-
 
     actions.innerHTML = `
-
         <button id="activity-button" onclick="alert('Knappen fungerar!')">
     🌱 TEST OTIS
 </button>
