@@ -1,3 +1,4 @@
+let currentActivity = null;
 function showMainMenu() {
 
     const actions =
