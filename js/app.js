@@ -5,70 +5,132 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 function startApp() {
 
-    renderFriends();
 
-    // Hämta aktiv vän
-    const friend = otis;
-
-
-    // Hämta vänners värld
-    const theme = themes[friend.home.theme];
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
 
 
-    // Sätt tema
+    const friendId =
+        params.get("id");
+
+
+
+    // Ingen specifik vän vald
+    if (!friendId) {
+
+        renderFriends();
+
+        return;
+
+    }
+
+
+
+    // Hitta vald vän
+    const friend =
+        friends.find(
+            f => f.id === friendId
+        );
+
+
+
+    // Om vän inte finns
+    if (!friend) {
+
+        renderFriends();
+
+        return;
+
+    }
+
+
+
+    // Starta vännen
+
+    const theme =
+        themes[friend.home.theme];
+
+
     applyTheme(theme);
 
 
-    // Visa profil
     renderFriend(friend);
 
 
-    // Visa första hälsning
     showGreeting(friend);
 
 
-    // Visa val
     showMainMenu();
 
+
 }
+
+
 
 
 
 function applyTheme(theme) {
 
+
     document.body.style.backgroundColor =
         theme.colors.background;
 
+
     document.body.style.color =
         theme.colors.text;
+
 
 }
 
 
 
+
+
 function renderFriend(friend) {
+
 
     const nameElement =
         document.getElementById("friend-name");
 
-    nameElement.textContent =
-        friend.name;
+
+    if (nameElement) {
+
+        nameElement.textContent =
+            friend.name;
+
+    }
+
 
 
     const imageElement =
         document.getElementById("friend-image");
 
 
-    imageElement.alt =
-        friend.name;
+    if (imageElement) {
+
+        imageElement.src =
+            friend.image;
+
+
+        imageElement.alt =
+            friend.name;
+
+    }
+
 
 }
 
 
 
+
+
 function showGreeting(friend) {
+
 
     const messages =
         greetings[friend.id];
@@ -82,11 +144,11 @@ function showGreeting(friend) {
         ];
 
 
+
     addMessage(
         randomMessage.text,
-        "otis"
+        friend.id
     );
 
+
 }
-
-
