@@ -1,1 +1,109 @@
+/*
+   Vännen - Chatdesign
+*/
 
+
+.message {
+
+    max-width: 85%;
+
+    padding: 16px 18px;
+
+    border-radius: 24px;
+
+    line-height: 1.5;
+
+    font-size: 16px;
+
+    animation:
+        messageAppear 0.4s ease;
+
+}
+
+
+
+/*
+   Otis meddelanden
+*/
+
+
+.message.otis {
+
+    align-self: flex-start;
+
+    background-color: rgba(255,255,255,0.8);
+
+    border-bottom-left-radius: 8px;
+
+}
+
+
+
+/*
+   Användarens meddelanden
+   (kommer användas senare)
+*/
+
+
+.message.user {
+
+    align-self: flex-end;
+
+    background-color: rgba(255,255,255,0.45);
+
+    border-bottom-right-radius: 8px;
+
+}
+
+
+
+/*
+   Liten rörelse när ett nytt meddelande kommer
+*/
+
+
+@keyframes messageAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(8px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+
+/*
+   Scrollbar - diskret
+*/
+
+
+#chat::-webkit-scrollbar {
+
+    width: 6px;
+
+}
+
+
+#chat::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+
+    background-color:
+        rgba(0,0,0,0.15);
+
+}
