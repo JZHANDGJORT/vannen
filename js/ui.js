@@ -117,12 +117,12 @@ function showActivity() {
         activities[otis.id];
 
 
-    const activity =
-        activityList[
-            Math.floor(
-                Math.random() * activityList.length
-            )
-        ];
+    currentActivity =
+    activityList[
+        Math.floor(
+            Math.random() * activityList.length
+        )
+    ];
 
 
     addMessage(
