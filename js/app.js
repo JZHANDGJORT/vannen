@@ -144,7 +144,7 @@ function startFriend(friend) {
 
     showMainMenu();
 
-
+alert("Vänsidan startad");
 
 }
 
