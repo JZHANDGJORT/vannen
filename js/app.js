@@ -113,7 +113,8 @@ function showFriendView() {
         .getElementById("friend-view")
         .style.display = "block";
 
-
+setPageMode("friend");
+    
 }
 
 
