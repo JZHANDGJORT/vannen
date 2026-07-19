@@ -1,7 +1,5 @@
 function renderActions() {
 
-    alert("renderActions körs");
-
     const actions =
         document.getElementById("actions");
 
