@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/themes.css">
 
-
 </head>
 
 
@@ -26,46 +25,39 @@
 <main id="app">
 
 
-    <!-- Presentation av Vännen -->
 
-    <section id="friend-intro">
+    <!-- STARTSIDA -->
 
-        <h1>Vännen</h1>
-
-        <p>
-            Små vänner som finns där för dig,
-            på sitt eget sätt.
-        </p>
-
-    </section>
+    <section id="home-view">
 
 
+        <section id="friend-intro">
 
-    <!-- Vänner -->
+            <h1>Vännen</h1>
 
-    <section id="friends" class="projects">
+            <p>
+                Små vänner som finns där för dig,
+                på sitt eget sätt.
+            </p>
 
-        <h2>Våra vänner</h2>
-
-
-        <div id="friends-list" class="project-grid">
-
-            <!-- Vänkort skapas automatiskt -->
-
-        </div>
-
-
-    </section>
+        </section>
 
 
 
+        <section id="friends" class="projects">
+
+            <h2>Våra vänner</h2>
 
 
-    <!-- Samtal -->
+            <div id="friends-list" class="project-grid">
 
-    <section id="chat">
+                <!-- Vänkort skapas av friends.js -->
 
-        <div id="messages"></div>
+            </div>
+
+
+        </section>
+
 
     </section>
 
@@ -73,14 +65,50 @@
 
 
 
-    <!-- Valbara handlingar -->
 
-    <nav id="actions">
+    <!-- VÄNSIDA -->
 
-        <!-- Knappar skapas automatiskt av ui.js -->
+    <section id="friend-view" style="display:none;">
 
-    </nav>
 
+
+        <!-- Vännens profil -->
+
+        <header id="friend-profile">
+
+            <img id="friend-image" src="" alt="">
+
+            <h1 id="friend-name"></h1>
+
+        </header>
+
+
+
+
+
+        <!-- Samtal -->
+
+        <section id="chat">
+
+            <div id="messages"></div>
+
+        </section>
+
+
+
+
+
+        <!-- Valbara handlingar -->
+
+        <nav id="actions">
+
+            <!-- Skapas av ui.js -->
+
+        </nav>
+
+
+
+    </section>
 
 
 
@@ -90,10 +118,10 @@
 
 
 
+
+
 <!-- DATA -->
 
-
-<!-- Världar och färgteman -->
 
 <script src="data/themes.js"></script>
 
@@ -102,7 +130,9 @@
 <!-- Vänner -->
 
 <script src="data/friends/otis.js"></script>
+
 <script src="data/friends/index.js"></script>
+
 
 
 
@@ -123,31 +153,13 @@
 <!-- FUNKTIONER -->
 
 
-<!-- Sparar historik och användarens val -->
-
 <script src="js/storage.js"></script>
-
-
-
-<!-- Skapar vänkort -->
 
 <script src="js/friends.js"></script>
 
-
-
-<!-- Hanterar chatten -->
-
 <script src="js/chat.js"></script>
 
-
-
-<!-- Skapar knappar och visuella element -->
-
 <script src="js/ui.js"></script>
-
-
-
-<!-- Startar hela sidan -->
 
 <script src="js/app.js"></script>
 
