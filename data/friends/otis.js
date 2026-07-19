@@ -1,8 +1,13 @@
 const otis = {
 
-    id: "otis",
+    id: "otis01",
 
     name: "Otis",
+
+    image: "images/otis.png",
+
+    cardText:
+        "En lekfull och nyfiken utter som finns där för små äventyr och lugna stunder.",
 
     animal: "utter",
 
