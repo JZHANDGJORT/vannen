@@ -1,1 +1,145 @@
+/*
+   Vännen - Teman
+*/
 
+
+:root {
+
+    --theme-background: #EAF4F4;
+
+    --theme-primary: #6FA7B3;
+
+    --theme-secondary: #B8D8D8;
+
+    --theme-accent: #3F7C8C;
+
+    --theme-text: #29434A;
+
+}
+
+
+
+/*
+   Globala färger styrs härifrån
+*/
+
+
+body {
+
+    background-color:
+        var(--theme-background);
+
+    color:
+        var(--theme-text);
+
+}
+
+
+
+#friend-name {
+
+    color:
+        var(--theme-accent);
+
+}
+
+
+
+/*
+   Meddelanden följer världen
+*/
+
+
+.message.otis {
+
+    border: 
+        1px solid
+        rgba(255,255,255,0.5);
+
+}
+
+
+
+/*
+   Knappar följer världen
+*/
+
+
+#actions button {
+
+    border:
+
+        1px solid
+        rgba(0,0,0,0.04);
+
+}
+
+
+
+/*
+   Framtida teman
+   (klasser som kan användas senare)
+*/
+
+
+.theme-water {
+
+    --theme-background: #EAF4F4;
+
+    --theme-primary: #6FA7B3;
+
+    --theme-secondary: #B8D8D8;
+
+    --theme-accent: #3F7C8C;
+
+    --theme-text: #29434A;
+
+}
+
+
+
+.theme-forest {
+
+    --theme-background: #EEF3E8;
+
+    --theme-primary: #7C9A6D;
+
+    --theme-secondary: #C9D8B6;
+
+    --theme-accent: #4E6B42;
+
+    --theme-text: #354332;
+
+}
+
+
+
+.theme-meadow {
+
+    --theme-background: #FAF4DF;
+
+    --theme-primary: #D9B86C;
+
+    --theme-secondary: #E8D8A8;
+
+    --theme-accent: #B28A3A;
+
+    --theme-text: #574A32;
+
+}
+
+
+
+.theme-night {
+
+    --theme-background: #E8EAF2;
+
+    --theme-primary: #68739A;
+
+    --theme-secondary: #C5CADB;
+
+    --theme-accent: #465274;
+
+    --theme-text: #30394F;
+
+}
