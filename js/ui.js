@@ -1,3 +1,4 @@
+alert("ui.js laddad!");
 function renderActions() {
 
     const actions =
