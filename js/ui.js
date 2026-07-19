@@ -62,22 +62,7 @@ function renderActions() {
 
 function showActivity() {
 
-    const activityList =
-        activities[otis.id];
-
-
-    const activity =
-        activityList[
-            Math.floor(
-                Math.random() * activityList.length
-            )
-        ];
-
-
-    addMessage(
-        activity.text,
-        "otis"
-    );
+    alert("Aktivitet fungerar!");
 
 }
 
