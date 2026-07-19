@@ -113,22 +113,55 @@ function showActivityMenu() {
 
 function showActivity() {
 
+    const savedActivity =
+        getCurrentActivity();
+
+
+    if (
+        hasActivityToday()
+        &&
+        savedActivity
+    ) {
+
+        currentActivity =
+            savedActivity;
+
+
+        addMessage(
+            currentActivity.text,
+            "otis"
+        );
+
+
+        showActivityMenu();
+
+        return;
+
+    }
+
+
+
     const activityList =
         activities[otis.id];
 
 
     currentActivity =
-    activityList[
-        Math.floor(
-            Math.random() * activityList.length
-        )
-    ];
+        activityList[
+            Math.floor(
+                Math.random() * activityList.length
+            )
+        ];
+
+
+    saveCurrentActivity(
+        currentActivity
+    );
 
 
     addMessage(
-    currentActivity.text,
-    "otis"
-);
+        currentActivity.text,
+        "otis"
+    );
 
 
     showActivityMenu();
