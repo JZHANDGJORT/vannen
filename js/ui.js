@@ -3,10 +3,13 @@ function renderActions() {
     const actions =
         document.getElementById("actions");
 
+
     actions.innerHTML = `
-        <button id="activity-button" onclick="alert('Knappen fungerar!')">
-    🌱 TEST OTIS
-</button>
+
+        <button id="activity-button">
+            🌱 Göra något tillsammans
+        </button>
+
         <button id="dialog-button">
             💬 Prata en stund
         </button>
@@ -59,7 +62,22 @@ function renderActions() {
 
 function showActivity() {
 
-    alert("Aktivitet fungerar!");
+    const activityList =
+        activities[otis.id];
+
+
+    const activity =
+        activityList[
+            Math.floor(
+                Math.random() * activityList.length
+            )
+        ];
+
+
+    addMessage(
+        activity.text,
+        "otis"
+    );
 
 }
 
