@@ -1,4 +1,4 @@
-function renderActions() {
+function showMainMenu() {
 
     const actions =
         document.getElementById("actions");
@@ -7,7 +7,7 @@ function renderActions() {
     actions.innerHTML = `
 
         <button id="activity-button">
-            🌱 Göra något tillsammans
+            🌱 Hitta på något tillsammans
         </button>
 
         <button id="dialog-button">
@@ -19,7 +19,7 @@ function renderActions() {
         </button>
 
         <button id="support-button">
-            ❤️ Jag behöver lite pepp
+            ❤️ Kan du peppa mig lite?
         </button>
 
     `;
@@ -60,6 +60,56 @@ function renderActions() {
 
 
 
+function showActivityMenu() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button id="done-button">
+            ✅ Jag gjorde det
+        </button>
+
+        <button id="skip-button">
+            ⏭ Hoppa över
+        </button>
+
+        <button id="dialog-button">
+            💬 Prata lite
+        </button>
+
+    `;
+
+
+    document
+        .getElementById("done-button")
+        .addEventListener(
+            "click",
+            activityDone
+        );
+
+
+    document
+        .getElementById("skip-button")
+        .addEventListener(
+            "click",
+            activitySkipped
+        );
+
+
+    document
+        .getElementById("dialog-button")
+        .addEventListener(
+            "click",
+            showDialog
+        );
+
+}
+
+
+
 function showActivity() {
 
     const activityList =
@@ -78,6 +128,37 @@ function showActivity() {
         activity.text,
         "otis"
     );
+
+
+    showActivityMenu();
+
+}
+
+
+
+function activityDone() {
+
+    addMessage(
+        "Vad fint att du gjorde det tillsammans med mig. 🌱",
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
+
+
+function activitySkipped() {
+
+    addMessage(
+        "Det är helt okej. Ibland passar det inte just nu. Vi kan prova en annan gång. 💚",
+        "otis"
+    );
+
+
+    showMainMenu();
 
 }
 
@@ -98,11 +179,12 @@ function showDialog() {
 
 
     addMessage(
-        dialog.structured === true
-            ? dialog.structured
-            : dialog.otis,
+        dialog.otis,
         "otis"
     );
+
+
+    showMainMenu();
 
 }
 
@@ -126,6 +208,9 @@ function showStory() {
         story.text,
         "otis"
     );
+
+
+    showMainMenu();
 
 }
 
@@ -156,5 +241,8 @@ function showSupport() {
         message,
         "otis"
     );
+
+
+    showMainMenu();
 
 }
