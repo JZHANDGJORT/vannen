@@ -1,3 +1,77 @@
+function saveCurrentActivity(activity) {
+
+    if (!activity) return;
+
+
+    localStorage.setItem(
+        "vannen-current-activity",
+        JSON.stringify({
+
+            text: activity.text,
+
+            date: new Date().toISOString()
+
+        })
+    );
+
+}
+
+
+
+function getCurrentActivity() {
+
+    const activity =
+        localStorage.getItem(
+            "vannen-current-activity"
+        );
+
+
+    if (!activity) {
+
+        return null;
+
+    }
+
+
+    return JSON.parse(activity);
+
+}
+
+
+
+function hasActivityToday() {
+
+    const activity =
+        getCurrentActivity();
+
+
+    if (!activity) {
+
+        return false;
+
+    }
+
+
+    const savedDate =
+        new Date(activity.date);
+
+
+    const today =
+        new Date();
+
+
+    return (
+        savedDate.getFullYear() === today.getFullYear()
+        &&
+        savedDate.getMonth() === today.getMonth()
+        &&
+        savedDate.getDate() === today.getDate()
+    );
+
+}
+
+
+
 function saveCompletedActivity(activity) {
 
     if (!activity) return;
