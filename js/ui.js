@@ -193,6 +193,7 @@ function activityDone() {
 
 function activitySkipped() {
 
+    clearCurrentActivity();
 
     saveSkippedActivity(
         currentActivity
