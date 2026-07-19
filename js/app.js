@@ -255,3 +255,8 @@ function showGreeting(friend) {
 
 
 }
+function setPageMode(mode) {
+
+    document.body.className = mode;
+
+}
