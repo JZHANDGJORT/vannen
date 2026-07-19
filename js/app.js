@@ -28,7 +28,7 @@ function startApp() {
 
 
     // Visa val
-    renderActions();
+    showMainMenu();
 
 }
 
