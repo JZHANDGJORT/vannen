@@ -1,6 +1,6 @@
 const dialogs = {
 
-    otis: [
+    otis01: [
 
         {
             id: "day",
