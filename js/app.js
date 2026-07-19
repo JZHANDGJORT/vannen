@@ -187,7 +187,16 @@ function renderFriend(friend) {
 
         nameElement.textContent =
             friend.name;
+    const introElement =
+        document.getElementById("friend-introduction");
 
+
+    if(introElement){
+
+        introElement.textContent =
+            friend.introduction;
+
+    }
     }
 
 
