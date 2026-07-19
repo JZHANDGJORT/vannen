@@ -148,3 +148,10 @@ function getActivityHistory() {
     return JSON.parse(history);
 
 }
+function clearCurrentActivity() {
+
+    localStorage.removeItem(
+        "vannen-current-activity"
+    );
+
+}
