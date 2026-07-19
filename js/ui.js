@@ -126,9 +126,9 @@ function showActivity() {
 
 
     addMessage(
-        activity.text,
-        "otis"
-    );
+    currentActivity.text,
+    "otis"
+);
 
 
     showActivityMenu();
