@@ -1,6 +1,6 @@
 const activities = {
 
-    otis: [
+    otis01: [
 
         // 🌱 Små barn
 
