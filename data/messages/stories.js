@@ -1,6 +1,6 @@
 const stories = {
 
-    otis: [
+    otis01: [
 
         {
             id: "smooth-stone",
