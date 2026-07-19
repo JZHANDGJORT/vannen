@@ -20,8 +20,12 @@ function startApp() {
 
 
 
-    // Ingen specifik vän vald
+    // Visa startsida
+
     if (!friendId) {
+
+
+        showHomeView();
 
         renderFriends();
 
@@ -31,7 +35,10 @@ function startApp() {
 
 
 
-    // Hitta vald vän
+
+
+    // Hitta vän
+
     const friend =
         friends.find(
             f => f.id === friendId
@@ -39,8 +46,11 @@ function startApp() {
 
 
 
-    // Om vän inte finns
+    // Om vän saknas
+
     if (!friend) {
+
+        showHomeView();
 
         renderFriends();
 
@@ -50,25 +60,96 @@ function startApp() {
 
 
 
-    // Starta vännen
+
+
+    // Visa vänsida
+
+    showFriendView();
+
+
+
+    startFriend(friend);
+
+
+}
+
+
+
+
+
+
+
+function showHomeView() {
+
+
+    document
+        .getElementById("home-view")
+        .style.display = "block";
+
+
+    document
+        .getElementById("friend-view")
+        .style.display = "none";
+
+
+}
+
+
+
+
+
+
+
+function showFriendView() {
+
+
+    document
+        .getElementById("home-view")
+        .style.display = "none";
+
+
+    document
+        .getElementById("friend-view")
+        .style.display = "block";
+
+
+}
+
+
+
+
+
+
+
+function startFriend(friend) {
+
+
 
     const theme =
         themes[friend.home.theme];
 
 
+
     applyTheme(theme);
+
 
 
     renderFriend(friend);
 
 
+
     showGreeting(friend);
+
 
 
     showMainMenu();
 
 
+
 }
+
+
+
 
 
 
@@ -91,6 +172,9 @@ function applyTheme(theme) {
 
 
 
+
+
+
 function renderFriend(friend) {
 
 
@@ -98,7 +182,8 @@ function renderFriend(friend) {
         document.getElementById("friend-name");
 
 
-    if (nameElement) {
+
+    if(nameElement){
 
         nameElement.textContent =
             friend.name;
@@ -107,11 +192,15 @@ function renderFriend(friend) {
 
 
 
+
+
+
     const imageElement =
         document.getElementById("friend-image");
 
 
-    if (imageElement) {
+
+    if(imageElement){
 
         imageElement.src =
             friend.image;
@@ -123,7 +212,11 @@ function renderFriend(friend) {
     }
 
 
+
 }
+
+
+
 
 
 
@@ -132,8 +225,10 @@ function renderFriend(friend) {
 function showGreeting(friend) {
 
 
+
     const messages =
         greetings[friend.id];
+
 
 
     const randomMessage =
