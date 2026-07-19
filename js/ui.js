@@ -172,6 +172,7 @@ function showActivity() {
 
 function activityDone() {
 
+    clearCurrentActivity();
 
     saveCompletedActivity(
         currentActivity
