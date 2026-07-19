@@ -155,3 +155,10 @@ function clearCurrentActivity() {
     );
 
 }
+function clearCurrentActivity() {
+
+    localStorage.removeItem(
+        "vannen-current-activity"
+    );
+
+}
