@@ -159,6 +159,12 @@ function activityDone() {
 
 function activitySkipped() {
 
+
+    saveSkippedActivity(
+        currentActivity
+    );
+
+
     addMessage(
         "Det är helt okej. Ibland passar det inte just nu. Vi kan prova en annan gång. 💚",
         "otis"
