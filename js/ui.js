@@ -7,10 +7,9 @@ function renderActions() {
 
     actions.innerHTML = `
 
-        <button id="activity-button">
-            🌱 Göra något tillsammans
-        </button>
-
+        <button id="activity-button" onclick="alert('Knappen fungerar!')">
+    🌱 Göra något tillsammans
+</button>
         <button id="dialog-button">
             💬 Prata en stund
         </button>
