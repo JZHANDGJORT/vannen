@@ -1,7 +1,10 @@
 function saveCompletedActivity(activity) {
 
+    if (!activity) return;
+
+
     const history =
-        getCompletedActivities();
+        getActivityHistory();
 
 
     history.push({
@@ -26,8 +29,11 @@ function saveCompletedActivity(activity) {
 
 function saveSkippedActivity(activity) {
 
+    if (!activity) return;
+
+
     const history =
-        getCompletedActivities();
+        getActivityHistory();
 
 
     history.push({
@@ -50,7 +56,7 @@ function saveSkippedActivity(activity) {
 
 
 
-function getCompletedActivities() {
+function getActivityHistory() {
 
     const history =
         localStorage.getItem(
