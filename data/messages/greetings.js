@@ -1,6 +1,6 @@
 const greetings = {
 
-    otis: [
+    otis01: [
 
         {
             text:
