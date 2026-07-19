@@ -91,7 +91,8 @@ function showHomeView() {
         .getElementById("friend-view")
         .style.display = "none";
 
-
+setPageMode("home");
+    
 }
 
 
