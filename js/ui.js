@@ -139,6 +139,12 @@ function showActivity() {
 
 function activityDone() {
 
+
+    saveCompletedActivity(
+        currentActivity
+    );
+
+
     addMessage(
         "Vad fint att du gjorde det tillsammans med mig. 🌱",
         "otis"
