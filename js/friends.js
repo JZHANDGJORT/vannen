@@ -1,52 +1,52 @@
 function renderFriends() {
 
-
     const container =
         document.getElementById("friends-list");
 
 
+    if (!container) return;
 
-    container.innerHTML = `
+
+    container.innerHTML = "";
 
 
-        <div class="project-card">
+    friends.forEach(friend => {
 
+
+        const card =
+            document.createElement("div");
+
+
+        card.classList.add(
+            "project-card"
+        );
+
+
+        card.innerHTML = `
 
             <img 
-                src="${otis.image}" 
-                alt="${otis.name}"
+                src="${friend.image}" 
+                alt="${friend.name}"
             >
 
+            <h3>
+                ${friend.name}
+            </h3>
+
+            <p>
+                ${friend.cardText}
+            </p>
+
+            <a href="?id=${friend.id}">
+                Möt ${friend.name} →
+            </a>
+
+        `;
 
 
-            <div class="project-text">
+        container.appendChild(card);
 
 
-                <h3>
-                    ${otis.name}
-                </h3>
-
-
-
-                <p>
-                    ${otis.cardText}
-                </p>
-
-
-
-                <a href="?id=${otis.id}">
-                    Möt ${otis.name} →
-                </a>
-
-
-
-            </div>
-
-
-        </div>
-
-
-    `;
-
+    });
 
 }
