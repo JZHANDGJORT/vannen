@@ -480,9 +480,9 @@ const actions =
 
 actions.innerHTML = `
 
-    <button onclick="showDialog()">
-        💬 Prata lite till
-    </button>
+    <button onclick="continueDialog()">
+    💬 Prata lite till
+</button>
 
     <button onclick="showActivity()">
         🌱 Hitta på något
