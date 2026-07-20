@@ -90,6 +90,32 @@ function showSettings() {
 
 }
 
+function resetMemoryQuestion() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    addMessage(
+        "Är du säker? 🌊 Jag kommer att glömma det jag lärt mig om dig, men jag skulle gärna vilja lära känna dig igen. 💚",
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <button onclick="resetMemory()">
+            🌱 Ja, börja om
+        </button>
+
+        <button onclick="showMainMenu()">
+            🦦 Nej, fortsätt som vanligt
+        </button>
+
+    `;
+
+}
+
 function showBackpack() {
 
     const actions =
