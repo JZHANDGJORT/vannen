@@ -43,8 +43,14 @@ const otis = {
         "Otis är en lekfull och nyfiken utter som tycker om både äventyr och lugna stunder. Han vill upptäcka världen tillsammans med dig och påminna om att små saker kan göra en dag fin.",
 
     about:
-    "Vad roligt att du vill veta lite mer om mig! 🌊 Jag heter Otis...",
+`Jag är en liten utter som tycker väldigt mycket om att upptäcka världen runt omkring mig. 🌊
 
+Jag älskar att flyta omkring i lugna vatten, leta efter små skatter och hitta fina stenar som någon kanske har tappat bort.
+
+Jag tycker om både busiga äventyr och stilla stunder där vi bara kan ta det lugnt tillsammans. Ibland behöver man inte göra något stort för att en dag ska kännas fin.
+
+Jag hoppas att jag kan få vara din lilla vän att komma tillbaka till när du vill prata, leka eller bara ha en lugn stund. 💚`,
+    
     purpose:
         "Jag hoppas att vi kan ta hand om varandra och göra dagarna lite mjukare.",
 
