@@ -85,11 +85,20 @@ const memoryGreetings = {
 
     otis01: [
 
-        "Hej {name}! 💚 Vad fint att du är här igen.",
+        {
+            text:
+                "Hej {name}! 💚 Vad fint att du är här igen."
+        },
 
-        "Hej {name}! 🌊 Jag blev glad när du tittade förbi.",
+        {
+            text:
+                "Hej {name}! 🌊 Jag blev glad när du tittade förbi."
+        },
 
-        "Hej {name}! 🦦 Jag undrar vad vi ska hitta på idag."
+        {
+            text:
+                "Hej {name}! 🦦 Jag undrar vad vi ska hitta på idag."
+        }
 
     ]
 
