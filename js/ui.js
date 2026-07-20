@@ -90,6 +90,29 @@ function showSettings() {
 
 }
 
+function showBackpack() {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button>
+            📸 Våra minnen
+        </button>
+
+        <button>
+            🪨 Mina skatter
+        </button>
+
+        <button onclick="showMainMenu()">
+            🦦 Tillbaka
+        </button>
+
+    `;
+
+}
+
 function showActivityMenu() {
 
     const actions =
