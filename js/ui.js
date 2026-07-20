@@ -244,6 +244,23 @@ function showDialog() {
 
 function dialogAnswer(answer) {
 
+    const userMessages = {
+
+        glad: "Jag mår bra 😊",
+
+        jobbigt: "Det har varit lite jobbigt 💚",
+
+        vetinte: "Jag vet inte riktigt 🤔"
+
+    };
+
+    addMessage(
+
+        userMessages[answer],
+
+        "user"
+
+    );
 
     const actions =
         document.getElementById("actions");
