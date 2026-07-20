@@ -165,7 +165,7 @@ function chooseRelation(choice) {
         );
 
 
-        showPersonInput();
+        showPersonInput("child");
 
     }
 
@@ -175,7 +175,7 @@ if (choice === "person") {
         "otis"
     );
 
-    /showPersonInput();
+    showPersonInput("person");
 }
     
 }
