@@ -179,3 +179,56 @@ if (choice === "person") {
 }
     
 }
+
+function showPersonInput(type) {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    if (type === "child") {
+
+        actions.innerHTML = `
+
+            <input 
+                id="person-name-input"
+                placeholder="Vad heter barnet?"
+            >
+
+            <input 
+                id="person-age-input"
+                placeholder="Hur gammal är personen?"
+            >
+
+            <button onclick="savePerson('child')">
+                Fortsätt 💚
+            </button>
+
+        `;
+
+    }
+
+
+    if (type === "person") {
+
+        actions.innerHTML = `
+
+            <input 
+                id="person-name-input"
+                placeholder="Vad heter personen?"
+            >
+
+            <input 
+                id="person-role-input"
+                placeholder="Vem är personen för dig?"
+            >
+
+            <button onclick="savePerson('person')">
+                Fortsätt 💚
+            </button>
+
+        `;
+
+    }
+
+}
