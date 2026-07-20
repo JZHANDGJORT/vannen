@@ -296,16 +296,24 @@ function savePerson(type) {
 function showMemoryGreeting() {
 
     const name =
-
         otisMemory.owner.name;
 
+
+    const messages =
+        memoryGreetings[currentFriend.id];
+
+
+    const randomMessage =
+        messages[
+            Math.floor(
+                Math.random() * messages.length
+            )
+        ];
+
+
     addMessage(
-
-        `Hej ${name}! 💚 Vad fint att du är här igen. Jag blir alltid glad när du tittar förbi.`,
-
+        randomMessage.text.replace("{name}", name),
         "otis"
-
     );
 
 }
-
