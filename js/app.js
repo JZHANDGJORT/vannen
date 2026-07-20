@@ -195,19 +195,10 @@ function renderFriend(friend) {
 
     if(nameElement){
 
-        nameElement.textContent =
-            friend.name;
-    const introElement =
-        document.getElementById("friend-introduction");
+    nameElement.textContent =
+        friend.name;
 
-
-    if(introElement){
-
-        introElement.textContent =
-            friend.introduction;
-
-    }
-    }
+}
 
 
 
