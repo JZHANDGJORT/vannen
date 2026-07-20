@@ -126,13 +126,3 @@ function addMemory(personId, memory) {
 }
 
 loadMemory();
-
-console.log("Otis minne laddat:", otisMemory);
-
-function resetMemory() {
-
-    localStorage.removeItem("otisMemory");
-
-    location.reload();
-
-}
