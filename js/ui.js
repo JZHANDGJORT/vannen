@@ -294,3 +294,12 @@ function showSupport() {
     showMainMenu();
 
 }
+
+function showAboutFriend() {
+
+    addMessage(
+        `Vad roligt att du vill veta lite mer om mig. 💚\n\n${currentFriend.description}`,
+        currentFriend.id
+    );
+
+}
