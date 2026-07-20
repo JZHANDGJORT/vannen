@@ -521,6 +521,29 @@ function continueDialog() {
 
 }
 
+function showConversationMenu() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="continueDialog()">
+            💬 Prata lite till
+        </button>
+
+        <button onclick="showActivity()">
+            🌱 Hitta på något tillsammans
+        </button>
+
+        <button onclick="showMainMenu()">
+            🦦 Tillbaka till menyn
+        </button>
+
+    `;
+
+}
 
 function showStory() {
 
