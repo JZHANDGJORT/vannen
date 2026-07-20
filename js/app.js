@@ -158,6 +158,16 @@ if (settingsButton) {
         showSettings;
 
 }
+
+const backpackButton =
+    document.getElementById("backpack-button");
+
+if (backpackButton) {
+
+    backpackButton.onclick =
+        showBackpack;
+
+}
     
     loadMemory();
 
