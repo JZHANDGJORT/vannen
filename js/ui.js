@@ -298,7 +298,7 @@ function showSupport() {
 function showAboutFriend() {
 
     addMessage(
-        `Vad roligt att du vill veta lite mer om mig. 💚\n\n${currentFriend.description}`,
+        `Vad roligt att du vill veta lite mer om mig. 💚\n\n${currentFriend.about}`,
         currentFriend.id
     );
 
