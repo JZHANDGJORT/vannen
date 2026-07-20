@@ -149,11 +149,20 @@ if (aboutButton) {
 
 }
 
+    loadMemory();
+
+
+if (!otisMemory.owner) {
+
+    startOnboarding();
+
+} else {
+
     showGreeting(friend);
 
-
-
     showMainMenu();
+
+}
 
 
 }
