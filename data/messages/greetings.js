@@ -80,3 +80,17 @@ const greetings = {
     ]
 
 };
+
+const memoryGreetings = {
+
+    otis01: [
+
+        "Hej {name}! 💚 Vad fint att du är här igen.",
+
+        "Hej {name}! 🌊 Jag blev glad när du tittade förbi.",
+
+        "Hej {name}! 🦦 Jag undrar vad vi ska hitta på idag."
+
+    ]
+
+};
