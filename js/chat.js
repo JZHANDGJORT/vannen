@@ -135,3 +135,33 @@ function showRelationChoice() {
 
 }
 
+function chooseRelation(choice) {
+
+
+    if (choice === "alone") {
+
+        addMessage(
+            "Vad fint. Då börjar vårt äventyr här, bara du och jag. 🌊",
+            "otis"
+        );
+
+
+        showMainMenu();
+
+    }
+
+
+
+    if (choice === "others") {
+
+        addMessage(
+            "Vad roligt! Jag tycker om att få lära känna fler små personer som betyder mycket för dig. Vem vill du att jag ska få träffa?",
+            "otis"
+        );
+
+
+        showPersonInput();
+
+    }
+
+}
