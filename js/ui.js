@@ -215,7 +215,7 @@ function activitySkipped() {
 function showDialog() {
 
     const dialogList =
-        dialogs[otis.id];
+    dialogs[currentFriend.id];
 
 
     const dialog =
