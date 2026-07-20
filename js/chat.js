@@ -80,3 +80,37 @@ function showNameInput() {
         );
 
 }
+
+function saveName() {
+
+    const input =
+        document.getElementById("name-input");
+
+
+    const name =
+        input.value.trim();
+
+
+    if (!name) return;
+
+
+    otisMemory.owner = {
+
+        name: name
+
+    };
+
+
+    saveMemory();
+
+
+    addMessage(
+        `Vad fint att träffa dig, ${name}. 💚`,
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
