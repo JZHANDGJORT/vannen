@@ -242,6 +242,44 @@ function showDialog() {
 
 }
 
+function dialogAnswer(answer) {
+
+
+    if (answer === "glad") {
+
+        addMessage(
+            "Vad fint att höra! 🌱 Jag blir glad när du berättar det. Vill du göra något roligt tillsammans en stund?",
+            "otis"
+        );
+
+    }
+
+
+
+    if (answer === "jobbigt") {
+
+        addMessage(
+            "Då kan vi ta det lite lugnt tillsammans. 💚 Vill du berätta mer eller ska vi göra något som känns mysigt?",
+            "otis"
+        );
+
+    }
+
+
+
+    if (answer === "vetinte") {
+
+        addMessage(
+            "Det är okej. Ibland är det svårt att veta. Vi kan bara vara här en liten stund tillsammans.",
+            "otis"
+        );
+
+    }
+
+
+    showMainMenu();
+
+}
 
 function showStory() {
 
