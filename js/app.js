@@ -149,6 +149,16 @@ if (aboutButton) {
 
 }
 
+const settingsButton =
+    document.getElementById("settings-button");
+
+if (settingsButton) {
+
+    settingsButton.onclick =
+        showSettings;
+
+}
+    
     loadMemory();
 
 
