@@ -122,16 +122,21 @@ function showRelationChoice() {
 
     actions.innerHTML = `
 
-        <button onclick="chooseRelation('alone')">
-            🌿 Det är jag
-        </button>
+    <button onclick="chooseRelation('alone')">
+        🌿 Det är jag
+    </button>
 
 
-        <button onclick="chooseRelation('others')">
-            🧒 Jag har någon med mig
-        </button>
+    <button onclick="chooseRelation('others')">
+        🧒 Jag har någon med mig
+    </button>
 
-    `;
+
+    <button onclick="chooseRelation('other')">
+        👥 Jag vill presentera någon annan
+    </button>
+
+`;
 
 }
 
