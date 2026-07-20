@@ -19,6 +19,19 @@
 
     gap: 24px;
 
+    position: relative;
+
+}
+
+
+#about-friend-button {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 20px;
+
 }
 
 #friend-profile {
