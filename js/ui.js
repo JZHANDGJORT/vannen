@@ -496,6 +496,32 @@ actions.innerHTML = `
 
 }
 
+function continueDialog() {
+
+    addMessage(
+        "Jag lyssnar gärna. Vill du berätta lite mer? 💚",
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="showMainMenu()">
+            🌱 Göra något annat
+        </button>
+
+        <button onclick="showActivity()">
+            🦦 Hitta på något tillsammans
+        </button>
+
+    `;
+
+}
+
+
 function showStory() {
 
     const storyList =
