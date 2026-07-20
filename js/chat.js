@@ -114,3 +114,24 @@ showRelationChoice();
 
 }
 
+function showRelationChoice() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="chooseRelation('alone')">
+            🌱 Jag och Otis är kompisar
+        </button>
+
+
+        <button onclick="chooseRelation('others')">
+            🦦 Jag vill att Otis ska få träffa fler
+        </button>
+
+    `;
+
+}
+
