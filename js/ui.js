@@ -268,29 +268,58 @@ function dialogAnswer(answer) {
 
     if (answer === "glad") {
 
-        addMessage(
-            "Vad fint att höra! 🌱 Jag blir glad när du berättar det. Vad var det bästa med din dag?",
-            "otis"
+    const dialog =
+        dialogs[currentFriend.id][0];
+
+
+    const option =
+        dialog.options.find(
+            o => o.user === userMessages.glad
         );
 
 
-        actions.innerHTML = `
+    addMessage(
+        option.reply,
+        "otis"
+    );
 
-            <button onclick="dialogFollowUp('roligt')">
-                🌞 Något roligt hände
-            </button>
 
-            <button onclick="dialogFollowUp('mysigt')">
-                🦦 Jag gjorde något mysigt
-            </button>
+    actions.innerHTML = "";
 
-            <button onclick="dialogFollowUp('vetinte')">
-                🤔 Jag vet inte riktigt
-            </button>
 
-        `;
+    option.next.forEach(choice => {
 
-    }
+        const button =
+            document.createElement("button");
+
+
+        button.textContent =
+            choice.text;
+
+
+        button.onclick = () => {
+
+            addMessage(
+                choice.user,
+                "user"
+            );
+
+
+            addMessage(
+                choice.reply,
+                "otis"
+            );
+
+            showMainMenu();
+
+        };
+
+
+        actions.appendChild(button);
+
+    });
+
+}
 
 
 
