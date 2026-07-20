@@ -105,7 +105,7 @@ function saveName() {
 
 
     addMessage(
-    `Vad fint att träffa dig, ${name}. 💚 Jag tror att alla vänskaper blir lite finare när man lär känna varandra. Vill du berätta lite mer om vem som håller mig sällskap?`,
+    `Vad fint att träffa dig, ${name}. 💚 Jag tror att alla vänskaper blir lite finare när man lär känna varandra. Jag vill gärna veta lite mer om vem jag får lära känna.`,
     "otis"
 );
 
