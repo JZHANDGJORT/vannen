@@ -142,7 +142,7 @@ function showActivity() {
 
 
     const activityList =
-        activities[otis.id];
+    activities[currentFriend.id];
 
 
     currentActivity =
