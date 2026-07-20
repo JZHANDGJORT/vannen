@@ -122,17 +122,17 @@ function showRelationChoice() {
 
     actions.innerHTML = `
 
-    <button onclick="chooseRelation('alone')">
+    <button onclick="chooseRelation('self')">
         🌿 Det är jag
     </button>
 
 
-    <button onclick="chooseRelation('others')">
+    <button onclick="chooseRelation('child')">
         🧒 Jag har någon med mig
     </button>
 
 
-    <button onclick="chooseRelation('other')">
+    <button onclick="chooseRelation('person')">
         👥 Jag vill presentera någon annan
     </button>
 
@@ -143,7 +143,7 @@ function showRelationChoice() {
 function chooseRelation(choice) {
 
 
-    if (choice === "alone") {
+    if (choice === "self") {
 
         addMessage(
             "Vad fint. Då börjar vårt äventyr här, bara du och jag. 🌊",
@@ -157,7 +157,7 @@ function chooseRelation(choice) {
 
 
 
-    if (choice === "others") {
+    if (choice === "child") {
 
         addMessage(
             "Vad roligt! Jag tycker om att få lära känna fler små personer som betyder mycket för dig. Vem vill du att jag ska få träffa?",
