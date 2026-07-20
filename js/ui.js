@@ -241,7 +241,7 @@ function showDialog() {
 function showStory() {
 
     const storyList =
-        stories[otis.id];
+    stories[currentFriend.id];
 
 
     const story =
