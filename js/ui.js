@@ -214,28 +214,33 @@ function activitySkipped() {
 
 function showDialog() {
 
-    const dialogList =
-    dialogs[currentFriend.id];
-
-
-    const dialog =
-        dialogList[
-            Math.floor(
-                Math.random() * dialogList.length
-            )
-        ];
-
-
     addMessage(
-        dialog.otis,
+        "Hej! 🌊 Jag är glad att du kom förbi en stund. Hur känns det idag?",
         "otis"
     );
 
 
-    showMainMenu();
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="dialogAnswer('glad')">
+            😊 Jag mår bra
+        </button>
+
+        <button onclick="dialogAnswer('jobbigt')">
+            💚 Det har varit lite jobbigt
+        </button>
+
+        <button onclick="dialogAnswer('vetinte')">
+            🤔 Jag vet inte riktigt
+        </button>
+
+    `;
 
 }
-
 
 
 function showStory() {
