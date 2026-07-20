@@ -178,12 +178,11 @@ if (!otisMemory.owner) {
 
 } else {
 
-    showGreeting(friend);
+    showMemoryGreeting();
 
     showMainMenu();
 
 }
-
 
 }
 
