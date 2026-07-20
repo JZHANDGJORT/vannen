@@ -221,7 +221,15 @@ function renderFriend(friend) {
 
     }
 
+const aboutButton =
+    document.getElementById("about-friend-button");
 
+if (aboutButton) {
+
+    aboutButton.textContent =
+        `Om ${friend.name} ♡`;
+
+}
 
 }
 
