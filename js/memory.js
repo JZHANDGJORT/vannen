@@ -124,3 +124,7 @@ function addMemory(personId, memory) {
     saveMemory();
 
 }
+
+loadMemory();
+
+console.log("Otis minne laddat:", otisMemory);
