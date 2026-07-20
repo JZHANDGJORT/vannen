@@ -51,3 +51,32 @@ function startOnboarding() {
     );
 
 }
+
+function showNameInput() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <input 
+            id="name-input"
+            placeholder="Skriv ditt namn"
+        >
+
+        <button id="save-name-button">
+            Fortsätt 💚
+        </button>
+
+    `;
+
+
+    document
+        .getElementById("save-name-button")
+        .addEventListener(
+            "click",
+            saveName
+        );
+
+}
