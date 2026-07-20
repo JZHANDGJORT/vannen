@@ -102,6 +102,10 @@ function showBackpack() {
         </button>
 
         <button>
+           ⭐ Våra äventyr
+        </button>
+
+        <button>
             🪨 Mina skatter
         </button>
 
