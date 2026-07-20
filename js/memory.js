@@ -125,4 +125,28 @@ function addMemory(personId, memory) {
 
 }
 
+function resetMemory() {
+
+    localStorage.removeItem(
+        "otis-memory"
+    );
+
+
+    otisMemory = {
+
+        owner: null,
+
+        friends: [],
+
+        settings: {
+            memoryEnabled: true
+        }
+
+    };
+
+
+    location.reload();
+
+}
+
 loadMemory();
