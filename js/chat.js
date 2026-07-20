@@ -232,3 +232,63 @@ function showPersonInput(type) {
     }
 
 }
+
+function savePerson(type) {
+
+    const name =
+        document
+        .getElementById("person-name-input")
+        .value
+        .trim();
+
+
+    if (!name) return;
+
+
+    const person = {
+
+        name: name,
+
+        type: type
+
+    };
+
+
+    if (type === "child") {
+
+        person.age =
+            document
+            .getElementById("person-age-input")
+            .value
+            .trim();
+
+    }
+
+
+    if (type === "person") {
+
+        person.role =
+            document
+            .getElementById("person-role-input")
+            .value
+            .trim();
+
+    }
+
+
+    otisMemory.friends.push(person);
+
+    saveMemory();
+
+
+    addMessage(
+        `Vad roligt att få lära känna ${name}. 💚 Jag ser fram emot att skapa fina stunder tillsammans.`,
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
+
