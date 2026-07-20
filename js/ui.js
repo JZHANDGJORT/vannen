@@ -333,6 +333,86 @@ function dialogAnswer(answer) {
 
 }
 
+function dialogFollowUp(choice) {
+
+    if (choice === "roligt") {
+
+        addMessage(
+            "Vad härligt! 🌱 Jag tycker om att höra om små fina saker. Små stunder kan göra en hel dag bättre.",
+            "otis"
+        );
+
+    }
+
+
+    if (choice === "mysigt") {
+
+        addMessage(
+            "Det låter mysigt. 🦦 Jag gillar när man tar sig tid att göra något som känns bra.",
+            "otis"
+        );
+
+    }
+
+
+    if (choice === "beratta") {
+
+        addMessage(
+            "Jag lyssnar. 💚 Berätta om du vill, jag stannar här en stund.",
+            "otis"
+        );
+
+    }
+
+
+    if (choice === "lugnt" || choice === "lugn") {
+
+        addMessage(
+            "Då gör vi något lugnt tillsammans. 🌊 Vi kan ta en liten paus och bara vara här en stund.",
+            "otis"
+        );
+
+    }
+
+
+    if (choice === "aktivitet") {
+
+        addMessage(
+            "Jag har en idé! 🌿 Ska vi hitta på något litet tillsammans?",
+            "otis"
+        );
+
+    }
+
+
+    if (choice === "prata") {
+
+        addMessage(
+            "Jag lyssnar gärna. Vad tänker du på?",
+            "otis"
+        );
+
+    }
+
+
+    if (choice === "vetinte") {
+
+        addMessage(
+            "Det är okej. Ibland behöver man inte ha ett svar direkt. 💚",
+            "otis"
+        );
+
+    }
+
+
+    // Tillfälligt tillbaka till menyn efter andra svaret
+    setTimeout(
+        showMainMenu,
+        1500
+    );
+
+}
+
 function showStory() {
 
     const storyList =
