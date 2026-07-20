@@ -23,6 +23,12 @@
 
 }
 
+.top-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 
 #about-friend-button {
 
