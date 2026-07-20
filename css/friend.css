@@ -1,0 +1,64 @@
+/*
+   Vännen - specifik vänsida
+*/
+
+
+#friend-view {
+
+    width: 100%;
+
+}
+
+
+
+/*
+   Profil
+*/
+
+
+#friend-profile {
+
+    text-align: center;
+
+}
+
+
+
+#friend-image {
+
+    width: 140px;
+
+    height: 140px;
+
+    object-fit: contain;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+#friend-name {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+
+#friend-introduction {
+
+    line-height: 1.6;
+
+    max-width: 350px;
+
+    margin:
+        12px auto 0;
+
+}
