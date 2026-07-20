@@ -37,3 +37,17 @@ function scrollToBottom() {
         chat.scrollHeight;
 
 }
+
+// 🦦 Första mötet med Otis
+
+function startOnboarding() {
+
+    addMessage(
+
+        onboarding.firstMeeting.greeting,
+
+        "otis"
+
+    );
+
+}
