@@ -516,15 +516,19 @@ function continueDialog() {
 
     actions.innerHTML = `
 
-        <button onclick="showMainMenu()">
-            🌱 Göra något annat
-        </button>
+    <button onclick="showDialog()">
+        💬 Berätta mer
+    </button>
 
-        <button onclick="showActivity()">
-            🦦 Hitta på något tillsammans
-        </button>
+    <button onclick="showActivity()">
+        🌱 Hitta på något tillsammans
+    </button>
 
-    `;
+    <button onclick="showMainMenu()">
+        🦦 Tillbaka till menyn
+    </button>
+
+`;
 
 }
 
