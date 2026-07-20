@@ -310,7 +310,7 @@ function dialogAnswer(answer) {
                 "otis"
             );
 
-            showMainMenu();
+            showConversationMenu();
 
         };
 
