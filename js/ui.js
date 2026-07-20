@@ -439,11 +439,31 @@ addMessage(
     }
 
 
-    // Tillfälligt tillbaka till menyn efter andra svaret
-    setTimeout(
-        showMainMenu,
-        1500
-    );
+addMessage(
+    "Vill du fortsätta prata en stund eller ska vi hitta på något annat? 🌊",
+    "otis"
+);
+
+
+const actions =
+    document.getElementById("actions");
+
+
+actions.innerHTML = `
+
+    <button onclick="showDialog()">
+        💬 Prata lite till
+    </button>
+
+    <button onclick="showActivity()">
+        🌱 Hitta på något
+    </button>
+
+    <button onclick="showMainMenu()">
+        🦦 Tillbaka till menyn
+    </button>
+
+`;
 
 }
 
