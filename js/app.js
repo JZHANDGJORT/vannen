@@ -294,6 +294,20 @@ function showGreeting(friend) {
 
 
 }
+
+function showMemoryGreeting() {
+
+    const name =
+        otisMemory.owner.name;
+
+
+    addMessage(
+        `Hej ${name}! 💚 Vad fint att du är här igen. Jag blir alltid glad när du tittar förbi.`,
+        "otis"
+    );
+
+}
+
 function setPageMode(mode) {
 
     document.body.className = mode;
