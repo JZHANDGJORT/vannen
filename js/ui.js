@@ -245,12 +245,33 @@ function showDialog() {
 function dialogAnswer(answer) {
 
 
+    const actions =
+        document.getElementById("actions");
+
+
     if (answer === "glad") {
 
         addMessage(
-            "Vad fint att höra! 🌱 Jag blir glad när du berättar det. Vill du göra något roligt tillsammans en stund?",
+            "Vad fint att höra! 🌱 Jag blir glad när du berättar det. Vad var det bästa med din dag?",
             "otis"
         );
+
+
+        actions.innerHTML = `
+
+            <button onclick="dialogFollowUp('roligt')">
+                🌞 Något roligt hände
+            </button>
+
+            <button onclick="dialogFollowUp('mysigt')">
+                🦦 Jag gjorde något mysigt
+            </button>
+
+            <button onclick="dialogFollowUp('vetinte')">
+                🤔 Jag vet inte riktigt
+            </button>
+
+        `;
 
     }
 
@@ -259,9 +280,26 @@ function dialogAnswer(answer) {
     if (answer === "jobbigt") {
 
         addMessage(
-            "Då kan vi ta det lite lugnt tillsammans. 💚 Vill du berätta mer eller ska vi göra något som känns mysigt?",
+            "Då kan vi ta det lite lugnt tillsammans. 💚 Vill du berätta mer eller göra något som känns lite lättare?",
             "otis"
         );
+
+
+        actions.innerHTML = `
+
+            <button onclick="dialogFollowUp('beratta')">
+                💬 Berätta mer
+            </button>
+
+            <button onclick="dialogFollowUp('lugnt')">
+                🌿 Göra något lugnt
+            </button>
+
+            <button onclick="dialogFollowUp('roligt')">
+                🦦 Tänka på något roligt
+            </button>
+
+        `;
 
     }
 
@@ -270,14 +308,28 @@ function dialogAnswer(answer) {
     if (answer === "vetinte") {
 
         addMessage(
-            "Det är okej. Ibland är det svårt att veta. Vi kan bara vara här en liten stund tillsammans.",
+            "Det är helt okej. Ibland är det svårt att veta. Vi kan bara vara här en stund tillsammans. 💚",
             "otis"
         );
 
+
+        actions.innerHTML = `
+
+            <button onclick="dialogFollowUp('prata')">
+                💬 Prata lite mer
+            </button>
+
+            <button onclick="dialogFollowUp('aktivitet')">
+                🌱 Hitta på något
+            </button>
+
+            <button onclick="dialogFollowUp('lugn')">
+                🌊 Bara vara en stund
+            </button>
+
+        `;
+
     }
-
-
-    showMainMenu();
 
 }
 
