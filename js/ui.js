@@ -499,9 +499,16 @@ actions.innerHTML = `
 function continueDialog() {
 
     addMessage(
+        "Jag vill prata lite mer 💚",
+        "user"
+    );
+
+
+    addMessage(
         "Jag lyssnar gärna. Vill du berätta lite mer? 💚",
         "otis"
     );
+
 
     const actions =
         document.getElementById("actions");
