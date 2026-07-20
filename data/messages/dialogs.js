@@ -2,30 +2,62 @@ const dialogs = {
 
     otis01: [
 
+     {
+    id: "day",
+
+    otis:
+        "Hej! 🌊 Jag är glad att du kom förbi en stund. Hur känns det idag?",
+
+    options: [
+
         {
-            id: "day",
-            otis:
-                "Hur har din dag varit idag?",
+            text: "😊 Jag mår bra",
 
-            options: [
+            user:
+                "Jag mår bra 😊",
+
+            reply:
+                "Vad fint att höra! 🌱 Jag blir glad när du berättar det. Vad var det bästa med din dag?",
+
+            next: [
+
                 {
-                    text: "Den har varit bra.",
+                    text: "🌞 Något roligt hände",
+
+                    user:
+                        "Något roligt hände 🌞",
+
                     reply:
-                        "Vad fint att höra. Jag tycker om dagar som känns lite lättare."
+                        "Vad härligt! Små fina stunder kan göra en hel dag bättre."
                 },
+
                 {
-                    text: "Den har varit lite jobbig.",
+                    text: "🦦 Jag gjorde något mysigt",
+
+                    user:
+                        "Jag gjorde något mysigt 🦦",
+
                     reply:
-                        "Då är jag extra glad att du kom förbi en stund. Ibland behöver man bara en liten paus."
+                        "Det låter verkligen mysigt. Jag tycker om sådana stunder."
                 },
+
                 {
-                    text: "Jag vet inte riktigt.",
+                    text: "🤔 Jag vet inte riktigt",
+
+                    user:
+                        "Jag vet inte riktigt 🤔",
+
                     reply:
-                        "Det är också ett svar. Ibland tar det en stund att känna efter."
+                        "Det gör inget. Ibland behöver man inte ha ett svar direkt."
                 }
-            ]
-        },
 
+            ]
+
+        }
+
+    ]
+
+}
 
         {
             id: "small-things",
