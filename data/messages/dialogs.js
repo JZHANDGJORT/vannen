@@ -57,7 +57,7 @@ const dialogs = {
 
     ]
 
-}
+},
 
         {
             id: "small-things",
