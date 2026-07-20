@@ -43,12 +43,12 @@ function scrollToBottom() {
 function startOnboarding() {
 
     addMessage(
-
         onboarding.firstMeeting.greeting,
-
         "otis"
-
     );
+
+
+    showNameInput();
 
 }
 
