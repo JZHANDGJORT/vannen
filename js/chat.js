@@ -169,4 +169,13 @@ function chooseRelation(choice) {
 
     }
 
+if (choice === "other") {
+    addMessage(
+        "Vad fint. Vem vill du att jag ska få lära känna? 💚",
+        "otis"
+    );
+
+    // nästa steg kommer här
+}
+    
 }
