@@ -75,17 +75,4 @@
 
     }
 
-
-    #app {
-
-        min-height:
-            calc(100vh - 24px);
-
-        border-radius: 24px;
-
-        padding:
-            24px 16px;
-
-    }
-
 }
