@@ -1,0 +1,114 @@
+/*
+   Gemensamma kort
+*/
+
+
+.projects {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 70px auto;
+
+    padding: 20px;
+
+}
+
+
+
+.projects h2 {
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.project-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+
+.project-card {
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.06);
+
+}
+
+
+
+.project-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 16px;
+
+}
+
+
+
+.project-card h3 {
+
+    margin:
+        20px 0 10px;
+
+    font-weight: 500;
+
+}
+
+
+
+.project-card p {
+
+    line-height: 1.5;
+
+    color: #7a6f66;
+
+    min-height: 70px;
+
+}
+
+
+
+.project-card a {
+
+    display: inline-block;
+
+    padding:
+        10px 20px;
+
+    text-decoration: none;
+
+    border-radius: 999px;
+
+    border: 1px solid #cdbba8;
+
+    transition: 0.2s;
+
+}
+
+
+
+.project-card a:hover {
+
+    background: #e8dfd5;
+
+}
