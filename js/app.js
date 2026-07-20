@@ -125,7 +125,7 @@ setPageMode("friend");
 
 
 function startFriend(friend) {
-
+currentFriend = friend;
 
 
     const theme =
