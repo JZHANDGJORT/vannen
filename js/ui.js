@@ -352,6 +352,23 @@ function dialogAnswer(answer) {
 
 function dialogFollowUp(choice) {
 
+const followUpMessages = {
+    roligt: "Något roligt hände 🌞",
+    mysigt: "Jag gjorde något mysigt 🦦",
+    beratta: "Jag vill berätta mer 💬",
+    lugnt: "Jag vill göra något lugnt 🌿",
+    aktivitet: "Jag vill hitta på något 🌱",
+    lugn: "Jag vill bara vara en stund 🌊",
+    prata: "Jag vill prata lite mer 💚",
+    vetinte: "Jag vet inte riktigt 🤔"
+};
+
+
+addMessage(
+    followUpMessages[choice],
+    "user"
+);
+    
     if (choice === "roligt") {
 
         addMessage(
