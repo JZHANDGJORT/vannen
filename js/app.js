@@ -1,3 +1,4 @@
+let currentFriend = null;
 document.addEventListener("DOMContentLoaded", () => {
 
     startApp();
