@@ -59,7 +59,36 @@ function showMainMenu() {
 
 }
 
+function showSettings() {
 
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="showFriends()">
+            👥 Mina vänner
+        </button>
+
+        <button onclick="addFriend()">
+            ➕ Presentera någon för Otis
+        </button>
+
+        <button onclick="changeName()">
+            ✏️ Vad ska Otis kalla mig?
+        </button>
+
+        <button onclick="resetMemoryQuestion()">
+            🌊 Låt Otis lära känna mig på nytt
+        </button>
+
+        <button onclick="showMainMenu()">
+            ❌ Tillbaka
+        </button>
+
+    `;
+
+}
 
 function showActivityMenu() {
 
