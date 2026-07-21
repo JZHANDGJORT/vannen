@@ -97,39 +97,78 @@ function showFriends() {
 
 
     let html = `
-        <p>💚 Det här är människorna jag har fått lära känna hittills.</p>
+        <p>
+            💚 Det här är människorna jag har fått lära känna hittills.
+        </p>
     `;
 
+
+    // Ägaren
 
     if (otisMemory.owner) {
 
         html += `
+
             <button disabled>
+
                 🌿 ${otisMemory.owner.name}
+
                 <br>
+
                 <small>Min huvudvän</small>
+
             </button>
+
         `;
 
     }
 
 
+    // Övriga personer
+
     otisMemory.friends.forEach(person => {
 
+        let info = "";
+
+
+        if (person.type === "child") {
+
+            info = person.age
+                ? `${person.age} år`
+                : "Barn";
+
+        } else {
+
+            info = person.role || "";
+
+        }
+
+
         html += `
+
             <button disabled>
+
                 ${person.type === "child" ? "🧒" : "👤"}
+
                 ${person.name}
+
+                <br>
+
+                <small>${info}</small>
+
             </button>
+
         `;
 
     });
 
 
     html += `
+
         <button onclick="showSettings()">
             ⬅️ Tillbaka
         </button>
+
     `;
 
 
