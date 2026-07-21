@@ -90,6 +90,53 @@ function showSettings() {
 
 }
 
+function showFriends() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    let html = `
+        <p>💚 Det här är människorna jag har fått lära känna hittills.</p>
+    `;
+
+
+    if (otisMemory.owner) {
+
+        html += `
+            <button disabled>
+                🌿 ${otisMemory.owner.name}
+                <br>
+                <small>Min huvudvän</small>
+            </button>
+        `;
+
+    }
+
+
+    otisMemory.friends.forEach(person => {
+
+        html += `
+            <button disabled>
+                ${person.type === "child" ? "🧒" : "👤"}
+                ${person.name}
+            </button>
+        `;
+
+    });
+
+
+    html += `
+        <button onclick="showSettings()">
+            ⬅️ Tillbaka
+        </button>
+    `;
+
+
+    actions.innerHTML = html;
+
+}
+
 function resetMemoryQuestion() {
 
     const actions =
