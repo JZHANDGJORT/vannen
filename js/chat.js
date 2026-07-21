@@ -328,11 +328,15 @@ function showPresentPerson() {
 
     actions.innerHTML += `
 
-        <button onclick="showMainMenu()">
-            ⬅️ Tillbaka
-        </button>
+    <button onclick="showNewPersonInput()">
+        ➕ Någon ny
+    </button>
 
-    `;
+    <button onclick="showMainMenu()">
+        ⬅️ Tillbaka
+    </button>
+
+`;
 
 }
 
