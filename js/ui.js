@@ -789,3 +789,64 @@ function showAboutFriend() {
     );
 
 }
+
+function showFriendInfo(person) {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    if (person === "owner") {
+
+        actions.innerHTML = `
+
+            <p>
+                🌿 ${otisMemory.owner.name}
+            </p>
+
+            <p>
+                Min huvudvän 💚
+            </p>
+
+            <button onclick="showFriends()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    const friend =
+        otisMemory.friends[person];
+
+
+    if (!friend) return;
+
+
+    actions.innerHTML = `
+
+        <p>
+            ${friend.type === "child" ? "🧒" : "👤"}
+            ${friend.name}
+        </p>
+
+        <p>
+            ${friend.type === "child"
+                ? (friend.age ? `${friend.age} år` : "Barn")
+                : friend.role || ""
+            }
+        </p>
+
+
+        <button onclick="showFriends()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+
