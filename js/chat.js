@@ -389,6 +389,33 @@ function showNewPersonInput() {
 
 }
 
+function continueNewPerson() {
+
+    const input =
+        document.getElementById("new-person-name-input");
+
+
+    const name =
+        input.value.trim();
+
+
+    if (!name) return;
+
+
+    currentPerson = {
+
+        name: name,
+
+        type: "temporary"
+
+    };
+
+
+    askRememberPerson();
+
+}
+
+
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
