@@ -498,6 +498,33 @@ function saveChildAge() {
 
 }
 
+function askAdultRelation() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    addMessage(
+        `Vem är ${currentPerson.name} för dig? 💚`,
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <input
+            id="adult-role-input"
+            placeholder="Till exempel syster, morfar eller kompis"
+        >
+
+        <button onclick="saveAdultRelation()">
+            Fortsätt 💚
+        </button>
+
+    `;
+
+}
+
 function askRememberPerson() {
 
     const actions =
