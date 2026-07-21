@@ -139,7 +139,7 @@ function resetMemory() {
 
         friends: [],
 
-        companionToday: null
+        companionToday: null,
 
         settings: {
             memoryEnabled: true
