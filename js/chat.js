@@ -584,15 +584,7 @@ function rememberCurrentPerson() {
     }
 
 
-    otisMemory.friends.push({
-
-        name:
-            currentPerson.name,
-
-        type:
-            "person"
-
-    });
+    otisMemory.friends.push(currentPerson);
 
 
     saveMemory();
