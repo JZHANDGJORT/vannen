@@ -98,7 +98,7 @@ function showFriends() {
 
     let html = `
         <p>
-            💚 Det här är människorna jag har fått lära känna hittills.
+            💚 Det här är mina vänner.
         </p>
     `;
 
