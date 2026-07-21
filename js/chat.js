@@ -614,8 +614,20 @@ function rememberCurrentPerson() {
 
 function forgetCurrentPerson() {
 
+    otisMemory.companionToday = {
+
+        ...currentPerson,
+
+        date: new Date().toISOString().split("T")[0]
+
+    };
+
+
+    saveMemory();
+
+
     addMessage(
-        `Vad roligt att få träffa ${currentPerson.name} idag. Jag sparar det här som en fin stund tillsammans. 🌿`,
+        `Vad roligt att få träffa ${currentPerson.name} idag. Jag blir glad att vi fick ses. 🌿`,
         "otis"
     );
 
@@ -623,7 +635,6 @@ function forgetCurrentPerson() {
     showMainMenu();
 
 }
-
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
