@@ -126,7 +126,7 @@ function showFriends() {
 
     // Övriga personer
 
-    otisMemory.friends.forEach(person => {
+    otisMemory.friends.forEach((person, index) => {
 
         let info = "";
 
