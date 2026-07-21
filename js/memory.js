@@ -47,7 +47,24 @@ function loadMemory() {
 
 }
 
+function clearOldCompanion() {
 
+    if (!otisMemory.companionToday) return;
+
+
+    const today =
+        new Date().toISOString().split("T")[0];
+
+
+    if (otisMemory.companionToday.date !== today) {
+
+        otisMemory.companionToday = null;
+
+        saveMemory();
+
+    }
+
+}
 
 // Spara minne
 
