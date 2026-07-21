@@ -415,6 +415,32 @@ function continueNewPerson() {
 
 }
 
+function askRememberPerson() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    addMessage(
+        `Vad fint att få lära känna ${currentPerson.name}. 💚 Vill du att jag ska komma ihåg ${currentPerson.name} till nästa gång vi ses?`,
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <button onclick="rememberCurrentPerson()">
+            💚 Ja, kom ihåg personen
+        </button>
+
+
+        <button onclick="forgetCurrentPerson()">
+            🌿 Nej, bara idag
+        </button>
+
+    `;
+
+}
 
 // 🦦 När Otis redan känner dig
 
