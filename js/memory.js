@@ -4,12 +4,13 @@ let otisMemory = {
 
     friends: [],
 
+    companionToday: null,
+
     settings: {
         memoryEnabled: true
     }
 
 };
-
 
 
 // Hämta minne från enheten
