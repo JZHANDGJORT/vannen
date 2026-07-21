@@ -336,6 +336,28 @@ function showPresentPerson() {
 
 }
 
+function selectCurrentPerson(index) {
+
+    const person =
+        otisMemory.friends[index];
+
+
+    if (!person) return;
+
+
+    currentPerson = person;
+
+
+    addMessage(
+        `Vad roligt att ${person.name} är med idag. 💚 Jag blir glad att få träffa ${person.name} igen.`,
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
