@@ -146,15 +146,15 @@ function showFriends() {
 
         if (person.type === "child") {
 
-            info = person.age
-                ? `${person.age} år`
-                : "Barn";
+    info = person.age
+        ? `${person.age} år`
+        : "Barn";
 
-        } else {
+} else if (person.type === "adult") {
 
-            info = person.role || "";
+    info = person.role || "Vuxen";
 
-        }
+}
 
 
         html += `
