@@ -632,6 +632,23 @@ function showMemoryGreeting() {
         otisMemory.owner.name;
 
 
+    if (otisMemory.companionToday) {
+
+        const companion =
+            otisMemory.companionToday.name;
+
+
+        addMessage(
+            `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companion}! Jag blev glad att du följde med idag. 🦦`,
+            "otis"
+        );
+
+
+        return;
+
+    }
+
+
     const messages =
         memoryGreetings[currentFriend.id];
 
