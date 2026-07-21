@@ -456,6 +456,33 @@ function choosePersonType(type) {
 
 }
 
+function askChildAge() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    addMessage(
+        `Hur gammal är ${currentPerson.name}? 🧒`,
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <input
+            id="child-age-input"
+            placeholder="Ålder"
+        >
+
+        <button onclick="saveChildAge()">
+            Fortsätt 💚
+        </button>
+
+    `;
+
+}
+
 function askRememberPerson() {
 
     const actions =
