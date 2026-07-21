@@ -573,9 +573,9 @@ function rememberCurrentPerson() {
     if (otisMemory.friends.length >= 2) {
 
         addMessage(
-            "Jag kommer ihåg två fina personer redan. Men jag blir gärna glad att träffa någon ny när vi ses. 💚",
-            "otis"
-        );
+    "Jag kommer redan ihåg två personer åt dig. 💚 Jag träffar gärna nya ändå, även om jag inte sparar dem.",
+    "otis"
+);
 
         showMainMenu();
 
