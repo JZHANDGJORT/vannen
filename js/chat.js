@@ -1,3 +1,5 @@
+let currentPerson = null;
+
 function addMessage(text, sender) {
 
     const messages =
