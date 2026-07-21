@@ -442,6 +442,48 @@ function askRememberPerson() {
 
 }
 
+function rememberCurrentPerson() {
+
+    // Kontrollera att vi inte redan har två sparade vänner
+
+    if (otisMemory.friends.length >= 2) {
+
+        addMessage(
+            "Jag kommer ihåg två fina personer redan. Men jag blir gärna glad att träffa någon ny när vi ses. 💚",
+            "otis"
+        );
+
+        showMainMenu();
+
+        return;
+
+    }
+
+
+    otisMemory.friends.push({
+
+        name:
+            currentPerson.name,
+
+        type:
+            "person"
+
+    });
+
+
+    saveMemory();
+
+
+    addMessage(
+        `Vad fint. Jag kommer ihåg ${currentPerson.name} till nästa gång vi ses. 💚`,
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
