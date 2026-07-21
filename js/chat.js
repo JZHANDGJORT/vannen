@@ -406,12 +406,10 @@ function continueNewPerson() {
 
         name: name,
 
-        type: "temporary"
-
     };
 
 
-    askRememberPerson();
+    askPersonType();
 
 }
 
