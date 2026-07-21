@@ -525,6 +525,20 @@ function askAdultRelation() {
 
 }
 
+function saveAdultRelation() {
+
+    currentPerson.role =
+        document
+        .getElementById("adult-role-input")
+        .value
+        .trim();
+
+
+    askRememberPerson();
+
+}
+
+
 function askRememberPerson() {
 
     const actions =
