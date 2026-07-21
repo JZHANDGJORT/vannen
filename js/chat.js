@@ -413,6 +413,32 @@ function continueNewPerson() {
 
 }
 
+function askPersonType() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    addMessage(
+        `${currentPerson.name} verkar vara ett fint namn. 💚 Är ${currentPerson.name} ett barn eller en vuxen?`,
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <button onclick="choosePersonType('child')">
+            🧒 Barn
+        </button>
+
+        <button onclick="choosePersonType('adult')">
+            👤 Vuxen
+        </button>
+
+    `;
+
+}
+
 function askRememberPerson() {
 
     const actions =
