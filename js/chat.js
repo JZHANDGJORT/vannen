@@ -420,7 +420,7 @@ function askPersonType() {
 
 
     addMessage(
-        `${currentPerson.name} verkar vara ett fint namn. 💚 Är ${currentPerson.name} ett barn eller en vuxen?`,
+        `${currentPerson.name} var ett fint namn. 💚 Är ${currentPerson.name} ett barn eller en vuxen?`,
         "otis"
     );
 
