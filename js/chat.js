@@ -484,6 +484,18 @@ function rememberCurrentPerson() {
 
 }
 
+function forgetCurrentPerson() {
+
+    addMessage(
+        `Vad roligt att få träffa ${currentPerson.name} idag. Jag sparar det här som en fin stund tillsammans. 🌿`,
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
