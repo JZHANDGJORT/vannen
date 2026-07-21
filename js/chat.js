@@ -257,10 +257,12 @@ function savePerson(type) {
     if (type === "child") {
 
         person.age =
-            document
-            .getElementById("person-age-input")
-            .value
-            .trim();
+    document
+    .getElementById("person-age-input")
+    .value
+    .trim()
+    .replace("år", "")
+    .trim();
 
     }
 
