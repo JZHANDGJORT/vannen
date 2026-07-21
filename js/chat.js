@@ -362,6 +362,33 @@ function selectCurrentPerson(index) {
 
 }
 
+function showNewPersonInput() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    addMessage(
+        "Vad roligt att få träffa någon ny! 💚 Vad heter personen?",
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <input
+            id="new-person-name-input"
+            placeholder="Skriv namnet"
+        >
+
+        <button onclick="continueNewPerson()">
+            Fortsätt 💚
+        </button>
+
+    `;
+
+}
+
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
