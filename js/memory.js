@@ -23,8 +23,25 @@ function loadMemory() {
 
     if (saved) {
 
-        otisMemory =
+        const oldMemory =
             JSON.parse(saved);
+
+
+        otisMemory = {
+
+            ...otisMemory,
+
+            ...oldMemory,
+
+            settings: {
+
+                ...otisMemory.settings,
+
+                ...oldMemory.settings
+
+            }
+
+        };
 
     }
 
