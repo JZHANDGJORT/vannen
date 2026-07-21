@@ -483,6 +483,21 @@ function askChildAge() {
 
 }
 
+function saveChildAge() {
+
+    currentPerson.age =
+        document
+        .getElementById("child-age-input")
+        .value
+        .trim()
+        .replace("år", "")
+        .trim();
+
+
+    askRememberPerson();
+
+}
+
 function askRememberPerson() {
 
     const actions =
