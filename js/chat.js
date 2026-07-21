@@ -295,6 +295,47 @@ function savePerson(type) {
 
 }
 
+function showPresentPerson() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <p>
+            👋 Vem är med dig idag? 💚
+        </p>
+
+    `;
+
+
+    otisMemory.friends.forEach((person, index) => {
+
+        actions.innerHTML += `
+
+            <button onclick="selectCurrentPerson(${index})">
+
+                ${person.type === "child" ? "🧒" : "👤"}
+                ${person.name}
+
+            </button>
+
+        `;
+
+    });
+
+
+    actions.innerHTML += `
+
+        <button onclick="showMainMenu()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
