@@ -645,17 +645,25 @@ function showMemoryGreeting() {
 
     if (otisMemory.companionToday) {
 
-        const companion =
-            otisMemory.companionToday.name;
+        const today =
+            new Date().toISOString().split("T")[0];
 
 
-        addMessage(
-            `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companion}! Jag blev glad att du följde med idag. 🦦`,
-            "otis"
-        );
+        if (otisMemory.companionToday.date === today) {
+
+            const companion =
+                otisMemory.companionToday.name;
 
 
-        return;
+            addMessage(
+                `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companion}! Jag blev glad att du följde med idag. 🦦`,
+                "otis"
+            );
+
+
+            return;
+
+        }
 
     }
 
