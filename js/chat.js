@@ -669,20 +669,20 @@ function showMemoryGreeting() {
 
 
     const messages =
-        memoryGreetings[currentFriend.id];
+    memoryGreetings["otis01"];
 
 
-    const randomMessage =
-        messages[
-            Math.floor(
-                Math.random() * messages.length
-            )
-        ];
+const randomMessage =
+    messages[
+        Math.floor(
+            Math.random() * messages.length
+        )
+    ];
 
 
-    addMessage(
-        randomMessage.text.replace("{name}", name),
-        "otis"
-    );
+addMessage(
+    randomMessage.text.replace("{name}", name),
+    "otis"
+);
 
 }
