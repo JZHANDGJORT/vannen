@@ -187,3 +187,5 @@ function resetMemory() {
 }
 
 loadMemory();
+
+clearOldCompanion();
