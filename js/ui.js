@@ -1,4 +1,5 @@
 let currentActivity = null;
+
 function showMainMenu() {
 
     const actions =
@@ -21,6 +22,10 @@ function showMainMenu() {
 
         <button id="support-button">
             ❤️ Kan du peppa mig lite?
+        </button>
+
+        <button id="present-person-button">
+            👋 Jag har någon med mig
         </button>
 
     `;
@@ -55,6 +60,14 @@ function showMainMenu() {
         .addEventListener(
             "click",
             showSupport
+        );
+
+
+    document
+        .getElementById("present-person-button")
+        .addEventListener(
+            "click",
+            showPresentPerson
         );
 
 }
