@@ -439,6 +439,23 @@ function askPersonType() {
 
 }
 
+function choosePersonType(type) {
+
+    currentPerson.type = type;
+
+
+    if (type === "child") {
+
+        askChildAge();
+
+    } else {
+
+        askAdultRelation();
+
+    }
+
+}
+
 function askRememberPerson() {
 
     const actions =
