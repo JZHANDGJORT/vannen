@@ -109,7 +109,7 @@ function showFriends() {
 
         html += `
 
-            <button disabled>
+            <button onclick="showFriendInfo('owner')">
 
                 🌿 ${otisMemory.owner.name}
 
