@@ -352,6 +352,18 @@ function selectCurrentPerson(index) {
     currentPerson = person;
 
 
+    otisMemory.companionToday = {
+
+        ...person,
+
+        date: new Date().toISOString().split("T")[0]
+
+    };
+
+
+    saveMemory();
+
+
     addMessage(
         `Vad roligt att ${person.name} är med idag. 💚 Jag blir glad att få träffa ${person.name} igen.`,
         "otis"
