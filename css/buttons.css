@@ -130,30 +130,72 @@
 
 }
 
-/* Otis huvudval */
+/*
+   Otis huvudknappar
+   Mjuka naturfärger
+*/
+
+
+.action-button {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+}
+
+
+
+/*
+   Sällskap
+*/
 
 .company {
 
-    background-color: rgba(216,168,156,0.85) !important;
-
-    color: #B36F63 !important;
+    color: #9A6F62 !important;
 
 }
 
+
+
+/*
+   Hitta på något
+*/
 
 .explore {
 
-    background-color: rgba(231,201,120,0.85) !important;
-
-    color: #9A7A24 !important;
+    color: #9B843F !important;
 
 }
 
 
+
+/*
+   Prata med Otis
+*/
+
 .talk {
 
-    background-color: rgba(143,175,138,0.85) !important;
-
     color: #557A55 !important;
+
+}
+
+
+
+/*
+   Lite mjukare knappkänsla
+*/
+
+#actions button {
+
+    background-color: rgba(255,255,255,0.72);
+
+    backdrop-filter: blur(6px);
 
 }
