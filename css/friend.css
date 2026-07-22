@@ -111,13 +111,15 @@
 
     margin: 0;
 
-    font-size: 40px;
+    font-family: "Patrick Hand", cursive;
 
-    font-weight: 500;
+    font-size: 54px;
 
-    letter-spacing: 1px;
+    font-weight: 400;
 
-    color: #4A4038;
+    letter-spacing: 0.5px;
+
+    color: #5A5141;
 
 }
 
