@@ -43,23 +43,6 @@ function showMainMenu() {
             showDialog
         );
 
-
-    document
-        .getElementById("story-button")
-        .addEventListener(
-            "click",
-            showStory
-        );
-
-
-    document
-        .getElementById("support-button")
-        .addEventListener(
-            "click",
-            showSupport
-        );
-
-
     document
         .getElementById("present-person-button")
         .addEventListener(
