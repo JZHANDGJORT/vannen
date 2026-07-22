@@ -8,20 +8,19 @@ function showMainMenu() {
 
     actions.innerHTML = `
 
+    <button id="present-person-button" class="action-button company">
+        <span class="action-icon">❤️</span>
+        <span>Sällskap</span>
+    </button>
+
     <button id="activity-button" class="action-button explore">
         <span class="action-icon">🌱</span>
         <span>Hitta på något</span>
     </button>
 
-
     <button id="dialog-button" class="action-button talk">
         <span class="action-icon">💬</span>
         <span>Prata med Otis</span>
-    </button>
-
-    <button id="present-person-button" class="action-button company">
-        <span class="action-icon">❤️</span>
-        <span>Sällskap</span>
     </button>
 
 `;
