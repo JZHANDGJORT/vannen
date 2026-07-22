@@ -4,7 +4,7 @@ const otis = {
 
     name: "Otis",
 
-    image: "images/E3C5C754-27EA-4FDE-B3FD-9804CA1926F9.png",
+    image: "images/Otis/otis-neutral.PNG",
 
     cardText:
         "En lekfull och nyfiken utter som finns där för små äventyr och lugna stunder.",
