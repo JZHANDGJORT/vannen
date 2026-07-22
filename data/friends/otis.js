@@ -42,6 +42,9 @@ const otis = {
     description:
         "Otis är en lekfull och nyfiken utter som tycker om både äventyr och lugna stunder. Han vill upptäcka världen tillsammans med dig och påminna om att små saker kan göra en dag fin.",
 
+subtitle:
+    "Din vän vid vattnet",
+    
     about:
 `Jag är en liten utter som tycker väldigt mycket om att upptäcka världen runt omkring mig. 🌊
 
