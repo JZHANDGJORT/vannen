@@ -72,19 +72,11 @@
 
     margin: 0;
 
-    position: absolute;
+    font-size: 32px;
 
-    top: 80px;
+    font-weight: 500;
 
-    left: 0;
-
-    width: 100%;
-
-    font-size: 42px;
-
-    font-weight: 600;
-
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 
 }
 
