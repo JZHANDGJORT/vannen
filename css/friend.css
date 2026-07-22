@@ -36,19 +36,26 @@
 
 #friend-profile {
 
+    width: 100%;
+
     text-align: center;
+
+    position: relative;
 
 }
 
+
 #friend-image {
 
-    width: 140px;
+    width: 100%;
 
-    height: 140px;
+    height: 420px;
 
-    object-fit: contain;
+    object-fit: cover;
 
-    margin-bottom: 12px;
+    border-radius: 0 0 32px 32px;
+
+    display: block;
 
 }
 
