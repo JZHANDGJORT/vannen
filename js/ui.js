@@ -8,27 +8,24 @@ function showMainMenu() {
 
     actions.innerHTML = `
 
-        <button id="activity-button">
-            🌱 Hitta på något tillsammans
-        </button>
+    <button id="present-person-button" class="action-button company">
+        <span class="action-icon">❤️</span>
+        <span>Sällskap</span>
+    </button>
 
-        <button id="dialog-button">
-            💬 Prata en stund
-        </button>
 
-        <button id="story-button">
-            📖 Berätta något
-        </button>
+    <button id="activity-button" class="action-button explore">
+        <span class="action-icon">🌱</span>
+        <span>Hitta på något</span>
+    </button>
 
-        <button id="support-button">
-            ❤️ Kan du peppa mig lite?
-        </button>
 
-        <button id="present-person-button">
-            👋 Jag har någon med mig
-        </button>
+    <button id="dialog-button" class="action-button talk">
+        <span class="action-icon">💬</span>
+        <span>Prata med Otis</span>
+    </button>
 
-    `;
+`;
 
 
     document
