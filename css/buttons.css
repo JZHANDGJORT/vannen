@@ -132,7 +132,6 @@
 
 /*
    Otis huvudknappar
-   Mjuka naturfärger
 */
 
 
@@ -151,50 +150,20 @@
 }
 
 
-
-/*
-   Sällskap
-*/
-
-.company {
-
-    color: #9A6F62 !important;
-
-}
-
-
-
-/*
-   Hitta på något
-*/
-
-.explore {
-
-    color: #9B843F !important;
-
-}
-
-
-
-/*
-   Prata med Otis
-*/
-
+.company,
+.explore,
 .talk {
 
-    color: #557A55 !important;
+    color: #29434A !important;
 
 }
 
-
-
-/*
-   Lite mjukare knappkänsla
-*/
 
 #actions button {
 
-    background-color: rgba(255,255,255,0.72);
+    background-color: rgba(255,255,255,0.75);
+
+    color: #29434A;
 
     backdrop-filter: blur(6px);
 
