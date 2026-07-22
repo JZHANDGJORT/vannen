@@ -248,16 +248,6 @@ function renderFriend(friend) {
             friend.name;
 
     }
-
-const subtitleElement =
-    document.getElementById("friend-subtitle");
-
-if (subtitleElement) {
-
-    subtitleElement.textContent =
-        `Din vän ${friend.home.name.toLowerCase()}`;
-
-}
     
 const aboutButton =
     document.getElementById("about-friend-button");
