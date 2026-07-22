@@ -248,6 +248,16 @@ function renderFriend(friend) {
             friend.name;
 
     }
+
+    const subtitleElement =
+    document.getElementById("friend-subtitle");
+
+if (subtitleElement) {
+
+    subtitleElement.textContent =
+        friend.subtitle;
+
+}
     
 const aboutButton =
     document.getElementById("about-friend-button");
