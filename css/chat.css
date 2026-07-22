@@ -119,21 +119,21 @@
 
     max-width: 420px;
 
-    margin-top: -120px;
+    margin-top: -170px;
 
     position: relative;
 
     z-index: 5;
 
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.45);
 
     backdrop-filter: blur(8px);
 
     border-radius: 28px;
 
-    padding: 20px;
+    padding: 16px;
 
-    max-height: 300px;
+    max-height: 260px;
 
     overflow-y: auto;
 
