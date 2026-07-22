@@ -23,6 +23,8 @@
 
 }
 
+
+
 .top-buttons {
 
     position: absolute;
@@ -39,9 +41,18 @@
 
 }
 
+
+
 #about-friend-button {
 
 }
+
+
+
+/*
+   Otis värld
+*/
+
 
 #friend-profile {
 
@@ -52,6 +63,7 @@
     text-align: center;
 
 }
+
 
 
 #friend-image {
@@ -65,7 +77,11 @@
 }
 
 
-/* Text ovanpå bilden */
+
+/*
+   Text ovanpå bilden
+*/
+
 
 #friend-overlay {
 
@@ -79,25 +95,34 @@
 
     text-align: center;
 
-    color: white;
-
-    text-shadow:
-        0 2px 8px rgba(0,0,0,0.25);
-
 }
+
+
+
+/*
+   Namn
+*/
 
 
 #friend-name {
 
     margin: 0;
 
-    font-size: 42px;
+    font-size: 40px;
 
-    font-weight: 600;
+    font-weight: 500;
 
     letter-spacing: 1px;
 
+    color: #4A4038;
+
 }
+
+
+
+/*
+   Hjärtlinje
+*/
 
 
 .friend-divider {
@@ -106,7 +131,15 @@
 
     font-size: 18px;
 
+    color: #A8C7A0;
+
 }
+
+
+
+/*
+   Undertitel
+*/
 
 
 #friend-subtitle {
@@ -117,14 +150,6 @@
 
     font-style: italic;
 
-}
-
-#friend-subtitle {
-
-    margin: 10px 0 0;
-
-    font-size: 18px;
-
-    font-style: italic;
+    color: #557A55;
 
 }
