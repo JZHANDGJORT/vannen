@@ -156,3 +156,15 @@
     color: #557A55;
 
 }
+
+#actions {
+
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: 20px;
+
+    padding: 0 12px;
+
+}
