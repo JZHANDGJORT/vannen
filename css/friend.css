@@ -5,11 +5,11 @@
 
 #friend-view {
 
-    width: 100vw;
+    width: 100%;
 
     max-width: none;
 
-    min-height: 100vh;
+    min-height: 700px;
 
     display: flex;
 
@@ -20,10 +20,6 @@
     gap: 24px;
 
     position: relative;
-
-    margin: 0;
-
-    padding: 0;
 
 }
 
@@ -60,7 +56,7 @@
 
 #friend-profile {
 
-    width: 100vw;
+    width: 100%;
 
     position: relative;
 
@@ -72,7 +68,7 @@
 
 #friend-image {
 
-    width: 100vw;
+    width: 100%;
 
     height: auto;
 
