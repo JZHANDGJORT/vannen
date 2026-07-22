@@ -69,7 +69,11 @@
 
     width: 100%;
 
-    height: auto;
+    height: 110vh;
+
+    object-fit: cover;
+
+    object-position: center top;
 
     display: block;
 
