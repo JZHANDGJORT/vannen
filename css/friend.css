@@ -70,11 +70,19 @@
 
     margin: 0;
 
-    font-size: 32px;
+    position: absolute;
 
-    font-weight: 500;
+    top: 80px;
 
-    letter-spacing: 0.5px;
+    left: 0;
+
+    width: 100%;
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
 
 }
 
