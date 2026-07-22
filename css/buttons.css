@@ -17,6 +17,15 @@
 
 }
 
+#actions button {
+
+    flex: 1;
+
+    padding: 14px 8px;
+
+    min-height: 90px;
+
+}
 
 /*
    Grundknapp
