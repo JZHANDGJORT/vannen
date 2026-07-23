@@ -216,18 +216,20 @@ function applyTheme(theme) {
 function renderFriend(friend) {
 
 
-    const nameElement =
-        document.getElementById("friend-name");
+    const imageElement =
+    document.getElementById("friend-image");
 
 
+if(imageElement){
 
-    if(nameElement){
+    imageElement.src =
+        friend.worldImage;
 
-    nameElement.textContent =
+
+    imageElement.alt =
         friend.name;
 
 }
-
 
 
 
