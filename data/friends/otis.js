@@ -4,7 +4,11 @@ const otis = {
 
     name: "Otis",
 
+    // Bild som visas på Vännen-startsidan
     image: "images/Otis/otis-neutral.PNG",
+
+    // Bild som visas inne i Otis värld
+    worldImage: "images/Otis/otis-world.PNG",
 
     cardText:
         "En lekfull och nyfiken utter som finns där för små äventyr och lugna stunder.",
