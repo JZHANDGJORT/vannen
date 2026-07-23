@@ -159,12 +159,12 @@ if (settingsButton) {
 
 }
 
-const backpackButton =
-    document.getElementById("backpack-button");
+const backpack =
+    document.getElementById("backpack");
 
-if (backpackButton) {
+if (backpack) {
 
-    backpackButton.onclick =
+    backpack.onclick =
         showBackpack;
 
 }
