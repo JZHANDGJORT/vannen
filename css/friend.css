@@ -89,7 +89,7 @@
 
     object-fit: cover;
 
-    object-position: center center;
+    object-position: 50% center;
 
     display: block;
 
