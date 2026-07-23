@@ -95,7 +95,7 @@
 
     display: block;
 
-    transform: scale(1.3) translateX(0);
+    transform: scale(1.3) translate(0, 35px);
 
     transform-origin: center center;
 
