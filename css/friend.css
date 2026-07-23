@@ -67,7 +67,7 @@
 
 #friend-image {
 
-    width: 110%;
+    width: 120%;
 
     height: 120vh;
 
@@ -76,8 +76,6 @@
     object-position: center center;
 
     display: block;
-
-    transform: translateX(-5%);
 
 }
 
