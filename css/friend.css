@@ -97,6 +97,8 @@
 
     cursor: pointer;
 
+    touch-action: manipulation;
+
     transition: transform 0.2s ease;
 
 }
