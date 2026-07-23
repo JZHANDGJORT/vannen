@@ -79,7 +79,39 @@
 
 }
 
+/*
+   Otis ryggsäck
+*/
 
+#backpack {
+
+    position: absolute;
+
+    width: 90px;
+
+    right: 28px;
+
+    bottom: 180px;
+
+    z-index: 4;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+
+}
+
+#backpack:hover {
+
+    transform: scale(1.05);
+
+}
+
+#backpack:active {
+
+    transform: scale(0.97);
+
+}
 
 /*
    Text ovanpå bilden
