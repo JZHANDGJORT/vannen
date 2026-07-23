@@ -23,7 +23,6 @@ const otis = {
         "omtänksam"
     ],
 
-
     introduction: 
         "Hej! Jag heter Otis. Jag tycker om att flyta omkring, upptäcka nya saker och samla på fina små skatter som jag hittar längs vägen.",
 
