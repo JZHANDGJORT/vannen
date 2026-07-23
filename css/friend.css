@@ -107,11 +107,11 @@
 
     position: absolute;
 
-    width: 115px;      /* större */
+    width: 115px;
 
-    left: 40px;        /* oförändrat */
+    left: 40px;
 
-    bottom: 36%;       /* högre upp */
+    bottom: 36%;
 
     z-index: 4;
 
@@ -119,9 +119,9 @@
 
     touch-action: manipulation;
 
-    transform: rotate(8deg);   /* lutar mot stenen */
+    transform: rotate(8deg);
 
-    animation: backpackFloat 3s ease-in-out infinite;
+    animation: backpackFloat 4.5s ease-in-out infinite;
 
     transition: transform 0.2s ease;
 
@@ -149,7 +149,7 @@
 
     50% {
 
-        margin-bottom: 6px;
+        margin-bottom: 3px;
 
     }
 
