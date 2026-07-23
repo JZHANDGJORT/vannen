@@ -83,6 +83,10 @@
    Otis ryggsäck
 */
 
+/*
+   Otis ryggsäck
+*/
+
 #backpack {
 
     position: absolute;
@@ -99,9 +103,12 @@
 
     touch-action: manipulation;
 
+    animation: backpackFloat 3s ease-in-out infinite;
+
     transition: transform 0.2s ease;
 
 }
+
 
 #backpack:hover {
 
@@ -109,9 +116,27 @@
 
 }
 
+
 #backpack:active {
 
     transform: scale(0.97);
+
+}
+
+
+@keyframes backpackFloat {
+
+    0%, 100% {
+
+        margin-bottom: 0;
+
+    }
+
+    50% {
+
+        margin-bottom: 6px;
+
+    }
 
 }
 
