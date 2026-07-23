@@ -31,7 +31,7 @@
 
     top: 20px;
 
-    right: 20px;
+    right: 10px;
 
     z-index: 10;
 
@@ -41,6 +41,27 @@
 
 }
 
+.top-buttons button {
+
+    padding: 10px 16px;
+
+    border-radius: 20px;
+
+    border: none;
+
+    background-color: rgba(255,255,255,0.75);
+
+    color: #29434A;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
+
+}
 
 
 #about-friend-button {
