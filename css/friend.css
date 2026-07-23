@@ -109,7 +109,7 @@
 
     left: 40px;
 
-    bottom: 25%;
+    bottom: 30%;
 
     z-index: 4;
 
@@ -128,14 +128,14 @@
 
 #backpack:hover {
 
-    transform: rotate(-8deg) scale(1.05);
+    transform: rotate(8deg) scale(1.05);
 
 }
 
 
 #backpack:active {
 
-    transform: rotate(-8deg) scale(0.97);
+    transform: rotate(8deg) scale(0.97);
 
 }
 
