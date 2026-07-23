@@ -147,7 +147,7 @@ const aboutButton =
 if (aboutButton) {
 
     aboutButton.onclick =
-        showAboutFriend;
+    showSettings;
 
 }
 
