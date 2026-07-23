@@ -139,15 +139,7 @@ currentFriend = friend;
 
     renderFriend(friend);
 
-const aboutButton =
-    document.getElementById("about-friend-button");
 
-if (aboutButton) {
-
-    aboutButton.onclick =
-        showAboutFriend;
-
-}
 
 const settingsButton =
     document.getElementById("settings-button");
