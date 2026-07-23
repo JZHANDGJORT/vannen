@@ -216,21 +216,16 @@ function applyTheme(theme) {
 function renderFriend(friend) {
 
 
-    const imageElement =
-    document.getElementById("friend-image");
+    const nameElement =
+        document.getElementById("friend-name");
 
 
-if(imageElement){
+    if(nameElement){
 
-    imageElement.src =
-        friend.worldImage;
+        nameElement.textContent =
+            friend.name;
 
-
-    imageElement.alt =
-        friend.name;
-
-}
-
+    }
 
 
 
@@ -239,11 +234,10 @@ if(imageElement){
         document.getElementById("friend-image");
 
 
-
     if(imageElement){
 
         imageElement.src =
-            friend.image;
+            friend.worldImage;
 
 
         imageElement.alt =
@@ -251,35 +245,36 @@ if(imageElement){
 
     }
 
+
+
+
     const subtitleElement =
-    document.getElementById("friend-subtitle");
+        document.getElementById("friend-subtitle");
 
-if (subtitleElement) {
 
-    subtitleElement.textContent =
-        friend.subtitle;
+    if (subtitleElement) {
+
+        subtitleElement.textContent =
+            friend.subtitle;
+
+    }
+
+
+
+
+    const aboutButton =
+        document.getElementById("about-friend-button");
+
+
+    if (aboutButton) {
+
+        aboutButton.textContent =
+            `Om ${friend.name} ♡`;
+
+    }
+
 
 }
-    
-const aboutButton =
-    document.getElementById("about-friend-button");
-
-if (aboutButton) {
-
-    aboutButton.textContent =
-        `Om ${friend.name} ♡`;
-
-}
-
-}
-
-
-
-
-
-
-
-
 function showGreeting(friend) {
 
 
