@@ -840,4 +840,18 @@ function showFriendInfo(person) {
 
 }
 
+/*
+   Otis ryggsäck
+*/
 
+const backpack = document.getElementById("backpack");
+
+if (backpack) {
+
+    backpack.addEventListener("click", () => {
+
+        console.log("Otis öppnar sin ryggsäck");
+
+    });
+
+}
