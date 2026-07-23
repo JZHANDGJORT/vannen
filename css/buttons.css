@@ -42,7 +42,7 @@
 
     border-radius: 30px;
 
-    background-color: rgba(255,255,255,0.55);
+    background-color: rgba(255,255,255,0.45);
 
     color: inherit;
 
@@ -161,7 +161,7 @@
 
 #actions button {
 
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.45);
 
     color: #29434A;
 
