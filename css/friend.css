@@ -215,6 +215,9 @@
 
     color: #5A5141;
 
+    text-shadow: 
+        1px 1px 3px rgba(255,255,255,0.8);
+
 }
 
 #actions {
