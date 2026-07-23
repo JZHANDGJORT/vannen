@@ -246,7 +246,7 @@
 
     z-index: 5;
 
-    margin-top: -70px;
+    transform: translateY(-250px);
 
     padding: 0 12px;
 
