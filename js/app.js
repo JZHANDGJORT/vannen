@@ -258,21 +258,7 @@ function renderFriend(friend) {
             friend.subtitle;
 
     }
-
-
-
-
-    const aboutButton =
-        document.getElementById("about-friend-button");
-
-
-    if (aboutButton) {
-
-        aboutButton.textContent =
-            `Om ${friend.name} ♡`;
-
-    }
-
+    
 
 }
 function showGreeting(friend) {
