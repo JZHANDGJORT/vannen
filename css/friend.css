@@ -107,11 +107,11 @@
 
     position: absolute;
 
-    width: 90px;
+    width: 115px;      /* större */
 
-    left: 40px;
+    left: 40px;        /* oförändrat */
 
-    bottom: 30%;
+    bottom: 36%;       /* högre upp */
 
     z-index: 4;
 
@@ -119,7 +119,7 @@
 
     touch-action: manipulation;
 
-    transform: rotate(-8deg);
+    transform: rotate(8deg);   /* lutar mot stenen */
 
     animation: backpackFloat 3s ease-in-out infinite;
 
@@ -127,20 +127,17 @@
 
 }
 
-
 #backpack:hover {
 
     transform: rotate(8deg) scale(1.05);
 
 }
 
-
 #backpack:active {
 
     transform: rotate(8deg) scale(0.97);
 
 }
-
 
 @keyframes backpackFloat {
 
