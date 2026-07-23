@@ -85,25 +85,23 @@
    Otis ryggsäck
 */
 
-/*
-   Otis ryggsäck
-*/
-
 #backpack {
 
     position: absolute;
 
     width: 90px;
 
-    right: 38px;
+    left: 40px;
 
-    bottom: 23%;
+    bottom: 25%;
 
     z-index: 4;
 
     cursor: pointer;
 
     touch-action: manipulation;
+
+    transform: rotate(-8deg);
 
     animation: backpackFloat 3s ease-in-out infinite;
 
@@ -114,14 +112,14 @@
 
 #backpack:hover {
 
-    transform: scale(1.05);
+    transform: rotate(-8deg) scale(1.05);
 
 }
 
 
 #backpack:active {
 
-    transform: scale(0.97);
+    transform: rotate(-8deg) scale(0.97);
 
 }
 
