@@ -1,0 +1,11 @@
+const CalmActivities = {
+
+    indoor: [
+
+    ],
+
+    outdoor: [
+
+    ]
+
+};
