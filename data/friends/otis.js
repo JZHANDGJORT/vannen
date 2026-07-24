@@ -13,6 +13,8 @@ worldImage: "images/Otis/otis-world.PNG",
 // Otis som transparent figur
 characterImage: "images/Otis/otis-stone-character.PNG",
 
+characterBlinkImage: "images/Otis/otis-stone-blink-character.PNG",
+    
     cardText:
         "En lekfull och nyfiken utter som finns där för små äventyr och lugna stunder.",
 
