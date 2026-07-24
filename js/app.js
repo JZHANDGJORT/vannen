@@ -187,17 +187,35 @@ if (!otisMemory.owner) {
 
 function applyTheme(theme) {
 
-
     document.body.style.backgroundColor =
         theme.colors.background;
-
 
     document.body.style.color =
         theme.colors.text;
 
 
-}
+    document.documentElement.style.setProperty(
+        "--text-color",
+        theme.colors.text
+    );
 
+
+    document.documentElement.style.setProperty(
+        "--background-color",
+        theme.colors.background
+    );
+
+
+    if (theme.colors.accent) {
+
+        document.documentElement.style.setProperty(
+            "--accent-color",
+            theme.colors.accent
+        );
+
+    }
+
+}
 
 
 
