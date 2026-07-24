@@ -389,6 +389,34 @@ function chooseActivityPlace(place) {
 
 }
 
+function startActivity() {
+
+
+    addMessage(
+        currentActivity.start,
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="activityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+
+        <button onclick="activityNotDone()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
+
 function activityDone() {
 
     clearCurrentActivity();
