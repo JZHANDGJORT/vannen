@@ -344,6 +344,50 @@ function chooseActivityNeed(type) {
 
 }
 
+function chooseActivityPlace(place) {
+
+
+    const list =
+        freeActivities[place];
+
+
+    currentActivity =
+        list[
+            Math.floor(
+                Math.random() * list.length
+            )
+        ];
+
+
+    addMessage(
+        currentActivity.greeting,
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="startActivity()">
+            💚 Ja, det gör vi!
+        </button>
+
+
+        <button onclick="chooseActivityPlace('${place}')">
+            ✨ En annan idé
+        </button>
+
+
+        <button onclick="skipActivity()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
 
 function activityDone() {
 
