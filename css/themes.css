@@ -92,7 +92,8 @@ body {
 
     --theme-accent: #5A5141;
 
-    --theme-text: #4A4038;
+    --theme-text: #rgba(255,255,255,0.9);
+
 
 }
 
