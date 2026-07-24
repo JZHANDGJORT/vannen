@@ -118,12 +118,38 @@
 }
 
 /*
-
    Otis pratbubbla
-
 */
 
 #friend-bubble {
+
+    position: absolute;
+
+    top: 220px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    max-width: 260px;
+
+    padding: 14px 18px;
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 22px;
+
+    color: #4A4034;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    text-align: left;
+
+    z-index: 5;
+
+    display: none;
 
 }
 
