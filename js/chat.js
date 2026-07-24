@@ -318,13 +318,12 @@ function showPresentPerson() {
         document.getElementById("actions");
 
 
-    actions.innerHTML = `
+    actions.innerHTML = "";
 
-        <p>
-            👋 Vem är med dig idag? 💚
-        </p>
-
-    `;
+addMessage(
+    "Vem är med dig idag? 💚",
+    "otis"
+);
 
 
     otisMemory.friends.forEach((person, index) => {
