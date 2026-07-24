@@ -338,3 +338,21 @@ function otisBlink() {
     }, 250);
 
 }
+
+function startOtisBlinking() {
+
+    setInterval(() => {
+
+        const random =
+            Math.random();
+
+
+        if (random < 0.3) {
+
+            otisBlink();
+
+        }
+
+    }, 4000);
+
+}
