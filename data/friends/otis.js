@@ -8,7 +8,10 @@ const otis = {
     image: "images/Otis/otis-neutral.PNG",
 
     // Bild som visas inne i Otis värld
-    worldImage: "images/Otis/otis-world.PNG",
+worldImage: "images/Otis/otis-world.PNG",
+
+// Otis som transparent figur
+characterImage: "images/Otis/otis-stone-character.PNG",
 
     cardText:
         "En lekfull och nyfiken utter som finns där för små äventyr och lugna stunder.",
