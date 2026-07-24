@@ -101,6 +101,22 @@
 
 }
 
+#friend-character {
+
+    position: absolute;
+
+    width: 320px;
+
+    left: 50%;
+
+    bottom: 10%;
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+
+}
+
 /*
    Otis ryggsäck
 */
