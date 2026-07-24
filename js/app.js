@@ -176,9 +176,11 @@ if (!otisMemory.owner) {
 
 }
 
+startOtisBlinking();
+    
 }
 
-startOtisBlinking();
+
 
 
 
