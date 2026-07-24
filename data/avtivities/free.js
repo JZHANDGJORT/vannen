@@ -1,0 +1,11 @@
+const freeActivities = {
+
+    indoor: [
+
+    ],
+
+    outdoor: [
+
+    ]
+
+};
