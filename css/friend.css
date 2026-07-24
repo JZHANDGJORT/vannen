@@ -159,17 +159,17 @@
 
     position: absolute;
 
-    bottom: -12px;
+    right: -12px;
 
-    left: 50%;
+    top: 50%;
 
-    transform: translateX(-50%);
+    transform: translateY(-50%);
 
-    border-width: 12px 10px 0 10px;
+    border-width: 10px 0 10px 14px;
 
     border-style: solid;
 
-    border-color: rgba(255,255,255,0.6) transparent transparent transparent;
+    border-color: transparent transparent transparent rgba(255,255,255,0.6);
 
 }
 
