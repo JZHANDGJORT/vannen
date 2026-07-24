@@ -92,7 +92,7 @@ const memoryGreetings = {
 
         {
             text:
-                "Hej {name}! 🌊 Jag blev glad när du tittade förbi."
+                "Hej {name}! 🌊 Vad glad jag blir att du tittar förbi."
         },
 
         {
