@@ -312,6 +312,38 @@ function showActivity() {
 
 }
 
+function chooseActivityNeed(type) {
+
+
+    if (type === "free") {
+
+        addMessage(
+            "Vad mysigt! 🌊 Vill du göra något inne eller ge dig ut på ett litet äventyr?",
+            "otis"
+        );
+
+
+        const actions =
+            document.getElementById("actions");
+
+
+        actions.innerHTML = `
+
+            <button onclick="chooseActivityPlace('indoor')">
+                🏡 Inne
+            </button>
+
+
+            <button onclick="chooseActivityPlace('outdoor')">
+                🌳 Ute
+            </button>
+
+        `;
+
+    }
+
+}
+
 
 function activityDone() {
 
