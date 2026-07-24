@@ -310,3 +310,31 @@ function setPageMode(mode) {
     document.body.className = mode;
 
 }
+
+function otisBlink() {
+
+    const image =
+        document.getElementById("friend-character");
+
+
+    if (!image) return;
+
+
+    const normalImage =
+        currentFriend.characterImage;
+
+
+    const blinkImage =
+        "images/Otis/otis-stone-blink-character.PNG";
+
+
+    image.src = blinkImage;
+
+
+    setTimeout(() => {
+
+        image.src = normalImage;
+
+    }, 250);
+
+}
