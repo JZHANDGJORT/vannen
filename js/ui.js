@@ -220,55 +220,6 @@ function showBackpack() {
 
 }
 
-function showActivityMenu() {
-
-    const actions =
-        document.getElementById("actions");
-
-
-    actions.innerHTML = `
-
-        <button id="done-button">
-            ✅ Jag gjorde det
-        </button>
-
-        <button id="skip-button">
-            ⏭ Hoppa över
-        </button>
-
-        <button id="dialog-button">
-            💬 Prata lite
-        </button>
-
-    `;
-
-
-    document
-        .getElementById("done-button")
-        .addEventListener(
-            "click",
-            activityDone
-        );
-
-
-    document
-        .getElementById("skip-button")
-        .addEventListener(
-            "click",
-            activitySkipped
-        );
-
-
-    document
-        .getElementById("dialog-button")
-        .addEventListener(
-            "click",
-            showDialog
-        );
-
-}
-
-
 
 function showActivity() {
 
