@@ -62,15 +62,15 @@ function showSettings() {
         </button>
 
         <button onclick="addFriend()">
-            ➕ Presentera någon för Otis
+            ➕ Presentera någon
         </button>
 
         <button onclick="changeName()">
-            ✏️ Vad ska Otis kalla mig?
+            ✏️ Mitt namn
         </button>
 
         <button onclick="resetMemoryQuestion()">
-            🌊 Låt Otis lära känna mig på nytt
+            🌊 Återställ minne
         </button>
 
         <button onclick="showMainMenu()">
