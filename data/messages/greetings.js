@@ -97,7 +97,7 @@ const memoryGreetings = {
 
         {
             text:
-                "Hej {name}! 🦦 Jag undrar vad vi ska hitta på idag."
+                "Hej {name}! 🦦 Undra vad vi ska hitta på idag."
         }
 
     ]
