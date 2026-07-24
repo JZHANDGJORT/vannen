@@ -1,0 +1,11 @@
+const mathActivities = {
+
+    homework: [
+
+    ],
+
+    practice: [
+
+    ]
+
+};
