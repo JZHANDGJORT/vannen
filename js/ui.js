@@ -322,7 +322,7 @@ function chooseActivityPlace(place) {
 
     actions.innerHTML = `
 
-        <button onclick="startActivity()">
+        <button onclick="beginActivity()">
             💚 Ja, det gör vi!
         </button>
 
