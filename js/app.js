@@ -326,7 +326,7 @@ function setPageMode(mode) {
 
 }
 
-function otisBlink() {
+function blinkCharacter() {
 
     const image =
         document.getElementById("friend-character");
@@ -357,7 +357,7 @@ function otisBlink() {
 
 }
 
-function startOtisBlinking() {
+function startCharacterBlinking() {
 
     setInterval(() => {
 
