@@ -367,7 +367,7 @@ function startCharacterBlinking() {
 
         if (random < 0.3) {
 
-            otisBlink();
+            blinkCharacter();
 
         }
 
