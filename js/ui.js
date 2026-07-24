@@ -427,11 +427,11 @@ function activityNotDone() {
 
 function activitySkipped() {
 
-    clearCurrentActivity();
-
     saveSkippedActivity(
         currentActivity
     );
+
+    currentActivity = null;
 
 
     addMessage(
@@ -443,9 +443,6 @@ function activitySkipped() {
     showMainMenu();
 
 }
-
-
-
 function showDialog() {
 
     addMessage(
