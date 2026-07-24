@@ -340,7 +340,7 @@ function chooseActivityPlace(place) {
 
 }
 
-function startActivity() {
+function beginActivity() {
 
 
     addMessage(
