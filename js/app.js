@@ -178,7 +178,7 @@ if (!otisMemory.owner) {
 
 }
 
-
+startOtisBlinking();
 
 
 
