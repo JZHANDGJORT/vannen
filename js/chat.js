@@ -2,6 +2,23 @@ let currentPerson = null;
 
 function addMessage(text, sender) {
 
+    if (sender === "otis") {
+
+        const bubble =
+            document.getElementById("friend-bubble");
+
+        if (bubble) {
+
+            bubble.textContent =
+                text;
+
+            bubble.style.display =
+                "block";
+
+        }
+
+    }
+
     const messages =
         document.getElementById("messages");
 
