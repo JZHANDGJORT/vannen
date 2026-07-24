@@ -4,17 +4,12 @@ const greetings = {
 
         {
             text:
-                "Hej! 🌊 Vad roligt att du tittade förbi. Jag låg precis och flöt en stund och tänkte på hur skönt det är att bara ta det lugnt ibland."
+                "Hej! 🌊 Vad roligt att du tittar förbi. Jag låg precis och flöt en stund och tänkte på hur skönt det är att bara ta det lugnt ibland."
         },
 
         {
             text:
                 "Där är du ju! 🦦 Jag blev glad när jag såg dig komma."
-        },
-
-        {
-            text:
-                "Hej! Jag hittade en liten fin sten idag. Jag undrar vem som hade hittat den först, du eller jag?"
         },
 
         {
