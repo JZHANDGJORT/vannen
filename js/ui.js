@@ -438,6 +438,40 @@ function activityDone() {
 
 }
 
+function activityNotDone() {
+
+
+    const messages = [
+
+        "Det gör inget. Ibland räcker det att vi försökte. Vi kan prova en annan gång. 💚",
+
+        "Det gör inget. Jag tyckte det var mysigt att få följa med en stund. 🌊",
+
+        "Vi hann inte idag, men vi kan alltid prova igen en annan gång. 🌿"
+
+    ];
+
+
+    const message =
+        messages[
+            Math.floor(
+                Math.random() * messages.length
+            )
+        ];
+
+
+    addMessage(
+        message,
+        "otis"
+    );
+
+
+    currentActivity = null;
+
+
+    showMainMenu();
+
+}
 
 
 function activitySkipped() {
