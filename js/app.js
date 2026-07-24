@@ -240,20 +240,28 @@ function renderFriend(friend) {
 
 
 
-    const imageElement =
-        document.getElementById("friend-image");
+    const worldElement =
+    document.getElementById("friend-world");
 
+if (worldElement) {
 
-    if(imageElement){
+    worldElement.src =
+        friend.worldImage;
 
-        imageElement.src =
-            friend.worldImage;
+}
 
+const characterElement =
+    document.getElementById("friend-character");
 
-        imageElement.alt =
-            friend.name;
+if (characterElement) {
 
-    }
+    characterElement.src =
+        friend.characterImage;
+
+    characterElement.alt =
+        friend.name;
+
+}
 
 
 
