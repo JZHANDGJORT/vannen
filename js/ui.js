@@ -272,61 +272,45 @@ function showActivityMenu() {
 
 function showActivity() {
 
-    const savedActivity =
-        getCurrentActivity();
-
-
-    if (
-        hasActivityToday()
-        &&
-        savedActivity
-    ) {
-
-        currentActivity =
-            savedActivity;
-
-
-        addMessage(
-            currentActivity.text,
-            "otis"
-        );
-
-
-        showActivityMenu();
-
-        return;
-
-    }
-
-
-
-    const activityList =
-    activities[currentFriend.id];
-
-
-    currentActivity =
-        activityList[
-            Math.floor(
-                Math.random() * activityList.length
-            )
-        ];
-
-
-    saveCurrentActivity(
-        currentActivity
-    );
-
-
     addMessage(
-        currentActivity.text,
+        "Vad roligt! 💚 Är det något speciellt du behöver göra idag eller ska vi hitta på något tillsammans?",
         "otis"
     );
 
 
-    showActivityMenu();
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="chooseActivityNeed('free')">
+            🌿 Hitta på något
+        </button>
+
+        <button onclick="chooseActivityNeed('read')">
+            📚 Läsa
+        </button>
+
+        <button onclick="chooseActivityNeed('math')">
+            ➕ Räkna
+        </button>
+
+        <button onclick="chooseActivityNeed('create')">
+            🎨 Skapa
+        </button>
+
+        <button onclick="chooseActivityNeed('calm')">
+            🧘 Varva ner
+        </button>
+
+        <button onclick="chooseActivityNeed('tidy')">
+            🧹 Röja lite
+        </button>
+
+    `;
 
 }
-
 
 
 function activityDone() {
