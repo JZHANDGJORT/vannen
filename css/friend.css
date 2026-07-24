@@ -153,6 +153,26 @@
 
 }
 
+#friend-bubble::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-width: 12px 10px 0 10px;
+
+    border-style: solid;
+
+    border-color: rgba(255,255,255,0.6) transparent transparent transparent;
+
+}
+
 /*
    Otis ryggsäck
 */
