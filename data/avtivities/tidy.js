@@ -1,0 +1,11 @@
+const tidyActivities = {
+
+    indoor: [
+
+    ],
+
+    outdoor: [
+
+    ]
+
+};
