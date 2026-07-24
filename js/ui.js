@@ -323,18 +323,16 @@ function chooseActivityPlace(place) {
     actions.innerHTML = `
 
         <button onclick="beginActivity()">
-            💚 Ja, det gör vi!
-        </button>
+💚 Ja, det gör vi!
+</button>
 
+<button onclick="chooseActivityPlace('${place}')">
+✨ En annan idé
+</button>
 
-        <button onclick="chooseActivityPlace('${place}')">
-            ✨ En annan idé
-        </button>
-
-
-        <button onclick="skipActivity()">
-            🌿 Vi hann inte idag
-        </button>
+<button onclick="showMainMenu()">
+🌿 Inte just nu
+</button>
 
     `;
 
