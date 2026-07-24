@@ -419,17 +419,19 @@ function startActivity() {
 
 function activityDone() {
 
-    clearCurrentActivity();
+
+    addMessage(
+        currentActivity.completed,
+        "otis"
+    );
+
 
     saveCompletedActivity(
         currentActivity
     );
 
 
-    addMessage(
-        "Vad fint att du gjorde det tillsammans med mig. 🌱",
-        "otis"
-    );
+    currentActivity = null;
 
 
     showMainMenu();
