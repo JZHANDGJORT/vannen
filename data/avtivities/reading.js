@@ -1,0 +1,11 @@
+const readingActivities = {
+
+    homework: [
+
+    ],
+
+    stories: [
+
+    ]
+
+};
