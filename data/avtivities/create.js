@@ -1,0 +1,11 @@
+const createActivities = {
+
+    indoor: [
+
+    ],
+
+    outdoor: [
+
+    ]
+
+};
