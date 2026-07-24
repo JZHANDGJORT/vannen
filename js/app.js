@@ -332,7 +332,7 @@ function otisBlink() {
         document.getElementById("friend-character");
 
 
-    if (!image) return;
+    if (!image || !currentFriend) return;
 
 
     const normalImage =
@@ -340,7 +340,10 @@ function otisBlink() {
 
 
     const blinkImage =
-        "images/Otis/otis-stone-blink-character.PNG";
+        currentFriend.characterBlinkImage;
+
+
+    if (!blinkImage) return;
 
 
     image.src = blinkImage;
