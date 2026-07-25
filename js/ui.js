@@ -499,8 +499,13 @@ function simpleActivity(type) {
         "Fem saker räcker! Ett litet steg kan göra stor skillnad. ⭐",
 
         room:
-        "Vad fint att hjälpa till. Nu känns det lite mysigare här. 🌿"
+        "Vad fint att hjälpa till. Nu känns det lite mysigare här. 🌿",
 
+        tidy10:
+        "Bra idé! 🌿 Vi tar 10 minuter tillsammans och ser hur mycket vi hinner.",
+
+        box:
+        "Ett riktigt hjälteuppdrag! 📦 Vi tar en låda eller ett skåp och gör det lite lättare att hitta saker."
     };
 
 
