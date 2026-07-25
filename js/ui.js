@@ -432,6 +432,56 @@ function chooseActivityNeed(type) {
 
 }
 
+function simpleActivity(type) {
+
+    const messages = {
+
+        read:
+        "Vad mysigt! 📚 Läs för mig en stund, jag finns här och lyssnar.",
+
+        later:
+        "Det går bra. Vi kan läsa en annan gång. 💚",
+
+        homework:
+        "Jag sitter bredvid dig och hejar på. Du klarar det! 🌿",
+
+        challenge:
+        "Okej! Vad blir 2 + 3? ➕",
+
+        draw:
+        "Vad fint! 🎨 Jag undrar vad du vill skapa idag.",
+
+        build:
+        "Vad ska vi bygga? Jag är nyfiken! 🧱",
+
+        craft:
+        "Pyssel är roligt! ✂️ Jag vill gärna se vad du gör.",
+
+        breathe:
+        "Vi tar tre lugna andetag tillsammans. 🌊",
+
+        pause:
+        "Ibland behöver man bara vara en stund. Jag stannar här. 💚",
+
+        five:
+        "Fem saker räcker! Ett litet steg kan göra stor skillnad. ⭐",
+
+        room:
+        "Vad fint att hjälpa till. Nu känns det lite mysigare här. 🌿"
+
+    };
+
+
+    addMessage(
+        messages[type],
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
 function chooseActivityPlace(place) {
 
 
