@@ -514,6 +514,27 @@ function simpleActivity(type) {
     "otis"
 );
 
+    if (type === "paint") {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="paintIdea(false)">
+            🎨 Jag vet redan
+        </button>
+
+        <button onclick="paintIdea(true)">
+            ✨ Ge mig en idé
+        </button>
+
+    `;
+
+    return;
+
+}
+
     if (type === "tidy10") {
 
     startOtisTimer();
