@@ -547,6 +547,12 @@ function simpleActivityDone() {
         "otis"
     );
 
+    saveCompletedActivity(
+        currentActivity
+    );
+
+    currentActivity = null;
+
     showMainMenu();
 
 }
