@@ -480,7 +480,7 @@ function simpleActivity(type) {
         "Vad roligt! 🎨 Vet du redan vad du vill måla eller vill du ha en liten idé?",
 
         build:
-        "Vad roligt! 🧱 Vet du redan vad du vill bygga eller vill du ha en liten idé?",
+        "Vad roligt! 🧱 Vad vill du bygga med idag?",
 
         craft:
         "Pyssel är roligt! ✂️ Jag vill gärna se vad du gör.",
