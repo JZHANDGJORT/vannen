@@ -1619,16 +1619,16 @@ function chooseCraft(material) {
     const ideas = {
 
         beads:
-        "📿 Vi kan göra ett armband eller kanske en färgglad figur.",
+        "📿 Vi kan göra ett fint armband, en figur eller något helt eget av pärlor.",
 
         beadplate:
-        "🟦 Vi kan göra ett djur, ett hjärta eller något helt eget.",
+        "🟦 Vi kan göra ett djur, ett hjärta eller hitta på ett eget mönster.",
 
         paper:
-        "✂️ Vi kan göra ett kort, en pappersfigur eller något fint till någon.",
+        "📄 Vi kan göra ett kort, en pappersfigur eller något fint att ge bort.",
 
         yarn:
-        "🧶 Vi kan göra något mjukt och färgglatt av garn."
+        "🧶 Vi kan skapa något mjukt och färgglatt av garn."
 
     };
 
@@ -1640,11 +1640,15 @@ function chooseCraft(material) {
 
 
     currentActivity = {
+
         type: "craft",
+
         completed:
-            "Vad fint du skapade! ✂️ Jag tycker om att pyssla tillsammans med dig.",
+        "Vad fint du skapade! ✂️ Jag tycker om att pyssla tillsammans med dig.",
+
         skipped:
-            "Det gör inget. Vi kan pyssla en annan dag. 💚"
+        "Det gör inget. Vi kan pyssla en annan dag. 💚"
+
     };
 
 
