@@ -1505,41 +1505,53 @@ function paintIdea(randomIdea) {
 
 }
 
-function buildIdea(randomIdea) {
+function chooseBuildMaterial(material) {
 
-    if (randomIdea) {
+    const ideas = {
 
-        const ideas = [
+        lego: [
+            "🧱 Bygg ett hus där Otis kan bo.",
+            "🚗 Bygg ett fordon som kan åka på äventyr.",
+            "🏰 Bygg ett slott med torn."
+        ],
 
-            "🧱 Bygg ett hus till Otis.",
+        duplo: [
+            "🏠 Bygg ett mysigt hem.",
+            "🦦 Bygg en plats där ett djur kan trivas.",
+            "🌳 Bygg en liten värld med natur."
+        ],
 
-            "🏰 Bygg ett slott med torn.",
+        blocks: [
+            "🏰 Bygg det högsta tornet du kan.",
+            "🌉 Bygg en bro över ett låtsasvatten.",
+            "🏡 Bygg ett eget litet hus."
+        ],
 
-            "🌉 Bygg en bro som Otis kan gå över.",
+        fort: [
+            "🏕️ Bygg en mysig koja där du och Otis kan vila.",
+            "✨ Gör en hemlig plats för äventyr."
+        ],
 
-            "🚗 Bygg ett fordon och hitta på vart det ska åka.",
+        clay: [
+            "🪨 Forma ett djur.",
+            "🌿 Skapa en liten skatt till Otis.",
+            "🦦 Gör något som kan bo i Otis värld."
+        ],
 
-            "🏕️ Bygg en koja där någon kan vila.",
+        other: [
+            "✨ Fantasin bestämmer! Bygg precis vad du vill."
+        ]
 
-            "🦦 Bygg ett litet hem åt ett djur."
-
-        ];
-
-
-        addMessage(
-            ideas[Math.floor(Math.random() * ideas.length)],
-            "otis"
-        );
+    };
 
 
-    } else {
+    const list = ideas[material];
 
-        addMessage(
-            "Vad spännande! 💚 Jag ser fram emot att höra vad du byggde.",
-            "otis"
-        );
 
-    }
+    addMessage(
+        list[Math.floor(Math.random() * list.length)],
+        "otis"
+    );
 
 
     currentActivity = {
@@ -1550,7 +1562,7 @@ function buildIdea(randomIdea) {
         "Vilket fint bygge! 🧱 Jag hoppas att du hade roligt.",
 
         skipped:
-        "Det gör inget. Vi kan bygga en annan dag. 💚"
+        "Det gör inget. Vi kan bygga en annan gång. 💚"
 
     };
 
@@ -1572,5 +1584,4 @@ function buildIdea(randomIdea) {
     `;
 
 }
-
 
