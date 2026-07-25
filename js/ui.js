@@ -1211,3 +1211,30 @@ if (backpack) {
     });
 
 }
+
+/*
+   Aktivitetsmenyn
+*/
+
+const actionsContainer =
+    document.getElementById("actions");
+
+
+if (actionsContainer) {
+
+    const observer =
+        new MutationObserver(() => {
+
+            updateActionLayout();
+
+        });
+
+
+    observer.observe(
+        actionsContainer,
+        {
+            childList: true
+        }
+    );
+
+}
