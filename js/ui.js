@@ -627,6 +627,18 @@ function startOtisTimer() {
     const actions =
         document.getElementById("actions");
 
+    
+const timer =
+    document.getElementById("activity-timer");
+
+const timerTime =
+    document.getElementById("timer-time");
+
+timer.classList.remove("activity-hidden");
+
+timerTime.textContent = "10:00";
+
+
 
     let seconds = 600;
 
