@@ -560,10 +560,16 @@ function simpleActivityDone() {
 
 function simpleActivitySkipped() {
 
+    saveSkippedActivity(
+        currentActivity
+    );
+
     addMessage(
         currentActivity.skipped,
         "otis"
     );
+
+    currentActivity = null;
 
     showMainMenu();
 
