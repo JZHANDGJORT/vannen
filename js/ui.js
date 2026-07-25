@@ -386,8 +386,8 @@ function chooseActivityNeed(type) {
 
         actions.innerHTML = `
 
-            <button onclick="simpleActivity('draw')">
-                ✏️ Rita
+            <button onclick="simpleActivity('paint')">
+            🎨 Måla
             </button>
 
             <button onclick="simpleActivity('build')">
