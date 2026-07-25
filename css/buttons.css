@@ -11,22 +11,41 @@
 
     flex-direction: row;
 
-    justify-content: center;
+    justify-content: flex-start;
 
-    gap: 10px;
+    gap: 12px;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    padding: 10px 20px;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
 
 }
+
+
+#actions::-webkit-scrollbar {
+
+    display: none;
+
+}
+
 
 #actions button {
 
-    flex: 1;
+    flex: 0 0 auto;
 
-    padding: 14px 8px;
+    width: 150px;
 
     min-height: 90px;
 
-}
+    padding: 14px 8px;
 
+}
 /*
    Grundknapp
 */
