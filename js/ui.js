@@ -1488,3 +1488,73 @@ function paintIdea(randomIdea) {
     `;
 
 }
+
+function buildIdea(randomIdea) {
+
+    if (randomIdea) {
+
+        const ideas = [
+
+            "🧱 Bygg ett hus till Otis.",
+
+            "🏰 Bygg ett slott med torn.",
+
+            "🌉 Bygg en bro som Otis kan gå över.",
+
+            "🚗 Bygg ett fordon och hitta på vart det ska åka.",
+
+            "🏕️ Bygg en koja där någon kan vila.",
+
+            "🦦 Bygg ett litet hem åt ett djur."
+
+        ];
+
+
+        addMessage(
+            ideas[Math.floor(Math.random() * ideas.length)],
+            "otis"
+        );
+
+
+    } else {
+
+        addMessage(
+            "Vad spännande! 💚 Jag ser fram emot att höra vad du byggde.",
+            "otis"
+        );
+
+    }
+
+
+    currentActivity = {
+
+        type: "build",
+
+        completed:
+        "Vilket fint bygge! 🧱 Jag hoppas att du hade roligt.",
+
+        skipped:
+        "Det gör inget. Vi kan bygga en annan dag. 💚"
+
+    };
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
+
+
