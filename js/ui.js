@@ -568,6 +568,35 @@ function simpleActivity(type) {
 
 }
 
+    if (type === "craft") {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="chooseCraft('beads')">
+            📿 Pärlor
+        </button>
+
+        <button onclick="chooseCraft('beadplate')">
+            🟦 Pärlplatta
+        </button>
+
+        <button onclick="chooseCraft('paper')">
+            ✂️ Papper
+        </button>
+
+        <button onclick="chooseCraft('yarn')">
+            🧶 Garn
+        </button>
+
+    `;
+
+    return;
+
+}
+
     if (type === "tidy10") {
 
     startOtisTimer();
