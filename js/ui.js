@@ -473,12 +473,33 @@ function simpleActivity(type) {
 
 
     addMessage(
-        messages[type],
-        "otis"
-    );
+    messages[type],
+    "otis"
+);
 
 
-    showMainMenu();
+currentActivity = {
+    type: type,
+    completed: "Vad fint gjort! 💚 Jag tyckte om att få göra det här tillsammans med dig.",
+    skipped: "Det gör inget. Vi kan prova en annan gång. 🌿"
+};
+
+
+const actions =
+    document.getElementById("actions");
+
+
+actions.innerHTML = `
+
+    <button onclick="simpleActivityDone()">
+        ✅ Vi gjorde det!
+    </button>
+
+    <button onclick="simpleActivitySkipped()">
+        🌿 Vi hann inte idag
+    </button>
+
+`;
 
 }
 
