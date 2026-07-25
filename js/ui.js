@@ -584,7 +584,7 @@ function simpleActivity(type) {
         </button>
 
         <button onclick="chooseCraft('paper')">
-            ✂️ Papper
+            📄 Papper
         </button>
 
         <button onclick="chooseCraft('yarn')">
