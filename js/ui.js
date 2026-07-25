@@ -844,7 +844,10 @@ function activityNotDone() {
 
 
 function activitySkipped() {
-
+document
+    .getElementById("activity-timer")
+    .classList.add("activity-hidden");
+    
     saveSkippedActivity(
         currentActivity
     );
