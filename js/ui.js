@@ -1,5 +1,29 @@
 let currentActivity = null;
 
+function updateActionLayout() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    const count =
+        actions.querySelectorAll("button").length;
+
+
+    if (count === 4) {
+
+        actions.style.gridTemplateColumns =
+            "repeat(2, 1fr)";
+
+    } else {
+
+        actions.style.gridTemplateColumns =
+            "repeat(3, 1fr)";
+
+    }
+
+}
+
 function showMainMenu() {
 
     const actions =
