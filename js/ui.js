@@ -480,8 +480,8 @@ function simpleActivity(type) {
         challenge:
         "Okej! Vad blir 2 + 3? ➕",
 
-        draw:
-        "Vad fint! 🎨 Jag undrar vad du vill skapa idag.",
+        paint:
+        "Vad roligt! 🎨 Vet du redan vad du vill måla eller vill du ha en liten idé?",
 
         build:
         "Vad ska vi bygga? Jag är nyfiken! 🧱",
