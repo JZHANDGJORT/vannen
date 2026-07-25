@@ -592,6 +592,79 @@ function simpleActivitySkipped() {
 
 }
 
+function startOtisTimer() {
+
+    currentActivity = {
+        type: "tidy10",
+        completed:
+            "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
+        skipped:
+            "Det gör inget. Vi kan prova en annan gång. 🌿"
+    };
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    let seconds = 600;
+
+
+    actions.innerHTML = `
+
+        <div id="otis-timer">
+            ⏱️ 10:00
+        </div>
+
+        <button onclick="finishOtisTimer()">
+            🌿 Jag är klar
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌱 Vi hann inte idag
+        </button>
+
+    `;
+
+
+    window.otisTimer =
+        setInterval(() => {
+
+            seconds--;
+
+
+            const minutes =
+                Math.floor(seconds / 60);
+
+            const remaining =
+                seconds % 60;
+
+
+            document.getElementById("otis-timer")
+            .textContent =
+                `⏱️ ${minutes}:${remaining < 10 ? "0" : ""}${remaining}`;
+
+
+            if (seconds <= 0) {
+
+                clearInterval(window.otisTimer);
+
+
+                addMessage(
+                    "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
+                    "otis"
+                );
+
+
+                showMainMenu();
+
+            }
+
+
+        }, 1000);
+
+}
+
 function chooseActivityPlace(place) {
 
 
