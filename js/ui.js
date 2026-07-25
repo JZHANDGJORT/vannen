@@ -432,27 +432,35 @@ function chooseActivityNeed(type) {
 
     if (type === "tidy") {
 
-        addMessage(
-            "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
-            "otis"
-        );
+    addMessage(
+        "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
+        "otis"
+    );
 
 
-        actions.innerHTML = `
+    actions.innerHTML = `
 
-            <button onclick="simpleActivity('five')">
-                ⭐ Plocka undan fem saker
-            </button>
+        <button onclick="simpleActivity('five')">
+            ⭐ Plocka undan fem saker
+        </button>
 
-            <button onclick="simpleActivity('room')">
-                🏡 Göra fint någonstans
-            </button>
+        <button onclick="simpleActivity('tidy10')">
+            ⏱️ Plocka undan i 10 minuter
+        </button>
 
-        `;
+        <button onclick="simpleActivity('room')">
+            🏡 Göra fint i ett rum
+        </button>
 
-        return;
+        <button onclick="simpleActivity('box')">
+            📦 Gå igenom en låda eller ett skåp
+        </button>
 
-    }
+    `;
+
+    return;
+
+}
 
 }
 
