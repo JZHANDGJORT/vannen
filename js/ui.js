@@ -517,10 +517,20 @@ function simpleActivity(type) {
 
 currentActivity = {
     type: type,
-    completed: "Vad fint gjort! 💚 Jag tyckte om att få göra det här tillsammans med dig.",
-    skipped: "Det gör inget. Vi kan prova en annan gång. 🌿"
-};
 
+    difficulty:
+        type === "five" ? "lätt" :
+        type === "tidy10" ? "mellan" :
+        type === "room" ? "utmaning" :
+        type === "box" ? "utmaning" :
+        "vanlig",
+
+    completed:
+        "Vad fint gjort! 💚 Jag tyckte om att få göra det här tillsammans med dig.",
+
+    skipped:
+        "Det gör inget. Vi kan prova en annan gång. 🌿"
+};
 
 const actions =
     document.getElementById("actions");
