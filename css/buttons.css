@@ -7,53 +7,22 @@
 
     width: 100%;
 
-    display: flex;
+    display: grid;
 
-    flex-direction: row;
-
-    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 12px;
 
-    overflow-x: auto;
-
-    overflow-y: hidden;
-
-    padding: 10px 20px;
-
-    -webkit-overflow-scrolling: touch;
-
-    scrollbar-width: none;
-
-}
-
-
-#actions::-webkit-scrollbar {
-
-    display: none;
+    padding: 12px 0;
 
 }
 
 
 #actions button {
 
-    flex: 0 0 auto;
+    min-height: 80px;
 
-    width: 150px;
-
-    min-height: 90px;
-
-    padding: 14px 8px;
-
-}
-/*
-   Grundknapp
-*/
-
-
-#actions button {
-
-    padding: 16px 20px;
+    padding: 14px 10px;
 
     border: none;
 
@@ -61,58 +30,40 @@
 
     background-color: rgba(255,255,255,0.45);
 
-    color: inherit;
+    color: #29434A;
 
-    font-size: 15px;
+    font-size: 14px;
 
     font-family: inherit;
 
     cursor: pointer;
 
-    transition:
-        transform 0.2s ease,
-        background-color 0.2s ease,
-        box-shadow 0.2s ease;
+    backdrop-filter: blur(6px);
 
     box-shadow:
-    0 6px 18px rgba(0,0,0,0.08);
+        0 6px 18px rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
 
 }
-
-
-
-/*
-   När man håller över
-   (mest för dator)
-*/
 
 
 #actions button:hover {
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 
-    background-color:
-        rgba(255,255,255,0.95);
+    background-color: rgba(255,255,255,0.8);
 
 }
-
-
-
-/*
-   När man trycker
-*/
 
 
 #actions button:active {
 
-    transform:
-        scale(0.97);
+    transform: scale(0.97);
 
 }
-
-
-
 /*
    Lite mer fokus på första valet
 */
