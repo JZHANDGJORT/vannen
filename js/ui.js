@@ -531,6 +531,27 @@ function simpleActivity(type) {
 
 }
 
+    if (type === "build") {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="buildIdea(false)">
+            🧱 Jag vet redan
+        </button>
+
+        <button onclick="buildIdea(true)">
+            ✨ Ge mig en idé
+        </button>
+
+    `;
+
+    return;
+
+}
+
     if (type === "tidy10") {
 
     startOtisTimer();
