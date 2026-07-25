@@ -1614,3 +1614,54 @@ function chooseBuildMaterial(material) {
 
 }
 
+function chooseCraft(material) {
+
+    const ideas = {
+
+        beads:
+        "📿 Vi kan göra ett armband eller kanske en färgglad figur.",
+
+        beadplate:
+        "🟦 Vi kan göra ett djur, ett hjärta eller något helt eget.",
+
+        paper:
+        "✂️ Vi kan göra ett kort, en pappersfigur eller något fint till någon.",
+
+        yarn:
+        "🧶 Vi kan göra något mjukt och färgglatt av garn."
+
+    };
+
+
+    addMessage(
+        ideas[material],
+        "otis"
+    );
+
+
+    currentActivity = {
+        type: "craft",
+        completed:
+            "Vad fint du skapade! ✂️ Jag tycker om att pyssla tillsammans med dig.",
+        skipped:
+            "Det gör inget. Vi kan pyssla en annan dag. 💚"
+    };
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
