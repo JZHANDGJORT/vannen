@@ -498,14 +498,14 @@ function simpleActivity(type) {
         five:
         "Fem saker räcker! Ett litet steg kan göra stor skillnad. ⭐",
 
-        room:
-        "Vad fint att hjälpa till. Nu känns det lite mysigare här. 🌿",
-
         tidy10:
         "Bra idé! 🌿 Vi tar 10 minuter tillsammans och ser hur mycket vi hinner.",
 
-        box:
-        "Ett riktigt hjälteuppdrag! 📦 Vi tar en låda eller ett skåp och gör det lite lättare att hitta saker."
+         room:
+         "Det här är ett större uppdrag. 🏡 Vi gör fint i ett rum tillsammans.",
+
+         box:
+         "Ett riktigt hjälteuppdrag! 📦 Vi går igenom en låda eller ett skåp och gör det lättare att hitta saker."
     };
 
 
