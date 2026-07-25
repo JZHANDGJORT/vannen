@@ -1392,3 +1392,68 @@ if (actionsContainer) {
     );
 
 }
+
+function paintIdea(randomIdea) {
+
+    if (randomIdea) {
+
+        const ideas = [
+
+            "🎨 Måla något som gör dig glad. ☀️",
+
+            "🦦 Rita ditt favoritdjur.",
+
+            "🌸 Måla en vacker blomma.",
+
+            "🌈 Måla med regnbågens alla färger.",
+
+            "🌳 Rita ditt drömträd.",
+
+            "🏴‍☠️ Rita en skattkarta till en hemlig plats.",
+
+            "🌊 Måla hur du tror att havets botten ser ut.",
+
+            "✨ Hitta på ett helt nytt djur.",
+
+            "😊 Rita någon som får dig att le.",
+
+            "🏡 Rita ett hus där Otis skulle vilja bo."
+
+        ];
+
+        addMessage(
+            ideas[Math.floor(Math.random() * ideas.length)],
+            "otis"
+        );
+
+    } else {
+
+        addMessage(
+            "Vad spännande! 💚 Jag ser fram emot att höra om vad du målade sen.",
+            "otis"
+        );
+
+    }
+
+    currentActivity = {
+        type: "paint",
+        completed: "Vilken fin skapelse! 🎨 Jag hoppas att du hade roligt.",
+        skipped: "Det gör inget. Vi kan måla en annan dag. 💚"
+    };
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
