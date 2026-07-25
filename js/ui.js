@@ -514,6 +514,13 @@ function simpleActivity(type) {
     "otis"
 );
 
+    if (type === "tidy10") {
+
+    startOtisTimer();
+
+    return;
+
+}
 
 currentActivity = {
     type: type,
