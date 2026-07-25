@@ -503,6 +503,29 @@ actions.innerHTML = `
 
 }
 
+function simpleActivityDone() {
+
+    addMessage(
+        currentActivity.completed,
+        "otis"
+    );
+
+    showMainMenu();
+
+}
+
+
+function simpleActivitySkipped() {
+
+    addMessage(
+        currentActivity.skipped,
+        "otis"
+    );
+
+    showMainMenu();
+
+}
+
 function chooseActivityPlace(place) {
 
 
