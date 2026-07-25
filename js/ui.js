@@ -698,6 +698,9 @@ function finishOtisTimer() {
 
     clearInterval(window.otisTimer);
 
+    document
+    .getElementById("activity-timer")
+    .classList.add("activity-hidden");
 
     addMessage(
         currentActivity.completed,
