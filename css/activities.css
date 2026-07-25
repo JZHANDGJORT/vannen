@@ -44,3 +44,13 @@
     display: none;
 
 }
+
+#activity-timer {
+
+    position: relative;
+
+    z-index: 6;
+
+    transform: translateY(-615px);
+
+}
