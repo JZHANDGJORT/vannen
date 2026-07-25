@@ -483,7 +483,7 @@ function simpleActivity(type) {
         "Vad roligt! 🧱 Vad vill du bygga med idag?",
 
         craft:
-        "Pyssel är roligt! ✂️ Jag vill gärna se vad du gör.",
+        "Vad roligt! ✂️ Vad vill du pyssla med idag?",   
 
         breathe:
         "Vi tar tre lugna andetag tillsammans. 🌊",
