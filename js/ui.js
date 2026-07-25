@@ -538,12 +538,28 @@ function simpleActivity(type) {
 
     actions.innerHTML = `
 
-        <button onclick="buildIdea(false)">
-            🧱 Jag vet redan
+        <button onclick="chooseBuildMaterial('lego')">
+            🧱 Lego
         </button>
 
-        <button onclick="buildIdea(true)">
-            ✨ Ge mig en idé
+        <button onclick="chooseBuildMaterial('duplo')">
+            🧸 Duplo
+        </button>
+
+        <button onclick="chooseBuildMaterial('blocks')">
+            🪵 Klossar
+        </button>
+
+        <button onclick="chooseBuildMaterial('fort')">
+            🏕️ Kuddar & filtar
+        </button>
+
+        <button onclick="chooseBuildMaterial('clay')">
+            🪨 Lera
+        </button>
+
+        <button onclick="chooseBuildMaterial('other')">
+            ✨ Något annat
         </button>
 
     `;
