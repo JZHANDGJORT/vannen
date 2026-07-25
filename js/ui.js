@@ -632,11 +632,7 @@ function startOtisTimer() {
 
 
     actions.innerHTML = `
-
-        <div id="otis-timer">
-            ⏱️ 10:00
-        </div>
-
+       
         <button onclick="finishOtisTimer()">
             🌿 Jag är klar
         </button>
