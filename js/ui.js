@@ -677,6 +677,7 @@ timerTime.textContent = "10:00";
 
                 clearInterval(window.otisTimer);
 
+                timer.classList.add("activity-hidden");
 
                 addMessage(
                     "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
