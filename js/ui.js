@@ -879,15 +879,15 @@ function showDialog() {
     actions.innerHTML = `
 
         <button onclick="dialogAnswer('glad')">
-            😊 Jag mår bra
+        Jag mår bra 😊
         </button>
 
         <button onclick="dialogAnswer('jobbigt')">
-            💚 Det har varit lite jobbigt
+        Det har varit lite jobbigt 💚
         </button>
 
         <button onclick="dialogAnswer('vetinte')">
-            🤔 Jag vet inte riktigt
+        Jag vet inte riktigt 🤔
         </button>
 
     `;
