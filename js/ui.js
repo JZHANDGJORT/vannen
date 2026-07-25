@@ -665,6 +665,24 @@ function startOtisTimer() {
 
 }
 
+function finishOtisTimer() {
+
+    clearInterval(window.otisTimer);
+
+
+    addMessage(
+        currentActivity.completed,
+        "otis"
+    );
+
+
+    currentActivity = null;
+
+
+    showMainMenu();
+
+}
+
 function chooseActivityPlace(place) {
 
 
