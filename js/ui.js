@@ -684,8 +684,26 @@ function dialogAnswer(answer) {
 
     if (answer === "glad") {
 
+    const friendDialogs =
+        dialogs[currentFriend.id];
+
+
+    if (!friendDialogs || !friendDialogs[0]) {
+
+        addMessage(
+            "Vad härligt att höra! 🌱 Jag blir glad när du mår bra.",
+            "otis"
+        );
+
+        showConversationMenu();
+
+        return;
+
+    }
+
+
     const dialog =
-        dialogs[currentFriend.id][0];
+        friendDialogs[0];
 
 
     const option =
@@ -693,6 +711,19 @@ function dialogAnswer(answer) {
             o => o.user === userMessages.glad
         );
 
+
+    if (!option) {
+
+        addMessage(
+            "Vad härligt att höra! 🌱 Jag blir glad när du mår bra.",
+            "otis"
+        );
+
+        showConversationMenu();
+
+        return;
+
+    }
 
     addMessage(
         option.reply,
