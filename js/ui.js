@@ -265,6 +265,9 @@ function showActivity() {
 
 function chooseActivityNeed(type) {
 
+    const actions =
+        document.getElementById("actions");
+
 
     if (type === "free") {
 
@@ -274,22 +277,156 @@ function chooseActivityNeed(type) {
         );
 
 
-        const actions =
-            document.getElementById("actions");
-
-
         actions.innerHTML = `
 
             <button onclick="chooseActivityPlace('indoor')">
                 🏡 Inne
             </button>
 
-
             <button onclick="chooseActivityPlace('outdoor')">
                 🌳 Ute
             </button>
 
         `;
+
+        return;
+
+    }
+
+
+    if (type === "read") {
+
+        addMessage(
+            "Vad mysigt! 📚 Har du en bok som vi kan läsa tillsammans?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('read')">
+                📖 Ja, jag har en bok
+            </button>
+
+            <button onclick="simpleActivity('later')">
+                🌿 Jag väljer senare
+            </button>
+
+            <button onclick="showMainMenu()">
+                🦦 Inte idag
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    if (type === "math") {
+
+        addMessage(
+            "Jag hjälper gärna till! ➕ Har du något du vill räkna på?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('homework')">
+                📝 Jag har en läxa
+            </button>
+
+            <button onclick="simpleActivity('challenge')">
+                🔢 Ge mig en liten utmaning
+            </button>
+
+            <button onclick="showMainMenu()">
+                🦦 Inte idag
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    if (type === "create") {
+
+        addMessage(
+            "Vad roligt! 🎨 Jag tycker om att skapa saker tillsammans.",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('draw')">
+                ✏️ Rita
+            </button>
+
+            <button onclick="simpleActivity('build')">
+                🧱 Bygga något
+            </button>
+
+            <button onclick="simpleActivity('craft')">
+                ✂️ Pyssla
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    if (type === "calm") {
+
+        addMessage(
+            "Då tar vi det lite lugnt tillsammans. 🌊",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('breathe')">
+                🌿 Andas en stund
+            </button>
+
+            <button onclick="simpleActivity('pause')">
+                💚 Bara vara
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    if (type === "tidy") {
+
+        addMessage(
+            "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('five')">
+                ⭐ Plocka undan fem saker
+            </button>
+
+            <button onclick="simpleActivity('room')">
+                🏡 Göra fint någonstans
+            </button>
+
+        `;
+
+        return;
 
     }
 
