@@ -669,9 +669,8 @@ timerTime.textContent = "10:00";
                 seconds % 60;
 
 
-            document.getElementById("otis-timer")
-            .textContent =
-                `⏱️ ${minutes}:${remaining < 10 ? "0" : ""}${remaining}`;
+            timerTime.textContent =
+    `${minutes}:${remaining < 10 ? "0" : ""}${remaining}`;
 
 
             if (seconds <= 0) {
