@@ -111,11 +111,7 @@ function showFriends() {
         document.getElementById("actions");
 
 
-    let html = `
-        <p>
-            💚 Det här är mina vänner.
-        </p>
-    `;
+    let html = ``;
 
 
     // Ägaren
