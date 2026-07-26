@@ -380,51 +380,49 @@ function smileCharacter(duration = 1500) {
 
 function checkOtisMood(text) {
 
+    const lowerText = text.toLowerCase();
+
     const happyWords = [
-
         "Vad roligt",
-
         "Vad fint",
-
         "Härligt",
-
         "Wow",
-
         "⭐",
-
         "🎉",
-
         "😊",
-
         "❤️",
-
         "💚"
-
     ];
 
+    const seriousWords = [
+        "ledsen",
+        "jobbigt",
+        "svårt",
+        "orolig",
+        "rädd",
+        "ensam",
+        "saknar",
+        "gråter"
+    ];
 
-    if (happyWords.some(word => text.includes(word))) {
+    const isHappy =
+        happyWords.some(word => lowerText.includes(word.toLowerCase()));
 
-        smileCharacter();
+    const isSerious =
+        seriousWords.some(word => lowerText.includes(word));
 
+    let smileChance = 0.3;
+
+    if (isHappy) {
+        smileChance = 0.8;
     }
 
-}
+    if (isSerious) {
+        smileChance = 0;
+    }
 
-function startCharacterBlinking() {
-
-    setInterval(() => {
-
-        const random =
-            Math.random();
-
-
-        if (random < 0.3) {
-
-            blinkCharacter();
-
-        }
-
-    }, 4000);
+    if (Math.random() < smileChance) {
+        smileCharacter();
+    }
 
 }
