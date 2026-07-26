@@ -10,11 +10,12 @@
 }
 
 body.home {
-    color: #4A4034;
+    background: #f6f3ee;
+    color: #4d433d;
 }
 
 body.home #home-view {
-    color: #4A4034;
+    color: #4d433d;
 }
 
 
