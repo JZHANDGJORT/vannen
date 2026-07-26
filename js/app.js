@@ -157,7 +157,7 @@ const backpack =
 if (backpack) {
 
     backpack.onclick =
-        showBackpack;
+    askOpenBackpack;
 
 }
     
