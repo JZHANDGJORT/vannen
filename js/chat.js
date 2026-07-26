@@ -28,9 +28,9 @@ function addMessage(text, sender) {
 
         if (happyWords.some(word => text.includes(word))) {
 
-            smileCharacter();
+    // smileCharacter();
 
-        }
+}
 
         const bubble =
             document.getElementById("friend-bubble");
