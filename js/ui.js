@@ -1436,7 +1436,20 @@ if (backpack) {
 
     backpack.addEventListener("click", () => {
 
-        console.log("Otis öppnar sin ryggsäck");
+        addMessage(
+            "Vad är det där? Vad har du i din ryggsäck?",
+            "user"
+        );
+
+
+        setTimeout(() => {
+
+            addMessage(
+                "Åh, det här är min ryggsäck! Jag brukar ta med mig små saker från mina äventyr. Vill du öppna den?",
+                "otis"
+            );
+
+        }, 800);
 
     });
 
