@@ -378,6 +378,30 @@ function smileCharacter(duration = 1500) {
 
 }
 
+function laughCharacter(duration = 2000) {
+
+    const image =
+        document.getElementById("friend-character");
+
+    if (!image || !currentFriend) return;
+
+
+    image.src =
+        "images/Otis/otis-stone-laugh-character.PNG";
+
+
+    clearTimeout(window.laughTimeout);
+
+
+    window.laughTimeout = setTimeout(() => {
+
+        image.src =
+            currentFriend.characterImage;
+
+    }, duration);
+
+}
+
 function checkOtisMood(text) {
 
     const lowerText = text.toLowerCase();
