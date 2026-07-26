@@ -260,6 +260,22 @@ function showBackpackChoice() {
 
 }
 
+function openOtisBackpack() {
+
+    addMessage(
+        "Hehe, jag blir alltid lite glad när jag får visa vad jag har där i! 😄",
+        "otis"
+    );
+
+
+    setTimeout(() => {
+
+        showBackpack();
+
+    }, 1200);
+
+}
+
 function showActivity() {
 
     addMessage(
