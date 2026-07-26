@@ -2,33 +2,39 @@
    Vännen - startsida
 */
 
-
 #home-view {
 
     width: 100%;
 
 }
 
+
 body.home {
+
     background: #f6f3ee;
     color: #4d433d;
+
 }
 
-body.home #home-view {
-    color: #4d433d;
-}
 
 body.home .friend-card {
+
     color: #4d433d;
+
 }
 
+
 body.home .friend-card p {
+
     color: #7a6f66;
+
 }
+
+
 
 #friend-intro {
 
-   padding: 32px 24px;
+    padding: 32px 24px;
     text-align: center;
 
 }
@@ -55,12 +61,9 @@ body.home .friend-card p {
 
     max-width: 350px;
 
-    margin:
-        0 auto;
+    margin: 0 auto;
 
 }
-
-
 
 /*
    Responsivt
