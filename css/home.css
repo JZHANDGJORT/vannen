@@ -18,6 +18,13 @@ body.home #home-view {
     color: #4d433d;
 }
 
+body.home .friend-card {
+    color: #4d433d;
+}
+
+body.home .friend-card p {
+    color: #7a6f66;
+}
 
 #friend-intro {
 
