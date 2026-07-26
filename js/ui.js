@@ -240,6 +240,38 @@ function showBackpack() {
 
 }
 
+function askOpenBackpack() {
+
+    addMessage(
+        "Vad är det där?",
+        "user"
+    );
+
+
+    addMessage(
+        "Åh, det här är min ryggsäck! Jag brukar ta med mig små saker från mina äventyr. Vill du öppna den?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="openOtisBackpack()">
+            🎒 Ja, öppna den!
+        </button>
+
+        <button onclick="showMainMenu()">
+            🌿 Inte just nu
+        </button>
+
+    `;
+
+}
+
 function showBackpackChoice() {
 
     const actions =
