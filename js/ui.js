@@ -1629,18 +1629,6 @@ function chooseBuildMaterial(material) {
 
 function chooseCraft(material) {
 
-const userTexts = {
-    beads: "📿 Pärlor",
-    beadplate: "🟦 Pärlplatta",
-    paper: "📄 Papper",
-    yarn: "🧶 Garn"
-};
-
-addMessage(
-    userTexts[material],
-    "user"
-);
-
     const ideas = {
 
         beads:
