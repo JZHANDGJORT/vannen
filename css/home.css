@@ -9,6 +9,14 @@
 
 }
 
+body.home {
+    color: #4A4034;
+}
+
+body.home #home-view {
+    color: #4A4034;
+}
+
 
 #friend-intro {
 
