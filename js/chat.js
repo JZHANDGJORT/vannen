@@ -40,7 +40,14 @@ function addMessage(text, sender) {
     messages.appendChild(message);
 
 
-    scrollToBottom();
+if (sender === "otis") {
+
+    checkOtisMood(text);
+
+}
+
+
+scrollToBottom();
 
 }
 
