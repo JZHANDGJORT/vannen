@@ -1437,7 +1437,7 @@ if (backpack) {
     backpack.addEventListener("click", () => {
 
         addMessage(
-            "Vad är det där? Vad har du i din ryggsäck?",
+            "Vad är det där?",
             "user"
         );
 
