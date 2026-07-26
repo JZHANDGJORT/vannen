@@ -17,37 +17,27 @@ function addMessage(text, sender) {
 
         }
 
+        checkOtisMood(text);
+
     }
 
     const messages =
         document.getElementById("messages");
 
-
     const message =
         document.createElement("div");
-
 
     message.classList.add(
         "message",
         sender
     );
 
-
     message.textContent =
         text;
 
-
     messages.appendChild(message);
 
-
-if (sender === "otis") {
-
-    checkOtisMood(text);
-
-}
-
-
-scrollToBottom();
+    scrollToBottom();
 
 }
 
