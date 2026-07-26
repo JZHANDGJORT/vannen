@@ -240,6 +240,25 @@ function showBackpack() {
 
 }
 
+function showBackpackChoice() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="openOtisBackpack()">
+            🎒 Ja, öppna den!
+        </button>
+
+        <button onclick="showMainMenu()">
+            🦦 Inte just nu
+        </button>
+
+    `;
+
+}
 
 function showActivity() {
 
