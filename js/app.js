@@ -115,15 +115,10 @@ function showFriendView() {
         .getElementById("friend-view")
         .style.display = "block";
 
-setPageMode("friend");
+
+    document.body.className = "friend";
     
 }
-
-
-
-
-
-
 
 function startFriend(friend) {
 currentFriend = friend;
