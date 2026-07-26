@@ -378,6 +378,39 @@ function smileCharacter(duration = 1500) {
 
 }
 
+function checkOtisMood(text) {
+
+    const happyWords = [
+
+        "Vad roligt",
+
+        "Vad fint",
+
+        "Härligt",
+
+        "Wow",
+
+        "⭐",
+
+        "🎉",
+
+        "😊",
+
+        "❤️",
+
+        "💚"
+
+    ];
+
+
+    if (happyWords.some(word => text.includes(word))) {
+
+        smileCharacter();
+
+    }
+
+}
+
 function startCharacterBlinking() {
 
     setInterval(() => {
