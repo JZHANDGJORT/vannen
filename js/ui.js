@@ -1449,21 +1449,22 @@ if (backpack) {
 const actionsContainer =
     document.getElementById("actions");
 
-actionsContainer.addEventListener("click", (event) => {
-
-    const button = event.target.closest("button");
-
-    if (!button) return;
-
-    const text = button.textContent.trim();
-
-    if (text) {
-        addMessage(text, "user");
-    }
-
-});
-
 if (actionsContainer) {
+
+    actionsContainer.addEventListener("click", (event) => {
+
+        const button = event.target.closest("button");
+
+        if (!button) return;
+
+        const text = button.textContent.trim();
+
+        if (text) {
+            addMessage(text, "user");
+        }
+
+    }, true);
+
 
     const observer =
         new MutationObserver(() => {
