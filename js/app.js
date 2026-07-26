@@ -357,6 +357,27 @@ function blinkCharacter() {
 
 }
 
+function smileCharacter(duration = 1500) {
+
+    const image =
+        document.getElementById("friend-character");
+
+    if (!image || !currentFriend) return;
+
+    image.src =
+        "images/Otis/otis-stone-smile-character.PNG";
+
+    clearTimeout(window.smileTimeout);
+
+    window.smileTimeout = setTimeout(() => {
+
+        image.src =
+            currentFriend.characterImage;
+
+    }, duration);
+
+}
+
 function startCharacterBlinking() {
 
     setInterval(() => {
