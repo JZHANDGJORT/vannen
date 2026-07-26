@@ -18,7 +18,7 @@ function addMessage(text, sender) {
 
             "🎉",
 
-            "😊"
+            "😊",
 
             "❤️",
 
