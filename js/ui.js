@@ -263,16 +263,19 @@ function showBackpackChoice() {
 function openOtisBackpack() {
 
     addMessage(
-        "Hehe, jag blir alltid lite glad när jag får visa vad jag har där i! 😄",
+        "Åh, vad roligt! Jag blir alltid glad när jag får visa vad jag har där i. 💚",
         "otis"
     );
+
+
+    laughCharacter();
 
 
     setTimeout(() => {
 
         showBackpack();
 
-    }, 1200);
+    }, 1500);
 
 }
 
