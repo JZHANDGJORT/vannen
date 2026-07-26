@@ -189,13 +189,6 @@ startCharacterBlinking();
 
 function applyTheme(theme) {
 
-    document.body.style.backgroundColor =
-        theme.colors.background;
-
-    document.body.style.color =
-        theme.colors.text;
-
-
     document.documentElement.style.setProperty(
         "--text-color",
         theme.colors.text
