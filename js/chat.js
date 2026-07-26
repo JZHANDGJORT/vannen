@@ -28,7 +28,9 @@ function addMessage(text, sender) {
 
         if (happyWords.some(word => text.includes(word))) {
 
-    // smileCharacter();
+    smileCharacter();
+
+}
 
 }
 
