@@ -1549,20 +1549,6 @@ function paintIdea(randomIdea) {
 
 function chooseBuildMaterial(material) {
 
-const userTexts = {
-    lego: "🧱 Lego",
-    duplo: "🧸 Duplo",
-    blocks: "🪵 Klossar",
-    fort: "🏕️ Kuddar & filtar",
-    clay: "🪨 Lera",
-    other: "✨ Något annat"
-};
-
-addMessage(
-    userTexts[material],
-    "user"
-);
-    
     const ideas = {
 
         lego: [
