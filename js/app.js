@@ -185,6 +185,11 @@ startCharacterBlinking();
 
 function applyTheme(theme) {
 
+    if (!document.body.classList.contains("friend")) {
+        return;
+    }
+
+
     document.documentElement.style.setProperty(
         "--text-color",
         theme.colors.text
@@ -207,7 +212,6 @@ function applyTheme(theme) {
     }
 
 }
-
 
 
 
