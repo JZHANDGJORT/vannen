@@ -1480,9 +1480,11 @@ if (backpack) {
         setTimeout(() => {
 
             addMessage(
-                "Åh, det här är min ryggsäck! Jag brukar ta med mig små saker från mina äventyr. Vill du öppna den?",
-                "otis"
-            );
+    "Åh, det här är min ryggsäck! Jag brukar ta med mig små saker från mina äventyr. Vill du öppna den?",
+    "otis"
+);
+
+showBackpackChoice();
 
         }, 800);
 
