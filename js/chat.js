@@ -4,6 +4,34 @@ function addMessage(text, sender) {
 
     if (sender === "otis") {
 
+        const happyWords = [
+
+            "Vad roligt",
+
+            "Vad fint",
+
+            "Härligt",
+
+            "Wow",
+
+            "⭐",
+
+            "🎉",
+
+            "😊"
+
+            "❤️",
+
+            "💚"
+
+        ];
+
+        if (happyWords.some(word => text.includes(word))) {
+
+            smileCharacter();
+
+        }
+
         const bubble =
             document.getElementById("friend-bubble");
 
@@ -22,23 +50,18 @@ function addMessage(text, sender) {
     const messages =
         document.getElementById("messages");
 
-
     const message =
         document.createElement("div");
-
 
     message.classList.add(
         "message",
         sender
     );
 
-
     message.textContent =
         text;
 
-
     messages.appendChild(message);
-
 
     scrollToBottom();
 
