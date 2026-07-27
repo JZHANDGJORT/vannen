@@ -1800,7 +1800,7 @@ function closeBackpackRoom() {
 }
 
 /*
-   Test: Otis går hem
+   HEJ DÅ OTIS
 */
 
 function otisLeaves() {
