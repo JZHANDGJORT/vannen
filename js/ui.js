@@ -1857,7 +1857,7 @@ function goodbyePerson(person) {
     if (person === "both") {
 
         addMessage(
-            "Hejdå min vän. 💚 Tack för idag. Jag hoppas vi ses snart igen. Jag finns här när du kommer tillbaka. 🌊",
+            "Då säger jag hej då för idag. 💚 Tack för den här stunden, jag hoppas vi ses snart igen!",
             "otis"
         );
 
