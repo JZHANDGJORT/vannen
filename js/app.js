@@ -147,6 +147,16 @@ if (aboutButton) {
 
 }
 
+    const goodbyeButton =
+    document.getElementById("goodbye-button");
+
+if (goodbyeButton) {
+
+    goodbyeButton.onclick =
+    startGoodbye;
+
+}
+
 const backpack =
     document.getElementById("backpack");
 
