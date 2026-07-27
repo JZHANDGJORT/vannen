@@ -1774,6 +1774,34 @@ function chooseCraft(material) {
 }
 
 /*
+   Ryggsäcksvy
+*/
+
+function openBackpackRoom() {
+
+    document
+        .getElementById("friend-view")
+        .style.display = "none";
+
+    document
+        .getElementById("backpack-view")
+        .style.display = "block";
+
+}
+
+function closeBackpackRoom() {
+
+    document
+        .getElementById("backpack-view")
+        .style.display = "none";
+
+    document
+        .getElementById("friend-view")
+        .style.display = "block";
+
+}
+
+/*
    Test: Otis går hem
 */
 
