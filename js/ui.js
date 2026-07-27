@@ -536,7 +536,7 @@ function simpleActivity(type) {
         "Vad mysigt! 📚 Läs för mig en stund, jag finns här och lyssnar.",
 
         later:
-        "Det går bra. Vi kan läsa en annan gång. 💚",
+        "Det går bra. Jag finns kvar här när du är redo. Så kan vi läsa lite senare när du har hittat något mysigt att läsa tillsammans. 💚",
 
         homework:
         "Jag sitter bredvid dig och hejar på. Du klarar det! 🌿",
