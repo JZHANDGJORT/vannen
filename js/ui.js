@@ -1775,6 +1775,11 @@ addMessage(
 
 function showOtherBuildMaterials() {
 
+addMessage(
+    "Vad spännande! Ibland kan de bästa idéerna komma från saker man redan har hemma. 💚",
+    "otis"
+);
+    
     const actions =
         document.getElementById("actions");
 
