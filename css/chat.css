@@ -116,7 +116,7 @@
 
 #chat {
 
-    width: 90%;
+    width: calc(100% - 24px);
 
     max-width: 420px;
 
