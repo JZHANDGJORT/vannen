@@ -1679,9 +1679,7 @@ clay: [
     "💚 Gör ett hjärta eller en gåva.",
     "🏡 Bygg en liten värld i lera."
 ]
-        other: [
-            "✨ Fantasin bestämmer! Bygg precis vad du vill."
-        ]
+     other: "showOtherBuildMaterials"
 
     };
 
