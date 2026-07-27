@@ -1806,7 +1806,7 @@ function closeBackpackRoom() {
 function showGoodbye() {
 
     addMessage(
-        "Ska någon gå hem nu? 💚 Vem vill du att jag ska säga hejdå till?",
+        "Ska någon gå hem nu? 💚",
         "otis"
     );
 
