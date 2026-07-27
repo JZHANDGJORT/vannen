@@ -303,13 +303,11 @@ function openOtisBackpack() {
         "otis"
     );
 
-
     laughCharacter();
-
 
     setTimeout(() => {
 
-        showBackpack();
+        openBackpackRoom();
 
     }, 1500);
 
