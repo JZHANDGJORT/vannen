@@ -1768,3 +1768,25 @@ function chooseCraft(material) {
     `;
 
 }
+
+/*
+   Test: Otis går hem
+*/
+
+function testOtisGoodbye() {
+
+    const stone =
+        document.getElementById("friend-stone");
+
+    const otis =
+        document.getElementById("friend-character");
+
+
+    if (!stone || !otis) return;
+
+
+    stone.style.opacity = "1";
+
+    otis.style.opacity = "0";
+
+}
