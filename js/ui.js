@@ -1868,6 +1868,11 @@ function goodbyePerson(person) {
 
         }, 1500);
 
+        setTimeout(() => {
+
+    showHomeView();
+
+}, 4000);
 
         return;
 
