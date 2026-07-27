@@ -153,7 +153,7 @@ if (aboutButton) {
 if (goodbyeButton) {
 
     goodbyeButton.onclick =
-    startGoodbye;
+    showGoodbye;
 
 }
 
