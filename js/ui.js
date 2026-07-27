@@ -1851,6 +1851,14 @@ if (otisMemory.companionToday) {
 
     }
 
+actions.innerHTML += `
+
+    <button onclick="showMainMenu()">
+        ⬅️ Tillbaka
+    </button>
+
+`;
+    
 }
 
 function goodbyePerson(person) {
