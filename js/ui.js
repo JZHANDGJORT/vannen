@@ -1008,364 +1008,126 @@ function showDialog() {
 
     actions.innerHTML = `
 
-        <button onclick="dialogAnswer('glad')">
-        Jag mår bra 😊
+        <button onclick="dialogAnswer('bra')">
+            😊 Jag mår bra
         </button>
 
-        <button onclick="dialogAnswer('jobbigt')">
-        Det har varit lite jobbigt 💚
+        <button onclick="dialogAnswer('daligt')">
+            💚 Det känns lite jobbigt
         </button>
 
         <button onclick="dialogAnswer('vetinte')">
-        Jag vet inte riktigt 🤔
+            🤔 Jag vet inte riktigt
         </button>
 
     `;
 
 }
 
+
+
 function dialogAnswer(answer) {
 
-    const userMessages = {
 
-        glad: "Jag mår bra 😊",
-
-        jobbigt: "Det har varit lite jobbigt 💚",
-
-        vetinte: "Jag vet inte riktigt 🤔"
-
-    };
-
-    addMessage(
-
-        userMessages[answer],
-
-        "user"
-
-    );
-
-    const actions =
-        document.getElementById("actions");
-
-
-    if (answer === "glad") {
-
-    const friendDialogs =
-        dialogs[currentFriend.id];
-
-
-    if (!friendDialogs || !friendDialogs[0]) {
+    if (answer === "bra") {
 
         addMessage(
-            "Vad härligt att höra! 🌱 Jag blir glad när du mår bra.",
+            "Vad fint att höra! 🌱 Jag blir glad när du mår bra.",
             "otis"
         );
-
-        showConversationMenu();
-
-        return;
 
     }
 
 
-    const dialog =
-        friendDialogs[0];
-
-
-    const option =
-        dialog.options.find(
-            o => o.user === userMessages.glad
-        );
-
-
-    if (!option) {
+    if (answer === "daligt") {
 
         addMessage(
-            "Vad härligt att höra! 🌱 Jag blir glad när du mår bra.",
+            "Jag är ledsen att höra att det känns jobbigt. 💚 Ibland kan det hjälpa att prata med någon man tycker om och litar på. Jag finns också här med dig en stund.",
             "otis"
         );
 
-        showConversationMenu();
-
-        return;
-
     }
-
-    addMessage(
-        option.reply,
-        "otis"
-    );
-
-
-    actions.innerHTML = "";
-
-
-    option.next.forEach(choice => {
-
-        const button =
-            document.createElement("button");
-
-
-        button.textContent =
-            choice.text;
-
-
-        button.onclick = () => {
-
-            addMessage(
-                choice.user,
-                "user"
-            );
-
-
-            addMessage(
-                choice.reply,
-                "otis"
-            );
-
-            showConversationMenu();
-
-        };
-
-
-        actions.appendChild(button);
-
-    });
-
-}
-
-
-
-    if (answer === "jobbigt") {
-
-        addMessage(
-            "Då kan vi ta det lite lugnt tillsammans. 💚 Vill du berätta mer eller göra något som känns lite lättare?",
-            "otis"
-        );
-
-
-        actions.innerHTML = `
-
-            <button onclick="dialogFollowUp('beratta')">
-                💬 Berätta mer
-            </button>
-
-            <button onclick="dialogFollowUp('lugnt')">
-                🌿 Göra något lugnt
-            </button>
-
-            <button onclick="dialogFollowUp('roligt')">
-                🦦 Tänka på något roligt
-            </button>
-
-        `;
-
-    }
-
 
 
     if (answer === "vetinte") {
 
         addMessage(
-            "Det är helt okej. Ibland är det svårt att veta. Vi kan bara vara här en stund tillsammans. 💚",
+            "Det är helt okej att inte veta. 💚 Ibland behöver man bara stanna upp en stund och känna efter.",
+            "otis"
+        );
+
+    }
+
+
+    setTimeout(() => {
+
+        addMessage(
+            "Vill du bara ta det lugnt tillsammans en stund, eller ska vi hitta på något? 🌊",
             "otis"
         );
 
 
+        const actions =
+            document.getElementById("actions");
+
+
         actions.innerHTML = `
 
-            <button onclick="dialogFollowUp('prata')">
-                💬 Prata lite mer
+            <button onclick="otisChoice('lugnt')">
+                🌿 Bara vara
             </button>
 
-            <button onclick="dialogFollowUp('aktivitet')">
+            <button onclick="otisChoice('aktivitet')">
                 🌱 Hitta på något
             </button>
 
-            <button onclick="dialogFollowUp('lugn')">
-                🌊 Bara vara en stund
+        `;
+
+
+    }, 800);
+
+}
+
+
+
+function otisChoice(choice) {
+
+
+    if (choice === "lugnt") {
+
+        addMessage(
+            "Då gör vi det. 💚 Man behöver inte alltid prata eller göra något. Jag finns här med dig en stund.",
+            "otis"
+        );
+
+
+        const actions =
+            document.getElementById("actions");
+
+
+        actions.innerHTML = `
+
+            <button onclick="showMainMenu()">
+                🦦 Tillbaka när du vill
             </button>
 
         `;
 
     }
 
-}
-
-function dialogFollowUp(choice) {
-
-const followUpMessages = {
-    roligt: "Något roligt hände 🌞",
-    mysigt: "Jag gjorde något mysigt 🦦",
-    beratta: "Jag vill berätta mer 💬",
-    lugnt: "Jag vill göra något lugnt 🌿",
-    aktivitet: "Jag vill hitta på något 🌱",
-    lugn: "Jag vill bara vara en stund 🌊",
-    prata: "Jag vill prata lite mer 💚",
-    vetinte: "Jag vet inte riktigt 🤔"
-};
-
-
-addMessage(
-    followUpMessages[choice],
-    "user"
-);
-    
-    if (choice === "roligt") {
-
-        addMessage(
-            "Vad härligt! 🌱 Jag tycker om att höra om små fina saker. Små stunder kan göra en hel dag bättre.",
-            "otis"
-        );
-
-    }
-
-
-    if (choice === "mysigt") {
-
-        addMessage(
-            "Det låter mysigt. 🦦 Jag gillar när man tar sig tid att göra något som känns bra.",
-            "otis"
-        );
-
-    }
-
-
-    if (choice === "beratta") {
-
-        addMessage(
-            "Jag lyssnar. 💚 Berätta om du vill, jag stannar här en stund.",
-            "otis"
-        );
-
-    }
-
-
-    if (choice === "lugnt" || choice === "lugn") {
-
-        addMessage(
-            "Då gör vi något lugnt tillsammans. 🌊 Vi kan ta en liten paus och bara vara här en stund.",
-            "otis"
-        );
-
-    }
 
 
     if (choice === "aktivitet") {
 
         addMessage(
-            "Jag har en idé! 🌿 Ska vi hitta på något litet tillsammans?",
+            "Vad roligt! 🌿 Då hittar vi på något tillsammans. Vad är du sugen på?",
             "otis"
         );
 
-    }
 
-
-    if (choice === "prata") {
-
-        addMessage(
-            "Jag lyssnar gärna. Vad tänker du på?",
-            "otis"
-        );
+        showActivity();
 
     }
-
-
-    if (choice === "vetinte") {
-
-        addMessage(
-            "Det är okej. Ibland behöver man inte ha ett svar direkt. 💚",
-            "otis"
-        );
-
-    }
-
-
-addMessage(
-    "Vill du fortsätta prata en stund eller ska vi hitta på något annat? 🌊",
-    "otis"
-);
-
-
-const actions =
-    document.getElementById("actions");
-
-
-actions.innerHTML = `
-
-    <button onclick="continueDialog()">
-    💬 Prata lite till
-</button>
-
-    <button onclick="showActivity()">
-        🌱 Hitta på något
-    </button>
-
-    <button onclick="showMainMenu()">
-        🦦 Tillbaka till menyn
-    </button>
-
-`;
-
-}
-
-function continueDialog() {
-
-    addMessage(
-        "Jag vill prata lite mer 💚",
-        "user"
-    );
-
-
-    addMessage(
-        "Jag lyssnar gärna. Vill du berätta lite mer? 💚",
-        "otis"
-    );
-
-
-    const actions =
-        document.getElementById("actions");
-
-
-    actions.innerHTML = `
-
-    <button onclick="showDialog()">
-        💬 Berätta mer
-    </button>
-
-    <button onclick="showActivity()">
-        🌱 Hitta på något tillsammans
-    </button>
-
-    <button onclick="showMainMenu()">
-        🦦 Tillbaka till menyn
-    </button>
-
-`;
-
-}
-
-function showConversationMenu() {
-
-    const actions =
-        document.getElementById("actions");
-
-
-    actions.innerHTML = `
-
-        <button onclick="continueDialog()">
-            💬 Prata lite till
-        </button>
-
-        <button onclick="showActivity()">
-            🌱 Hitta på något tillsammans
-        </button>
-
-        <button onclick="showMainMenu()">
-            🦦 Tillbaka till menyn
-        </button>
-
-    `;
 
 }
 
