@@ -101,6 +101,36 @@
 
 }
 
+
+/*
+   Otis sten
+*/
+
+#friend-stone {
+
+    position: absolute;
+
+    width: 290px;
+
+    left: 55%;
+
+    bottom: 58%;
+
+    transform: translateX(-50%);
+
+    opacity: 0;
+
+    z-index: 2;
+
+    transition: opacity 3s ease;
+
+}
+
+
+/*
+   Otis figur
+*/
+
 #friend-character {
 
     position: absolute;
@@ -114,6 +144,8 @@
     transform: translateX(-50%);
 
     z-index: 3;
+
+    transition: opacity 3s ease;
 
 }
 
