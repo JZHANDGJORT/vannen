@@ -1779,9 +1779,9 @@ function goodbyePerson(person) {
 
         setTimeout(() => {
 
-    showHomeView();
+    resetOtisView();
 
-}, 4000);
+}, 6000);
 
         return;
 
@@ -1810,9 +1810,9 @@ function goodbyePerson(person) {
 
         setTimeout(() => {
 
-            showHomeView();
+    resetOtisView();
 
-        }, 4000);
+}, 6000);
 
         return;
 
@@ -1857,5 +1857,26 @@ function otisLeaves() {
     stone.style.opacity = "1";
 
     otis.style.opacity = "0";
+
+}
+
+function resetOtisView() {
+
+    const stone =
+        document.getElementById("friend-stone");
+
+    const otis =
+        document.getElementById("friend-character");
+
+
+    if (!stone || !otis) return;
+
+
+    stone.style.opacity = "0";
+
+    otis.style.opacity = "1";
+
+
+    showMainMenu();
 
 }
