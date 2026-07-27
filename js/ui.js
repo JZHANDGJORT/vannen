@@ -1811,13 +1811,19 @@ function showGoodbye() {
         document.getElementById("actions");
 
 
-    actions.innerHTML = `
+    actions.innerHTML = "";
+
+if (otisMemory.companionToday) {
+
+    actions.innerHTML += `
 
         <button onclick="goodbyePerson('both')">
             🦦 Vi går båda
         </button>
 
     `;
+
+}
 
 
     if (otisMemory.owner) {
@@ -1880,9 +1886,32 @@ function goodbyePerson(person) {
 
     if (person === "owner") {
 
-        name = otisMemory.owner.name;
+    name = otisMemory.owner.name;
+
+    if (!otisMemory.companionToday) {
+
+        addMessage(
+            `Hejdå ${name}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
+            "otis"
+        );
+
+        setTimeout(() => {
+
+            otisLeaves();
+
+        }, 1500);
+
+        setTimeout(() => {
+
+            showHomeView();
+
+        }, 4000);
+
+        return;
 
     }
+
+}
 
 
     if (person === "companion") {
