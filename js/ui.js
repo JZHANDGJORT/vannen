@@ -1679,9 +1679,49 @@ clay: [
     "💚 Gör ett hjärta eller en gåva.",
     "🏡 Bygg en liten värld i lera."
 ],
-     other: "showOtherBuildMaterials"
+     other: "showOtherBuildMaterials",
 
-    };
+nature: [
+
+    "🌿 Bygg något av saker du hittar i naturen.",
+
+    "🍂 Skapa ett konstverk av löv och pinnar."
+
+],
+
+cardboard: [
+
+    "📦 Bygg något av en kartong.",
+
+    "✂️ Skapa något med papper och kartong."
+
+],
+
+fabric: [
+
+    "🧶 Skapa något mjukt med tyg eller garn.",
+
+    "🏕️ Bygg en mysig plats med olika tyger."
+
+],
+
+recycle: [
+
+    "♻️ Förvandla något gammalt till något nytt.",
+
+    "✨ Bygg något av saker som annars skulle slängas."
+
+],
+
+mixed: [
+
+    "🌈 Blanda olika material och skapa något helt eget.",
+
+    "🦦 Bygg något som Otis aldrig har sett förut."
+
+]
+
+};
 
 
     const list = ideas[material];
