@@ -347,6 +347,10 @@ function showActivity() {
             🧹 Röja lite
         </button>
 
+        <button onclick="showMainMenu()">
+        ⬅️ Tillbaka
+        </button>
+
     `;
 
 }
@@ -373,6 +377,10 @@ function chooseActivityNeed(type) {
 
             <button onclick="chooseActivityPlace('outdoor')">
                 🌳 Ute
+            </button>
+
+            <button onclick="showActivity()">
+            ⬅️ Tillbaka
             </button>
 
         `;
@@ -462,6 +470,10 @@ function chooseActivityNeed(type) {
                 ✂️ Pyssla
             </button>
 
+            <button onclick="showActivity()">
+            ⬅️ Tillbaka
+            </button>
+            
         `;
 
         return;
@@ -485,6 +497,10 @@ function chooseActivityNeed(type) {
 
             <button onclick="simpleActivity('pause')">
                 💚 Bara vara
+            </button>
+
+            <button onclick="showActivity()">
+            ⬅️ Tillbaka
             </button>
 
         `;
@@ -518,6 +534,10 @@ function chooseActivityNeed(type) {
 
         <button onclick="simpleActivity('box')">
             📦 Gå igenom en låda eller ett skåp
+        </button>
+
+        <button onclick="showActivity()">
+        ⬅️ Tillbaka
         </button>
 
     `;
@@ -593,6 +613,12 @@ function simpleActivity(type) {
             ✨ Ge mig en idé
         </button>
 
+        <button onclick="chooseActivityNeed(type)">
+        ⬅️ Tillbaka
+        </button>
+
+
+
     `;
 
     return;
@@ -630,6 +656,10 @@ function simpleActivity(type) {
             ✨ Något annat
         </button>
 
+        <button onclick="chooseActivityNeed(type)">
+        ⬅️ Tillbaka
+        </button>
+
     `;
 
     return;
@@ -657,6 +687,10 @@ function simpleActivity(type) {
 
         <button onclick="chooseCraft('yarn')">
             🧶 Garn
+        </button>
+
+        <button onclick="chooseActivityNeed(type)">
+        ⬅️ Tillbaka
         </button>
 
     `;
