@@ -1,1 +1,29 @@
+/*
+   Otis ryggsäcksvy
+*/
 
+
+#backpack-view {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+#backpack-world {
+
+    width: 100%;
+
+    height: 100vh;
+
+    object-fit: cover;
+
+    display: block;
+
+}
