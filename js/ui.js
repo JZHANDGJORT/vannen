@@ -1803,6 +1803,108 @@ function closeBackpackRoom() {
    HEJ DÅ OTIS
 */
 
+function showGoodbye() {
+
+    addMessage(
+        "Ska någon gå hem nu? 💚 Vem vill du att jag ska säga hejdå till?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="goodbyePerson('both')">
+            🦦 Vi går båda
+        </button>
+
+    `;
+
+
+    if (otisMemory.owner) {
+
+        actions.innerHTML += `
+
+            <button onclick="goodbyePerson('owner')">
+                🌿 ${otisMemory.owner.name} går
+            </button>
+
+        `;
+
+    }
+
+
+    if (otisMemory.companionToday) {
+
+        actions.innerHTML += `
+
+            <button onclick="goodbyePerson('companion')">
+                🌿 ${otisMemory.companionToday.name} går
+            </button>
+
+        `;
+
+    }
+
+}
+
+function goodbyePerson(person) {
+
+
+    if (person === "both") {
+
+        addMessage(
+            "Hejdå min vän. 💚 Tack för idag. Jag hoppas vi ses snart igen. Jag finns här när du kommer tillbaka. 🌊",
+            "otis"
+        );
+
+
+        setTimeout(() => {
+
+            otisLeaves();
+
+        }, 1500);
+
+
+        return;
+
+    }
+
+
+    let name = "";
+
+
+    if (person === "owner") {
+
+        name = otisMemory.owner.name;
+
+    }
+
+
+    if (person === "companion") {
+
+        name = otisMemory.companionToday.name;
+
+    }
+
+
+    addMessage(
+        `Hejdå ${name}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
+        "otis"
+    );
+
+
+    setTimeout(() => {
+
+        showMainMenu();
+
+    }, 2000);
+
+}
+
 function otisLeaves() {
 
     const stone =
