@@ -1635,35 +1635,50 @@ function chooseBuildMaterial(material) {
 
     const ideas = {
 
-        lego: [
-            "🧱 Bygg ett hus där Otis kan bo.",
-            "🚗 Bygg ett fordon som kan åka på äventyr.",
-            "🏰 Bygg ett slott med torn."
-        ],
+lego: [
+    "🧱 Bygg ett hus där Otis kan bo.",
+    "🚗 Bygg ett fordon som kan åka på äventyr.",
+    "🏰 Bygg ett slott med torn.",
+    "🌉 Bygg en bro som Otis kan gå över.",
+    "🦦 Bygg en kompis till Otis.",
+    "🏝️ Bygg en egen liten värld."
+],
 
-        duplo: [
-            "🏠 Bygg ett mysigt hem.",
-            "🦦 Bygg en plats där ett djur kan trivas.",
-            "🌳 Bygg en liten värld med natur."
-        ],
+duplo: [
+    "🏠 Bygg ett mysigt hem.",
+    "🦦 Bygg en plats där ett djur kan trivas.",
+    "🌳 Bygg en liten värld med natur.",
+    "🚜 Bygg ett fordon för äventyr.",
+    "🏥 Bygg något där någon kan få hjälp.",
+    "🏰 Bygg en spännande plats att upptäcka."
+],
 
-        blocks: [
-            "🏰 Bygg det högsta tornet du kan.",
-            "🌉 Bygg en bro över ett låtsasvatten.",
-            "🏡 Bygg ett eget litet hus."
-        ],
+blocks: [
+    "🏰 Bygg det högsta tornet du kan.",
+    "🌉 Bygg en bro över ett låtsasvatten.",
+    "🏡 Bygg ett eget litet hus.",
+    "🗼 Bygg ett torn som når molnen.",
+    "🦉 Bygg ett hem åt ett djur.",
+    "🌊 Bygg något som passar vid Otis vatten."
+],
 
-        fort: [
-            "🏕️ Bygg en mysig koja där du och Otis kan vila.",
-            "✨ Gör en hemlig plats för äventyr."
-        ],
+fort: [
+    "🏕️ Bygg en mysig koja där du och Otis kan vila.",
+    "✨ Gör en hemlig plats för äventyr.",
+    "📚 Bygg en läshörna.",
+    "🌧️ Bygg en plats där man kan mysa när det regnar.",
+    "🦦 Gör en koja där Otis kan hälsa på.",
+    "🌿 Bygg en gömd plats i naturen."
+],
 
-        clay: [
-            "🪨 Forma ett djur.",
-            "🌿 Skapa en liten skatt till Otis.",
-            "🦦 Gör något som kan bo i Otis värld."
-        ],
-
+clay: [
+    "🪨 Forma ett djur.",
+    "🌿 Skapa en liten skatt till Otis.",
+    "🦦 Gör något som kan bo i Otis värld.",
+    "🍄 Skapa en liten figur från naturen.",
+    "💚 Gör ett hjärta eller en gåva.",
+    "🏡 Bygg en liten värld i lera."
+]
         other: [
             "✨ Fantasin bestämmer! Bygg precis vad du vill."
         ]
