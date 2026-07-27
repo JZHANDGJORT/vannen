@@ -1678,7 +1678,7 @@ clay: [
     "🍄 Skapa en liten figur från naturen.",
     "💚 Gör ett hjärta eller en gåva.",
     "🏡 Bygg en liten värld i lera."
-]
+],
      other: "showOtherBuildMaterials"
 
     };
@@ -1687,10 +1687,19 @@ clay: [
     const list = ideas[material];
 
 
-    addMessage(
-        list[Math.floor(Math.random() * list.length)],
-        "otis"
-    );
+if (list === "showOtherBuildMaterials") {
+
+    showOtherBuildMaterials();
+
+    return;
+
+}
+
+
+addMessage(
+    list[Math.floor(Math.random() * list.length)],
+    "otis"
+);
 
 
     currentActivity = {
