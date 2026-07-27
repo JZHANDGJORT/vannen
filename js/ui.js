@@ -1781,7 +1781,7 @@ function goodbyePerson(person) {
 
     resetOtisView();
 
-}, 6000);
+}, 12000);
 
         return;
 
@@ -1812,7 +1812,7 @@ function goodbyePerson(person) {
 
     resetOtisView();
 
-}, 6000);
+}, 12000);
 
         return;
 
