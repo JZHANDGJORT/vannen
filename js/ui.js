@@ -1724,6 +1724,42 @@ clay: [
 
 }
 
+function showOtherBuildMaterials() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="chooseBuildMaterial('nature')">
+            🌿 Naturmaterial
+        </button>
+
+        <button onclick="chooseBuildMaterial('cardboard')">
+            📦 Kartong & papper
+        </button>
+
+        <button onclick="chooseBuildMaterial('fabric')">
+            🧶 Tyger & garn
+        </button>
+
+        <button onclick="chooseBuildMaterial('recycle')">
+            ♻️ Återbruk
+        </button>
+
+        <button onclick="chooseBuildMaterial('mixed')">
+            ✨ Blandat
+        </button>
+
+        <button onclick="showBuildMenu()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
 function chooseCraft(material) {
 
     const ideas = {
