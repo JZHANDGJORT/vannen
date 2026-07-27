@@ -1803,7 +1803,7 @@ function closeBackpackRoom() {
    Test: Otis går hem
 */
 
-function testOtisGoodbye() {
+function otisLeaves() {
 
     const stone =
         document.getElementById("friend-stone");
