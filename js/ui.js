@@ -1568,9 +1568,9 @@ addMessage(
             ✨ Blandat
         </button>
 
-        <button onclick="showBuildMenu()">
-            ⬅️ Tillbaka
-        </button>
+        <button onclick="simpleActivity('build')">
+    ⬅️ Tillbaka
+</button>
 
     `;
 
