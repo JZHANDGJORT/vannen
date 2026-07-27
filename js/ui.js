@@ -47,10 +47,6 @@ function showMainMenu() {
         <span>Prata med Otis</span>
     </button>
 
-    <button onclick="testOtisGoodbye()">
-        🦦 Testa hejdå
-    </button>
-
 `;
 
 
