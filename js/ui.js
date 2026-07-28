@@ -1667,6 +1667,48 @@ function chooseCraft(material) {
 }
 
 /*
+   Kom ihåg dagens vy
+*/
+
+function saveCurrentView(view) {
+
+    localStorage.setItem(
+        "otisCurrentView",
+        view
+    );
+
+    localStorage.setItem(
+        "otisCurrentDate",
+        new Date().toDateString()
+    );
+
+}
+
+function getCurrentView() {
+
+    const savedDate =
+        localStorage.getItem("otisCurrentDate");
+
+    const today =
+        new Date().toDateString();
+
+    if (savedDate !== today) {
+
+        localStorage.removeItem("otisCurrentView");
+        localStorage.removeItem("otisCurrentDate");
+
+        return "friend";
+
+    }
+
+    return (
+        localStorage.getItem("otisCurrentView")
+        || "friend"
+    );
+
+}
+
+/*
    Ryggsäcksvy
 */
 
