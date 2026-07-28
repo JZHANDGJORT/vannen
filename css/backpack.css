@@ -32,7 +32,7 @@
 
 
 /*
-   Böcker i ryggsäcken
+   Föremål i ryggsäcken
 */
 
 
@@ -110,6 +110,23 @@
 
 
 .backpack-fotoalbum {
+
+    left:20%;
+
+    top: 40%;
+
+    width: 150px;
+
+    transform: rotate(-13deg);
+
+}
+
+/*
+   Hjärtsten
+*/
+
+
+.backpack-heartstone {
 
     left:20%;
 
