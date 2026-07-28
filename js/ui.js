@@ -1677,29 +1677,9 @@ function saveCurrentView(view) {
         view
     );
 
-    localStorage.setItem(
-        "otisCurrentDate",
-        new Date().toDateString()
-    );
-
 }
 
 function getCurrentView() {
-
-    const savedDate =
-        localStorage.getItem("otisCurrentDate");
-
-    const today =
-        new Date().toDateString();
-
-    if (savedDate !== today) {
-
-        localStorage.removeItem("otisCurrentView");
-        localStorage.removeItem("otisCurrentDate");
-
-        return "friend";
-
-    }
 
     return (
         localStorage.getItem("otisCurrentView")
