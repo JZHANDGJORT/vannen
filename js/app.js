@@ -71,6 +71,8 @@ function startApp() {
 
     startFriend(friend);
 
+    restoreCurrentView();
+
 }
 
 
@@ -178,7 +180,6 @@ if (!otisMemory.owner) {
 
 startCharacterBlinking();
 
-restoreCurrentView();
     
 }
 
