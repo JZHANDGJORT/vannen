@@ -71,14 +71,6 @@ function startApp() {
 
     startFriend(friend);
 
-
-setTimeout(() => {
-
-    restoreCurrentView();
-
-}, 100);
-
-
 }
 
 
