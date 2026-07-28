@@ -1714,6 +1714,8 @@ function getCurrentView() {
 
 function openBackpackRoom() {
 
+    saveCurrentView("backpack");
+
     document
         .getElementById("friend-view")
         .style.display = "none";
@@ -1725,6 +1727,8 @@ function openBackpackRoom() {
 }
 
 function closeBackpackRoom() {
+
+    saveCurrentView("friend");
 
     document
         .getElementById("backpack-view")
