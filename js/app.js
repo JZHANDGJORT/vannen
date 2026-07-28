@@ -72,12 +72,13 @@ function startApp() {
     startFriend(friend);
 
 
+
+    // Återställ dagens Otis-vy
+
+    restoreCurrentView();
+
+
 }
-
-
-
-
-
 
 
 function showHomeView() {
