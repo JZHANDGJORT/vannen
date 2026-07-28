@@ -185,6 +185,8 @@ if (!otisMemory.owner) {
 }
 
 startCharacterBlinking();
+
+restoreCurrentView();
     
 }
 
