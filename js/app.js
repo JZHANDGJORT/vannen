@@ -72,10 +72,11 @@ function startApp() {
     startFriend(friend);
 
 
-
-    // Återställ dagens Otis-vy
+setTimeout(() => {
 
     restoreCurrentView();
+
+}, 100);
 
 
 }
