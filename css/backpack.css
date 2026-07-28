@@ -16,6 +16,7 @@
 }
 
 
+
 #backpack-world {
 
     width: 100%;
@@ -25,5 +26,75 @@
     object-fit: cover;
 
     display: block;
+
+}
+
+
+
+/*
+   Böcker och saker i ryggsäcken
+*/
+
+
+.backpack-item {
+
+    position: absolute;
+
+    width: 80px;
+
+    z-index: 2;
+
+}
+
+
+
+/*
+   Placering av böcker
+*/
+
+
+.backpack-receptbok {
+
+    left: 42%;
+
+    top: 38%;
+
+    transform: rotate(-8deg);
+
+}
+
+
+
+.backpack-sagobok {
+
+    left: 53%;
+
+    top: 35%;
+
+    transform: rotate(5deg);
+
+}
+
+
+
+.backpack-faktabok {
+
+    left: 48%;
+
+    top: 44%;
+
+    transform: rotate(-3deg);
+
+}
+
+
+
+.backpack-fotoalbum {
+
+    left: 60%;
+
+    top: 43%;
+
+    transform: rotate(8deg);
 
 }
