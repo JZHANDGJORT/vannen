@@ -91,11 +91,11 @@
 
 .backpack-faktabok {
 
-    left: 48%;
+    left: 40%;
 
     top: 44%;
 
-    width: 130px;
+    width: 150px;
 
     transform: rotate(-3deg);
 
@@ -110,11 +110,11 @@
 
 .backpack-fotoalbum {
 
-    left: 60%;
+    left:20%;
 
     top: 43%;
 
-    width: 110px;
+    width: 130px;
 
     transform: rotate(8deg);
 
