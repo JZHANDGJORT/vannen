@@ -53,9 +53,9 @@
 
 .backpack-receptbok {
 
-    left: 20%;
+    left: 27%;
 
-    top: 10%;
+    top: 12%;
 
     width: 230px;
 
@@ -128,11 +128,11 @@
 
 .backpack-heartstone {
 
-    left:20%;
+    left:40%;
 
-    top: 40%;
+    top: 50%;
 
-    width: 150px;
+    width: 100px;
 
     transform: rotate(-13deg);
 
