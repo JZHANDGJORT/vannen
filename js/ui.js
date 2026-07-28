@@ -1748,7 +1748,13 @@ function restoreCurrentView() {
 
     if (view === "backpack") {
 
-        openBackpackRoom();
+        document
+            .getElementById("friend-view")
+            .style.display = "none";
+
+        document
+            .getElementById("backpack-view")
+            .style.display = "block";
 
     }
 
