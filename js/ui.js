@@ -1740,6 +1740,20 @@ function closeBackpackRoom() {
 
 }
 
+function restoreCurrentView() {
+
+    const view =
+        getCurrentView();
+
+
+    if (view === "backpack") {
+
+        openBackpackRoom();
+
+    }
+
+}
+
 /*
    HEJ DÅ OTIS
 */
