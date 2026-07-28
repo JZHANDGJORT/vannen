@@ -55,11 +55,11 @@
 
     left: 20%;
 
-    top: 30%;
+    top: 25%;
 
     width: 200px;
 
-    transform: rotate(-8deg);
+    transform: rotate(8deg);
 
 }
 
@@ -74,11 +74,11 @@
 
     left: 10%;
 
-    top: 35%;
+    top: 30%;
 
-    width: 200px;
+    width: 190px;
 
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
 
 }
 
