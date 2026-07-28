@@ -59,9 +59,28 @@
 
     width: 230px;
 
-    transform: rotate(3deg);
+    transform: rotate(30deg);
 
 }
+
+
+/*
+   Faktabok
+*/
+
+
+.backpack-faktabok {
+
+    left: 34%;
+
+    top: 37%;
+
+    width: 170px;
+
+    transform: rotate(2deg);
+
+}
+
 
 
 
@@ -82,24 +101,6 @@
 
 }
 
-
-
-/*
-   Faktabok
-*/
-
-
-.backpack-faktabok {
-
-    left: 34%;
-
-    top: 37%;
-
-    width: 170px;
-
-    transform: rotate(2deg);
-
-}
 
 
 
