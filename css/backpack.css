@@ -32,15 +32,13 @@
 
 
 /*
-   Böcker och saker i ryggsäcken
+   Böcker i ryggsäcken
 */
 
 
 .backpack-item {
 
     position: absolute;
-
-    width: 80px;
 
     z-index: 2;
 
@@ -49,7 +47,7 @@
 
 
 /*
-   Placering av böcker
+   Receptbok
 */
 
 
@@ -59,10 +57,17 @@
 
     top: 38%;
 
+    width: 90px;
+
     transform: rotate(-8deg);
 
 }
 
+
+
+/*
+   Sagobok
+*/
 
 
 .backpack-sagobok {
@@ -71,10 +76,17 @@
 
     top: 35%;
 
+    width: 80px;
+
     transform: rotate(5deg);
 
 }
 
+
+
+/*
+   Faktabok
+*/
 
 
 .backpack-faktabok {
@@ -83,10 +95,17 @@
 
     top: 44%;
 
+    width: 75px;
+
     transform: rotate(-3deg);
 
 }
 
+
+
+/*
+   Fotoalbum
+*/
 
 
 .backpack-fotoalbum {
@@ -94,6 +113,8 @@
     left: 60%;
 
     top: 43%;
+
+    width: 70px;
 
     transform: rotate(8deg);
 
