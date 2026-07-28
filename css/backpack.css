@@ -64,25 +64,6 @@
 }
 
 
-/*
-   Faktabok
-*/
-
-
-.backpack-faktabok {
-
-    left: 34%;
-
-    top: 37%;
-
-    width: 170px;
-
-    transform: rotate(2deg);
-
-}
-
-
-
 
 /*
    Sagobok
@@ -98,6 +79,25 @@
     width: 200px;
 
     transform: rotate(-5deg);
+
+}
+
+
+
+/*
+   Faktabok
+*/
+
+
+.backpack-faktabok {
+
+    left: 34%;
+
+    top: 37%;
+
+    width: 170px;
+
+    transform: rotate(2deg);
 
 }
 
