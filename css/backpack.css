@@ -137,3 +137,19 @@
     transform: rotate(-13deg);
 
 }
+
+/*
+   TALLKOTTE
+*/
+
+.backpack-pinecone {
+
+    left: 27%;
+
+    top: 25%;
+
+    width: 210px;
+
+    transform: rotate(3deg);
+
+}
