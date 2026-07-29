@@ -19,6 +19,8 @@ function startApp() {
     const friendId =
         params.get("id");
 
+    const view =
+    window.location.hash;
 
 
     // Visa startsida
