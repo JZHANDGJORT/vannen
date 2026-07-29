@@ -145,9 +145,9 @@
 
 .backpack-shell {
 
-    left:72%;
+    left:75%;
 
-    top: 35%;
+    top: 40%;
 
     width: 90px;
 
@@ -162,9 +162,9 @@
 
 .backpack-pinecone {
 
-    left: 66%;
+    left: 62%;
 
-    top: 41%;
+    top: 45%;
 
     width: 95px;
 
@@ -179,9 +179,9 @@
 
 .backpack-blackstone {
 
-    left:35%;
+    left:32%;
 
-    top: 56%;
+    top: 52%;
 
     width: 95px;
 
@@ -199,11 +199,11 @@
 
     left:12%;
 
-    top: 58%;
+    top: 52%;
 
-    width: 100px;
+    width: 120px;
 
-    transform: rotate(35deg);
+    transform: rotate(45deg);
 
 }
 
