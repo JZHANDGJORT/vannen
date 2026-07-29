@@ -1745,40 +1745,24 @@ function restoreCurrentView() {
         getCurrentView();
 
 
-    // URL har alltid företräde
     if (hash === "#backpack") {
 
-    setTimeout(() => {
+        openBackpackRoom(false);
 
-        document
-            .getElementById("friend-view")
-            .style.display = "none";
+        return;
 
-        document
-            .getElementById("backpack-view")
-            .style.display = "block";
-
-    }, 500);
-
-    return;
-
-}
+    }
 
 
-    // Fallback till sparad vy
     if (view === "backpack") {
 
-        document
-            .getElementById("friend-view")
-            .style.display = "none";
-
-        document
-            .getElementById("backpack-view")
-            .style.display = "block";
+        openBackpackRoom(false);
 
     }
 
 }
+
+
 /*
    HEJ DÅ OTIS
 */
