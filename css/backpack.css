@@ -145,13 +145,13 @@
 
 .backpack-shell {
 
-    left:70%;
+    left:72%;
 
     top: 35%;
 
-    width: 100px;
+    width: 90px;
 
-    transform: rotate(-13deg);
+    transform: rotate(-17deg);
 
 }
 
@@ -166,7 +166,7 @@
 
     top: 41%;
 
-    width: 100px;
+    width: 95px;
 
     transform: rotate(3deg);
 
@@ -181,11 +181,11 @@
 
     left:35%;
 
-    top: 52%;
+    top: 56%;
 
-    width: 85px;
+    width: 95px;
 
-    transform: rotate(30deg);
+    transform: rotate(35deg);
 
 }
 
@@ -197,13 +197,13 @@
 
 .backpack-oaktwig {
 
-    left:15%;
+    left:12%;
 
-    top: 52%;
+    top: 58%;
 
     width: 100px;
 
-    transform: rotate(25deg);
+    transform: rotate(35deg);
 
 }
 
