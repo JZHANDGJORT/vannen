@@ -1692,15 +1692,19 @@ function getCurrentView() {
    Ryggsäcksvy
 */
 
-function openBackpackRoom() {
+function openBackpackRoom(updateUrl = true) {
 
     saveCurrentView("backpack");
 
-    history.replaceState(
-        null,
-        "",
-        `?id=${currentFriend.id}#backpack`
-    );
+    if (updateUrl && currentFriend) {
+
+        history.replaceState(
+            null,
+            "",
+            `?id=${currentFriend.id}#backpack`
+        );
+
+    }
 
     document
         .getElementById("friend-view")
