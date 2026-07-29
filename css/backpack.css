@@ -132,11 +132,29 @@
 
     top: 52%;
 
+    width: 120px;
+
+    transform: rotate(-13deg);
+
+}
+
+/*
+   SNIGEL SNÄCKA
+*/
+
+
+.backpack-shell {
+
+    left:70%;
+
+    top: 35%;
+
     width: 100px;
 
     transform: rotate(-13deg);
 
 }
+
 
 /*
    TALLKOTTE
@@ -144,7 +162,7 @@
 
 .backpack-pinecone {
 
-    left: 68%;
+    left: 66%;
 
     top: 41%;
 
@@ -165,28 +183,12 @@
 
     top: 52%;
 
-    width: 100px;
+    width: 85px;
 
-    transform: rotate(25deg);
-
-}
-
-/*
-   SNIGEL SNÄCKA
-*/
-
-
-.backpack-shell {
-
-    left:67%;
-
-    top: 35%;
-
-    width: 100px;
-
-    transform: rotate(-13deg);
+    transform: rotate(30deg);
 
 }
+
 
 /*
    EK KVIST
@@ -195,13 +197,13 @@
 
 .backpack-oaktwig {
 
-    left:17%;
+    left:15%;
 
     top: 52%;
 
     width: 100px;
 
-    transform: rotate(15deg);
+    transform: rotate(25deg);
 
 }
 
