@@ -285,17 +285,6 @@ if (characterElement) {
 }
 
 
-const characterElement =
-    document.getElementById("friend-character");
-
-
-if (characterElement) {
-
-    characterElement.src =
-        friend.characterImage;
-
-}
-
 function showGreeting(friend) {
 
 
