@@ -63,15 +63,16 @@ function startApp() {
 
 
 
-    // Visa vänsida
+// Visa vänsida
 
-    showFriendView();
+showFriendView();
+
+startFriend(friend);
 
 
+if (window.location.hash === "#backpack") {
 
-    startFriend(friend);
-
-    restoreCurrentView();
+    openBackpackRoom(false);
 
 }
 
