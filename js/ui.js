@@ -1744,6 +1744,8 @@ function restoreCurrentView() {
     // URL har alltid företräde
     if (hash === "#backpack") {
 
+    setTimeout(() => {
+
         document
             .getElementById("friend-view")
             .style.display = "none";
@@ -1752,9 +1754,11 @@ function restoreCurrentView() {
             .getElementById("backpack-view")
             .style.display = "block";
 
-        return;
+    }, 500);
 
-    }
+    return;
+
+}
 
 
     // Fallback till sparad vy
