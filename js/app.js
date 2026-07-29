@@ -71,6 +71,7 @@ startFriend(friend);
 
 restoreCurrentView();
 
+}    
 
 function showHomeView() {
 
