@@ -1741,35 +1741,13 @@ function restoreCurrentView() {
         getCurrentView();
 
 
-    // URL har alltid företräde
-    if (hash === "#backpack") {
+    if (hash === "#backpack" || view === "backpack") {
 
-        document
-            .getElementById("friend-view")
-            .style.display = "none";
-
-        document
-            .getElementById("backpack-view")
-            .style.display = "block";
-
-        return;
+        openBackpackRoom();
 
     }
 
-
-    // Fallback till sparad vy
-    if (view === "backpack") {
-
-        document
-            .getElementById("friend-view")
-            .style.display = "none";
-
-        document
-            .getElementById("backpack-view")
-            .style.display = "block";
-
-    }
-
+}
 }
 
 /*
