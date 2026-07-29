@@ -69,12 +69,7 @@ showFriendView();
 
 startFriend(friend);
 
-
-if (window.location.hash === "#backpack") {
-
-    openBackpackRoom(false);
-
-}
+restoreCurrentView();
 
 
 function showHomeView() {
