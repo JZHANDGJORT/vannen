@@ -1696,6 +1696,12 @@ function openBackpackRoom() {
 
     saveCurrentView("backpack");
 
+    history.replaceState(
+        null,
+        "",
+        `?id=${currentFriend.id}#backpack`
+    );
+
     document
         .getElementById("friend-view")
         .style.display = "none";
@@ -1709,6 +1715,12 @@ function openBackpackRoom() {
 function closeBackpackRoom() {
 
     saveCurrentView("friend");
+
+    history.replaceState(
+        null,
+        "",
+        `?id=${currentFriend.id}`
+    );
 
     document
         .getElementById("backpack-view")
