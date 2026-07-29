@@ -1734,10 +1734,30 @@ function closeBackpackRoom() {
 
 function restoreCurrentView() {
 
+    const hash =
+        window.location.hash;
+
     const view =
         getCurrentView();
 
 
+    // URL har alltid företräde
+    if (hash === "#backpack") {
+
+        document
+            .getElementById("friend-view")
+            .style.display = "none";
+
+        document
+            .getElementById("backpack-view")
+            .style.display = "block";
+
+        return;
+
+    }
+
+
+    // Fallback till sparad vy
     if (view === "backpack") {
 
         document
