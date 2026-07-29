@@ -1741,15 +1741,36 @@ function restoreCurrentView() {
         getCurrentView();
 
 
-    if (hash === "#backpack" || view === "backpack") {
+    // URL har alltid företräde
+    if (hash === "#backpack") {
 
-        openBackpackRoom();
+        document
+            .getElementById("friend-view")
+            .style.display = "none";
+
+        document
+            .getElementById("backpack-view")
+            .style.display = "block";
+
+        return;
+
+    }
+
+
+    // Fallback till sparad vy
+    if (view === "backpack") {
+
+        document
+            .getElementById("friend-view")
+            .style.display = "none";
+
+        document
+            .getElementById("backpack-view")
+            .style.display = "block";
 
     }
 
 }
-}
-
 /*
    HEJ DÅ OTIS
 */
