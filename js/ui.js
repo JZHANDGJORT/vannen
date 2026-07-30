@@ -1738,25 +1738,15 @@ function closeBackpackRoom() {
 
 function restoreCurrentView() {
 
-    const hash =
-        window.location.hash;
+    if (getCurrentView() === "backpack") {
 
-    const view =
-        getCurrentView();
+        document.getElementById("friend-view").style.display = "none";
+        document.getElementById("backpack-view").style.display = "block";
 
+    } else {
 
-    if (hash === "#backpack") {
-
-        openBackpackRoom(false);
-
-        return;
-
-    }
-
-
-    if (view === "backpack") {
-
-        openBackpackRoom(false);
+        document.getElementById("friend-view").style.display = "block";
+        document.getElementById("backpack-view").style.display = "none";
 
     }
 
