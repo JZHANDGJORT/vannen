@@ -112,6 +112,23 @@
 
 }
 
+
+/*
+  KASTANJ
+*/
+
+.backpack-chestnut-green {
+
+    left: 70%;
+
+    top: 43%;
+
+    width: 80px;
+
+    transform: rotate(0deg);
+
+}
+
 /*
    TALLKOTTE
 */
@@ -196,21 +213,7 @@
 
 }
 
-/*
-  KASTANJ
-*/
 
-.backpack-chestnut-green {
-
-    left: 70%;
-
-    top: 43%;
-
-    width: 80px;
-
-    transform: rotate(0deg);
-
-}
 
 /*
    SVART STEN
