@@ -1028,6 +1028,7 @@ document
     showMainMenu();
 
 }
+
 function showDialog() {
 
     const messages = [
@@ -1087,8 +1088,27 @@ function dialogAnswer(answer) {
 
     if (answer === "bra") {
 
+        const messages = [
+
+            "Vad fint att höra! 💚 Jag blir glad när du mår bra.",
+
+            "Åh vad mysigt! 🌿 Jag tycker om att höra att du har en bra dag.",
+
+            "Vad härligt att höra. 🌊 Det låter som en fin stund just nu."
+
+        ];
+
+
+        const message =
+            messages[
+                Math.floor(
+                    Math.random() * messages.length
+                )
+            ];
+
+
         addMessage(
-            "Vad fint att höra! 💚 Jag blir glad när du har en bra dag.",
+            message,
             "otis"
         );
 
@@ -1096,6 +1116,10 @@ function dialogAnswer(answer) {
         setTimeout(() => {
 
             actions.innerHTML = `
+
+                <button onclick="showDialogMoreHappy()">
+                    💚 Berätta lite mer
+                </button>
 
                 <button onclick="otisChoice('lugnt')">
                     🌿 Bara vara med Otis
