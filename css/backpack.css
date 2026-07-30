@@ -53,7 +53,7 @@
 
     left: 38%;
 
-    top: 7.5%;
+    top: 7%;
 
     width: 80px;
 
@@ -181,7 +181,7 @@
 
     left: 43%;
 
-    top: 55.5%;
+    top: 55%;
 
     width: 90px;
 
@@ -198,7 +198,7 @@
 
     left: 63%;
 
-    top: 41%;
+    top: 43%;
 
     width: 95px;
 
@@ -219,7 +219,7 @@
 
     width: 95px;
 
-    transform: rotate(40deg);
+    transform: rotate(50deg);
 
 }
 
