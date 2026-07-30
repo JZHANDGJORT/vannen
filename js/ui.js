@@ -1229,29 +1229,29 @@ function showDialogMoreQuestion() {
 
 }
 
-function dialogMoreChoice(choice) {
+function dialogMoreChoice() {
 
-    if (choice === "beratta") {
-
-        addMessage(
-            "Jag lyssnar. 💚 Du behöver inte skynda dig. Berätta bara det du vill berätta.",
-            "otis"
-        );
+    addMessage(
+        "Tack för att du berättade för mig. 💚 Vill du bara vara här med mig en stund eller ska vi hitta på något tillsammans?",
+        "otis"
+    );
 
 
-        const actions =
-            document.getElementById("actions");
+    const actions =
+        document.getElementById("actions");
 
 
-        actions.innerHTML = `
+    actions.innerHTML = `
 
-            <button onclick="showMainMenu()">
-                🌿 Tack för att du lyssnade
-            </button>
+        <button onclick="otisChoice('lugnt')">
+            🌿 Bara vara med Otis
+        </button>
 
-        `;
+        <button onclick="otisChoice('aktivitet')">
+            🌱 Hitta på något
+        </button>
 
-    }
+    `;
 
 }
 
