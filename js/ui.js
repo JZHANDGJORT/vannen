@@ -1229,7 +1229,7 @@ function showDialogMoreQuestion() {
 
 }
 
-function dialogMoreChoice() {
+function dialogMoreChoice(choice) {
 
     addMessage(
         "Tack för att du berättade för mig. 💚 Vill du bara vara här med mig en stund eller ska vi hitta på något tillsammans?",
