@@ -1158,6 +1158,54 @@ function dialogAnswer(answer) {
 
 }
 
+function showDialogMore() {
+
+    const messages = [
+
+        "Jag lyssnar. 💚 Du behöver inte hitta rätt ord direkt. Berätta bara det som känns okej.",
+
+        "Det är ingen fara om det är svårt att förklara. 🌿 Jag finns här en stund.",
+
+        "Ibland hjälper det att sätta ord på det som känns. 💚 Jag lyssnar gärna."
+
+    ];
+
+
+    const message =
+        messages[
+            Math.floor(
+                Math.random() * messages.length
+            )
+        ];
+
+
+    addMessage(
+        message,
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="showDialogMoreQuestion()">
+            💚 Jag vill berätta
+        </button>
+
+        <button onclick="otisChoice('lugnt')">
+            🌿 Bara vara med Otis
+        </button>
+
+        <button onclick="otisChoice('aktivitet')">
+            🌱 Hitta på något
+        </button>
+
+    `;
+
+}
 
 
 function otisChoice(choice) {
