@@ -1030,8 +1030,29 @@ document
 }
 function showDialog() {
 
+    const messages = [
+
+        "Hej igen! 💚 Vad mysigt att du kom förbi en stund. Hur känns det idag?",
+
+        "Hej! 🌿 Jag är glad att se dig. Hur har din dag varit?",
+
+        "Vad fint att du kom hit en stund. 🌊 Hur känns det idag?",
+
+        "Hej! 💚 Vill du berätta lite om hur du har det just nu?"
+
+    ];
+
+
+    const message =
+        messages[
+            Math.floor(
+                Math.random() * messages.length
+            )
+        ];
+
+
     addMessage(
-        "Hej! 🌊 Jag är glad att du kom förbi en stund. Hur känns det idag?",
+        message,
         "otis"
     );
 
@@ -1057,8 +1078,6 @@ function showDialog() {
     `;
 
 }
-
-
 
 function dialogAnswer(answer) {
 
