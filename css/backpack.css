@@ -208,11 +208,11 @@
 
 .backpack-pinecone {
 
-    left: 62%;
+    left: 60%;
 
-    top: 43%;
+    top: 45%;
 
-    width: 95px;
+    width: 90px;
 
     transform: rotate(15deg);
 
@@ -231,7 +231,7 @@
 
     width: 95px;
 
-    transform: rotate(-40deg);
+    transform: rotate(-1deg);
 
 }
 
