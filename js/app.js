@@ -183,6 +183,8 @@ if (!otisMemory.owner) {
 
 startCharacterBlinking();
 
+}
+
 
 
 
