@@ -69,7 +69,7 @@ showFriendView();
 
 startFriend(friend);
 
-restoreCurrentView();
+
 
 }    
 
