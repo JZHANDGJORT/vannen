@@ -162,6 +162,12 @@ if (backpack) {
     
     loadMemory();
 
+if (getCurrentView() === "backpack") {
+
+    openBackpackRoom(false);
+    return;
+
+}
 
 if (!otisMemory.owner) {
 
@@ -176,13 +182,6 @@ if (!otisMemory.owner) {
 }
 
 startCharacterBlinking();
-
-    
-}
-
-
-
-
 
 
 
