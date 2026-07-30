@@ -174,9 +174,9 @@
 
 .backpack-heartstone {
 
-    left: 25%;
+    left: 23%;
 
-    top: 51%;
+    top: 49%;
 
     width: 120px;
 
@@ -208,7 +208,7 @@
 
 .backpack-pinecone {
 
-    left: 55%;
+    left: 60%;
 
     top: 39%;
 
@@ -227,11 +227,11 @@
 
     left:65%;
 
-    top: 40%;
+    top: 34%;
 
     width: 95px;
 
-    transform: rotate(55deg);
+    transform: rotate(-40deg);
 
 }
 
