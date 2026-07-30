@@ -137,22 +137,6 @@
 
 }
 
-/*
-   Hjärtsten
-*/
-
-
-.backpack-heartstone {
-
-    left: 72%;
-
-    top: 35%;
-
-    width: 120px;
-
-    transform: rotate(-13deg);
-
-}
 
 /*
    EK KVIST
@@ -183,6 +167,22 @@
 
 }
 
+/*
+   Hjärtsten
+*/
+
+
+.backpack-heartstone {
+
+    left: 72%;
+
+    top: 35%;
+
+    width: 120px;
+
+    transform: rotate(-13deg);
+
+}
 
 /*
    SNIGEL SNÄCKA
