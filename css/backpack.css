@@ -202,7 +202,7 @@
 
 .backpack-chestnut-green {
 
-    left: 60%;
+    left: 65%;
 
     top: 40%;
 
@@ -219,9 +219,9 @@
 
 .backpack-blackstone {
 
-    left:40%;
+    left:39%;
 
-    top: 53%;
+    top: 53.5%;
 
     width: 95px;
 
@@ -238,11 +238,11 @@
 
     left: 22%;
 
-    top: 49%;
+    top: 49.5%;
 
     width: 120px;
 
-    transform: rotate(-20deg);
+    transform: rotate(-25deg);
 
 }
 
@@ -253,7 +253,7 @@
 
 .backpack-shell {
 
-    left: 50%;
+    left: 51%;
 
     top: 54%;
 
