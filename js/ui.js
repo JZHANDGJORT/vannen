@@ -1237,6 +1237,32 @@ function showDialogMoreQuestion() {
 
 }
 
+function dialogMoreChoice(choice) {
+
+    if (choice === "beratta") {
+
+        addMessage(
+            "Jag lyssnar. 💚 Du behöver inte skynda dig. Berätta bara det du vill berätta.",
+            "otis"
+        );
+
+
+        const actions =
+            document.getElementById("actions");
+
+
+        actions.innerHTML = `
+
+            <button onclick="showMainMenu()">
+                🌿 Tack för att du lyssnade
+            </button>
+
+        `;
+
+    }
+
+}
+
 function otisChoice(choice) {
 
 
