@@ -1210,7 +1210,7 @@ function showDialogMore() {
 function showDialogMoreQuestion() {
 
     addMessage(
-        "Vad tänker du på? 💚 Du kan berätta så mycket eller lite du vill.",
+        "Jag lyssnar. 💚 Ibland kan det kännas lite lättare när man får berätta för någon som bryr sig.",
         "otis"
     );
 
@@ -1221,16 +1221,8 @@ function showDialogMoreQuestion() {
 
     actions.innerHTML = `
 
-        <button onclick="dialogFollowUp('something')">
-            💚 Jag vill berätta
-        </button>
-
-        <button onclick="otisChoice('lugnt')">
-            🌿 Jag vill bara vara med Otis
-        </button>
-
-        <button onclick="otisChoice('aktivitet')">
-            🌱 Jag vill hitta på något
+        <button onclick="dialogMoreChoice()">
+            🌿 Tillbaka till Otis
         </button>
 
     `;
