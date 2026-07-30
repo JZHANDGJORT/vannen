@@ -1734,6 +1734,9 @@ function closeBackpackRoom() {
         .getElementById("friend-view")
         .style.display = "block";
 
+
+    showMainMenu();
+
 }
 
 function restoreCurrentView() {
