@@ -1062,25 +1062,68 @@ function showDialog() {
 
 function dialogAnswer(answer) {
 
+    const actions =
+        document.getElementById("actions");
+
 
     if (answer === "bra") {
 
         addMessage(
-            "Vad fint att höra! 🌱 Jag blir glad när du mår bra.",
+            "Vad fint att höra! 💚 Jag blir glad när du har en bra dag.",
             "otis"
         );
 
+
+        setTimeout(() => {
+
+            actions.innerHTML = `
+
+                <button onclick="otisChoice('lugnt')">
+                    🌿 Bara vara med Otis
+                </button>
+
+                <button onclick="otisChoice('aktivitet')">
+                    🌱 Hitta på något
+                </button>
+
+            `;
+
+        }, 1200);
+
     }
+
 
 
     if (answer === "daligt") {
 
         addMessage(
-            "Jag är ledsen att höra att det känns jobbigt. 💚 Ibland kan det hjälpa att prata med någon man tycker om och litar på. Jag finns också här med dig en stund.",
+            "Jag är ledsen att höra att det känns jobbigt. 💚 Ibland kan det hjälpa att prata med någon man tycker om och litar på. Jag kan också stanna här och lyssna en stund.",
             "otis"
         );
 
+
+        setTimeout(() => {
+
+            actions.innerHTML = `
+
+                <button onclick="showDialogMore()">
+                    💚 Berätta lite mer
+                </button>
+
+                <button onclick="otisChoice('lugnt')">
+                    🌿 Bara vara med Otis
+                </button>
+
+                <button onclick="otisChoice('aktivitet')">
+                    🌱 Hitta på något
+                </button>
+
+            `;
+
+        }, 1500);
+
     }
+
 
 
     if (answer === "vetinte") {
@@ -1090,35 +1133,28 @@ function dialogAnswer(answer) {
             "otis"
         );
 
+
+        setTimeout(() => {
+
+            actions.innerHTML = `
+
+                <button onclick="showDialogMore()">
+                    💚 Berätta lite mer
+                </button>
+
+                <button onclick="otisChoice('lugnt')">
+                    🌿 Bara vara med Otis
+                </button>
+
+                <button onclick="otisChoice('aktivitet')">
+                    🌱 Hitta på något
+                </button>
+
+            `;
+
+        }, 1500);
+
     }
-
-
-    setTimeout(() => {
-
-        addMessage(
-            "Vill du bara ta det lugnt tillsammans en stund, eller ska vi hitta på något? 🌊",
-            "otis"
-        );
-
-
-        const actions =
-            document.getElementById("actions");
-
-
-        actions.innerHTML = `
-
-            <button onclick="otisChoice('lugnt')">
-                🌿 Bara vara
-            </button>
-
-            <button onclick="otisChoice('aktivitet')">
-                🌱 Hitta på något
-            </button>
-
-        `;
-
-
-    }, 800);
 
 }
 
