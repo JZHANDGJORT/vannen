@@ -112,6 +112,21 @@
 
 }
 
+/*
+   TALLKOTTE
+*/
+
+.backpack-pinecone {
+
+    left: 59%;
+
+    top: 46%;
+
+    width: 90px;
+
+    transform: rotate(20deg);
+
+}
 
 
 /*
@@ -198,57 +213,6 @@
 }
 
 /*
-   Hjärtsten
-*/
-
-
-.backpack-heartstone {
-
-    left: 22%;
-
-    top: 49%;
-
-    width: 120px;
-
-    transform: rotate(-15deg);
-
-}
-
-/*
-   SNIGEL SNÄCKA
-*/
-
-
-.backpack-shell {
-
-    left: 50%;
-
-    top: 50%;
-
-    width: 90px;
-
-    transform: rotate(-17deg);
-
-}
-
-
-/*
-   TALLKOTTE
-*/
-
-.backpack-pinecone {
-
-    left: 59%;
-
-    top: 46%;
-
-    width: 90px;
-
-    transform: rotate(20deg);
-
-}
-
-/*
    SVART STEN
 */
 
@@ -264,6 +228,45 @@
     transform: rotate(10deg);
 
 }
+
+/*
+   Hjärtsten
+*/
+
+
+.backpack-heartstone {
+
+    left: 22%;
+
+    top: 49%;
+
+    width: 120px;
+
+    transform: rotate(-20deg);
+
+}
+
+/*
+   SNIGEL SNÄCKA
+*/
+
+
+.backpack-shell {
+
+    left: 50%;
+
+    top: 54%;
+
+    width: 90px;
+
+    transform: rotate(-17deg);
+
+}
+
+
+
+
+
 
 
 
