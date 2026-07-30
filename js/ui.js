@@ -1210,7 +1210,7 @@ function showDialogMore() {
 function showDialogMoreQuestion() {
 
     addMessage(
-        "Jag lyssnar. 💚 Ibland kan det kännas lite lättare när man får berätta för någon som bryr sig.",
+        "Jag lyssnar. 💚 Du behöver inte säga allt på en gång. Berätta bara det du vill dela med mig.",
         "otis"
     );
 
@@ -1229,10 +1229,10 @@ function showDialogMoreQuestion() {
 
 }
 
-function dialogMoreChoice(choice) {
+function dialogMoreChoice() {
 
     addMessage(
-        "Tack för att du berättade för mig. 💚 Vill du bara vara här med mig en stund eller ska vi hitta på något tillsammans?",
+        "Tack för att du berättade för mig. 💚 Det kan kännas skönt att få dela sina tankar med någon som lyssnar.",
         "otis"
     );
 
