@@ -144,7 +144,7 @@
 
 .backpack-oaktwig2 {
 
-    left: 75%;
+    left: 76%;
 
     top: 35%;
 
@@ -193,7 +193,7 @@
 
     left: 70%;
 
-    top: 37%;
+    top: 40%;
 
     width: 90px;
 
@@ -208,9 +208,9 @@
 
 .backpack-pinecone {
 
-    left: 60%;
+    left: 59%;
 
-    top: 45%;
+    top: 46%;
 
     width: 90px;
 
@@ -225,13 +225,13 @@
 
 .backpack-blackstone {
 
-    left:43%;
+    left:42%;
 
-    top: 54%;
+    top: 53%;
 
     width: 95px;
 
-    transform: rotate(-1deg);
+    transform: rotate(10deg);
 
 }
 
