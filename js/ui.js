@@ -2019,6 +2019,24 @@ function closeBackpackRoom() {
 
 }
 
+
+/*
+  Otis Sagobok
+*/
+
+function openStoryBook() {
+
+    document
+        .getElementById("backpack-view")
+        .style.display = "none";
+
+
+    document
+        .getElementById("storybook")
+        .style.display = "block";
+
+}
+
 function restoreCurrentView() {
 
     if (getCurrentView() === "backpack") {
