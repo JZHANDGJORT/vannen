@@ -263,7 +263,16 @@ if (characterElement) {
 
 }
 
+const faceElement =
+    document.getElementById("friend-character-face");
 
+if (faceElement) {
+
+    faceElement.src = "";
+    faceElement.alt = friend.name;
+    faceElement.style.opacity = "0";
+
+}
 
 
     const subtitleElement =
