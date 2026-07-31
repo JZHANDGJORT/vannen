@@ -1250,6 +1250,55 @@ function showDialogMore() {
 
 }
 
+function showDialogMoreHappy() {
+
+    const messages = [
+
+        "Vad gör dig extra glad idag? 💚",
+
+        "Åh, berätta! Vad har gjort dagen så bra? 🌿",
+
+        "Jag tycker om att höra om fina stunder. Vad har hänt idag? ☀️"
+
+    ];
+
+    addMessage(
+        messages[Math.floor(Math.random() * messages.length)],
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="dialogHappyFinished()">
+            😊 Jag berättar
+        </button>
+
+        <button onclick="otisChoice('lugnt')">
+            🌿 Bara vara med Otis
+        </button>
+
+        <button onclick="otisChoice('aktivitet')">
+            🌱 Hitta på något
+        </button>
+
+    `;
+
+}
+
+function dialogHappyFinished() {
+
+    addMessage(
+        "Vad roligt att du berättade! 💚 Jag hoppas att resten av dagen blir minst lika fin.",
+        "otis"
+    );
+
+    showMainMenu();
+
+}
+
 function showDialogMoreQuestion() {
 
     addMessage(
