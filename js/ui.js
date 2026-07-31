@@ -1284,11 +1284,6 @@ function showDialogMoreHappy() {
         </button>
 
 
-        <button onclick="happyMoreChoice('short')">
-            🌿 Bara lite
-        </button>
-
-
         <button onclick="otisChoice('lugnt')">
             💚 Bara vara med Otis
         </button>
@@ -1332,14 +1327,6 @@ function happyMoreChoice(choice) {
         `;
 
     }
-
-
-    if (choice === "short") {
-
-        addMessage(
-            "Det räcker att dela lite. 💚 Jag blir glad att få höra om något fint i din dag.",
-            "otis"
-        );
 
 
         const actions =
