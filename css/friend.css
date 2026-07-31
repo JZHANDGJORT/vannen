@@ -141,8 +141,6 @@
 
     width: 290px;
 
-    height: auto;
-
     left: 55%;
 
     bottom: 58%;
@@ -152,31 +150,6 @@
     z-index: 3;
 
     transition: opacity 3s ease;
-
-}
-
-#friend-character-base,
-#friend-character-face {
-
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: contain;
-
-}
-
-#friend-character-face {
-
-    opacity: 0;
-
-    pointer-events: none;
-
-    transition: opacity 0.2s ease;
 
 }
 
