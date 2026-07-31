@@ -441,3 +441,23 @@ function checkOtisMood(text) {
     }
 
 }
+
+function startCharacterBlinking() {
+
+    function blinkLoop() {
+
+        blinkCharacter();
+
+        const nextBlink =
+            Math.random() * 7000 + 4000;
+
+        setTimeout(
+            blinkLoop,
+            nextBlink
+        );
+
+    }
+
+    blinkLoop();
+
+}
