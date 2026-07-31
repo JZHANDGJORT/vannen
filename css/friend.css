@@ -153,6 +153,27 @@
 
 }
 
+#friend-character-face {
+
+    position: absolute;
+
+    width: 290px;
+
+    left: 55%;
+
+    bottom: 58%;
+
+    transform: translateX(-50%);
+
+    z-index: 4;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+
 /*
    Otis pratbubbla
 */
