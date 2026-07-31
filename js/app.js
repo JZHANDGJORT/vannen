@@ -5,7 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+function getCharacterImage() {
 
+    return document.getElementById(
+        "friend-character-base"
+    );
+
+}
 
 function startApp() {
 
