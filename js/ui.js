@@ -2092,7 +2092,7 @@ function otisLeaves() {
         document.getElementById("friend-stone");
 
     const otis =
-        document.getElementById("friend-character");
+    getCharacterImage();
 
 
     if (!stone || !otis) return;
@@ -2110,8 +2110,7 @@ function resetOtisView() {
         document.getElementById("friend-stone");
 
     const otis =
-        document.getElementById("friend-character");
-
+    getCharacterImage();
 
     if (!stone || !otis) return;
 
