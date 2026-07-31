@@ -369,14 +369,16 @@ function smileCharacter(duration = 1500) {
 
 function laughCharacter(duration = 2000) {
 
-    const image =
-        document.getElementById("friend-character");
+    const face =
+        document.getElementById("friend-character-face");
 
-    if (!image || !currentFriend) return;
+    if (!face) return;
 
 
-    image.src =
+    face.src =
         "images/Otis/otis-stone-laugh-character.PNG";
+
+    face.style.opacity = "1";
 
 
     clearTimeout(window.laughTimeout);
@@ -384,8 +386,8 @@ function laughCharacter(duration = 2000) {
 
     window.laughTimeout = setTimeout(() => {
 
-        image.src =
-            currentFriend.characterImage;
+        face.style.opacity = "0";
+        face.src = "";
 
     }, duration);
 
