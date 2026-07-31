@@ -1250,6 +1250,146 @@ function showDialogMore() {
 
 }
 
+function showDialogMoreHappy() {
+
+    const messages = [
+
+        "Vad gör dig extra glad idag? 💚",
+
+        "Åh, berätta lite mer. Vad har gjort dagen så fin? 🌿",
+
+        "Jag tycker om att höra om fina stunder. Vad har hänt idag? ☀️"
+
+    ];
+
+
+    addMessage(
+        messages[
+            Math.floor(
+                Math.random() * messages.length
+            )
+        ],
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="happyMoreChoice('tell')">
+            😊 Jag vill berätta
+        </button>
+
+
+        <button onclick="happyMoreChoice('short')">
+            🌿 Bara lite
+        </button>
+
+
+        <button onclick="otisChoice('lugnt')">
+            💚 Bara vara med Otis
+        </button>
+
+
+        <button onclick="otisChoice('aktivitet')">
+            🌱 Hitta på något
+        </button>
+
+    `;
+
+}
+
+
+function happyMoreChoice(choice) {
+
+
+    if (choice === "tell") {
+
+        addMessage(
+            "Vad fint. 💚 Jag lyssnar gärna. Berätta det du vill dela med mig.",
+            "otis"
+        );
+
+
+        const actions =
+            document.getElementById("actions");
+
+
+        actions.innerHTML = `
+
+            <button onclick="happyMoreContinue()">
+                🌿 Jag har berättat klart
+            </button>
+
+
+            <button onclick="otisChoice('lugnt')">
+                💚 Bara vara med Otis
+            </button>
+
+        `;
+
+    }
+
+
+    if (choice === "short") {
+
+        addMessage(
+            "Det räcker att dela lite. 💚 Jag blir glad att få höra om något fint i din dag.",
+            "otis"
+        );
+
+
+        const actions =
+            document.getElementById("actions");
+
+
+        actions.innerHTML = `
+
+            <button onclick="otisChoice('lugnt')">
+                🌿 Bara vara med Otis
+            </button>
+
+
+            <button onclick="otisChoice('aktivitet')">
+                🌱 Hitta på något
+            </button>
+
+        `;
+
+    }
+
+}
+
+
+function happyMoreContinue() {
+
+    addMessage(
+        "Tack för att du berättade för mig. 💚 Det låter som en fin stund. Jag hoppas att resten av dagen fortsätter lika bra.",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="otisChoice('lugnt')">
+            🌿 Bara vara med Otis
+        </button>
+
+
+        <button onclick="otisChoice('aktivitet')">
+            🌱 Hitta på något
+        </button>
+
+    `;
+
+}
 
 function showDialogMoreQuestion() {
 
