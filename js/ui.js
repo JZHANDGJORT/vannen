@@ -1,5 +1,13 @@
 let currentActivity = null;
 
+function getCharacterImage() {
+
+    return document.getElementById(
+        "friend-character-base"
+    );
+
+}
+
 function updateActionLayout() {
 
     const actions =
