@@ -348,20 +348,20 @@ function blinkCharacter() {
 
 function smileCharacter(duration = 1500) {
 
-    const image =
-        document.getElementById("friend-character");
+    const face =
+        document.getElementById("friend-character-face");
 
-    if (!image || !currentFriend) return;
+    if (!face) return;
 
-    image.src =
-        "images/Otis/otis-stone-smile-character.PNG";
+    face.src = "images/Otis/otis-stone-smile-character.PNG";
+    face.style.opacity = "1";
 
     clearTimeout(window.smileTimeout);
 
     window.smileTimeout = setTimeout(() => {
 
-        image.src =
-            currentFriend.characterImage;
+        face.style.opacity = "0";
+        face.src = "";
 
     }, duration);
 
