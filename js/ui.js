@@ -1300,7 +1300,6 @@ function showDialogMoreHappy() {
 
 function happyMoreChoice(choice) {
 
-
     if (choice === "tell") {
 
         addMessage(
@@ -1328,28 +1327,7 @@ function happyMoreChoice(choice) {
 
     }
 
-
-        const actions =
-            document.getElementById("actions");
-
-
-        actions.innerHTML = `
-
-            <button onclick="otisChoice('lugnt')">
-                🌿 Bara vara med Otis
-            </button>
-
-
-            <button onclick="otisChoice('aktivitet')">
-                🌱 Hitta på något
-            </button>
-
-        `;
-
-    }
-
 }
-
 
 function happyMoreContinue() {
 
