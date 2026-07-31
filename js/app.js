@@ -324,30 +324,23 @@ function setPageMode(mode) {
 
 function blinkCharacter() {
 
-    const image =
-        document.getElementById("friend-character");
+    const face =
+        document.getElementById("friend-character-face");
 
-
-    if (!image || !currentFriend) return;
-
-
-    const normalImage =
-        currentFriend.characterImage;
-
+    if (!face || !currentFriend) return;
 
     const blinkImage =
         currentFriend.characterBlinkImage;
 
-
     if (!blinkImage) return;
 
-
-    image.src = blinkImage;
-
+    face.src = blinkImage;
+    face.style.opacity = "1";
 
     setTimeout(() => {
 
-        image.src = normalImage;
+        face.style.opacity = "0";
+        face.src = "";
 
     }, 250);
 
