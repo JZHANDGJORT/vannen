@@ -5,13 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-function getCharacterImage() {
 
-    return document.getElementById(
-        "friend-character-base"
-    );
-
-}
 
 function startApp() {
 
@@ -257,7 +251,7 @@ if (worldElement) {
 }
 
 const characterElement =
-    document.getElementById("friend-character-base");
+    document.getElementById("friend-character");
 
 if (characterElement) {
 
@@ -322,7 +316,7 @@ function setPageMode(mode) {
 function blinkCharacter() {
 
     const image =
-    getCharacterImage();
+        document.getElementById("friend-character");
 
 
     if (!image || !currentFriend) return;
@@ -352,8 +346,8 @@ function blinkCharacter() {
 
 function smileCharacter(duration = 1500) {
 
-const image =
-    getCharacterImage();
+    const image =
+        document.getElementById("friend-character");
 
     if (!image || !currentFriend) return;
 
@@ -373,8 +367,8 @@ const image =
 
 function laughCharacter(duration = 2000) {
 
-const image =
-    getCharacterImage();
+    const image =
+        document.getElementById("friend-character");
 
     if (!image || !currentFriend) return;
 
