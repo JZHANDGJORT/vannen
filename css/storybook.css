@@ -16,6 +16,7 @@
 }
 
 
+
 /*
   Själva boksidan
 */
@@ -23,17 +24,18 @@
 
 #storybook-page {
 
-    width: 90%;
+    width: 110%;
 
-    max-height: 85vh;
+    height: 100%;
 
     object-fit: contain;
 
     display: block;
 
-    margin: 60px auto 0;
+    margin-left: -5%;
 
 }
+
 
 
 /*
@@ -51,11 +53,30 @@
 
     z-index: 10;
 
+    padding: 10px 16px;
+
+    border-radius: 20px;
+
+    border: none;
+
+    background-color: rgba(255,255,255,0.45);
+
+    color: #29434A;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
+
 }
 
 
+
 /*
-  Bläddringsknappar
+  Bläddringspilar
 */
 
 
@@ -70,30 +91,60 @@
 
     z-index: 10;
 
-    font-size: 32px;
+    width: 45px;
 
-    border: none;
-
-    background: rgba(255,255,255,0.5);
+    height: 45px;
 
     border-radius: 50%;
 
-    width: 50px;
+    border: none;
 
-    height: 50px;
+    background-color: rgba(255,255,255,0.55);
+
+    color: #29434A;
+
+    font-size: 28px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
 
 }
+
 
 
 #storybook-prev {
 
-    left: 20px;
+    left: 15px;
 
 }
 
 
+
 #storybook-next {
 
-    right: 20px;
+    right: 15px;
+
+}
+
+
+
+#storybook-prev:hover,
+#storybook-next:hover,
+#storybook-close:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+#storybook-prev:active,
+#storybook-next:active,
+#storybook-close:active {
+
+    transform: scale(0.97);
 
 }
