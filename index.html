@@ -232,15 +232,22 @@ onclick="openStoryBook()">
 
 <section id="storybook" style="display:none;">
 
-    <img 
-    id="storybook-left"
-    src="images/Otis/otis-backpack-item-sagobok-openl.PNG"
-    alt="Vänster sida">
+    <button id="storybook-close" onclick="closeStoryBook()">
+        🎒 Tillbaka till ryggsäcken
+    </button>
 
-    <img 
-    id="storybook-right"
-    src="images/Otis/otis-backpack-item-sagobok-openr.PNG"
-    alt="Höger sida">
+    <button id="storybook-prev" onclick="changeStoryPage(-1)">
+        ←
+    </button>
+
+    <img
+        id="storybook-page"
+        src="images/Otis/otis-backpack-item-sagobok-openl.PNG"
+        alt="Otis sagobok">
+
+    <button id="storybook-next" onclick="changeStoryPage(1)">
+        →
+    </button>
 
 </section>
 
