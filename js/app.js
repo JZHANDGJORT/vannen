@@ -257,7 +257,7 @@ if (worldElement) {
 }
 
 const characterElement =
-    document.getElementById("friend-character");
+    document.getElementById("friend-character-base");
 
 if (characterElement) {
 
@@ -322,7 +322,7 @@ function setPageMode(mode) {
 function blinkCharacter() {
 
     const image =
-        document.getElementById("friend-character");
+    getCharacterImage();
 
 
     if (!image || !currentFriend) return;
@@ -352,8 +352,8 @@ function blinkCharacter() {
 
 function smileCharacter(duration = 1500) {
 
-    const image =
-        document.getElementById("friend-character");
+const image =
+    getCharacterImage();
 
     if (!image || !currentFriend) return;
 
@@ -373,8 +373,8 @@ function smileCharacter(duration = 1500) {
 
 function laughCharacter(duration = 2000) {
 
-    const image =
-        document.getElementById("friend-character");
+const image =
+    getCharacterImage();
 
     if (!image || !currentFriend) return;
 
