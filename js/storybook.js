@@ -7,9 +7,27 @@ let currentStoryPage = 0;
 
 const storyPages = [
 
-    "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+    {
+        image: "images/Otis/otis-backpack-item-sagobok-openl.PNG",
 
-    "images/Otis/otis-backpack-item-sagobok-openr.PNG"
+        text: "",
+
+        imageClass: "story-left"
+    },
+
+    {
+        image: "images/Otis/storybook/chapter1/page01.PNG",
+
+        text: `
+Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
+
+Otis var nyfiken på nästan allt. Han tyckte om att simma i sjön, klättra över stenar och upptäcka sådant som andra kanske hade gått förbi.<br><br>
+
+En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.
+        `,
+
+        imageClass: "story-right"
+    }
 
 ];
 
@@ -47,20 +65,47 @@ function openStoryBook() {
 
 }
 
+
 function updateStoryPage() {
 
     const page =
         document.getElementById("storybook-page");
 
+    const text =
+        document.getElementById("storybook-text");
 
-    page.src =
+    const content =
+        document.getElementById("storybook-content");
+
+
+    const story =
         storyPages[currentStoryPage];
 
 
+    page.src =
+        story.image;
+
     page.className =
-        currentStoryPage === 0
-            ? "story-left"
-            : "story-right";
+        story.imageClass;
+
+
+    if (currentStoryPage === 0) {
+
+        content.style.display = "block";
+        text.style.display = "none";
+
+    }
+
+    else {
+
+        content.style.display = "none";
+
+        text.style.display = "block";
+
+        text.innerHTML =
+            story.text;
+
+    }
 
 
     document
@@ -85,10 +130,12 @@ function changeStoryPage(direction) {
 
     currentStoryPage += direction;
 
+
     localStorage.setItem(
         "storybook-page",
         currentStoryPage
     );
+
 
     updateStoryPage();
 
@@ -119,19 +166,17 @@ function closeStoryBook() {
 
 }
 
-function goToChapter(chapter) {
 
+function goToChapter(chapter) {
 
     if (chapter === 1) {
 
         currentStoryPage = 1;
 
-
         localStorage.setItem(
             "storybook-page",
             1
         );
-
 
         updateStoryPage();
 
