@@ -118,3 +118,30 @@ function closeStoryBook() {
         .style.display = "block";
 
 }
+
+function goToChapter(chapter) {
+
+
+    if (chapter === 1) {
+
+        currentStoryPage = 1;
+
+
+        localStorage.setItem(
+            "storybook-page",
+            1
+        );
+
+
+        updateStoryPage();
+
+    }
+
+}
+
+
+function showComingSoon() {
+
+    alert("Det här kapitlet kommer snart 🌿");
+
+}
