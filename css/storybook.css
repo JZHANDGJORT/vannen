@@ -35,6 +35,27 @@
 
 
 /*
+  Justering av enskilda boksidor
+  (används senare via JS)
+*/
+
+
+.story-left {
+
+    object-position: center center;
+
+}
+
+
+.story-right {
+
+    object-position: 45% center;
+
+}
+
+
+
+/*
   Tillbaka till ryggsäcken
 */
 
@@ -86,6 +107,7 @@
 }
 
 
+
 /*
   Bläddringspilar
 */
@@ -96,9 +118,7 @@
 
     position: absolute;
 
-    top: 50%;
-
-    transform: translateY(-50%);
+    bottom: 25px;
 
     z-index: 10;
 
@@ -125,14 +145,14 @@
 
 #storybook-prev {
 
-    left: 15px;
+    left: 25px;
 
 }
 
 
 #storybook-next {
 
-    right: 15px;
+    right: 25px;
 
 }
 
@@ -140,6 +160,6 @@
 #storybook-prev:active,
 #storybook-next:active {
 
-    transform: translateY(-50%) scale(0.95);
+    transform: scale(0.95);
 
 }
