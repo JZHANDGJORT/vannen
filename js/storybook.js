@@ -16,7 +16,7 @@ const storyPages = [
     },
 
     {
-        image: "images/Otis/storybook/chapter1/page01.PNG",
+        image: "images/Otis/storybook/chapter01/page01.JPEG",
 
         text: `
 Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
