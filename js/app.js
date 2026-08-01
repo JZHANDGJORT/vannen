@@ -114,74 +114,80 @@ function showFriendView() {
 }
 
 function startFriend(friend) {
-currentFriend = friend;
+
+    currentFriend = friend;
 
 
     const theme =
         themes[friend.home.theme];
 
-
-
     applyTheme(theme);
-
-
 
     renderFriend(friend);
 
 
+    const aboutButton =
+        document.getElementById("about-button");
 
-const aboutButton =
-    document.getElementById("about-button");
+    if (aboutButton) {
 
-if (aboutButton) {
+        aboutButton.onclick =
+            showSettings;
 
-    aboutButton.onclick =
-    showSettings;
+    }
 
-}
 
     const goodbyeButton =
-    document.getElementById("goodbye-button");
+        document.getElementById("goodbye-button");
 
-if (goodbyeButton) {
+    if (goodbyeButton) {
 
-    goodbyeButton.onclick =
-    showGoodbye;
+        goodbyeButton.onclick =
+            showGoodbye;
 
-}
+    }
 
-const backpack =
-    document.getElementById("backpack");
 
-if (backpack) {
+    const backpack =
+        document.getElementById("backpack");
 
-    backpack.onclick =
-    askOpenBackpack;
+    if (backpack) {
 
-}
-    
+        backpack.onclick =
+            askOpenBackpack;
+
+    }
+
+
     loadMemory();
 
-if (getCurrentView() === "backpack") {
 
-    openBackpackRoom(false);
-    return;
+    restoreCurrentView();
 
-}
+    if (
+        window.location.hash === "#backpack" ||
+        window.location.hash === "#storybook"
+    ) {
 
-if (!otisMemory.owner) {
+        return;
 
-    startOnboarding();
+    }
 
-} else {
 
-    showMemoryGreeting();
+    if (!otisMemory.owner) {
 
-    showMainMenu();
+        startOnboarding();
 
-}
+    } else {
 
-startCharacterBlinking();
+        showMemoryGreeting();
+
+        showMainMenu();
+
+    }
+
+
+    startCharacterBlinking();
 
 }
 
