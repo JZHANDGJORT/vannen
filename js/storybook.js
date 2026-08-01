@@ -46,6 +46,7 @@ function openStoryBook() {
         .style.display = "block";
 
 }
+
 function updateStoryPage() {
 
     const page =
@@ -54,6 +55,12 @@ function updateStoryPage() {
 
     page.src =
         storyPages[currentStoryPage];
+
+
+    page.className =
+        currentStoryPage === 0
+            ? "story-left"
+            : "story-right";
 
 
     document
