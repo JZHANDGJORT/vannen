@@ -246,26 +246,30 @@
         src="images/Otis/otis-backpack-item-sagobok-openl.PNG"
         alt="Otis sagobok">
 
+
+    <!-- Text på boksidor -->
+    <div id="storybook-text"></div>
+
+
+    <!-- Innehållsförteckning (visas bara på sida 0) -->
     <div id="storybook-content">
 
-    <button onclick="goToChapter(1)">
-        🌿 Kapitel 1<br>
-        <span>Otis och den magiska stenen</span>
-    </button>
+        <button onclick="goToChapter(1)">
+            🌿 Kapitel 1<br>
+            <span>Otis och den magiska stenen</span>
+        </button>
 
+        <button onclick="showComingSoon()">
+            🌊 Kapitel 2<br>
+            <span>Kommer snart</span>
+        </button>
 
-    <button onclick="showComingSoon()">
-        🌊 Kapitel 2<br>
-        <span>Kommer snart</span>
-    </button>
+        <button onclick="showComingSoon()">
+            ⭐ Kapitel 3<br>
+            <span>Kommer snart</span>
+        </button>
 
-
-    <button onclick="showComingSoon()">
-        ⭐ Kapitel 3<br>
-        <span>Kommer snart</span>
-    </button>
-
-</div>
+    </div>
 
     <button id="storybook-next" onclick="changeStoryPage(1)">
         →
