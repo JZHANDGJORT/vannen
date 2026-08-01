@@ -29,11 +29,7 @@ const storyPages = [
         "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
         text: `
-Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
-
-Otis var nyfiken på nästan allt. Han tyckte om att simma i sjön, klättra över stenar och upptäcka sådant som andra kanske hade gått förbi.<br><br>
-
-En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.
+        Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
         `,
 
         imageClass:
