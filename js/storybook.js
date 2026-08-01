@@ -7,16 +7,26 @@ let currentStoryPage = 0;
 
 const storyPages = [
 
+    // Sida 0 - innehållsförteckning
     {
-        image: "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+        image: "",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openl.PNG",
 
         text: "",
 
-        imageClass: "story-left"
+        imageClass: ""
     },
 
+
+    // Sida 1 - Kapitel 1
     {
-        image: "images/Otis/storybook/chapter01/page01.JPEG",
+        image:
+        "images/Otis/storybook/chapter01/page01.JPEG",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
         text: `
 Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
@@ -26,15 +36,18 @@ Otis var nyfiken på nästan allt. Han tyckte om att simma i sjön, klättra öv
 En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.
         `,
 
-        imageClass: "story-illustration"
+        imageClass:
+        "story-illustration"
     }
 
 ];
 
 
+
 function openStoryBook() {
 
     saveCurrentView("storybook");
+
 
     if (currentFriend) {
 
@@ -46,18 +59,23 @@ function openStoryBook() {
 
     }
 
+
     currentStoryPage = 0;
+
 
     localStorage.setItem(
         "storybook-page",
         0
     );
 
+
     updateStoryPage();
+
 
     document
         .getElementById("backpack-view")
         .style.display = "none";
+
 
     document
         .getElementById("storybook")
@@ -66,41 +84,91 @@ function openStoryBook() {
 }
 
 
+
+
 function updateStoryPage() {
+
 
     const page =
         document.getElementById("storybook-page");
 
+
+    const background =
+        document.getElementById("storybook-background");
+
+
     const text =
         document.getElementById("storybook-text");
 
+
     const content =
         document.getElementById("storybook-content");
+
 
 
     const story =
         storyPages[currentStoryPage];
 
 
+
+    // Uppdatera bokbakgrund
+
+    background.src =
+        story.background;
+
+
+
+    // Uppdatera illustration
+
     page.src =
         story.image;
+
 
     page.className =
         story.imageClass;
 
 
-    if (currentStoryPage === 0) {
 
-        content.style.display = "block";
-        text.style.display = "none";
+    if (!story.image) {
+
+        page.style.display = "none";
+
+    } 
+    
+    else {
+
+        page.style.display = "block";
 
     }
 
+
+
+
+    // Visa innehållsförteckning eller text
+
+    if (currentStoryPage === 0) {
+
+
+        content.style.display =
+            "block";
+
+
+        text.style.display =
+            "none";
+
+
+    } 
+    
     else {
 
-        content.style.display = "none";
 
-        text.style.display = "block";
+        content.style.display =
+            "none";
+
+
+        text.style.display =
+            "block";
+
 
         text.innerHTML =
             story.text;
@@ -108,12 +176,17 @@ function updateStoryPage() {
     }
 
 
+
+
+    // Pilar
+
     document
         .getElementById("storybook-prev")
         .style.display =
             currentStoryPage === 0
                 ? "none"
                 : "block";
+
 
 
     document
@@ -126,7 +199,11 @@ function updateStoryPage() {
 }
 
 
+
+
+
 function changeStoryPage(direction) {
+
 
     currentStoryPage += direction;
 
@@ -142,9 +219,14 @@ function changeStoryPage(direction) {
 }
 
 
+
+
+
 function closeStoryBook() {
 
+
     saveCurrentView("backpack");
+
 
     if (currentFriend) {
 
@@ -156,9 +238,13 @@ function closeStoryBook() {
 
     }
 
+
+
     document
         .getElementById("storybook")
         .style.display = "none";
+
+
 
     document
         .getElementById("backpack-view")
@@ -167,16 +253,23 @@ function closeStoryBook() {
 }
 
 
+
+
+
 function goToChapter(chapter) {
+
 
     if (chapter === 1) {
 
+
         currentStoryPage = 1;
+
 
         localStorage.setItem(
             "storybook-page",
             1
         );
+
 
         updateStoryPage();
 
@@ -185,8 +278,14 @@ function goToChapter(chapter) {
 }
 
 
+
+
+
 function showComingSoon() {
 
-    alert("Det här kapitlet kommer snart 🌿");
+
+    alert(
+        "Det här kapitlet kommer snart 🌿"
+    );
 
 }
