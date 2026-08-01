@@ -219,11 +219,15 @@
 
     position: absolute;
 
-    top: 30%;
+    top: 25%;
 
-    left: 15%;
+    left: 22%;
 
     z-index: 5;
+
+    color: #29434A;
+
+    font-family: "Patrick Hand", cursive;
 
 }
 
