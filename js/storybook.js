@@ -16,7 +16,16 @@ const storyPages = [
 
 function openStoryBook() {
 
+    localStorage.setItem(
+        "vannen-view",
+        "storybook"
+    );
+
+
     currentStoryPage = 0;
+
+    updateStoryPage();
+
 
     document
         .getElementById("backpack-view")
@@ -27,11 +36,7 @@ function openStoryBook() {
         .getElementById("storybook")
         .style.display = "block";
 
-
-    updateStoryPage();
-
 }
-
 
 function updateStoryPage() {
 
