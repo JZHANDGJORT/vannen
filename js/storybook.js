@@ -77,6 +77,12 @@ function changeStoryPage(direction) {
 
 function closeStoryBook() {
 
+    localStorage.setItem(
+        "vannen-view",
+        "backpack"
+    );
+
+
     document
         .getElementById("storybook")
         .style.display = "none";
@@ -85,5 +91,10 @@ function closeStoryBook() {
     document
         .getElementById("backpack-view")
         .style.display = "block";
+
+
+    currentStoryPage = 0;
+
+    updateStoryPage();
 
 }
