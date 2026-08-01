@@ -91,7 +91,8 @@ function closeStoryBook() {
         "backpack"
     );
 
-
+window.location.hash = "backpack";
+  
     document
         .getElementById("storybook")
         .style.display = "none";
