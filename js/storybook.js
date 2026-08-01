@@ -31,10 +31,16 @@ const storyPages = [
         "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
         title:
-        `
-        Kapitel 1<br>
-        Otis och den magiska stenen
-        `,
+`
+<span class="chapter-number">
+Kapitel 1
+</span>
+<br>
+
+<span class="chapter-name">
+Otis och den magiska stenen
+</span>
+`,
 
         text:
         `
