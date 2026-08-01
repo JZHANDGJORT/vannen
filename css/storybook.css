@@ -231,6 +231,15 @@
 
 }
 
+#storybook-content h1 {
+
+    font-size: 34px;
+
+    font-weight: normal;
+
+    margin-bottom: 35px;
+
+}
 
 #storybook-content button {
 
