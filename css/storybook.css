@@ -16,7 +16,6 @@
 }
 
 
-
 /*
   Själva boksidan
 */
@@ -24,22 +23,19 @@
 
 #storybook-page {
 
-    width: 110%;
+    width: 100%;
 
     height: 100%;
 
-    object-fit: contain;
+    object-fit: cover;
 
     display: block;
-
-    margin-left: -5%;
 
 }
 
 
-
 /*
-  Tillbaka-knapp
+  Tillbaka till ryggsäcken
 */
 
 
@@ -74,7 +70,6 @@
 }
 
 
-
 /*
   Bläddringspilar
 */
@@ -99,7 +94,7 @@
 
     border: none;
 
-    background-color: rgba(255,255,255,0.55);
+    background-color: rgba(255,255,255,0.6);
 
     color: #29434A;
 
@@ -109,10 +104,7 @@
 
     cursor: pointer;
 
-    backdrop-filter: blur(6px);
-
 }
-
 
 
 #storybook-prev {
@@ -122,7 +114,6 @@
 }
 
 
-
 #storybook-next {
 
     right: 15px;
@@ -130,21 +121,9 @@
 }
 
 
-
-#storybook-prev:hover,
-#storybook-next:hover,
-#storybook-close:hover {
-
-    transform: scale(1.05);
-
-}
-
-
-
 #storybook-prev:active,
-#storybook-next:active,
-#storybook-close:active {
+#storybook-next:active {
 
-    transform: scale(0.97);
+    transform: translateY(-50%) scale(0.95);
 
 }
