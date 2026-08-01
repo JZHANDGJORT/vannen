@@ -26,7 +26,7 @@ Otis var nyfiken på nästan allt. Han tyckte om att simma i sjön, klättra öv
 En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.
         `,
 
-        imageClass: "story-right"
+        imageClass: "story-illustration"
     }
 
 ];
