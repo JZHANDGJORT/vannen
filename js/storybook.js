@@ -21,16 +21,18 @@ function openStoryBook() {
         "storybook"
     );
 
-
     currentStoryPage = 0;
 
-    updateStoryPage();
+    localStorage.setItem(
+        "storybook-page",
+        0
+    );
 
+    updateStoryPage();
 
     document
         .getElementById("backpack-view")
         .style.display = "none";
-
 
     document
         .getElementById("storybook")
