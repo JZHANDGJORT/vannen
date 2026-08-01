@@ -28,8 +28,9 @@ const storyPages = [
         background:
         "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
-        text: `
-        Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
+        text: 
+        `
+Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
         `,
 
         imageClass:
