@@ -2024,19 +2024,19 @@ function closeBackpackRoom() {
 
 function restoreCurrentView() {
 
-    const view = getCurrentView();
+    const hash = window.location.hash;
 
 
-    if (view === "backpack") {
+    if (hash === "#backpack") {
 
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "block";
         document.getElementById("storybook").style.display = "none";
 
-    } 
+    }
 
 
-    else if (view === "storybook") {
+    else if (hash === "#storybook") {
 
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "none";
@@ -2047,7 +2047,6 @@ function restoreCurrentView() {
             Number(
                 localStorage.getItem("storybook-page")
             ) || 0;
-
 
         updateStoryPage();
 
@@ -2063,7 +2062,6 @@ function restoreCurrentView() {
     }
 
 }
-
 
 /*
    HEJ DÅ OTIS
