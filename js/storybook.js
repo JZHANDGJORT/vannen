@@ -90,25 +90,24 @@ function changeStoryPage(direction) {
 
 function closeStoryBook() {
 
-    localStorage.setItem(
-        "vannen-view",
-        "backpack"
-    );
+    saveCurrentView("backpack");
 
-window.location.hash = "backpack";
-  
+    if (currentFriend) {
+
+        history.replaceState(
+            null,
+            "",
+            `?id=${currentFriend.id}#backpack`
+        );
+
+    }
+
     document
         .getElementById("storybook")
         .style.display = "none";
 
-
     document
         .getElementById("backpack-view")
         .style.display = "block";
-
-
-    currentStoryPage = 0;
-
-    updateStoryPage();
 
 }
