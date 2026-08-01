@@ -2024,15 +2024,41 @@ function closeBackpackRoom() {
 
 function restoreCurrentView() {
 
-    if (getCurrentView() === "backpack") {
+    const view = getCurrentView();
+
+
+    if (view === "backpack") {
 
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "block";
+        document.getElementById("storybook").style.display = "none";
 
-    } else {
+    } 
+
+
+    else if (view === "storybook") {
+
+        document.getElementById("friend-view").style.display = "none";
+        document.getElementById("backpack-view").style.display = "none";
+        document.getElementById("storybook").style.display = "block";
+
+
+        currentStoryPage =
+            Number(
+                localStorage.getItem("storybook-page")
+            ) || 0;
+
+
+        updateStoryPage();
+
+    }
+
+
+    else {
 
         document.getElementById("friend-view").style.display = "block";
         document.getElementById("backpack-view").style.display = "none";
+        document.getElementById("storybook").style.display = "none";
 
     }
 
