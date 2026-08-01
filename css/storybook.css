@@ -86,9 +86,9 @@
 
     position: absolute;
 
-    top: 10%;
+    top: 20%;
 
-    left: 30%;
+    left: 25%;
 
     z-index: 5;
 
@@ -120,7 +120,7 @@
 
     left: 30%;
 
-    top: 15%;
+    top: 25%;
 
     z-index: 2;
 
@@ -147,7 +147,7 @@
 
     position: absolute;
 
-    left: 30%;
+    left: 25%;
 
     bottom: 25%;
 
