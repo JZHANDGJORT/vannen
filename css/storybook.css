@@ -55,7 +55,7 @@
 
 .story-illustration {
 
-    width: 55% !important;
+    width: 60% !important;
 
     height: auto !important;
 
@@ -67,7 +67,21 @@
 
     left: 5%;
 
-    top: 15%;
+    top: 10%;
+
+    z-index: 2;
+
+    mask-image: radial-gradient(
+        ellipse,
+        black 65%,
+        transparent 100%
+    );
+
+    -webkit-mask-image: radial-gradient(
+        ellipse,
+        black 65%,
+        transparent 100%
+    );
 
 }
 
