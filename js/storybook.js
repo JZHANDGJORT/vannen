@@ -30,7 +30,7 @@ const storyPages = [
 
         text: 
         `
-Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
+Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.
         `,
 
         imageClass:
