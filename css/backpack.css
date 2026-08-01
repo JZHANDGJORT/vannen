@@ -121,7 +121,32 @@
 
     width: 180px;
 
-    transform: rotate(-5deg);
+    animation: storyBookFloat 3s ease-in-out infinite;
+
+}
+
+
+@keyframes storyBookFloat {
+
+    0% {
+
+        transform: rotate(-5deg) translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: rotate(-5deg) translateY(-8px);
+
+    }
+
+
+    100% {
+
+        transform: rotate(-5deg) translateY(0);
+
+    }
 
 }
 
