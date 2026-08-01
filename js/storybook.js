@@ -21,6 +21,8 @@ function openStoryBook() {
         "storybook"
     );
 
+  window.location.hash = "storybook";
+
     currentStoryPage = 0;
 
     localStorage.setItem(
