@@ -17,11 +17,11 @@
 
 
 /*
-  Själva boksidan
+  Själva boksidan (bakgrund)
 */
 
 
-#storybook-page {
+#storybook-background {
 
     width: 100%;
 
@@ -30,6 +30,30 @@
     object-fit: cover;
 
     display: block;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1;
+
+}
+
+
+/*
+  Illustration ovanpå boken
+*/
+
+
+#storybook-page {
+
+    display: block;
+
+    position: absolute;
+
+    z-index: 2;
 
 }
 
