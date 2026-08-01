@@ -131,16 +131,17 @@ function updateStoryPage() {
 
     if (!story.image) {
 
-        page.style.display = "none";
+    page.src = "";
 
-    } 
-    
-    else {
+    page.style.display = "none";
 
-        page.style.display = "block";
+} 
 
-    }
+else {
 
+    page.style.display = "block";
+
+}
 
 
 
