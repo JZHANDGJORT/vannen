@@ -77,6 +77,35 @@
 
 }
 
+/*
+  Kapitelrubrik
+*/
+
+
+#storybook-title {
+
+    position: absolute;
+
+    top: 10%;
+
+    left: 30%;
+
+    z-index: 5;
+
+    color: #29434A;
+
+    font-family: "Patrick Hand", cursive;
+
+    font-size: 34px;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    display: none;
+
+}
+
 .story-illustration {
 
     width: 60% !important;
