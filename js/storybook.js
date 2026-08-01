@@ -70,6 +70,11 @@ function changeStoryPage(direction) {
 
     currentStoryPage += direction;
 
+    localStorage.setItem(
+        "storybook-page",
+        currentStoryPage
+    );
+
     updateStoryPage();
 
 }
