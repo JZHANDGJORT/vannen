@@ -53,6 +53,13 @@
 
 }
 
+.story-illustration {
+
+    object-fit: contain;
+
+    object-position: center center;
+
+}
 
 /*
   Sagotext
