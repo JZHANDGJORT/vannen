@@ -79,7 +79,7 @@
 
 .story-illustration {
 
-    width: 40% !important;
+    width: 60% !important;
 
     height: auto !important;
 
@@ -89,9 +89,9 @@
 
     position: absolute;
 
-    left: 5%;
+    left: 40%;
 
-    top: 10%;
+    top: 25%;
 
     z-index: 2;
 
@@ -118,11 +118,11 @@
 
     position: absolute;
 
-    left: 10%;
+    left: 30%;
 
     bottom: 10%;
 
-    width: 84%;
+    width: 65%;
 
     z-index: 5;
 
