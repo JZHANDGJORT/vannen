@@ -16,12 +16,17 @@ const storyPages = [
 
 function openStoryBook() {
 
-    localStorage.setItem(
-        "vannen-view",
-        "storybook"
-    );
+    saveCurrentView("storybook");
 
-  window.location.hash = "storybook";
+    if (currentFriend) {
+
+        history.replaceState(
+            null,
+            "",
+            `?id=${currentFriend.id}#storybook`
+        );
+
+    }
 
     currentStoryPage = 0;
 
@@ -41,7 +46,6 @@ function openStoryBook() {
         .style.display = "block";
 
 }
-
 function updateStoryPage() {
 
     const page =
