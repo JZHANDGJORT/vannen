@@ -14,6 +14,8 @@ const storyPages = [
         background:
         "images/Otis/otis-backpack-item-sagobok-openl.PNG",
 
+        title: "",
+
         text: "",
 
         imageClass: ""
@@ -28,7 +30,13 @@ const storyPages = [
         background:
         "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
-        text: 
+        title:
+        `
+        Kapitel 1<br>
+        Otis och den magiska stenen
+        `,
+
+        text:
         `
 Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.
         `,
@@ -83,6 +91,7 @@ function openStoryBook() {
 
 
 
+
 function updateStoryPage() {
 
 
@@ -92,6 +101,10 @@ function updateStoryPage() {
 
     const background =
         document.getElementById("storybook-background");
+
+
+    const title =
+        document.getElementById("storybook-title");
 
 
     const text =
@@ -128,17 +141,36 @@ function updateStoryPage() {
 
     if (!story.image) {
 
-    page.src = "";
+        page.src = "";
 
-    page.style.display = "none";
+        page.style.display = "none";
 
-} 
+    } 
 
-else {
+    else {
 
-    page.style.display = "block";
+        page.style.display = "block";
 
-}
+    }
+
+
+
+    // Kapitelrubrik
+
+    if (story.title) {
+
+        title.style.display = "block";
+
+        title.innerHTML =
+            story.title;
+
+    }
+
+    else {
+
+        title.style.display = "none";
+
+    }
 
 
 
