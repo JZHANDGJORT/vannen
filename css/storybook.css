@@ -249,6 +249,36 @@
 
 }
 
+/*
+  Kapitelstart text
+*/
+
+.chapter-text {
+
+    left: 12.5%;
+
+    bottom: 18%;
+
+    width: 55%;
+
+    text-align: center;
+
+}
+
+
+/*
+  Vanlig berättelsetext
+*/
+
+.story-text {
+
+    left: 12.5%;
+
+    bottom: 20%;
+
+    width: 60%;
+
+}
 
 /*
   Tillbaka till ryggsäcken
