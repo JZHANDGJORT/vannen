@@ -16,9 +16,6 @@ const storyPages = [
 
         backgroundClass:
         "background-left",
-
-        pageType:
-        "contents"
       
         title: "",
 
@@ -38,9 +35,6 @@ const storyPages = [
 
         backgroundClass:
         "background-right",
-
-        pageType:
-        "chapter-start",
       
         title:
 `
@@ -76,9 +70,6 @@ Otis var nyfiken på nästan allt.
 
         backgroundClass:
         "background-left",
-
-        pageType:
-        "story-page",
       
         title: "",
 
@@ -108,9 +99,6 @@ Då såg han något som låg bland sanden.
 
         backgroundClass:
         "background-right",
-
-        pageType:
-        "story-page",
       
         title: "",
 
@@ -142,9 +130,6 @@ Otis bestämde sig för att ta med stenen hem.
 
         backgroundClass:
         "background-left",
-
-        pageType:
-        "story-page",
       
         title: "",
 
@@ -174,9 +159,6 @@ Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela 
 
         backgroundClass:
         "background-right",
-
-        pageType:
-        "story-page",
       
         title: "",
 
@@ -208,9 +190,6 @@ Efter en liten stund kändes det bättre.<br><br>
 
         backgroundClass:
         "background-left",
-
-        pageType:
-        "story-page",
 
       
         title: "",
@@ -309,19 +288,6 @@ function updateStoryPage() {
     const story =
         storyPages[currentStoryPage];
 
-    document
-    .getElementById("storybook")
-    .classList.remove(
-        "contents",
-        "chapter-start",
-        "story-page"
-    );
-
-    document
-    .getElementById("storybook")
-    .classList.add(
-        story.pageType
-    );
 
 
    // Uppdatera bokbakgrund
