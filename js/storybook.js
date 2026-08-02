@@ -16,6 +16,9 @@ const storyPages = [
 
         backgroundClass:
         "background-left",
+
+        pageType:
+        "contents"
       
         title: "",
 
