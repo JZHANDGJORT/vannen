@@ -333,6 +333,9 @@ background.className =
     page.className =
         story.imageClass;
 
+    text.className =
+        story.textClass;
+
 
 
     if (!story.image) {
