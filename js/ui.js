@@ -1315,7 +1315,7 @@ function happyMoreChoice(choice) {
         actions.innerHTML = `
 
             <button onclick="happyMoreContinue()">
-                🌿 Jag har berättat klart
+                🌿 Tillbaka till Otis
             </button>
 
 
