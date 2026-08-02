@@ -41,6 +41,18 @@
 
 }
 
+#storybook-background.background-right {
+
+    object-position: 55% center;
+
+}
+
+
+#storybook-background.background-left {
+
+    object-position: 45% center;
+
+}
 
 /*
   Illustration ovanpå boken
