@@ -56,7 +56,11 @@ Otis var nyfiken på nästan allt.
 `,
 
         imageClass:
-        "chapter-image"
+        "chapter-image",
+
+        textClass:
+        "chapter-text"
+      
     },
 
 
