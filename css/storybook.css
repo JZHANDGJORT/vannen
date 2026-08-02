@@ -45,7 +45,9 @@
 
     object-position: 70% center;
 
-    transform: scale(1.05) translateY(-10px);
+    transform:
+        scale(1.05)
+        translateY(-10px);
 
 }
 
