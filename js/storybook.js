@@ -42,7 +42,7 @@ Otis och den magiska stenen
 </span>
 `,
 
-        text: 
+        text:
 `
 Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
 
@@ -52,6 +52,7 @@ Otis var nyfiken på nästan allt.
         imageClass:
         "story-illustration"
     },
+
 
     // Sida 2
     {
@@ -65,11 +66,11 @@ Otis var nyfiken på nästan allt.
 
         text:
 `
-En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.
+En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.<br><br>
 
-Plask!
+Plask!<br><br>
 
-Han hoppade i vattnet och simmade en liten stund. Efteråt satte han sig på en varm sten för att vila.
+Han hoppade i vattnet och simmade en liten stund. Efteråt satte han sig på en varm sten för att vila.<br><br>
 
 Då såg han något som låg bland sanden.
 `,
@@ -91,13 +92,13 @@ Då såg han något som låg bland sanden.
 
         text:
 `
-En liten svart sten.
+En liten svart sten.<br><br>
 
-Den var oval och alldeles len.
+Den var oval och alldeles len.<br><br>
 
-– Vilken fin sten, sa Otis.
+– Vilken fin sten, sa Otis.<br><br>
 
-Han vände och vred på den. Den glänste lite i solen, som om den hade en egen liten hemlighet.
+Han vände och vred på den. Den glänste lite i solen, som om den hade en egen liten hemlighet.<br><br>
 
 Otis bestämde sig för att ta med stenen hem.
 `,
@@ -119,11 +120,11 @@ Otis bestämde sig för att ta med stenen hem.
 
         text:
 `
-Han lade den i sin ryggsäck och gick tillbaka genom skogen.
+Han lade den i sin ryggsäck och gick tillbaka genom skogen.<br><br>
 
-Senare samma dag hände något tråkigt.
+Senare samma dag hände något tråkigt.<br><br>
 
-Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela kojan.
+Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela kojan.<br><br>
 
 – Åh nej, suckade Otis.
 `,
@@ -145,13 +146,13 @@ Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela 
 
         text:
 `
-Då kom han ihåg stenen.
+Då kom han ihåg stenen.<br><br>
 
-Han tog fram den ur ryggsäcken och höll den i sin tass.
+Han tog fram den ur ryggsäcken och höll den i sin tass.<br><br>
 
-Stenen var kall och len.
+Stenen var kall och len.<br><br>
 
-Efter en liten stund kändes det bättre.
+Efter en liten stund kändes det bättre.<br><br>
 
 – Tack, lilla sten, sa Otis.
 `,
@@ -173,17 +174,17 @@ Efter en liten stund kändes det bättre.
 
         text:
 `
-Nästa dag tog Otis med sig stenen när han gav sig ut på äventyr.
+Nästa dag tog Otis med sig stenen när han gav sig ut på äventyr.<br><br>
 
-Han visade den sitt favoritträd.
+Han visade den sitt favoritträd.<br><br>
 
-Han visade den platsen där de små fiskarna brukade simma.
+Han visade den platsen där de små fiskarna brukade simma.<br><br>
 
-Han visade den de vackraste blommorna vid stigen.
+Han visade den de vackraste blommorna vid stigen.<br><br>
 
-Och sedan dess fick stenen följa med på alla hans äventyr.
+Och sedan dess fick stenen följa med på alla hans äventyr.<br><br>
 
-För Otis hade upptäckt något viktigt:
+För Otis hade upptäckt något viktigt:<br><br>
 
 Ibland kan en liten sak kännas väldigt stor.
 `,
@@ -191,9 +192,8 @@ Ibland kan en liten sak kännas väldigt stor.
         imageClass:
         "story-illustration"
     }
-  
-];
 
+];
 
 
 function openStoryBook() {
