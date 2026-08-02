@@ -14,6 +14,9 @@ const storyPages = [
         background:
         "images/Otis/otis-backpack-item-sagobok-openl.PNG",
 
+        backgroundClass:
+        "background-left",
+      
         title: "",
 
         text: "",
@@ -30,6 +33,9 @@ const storyPages = [
         background:
         "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
+        backgroundClass:
+        "background-right",
+      
         title:
 `
 <span class="chapter-number">
@@ -62,6 +68,9 @@ Otis var nyfiken på nästan allt.
         background:
         "images/Otis/otis-backpack-item-sagobok-openl.PNG",
 
+        backgroundClass:
+        "background-left",
+      
         title: "",
 
         text:
@@ -88,6 +97,9 @@ Då såg han något som låg bland sanden.
         background:
         "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
+        backgroundClass:
+        "background-right",
+      
         title: "",
 
         text:
@@ -116,6 +128,9 @@ Otis bestämde sig för att ta med stenen hem.
         background:
         "images/Otis/otis-backpack-item-sagobok-openl.PNG",
 
+        backgroundClass:
+        "background-left",
+      
         title: "",
 
         text:
@@ -142,6 +157,9 @@ Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela 
         background:
         "images/Otis/otis-backpack-item-sagobok-openr.PNG",
 
+        backgroundClass:
+        "background-right",
+      
         title: "",
 
         text:
@@ -170,6 +188,10 @@ Efter en liten stund kändes det bättre.<br><br>
         background:
         "images/Otis/otis-backpack-item-sagobok-openl.PNG",
 
+        backgroundClass:
+        "background-left",
+
+      
         title: "",
 
         text:
