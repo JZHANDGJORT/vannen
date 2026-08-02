@@ -309,6 +309,10 @@ function updateStoryPage() {
     const story =
         storyPages[currentStoryPage];
 
+    document
+    .getElementById("storybook")
+    .className =
+    story.pageType;
 
 
    // Uppdatera bokbakgrund
