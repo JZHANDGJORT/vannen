@@ -311,8 +311,17 @@ function updateStoryPage() {
 
     document
     .getElementById("storybook")
-    .className =
-    story.pageType;
+    .classList.remove(
+        "contents",
+        "chapter-start",
+        "story-page"
+    );
+
+    document
+    .getElementById("storybook")
+    .classList.add(
+        story.pageType
+    );
 
 
    // Uppdatera bokbakgrund
