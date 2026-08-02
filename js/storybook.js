@@ -290,10 +290,13 @@ function updateStoryPage() {
 
 
 
-    // Uppdatera bokbakgrund
+   // Uppdatera bokbakgrund
 
-    background.src =
-        story.background;
+background.src =
+    story.background;
+
+background.className =
+    story.backgroundClass;
 
 
 
