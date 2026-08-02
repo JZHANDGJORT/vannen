@@ -51,8 +51,147 @@ Otis var nyfiken på nästan allt.
 
         imageClass:
         "story-illustration"
-    }
+    },
 
+    // Sida 2
+    {
+        image:
+        "images/Otis/storybook/chapter01/page02.PNG",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+
+        title: "",
+
+        text:
+`
+En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.
+
+Plask!
+
+Han hoppade i vattnet och simmade en liten stund. Efteråt satte han sig på en varm sten för att vila.
+
+Då såg han något som låg bland sanden.
+`,
+
+        imageClass:
+        "story-illustration"
+    },
+
+
+    // Sida 3
+    {
+        image:
+        "images/Otis/storybook/chapter01/page03.JPEG",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+
+        title: "",
+
+        text:
+`
+En liten svart sten.
+
+Den var oval och alldeles len.
+
+– Vilken fin sten, sa Otis.
+
+Han vände och vred på den. Den glänste lite i solen, som om den hade en egen liten hemlighet.
+
+Otis bestämde sig för att ta med stenen hem.
+`,
+
+        imageClass:
+        "story-illustration"
+    },
+
+
+    // Sida 4
+    {
+        image:
+        "images/Otis/storybook/chapter01/page04.PNG",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+
+        title: "",
+
+        text:
+`
+Han lade den i sin ryggsäck och gick tillbaka genom skogen.
+
+Senare samma dag hände något tråkigt.
+
+Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela kojan.
+
+– Åh nej, suckade Otis.
+`,
+
+        imageClass:
+        "story-illustration"
+    },
+
+
+    // Sida 5
+    {
+        image:
+        "images/Otis/storybook/chapter01/page05.PNG",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+
+        title: "",
+
+        text:
+`
+Då kom han ihåg stenen.
+
+Han tog fram den ur ryggsäcken och höll den i sin tass.
+
+Stenen var kall och len.
+
+Efter en liten stund kändes det bättre.
+
+– Tack, lilla sten, sa Otis.
+`,
+
+        imageClass:
+        "story-illustration"
+    },
+
+
+    // Sida 6
+    {
+        image:
+        "images/Otis/storybook/chapter01/page06.PNG",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+
+        title: "",
+
+        text:
+`
+Nästa dag tog Otis med sig stenen när han gav sig ut på äventyr.
+
+Han visade den sitt favoritträd.
+
+Han visade den platsen där de små fiskarna brukade simma.
+
+Han visade den de vackraste blommorna vid stigen.
+
+Och sedan dess fick stenen följa med på alla hans äventyr.
+
+För Otis hade upptäckt något viktigt:
+
+Ibland kan en liten sak kännas väldigt stor.
+`,
+
+        imageClass:
+        "story-illustration"
+    }
+  
 ];
 
 
