@@ -42,10 +42,12 @@ Otis och den magiska stenen
 </span>
 `,
 
-        text:
-        `
-Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.
-        `,
+        text: 
+`
+Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.<br><br>
+
+Otis var nyfiken på nästan allt.
+`,
 
         imageClass:
         "story-illustration"
