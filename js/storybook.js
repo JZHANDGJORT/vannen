@@ -241,6 +241,33 @@ Otis och den magiska stenen
 
 <p>Han visade den de vackraste blommorna vid stigen.</p>
 
+`,
+
+        imageClass:
+        "story-image-left",
+
+        textClass:
+        "story-text-left",
+      
+    },
+
+      // Sida 7
+    {
+        image:
+        "images/Otis/storybook/chapter01/page07.PNG",
+
+        background:
+        "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+
+        backgroundClass:
+        "background-right",
+      
+        title: "",
+
+        text:
+
+`
+
 <p>Och sedan dess fick stenen följa med på alla hans äventyr.</p>
 
 <p>För Otis hade upptäckt något viktigt:</p>
@@ -250,10 +277,10 @@ Otis och den magiska stenen
 `,
 
         imageClass:
-        "story-image-left",
+        "story-image-right",
 
         textClass:
-        "story-text-left",
+        "story-text-right",
       
     }
 
