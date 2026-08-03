@@ -86,3 +86,10 @@ function addBadgeProgress(type) {
     updateBadge(type);
 
 }
+
+function updateAllBadges() {
+
+    updateBadge("lasar");
+    updateBadge("rakne");
+
+}
