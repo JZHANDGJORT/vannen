@@ -749,9 +749,26 @@ function simpleActivityDone() {
         "otis"
     );
 
+
     saveCompletedActivity(
         currentActivity
     );
+
+
+    if (currentActivity.type === "read") {
+
+        addBadgeProgress("lasar");
+
+    }
+
+
+    if (currentActivity.type === "homework" ||
+        currentActivity.type === "challenge") {
+
+        addBadgeProgress("rakne");
+
+    }
+
 
     currentActivity = null;
 
