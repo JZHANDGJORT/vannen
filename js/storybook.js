@@ -89,10 +89,10 @@ Då såg han något som låg bland sanden.
 `,
 
         imageClass:
-        "story-illustration",
+        "story-image-left",
 
         textClass:
-        "story-text"
+        "story-text-left",
       
     },
 
@@ -124,10 +124,10 @@ Otis bestämde sig för att ta med stenen hem.
 `,
 
         imageClass:
-        "story-illustration",
+        "story-image-right",
 
         textClass:
-        "story-text"
+        "story-text-right",
       
     },
 
@@ -157,10 +157,10 @@ Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela 
 `,
 
         imageClass:
-        "story-illustration",
+        "story-image-left",
 
         textClass:
-        "story-text"
+        "story-text-left",
       
     },
 
@@ -192,10 +192,10 @@ Efter en liten stund kändes det bättre.<br><br>
 `,
 
         imageClass:
-        "story-illustration",
+        "story-image-right",
 
         textClass:
-        "story-text"
+        "story-text-right",
       
     },
 
@@ -232,10 +232,10 @@ Ibland kan en liten sak kännas väldigt stor.
 `,
 
         imageClass:
-        "story-illustration",
+        "story-image-left",
 
         textClass:
-        "story-text"
+        "story-text-left",
       
     }
 
