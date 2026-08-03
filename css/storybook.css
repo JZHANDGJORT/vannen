@@ -262,7 +262,17 @@
   Vanlig berättelsetext
 */
 
-.story-text {
+.story-text-left {
+
+    left: 19%;
+
+    top: 15.5%;
+
+    width: 75%;
+
+}
+
+.story-text-right {
 
     left: 19%;
 
