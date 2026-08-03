@@ -1993,6 +1993,8 @@ function openBackpackRoom(updateUrl = true) {
 
     saveCurrentView("backpack");
 
+    updateAllBadges();
+
     if (updateUrl && currentFriend) {
 
         history.replaceState(
