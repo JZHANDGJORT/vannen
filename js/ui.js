@@ -777,6 +777,12 @@ function simpleActivityDone() {
 
     }
 
+    if (currentActivity.type === "discover") {
+
+    addBadgeProgress("upptackar");
+
+}
+
 
     currentActivity = null;
 
