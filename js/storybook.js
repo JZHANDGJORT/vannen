@@ -473,10 +473,10 @@ document
 
 document
     .getElementById("storybook-read")
-    .style.display =
-        storyReadingMode
-            ? "block"
-            : "none";
+.style.display =
+    storyReadingMode && currentStoryPage > 0
+        ? "block"
+        : "none";
 
   }
 
