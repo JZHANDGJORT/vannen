@@ -454,42 +454,33 @@ background.className =
 
 
 
-    // Pilar
+   // Pilar
 
-    document
-        .getElementById("storybook-prev")
-        .style.display =
-            currentStoryPage === 0
-                ? "none"
-                : "block";
+document
+    .getElementById("storybook-prev")
+    .style.display =
+        currentStoryPage === 0
+            ? "none"
+            : "block";
 
-
-
-    document
-        .getElementById("storybook-next")
-        .style.display =
-            currentStoryPage === storyPages.length - 1
-                ? "none"
-                : "block";
-
-}
+document
+    .getElementById("storybook-next")
+    .style.display =
+        currentStoryPage === storyPages.length - 1
+            ? "none"
+            : "block";
 
 
-if (storyReadingMode) {
+// Läsknapp
 
-    html += `
+document
+    .getElementById("storybook-read")
+    .style.display =
+        storyReadingMode
+            ? "block"
+            : "none";
 
-        <button
-            class="storybook-read-button"
-            onclick="storyReadingDone()">
-
-            📚 Vi har läst en stund
-
-        </button>
-
-    `;
-
-}
+  }
 
 
 function changeStoryPage(direction) {
