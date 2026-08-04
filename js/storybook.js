@@ -563,3 +563,22 @@ function showComingSoon() {
     );
 
 }
+
+// Aktivitet - Läsning till Läsarmärke
+
+function readOtisStory() {
+
+    addMessage(
+        "Åh vad roligt! 💚 Då läser vi om ett av mina äventyr tillsammans. När ni har läst en stund kan ni trycka på '📚 Vi har läst en stund'.",
+        "otis"
+    );
+
+    storyReadingMode = true;
+
+    setTimeout(() => {
+
+        openStorybook();
+
+    }, 1200);
+
+}
