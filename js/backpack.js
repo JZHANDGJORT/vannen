@@ -7,7 +7,9 @@ function getBadges() {
         localStorage.getItem(BADGE_STORAGE_KEY)
     ) || {
         lasar: 0,
-        rakne: 0
+        rakne: 0,
+        skapar: 0,
+        upptackar: 0
     };
 
 }
