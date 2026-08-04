@@ -592,11 +592,7 @@ function readOtisStory() {
     );
 
 
-    setTimeout(() => {
-
-        openStoryBook();
-
-    }, 1200);
+    openStoryBook();
 
 }
 
