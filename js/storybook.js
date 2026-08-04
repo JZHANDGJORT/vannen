@@ -314,17 +314,17 @@ function openStoryBook() {
     );
 
 
-    updateStoryPage();
-
-
     document
-        .getElementById("backpack-view")
-        .style.display = "none";
+    .getElementById("backpack-view")
+    .style.display = "none";
 
 
-    document
-        .getElementById("storybook")
-        .style.display = "block";
+document
+    .getElementById("storybook")
+    .style.display = "block";
+
+
+updateStoryPage();
 
 }
 
