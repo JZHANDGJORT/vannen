@@ -404,6 +404,10 @@ function chooseActivityNeed(type) {
                 📖 Ja, jag har en bok
             </button>
 
+            <button onclick="readOtisStory()">
+                📚 Läs om Otis äventyr
+            </button>
+
             <button onclick="simpleActivity('later')">
                 🌿 Jag väljer senare
             </button>
