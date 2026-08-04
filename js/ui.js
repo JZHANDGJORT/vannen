@@ -842,6 +842,109 @@ function showDiscover() {
 
 }
 
+function showWorldDiscover() {
+
+    addMessage(
+        "Då ger vi oss ut på ett litet äventyr! 🌍 Vad skulle du vilja upptäcka idag?",
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="discoverWorld('nature')">
+            🌳 Naturen
+        </button>
+
+        <button onclick="discoverWorld('place')">
+            🗺️ En ny plats
+        </button>
+
+        <button onclick="discoverWorld('details')">
+            🔍 Titta noga
+        </button>
+
+        <button onclick="showDiscover()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function discoverWorld(type) {
+
+    const ideas = {
+
+        nature: [
+
+            "🌿 Hitta ett löv du tycker är extra fint.",
+
+            "🐦 Lyssna efter tre olika fågelläten.",
+
+            "🪨 Hitta en sten som känns speciell."
+
+        ],
+
+        place: [
+
+            "🚶 Gå en väg du aldrig gått förut.",
+
+            "🏡 Titta efter ett hus du aldrig lagt märke till.",
+
+            "🌉 Hitta en plats du vill komma tillbaka till."
+
+        ],
+
+        details: [
+
+            "👀 Hitta fem saker som har samma färg.",
+
+            "🦋 Leta efter något riktigt litet.",
+
+            "☁️ Titta upp och beskriv molnen."
+
+        ]
+
+    };
+
+    addMessage(
+        ideas[type][
+            Math.floor(Math.random() * ideas[type].length)
+        ],
+        "otis"
+    );
+
+    currentActivity = {
+
+        type: "upptackar",
+
+        completed:
+            "Vilket spännande äventyr! 🌍 Jag hoppas att du hittade något du aldrig sett förut.",
+
+        skipped:
+            "Det gör inget. Vi kan ge oss ut på upptäcktsfärd en annan dag. 🌿"
+
+    };
+
+    document.getElementById("actions").innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
+
+
+
 
 function startOtisTimer() {
 
