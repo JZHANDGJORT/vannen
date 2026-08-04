@@ -777,11 +777,17 @@ function simpleActivityDone() {
 
     }
 
-    if (currentActivity.type === "discover") {
+    if (currentActivity.type === "upptackar") {
 
-    addBadgeProgress("upptackar");
+        addBadgeProgress("upptackar");
 
-}
+    }
+
+    if (currentActivity.type === "skapar") {
+
+        addBadgeProgress("skapar");
+
+    }
 
 
     currentActivity = null;
