@@ -1983,6 +1983,7 @@ function paintIdea(randomIdea) {
 
     currentActivity = {
         type: "paint",
+        badgeType: "skapar",
         completed: "Vilken fin skapelse! 🎨 Jag hoppas att du hade roligt.",
         skipped: "Det gör inget. Vi kan måla en annan dag. 💚"
     };
@@ -2118,7 +2119,7 @@ addMessage(
     currentActivity = {
 
         type: "build",
-
+        badgeType: "skapar",
         completed:
         "Vilket fint bygge! 🧱 Jag hoppas att du hade roligt.",
 
@@ -2215,7 +2216,7 @@ function chooseCraft(material) {
     currentActivity = {
 
         type: "craft",
-
+        badgeType: "skapar",
         completed:
         "Vad fint du skapade! ✂️ Jag tycker om att pyssla tillsammans med dig.",
 
