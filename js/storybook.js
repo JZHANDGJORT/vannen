@@ -599,3 +599,23 @@ function readOtisStory() {
     }, 1200);
 
 }
+
+function storyReadingDone() {
+
+    addBadgeProgress("lasar");
+
+    storyReadingMode = false;
+
+    localStorage.setItem(
+        "storyReadingMode",
+        "false"
+    );
+
+    addMessage(
+        "Vad mysigt att läsa tillsammans! 📚 Jag är glad att du ville följa med på mitt äventyr. 💚",
+        "otis"
+    );
+
+    updateStoryPage();
+
+}
