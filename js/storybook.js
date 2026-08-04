@@ -529,10 +529,11 @@ function closeStoryBook() {
         .getElementById("backpack-view")
         .style.display = "block";
 
+
+  
+updateAllBadges();
+
 }
-
-
-
 
 
 function goToChapter(chapter) {
