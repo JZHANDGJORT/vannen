@@ -93,5 +93,7 @@ function updateAllBadges() {
 
     updateBadge("lasar");
     updateBadge("rakne");
+    updateBadge("skapar");
+    updateBadge("upptackar");
 
 }
