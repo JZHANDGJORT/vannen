@@ -327,6 +327,10 @@ function showActivity() {
             🌿 Hitta på något
         </button>
 
+        <button onclick="showDiscover()">
+            🍃 Upptäcka
+        </button>
+
         <button onclick="chooseActivityNeed('read')">
             📚 Läsa
         </button>
@@ -348,7 +352,7 @@ function showActivity() {
         </button>
 
         <button onclick="showMainMenu()">
-        ⬅️ Tillbaka
+            ⬅️ Tillbaka
         </button>
 
     `;
