@@ -475,7 +475,21 @@ background.className =
 }
 
 
+if (storyReadingMode) {
 
+    html += `
+
+        <button
+            class="storybook-read-button"
+            onclick="storyReadingDone()">
+
+            📚 Vi har läst en stund
+
+        </button>
+
+    `;
+
+}
 
 
 function changeStoryPage(direction) {
@@ -589,18 +603,4 @@ function readOtisStory() {
 }
 
 
-if (storyReadingMode) {
 
-    html += `
-
-        <button
-            class="storybook-read-button"
-            onclick="storyReadingDone()">
-
-            📚 Vi har läst en stund
-
-        </button>
-
-    `;
-
-}
