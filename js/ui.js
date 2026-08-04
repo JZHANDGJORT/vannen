@@ -2048,11 +2048,13 @@ function restoreCurrentView() {
 
     if (hash === "#backpack") {
 
-        document.getElementById("friend-view").style.display = "none";
-        document.getElementById("backpack-view").style.display = "block";
-        document.getElementById("storybook").style.display = "none";
+    document.getElementById("friend-view").style.display = "none";
+    document.getElementById("backpack-view").style.display = "block";
+    document.getElementById("storybook").style.display = "none";
 
-    }
+    updateAllBadges();
+
+}
 
 
     else if (hash === "#storybook") {
