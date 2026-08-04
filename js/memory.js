@@ -166,6 +166,10 @@ function resetMemory() {
         "otis-memory"
     );
 
+    localStorage.removeItem(
+        "otis-badges"
+    );
+
 
     otisMemory = {
 
