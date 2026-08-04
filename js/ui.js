@@ -802,6 +802,41 @@ function simpleActivitySkipped() {
 
 }
 
+function showDiscover() {
+
+    addMessage(
+        "Vad roligt! 🌿 Jag älskar att upptäcka nya saker. Vad vill du upptäcka idag?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="showWorldDiscover()">
+            🌍 Upptäcka världen
+        </button>
+
+        <button onclick="showBodyDiscover()">
+            💚 Upptäcka kroppen
+        </button>
+
+        <button onclick="openFactBook()">
+            📚 Upptäcka kunskap
+        </button>
+
+        <button onclick="showActivity()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+
 function startOtisTimer() {
 
     currentActivity = {
