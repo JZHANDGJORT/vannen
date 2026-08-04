@@ -2,6 +2,8 @@
   Otis Sagobok
 */
 
+let storyReadingMode = false;
+
 let currentStoryPage = 0;
 
 
