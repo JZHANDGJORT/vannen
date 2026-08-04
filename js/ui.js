@@ -943,6 +943,128 @@ function discoverWorld(type) {
 
 }
 
+function showBodyDiscover() {
+
+    addMessage(
+        "Kroppen är fantastisk. 💚 Ska vi upptäcka vad den kan göra idag?",
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="discoverBody('walk')">
+            🚶 Ta en kort promenad
+        </button>
+
+        <button onclick="discoverBody('stretch')">
+            🤸 Sträck på kroppen
+        </button>
+
+        <button onclick="discoverBody('water')">
+            💧 Drick ett glas vatten
+        </button>
+
+        <button onclick="discoverBody('listen')">
+            👂 Lyssna på kroppen
+        </button>
+
+        <button onclick="showDiscover()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function discoverBody(activity) {
+
+    const messages = {
+
+        walk:
+        "Vad härligt! 🚶 Vi tar en liten promenad och ser vad vi upptäcker på vägen.",
+
+        stretch:
+        "🤸 Då sträcker vi på kroppen en stund. Det brukar kännas skönt.",
+
+        water:
+        "💧 Ett glas vatten är en fin present till kroppen.",
+
+        listen:
+        "💚 Stanna upp en liten stund och känn efter hur kroppen känns just idag."
+
+    };
+
+    addMessage(
+        messages[activity],
+        "otis"
+    );
+
+    currentActivity = {
+
+        type: "upptackar",
+
+        completed:
+        "Vad spännande! 🌿 Nu har vi upptäckt något nytt tillsammans.",
+
+        skipped:
+        "Det gör inget. Vi kan upptäcka mer en annan dag. 💚"
+
+    };
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
+
+function showKnowledgeDiscover() {
+
+    addMessage(
+        "Jag har samlat massor av spännande saker i min faktabok. 📚 Vill du kika i den tillsammans med mig?",
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="openFactBook()">
+            📖 Öppna faktaboken
+        </button>
+
+        <button onclick="showDiscover()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function openFactBook() {
+
+    addMessage(
+        "📚 Faktaboken fylls snart med massor av spännande saker att upptäcka. 🌿",
+        "otis"
+    );
+
+    showKnowledgeDiscover();
+
+}
 
 
 
