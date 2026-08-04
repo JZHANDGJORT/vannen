@@ -578,12 +578,13 @@ function showComingSoon() {
 
 function readOtisStory() {
 
+    storyReadingMode = true;
+
     addMessage(
         "Åh vad roligt! 💚 Då läser vi om ett av mina äventyr tillsammans. När ni har läst en stund kan ni trycka på '📚 Vi har läst en stund'.",
         "otis"
     );
 
-    storyReadingMode = true;
 
     setTimeout(() => {
 
@@ -592,6 +593,3 @@ function readOtisStory() {
     }, 1200);
 
 }
-
-
-
