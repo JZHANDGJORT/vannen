@@ -551,6 +551,9 @@ function goToChapter(chapter) {
 
     }
 
+
+  
+
 }
 
 
@@ -582,5 +585,22 @@ function readOtisStory() {
         openStorybook();
 
     }, 1200);
+
+}
+
+
+if (storyReadingMode) {
+
+    html += `
+
+        <button
+            class="storybook-read-button"
+            onclick="storyReadingDone()">
+
+            📚 Vi har läst en stund
+
+        </button>
+
+    `;
 
 }
