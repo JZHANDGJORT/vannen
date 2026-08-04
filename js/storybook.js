@@ -2,7 +2,8 @@
   Otis Sagobok
 */
 
-let storyReadingMode = false;
+let storyReadingMode =
+    localStorage.getItem("storyReadingMode") === "true";
 
 let currentStoryPage = 0;
 
