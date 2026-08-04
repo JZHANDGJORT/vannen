@@ -783,11 +783,13 @@ function simpleActivityDone() {
 
     }
 
-    if (currentActivity.type === "skapar") {
+    if (currentActivity.badgeType) {
 
-        addBadgeProgress("skapar");
+    addBadgeProgress(
+        currentActivity.badgeType
+    );
 
-    }
+}
 
 
     currentActivity = null;
