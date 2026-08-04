@@ -294,7 +294,6 @@ function openStoryBook() {
 
     saveCurrentView("storybook");
 
-
     if (currentFriend) {
 
         history.replaceState(
@@ -305,30 +304,28 @@ function openStoryBook() {
 
     }
 
-
     currentStoryPage = 0;
-
 
     localStorage.setItem(
         "storybook-page",
         0
     );
 
+    document
+        .getElementById("friend-view")
+        .style.display = "none";
 
     document
-    .getElementById("backpack-view")
-    .style.display = "none";
+        .getElementById("backpack-view")
+        .style.display = "none";
 
+    document
+        .getElementById("storybook")
+        .style.display = "block";
 
-document
-    .getElementById("storybook")
-    .style.display = "block";
-
-
-updateStoryPage();
+    updateStoryPage();
 
 }
-
 
 
 
