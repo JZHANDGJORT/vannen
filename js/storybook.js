@@ -587,7 +587,7 @@ function readOtisStory() {
 
     setTimeout(() => {
 
-        openStorybook();
+        openStoryBook();
 
     }, 1200);
 
