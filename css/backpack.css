@@ -43,7 +43,7 @@
 }
 
 /*
-   Läsarmärken
+   Läsarmärke
 */
 
 
@@ -58,7 +58,7 @@
 }
 
 /*
-   Räknemärken
+   Räknemärke
 */
 
 
@@ -72,6 +72,35 @@
 
 }
 
+/*
+   Skaparmärke
+*/
+
+
+.backpack-marke-graskapar {
+
+    left: 67%;
+
+    top: 9.4%;
+
+    width: 70px;
+
+}
+
+/*
+   Upptäckarmärke
+*/
+
+
+.backpack-marke-graupptackar {
+
+    left: 70%;
+
+    top: 10%;
+
+    width: 70px;
+
+}
 
 /*
    Receptbok
