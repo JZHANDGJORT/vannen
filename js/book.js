@@ -9,7 +9,7 @@ let currentBookPage = 0;
 
 function openBook() {
 
-    saveCurrentView("book");
+    saveCurrentView("storybook");
 
 
     if (currentFriend) {
@@ -17,7 +17,7 @@ function openBook() {
         history.replaceState(
             null,
             "",
-            `?id=${currentFriend.id}#book`
+            `?id=${currentFriend.id}#storybook`
         );
 
     }
@@ -27,7 +27,7 @@ function openBook() {
 
 
     localStorage.setItem(
-        "book-page",
+        "storybook-page",
         0
     );
 
@@ -79,33 +79,33 @@ function updateBookPage() {
 
 
     const story =
-    storyBookData.pages[currentBookPage];
+    storyBookData.pages[currentStoryPage];
 
 
 
     background.src =
-        book.background;
+        story.background;
 
 
     background.className =
-        book.backgroundClass;
+        story.backgroundClass;
 
 
 
     page.src =
-        book.image;
+        story.image;
 
 
     page.className =
-        book.imageClass;
+        story.imageClass;
 
 
     text.className =
-        book.textClass;
+        story.textClass;
 
 
 
-    if (!book.image) {
+    if (!story.image) {
 
         page.src = "";
 
@@ -121,12 +121,12 @@ function updateBookPage() {
 
 
 
-    if (book.title) {
+    if (story.title) {
 
         title.style.display = "block";
 
         title.innerHTML =
-           book.title;
+            story.title;
 
     }
 
@@ -164,7 +164,7 @@ function updateBookPage() {
 
 
         text.innerHTML =
-            book.text;
+            story.text;
 
     }
 
@@ -183,7 +183,7 @@ function updateBookPage() {
     document
         .getElementById("storybook-next")
         .style.display =
-            currentBookPage === BookData.pages.length - 1
+            currentBookPage === storyBookData.pages.length - 1
                 ? "none"
                 : "block";
 
@@ -209,7 +209,7 @@ function changeBookPage(direction) {
 
 
     localStorage.setItem(
-        "book-page",
+        "storybook-page",
         currentBookPage
     );
 
@@ -225,7 +225,7 @@ function goToChapter(chapter) {
         currentBookPage = 1;
 
         localStorage.setItem(
-            "book-page",
+            "storybook-page",
             1
         );
 
@@ -274,7 +274,7 @@ function closeBook() {
 // Aktivitet - Läsning till Läsarmärke
 
 let bookReadingMode =
-    localStorage.getItem("bookReadingMode") === "true";
+    localStorage.getItem("storyReadingMode") === "true";
 
 
 function readOtisStory() {
@@ -282,7 +282,7 @@ function readOtisStory() {
     bookReadingMode = true;
 
     localStorage.setItem(
-        "bookReadingMode",
+        "storyReadingMode",
         "true"
     );
 
@@ -303,7 +303,7 @@ function bookReadingDone() {
     bookReadingMode = false;
 
     localStorage.setItem(
-        "bookReadingMode",
+        "storyReadingMode",
         "false"
     );
 
