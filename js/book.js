@@ -183,7 +183,7 @@ function updateStoryPage() {
     document
         .getElementById("storybook-next")
         .style.display =
-            currentStoryPage === storyPages.length - 1
+            currentStoryPage === storyBookData.pages.length - 1
                 ? "none"
                 : "block";
 
