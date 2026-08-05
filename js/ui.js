@@ -2335,28 +2335,28 @@ function restoreCurrentView() {
 
     if (hash === "#backpack") {
 
-    document.getElementById("friend-view").style.display = "none";
-    document.getElementById("backpack-view").style.display = "block";
-    document.getElementById("storybook").style.display = "none";
+        document.getElementById("friend-view").style.display = "none";
+        document.getElementById("backpack-view").style.display = "block";
+        document.getElementById("storybook").style.display = "none";
 
-    updateAllBadges();
+        updateAllBadges();
 
-}
+    }
 
 
-    else if (hash === "#storybook") {
+    else if (hash === "#book") {
 
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "block";
 
 
-        currentStoryPage =
+        currentBookPage =
             Number(
-                localStorage.getItem("storybook-page")
+                localStorage.getItem("book-page")
             ) || 0;
 
-        updateStoryPage();
+        updateBookPage();
 
     }
 
