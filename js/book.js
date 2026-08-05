@@ -78,34 +78,34 @@ function updateBookPage() {
 
 
 
-    const pageData =
+    const story =
         bookData.pages[currentBookPage];
 
 
 
     background.src =
-        pageData.background;
+        story.background;
 
 
     background.className =
-        pageData.backgroundClass;
+        story.backgroundClass;
 
 
 
     page.src =
-        pageData.image;
+        story.image;
 
 
     page.className =
-        pageData.imageClass;
+        story.imageClass;
 
 
     text.className =
-        pageData.textClass;
+        story.textClass;
 
 
 
-    if (!pageData.image) {
+    if (!story.image) {
 
         page.src = "";
 
@@ -121,12 +121,12 @@ function updateBookPage() {
 
 
 
-    if (pageData.title) {
+    if (story.title) {
 
         title.style.display = "block";
 
         title.innerHTML =
-            pageData.title;
+            story.title;
 
     }
 
@@ -164,7 +164,7 @@ function updateBookPage() {
 
 
         text.innerHTML =
-            pageData.text;
+            story.text;
 
     }
 
@@ -240,7 +240,6 @@ function goToChapter(chapter) {
 
     }
 
-
 }
 
 
@@ -282,10 +281,12 @@ function closeBook() {
 
 
 
-// Läsaktivitet (behålls Otis-specifik tills aktiviteterna generaliseras)
+// Aktivitet - Läsning till Läsarmärke
+
 
 let bookReadingMode =
     localStorage.getItem("bookReadingMode") === "true";
+
 
 
 
