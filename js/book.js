@@ -268,3 +268,48 @@ function closeStoryBook() {
     updateAllBadges();
 
 }
+
+// Aktivitet - Läsning till Läsarmärke
+
+let storyReadingMode =
+    localStorage.getItem("storyReadingMode") === "true";
+
+
+function readOtisStory() {
+
+    storyReadingMode = true;
+
+    localStorage.setItem(
+        "storyReadingMode",
+        "true"
+    );
+
+    addMessage(
+        "Åh vad roligt! 💚 Då läser vi om ett av mina äventyr tillsammans. När ni har läst en stund kan ni trycka på '📚 Vi har läst en stund'.",
+        "otis"
+    );
+
+    openStoryBook();
+
+}
+
+
+function storyReadingDone() {
+
+    addBadgeProgress("lasar");
+
+    storyReadingMode = false;
+
+    localStorage.setItem(
+        "storyReadingMode",
+        "false"
+    );
+
+    addMessage(
+        "Vad mysigt att läsa tillsammans! 📚 Jag är glad att du ville följa med på mitt äventyr. 💚",
+        "otis"
+    );
+
+    updateStoryPage();
+
+}
