@@ -79,7 +79,7 @@ function updateStoryPage() {
 
 
     const story =
-        storyPages[currentStoryPage];
+    storyBookData.pages[currentStoryPage];
 
 
 
