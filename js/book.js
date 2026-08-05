@@ -190,9 +190,11 @@ function updateStoryPage() {
 
 
     document
-        .getElementById("storybook-read")
-        .style.display =
-            "none";
+    .getElementById("storybook-read")
+    .style.display =
+        storyReadingMode && currentStoryPage > 0
+            ? "block"
+            : "none";
 
 
 }
