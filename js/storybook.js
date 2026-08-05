@@ -1,11 +1,11 @@
 /*
-  Otis Sagobok
+  Book Data
 */
 
 
-const storyBookData = {
+const bookData = {
 
-    id: "storybook",
+    id: "book",
 
     title: "Otis Sagobok",
 
