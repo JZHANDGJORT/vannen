@@ -621,8 +621,8 @@ function simpleActivity(type) {
             ✨ Ge mig en idé
         </button>
 
-        <button onclick="chooseActivityNeed(type)">
-        ⬅️ Tillbaka
+        <button onclick="chooseActivityNeed('create')">
+            ⬅️ Tillbaka
         </button>
 
 
@@ -664,8 +664,8 @@ function simpleActivity(type) {
             ✨ Något annat
         </button>
 
-        <button onclick="chooseActivityNeed(type)">
-        ⬅️ Tillbaka
+        <button onclick="chooseActivityNeed('create')">
+            ⬅️ Tillbaka
         </button>
 
     `;
@@ -697,9 +697,9 @@ function simpleActivity(type) {
             🧶 Garn
         </button>
 
-        <button onclick="chooseActivityNeed(type)">
-        ⬅️ Tillbaka
-        </button>
+        <button onclick="chooseActivityNeed('create')">
+            ⬅️ Tillbaka
+         </button>
 
     `;
 
