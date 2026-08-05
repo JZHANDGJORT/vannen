@@ -76,3 +76,12 @@ Uttrar
     ]
 
 };
+
+function openFactBook() {
+
+    addMessage(
+        "📚 Här kan vi upptäcka spännande fakta tillsammans!",
+        "otis"
+    );
+
+}
