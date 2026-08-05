@@ -216,6 +216,22 @@ function changeStoryPage(direction) {
 
 }
 
+function goToChapter(chapter) {
+
+    if (chapter === 1) {
+
+        currentStoryPage = 1;
+
+        localStorage.setItem(
+            "storybook-page",
+            1
+        );
+
+        updateStoryPage();
+
+    }
+
+}
 
 
 
