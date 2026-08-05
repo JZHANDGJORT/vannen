@@ -9,7 +9,7 @@ let currentBookPage = 0;
 
 function openBook() {
 
-    saveCurrentView("storybook");
+    saveCurrentView("book");
 
 
     if (currentFriend) {
@@ -17,7 +17,7 @@ function openBook() {
         history.replaceState(
             null,
             "",
-            `?id=${currentFriend.id}#storybook`
+            `?id=${currentFriend.id}#book`
         );
 
     }
@@ -27,7 +27,7 @@ function openBook() {
 
 
     localStorage.setItem(
-        "storybook-page",
+        "book-page",
         0
     );
 
@@ -78,34 +78,34 @@ function updateBookPage() {
 
 
 
-    const story =
-    storyBookData.pages[currentStoryPage];
+    const pageData =
+        bookData.pages[currentBookPage];
 
 
 
     background.src =
-        story.background;
+        pageData.background;
 
 
     background.className =
-        story.backgroundClass;
+        pageData.backgroundClass;
 
 
 
     page.src =
-        story.image;
+        pageData.image;
 
 
     page.className =
-        story.imageClass;
+        pageData.imageClass;
 
 
     text.className =
-        story.textClass;
+        pageData.textClass;
 
 
 
-    if (!story.image) {
+    if (!pageData.image) {
 
         page.src = "";
 
@@ -121,12 +121,12 @@ function updateBookPage() {
 
 
 
-    if (story.title) {
+    if (pageData.title) {
 
         title.style.display = "block";
 
         title.innerHTML =
-            story.title;
+            pageData.title;
 
     }
 
@@ -164,7 +164,7 @@ function updateBookPage() {
 
 
         text.innerHTML =
-            story.text;
+            pageData.text;
 
     }
 
@@ -183,18 +183,18 @@ function updateBookPage() {
     document
         .getElementById("storybook-next")
         .style.display =
-            currentBookPage === storyBookData.pages.length - 1
+            currentBookPage === bookData.pages.length - 1
                 ? "none"
                 : "block";
 
 
 
     document
-    .getElementById("storybook-read")
-    .style.display =
-        bookReadingMode && currentBookPage > 0
-            ? "block"
-            : "none";
+        .getElementById("storybook-read")
+        .style.display =
+            bookReadingMode && currentBookPage > 0
+                ? "block"
+                : "none";
 
 
 }
@@ -209,7 +209,7 @@ function changeBookPage(direction) {
 
 
     localStorage.setItem(
-        "storybook-page",
+        "book-page",
         currentBookPage
     );
 
@@ -218,22 +218,31 @@ function changeBookPage(direction) {
 
 }
 
+
+
+
 function goToChapter(chapter) {
+
 
     if (chapter === 1) {
 
+
         currentBookPage = 1;
 
+
         localStorage.setItem(
-            "storybook-page",
+            "book-page",
             1
         );
+
 
         updateBookPage();
 
     }
 
+
 }
+
 
 
 
@@ -271,46 +280,60 @@ function closeBook() {
 
 }
 
-// Aktivitet - Läsning till Läsarmärke
+
+
+// Läsaktivitet (behålls Otis-specifik tills aktiviteterna generaliseras)
 
 let bookReadingMode =
-    localStorage.getItem("storyReadingMode") === "true";
+    localStorage.getItem("bookReadingMode") === "true";
+
 
 
 function readOtisStory() {
 
+
     bookReadingMode = true;
 
+
     localStorage.setItem(
-        "storyReadingMode",
+        "bookReadingMode",
         "true"
     );
+
 
     addMessage(
         "Åh vad roligt! 💚 Då läser vi om ett av mina äventyr tillsammans. När ni har läst en stund kan ni trycka på '📚 Vi har läst en stund'.",
         "otis"
     );
 
+
     openBook();
 
 }
 
 
+
+
 function bookReadingDone() {
+
 
     addBadgeProgress("lasar");
 
+
     bookReadingMode = false;
 
+
     localStorage.setItem(
-        "storyReadingMode",
+        "bookReadingMode",
         "false"
     );
+
 
     addMessage(
         "Vad mysigt att läsa tillsammans! 📚 Jag är glad att du ville följa med på mitt äventyr. 💚",
         "otis"
     );
+
 
     updateBookPage();
 
