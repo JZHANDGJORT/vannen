@@ -3,11 +3,11 @@
 */
 
 
-let currentStoryPage = 0;
+let currentBookPage = 0;
 
 
 
-function openStoryBook() {
+function openBook() {
 
     saveCurrentView("storybook");
 
@@ -23,7 +23,7 @@ function openStoryBook() {
     }
 
 
-    currentStoryPage = 0;
+    currentBookPage = 0;
 
 
     localStorage.setItem(
@@ -47,14 +47,14 @@ function openStoryBook() {
         .style.display = "block";
 
 
-    updateStoryPage();
+    updateBookPage();
 
 }
 
 
 
 
-function updateStoryPage() {
+function updateBookPage() {
 
 
     const page =
@@ -138,7 +138,7 @@ function updateStoryPage() {
 
 
 
-    if (currentStoryPage === 0) {
+    if (currentBookPage === 0) {
 
 
         content.style.display =
@@ -174,7 +174,7 @@ function updateStoryPage() {
     document
         .getElementById("storybook-prev")
         .style.display =
-            currentStoryPage === 0
+            currentBookPage === 0
                 ? "none"
                 : "block";
 
@@ -183,7 +183,7 @@ function updateStoryPage() {
     document
         .getElementById("storybook-next")
         .style.display =
-            currentStoryPage === storyBookData.pages.length - 1
+            currentBookPage === storyBookData.pages.length - 1
                 ? "none"
                 : "block";
 
@@ -192,7 +192,7 @@ function updateStoryPage() {
     document
     .getElementById("storybook-read")
     .style.display =
-        storyReadingMode && currentStoryPage > 0
+        bookReadingMode && currentBookPage > 0
             ? "block"
             : "none";
 
@@ -202,19 +202,19 @@ function updateStoryPage() {
 
 
 
-function changeStoryPage(direction) {
+function changeBookPage(direction) {
 
 
-    currentStoryPage += direction;
+    currentBookPage += direction;
 
 
     localStorage.setItem(
         "storybook-page",
-        currentStoryPage
+        currentBookPage
     );
 
 
-    updateStoryPage();
+    updateBookPage();
 
 }
 
@@ -222,14 +222,14 @@ function goToChapter(chapter) {
 
     if (chapter === 1) {
 
-        currentStoryPage = 1;
+        currentBookPage = 1;
 
         localStorage.setItem(
             "storybook-page",
             1
         );
 
-        updateStoryPage();
+        updateBookPage();
 
     }
 
@@ -237,7 +237,7 @@ function goToChapter(chapter) {
 
 
 
-function closeStoryBook() {
+function closeBook() {
 
 
     saveCurrentView("backpack");
@@ -273,13 +273,13 @@ function closeStoryBook() {
 
 // Aktivitet - Läsning till Läsarmärke
 
-let storyReadingMode =
+let bookReadingMode =
     localStorage.getItem("storyReadingMode") === "true";
 
 
 function readOtisStory() {
 
-    storyReadingMode = true;
+    bookReadingMode = true;
 
     localStorage.setItem(
         "storyReadingMode",
@@ -291,16 +291,16 @@ function readOtisStory() {
         "otis"
     );
 
-    openStoryBook();
+    openBook();
 
 }
 
 
-function storyReadingDone() {
+function bookReadingDone() {
 
     addBadgeProgress("lasar");
 
-    storyReadingMode = false;
+    bookReadingMode = false;
 
     localStorage.setItem(
         "storyReadingMode",
@@ -312,6 +312,6 @@ function storyReadingDone() {
         "otis"
     );
 
-    updateStoryPage();
+    updateBookPage();
 
 }
