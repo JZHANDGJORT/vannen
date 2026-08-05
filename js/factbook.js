@@ -17,7 +17,7 @@ const factBookData = {
             image: "",
 
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -36,7 +36,7 @@ const factBookData = {
             "images/Otis/storybook/chapter01/page01.JPEG",
 
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
