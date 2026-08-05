@@ -1065,15 +1065,19 @@ function showKnowledgeDiscover() {
 
 function openFactBook() {
 
-    addMessage(
-        "📚 Faktaboken fylls snart med massor av spännande saker att upptäcka. 🌿",
-        "otis"
-    );
-
     showKnowledgeDiscover();
 
-}
 
+    setTimeout(() => {
+
+        addMessage(
+            "📚 Faktaboken fylls snart med massor av spännande saker att upptäcka. 🌿",
+            "otis"
+        );
+
+    }, 1500);
+
+}
 
 
 function startOtisTimer() {
