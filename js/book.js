@@ -313,7 +313,6 @@ function changeBookPage(direction) {
     currentBookPage += direction;
 
 
-
     if (currentBookPage < 0) {
 
         currentBookPage = 0;
@@ -321,10 +320,8 @@ function changeBookPage(direction) {
     }
 
 
-
     if (
-        currentBookPage >
-        currentBookData.pages.length - 1
+        currentBookPage >= currentBookData.pages.length
     ) {
 
         currentBookPage =
@@ -334,24 +331,15 @@ function changeBookPage(direction) {
 
 
 
-
     localStorage.setItem(
         `${currentBookType}-page`,
         currentBookPage
     );
 
 
-
     updateBookPage();
 
 }
-
-
-
-
-
-
-
 
 
 function goToChapter(chapter) {
