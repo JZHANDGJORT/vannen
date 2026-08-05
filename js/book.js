@@ -1,15 +1,53 @@
 /*
-  Book
+  Book Engine
 */
 
 
+let currentBookType = null;
+
 let currentBookPage = 0;
 
+let currentBookData = null;
+
+let bookReadingMode =
+    localStorage.getItem("bookReadingMode") === "true";
 
 
-function openBook() {
 
-    saveCurrentView("book");
+
+
+function openBook(type) {
+
+
+    currentBookType = type;
+
+
+    if (type === "book") {
+
+        currentBookData = bookData;
+
+    }
+
+
+    else if (type === "factbook") {
+
+        currentBookData = factBookData;
+
+    }
+
+
+    else {
+
+        console.error("Okänd bok:", type);
+
+        return;
+
+    }
+
+
+
+    saveCurrentView(type);
+
 
 
     if (currentFriend) {
@@ -17,19 +55,21 @@ function openBook() {
         history.replaceState(
             null,
             "",
-            `?id=${currentFriend.id}#book`
+            `?id=${currentFriend.id}#${type}`
         );
 
     }
+
 
 
     currentBookPage = 0;
 
 
     localStorage.setItem(
-        "book-page",
+        `${type}-page`,
         0
     );
+
 
 
     document
@@ -42,9 +82,23 @@ function openBook() {
         .style.display = "none";
 
 
+
     document
         .getElementById("storybook")
-        .style.display = "block";
+        .style.display =
+            type === "book"
+                ? "block"
+                : "none";
+
+
+
+    document
+        .getElementById("factbook")
+        .style.display =
+            type === "factbook"
+                ? "block"
+                : "none";
+
 
 
     updateBookPage();
@@ -54,32 +108,56 @@ function openBook() {
 
 
 
+
+
+
 function updateBookPage() {
 
 
+    if (!currentBookData) return;
+
+
+
+    const prefix =
+        currentBookType === "book"
+            ? "storybook"
+            : "factbook";
+
+
+
     const page =
-        document.getElementById("storybook-page");
+        document.getElementById(
+            `${prefix}-page`
+        );
 
 
     const background =
-        document.getElementById("storybook-background");
+        document.getElementById(
+            `${prefix}-background`
+        );
 
 
     const title =
-        document.getElementById("storybook-title");
+        document.getElementById(
+            `${prefix}-title`
+        );
 
 
     const text =
-        document.getElementById("storybook-text");
+        document.getElementById(
+            `${prefix}-text`
+        );
 
 
     const content =
-        document.getElementById("storybook-content");
+        document.getElementById(
+            `${prefix}-content`
+        );
 
 
 
     const story =
-        bookData.pages[currentBookPage];
+        currentBookData.pages[currentBookPage];
 
 
 
@@ -93,21 +171,22 @@ function updateBookPage() {
 
 
     page.src =
-        story.image;
+        story.image || "";
 
 
     page.className =
-        story.imageClass;
+        story.imageClass || "";
+
 
 
     text.className =
-        story.textClass;
+        story.textClass || "";
+
+
 
 
 
     if (!story.image) {
-
-        page.src = "";
 
         page.style.display = "none";
 
@@ -118,6 +197,8 @@ function updateBookPage() {
         page.style.display = "block";
 
     }
+
+
 
 
 
@@ -135,6 +216,9 @@ function updateBookPage() {
         title.style.display = "none";
 
     }
+
+
+
 
 
 
@@ -166,13 +250,17 @@ function updateBookPage() {
         text.innerHTML =
             story.text;
 
+
     }
 
 
 
 
+
+
+
     document
-        .getElementById("storybook-prev")
+        .getElementById(`${prefix}-prev`)
         .style.display =
             currentBookPage === 0
                 ? "none"
@@ -180,24 +268,41 @@ function updateBookPage() {
 
 
 
+
     document
-        .getElementById("storybook-next")
+        .getElementById(`${prefix}-next`)
         .style.display =
-            currentBookPage === bookData.pages.length - 1
+            currentBookPage === currentBookData.pages.length - 1
                 ? "none"
                 : "block";
 
 
 
-    document
-        .getElementById("storybook-read")
-        .style.display =
-            bookReadingMode && currentBookPage > 0
+
+
+    const readButton =
+        document.getElementById(
+            `${prefix}-read`
+        );
+
+
+    if (readButton) {
+
+        readButton.style.display =
+            bookReadingMode &&
+            currentBookPage > 0
                 ? "block"
                 : "none";
 
+    }
+
 
 }
+
+
+
+
+
 
 
 
@@ -208,15 +313,43 @@ function changeBookPage(direction) {
     currentBookPage += direction;
 
 
+
+    if (currentBookPage < 0) {
+
+        currentBookPage = 0;
+
+    }
+
+
+
+    if (
+        currentBookPage >
+        currentBookData.pages.length - 1
+    ) {
+
+        currentBookPage =
+            currentBookData.pages.length - 1;
+
+    }
+
+
+
+
     localStorage.setItem(
-        "book-page",
+        `${currentBookType}-page`,
         currentBookPage
     );
+
 
 
     updateBookPage();
 
 }
+
+
+
+
+
 
 
 
@@ -231,7 +364,7 @@ function goToChapter(chapter) {
 
 
         localStorage.setItem(
-            "book-page",
+            `${currentBookType}-page`,
             1
         );
 
@@ -245,10 +378,31 @@ function goToChapter(chapter) {
 
 
 
+
+
+
+
+
+function goToFactChapter(chapter) {
+
+
+    goToChapter(chapter);
+
+}
+
+
+
+
+
+
+
+
+
 function closeBook() {
 
 
     saveCurrentView("backpack");
+
 
 
     if (currentFriend) {
@@ -260,6 +414,7 @@ function closeBook() {
         );
 
     }
+
 
 
 
@@ -281,11 +436,23 @@ function closeBook() {
 
 
 
-// Aktivitet - Läsning till Läsarmärke
 
 
-let bookReadingMode =
-    localStorage.getItem("bookReadingMode") === "true";
+
+
+
+
+function closeFactBook() {
+
+
+    closeBook();
+
+}
+
+
+
+
+
 
 
 
@@ -302,15 +469,22 @@ function readOtisStory() {
     );
 
 
+
     addMessage(
         "Åh vad roligt! 💚 Då läser vi om ett av mina äventyr tillsammans. När ni har läst en stund kan ni trycka på '📚 Vi har läst en stund'.",
         "otis"
     );
 
 
-    openBook();
+
+    openBook("book");
 
 }
+
+
+
+
+
 
 
 
@@ -321,7 +495,9 @@ function bookReadingDone() {
     addBadgeProgress("lasar");
 
 
+
     bookReadingMode = false;
+
 
 
     localStorage.setItem(
@@ -330,10 +506,12 @@ function bookReadingDone() {
     );
 
 
+
     addMessage(
         "Vad mysigt att läsa tillsammans! 📚 Jag är glad att du ville följa med på mitt äventyr. 💚",
         "otis"
     );
+
 
 
     updateBookPage();
