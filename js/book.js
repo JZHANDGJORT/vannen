@@ -313,26 +313,8 @@ function changeBookPage(direction) {
     currentBookPage += direction;
 
 
-    if (currentBookPage < 0) {
-
-        currentBookPage = 0;
-
-    }
-
-
-    if (
-        currentBookPage >= currentBookData.pages.length
-    ) {
-
-        currentBookPage =
-            currentBookData.pages.length - 1;
-
-    }
-
-
-
     localStorage.setItem(
-        `${currentBookType}-page`,
+        "book-page",
         currentBookPage
     );
 
