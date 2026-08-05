@@ -2351,20 +2351,33 @@ function restoreCurrentView() {
 
     if (hash === "#backpack") {
 
+
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "block";
         document.getElementById("storybook").style.display = "none";
+        document.getElementById("factbook").style.display = "none";
+
 
         updateAllBadges();
 
     }
 
 
+
     else if (hash === "#book") {
+
+
+        currentBookType = "book";
+
+        currentBookData = bookData;
+
+
 
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "block";
+        document.getElementById("factbook").style.display = "none";
+
 
 
         currentBookPage =
@@ -2372,16 +2385,51 @@ function restoreCurrentView() {
                 localStorage.getItem("book-page")
             ) || 0;
 
+
+
         updateBookPage();
 
     }
 
 
+
+    else if (hash === "#factbook") {
+
+
+        currentBookType = "factbook";
+
+        currentBookData = factBookData;
+
+
+
+        document.getElementById("friend-view").style.display = "none";
+        document.getElementById("backpack-view").style.display = "none";
+        document.getElementById("storybook").style.display = "none";
+        document.getElementById("factbook").style.display = "block";
+
+
+
+        currentBookPage =
+            Number(
+                localStorage.getItem("factbook-page")
+            ) || 0;
+
+
+
+        updateBookPage();
+
+    }
+
+
+
     else {
+
 
         document.getElementById("friend-view").style.display = "block";
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "none";
+        document.getElementById("factbook").style.display = "none";
+
 
     }
 
