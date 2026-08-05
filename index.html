@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
 
-    
-    
 <head>
 
     <meta charset="UTF-8">
@@ -15,7 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <!-- CSS -->
+
+
+<!-- CSS -->
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/home.css">
@@ -23,300 +23,487 @@
 <link rel="stylesheet" href="css/cards.css">
 <link rel="stylesheet" href="css/chat.css">
 <link rel="stylesheet" href="css/buttons.css">
-<link rel="stylesheet" href="css/themes.css"> <link rel="stylesheet" href="css/activities.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/activities.css">
 <link rel="stylesheet" href="css/backpack.css">
 <link rel="stylesheet" href="css/storybook.css">
 
     
 </head>
 
+
 <body>
 
 
 <main id="app">
 
-    <!-- STARTSIDA -->
 
-    <section id="home-view">
+<!-- STARTSIDA -->
 
-
-        <section id="friend-intro">
-
-            <h1>Vännen</h1>
-
-            <p>
-                Små vänner som finns där för dig,
-                på sitt eget sätt.
-            </p>
-
-        </section>
+<section id="home-view">
 
 
-        <section id="friends" class="projects">
+<section id="friend-intro">
 
-            <h2>Våra vänner</h2>
+<h1>Vännen</h1>
 
+<p>
+Små vänner som finns där för dig,
+på sitt eget sätt.
+</p>
 
-            <div id="friends-list" class="project-grid">
-
-                <!-- Vänkort skapas av friends.js -->
-
-            </div>
-
-
-        </section>
+</section>
 
 
-    </section>
 
- <!-- VÄNSIDA -->
+<section id="friends" class="projects">
+
+
+<h2>Våra vänner</h2>
+
+
+<div id="friends-list" class="project-grid">
+
+<!-- Vänkort skapas av friends.js -->
+
+</div>
+
+
+</section>
+
+
+</section>
+
+
+
+
+
+<!-- VÄNSIDA -->
+
 
 <section id="friend-view" style="display:none;">
 
+
 <div class="top-buttons">
 
-   <button id="about-button">
-    Om oss ♡
-   </button>
 
-   <button id="goodbye-button">
-    👋 Hej då
-   </button>
+<button id="about-button">
+Om oss ♡
+</button>
+
+
+<button id="goodbye-button">
+👋 Hej då
+</button>
+
 
 </div>
 
-<!-- Vännens profil -->
+
+
 
 <header id="friend-profile">
 
-    <img id="friend-world" src="" alt="">
 
-    <img id="friend-stone" src="images/Otis/otis-stone.PNG" alt="">
-
-    <img id="friend-character" src="" alt="">
-
-    <img id="friend-character-face" src="" alt="">
-
-    <div id="friend-bubble"></div>
-
-    <div id="friend-overlay">
-
-        <h1 id="friend-name"></h1>
-
-        <div class="friend-divider">
-            ─── ♡ ───
-        </div>
-
-        <!-- <p id="friend-subtitle"></p> -->
-
-    </div>
+<img id="friend-world" src="" alt="">
 
 
-    <img
-    id="backpack"
-    src="images/Otis/otis-backpack.PNG"
-    alt="Otis ryggsäck">
+<img id="friend-stone" src="images/Otis/otis-stone.PNG" alt="">
+
+
+<img id="friend-character" src="" alt="">
+
+
+<img id="friend-character-face" src="" alt="">
+
+
+<div id="friend-bubble"></div>
+
+
+
+<div id="friend-overlay">
+
+
+<h1 id="friend-name"></h1>
+
+
+<div class="friend-divider">
+─── ♡ ───
+</div>
+
+
+</div>
+
+
+
+
+<img
+id="backpack"
+src="images/Otis/otis-backpack.PNG"
+alt="Otis ryggsäck">
+
 
 </header>
 
-        <!-- Valbara handlingar -->
-    <div id="activity-timer" class="activity-hidden">
-    <div id="timer-time">10:00</div>
-    <div id="timer-text">Otis väntar här medan ni städar 🌿</div>
+
+
+
+
+<div id="activity-timer" class="activity-hidden">
+
+<div id="timer-time">
+10:00
 </div>
-    
-    <nav id="actions">
 
-        <!-- Skapas av ui.js -->
 
-    </nav>
+<div id="timer-text">
+Otis väntar här medan ni städar 🌿
+</div>
 
-<!-- Samtal -->
+
+</div>
+
+
+
+
+
+<nav id="actions">
+
+<!-- Skapas av ui.js -->
+
+</nav>
+
+
+
 
 <section id="chat">
 
-    <div id="messages"></div>
+
+<div id="messages"></div>
+
 
 </section>
 
 
+
 </section>
+
+
+
+
+
 
 
 <!-- RYGGSÄCKSVY -->
 
+
 <section id="backpack-view" style="display:none;">
 
-    <img 
-    id="backpack-world"
-    src="images/Otis/otis-backpack-open.PNG"
-    alt="Otis öppnade ryggsäck">
-
-    <img 
-    id="lasar-badge"
-    class="backpack-item backpack-marke-gralasar"
-    src="images/Otis/badge/otis-backpack-item-marke-lasargra.PNG"
-    alt="Läsarmärke Grå">
 
 
-    <img 
-    id="rakne-badge"
-    class="backpack-item backpack-marke-grarakne"
-    src="images/Otis/badge/otis-backpack-item-marke-raknegra.PNG"
-    alt="Räknemärke Grå">
-
-    <img 
-    id="skapar-badge"
-    class="backpack-item backpack-marke-graskapar"
-    src="images/Otis/badge/otis-backpack-item-marke-skapargra.PNG"
-    alt="Skaparmärke Grå">
-
-    <img 
-    id="upptackar-badge"
-    class="backpack-item backpack-marke-graupptackar"
-    src="images/Otis/badge/otis-backpack-item-marke-upptackargra.PNG"
-    alt="Upptäckarmärke Grå">
+<img 
+id="backpack-world"
+src="images/Otis/otis-backpack-open.PNG"
+alt="Otis öppnade ryggsäck">
 
 
-    <img 
-    class="backpack-item backpack-chestnut-green"
-    src="images/Otis/otis-backpack-item-chestnut-green.PNG"
-    alt="Kastanj grön">
-
-    <img 
-    class="backpack-item backpack-oaktwig2"
-    src="images/Otis/otis-backpack-item-oaktwig2.PNG"
-    alt="Ek kvist2">
-    
-    <img 
-    class="backpack-item backpack-receptbok"
-    src="images/Otis/otis-backpack-item-receptbok.PNG"
-    alt="Grön receptbok">
-    
-    
-    <img 
-    class="backpack-item backpack-sagobok"
-    src="images/Otis/otis-backpack-item-sagobok.PNG"
-    alt="Otis sagobok"
-    onclick="openStoryBook()">
-
-    <img 
-    class="backpack-item backpack-shell"
-    src="images/Otis/otis-backpack-item-shell.PNG"
-    alt="Skal">
-    
-    <img 
-    class="backpack-item backpack-pinecone"
-    src="images/Otis/otis-backpack-item-pinecone.PNG"
-    alt="Tallkotte">
-    
-    <img 
-    class="backpack-item backpack-faktabok"
-    src="images/Otis/otis-backpack-item-faktabok.PNG"
-    alt="Faktabok">
-
-    
-    <img 
-    class="backpack-item backpack-fotoalbum"
-    src="images/Otis/otis-backpack-item-fotoalbum.PNG"
-    alt="Fotoalbum">
-
-    
-    <img 
-    class="backpack-item backpack-oaktwig"
-    src="images/Otis/otis-backpack-item-oaktwig.PNG"
-    alt="Ek kvist">
 
 
-    <img 
-    class="backpack-item backpack-blackstone"
-    src="images/Otis/otis-backpack-item-blackstone.PNG"
-    alt="Svart sten">
 
-    <img 
-    class="backpack-item backpack-heartstone"
-    src="images/Otis/otis-backpack-item-heartstone.PNG"
-    alt="Hjärtsten">
+<img 
+id="lasar-badge"
+class="backpack-item backpack-marke-gralasar"
+src="images/Otis/badge/otis-backpack-item-marke-lasargra.PNG"
+alt="Läsarmärke Grå">
 
 
-    <button id="backpack-close" onclick="closeBackpackRoom()">
-        🦦 Tillbaka till Otis
-    </button>
+
+<img 
+id="rakne-badge"
+class="backpack-item backpack-marke-grarakne"
+src="images/Otis/badge/otis-backpack-item-marke-raknegra.PNG"
+alt="Räknemärke Grå">
 
 
-</section>
 
-<!-- SAGOBOK -->
-
-<section id="storybook" style="display:none;">
-
-    <button id="storybook-close" onclick="closeStoryBook()">
-        🎒 Tillbaka till ryggsäcken
-    </button>
-
-    <button id="storybook-prev" onclick="changeStoryPage(-1)">
-        ←
-    </button>
-
-    <img
-    id="storybook-background"
-    src="images/Otis/otis-backpack-item-sagobok-openl.PNG"
-    alt="Boksida">
+<img 
+id="skapar-badge"
+class="backpack-item backpack-marke-graskapar"
+src="images/Otis/badge/otis-backpack-item-marke-skapargra.PNG"
+alt="Skaparmärke Grå">
 
 
-    <img
-    id="storybook-page"
-    alt="Otis sagobok">
+
+<img 
+id="upptackar-badge"
+class="backpack-item backpack-marke-graupptackar"
+src="images/Otis/badge/otis-backpack-item-marke-upptackargra.PNG"
+alt="Upptäckarmärke Grå">
 
 
-    <!-- Kapitelrubrik -->
-    <div id="storybook-title"></div>
 
 
-    <!-- Text på boksidor -->
-    <div id="storybook-text"></div>
+
+<img 
+class="backpack-item backpack-chestnut-green"
+src="images/Otis/otis-backpack-item-chestnut-green.PNG"
+alt="Kastanj grön">
 
 
-    <!-- Innehållsförteckning (visas bara på sida 0) -->
-    <div id="storybook-content">
 
-        <h1>Innehållsförteckning</h1>
 
-        <button onclick="goToChapter(1)">
-            🌿 Kapitel 1<br>
-            <span>Otis och den magiska stenen</span>
-        </button>
+<img 
+class="backpack-item backpack-oaktwig2"
+src="images/Otis/otis-backpack-item-oaktwig2.PNG"
+alt="Ek kvist2">
 
-        <button onclick="showComingSoon()">
-            🌊 Kapitel 2<br>
-            <span>Kommer snart</span>
-        </button>
 
-        <button onclick="showComingSoon()">
-            ⭐ Kapitel 3<br>
-            <span>Kommer snart</span>
-        </button>
 
-    </div>
 
-    <button
-    id="storybook-read"
-    class="storybook-read-button"
-    onclick="storyReadingDone()"
-    style="display:none;">
 
-    📚 Vi har läst en stund
+<img 
+class="backpack-item backpack-receptbok"
+src="images/Otis/otis-backpack-item-receptbok.PNG"
+alt="Grön receptbok">
+
+
+
+
+
+<img 
+class="backpack-item backpack-sagobok"
+src="images/Otis/otis-backpack-item-sagobok.PNG"
+alt="Otis sagobok"
+onclick="openBook()">
+
+
+
+
+
+<img 
+class="backpack-item backpack-shell"
+src="images/Otis/otis-backpack-item-shell.PNG"
+alt="Skal">
+
+
+
+<img 
+class="backpack-item backpack-pinecone"
+src="images/Otis/otis-backpack-item-pinecone.PNG"
+alt="Tallkotte">
+
+
+
+
+
+<img 
+class="backpack-item backpack-faktabok"
+src="images/Otis/otis-backpack-item-faktabok.PNG"
+alt="Faktabok">
+
+
+
+
+
+<img 
+class="backpack-item backpack-fotoalbum"
+src="images/Otis/otis-backpack-item-fotoalbum.PNG"
+alt="Fotoalbum">
+
+
+
+
+
+<img 
+class="backpack-item backpack-oaktwig"
+src="images/Otis/otis-backpack-item-oaktwig.PNG"
+alt="Ek kvist">
+
+
+
+
+
+<img 
+class="backpack-item backpack-blackstone"
+src="images/Otis/otis-backpack-item-blackstone.PNG"
+alt="Svart sten">
+
+
+
+
+
+<img 
+class="backpack-item backpack-heartstone"
+src="images/Otis/otis-backpack-item-heartstone.PNG"
+alt="Hjärtsten">
+
+
+
+
+
+<button id="backpack-close" onclick="closeBackpackRoom()">
+
+🦦 Tillbaka till Otis
 
 </button>
 
-    <button id="storybook-next" onclick="changeStoryPage(1)">
-        →
-    </button>
+
 
 </section>
 
-    
+    <!-- SAGOBOK -->
+
+<section id="storybook" style="display:none;">
+
+
+<button id="storybook-close" onclick="closeBook()">
+
+🎒 Tillbaka till ryggsäcken
+
+</button>
+
+
+
+
+<button id="storybook-prev" onclick="changeBookPage(-1)">
+
+←
+
+</button>
+
+
+
+
+<img
+id="storybook-background"
+src="images/Otis/otis-backpack-item-sagobok-openl.PNG"
+alt="Boksida">
+
+
+
+
+
+<img
+id="storybook-page"
+alt="Otis sagobok">
+
+
+
+
+
+<!-- Kapitelrubrik -->
+
+<div id="storybook-title"></div>
+
+
+
+
+
+<!-- Text på boksidor -->
+
+<div id="storybook-text"></div>
+
+
+
+
+
+<!-- Innehållsförteckning -->
+
+<div id="storybook-content">
+
+
+<h1>
+Innehållsförteckning
+</h1>
+
+
+
+
+<button onclick="goToChapter(1)">
+
+🌿 Kapitel 1<br>
+
+<span>
+Otis och den magiska stenen
+</span>
+
+</button>
+
+
+
+
+
+<button onclick="showComingSoon()">
+
+🌊 Kapitel 2<br>
+
+<span>
+Kommer snart
+</span>
+
+</button>
+
+
+
+
+
+<button onclick="showComingSoon()">
+
+⭐ Kapitel 3<br>
+
+<span>
+Kommer snart
+</span>
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<button
+id="storybook-read"
+class="storybook-read-button"
+onclick="bookReadingDone()"
+style="display:none;">
+
+📚 Vi har läst en stund
+
+</button>
+
+
+
+
+
+
+
+<button id="storybook-next" onclick="changeBookPage(1)">
+
+→
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
 </main>
+
+
+
+
 
 
 <!-- DATA -->
@@ -326,7 +513,9 @@
 
 
 
+
 <!-- Vänner -->
+
 
 <script src="data/friends/otis.js"></script>
 
@@ -334,20 +523,28 @@
 
 
 
+
+
 <!-- Meddelanden -->
+
 
 <script src="data/messages/greetings.js"></script>
 
 <script src="data/messages/dialogs.js"></script>
 
 <script src="data/messages/onboarding.js"></script>
-    
+
 <script src="data/messages/activities.js"></script>
 
 <script src="data/messages/stories.js"></script>
 
 
+
+
+
+
 <!-- FUNKTIONER -->
+
 
 <script src="js/storage.js"></script>
 
@@ -361,9 +558,18 @@
 
 <script src="js/backpack.js"></script>
 
-<script src="js/book.js"></script>
+
+
+<!-- Bokdata först -->
 
 <script src="js/storybook.js"></script>
+
+
+<!-- Bokfunktioner -->
+
+<script src="js/book.js"></script>
+
+
 
 <script src="js/ui.js"></script>
 
