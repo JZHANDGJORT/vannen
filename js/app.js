@@ -166,7 +166,7 @@ function startFriend(friend) {
 
     if (
         window.location.hash === "#backpack" ||
-        window.location.hash === "#storybook"
+        window.location.hash === "#book"
     ) {
 
         return;
