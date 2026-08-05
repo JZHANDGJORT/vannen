@@ -77,34 +77,3 @@ Uttrar
 
 };
 
-function openFactBook() {
-
-    saveCurrentView("factbook");
-
-    if (currentFriend) {
-
-        history.replaceState(
-            null,
-            "",
-            `?id=${currentFriend.id}#factbook`
-        );
-
-    }
-
-    document
-        .getElementById("friend-view")
-        .style.display = "none";
-
-    document
-        .getElementById("backpack-view")
-        .style.display = "none";
-
-    document
-        .getElementById("storybook")
-        .style.display = "none";
-
-    document
-        .getElementById("factbook")
-        .style.display = "block";
-
-}
