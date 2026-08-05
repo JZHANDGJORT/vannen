@@ -496,7 +496,54 @@ style="display:none;">
 </section>
 
 
+<!-- FAKTABOK -->
 
+<section id="factbook" style="display:none;">
+
+    <button id="factbook-close" onclick="closeFactBook()">
+        🎒 Tillbaka till ryggsäcken
+    </button>
+
+
+    <button id="factbook-prev" onclick="changeFactPage(-1)">
+        ←
+    </button>
+
+
+    <img
+    id="factbook-background"
+    src=""
+    alt="Faktabok sida">
+
+
+    <img
+    id="factbook-page"
+    alt="Otis faktabok">
+
+
+    <div id="factbook-title"></div>
+
+
+    <div id="factbook-text"></div>
+
+
+    <div id="factbook-content">
+
+        <h1>Innehållsförteckning</h1>
+
+        <button onclick="goToFactChapter(1)">
+            🌿 Kapitel 1<br>
+            <span>Visste du att...</span>
+        </button>
+
+    </div>
+
+
+    <button id="factbook-next" onclick="changeFactPage(1)">
+        →
+    </button>
+
+</section>
 
 
 
