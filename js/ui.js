@@ -1065,17 +1065,33 @@ function showKnowledgeDiscover() {
 
 function openFactBook() {
 
-    showKnowledgeDiscover();
+    saveCurrentView("factbook");
 
+    if (currentFriend) {
 
-    setTimeout(() => {
-
-        addMessage(
-            "📚 Faktaboken fylls snart med massor av spännande saker att upptäcka. 🌿",
-            "otis"
+        history.replaceState(
+            null,
+            "",
+            `?id=${currentFriend.id}#factbook`
         );
 
-    }, 1500);
+    }
+
+    document
+        .getElementById("friend-view")
+        .style.display = "none";
+
+    document
+        .getElementById("backpack-view")
+        .style.display = "none";
+
+    document
+        .getElementById("storybook")
+        .style.display = "none";
+
+    document
+        .getElementById("factbook")
+        .style.display = "block";
 
 }
 
