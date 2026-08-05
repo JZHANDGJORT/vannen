@@ -12,7 +12,7 @@ const factBookData = {
 
     pages: [
 
-        // Sida 0 - innehållsförteckning
+        // Sida 0 - Innehållsförteckning
         {
             image: "",
 
@@ -21,7 +21,7 @@ const factBookData = {
 
             backgroundClass:
             "background-left",
-          
+
             title: "",
 
             text: "",
@@ -30,7 +30,7 @@ const factBookData = {
         },
 
 
-        // Sida 1 - Kapitel 1
+        // Sida 1 - Fakta 1
         {
             image:
             "images/Otis/storybook/chapter01/page01.JPEG",
@@ -40,25 +40,29 @@ const factBookData = {
 
             backgroundClass:
             "background-right",
-          
+
             title:
 `
 <span class="chapter-number">
-Kapitel 1
+Fakta 1
 </span>
 <br>
 
 <span class="chapter-name">
-Otis och den magiska stenen
+Uttrar
 </span>
 `,
 
             text:
 
 `
-<p>Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.</p>
+<p>Visste du att uttrar älskar att simma?</p>
 
-<p>Otis var nyfiken på nästan allt.</p>
+<p>Deras tjocka päls hjälper dem att hålla sig varma även när vattnet är kallt.</p>
+
+<p>Många uttrar har också en favoritsten som de använder när de ska knacka sönder musslor och snäckor.</p>
+
+<p>Precis som Otis tycker riktiga uttrar om att samla fina stenar.</p>
 `,
 
             imageClass:
@@ -66,9 +70,8 @@ Otis och den magiska stenen
 
             textClass:
             "chapter-text"
-          
-        }
 
+        }
 
     ]
 
