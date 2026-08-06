@@ -289,11 +289,16 @@ function updateBookPage() {
 
     if (readButton) {
 
-        readButton.style.display =
-            bookReadingMode &&
-            currentBookPage > 0
-                ? "block"
-                : "none";
+        const activityMode =
+    currentBookType === "book"
+        ? bookReadingMode
+        : factBookDiscoverMode;
+
+readButton.style.display =
+    activityMode &&
+    currentBookPage > 0
+        ? "block"
+        : "none";
 
     }
 
