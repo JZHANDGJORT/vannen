@@ -324,6 +324,11 @@ function changeBookPage(direction) {
 }
 
 
+function changeFactPage(direction) {
+    changeBookPage(direction);
+}
+
+
 function goToChapter(chapter) {
 
 
