@@ -500,10 +500,10 @@ function bookReadingDone() {
 
 function readOtisFactBook() {
 
-    bookReadingMode = true;
+    factBookDiscoverMode = true;
 
     localStorage.setItem(
-        "bookReadingMode",
+        "factBookDiscoverMode",
         "true"
     );
 
