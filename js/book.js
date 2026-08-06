@@ -503,6 +503,26 @@ function bookReadingDone() {
 
 }
 
+function factBookReadingDone() {
+
+    addBadgeProgress("upptackar");
+
+    factBookDiscoverMode = false;
+
+    localStorage.setItem(
+        "factBookDiscoverMode",
+        "false"
+    );
+
+    addMessage(
+        "Vad spännande det var att upptäcka något nytt tillsammans! 🌿",
+        "otis"
+    );
+
+    updateBookPage();
+
+}
+
 function readOtisFactBook() {
 
     factBookDiscoverMode = true;
