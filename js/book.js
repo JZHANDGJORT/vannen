@@ -102,7 +102,9 @@ function openBook(type) {
 
 
 
+    setTimeout(() => {
     updateBookPage();
+}, 0);
 
 }
 
