@@ -498,11 +498,11 @@ function readOtisFactBook() {
         "true"
     );
 
+    openBook("factbook");
+
     addMessage(
         "Vad roligt! 🌿 Då upptäcker vi något spännande tillsammans. När ni har bläddrat en stund kan ni trycka på '🔍 Vi har upptäckt något nytt'.",
         "otis"
     );
-
-    openBook("factbook");
 
 }
