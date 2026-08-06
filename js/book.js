@@ -19,36 +19,21 @@ let factBookDiscoverMode =
 
 function openBook(type) {
 
-
     currentBookType = type;
 
-
-    if (type === "book") {
-
-        currentBookData = bookData;
-
-    }
+    currentBookData =
+        type === "book"
+            ? bookData
+            : factBookData;
 
 
-    else if (type === "factbook") {
-
-        currentBookData = factBookData;
-
-    }
-
-
-    else {
-
-        console.error("Okänd bok:", type);
-
+    if (!currentBookData) {
+        console.error("Ingen bokdata hittades:", type);
         return;
-
     }
-
 
 
     saveCurrentView(type);
-
 
 
     if (currentFriend) {
@@ -62,10 +47,8 @@ function openBook(type) {
     }
 
 
-
+    // Starta alltid på innehållsförteckningen
     currentBookPage = 0;
-
-
 
     localStorage.setItem(
         `${type}-page`,
@@ -73,34 +56,20 @@ function openBook(type) {
     );
 
 
-
-    document
-        .getElementById("friend-view")
-        .style.display = "none";
+    document.getElementById("friend-view").style.display = "none";
+    document.getElementById("backpack-view").style.display = "none";
 
 
-    document
-        .getElementById("backpack-view")
-        .style.display = "none";
+    document.getElementById("storybook").style.display =
+        type === "book"
+            ? "block"
+            : "none";
 
 
-
-    document
-        .getElementById("storybook")
-        .style.display =
-            type === "book"
-                ? "block"
-                : "none";
-
-
-
-    document
-        .getElementById("factbook")
-        .style.display =
-            type === "factbook"
-                ? "block"
-                : "none";
-
+    document.getElementById("factbook").style.display =
+        type === "factbook"
+            ? "block"
+            : "none";
 
 
     updateBookPage();
