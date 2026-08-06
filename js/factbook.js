@@ -35,7 +35,7 @@ const factBookData = {
         // Sida 1 - Kapitelstart
         {
             image:
-            "", // Lägg in bild här
+            "images/Otis/factbook/chapter01/page01.PNG",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openr.PNG",
@@ -79,7 +79,7 @@ Uttrar
         // Sida 2 - Fantastiska simmare
         {
             image:
-            "", // Lägg in bild här
+            "images/Otis/factbook/chapter01/page02.PNG",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openl.PNG",
@@ -111,7 +111,7 @@ Uttrar
         // Sida 3 - Den mjuka pälsen
         {
             image:
-            "", // Lägg in bild här
+            "images/Otis/factbook/chapter01/page03.PNG",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openr.PNG",
@@ -143,7 +143,7 @@ Uttrar
         // Sida 4 - Favoritstenen
         {
             image:
-            "", // Lägg in bild här
+            "images/Otis/factbook/chapter01/page04.PNG",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openl.PNG",
@@ -175,7 +175,7 @@ Uttrar
         // Sida 5 - Lekfulla uttrar
         {
             image:
-            "", // Lägg in bild här
+            "images/Otis/factbook/chapter01/page05.PNG",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openr.PNG",
@@ -207,7 +207,7 @@ Uttrar
         // Sida 6 - Var bor uttrar?
         {
             image:
-            "", // Lägg in bild här
+            "",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openl.PNG",
@@ -239,7 +239,7 @@ Uttrar
         // Sida 7 - Avslutning
         {
             image:
-            "", // Lägg in bild här
+            "",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openr.PNG",
