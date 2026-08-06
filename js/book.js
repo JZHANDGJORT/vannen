@@ -65,11 +65,15 @@ function openBook(type) {
 
     currentBookPage = 0;
 
+localStorage.setItem(
+    `${type}-page`,
+    0
+);
 
-    localStorage.setItem(
-        `${type}-page`,
-        0
-    );
+currentBookType = type;
+currentBookData = type === "book"
+    ? bookData
+    : factBookData;
 
 
 
