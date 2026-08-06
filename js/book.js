@@ -122,12 +122,8 @@ function updateBookPage() {
 
 
     const story =
-    currentBookData.pages[currentBookPage];
+        currentBookData.pages[currentBookPage];
 
-if (!story) {
-    console.error("Sidan hittades inte:", currentBookPage);
-    return;
-}
 
 
     background.src =
