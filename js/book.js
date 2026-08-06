@@ -314,9 +314,9 @@ function changeBookPage(direction) {
 
 
     localStorage.setItem(
-        "book-page",
-        currentBookPage
-    );
+    `${currentBookType}-page`,
+    currentBookPage
+);
 
 
     updateBookPage();
