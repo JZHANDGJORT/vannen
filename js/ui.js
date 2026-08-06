@@ -838,8 +838,8 @@ function showDiscover() {
             💚 Upptäcka kroppen
         </button>
 
-        <button onclick="openBook('factbook')">
-            📚 Upptäcka kunskap
+        <button onclick="readOtisFactBook()">
+        📚 Upptäcka kunskap
         </button>
 
         <button onclick="showActivity()">
