@@ -26,16 +26,6 @@ function openBook(type) {
             ? bookData
             : factBookData;
 
-  if (type === "factbook") {
-
-    factBookDiscoverMode = false;
-
-    localStorage.setItem(
-        "factBookDiscoverMode",
-        "false"
-    );
-
-}
 
     if (!currentBookData) {
         console.error("Ingen bokdata hittades:", type);
