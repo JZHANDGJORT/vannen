@@ -496,3 +496,21 @@ function bookReadingDone() {
     updateBookPage();
 
 }
+
+function readOtisFactBook() {
+
+    bookReadingMode = true;
+
+    localStorage.setItem(
+        "bookReadingMode",
+        "true"
+    );
+
+    addMessage(
+        "Vad roligt! 🌿 Då upptäcker vi något spännande tillsammans. När ni har läst en stund kan ni trycka på '📚 Vi har läst en stund'.",
+        "otis"
+    );
+
+    openBook("factbook");
+
+}
