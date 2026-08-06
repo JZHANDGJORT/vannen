@@ -489,9 +489,6 @@ function factBookReadingDone() {
 
 function readOtisFactBook() {
 
-    openBook("factbook");
-
-
     factBookDiscoverMode = true;
 
     localStorage.setItem(
@@ -501,11 +498,11 @@ function readOtisFactBook() {
 
 
     addMessage(
-        "Vad roligt! 🌿 Då upptäcker vi något spännande tillsammans. När ni har bläddrat en stund kan ni trycka på '🔍 Vi har upptäckt något nytt'.",
+        "Vad roligt! 🌿 Då upptäcker vi något spännande tillsammans. När ni har läst en stund kan ni trycka på '🔍 Vi har upptäckt något nytt'.",
         "otis"
     );
 
 
-    updateBookPage();
+    openBook("factbook");
 
 }
