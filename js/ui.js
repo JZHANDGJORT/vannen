@@ -1039,30 +1039,6 @@ function discoverBody(activity) {
 
 }
 
-function showKnowledgeDiscover() {
-
-    addMessage(
-        "Jag har samlat massor av spännande saker i min faktabok. 📚 Vill du kika i den tillsammans med mig?",
-        "otis"
-    );
-
-    const actions =
-        document.getElementById("actions");
-
-    actions.innerHTML = `
-
-        <button onclick="openFactBook()">
-            📖 Öppna faktaboken
-        </button>
-
-        <button onclick="showDiscover()">
-            ⬅️ Tillbaka
-        </button>
-
-    `;
-
-}
-
 
 function startOtisTimer() {
 
