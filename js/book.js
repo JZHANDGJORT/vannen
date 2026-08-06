@@ -12,7 +12,8 @@ let currentBookData = null;
 let bookReadingMode =
     localStorage.getItem("bookReadingMode") === "true";
 
-
+let factBookDiscoverMode =
+    localStorage.getItem("factBookDiscoverMode") === "true";
 
 
 
