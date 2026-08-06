@@ -2601,3 +2601,4 @@ function resetOtisView() {
     showMainMenu();
 
 }
+
