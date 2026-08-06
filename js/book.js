@@ -47,15 +47,13 @@ function openBook(type) {
     }
 
 
-    // Starta alltid på innehållsförteckningen
-    currentBookPage = Number(
-    localStorage.getItem(`${type}-page`)
-) || 0;
+// Starta alltid på innehållsförteckningen
+currentBookPage = 0;
 
-    localStorage.setItem(
-        `${type}-page`,
-        0
-    );
+localStorage.setItem(
+    `${type}-page`,
+    0
+);
 
 
     document.getElementById("friend-view").style.display = "none";
