@@ -1065,36 +1065,16 @@ function showKnowledgeDiscover() {
 
 function openFactBook() {
 
-    saveCurrentView("factbook");
+    factBookDiscoverMode = true;
 
-    if (currentFriend) {
+    localStorage.setItem(
+        "factBookDiscoverMode",
+        "true"
+    );
 
-        history.replaceState(
-            null,
-            "",
-            `?id=${currentFriend.id}#factbook`
-        );
-
-    }
-
-    document
-        .getElementById("friend-view")
-        .style.display = "none";
-
-    document
-        .getElementById("backpack-view")
-        .style.display = "none";
-
-    document
-        .getElementById("storybook")
-        .style.display = "none";
-
-    document
-        .getElementById("factbook")
-        .style.display = "block";
+    openBook("factbook");
 
 }
-
 
 function startOtisTimer() {
 
