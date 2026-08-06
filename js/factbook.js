@@ -61,11 +61,8 @@ Uttrar
 
 <p>Jag heter Otis och jag älskar att upptäcka saker vid vattnet.</p>
 
-<p>Men visste du att det finns många andra uttrar som simmar, leker och busar runt om i världen?</p>
-
-<p>Här kommer några spännande saker om uttrar!</p>
-`,
-
+<p>Visste du att uttrar finns på många platser i världen? Här kommer några spännande fakta!</p>
+`
             imageClass:
             "fact-chapter-image",
 
