@@ -389,8 +389,12 @@ function closeBook() {
 
 
     document
-        .getElementById("storybook")
-        .style.display = "none";
+    .getElementById("storybook")
+    .style.display = "none";
+
+document
+    .getElementById("factbook")
+    .style.display = "none";
 
 
 
