@@ -48,7 +48,9 @@ function openBook(type) {
 
 
     // Starta alltid på innehållsförteckningen
-    currentBookPage = 0;
+    currentBookPage = Number(
+    localStorage.getItem(`${type}-page`)
+) || 0;
 
     localStorage.setItem(
         `${type}-page`,
