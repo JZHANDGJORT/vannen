@@ -838,8 +838,8 @@ function showDiscover() {
             💚 Upptäcka kroppen
         </button>
 
-        <button onclick="readOtisFactBook()">
-        📚 Upptäcka kunskap
+        <button onclick="openBook('factbook')">
+            📚 Upptäcka kunskap
         </button>
 
         <button onclick="showActivity()">
@@ -1033,6 +1033,30 @@ function discoverBody(activity) {
 
         <button onclick="simpleActivitySkipped()">
             🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
+
+function showKnowledgeDiscover() {
+
+    addMessage(
+        "Jag har samlat massor av spännande saker i min faktabok. 📚 Vill du kika i den tillsammans med mig?",
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="openFactBook()">
+            📖 Öppna faktaboken
+        </button>
+
+        <button onclick="showDiscover()">
+            ⬅️ Tillbaka
         </button>
 
     `;
