@@ -62,7 +62,7 @@ Uttrar
 <p>Jag heter Otis och jag älskar att upptäcka saker vid vattnet.</p>
 
 <p>Visste du att uttrar finns på många platser i världen? Här kommer några spännande fakta!</p>
-`
+`,
             imageClass:
             "fact-chapter-image",
 
