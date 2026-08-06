@@ -12,6 +12,7 @@ const factBookData = {
 
     pages: [
 
+
         // Sida 0 - Innehållsförteckning
         {
             image: "",
@@ -30,10 +31,11 @@ const factBookData = {
         },
 
 
-        // Sida 1 - Fakta 1
+
+        // Sida 1 - Kapitelstart
         {
             image:
-            "images/Otis/storybook/chapter01/page01.JPEG",
+            "", // Lägg in bild här
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openr.PNG",
@@ -44,7 +46,7 @@ const factBookData = {
             title:
 `
 <span class="chapter-number">
-Fakta 1
+Kapitel 1
 </span>
 <br>
 
@@ -54,15 +56,14 @@ Uttrar
 `,
 
             text:
-
 `
-<p>Visste du att uttrar älskar att simma?</p>
+<p>Hej! 🦦</p>
 
-<p>Deras tjocka päls hjälper dem att hålla sig varma även när vattnet är kallt.</p>
+<p>Jag heter Otis och jag älskar att upptäcka saker vid vattnet.</p>
 
-<p>Många uttrar har också en favoritsten som de använder när de ska knacka sönder musslor och snäckor.</p>
+<p>Men visste du att det finns många andra uttrar som simmar, leker och busar runt om i världen?</p>
 
-<p>Precis som Otis tycker riktiga uttrar om att samla fina stenar.</p>
+<p>Här kommer några spännande saker om uttrar!</p>
 `,
 
             imageClass:
@@ -71,9 +72,201 @@ Uttrar
             textClass:
             "chapter-text"
 
+        },
+
+
+
+        // Sida 2 - Fantastiska simmare
+        {
+            image:
+            "", // Lägg in bild här
+
+            background:
+            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+
+            backgroundClass:
+            "background-left",
+
+            title: "",
+
+            text:
+`
+<p>Uttrar är riktiga vattenälskare. 🌊</p>
+
+<p>Deras långa kropp och starka svans hjälper dem att simma snabbt genom vattnet.</p>
+
+<p>De kan dyka efter mat och hålla andan under flera minuter.</p>
+`,
+
+            imageClass:
+            "story-image-left",
+
+            textClass:
+            "story-text-left"
+
+        },
+
+
+
+        // Sida 3 - Den mjuka pälsen
+        {
+            image:
+            "", // Lägg in bild här
+
+            background:
+            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+
+            backgroundClass:
+            "background-right",
+
+            title: "",
+
+            text:
+`
+<p>En utterpäls är en av de tätaste pälsarna i hela djurriket.</p>
+
+<p>Under pälsen finns massor av små hårstrån som hjälper uttern att hålla värmen när den simmar i kallt vatten.</p>
+
+<p>Därför är det viktigt att uttrar tar hand om sin päls och håller den ren.</p>
+`,
+
+            imageClass:
+            "story-image-right",
+
+            textClass:
+            "story-text-right"
+
+        },
+
+
+
+        // Sida 4 - Favoritstenen
+        {
+            image:
+            "", // Lägg in bild här
+
+            background:
+            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+
+            backgroundClass:
+            "background-left",
+
+            title: "",
+
+            text:
+`
+<p>Vissa havsuttrar använder en favoritsten som ett litet verktyg. 🖤</p>
+
+<p>De kan använda stenen för att öppna hårda skal från musslor och andra smådjur.</p>
+
+<p>Precis som Otis tycker många uttrar om fina stenar!</p>
+`,
+
+            imageClass:
+            "story-image-left",
+
+            textClass:
+            "story-text-left"
+
+        },
+
+
+
+        // Sida 5 - Lekfulla uttrar
+        {
+            image:
+            "", // Lägg in bild här
+
+            background:
+            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+
+            backgroundClass:
+            "background-right",
+
+            title: "",
+
+            text:
+`
+<p>Uttrar är nyfikna och lekfulla djur.</p>
+
+<p>De kan rulla runt, jaga varandra och busa i vattnet.</p>
+
+<p>Lek hjälper dem att lära sig viktiga saker och hålla sig aktiva.</p>
+`,
+
+            imageClass:
+            "story-image-right",
+
+            textClass:
+            "story-text-right"
+
+        },
+
+
+
+        // Sida 6 - Var bor uttrar?
+        {
+            image:
+            "", // Lägg in bild här
+
+            background:
+            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+
+            backgroundClass:
+            "background-left",
+
+            title: "",
+
+            text:
+`
+<p>Uttrar finns på många platser i världen.</p>
+
+<p>De kan leva vid sjöar, floder och hav.</p>
+
+<p>Där det finns rent vatten och gott om mat kan en utter hitta ett hem.</p>
+`,
+
+            imageClass:
+            "story-image-left",
+
+            textClass:
+            "story-text-left"
+
+        },
+
+
+
+        // Sida 7 - Avslutning
+        {
+            image:
+            "", // Lägg in bild här
+
+            background:
+            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+
+            backgroundClass:
+            "background-right",
+
+            title: "",
+
+            text:
+`
+<p>Nu vet du lite mer om uttrar! 🌿</p>
+
+<p>Nästa gång du ser en bäck, en sjö eller havet kan du tänka på alla små äventyr som händer under vattenytan.</p>
+
+<p>/ Otis 🦦</p>
+`,
+
+            imageClass:
+            "story-image-right",
+
+            textClass:
+            "story-text-right"
+
         }
+
 
     ]
 
 };
-
