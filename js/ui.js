@@ -1063,18 +1063,6 @@ function showKnowledgeDiscover() {
 
 }
 
-function openFactBook() {
-
-    factBookDiscoverMode = true;
-
-    localStorage.setItem(
-        "factBookDiscoverMode",
-        "true"
-    );
-
-    openBook("factbook");
-
-}
 
 function startOtisTimer() {
 
