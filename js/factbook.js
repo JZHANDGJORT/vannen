@@ -67,10 +67,10 @@ Uttrar
 `,
 
             imageClass:
-            "chapter-image",
+            "fact-chapter-image",
 
             textClass:
-            "chapter-text"
+            "fact-chapter-text"
 
         },
 
@@ -99,10 +99,10 @@ Uttrar
 `,
 
             imageClass:
-            "story-image-left",
+            "fact-image-left",
 
             textClass:
-            "story-text-left"
+            "fact-text-left"
 
         },
 
@@ -131,10 +131,10 @@ Uttrar
 `,
 
             imageClass:
-            "story-image-right",
+            "fact-image-right",
 
             textClass:
-            "story-text-right"
+            "fact-text-right"
 
         },
 
@@ -163,10 +163,10 @@ Uttrar
 `,
 
             imageClass:
-            "story-image-left",
+            "fact-image-left",
 
             textClass:
-            "story-text-left"
+            "fact-text-left"
 
         },
 
@@ -195,10 +195,10 @@ Uttrar
 `,
 
             imageClass:
-            "story-image-right",
+            "fact-image-right",
 
             textClass:
-            "story-text-right"
+            "fact-text-right"
 
         },
 
@@ -227,10 +227,10 @@ Uttrar
 `,
 
             imageClass:
-            "story-image-left",
+            "fact-image-left",
 
             textClass:
-            "story-text-left"
+            "fact-text-left"
 
         },
 
@@ -259,10 +259,10 @@ Uttrar
 `,
 
             imageClass:
-            "story-image-right",
+            "fact-image-right",
 
             textClass:
-            "story-text-right"
+            "fact-text-right"
 
         }
 
