@@ -550,6 +550,33 @@ function suggestActivity() {
     const actions =
         document.getElementById("actions");
 
+    if (randomType === "discover") {
+
+    addMessage(
+        "Jag har en upptäckaridé! 🍃 Ska vi lära oss något nytt tillsammans?",
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <button onclick="showDiscover()">
+            💚 Ja, det gör vi!
+        </button>
+
+        <button onclick="suggestActivity()">
+            ✨ En annan idé
+        </button>
+
+        <button onclick="showActivity()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+    return;
+
+}
 
     if (randomType === "read") {
 
