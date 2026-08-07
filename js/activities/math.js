@@ -138,6 +138,87 @@ function generatePlusProblem() {
 
 }
 
+function startMinusActivity() {
+
+    const problem = generateMinusProblem();
+
+
+    currentMathProblem = problem;
+
+
+    currentActivity = {
+
+        type: "minus",
+
+        badgeType: "rakna",
+
+        completed:
+            "Bra jobbat! ➖ Du löste en minuskluring tillsammans med mig.",
+
+        skipped:
+            "Det gör inget. Vi kan prova igen en annan gång. 💚"
+
+    };
+
+
+    addMessage(
+        "➖ " + problem.question,
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="solveMathProblem()">
+            🤔 Jag tror jag vet svaret!
+        </button>
+
+        <button onclick="helpMathProblem()">
+            🌿 Jag behöver hjälp
+        </button>
+
+    `;
+
+}
+
+function generateMinusProblem() {
+
+    let number1 =
+        Math.floor(Math.random() * 21);
+
+    let number2 =
+        Math.floor(Math.random() * 21);
+
+
+    // Se till att svaret inte blir negativt
+    if (number2 > number1) {
+
+        let temp = number1;
+        number1 = number2;
+        number2 = temp;
+
+    }
+
+
+    return {
+
+        question:
+            `Vad blir ${number1} - ${number2}?`,
+
+        answer:
+            number1 - number2,
+
+        explanation:
+            `${number1} - ${number2} betyder att vi tar bort ${number2} från ${number1}. Då får vi ${number1 - number2}! 🌟`
+
+    };
+
+}
+
 function solveMathProblem() {
 
     addMessage(
