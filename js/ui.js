@@ -588,7 +588,7 @@ function suggestActivity() {
 
         actions.innerHTML = `
 
-            <button onclick="simpleActivity('read')">
+            <button onclick="chooseActivityNeed('read')">
                 💚 Ja, det gör vi!
             </button>
 
@@ -616,7 +616,7 @@ function suggestActivity() {
 
         actions.innerHTML = `
 
-            <button onclick="simpleActivity('challenge')">
+            <button onclick="chooseActivityNeed('math')">
                 💚 Ja, det gör vi!
             </button>
 
