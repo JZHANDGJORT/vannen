@@ -2859,6 +2859,9 @@ function otisLeaves() {
     const otis =
         document.getElementById("friend-character");
 
+    const face =
+        document.getElementById("friend-character-face");
+
 
     if (!stone || !otis) return;
 
@@ -2866,6 +2869,10 @@ function otisLeaves() {
     stone.style.opacity = "1";
 
     otis.style.opacity = "0";
+
+    if (face) {
+        face.style.opacity = "0";
+    }
 
 }
 
@@ -2877,6 +2884,9 @@ function resetOtisView() {
     const otis =
         document.getElementById("friend-character");
 
+    const face =
+        document.getElementById("friend-character-face");
+
 
     if (!stone || !otis) return;
 
@@ -2884,6 +2894,10 @@ function resetOtisView() {
     stone.style.opacity = "0";
 
     otis.style.opacity = "1";
+
+    if (face) {
+        face.style.opacity = "1";
+    }
 
 
     showMainMenu();
