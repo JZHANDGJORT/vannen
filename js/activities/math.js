@@ -292,3 +292,19 @@ function showMathAnswer() {
     `;
 
 }
+
+function startSameMathActivity() {
+
+    if (currentActivity.type === "plus") {
+        startPlusActivity();
+    }
+
+    else if (currentActivity.type === "minus") {
+        startMinusActivity();
+    }
+
+    else if (currentActivity.type === "multiply") {
+        startMultiplyActivity();
+    }
+
+}
