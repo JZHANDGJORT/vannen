@@ -365,35 +365,6 @@ function chooseActivityNeed(type) {
         document.getElementById("actions");
 
 
-    if (type === "free") {
-
-        addMessage(
-            "Vad mysigt! 🌊 Vill du göra något inne eller ge dig ut på ett litet äventyr?",
-            "otis"
-        );
-
-
-        actions.innerHTML = `
-
-            <button onclick="chooseActivityPlace('indoor')">
-                🏡 Inne
-            </button>
-
-            <button onclick="chooseActivityPlace('outdoor')">
-                🌳 Ute
-            </button>
-
-            <button onclick="showActivity()">
-            ⬅️ Tillbaka
-            </button>
-
-        `;
-
-        return;
-
-    }
-
-
     if (type === "read") {
 
         addMessage(
@@ -467,7 +438,7 @@ function chooseActivityNeed(type) {
         actions.innerHTML = `
 
             <button onclick="simpleActivity('paint')">
-            🎨 Måla
+                🎨 Måla
             </button>
 
             <button onclick="simpleActivity('build')">
@@ -479,9 +450,9 @@ function chooseActivityNeed(type) {
             </button>
 
             <button onclick="showActivity()">
-            ⬅️ Tillbaka
+                ⬅️ Tillbaka
             </button>
-            
+
         `;
 
         return;
@@ -508,7 +479,7 @@ function chooseActivityNeed(type) {
             </button>
 
             <button onclick="showActivity()">
-            ⬅️ Tillbaka
+                ⬅️ Tillbaka
             </button>
 
         `;
@@ -520,39 +491,39 @@ function chooseActivityNeed(type) {
 
     if (type === "tidy") {
 
-    addMessage(
-        "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
-        "otis"
-    );
+        addMessage(
+            "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
+            "otis"
+        );
 
 
-    actions.innerHTML = `
+        actions.innerHTML = `
 
-        <button onclick="simpleActivity('five')">
-            ⭐ Plocka undan fem saker
-        </button>
+            <button onclick="simpleActivity('five')">
+                ⭐ Plocka undan fem saker
+            </button>
 
-        <button onclick="simpleActivity('tidy10')">
-            ⏱️ Plocka undan i 10 minuter
-        </button>
+            <button onclick="simpleActivity('tidy10')">
+                ⏱️ Plocka undan i 10 minuter
+            </button>
 
-        <button onclick="simpleActivity('room')">
-            🏡 Göra fint i ett rum
-        </button>
+            <button onclick="simpleActivity('room')">
+                🏡 Göra fint i ett rum
+            </button>
 
-        <button onclick="simpleActivity('box')">
-            📦 Gå igenom en låda eller ett skåp
-        </button>
+            <button onclick="simpleActivity('box')">
+                📦 Gå igenom en låda eller ett skåp
+            </button>
 
-        <button onclick="showActivity()">
-        ⬅️ Tillbaka
-        </button>
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
 
-    `;
+        `;
 
-    return;
+        return;
 
-}
+    }
 
 }
 
