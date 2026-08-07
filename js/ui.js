@@ -849,6 +849,35 @@ function startBuildActivity() {
 
 }
 
+function startCraftActivity() {
+
+
+    const craftMaterials = [
+        "beads",
+        "beadplate",
+        "paper",
+        "yarn"
+    ];
+
+
+    const material =
+        craftMaterials[
+            Math.floor(
+                Math.random() * craftMaterials.length
+            )
+        ];
+
+
+    addMessage(
+        "Vad roligt! ✂️ Jag fick en idé om något vi kan pyssla tillsammans.",
+        "otis"
+    );
+
+
+    chooseCraft(material);
+
+}
+
 function simpleActivity(type) {
 
     const messages = {
