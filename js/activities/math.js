@@ -3,70 +3,10 @@ let currentMathProblem = null;
 
 function startMathActivity() {
 
-    const mathActivities = [
-
-        {
-            type: "plus",
-            message:
-                "➕ Vad roligt! Ska vi räkna tillsammans en stund? Jag har en liten plusutmaning till dig."
-        },
-
-        {
-            type: "minus",
-            message:
-                "➖ Jag har en liten minuskluring! Ska vi lösa den tillsammans?"
-        },
-
-        {
-            type: "multiply",
-            message:
-                "✖️ Nu blir det lite klurigare! Ska vi träna på gånger tillsammans?"
-        },
-
-        {
-            type: "divide",
-            message:
-                "➗ Jag har en liten delningskluring. Ska vi försöka tillsammans?"
-        },
-
-        {
-            type: "puzzle",
-            message:
-                "🧠 Jag har en liten mattegåta! Vill du prova?"
-        },
-
-        {
-            type: "everyday",
-            message:
-                "🌿 Ska vi upptäcka matte runt omkring oss? Jag har en liten utmaning från vardagen."
-        },
-
-        {
-            type: "homework",
-            message:
-                "📝 Har du en läxa som känns svår? Jag kan hjälpa dig att komma igång."
-        }
-
-    ];
-
-
-    const activity =
-        mathActivities[
-            Math.floor(
-                Math.random() * mathActivities.length
-            )
-        ];
-
-
     addMessage(
-        activity.message,
+        "Jag hjälper gärna till! ➕ Vad vill du räkna på idag?",
         "otis"
     );
-
-
-    currentActivity = {
-        type: activity.type
-    };
 
 
     const actions =
@@ -75,16 +15,36 @@ function startMathActivity() {
 
     actions.innerHTML = `
 
-        <button onclick="continueMathActivity('${activity.type}')">
-            💚 Ja, det gör vi!
+        <button onclick="startPlusActivity()">
+            ➕ Plus
         </button>
 
-        <button onclick="startMathActivity()">
-            ✨ En annan idé
+        <button onclick="startMinusActivity()">
+            ➖ Minus
         </button>
 
-        <button onclick="showActivity()">
-            ⬅️ Tillbaka
+        <button onclick="startMultiplyActivity()">
+            ✖️ Gånger
+        </button>
+
+        <button onclick="startDivideActivity()">
+            ➗ Dela
+        </button>
+
+        <button onclick="startMathPuzzleActivity()">
+            🧠 Mattekluring
+        </button>
+
+        <button onclick="startEverydayMathActivity()">
+            🌿 Matte i vardagen
+        </button>
+
+        <button onclick="startHomeworkActivity()">
+            📝 Jag har en läxa
+        </button>
+
+        <button onclick="showMainMenu()">
+            🦦 Inte idag
         </button>
 
     `;
