@@ -400,31 +400,31 @@ function chooseActivityNeed(type) {
 
     if (type === "math") {
 
-        addMessage(
-            "Jag hjälper gärna till! ➕ Har du något du vill räkna på?",
-            "otis"
-        );
+    addMessage(
+        "Jag hjälper gärna till! ➕ Vad vill du göra?",
+        "otis"
+    );
 
 
-        actions.innerHTML = `
+    actions.innerHTML = `
 
-            <button onclick="simpleActivity('homework')">
-                📝 Jag har en läxa
-            </button>
+        <button onclick="startHomeworkActivity()">
+            📝 Jag har en läxa
+        </button>
 
-            <button onclick="simpleActivity('challenge')">
-                🔢 Ge mig en liten utmaning
-            </button>
+        <button onclick="startMathActivity()">
+            🔢 Jag vill räkna tillsammans
+        </button>
 
-            <button onclick="showMainMenu()">
-                🦦 Inte idag
-            </button>
+        <button onclick="showMainMenu()">
+            🦦 Inte idag
+        </button>
 
-        `;
+    `;
 
-        return;
+    return;
 
-    }
+}
 
 
     if (type === "create") {
