@@ -204,7 +204,7 @@ Uttrar
         // Sida 6 - Var bor uttrar?
         {
             image:
-            "",
+            "images/Otis/factbook/chapter01/page06.PNG",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openl.PNG",
@@ -236,7 +236,7 @@ Uttrar
         // Sida 7 - Avslutning
         {
             image:
-            "",
+            "images/Otis/factbook/chapter01/page07.PNG",
 
             background:
             "images/Otis/otis-backpack-item-faktabok-openr.PNG",
