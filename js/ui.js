@@ -323,7 +323,7 @@ function showActivity() {
 
     actions.innerHTML = `
 
-        <button onclick="chooseActivityNeed('free')">
+        <button onclick="suggestActivity()">
             🌿 Hitta på något
         </button>
 
