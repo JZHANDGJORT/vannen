@@ -140,6 +140,41 @@ function startPlusActivity() {
 
 }
 
+function generatePlusProblem() {
+
+    let number1 =
+        Math.floor(Math.random() * 21);
+
+    let number2 =
+        Math.floor(Math.random() * 21);
+
+
+    // Undvik att få 0 + 0
+    while (number1 === 0 && number2 === 0) {
+
+        number1 =
+            Math.floor(Math.random() * 21);
+
+        number2 =
+            Math.floor(Math.random() * 21);
+
+    }
+
+
+    return {
+
+        question:
+            `Vad blir ${number1} + ${number2}?`,
+
+        answer:
+            number1 + number2,
+
+        explanation:
+            `${number1} + ${number2} blir ${number1 + number2}. Vi räknar ihop båda talen och får svaret ${number1 + number2}! 🌟`
+
+    };
+
+}
 
 function solveMathProblem() {
 
