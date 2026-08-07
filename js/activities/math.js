@@ -1,3 +1,6 @@
+let currentMathProblem = null;
+
+
 function startMathActivity() {
 
     const mathActivities = [
