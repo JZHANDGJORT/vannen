@@ -216,7 +216,7 @@ function startPlusActivity() {
     actions.innerHTML = `
 
         <button onclick="solveMathProblem()">
-            ✅ Jag kan svaret!
+            🤔 Jag tror jag vet svaret!
         </button>
 
         <button onclick="helpMathProblem()">
