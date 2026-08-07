@@ -767,7 +767,7 @@ function startCreateActivity() {
 
     actions.innerHTML = `
 
-        <button onclick="simpleActivity('${activity.type}')">
+        <button onclick="continueCreateActivity(type)">
             💚 Ja, det gör vi!
         </button>
 
@@ -780,6 +780,37 @@ function startCreateActivity() {
         </button>
 
     `;
+
+}
+
+function continueCreateActivity(type) {
+
+
+    if (type === "paint") {
+
+        simpleActivity("paint");
+
+        return;
+
+    }
+
+
+    if (type === "build") {
+
+        startBuildActivity();
+
+        return;
+
+    }
+
+
+    if (type === "craft") {
+
+        startCraftActivity();
+
+        return;
+
+    }
 
 }
 
