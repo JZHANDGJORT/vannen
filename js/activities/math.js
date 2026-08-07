@@ -60,7 +60,7 @@ function startPlusActivity() {
 
     type: "plus",
 
-    badgeType: "rakna",
+    badgeType: "rakne",
 
     completed:
 
@@ -146,7 +146,7 @@ function startMinusActivity() {
 
         type: "minus",
 
-        badgeType: "rakna",
+        badgeType: "rakne",
 
         completed:
             "Bra jobbat! ➖ Du löste en minuskluring tillsammans med mig.",
@@ -227,7 +227,7 @@ function startDivideActivity() {
 
         type: "divide",
 
-        badgeType: "rakna",
+        badgeType: "rakne",
 
         completed:
             "Bra jobbat! ➗ Du löste en delakluring tillsammans med mig.",
@@ -301,7 +301,7 @@ function startMultiplyActivity() {
 
         type: "multiply",
 
-        badgeType: "rakna",
+        badgeType: "rakne",
 
         completed:
             "Bra jobbat! ✖️ Du löste en gångkluring tillsammans med mig.",
@@ -370,7 +370,7 @@ function startMathPuzzleActivity() {
 
         type: "mathPuzzle",
 
-        badgeType: "rakna",
+        badgeType: "rakne",
 
         completed:
             "Bra jobbat! 🧠 Du klurade tillsammans med mig.",
