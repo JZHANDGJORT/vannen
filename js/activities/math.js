@@ -202,6 +202,23 @@ function startPlusActivity() {
 
     currentMathProblem = problem;
 
+    currentActivity = {
+
+    type: "plus",
+
+    badgeType: "rakna",
+
+    completed:
+
+        "Bra jobbat! ➕ Du löste en pluskluring tillsammans med mig.",
+
+    skipped:
+
+        "Det gör inget. Vi kan prova igen en annan gång. 💚"
+
+};
+
+
 
     addMessage(
         "➕ " + problem.question,
