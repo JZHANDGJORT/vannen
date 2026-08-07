@@ -814,6 +814,41 @@ function continueCreateActivity(type) {
 
 }
 
+function startBuildActivity() {
+
+
+    const buildMaterials = [
+        "lego",
+        "duplo",
+        "blocks",
+        "fort",
+        "clay",
+        "nature",
+        "cardboard",
+        "fabric",
+        "recycle",
+        "mixed"
+    ];
+
+
+    const material =
+        buildMaterials[
+            Math.floor(
+                Math.random() * buildMaterials.length
+            )
+        ];
+
+
+    addMessage(
+        "Vad roligt! 🧱 Jag fick en idé om något vi kan bygga tillsammans.",
+        "otis"
+    );
+
+
+    chooseBuildMaterial(material);
+
+}
+
 function simpleActivity(type) {
 
     const messages = {
