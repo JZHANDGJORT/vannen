@@ -330,7 +330,7 @@ function helpMathProblem() {
         ✅ Vi gjorde det!
     </button>
 
-    <button onclick="startPlusActivity()">
+    <button onclick="startSameMathActivity()">
         ➕ En till!
     </button>
 
@@ -376,6 +376,22 @@ function startSameMathActivity() {
 
     else if (currentActivity.type === "multiply") {
         startMultiplyActivity();
+    }
+
+    else if (currentActivity.type === "divide") {
+        startDivideActivity();
+    }
+
+    else if (currentActivity.type === "mathPuzzle") {
+        startMathPuzzleActivity();
+    }
+
+    else if (currentActivity.type === "everydayMath") {
+        startEverydayMathActivity();
+    }
+
+    else if (currentActivity.type === "homework") {
+        startHomeworkActivity();
     }
 
 }
