@@ -174,11 +174,15 @@ function helpMathProblem() {
 
     actions.innerHTML = `
 
-        <button onclick="simpleActivityDone()">
-            ✅ Jag klarade det!
-        </button>
+    <button onclick="simpleActivityDone()">
+        ✅ Vi gjorde det!
+    </button>
 
-    `;
+    <button onclick="startPlusActivity()">
+        ➕ En till!
+    </button>
+
+`;
 
 }
 
