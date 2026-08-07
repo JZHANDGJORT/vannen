@@ -527,6 +527,170 @@ function chooseActivityNeed(type) {
 
 }
 
+function suggestActivity() {
+
+    const activityTypes = [
+        "read",
+        "math",
+        "create",
+        "calm",
+        "tidy"
+    ];
+
+
+    const randomType =
+        activityTypes[
+            Math.floor(
+                Math.random() * activityTypes.length
+            )
+        ];
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    if (randomType === "read") {
+
+        addMessage(
+            "Hmm... 📚 Jag tycker att vi ska läsa en stund tillsammans! Vad tror du om det?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('read')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "math") {
+
+        addMessage(
+            "Jag har en idé! ➕ Vad sägs om att räkna på något en liten stund?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('challenge')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "create") {
+
+        addMessage(
+            "Vad sägs om att skapa något? 🎨 Jag tror att det skulle vara roligt!",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('paint')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "calm") {
+
+        addMessage(
+            "Jag tycker att vi ska ta det lite lugnt tillsammans. 🌊",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('breathe')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "tidy") {
+
+        addMessage(
+            "Hmm... 🧹 Ska vi göra en liten hjälteinsats och få undan några saker?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('five')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+}
+
 function simpleActivity(type) {
 
     const messages = {
