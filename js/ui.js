@@ -1361,6 +1361,161 @@ function discoverBody(activity) {
 
 }
 
+function startMathActivity() {
+
+    const mathActivities = [
+
+        {
+            type: "plus",
+            message:
+                "➕ Vad roligt! Ska vi räkna tillsammans en stund? Jag har en liten plusutmaning till dig."
+        },
+
+        {
+            type: "minus",
+            message:
+                "➖ Jag har en liten minuskluring! Ska vi lösa den tillsammans?"
+        },
+
+        {
+            type: "multiply",
+            message:
+                "✖️ Nu blir det lite klurigare! Ska vi träna på gånger tillsammans?"
+        },
+
+        {
+            type: "divide",
+            message:
+                "➗ Jag har en liten delningskluring. Ska vi försöka tillsammans?"
+        },
+
+        {
+            type: "puzzle",
+            message:
+                "🧠 Jag har en liten mattegåta! Vill du prova?"
+        },
+
+        {
+            type: "everyday",
+            message:
+                "🌿 Ska vi upptäcka matte runt omkring oss? Jag har en liten vardagsutmaning."
+        },
+
+        {
+            type: "homework",
+            message:
+                "📝 Har du en läxa som känns svår? Jag kan hjälpa dig att komma igång."
+        }
+
+    ];
+
+
+    const activity =
+        mathActivities[
+            Math.floor(
+                Math.random() * mathActivities.length
+            )
+        ];
+
+
+    addMessage(
+        activity.message,
+        "otis"
+    );
+
+
+    currentActivity = {
+        type: activity.type
+    };
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="continueMathActivity('${activity.type}')">
+            💚 Ja, det gör vi!
+        </button>
+
+        <button onclick="startMathActivity()">
+            ✨ En annan idé
+        </button>
+
+        <button onclick="showActivity()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function continueMathActivity(type) {
+
+    if (type === "plus") {
+
+        startPlusActivity();
+
+        return;
+
+    }
+
+
+    if (type === "minus") {
+
+        startMinusActivity();
+
+        return;
+
+    }
+
+
+    if (type === "multiply") {
+
+        startMultiplyActivity();
+
+        return;
+
+    }
+
+
+    if (type === "divide") {
+
+        startDivideActivity();
+
+        return;
+
+    }
+
+
+    if (type === "puzzle") {
+
+        startMathPuzzleActivity();
+
+        return;
+
+    }
+
+
+    if (type === "everyday") {
+
+        startEverydayMathActivity();
+
+        return;
+
+    }
+
+
+    if (type === "homework") {
+
+        startHomeworkActivity();
+
+        return;
+
+    }
+
+}
 
 function startOtisTimer() {
 
