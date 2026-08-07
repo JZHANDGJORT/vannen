@@ -224,7 +224,7 @@ Uttrar
 `,
 
             imageClass:
-            "fact-image-left",
+            "fact-image-left page-6",
 
             textClass:
             "fact-text-left"
