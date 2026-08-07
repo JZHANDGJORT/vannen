@@ -530,12 +530,13 @@ function chooseActivityNeed(type) {
 function suggestActivity() {
 
     const activityTypes = [
-        "read",
-        "math",
-        "create",
-        "calm",
-        "tidy"
-    ];
+    "discover",
+    "read",
+    "math",
+    "create",
+    "calm",
+    "tidy"
+];
 
 
     const randomType =
