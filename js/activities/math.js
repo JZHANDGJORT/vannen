@@ -38,7 +38,7 @@ function startMathActivity() {
         {
             type: "everyday",
             message:
-                "🌿 Ska vi upptäcka matte runt omkring oss? Jag har en liten vardagsutmaning."
+                "🌿 Ska vi upptäcka matte runt omkring oss? Jag har en liten utmaning från vardagen."
         },
 
         {
