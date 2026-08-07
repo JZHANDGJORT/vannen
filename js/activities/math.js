@@ -360,6 +360,75 @@ function generateMultiplyProblem() {
 
 }
 
+function startMathPuzzleActivity() {
+
+    const problem = generateMathPuzzle();
+
+    currentMathProblem = problem;
+
+    currentActivity = {
+
+        type: "mathPuzzle",
+
+        badgeType: "rakna",
+
+        completed:
+            "Bra jobbat! 🧠 Du klurade tillsammans med mig.",
+
+        skipped:
+            "Det gör inget. Vi kan klura en annan gång. 💚"
+
+    };
+
+    addMessage(
+        "🧠 " + problem.question,
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="solveMathProblem()">
+            🤔 Jag tror jag vet svaret!
+        </button>
+
+        <button onclick="helpMathProblem()">
+            🌿 Jag behöver hjälp
+        </button>
+
+    `;
+
+}
+
+function generateMathPuzzle() {
+
+    const puzzles = [
+
+        {
+            question: "...",
+            answer: ...,
+            explanation: "..."
+        },
+
+        {
+            question: "...",
+            answer: ...,
+            explanation: "..."
+        }
+
+    ];
+
+
+    return puzzles[
+        Math.floor(
+            Math.random() * puzzles.length
+        )
+    ];
+
+}
+
 function solveMathProblem() {
 
     addMessage(
