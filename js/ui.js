@@ -335,7 +335,7 @@ function showActivity() {
             📚 Läsa
         </button>
 
-        <button onclick="chooseActivityNeed('math')">
+        <button onclick="startMathActivity()">
           ➕ Räkna
         </button>
 
