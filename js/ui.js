@@ -800,13 +800,13 @@ function simpleActivity(type) {
         "Okej! Vad blir 2 + 3? ➕",
 
         paint:
-        "Vad roligt! 🎨 Vet du redan vad du vill måla eller vill du ha en liten idé?",
+        "Vad roligt! 🎨 Ska vi måla något tillsammans? Vill du göra något du redan har tänkt på eller vill du ha en liten idé?",
 
         build:
-        "Vad roligt! 🧱 Vad vill du bygga med idag?",
+        "Vad roligt! 🧱 Ska vi bygga något tillsammans? Vill du bygga något du redan har tänkt på eller vill du ha en liten idé?",
 
         craft:
-        "Vad roligt! ✂️ Vad vill du pyssla med idag?",   
+        "Vad roligt! ✂️ Ska vi pyssla något tillsammans? Vill du göra något du redan har tänkt på eller vill du ha en liten idé?",   
 
         breathe:
         "Vi tar tre lugna andetag tillsammans. 🌊",
@@ -852,43 +852,26 @@ function simpleActivity(type) {
             ⬅️ Tillbaka
         </button>
 
-
-
     `;
 
     return;
 
 }
 
-    if (type === "build") {
+
+if (type === "build") {
 
     const actions =
         document.getElementById("actions");
 
     actions.innerHTML = `
 
-        <button onclick="chooseBuildMaterial('lego')">
-            🧱 Lego
+        <button onclick="buildIdea(false)">
+            🧱 Jag vet redan
         </button>
 
-        <button onclick="chooseBuildMaterial('duplo')">
-            🧸 Duplo
-        </button>
-
-        <button onclick="chooseBuildMaterial('blocks')">
-            🪵 Klossar
-        </button>
-
-        <button onclick="chooseBuildMaterial('fort')">
-            🏕️ Kuddar & filtar
-        </button>
-
-        <button onclick="chooseBuildMaterial('clay')">
-            🪨 Lera
-        </button>
-
-        <button onclick="chooseBuildMaterial('other')">
-            ✨ Något annat
+        <button onclick="buildIdea(true)">
+            ✨ Ge mig en idé
         </button>
 
         <button onclick="chooseActivityNeed('create')">
@@ -901,32 +884,25 @@ function simpleActivity(type) {
 
 }
 
-    if (type === "craft") {
+
+if (type === "craft") {
 
     const actions =
         document.getElementById("actions");
 
     actions.innerHTML = `
 
-        <button onclick="chooseCraft('beads')">
-            📿 Pärlor
+        <button onclick="craftIdea(false)">
+            ✂️ Jag vet redan
         </button>
 
-        <button onclick="chooseCraft('beadplate')">
-            🟦 Pärlplatta
-        </button>
-
-        <button onclick="chooseCraft('paper')">
-            📄 Papper
-        </button>
-
-        <button onclick="chooseCraft('yarn')">
-            🧶 Garn
+        <button onclick="craftIdea(true)">
+            ✨ Ge mig en idé
         </button>
 
         <button onclick="chooseActivityNeed('create')">
             ⬅️ Tillbaka
-         </button>
+        </button>
 
     `;
 
