@@ -2863,16 +2863,15 @@ function otisLeaves() {
         document.getElementById("friend-character-face");
 
 
-    if (!stone || !otis) return;
+    if (!stone || !otis || !face) return;
 
 
     stone.style.opacity = "1";
 
     otis.style.opacity = "0";
 
-    if (face) {
-        face.style.opacity = "0";
-    }
+    face.style.opacity = "0";
+    face.src = "";
 
 }
 
@@ -2888,16 +2887,15 @@ function resetOtisView() {
         document.getElementById("friend-character-face");
 
 
-    if (!stone || !otis) return;
+    if (!stone || !otis || !face) return;
 
 
     stone.style.opacity = "0";
 
     otis.style.opacity = "1";
 
-    if (face) {
-        face.style.opacity = "1";
-    }
+    face.style.opacity = "0";
+    face.src = "";
 
 
     showMainMenu();
