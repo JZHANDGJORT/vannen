@@ -219,6 +219,80 @@ function generateMinusProblem() {
 
 }
 
+function startDivideActivity() {
+
+    const problem = generateDivideProblem();
+
+
+    currentMathProblem = problem;
+
+
+    currentActivity = {
+
+        type: "divide",
+
+        badgeType: "rakna",
+
+        completed:
+            "Bra jobbat! ➗ Du löste en delakluring tillsammans med mig.",
+
+        skipped:
+            "Det gör inget. Vi kan prova igen en annan gång. 💚"
+
+    };
+
+
+    addMessage(
+        "➗ " + problem.question,
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="solveMathProblem()">
+            🤔 Jag tror jag vet svaret!
+        </button>
+
+        <button onclick="helpMathProblem()">
+            🌿 Jag behöver hjälp
+        </button>
+
+    `;
+
+}
+
+function generateDivideProblem() {
+
+    const answer =
+        Math.floor(Math.random() * 10) + 1;
+
+    const divisor =
+        Math.floor(Math.random() * 10) + 1;
+
+    const number =
+        answer * divisor;
+
+
+    return {
+
+        question:
+            `Vad blir ${number} delat med ${divisor}?`,
+
+        answer:
+            answer,
+
+        explanation:
+            `${number} delat med ${divisor} betyder att vi delar ${number} i ${divisor} lika stora delar. Då får vi ${answer} i varje del! 🌟`
+
+    };
+
+}
+
 function startMultiplyActivity() {
 
     const problem = generateMultiplyProblem();
