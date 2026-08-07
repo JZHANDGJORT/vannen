@@ -1090,14 +1090,7 @@ function simpleActivityDone() {
         addBadgeProgress("lasar");
 
     }
-
-
-    if (currentActivity.type === "homework" ||
-        currentActivity.type === "challenge") {
-
-        addBadgeProgress("rakne");
-
-    }
+    
 
     if (currentActivity.type === "upptackar") {
 
