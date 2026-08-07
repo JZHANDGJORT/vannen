@@ -35,10 +35,6 @@ function startMathActivity() {
             🧠 Mattekluring
         </button>
 
-        <button onclick="startEverydayMathActivity()">
-            🌿 Matte i vardagen
-        </button>
-
         <button onclick="startHomeworkActivity()">
             📝 Jag har en läxa
         </button>
@@ -458,10 +454,6 @@ function startSameMathActivity() {
 
     else if (currentActivity.type === "mathPuzzle") {
         startMathPuzzleActivity();
-    }
-
-    else if (currentActivity.type === "everydayMath") {
-        startEverydayMathActivity();
     }
 
     else if (currentActivity.type === "homework") {
