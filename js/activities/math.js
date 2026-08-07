@@ -51,71 +51,7 @@ function startMathActivity() {
 
 }
 
-function continueMathActivity(type) {
 
-    if (type === "plus") {
-
-        startPlusActivity();
-
-        return;
-
-    }
-
-
-    if (type === "minus") {
-
-        startMinusActivity();
-
-        return;
-
-    }
-
-
-    if (type === "multiply") {
-
-        startMultiplyActivity();
-
-        return;
-
-    }
-
-
-    if (type === "divide") {
-
-        startDivideActivity();
-
-        return;
-
-    }
-
-
-    if (type === "puzzle") {
-
-        startMathPuzzleActivity();
-
-        return;
-
-    }
-
-
-    if (type === "everyday") {
-
-        startEverydayMathActivity();
-
-        return;
-
-    }
-
-
-    if (type === "homework") {
-
-        startHomeworkActivity();
-
-        return;
-
-    }
-
-}
 
 function startPlusActivity() {
 
