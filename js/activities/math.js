@@ -589,3 +589,45 @@ function startSameMathActivity() {
     }
 
 }
+
+function startHomeworkActivity() {
+
+    currentActivity = {
+
+        type: "homework",
+
+        badgeType: null,
+
+        completed:
+            "Bra jobbat! Du tog dig tid att jobba med din läxa idag. 🌟",
+
+        skipped:
+            "Det är helt okej. Ibland hinner man inte idag. Vi kan prova igen en annan gång. 💚"
+
+    };
+
+
+    addMessage(
+        "Klart jag kan sitta här med dig! 🦦 Du behöver inte göra läxan ensam. Vi tar en sak i taget. 💚",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🕐 Vi hann inte idag
+        </button>
+
+    `;
+
+}
+
