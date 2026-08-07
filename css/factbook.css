@@ -119,6 +119,11 @@
 
 }
 
+.fact-image-left.page-6 {
+    width: 55% !important;
+    left: 22%;
+    bottom: 21%;
+}
 
 .fact-image-right {
 
