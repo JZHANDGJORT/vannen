@@ -407,15 +407,74 @@ function generateMathPuzzle() {
     const puzzles = [
 
         {
-            question: "...",
-            answer: ...,
-            explanation: "..."
+            question:
+                "Otis har 3 stenar. Han hittar 4 stenar till. Hur många stenar har han nu?",
+
+            answer:
+                7,
+
+            explanation:
+                "Otis hade 3 stenar och hittade 4 till. 3 + 4 blir 7. 🪨🌟"
         },
 
+
         {
-            question: "...",
-            answer: ...,
-            explanation: "..."
+            question:
+                "Otis har 8 blåbär. Han äter 3 av dem. Hur många blåbär har han kvar?",
+
+            answer:
+                5,
+
+            explanation:
+                "Otis hade 8 blåbär och åt 3. 8 - 3 blir 5. 🫐🌟"
+        },
+
+
+        {
+            question:
+                "Otis hittar 2 högar med 4 stenar i varje hög. Hur många stenar har han tillsammans?",
+
+            answer:
+                8,
+
+            explanation:
+                "Det finns 2 högar med 4 stenar i varje. 4 + 4 blir 8. 🪨🌟"
+        },
+
+
+        {
+            question:
+                "Otis har 10 äpplen och vill dela dem lika mellan 2 kompisar. Hur många äpplen får varje kompis?",
+
+            answer:
+                5,
+
+            explanation:
+                "10 äpplen delat på 2 blir 5. Varje kompis får 5 äpplen. 🍎🌟"
+        },
+
+
+        {
+            question:
+                "Otis har 5 stenar. Han hittar 5 till. Sedan ger han 2 stenar till en kompis. Hur många stenar har Otis kvar?",
+
+            answer:
+                8,
+
+            explanation:
+                "Först får Otis 5 + 5, alltså 10 stenar. Sedan ger han bort 2. 10 - 2 blir 8. 🪨🌟"
+        },
+
+
+        {
+            question:
+                "Det sitter 4 fåglar i ett träd. 3 fåglar till flyger dit. Hur många fåglar sitter i trädet då?",
+
+            answer:
+                7,
+
+            explanation:
+                "Det satt 4 fåglar där och 3 till flög dit. 4 + 3 blir 7. 🐦🌟"
         }
 
     ];
