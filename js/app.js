@@ -333,7 +333,13 @@ function blinkCharacter() {
     const face =
         document.getElementById("friend-character-face");
 
-    if (!face || !currentFriend) return;
+    const otis =
+        document.getElementById("friend-character");
+
+    if (!face || !otis || !currentFriend) return;
+
+    // Blinka inte om Otis är osynlig
+    if (otis.style.opacity === "0") return;
 
     const blinkImage =
         currentFriend.characterBlinkImage;
