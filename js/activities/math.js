@@ -285,7 +285,7 @@ function showMathAnswer() {
             ✅ Vi gjorde det!
         </button>
 
-        <button onclick="startPlusActivity()">
+        <button onclick="startSameMathActivity()">
             ➕ En till!
         </button>
 
