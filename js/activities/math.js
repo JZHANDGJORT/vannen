@@ -596,7 +596,7 @@ function startHomeworkActivity() {
 
         type: "homework",
 
-        badgeType: null,
+        badgeType: "rakne",
 
         completed:
             "Bra jobbat! Du tog dig tid att jobba med din läxa idag. 🌟",
