@@ -767,7 +767,7 @@ function startCreateActivity() {
 
     actions.innerHTML = `
 
-        <button onclick="continueCreateActivity(type)">
+        <button onclick="continueCreateActivity('${activity.type}')">
             💚 Ja, det gör vi!
         </button>
 
