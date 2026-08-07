@@ -644,7 +644,7 @@ function suggestActivity() {
 
         actions.innerHTML = `
 
-            <button onclick="simpleActivity('paint')">
+            <button onclick="startCreateActivity()">
                 💚 Ja, det gör vi!
             </button>
 
@@ -716,6 +716,27 @@ function suggestActivity() {
 
         return;
     }
+
+}
+
+function startCreateActivity() {
+
+    const createTypes = [
+        "paint",
+        "build",
+        "craft"
+    ];
+
+
+    const randomCreate =
+        createTypes[
+            Math.floor(
+                Math.random() * createTypes.length
+            )
+        ];
+
+
+    simpleActivity(randomCreate);
 
 }
 
