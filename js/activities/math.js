@@ -242,7 +242,7 @@ function solveMathProblem() {
 
     actions.innerHTML = `
 
-        <button onclick="showMathAnswer(true)">
+        <button onclick="showMathAnswer()">
             ✨ Visa svaret
         </button>
 
