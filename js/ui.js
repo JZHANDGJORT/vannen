@@ -2174,121 +2174,72 @@ function paintIdea(randomIdea) {
 
 }
 
-function chooseBuildMaterial(material) {
+function buildIdea(randomIdea) {
 
-    const ideas = {
+    if (randomIdea) {
 
-lego: [
-    "🧱 Bygg ett hus där Otis kan bo.",
-    "🚗 Bygg ett fordon som kan åka på äventyr.",
-    "🏰 Bygg ett slott med torn.",
-    "🌉 Bygg en bro som Otis kan gå över.",
-    "🦦 Bygg en kompis till Otis.",
-    "🏝️ Bygg en egen liten värld."
-],
+        const ideas = [
 
-duplo: [
-    "🏠 Bygg ett mysigt hem.",
-    "🦦 Bygg en plats där ett djur kan trivas.",
-    "🌳 Bygg en liten värld med natur.",
-    "🚜 Bygg ett fordon för äventyr.",
-    "🏥 Bygg något där någon kan få hjälp.",
-    "🏰 Bygg en spännande plats att upptäcka."
-],
+            "🧱 Bygg ett hus där Otis kan bo med lego.",
+            "🚗 Bygg ett fordon som kan åka på äventyr med lego.",
+            "🏰 Bygg ett slott med torn av lego.",
+            "🌉 Bygg en bro som Otis kan gå över med lego.",
 
-blocks: [
-    "🏰 Bygg det högsta tornet du kan.",
-    "🌉 Bygg en bro över ett låtsasvatten.",
-    "🏡 Bygg ett eget litet hus.",
-    "🗼 Bygg ett torn som når molnen.",
-    "🦉 Bygg ett hem åt ett djur.",
-    "🌊 Bygg något som passar vid Otis vatten."
-],
+            "🏠 Bygg ett mysigt hem med duplo.",
+            "🦦 Bygg en plats där ett djur kan trivas med duplo.",
+            "🌳 Bygg en liten värld med natur med duplo.",
 
-fort: [
-    "🏕️ Bygg en mysig koja där du och Otis kan vila.",
-    "✨ Gör en hemlig plats för äventyr.",
-    "📚 Bygg en läshörna.",
-    "🌧️ Bygg en plats där man kan mysa när det regnar.",
-    "🦦 Gör en koja där Otis kan hälsa på.",
-    "🌿 Bygg en gömd plats i naturen."
-],
+            "🏰 Bygg det högsta tornet du kan med klossar.",
+            "🌉 Bygg en bro över ett låtsasvatten med klossar.",
+            "🦉 Bygg ett hem åt ett djur med klossar.",
 
-clay: [
-    "🪨 Forma ett djur.",
-    "🌿 Skapa en liten skatt till Otis.",
-    "🦦 Gör något som kan bo i Otis värld.",
-    "🍄 Skapa en liten figur från naturen.",
-    "💚 Gör ett hjärta eller en gåva.",
-    "🏡 Bygg en liten värld i lera."
-],
-     other: "showOtherBuildMaterials",
+            "🏕️ Bygg en mysig koja där du och Otis kan vila.",
+            "✨ Bygg en hemlig plats för äventyr med filtar och kuddar.",
+            "📚 Bygg en mysig läshörna.",
 
-nature: [
+            "🪨 Forma ett djur av lera.",
+            "🌿 Skapa en liten skatt till Otis av lera.",
+            "🍄 Skapa en liten figur från naturen av lera.",
 
-    "🌿 Bygg något av saker du hittar i naturen.",
+            "🌿 Bygg något av saker du hittar i naturen, som pinnar, löv eller stenar.",
+            "🍂 Skapa ett konstverk av naturmaterial.",
 
-    "🍂 Skapa ett konstverk av löv och pinnar."
+            "📦 Bygg något spännande av kartong och papper.",
+            "✂️ Skapa något nytt av sådant du redan har hemma.",
 
-],
+            "🧶 Skapa något mjukt av tyg eller garn.",
+            "🏕️ Bygg en mysig plats med olika tyger.",
 
-cardboard: [
+            "♻️ Förvandla något gammalt till något nytt.",
+            "✨ Bygg något av saker som annars skulle slängas.",
 
-    "📦 Bygg något av en kartong.",
+            "🌈 Blanda flera olika material och skapa något helt eget.",
+            "🦦 Bygg något som Otis aldrig har sett förut."
 
-    "✂️ Skapa något med papper och kartong."
-
-],
-
-fabric: [
-
-    "🧶 Skapa något mjukt med tyg eller garn.",
-
-    "🏕️ Bygg en mysig plats med olika tyger."
-
-],
-
-recycle: [
-
-    "♻️ Förvandla något gammalt till något nytt.",
-
-    "✨ Bygg något av saker som annars skulle slängas."
-
-],
-
-mixed: [
-
-    "🌈 Blanda olika material och skapa något helt eget.",
-
-    "🦦 Bygg något som Otis aldrig har sett förut."
-
-]
-
-};
+        ];
 
 
-    const list = ideas[material];
+        addMessage(
+            ideas[Math.floor(Math.random() * ideas.length)],
+            "otis"
+        );
 
 
-if (list === "showOtherBuildMaterials") {
+    } else {
 
-    showOtherBuildMaterials();
+        addMessage(
+            "Vad spännande! 💚 Jag ser fram emot att höra om vad du byggde sen.",
+            "otis"
+        );
 
-    return;
-
-}
-
-
-addMessage(
-    list[Math.floor(Math.random() * list.length)],
-    "otis"
-);
+    }
 
 
     currentActivity = {
 
         type: "build",
         badgeType: "skapar",
+
         completed:
         "Vilket fint bygge! 🧱 Jag hoppas att du hade roligt.",
 
@@ -2311,47 +2262,6 @@ addMessage(
         <button onclick="simpleActivitySkipped()">
             🌿 Vi hann inte idag
         </button>
-
-    `;
-
-}
-
-function showOtherBuildMaterials() {
-
-addMessage(
-    "Vad spännande! Ibland kan de bästa idéerna komma från saker man redan har hemma. 💚",
-    "otis"
-);
-    
-    const actions =
-        document.getElementById("actions");
-
-
-    actions.innerHTML = `
-
-        <button onclick="chooseBuildMaterial('nature')">
-            🌿 Naturmaterial
-        </button>
-
-        <button onclick="chooseBuildMaterial('cardboard')">
-            📦 Kartong & papper
-        </button>
-
-        <button onclick="chooseBuildMaterial('fabric')">
-            🧶 Tyger & garn
-        </button>
-
-        <button onclick="chooseBuildMaterial('recycle')">
-            ♻️ Återbruk
-        </button>
-
-        <button onclick="chooseBuildMaterial('mixed')">
-            ✨ Blandat
-        </button>
-
-        <button onclick="simpleActivity('build')">
-    ⬅️ Tillbaka
-</button>
 
     `;
 
