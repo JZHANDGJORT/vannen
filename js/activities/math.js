@@ -219,6 +219,77 @@ function generateMinusProblem() {
 
 }
 
+function startMultiplyActivity() {
+
+    const problem = generateMultiplyProblem();
+
+
+    currentMathProblem = problem;
+
+
+    currentActivity = {
+
+        type: "multiply",
+
+        badgeType: "rakna",
+
+        completed:
+            "Bra jobbat! ✖️ Du löste en gångkluring tillsammans med mig.",
+
+        skipped:
+            "Det gör inget. Vi kan prova igen en annan gång. 💚"
+
+    };
+
+
+    addMessage(
+        "✖️ " + problem.question,
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="solveMathProblem()">
+            🤔 Jag tror jag vet svaret!
+        </button>
+
+        <button onclick="helpMathProblem()">
+            🌿 Jag behöver hjälp
+        </button>
+
+    `;
+
+}
+
+function generateMultiplyProblem() {
+
+    const number1 =
+        Math.floor(Math.random() * 10) + 1;
+
+    const number2 =
+        Math.floor(Math.random() * 10) + 1;
+
+
+    return {
+
+        question:
+            `Vad blir ${number1} gånger ${number2}?`,
+
+        answer:
+            number1 * number2,
+
+        explanation:
+            `${number1} gånger ${number2} betyder ${number1} grupper med ${number2} i varje grupp. Om vi räknar alla tillsammans blir det ${number1 * number2}! 🌟`
+
+    };
+
+}
+
 function solveMathProblem() {
 
     addMessage(
