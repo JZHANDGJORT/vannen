@@ -721,22 +721,65 @@ function suggestActivity() {
 
 function startCreateActivity() {
 
-    const createTypes = [
-        "paint",
-        "build",
-        "craft"
+    const createActivities = [
+        {
+            type: "paint",
+            message:
+                "Vad roligt! 🎨 Ska vi måla något tillsammans? Kanske något vi tycker om eller något vi hittar på?"
+        },
+
+        {
+            type: "build",
+            message:
+                "Vad roligt! 🧱 Ska vi bygga något tillsammans? Kanske en liten koja, ett hus eller något helt eget?"
+        },
+
+        {
+            type: "craft",
+            message:
+                "Vad roligt! ✂️ Ska vi pyssla med något? Vi kan använda papper, färger eller något annat vi hittar hemma."
+        }
     ];
 
 
-    const randomCreate =
-        createTypes[
+    const activity =
+        createActivities[
             Math.floor(
-                Math.random() * createTypes.length
+                Math.random() * createActivities.length
             )
         ];
 
 
-    simpleActivity(randomCreate);
+    addMessage(
+        activity.message,
+        "otis"
+    );
+
+
+    currentActivity = {
+        type: activity.type
+    };
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="simpleActivity('${activity.type}')">
+            💚 Ja, det gör vi!
+        </button>
+
+        <button onclick="startCreateActivity()">
+            ✨ En annan idé
+        </button>
+
+        <button onclick="showActivity()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
 
 }
 
