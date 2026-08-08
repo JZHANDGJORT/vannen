@@ -320,22 +320,8 @@ function showActivity() {
     const actions =
         document.getElementById("actions");
 
-    function showActivity() {
-
-    addMessage(
-        "Vad roligt! 💚 Är det något speciellt du behöver göra idag eller ska vi hitta på något tillsammans?",
-        "otis"
-    );
-
-
-    const actions =
-        document.getElementById("actions");
-
-
     actions.classList.add("activity-menu");
 
-
-    actions.innerHTML = `
 
     actions.innerHTML = `
 
