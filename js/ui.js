@@ -1446,29 +1446,14 @@ function startOtisTimer(type = "tidy10") {
 
                 timer.classList.add("activity-hidden");
 
+                playOtisTimerSound();
+
                 simpleActivityDone();
 
             }
 
 
         }, 1000);
-
-    if (seconds <= 0) {
-
-    clearInterval(window.otisTimer);
-
-    timer.classList.add("activity-hidden");
-
-    playOtisTimerSound();
-
-    addMessage(
-        "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
-        "otis"
-    );
-
-    showMainMenu();
-
-}
 
 }
 
