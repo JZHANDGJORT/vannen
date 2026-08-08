@@ -131,33 +131,19 @@
 
 /*
    Aktivitetsmeny
-   2 stora knappar överst
-   3 × 2 knappar under
 */
 
 
 #actions.activity-menu {
 
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
 }
 
 
-/* Hitta på något */
+/* Hitta på något – två kolumner */
 
 #actions.activity-menu button:nth-child(1) {
-
-    grid-column: span 3;
-
-}
-
-
-/* Upptäcka, Läsa, Räkna, Skapa */
-
-#actions.activity-menu button:nth-child(2),
-#actions.activity-menu button:nth-child(3),
-#actions.activity-menu button:nth-child(4),
-#actions.activity-menu button:nth-child(5) {
 
     grid-column: span 2;
 
@@ -168,19 +154,8 @@
 
 #actions.activity-menu button:nth-child(6) {
 
-    grid-column: 4 / span 3;
+    grid-column: 3;
+
     grid-row: 1;
 
 }
-
-
-/* Röja lite och Tillbaka */
-
-#actions.activity-menu button:nth-child(7),
-#actions.activity-menu button:nth-child(8) {
-
-    grid-column: span 2;
-
-}
-
-
