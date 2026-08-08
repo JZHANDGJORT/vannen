@@ -379,7 +379,7 @@ function chooseActivityNeed(type) {
 
         actions.innerHTML = `
 
-            <button onclick="simpleActivity('read')">
+            <button onclick="chooseReadTimer()">
                 📖 Ja, jag har en bok
             </button>
 
