@@ -554,6 +554,8 @@ function suggestActivity() {
     const actions =
         document.getElementById("actions");
 
+actions.classList.remove("activity-menu");
+    
     if (randomType === "discover") {
 
     addMessage(
