@@ -1148,6 +1148,7 @@ function showDiscover() {
     const actions =
         document.getElementById("actions");
 
+    actions.classList.remove("activity-menu");
 
     actions.innerHTML = `
 
@@ -1181,6 +1182,8 @@ function showWorldDiscover() {
     const actions =
         document.getElementById("actions");
 
+actions.classList.remove("activity-menu");
+    
     actions.innerHTML = `
 
         <button onclick="discoverWorld('nature')">
