@@ -1476,6 +1476,36 @@ function finishOtisTimer() {
 
 }
 
+function chooseReadTimer() {
+
+    addMessage(
+        "Vad mysigt! 📚 Vill du att jag tar tiden åt dig?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="startOtisTimer('read')">
+            ⏱️ Ja, 10 minuter
+        </button>
+
+        <button onclick="simpleActivity('read')">
+            📖 Nej, jag läser utan timer
+        </button>
+
+        <button onclick="chooseActivityNeed('read')">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
 function chooseActivityPlace(place) {
 
 
