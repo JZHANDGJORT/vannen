@@ -367,6 +367,7 @@ function chooseActivityNeed(type) {
     const actions =
         document.getElementById("actions");
 
+    actions.classList.remove("activity-menu");
 
     if (type === "read") {
 
