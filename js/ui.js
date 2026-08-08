@@ -885,197 +885,152 @@ function startCraftActivity() {
 }
 
 function simpleActivity(type) {
-
     const messages = {
-
         read:
         "Vad mysigt! 📚 Läs för mig en stund, jag finns här och lyssnar.",
-
         later:
         "Det går bra. Jag finns kvar här när du är redo. Så kan vi läsa lite senare när du har hittat något mysigt att läsa tillsammans. 💚",
-
         homework:
         "Jag sitter bredvid dig och hejar på. Du klarar det! 🌿",
-
         challenge:
         "Okej! Vad blir 2 + 3? ➕",
-
         paint:
         "Vad roligt! 🎨 Vet du redan vad du vill måla eller vill du ha en liten idé?",
-
         build:
         "Vad roligt! 🧱 Vad vill du bygga med idag?",
-
         craft:
-        "Vad roligt! ✂️ Vad vill du pyssla med idag?",   
-
-        breathe:
-        "Vi tar tre lugna andetag tillsammans. 🌊",
-
-        pause:
-        "Ibland behöver man bara vara en stund. Jag stannar här. 💚",
-
+        "Vad roligt! ✂️ Vad vill du pyssla med idag.",
         five:
         "Fem saker räcker! Ett litet steg kan göra stor skillnad. ⭐",
-
         tidy10:
         "Bra idé! 🌿 Vi tar 10 minuter tillsammans och ser hur mycket vi hinner.",
-
-         room:
-         "Det här är ett större uppdrag. 🏡 Vi gör fint i ett rum tillsammans.",
-
-         box:
-         "Ett riktigt hjälteuppdrag! 📦 Vi går igenom en låda eller ett skåp och gör det lättare att hitta saker."
+        room:
+        "Det här är ett större uppdrag. 🏡 Vi gör fint i ett rum tillsammans.",
+        box:
+        "Ett riktigt hjälteuppdrag! 📦 Vi går igenom en låda eller ett skåp och gör det lättare att hitta saker."
     };
-
-
+    // ----------------------------------------
+    // Lugna övningar
+    // ----------------------------------------
+    if (type === "breathe") {
+        guidedCalmActivity(type);
+        return;
+    }
+    // ----------------------------------------
+    // Vanligt aktivitetsmeddelande
+    // ----------------------------------------
     addMessage(
-    messages[type],
-    "otis"
-);
-
+        messages[type],
+        "otis"
+    );
+    // ----------------------------------------
+    // Måla
+    // ----------------------------------------
     if (type === "paint") {
-
-    const actions =
-        document.getElementById("actions");
-
-    actions.innerHTML = `
-
-        <button onclick="paintIdea(false)">
-            🎨 Jag vet redan
-        </button>
-
-        <button onclick="paintIdea(true)">
-            ✨ Ge mig en idé
-        </button>
-
-        <button onclick="chooseActivityNeed('create')">
-            ⬅️ Tillbaka
-        </button>
-
-
-
-    `;
-
-    return;
-
-}
-
+        const actions =
+            document.getElementById("actions");
+        actions.innerHTML = `
+            <button onclick="paintIdea(false)">
+                🎨 Jag vet redan
+            </button>
+            <button onclick="paintIdea(true)">
+                ✨ Ge mig en idé
+            </button>
+            <button onclick="chooseActivityNeed('create')">
+                ⬅️ Tillbaka
+            </button>
+        `;
+        return;
+    }
+    // ----------------------------------------
+    // Bygga
+    // ----------------------------------------
     if (type === "build") {
-
-    const actions =
-        document.getElementById("actions");
-
-    actions.innerHTML = `
-
-        <button onclick="chooseBuildMaterial('lego')">
-            🧱 Lego
-        </button>
-
-        <button onclick="chooseBuildMaterial('duplo')">
-            🧸 Duplo
-        </button>
-
-        <button onclick="chooseBuildMaterial('blocks')">
-            🪵 Klossar
-        </button>
-
-        <button onclick="chooseBuildMaterial('fort')">
-            🏕️ Kuddar & filtar
-        </button>
-
-        <button onclick="chooseBuildMaterial('clay')">
-            🪨 Lera
-        </button>
-
-        <button onclick="chooseBuildMaterial('other')">
-            ✨ Något annat
-        </button>
-
-        <button onclick="chooseActivityNeed('create')">
-            ⬅️ Tillbaka
-        </button>
-
-    `;
-
-    return;
-
-}
-
+        const actions =
+            document.getElementById("actions");
+        actions.innerHTML = `
+            <button onclick="chooseBuildMaterial('lego')">
+                🧱 Lego
+            </button>
+            <button onclick="chooseBuildMaterial('duplo')">
+                🧸 Duplo
+            </button>
+            <button onclick="chooseBuildMaterial('blocks')">
+                🪵 Klossar
+            </button>
+            <button onclick="chooseBuildMaterial('fort')">
+                🏕️ Kuddar & filtar
+            </button>
+            <button onclick="chooseBuildMaterial('clay')">
+                🪨 Lera
+            </button>
+            <button onclick="chooseBuildMaterial('other')">
+                ✨ Något annat
+            </button>
+            <button onclick="chooseActivityNeed('create')">
+                ⬅️ Tillbaka
+            </button>
+        `;
+        return;
+    }
+    // ----------------------------------------
+    // Pyssla
+    // ----------------------------------------
     if (type === "craft") {
-
+        const actions =
+            document.getElementById("actions");
+        actions.innerHTML = `
+            <button onclick="chooseCraft('beads')">
+                📿 Pärlor
+            </button>
+            <button onclick="chooseCraft('beadplate')">
+                🟦 Pärlplatta
+            </button>
+            <button onclick="chooseCraft('paper')">
+                📄 Papper
+            </button>
+            <button onclick="chooseCraft('yarn')">
+                🧶 Garn
+            </button>
+            <button onclick="chooseActivityNeed('create')">
+                ⬅️ Tillbaka
+            </button>
+        `;
+        return;
+    }
+    // ----------------------------------------
+    // 10 minuter
+    // ----------------------------------------
+    if (type === "tidy10") {
+        startOtisTimer("tidy10");
+        return;
+    }
+    // ----------------------------------------
+    // Aktivitet
+    // ----------------------------------------
+    currentActivity = {
+        type: type,
+        difficulty:
+            type === "five" ? "lätt" :
+            type === "tidy10" ? "mellan" :
+            type === "room" ? "utmaning" :
+            type === "box" ? "utmaning" :
+            "vanlig",
+        completed:
+            "Vad fint gjort! 💚 Jag tyckte om att få göra det här tillsammans med dig.",
+        skipped:
+            "Det gör inget. Vi kan prova en annan gång. 🌿"
+    };
     const actions =
         document.getElementById("actions");
-
     actions.innerHTML = `
-
-        <button onclick="chooseCraft('beads')">
-            📿 Pärlor
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
         </button>
-
-        <button onclick="chooseCraft('beadplate')">
-            🟦 Pärlplatta
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
         </button>
-
-        <button onclick="chooseCraft('paper')">
-            📄 Papper
-        </button>
-
-        <button onclick="chooseCraft('yarn')">
-            🧶 Garn
-        </button>
-
-        <button onclick="chooseActivityNeed('create')">
-            ⬅️ Tillbaka
-         </button>
-
     `;
-
-    return;
-
-}
-
-    if (type === "tidy10") {
-
-    startOtisTimer("tidy10");
-
-    return;
-
-}
-
-currentActivity = {
-    type: type,
-
-    difficulty:
-        type === "five" ? "lätt" :
-        type === "tidy10" ? "mellan" :
-        type === "room" ? "utmaning" :
-        type === "box" ? "utmaning" :
-        "vanlig",
-
-    completed:
-        "Vad fint gjort! 💚 Jag tyckte om att få göra det här tillsammans med dig.",
-
-    skipped:
-        "Det gör inget. Vi kan prova en annan gång. 🌿"
-};
-
-const actions =
-    document.getElementById("actions");
-
-
-actions.innerHTML = `
-
-    <button onclick="simpleActivityDone()">
-        ✅ Vi gjorde det!
-    </button>
-
-    <button onclick="simpleActivitySkipped()">
-        🌿 Vi hann inte idag
-    </button>
-
-`;
-
 }
 
 function simpleActivityDone() {
