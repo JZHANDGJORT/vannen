@@ -1366,38 +1366,51 @@ function discoverBody(activity) {
 
 
 
-function startOtisTimer() {
+function startOtisTimer(type = "tidy10") {
 
     currentActivity = {
-        type: "tidy10",
+
+        type: type,
+
+        badgeType:
+            type === "read"
+                ? "lasar"
+                : null,
+
         completed:
-            "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
+            type === "read"
+                ? "Bra jobbat! 📚 Vi läste tillsammans i 10 minuter. 🌟"
+                : "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
+
         skipped:
             "Det gör inget. Vi kan prova en annan gång. 🌿"
+
     };
 
 
     const actions =
         document.getElementById("actions");
 
-    
-const timer =
-    document.getElementById("activity-timer");
 
-const timerTime =
-    document.getElementById("timer-time");
+    const timer =
+        document.getElementById("activity-timer");
 
-timer.classList.remove("activity-hidden");
 
-timerTime.textContent = "10:00";
+    const timerTime =
+        document.getElementById("timer-time");
 
+
+    timer.classList.remove("activity-hidden");
+
+
+    timerTime.textContent = "10:00";
 
 
     let seconds = 600;
 
 
     actions.innerHTML = `
-       
+
         <button onclick="finishOtisTimer()">
             🌿 Jag är klar
         </button>
@@ -1418,12 +1431,13 @@ timerTime.textContent = "10:00";
             const minutes =
                 Math.floor(seconds / 60);
 
+
             const remaining =
                 seconds % 60;
 
 
             timerTime.textContent =
-    `${minutes}:${remaining < 10 ? "0" : ""}${remaining}`;
+                `${minutes}:${remaining < 10 ? "0" : ""}${remaining}`;
 
 
             if (seconds <= 0) {
@@ -1432,13 +1446,7 @@ timerTime.textContent = "10:00";
 
                 timer.classList.add("activity-hidden");
 
-                addMessage(
-                    "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
-                    "otis"
-                );
-
-
-                showMainMenu();
+                simpleActivityDone();
 
             }
 
