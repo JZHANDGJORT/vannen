@@ -1037,7 +1037,7 @@ function simpleActivity(type) {
 
     if (type === "tidy10") {
 
-    startOtisTimer();
+    startOtisTimer("tidy10");
 
     return;
 
