@@ -2580,21 +2580,63 @@ addMessage(
 }
 
 function chooseCraft(material) {
-
     const ideas = {
-
-        beads:
-        "📿 Vi kan göra ett fint armband, en figur eller något helt eget av pärlor.",
-
-        beadplate:
-        "🟦 Vi kan göra ett djur, ett hjärta eller hitta på ett eget mönster.",
-
-        paper:
-        "📄 Vi kan göra ett kort, en pappersfigur eller något fint att ge bort.",
-
-        yarn:
-        "🧶 Vi kan skapa något mjukt och färgglatt av garn."
-
+        beads: [
+            "📿 Gör ett armband av pärlor i dina favoritfärger.",
+            "🦋 Skapa en liten figur av pärlor.",
+            "🌈 Gör ett färgglatt mönster med pärlor.",
+            "💚 Gör ett hjärta av pärlor.",
+            "🌸 Skapa en blomma av pärlor.",
+            "🦦 Gör något av pärlor som Otis skulle tycka om.",
+            "⭐ Skapa en stjärna av pärlor.",
+            "🐾 Gör ett litet djur av pärlor.",
+            "🎨 Blanda olika färger av pärlor och skapa något helt eget.",
+            "🎁 Gör en liten gåva av pärlor till någon du tycker om.",
+            "✨ Skapa något av pärlor som du aldrig har gjort förut.",
+            "💎 Gör ett färgglatt pärlsmycke som bara finns i din fantasi."
+        ],
+        beadplate: [
+            "🟦 Gör ett djur på pärlplattan.",
+            "❤️ Gör ett hjärta på pärlplattan.",
+            "🌈 Skapa ett färgglatt mönster på pärlplattan.",
+            "🌸 Gör en blomma på pärlplattan.",
+            "🦋 Skapa en fjäril på pärlplattan.",
+            "⭐ Gör en stjärna på pärlplattan.",
+            "🦦 Gör en bild av Otis på pärlplattan.",
+            "🐾 Skapa ett eget djur på pärlplattan.",
+            "🏠 Gör ett litet hus på pärlplattan.",
+            "🌳 Skapa ett träd eller en liten skog på pärlplattan.",
+            "🌙 Gör en bild av natten på pärlplattan.",
+            "✨ Hitta på ett helt eget mönster på pärlplattan."
+        ],
+        paper: [
+            "📄 Gör ett kort av papper till någon du tycker om.",
+            "🦋 Vik eller klipp en fjäril av papper.",
+            "🌸 Klipp eller rita en blomma på papper.",
+            "🦦 Gör en liten Otis-figur av papper.",
+            "🏠 Skapa ett litet hus av papper.",
+            "🐾 Gör ett djur av papper.",
+            "🌈 Skapa ett färgglatt konstverk av papper.",
+            "✉️ Gör ett eget brev eller kort av papper.",
+            "🎭 Skapa en enkel figur eller mask av papper.",
+            "🌳 Gör ett träd av papper och fyll det med löv.",
+            "⭐ Klipp eller rita stjärnor av papper och skapa en liten värld.",
+            "✨ Använd papper och skapa något helt eget."
+        ],
+        yarn: [
+            "🧶 Skapa något mjukt av garn.",
+            "🌈 Gör ett färgglatt mönster med garn.",
+            "💚 Skapa ett litet hjärta av garn.",
+            "🌸 Gör en enkel blomma av garn.",
+            "🦦 Skapa något av garn som Otis skulle kunna använda.",
+            "🐾 Gör en liten figur av garn.",
+            "🎨 Blanda olika färger av garn och skapa något eget.",
+            "⭐ Skapa en stjärna eller annan form av garn.",
+            "🎁 Gör en liten gåva av garn till någon du tycker om.",
+            "🪢 Testa att göra något genom att fläta eller knyta garn.",
+            "✨ Använd garn på ett sätt du inte har provat förut.",
+            "🌿 Skapa något som påminner om naturen med hjälp av garn."
+        ]
     };
 
 
