@@ -10,7 +10,9 @@ function startMathActivity() {
 
 
     const actions =
-        document.getElementById("actions");
+    document.getElementById("actions");
+
+actions.classList.remove("activity-menu");
 
 
     actions.innerHTML = `
