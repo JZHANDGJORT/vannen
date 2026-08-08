@@ -16,14 +16,18 @@ function guidedCalmActivity(type) {
     if (type === "breathe") {
 
         addMessage(
-            "Lägg gärna en hand på magen. 🌿 Nu tar vi tre lugna andetag tillsammans.",
+            "Vi provar en lugn andningsövning. 🌿 " +
+            "Lägg gärna en hand på magen. " +
+            "Andas långsamt in och sedan långsamt ut. " +
+            "Gör det tre gånger i din egen takt. " +
+            "När du är klar trycker du på knappen.",
             "otis"
         );
 
         actions.innerHTML = `
 
-            <button onclick="calmBreathStep(1)">
-                🌬️ Jag är redo
+            <button onclick="finishCalmActivity('breathe')">
+                🌬️ Jag är klar
             </button>
 
             <button onclick="showActivity()">
@@ -37,116 +41,23 @@ function guidedCalmActivity(type) {
 
 }
 
-// ----------------------------------------
-// Andningsövning
-// ----------------------------------------
 
-function calmBreathStep(step) {
+// ========================================
+// Avsluta lugn övning
+// ========================================
+
+function finishCalmActivity(type) {
 
     const actions = document.getElementById("actions");
 
     if (!actions) return;
 
 
-    if (step === 1) {
+    if (type === "breathe") {
 
         addMessage(
-            "Andas långsamt in genom näsan... 🌿",
-            "otis"
-        );
-
-        actions.innerHTML = `
-
-            <button onclick="calmBreathStep(2)">
-                🌬️ Jag är klar
-            </button>
-
-        `;
-
-        return;
-    }
-
-
-    if (step === 2) {
-
-        addMessage(
-            "Och andas långsamt ut... 💚",
-            "otis"
-        );
-
-        actions.innerHTML = `
-
-            <button onclick="calmBreathStep(3)">
-                🌿 Nästa andetag
-            </button>
-
-        `;
-
-        return;
-    }
-
-
-    if (step === 3) {
-
-        addMessage(
-            "Fint. Nu tar vi ett till. Andas lugnt in... 🌿",
-            "otis"
-        );
-
-        actions.innerHTML = `
-
-            <button onclick="calmBreathStep(4)">
-                🌬️ Jag är klar
-            </button>
-
-        `;
-
-        return;
-    }
-
-
-    if (step === 4) {
-
-        addMessage(
-            "Och andas långsamt ut... Släpp gärna ner axlarna lite. 💚",
-            "otis"
-        );
-
-        actions.innerHTML = `
-
-            <button onclick="calmBreathStep(5)">
-                🌿 Sista andetaget
-            </button>
-
-        `;
-
-        return;
-    }
-
-
-    if (step === 5) {
-
-        addMessage(
-            "Andas in... 🌿",
-            "otis"
-        );
-
-        actions.innerHTML = `
-
-            <button onclick="calmBreathStep(6)">
-                🌬️ Och ut
-            </button>
-
-        `;
-
-        return;
-    }
-
-
-    if (step === 6) {
-
-        addMessage(
-            "Och andas ut... 💚 Bra. Vi behöver inte skynda vidare.",
+            "Bra. 💚 Sitt gärna kvar en liten stund om du vill. " +
+            "Du behöver inte skynda vidare.",
             "otis"
         );
 
@@ -160,4 +71,5 @@ function calmBreathStep(step) {
 
         return;
     }
+
 }
