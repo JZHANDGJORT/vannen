@@ -1453,6 +1453,23 @@ function startOtisTimer(type = "tidy10") {
 
         }, 1000);
 
+    if (seconds <= 0) {
+
+    clearInterval(window.otisTimer);
+
+    timer.classList.add("activity-hidden");
+
+    playOtisTimerSound();
+
+    addMessage(
+        "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
+        "otis"
+    );
+
+    showMainMenu();
+
+}
+
 }
 
 function finishOtisTimer() {
@@ -1473,6 +1490,55 @@ function finishOtisTimer() {
 
 
     showMainMenu();
+
+}
+
+function playOtisTimerSound() {
+
+    const audioContext =
+        new (window.AudioContext || window.webkitAudioContext)();
+
+    const now = audioContext.currentTime;
+
+    function playTone(frequency, startTime, duration) {
+
+        const oscillator =
+            audioContext.createOscillator();
+
+        const gain =
+            audioContext.createGain();
+
+        oscillator.type = "sine";
+
+        oscillator.frequency.value =
+            frequency;
+
+        gain.gain.setValueAtTime(
+            0,
+            startTime
+        );
+
+        gain.gain.linearRampToValueAtTime(
+            0.18,
+            startTime + 0.03
+        );
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.001,
+            startTime + duration
+        );
+
+        oscillator.connect(gain);
+        gain.connect(audioContext.destination);
+
+        oscillator.start(startTime);
+        oscillator.stop(startTime + duration);
+    }
+
+
+    // Mjukt pling – pling
+    playTone(880, now, 0.45);
+    playTone(1174.66, now + 0.32, 0.6);
 
 }
 
