@@ -2384,96 +2384,109 @@ function paintIdea(randomIdea) {
 }
 
 function chooseBuildMaterial(material) {
-
     const ideas = {
-
-lego: [
-    "🧱 Bygg ett hus där Otis kan bo.",
-    "🚗 Bygg ett fordon som kan åka på äventyr.",
-    "🏰 Bygg ett slott med torn.",
-    "🌉 Bygg en bro som Otis kan gå över.",
-    "🦦 Bygg en kompis till Otis.",
-    "🏝️ Bygg en egen liten värld."
-],
-
-duplo: [
-    "🏠 Bygg ett mysigt hem.",
-    "🦦 Bygg en plats där ett djur kan trivas.",
-    "🌳 Bygg en liten värld med natur.",
-    "🚜 Bygg ett fordon för äventyr.",
-    "🏥 Bygg något där någon kan få hjälp.",
-    "🏰 Bygg en spännande plats att upptäcka."
-],
-
-blocks: [
-    "🏰 Bygg det högsta tornet du kan.",
-    "🌉 Bygg en bro över ett låtsasvatten.",
-    "🏡 Bygg ett eget litet hus.",
-    "🗼 Bygg ett torn som når molnen.",
-    "🦉 Bygg ett hem åt ett djur.",
-    "🌊 Bygg något som passar vid Otis vatten."
-],
-
-fort: [
-    "🏕️ Bygg en mysig koja där du och Otis kan vila.",
-    "✨ Gör en hemlig plats för äventyr.",
-    "📚 Bygg en läshörna.",
-    "🌧️ Bygg en plats där man kan mysa när det regnar.",
-    "🦦 Gör en koja där Otis kan hälsa på.",
-    "🌿 Bygg en gömd plats i naturen."
-],
-
-clay: [
-    "🪨 Forma ett djur.",
-    "🌿 Skapa en liten skatt till Otis.",
-    "🦦 Gör något som kan bo i Otis värld.",
-    "🍄 Skapa en liten figur från naturen.",
-    "💚 Gör ett hjärta eller en gåva.",
-    "🏡 Bygg en liten värld i lera."
-],
-     other: "showOtherBuildMaterials",
-
-nature: [
-
-    "🌿 Bygg något av saker du hittar i naturen.",
-
-    "🍂 Skapa ett konstverk av löv och pinnar."
-
-],
-
-cardboard: [
-
-    "📦 Bygg något av en kartong.",
-
-    "✂️ Skapa något med papper och kartong."
-
-],
-
-fabric: [
-
-    "🧶 Skapa något mjukt med tyg eller garn.",
-
-    "🏕️ Bygg en mysig plats med olika tyger."
-
-],
-
-recycle: [
-
-    "♻️ Förvandla något gammalt till något nytt.",
-
-    "✨ Bygg något av saker som annars skulle slängas."
-
-],
-
-mixed: [
-
-    "🌈 Blanda olika material och skapa något helt eget.",
-
-    "🦦 Bygg något som Otis aldrig har sett förut."
-
-]
-
-};
+        lego: [
+            "🧱 Bygg ett hus av LEGO där Otis kan bo.",
+            "🚗 Bygg ett LEGO-fordon som kan ta dig och Otis på äventyr.",
+            "🏰 Bygg ett LEGO-slott med torn och hemliga rum.",
+            "🌉 Bygg en LEGO-bro som Otis kan gå över.",
+            "🦦 Bygg en LEGO-kompis till Otis.",
+            "🏝️ Bygg en egen liten värld av LEGO.",
+            "🚀 Bygg en LEGO-maskin som kan ta Otis till en hemlig plats.",
+            "🐾 Bygg ett hem av LEGO åt ett djur.",
+            "🌲 Bygg en liten LEGO-skog där Otis kan utforska.",
+            "✨ Bygg något helt eget av LEGO som Otis aldrig har sett förut."
+        ],
+        duplo: [
+            "🏠 Bygg ett mysigt hem av DUPLO där Otis kan bo.",
+            "🦦 Bygg en plats av DUPLO där ett djur kan trivas.",
+            "🌳 Bygg en liten naturvärld av DUPLO.",
+            "🚜 Bygg ett DUPLO-fordon som kan åka på äventyr.",
+            "🏥 Bygg en plats av DUPLO där någon kan få hjälp.",
+            "🏰 Bygg en spännande plats av DUPLO som Otis kan upptäcka.",
+            "🌊 Bygg en DUPLO-värld vid vattnet där Otis kan leka.",
+            "🐾 Bygg ett litet djurhem av DUPLO.",
+            "🌈 Bygg en färgglad värld av DUPLO där du bestämmer vad som finns.",
+            "✨ Bygg något helt eget av DUPLO och bestäm själv vad det ska bli."
+        ],
+        blocks: [
+            "🏰 Bygg ett torn av klossar som är så högt du kan.",
+            "🌉 Bygg en bro av klossar över ett låtsasvatten.",
+            "🏡 Bygg ett eget litet hus av klossar.",
+            "🗼 Bygg ett torn av klossar som nästan når molnen.",
+            "🦉 Bygg ett hem av klossar åt ett djur.",
+            "🌊 Bygg något av klossar som passar vid Otis vatten.",
+            "🌲 Bygg en liten skog av klossar med egna platser att upptäcka.",
+            "🦦 Bygg en trygg viloplats av klossar där Otis kan vila.",
+            "🚂 Bygg ett fordon av klossar som kan ta sig genom din värld.",
+            "✨ Bygg något helt eget av klossar och bestäm själv vad det ska vara."
+        ],
+        fort: [
+            "🏕️ Bygg en mysig koja av filtar och kuddar där du och Otis kan vila.",
+            "✨ Bygg en hemlig koja av filtar och kuddar för ett litet äventyr.",
+            "📚 Bygg en mysig läshörna av filtar och kuddar.",
+            "🌧️ Bygg en koja av filtar och kuddar där man kan mysa när det regnar.",
+            "🦦 Bygg en liten koja av filtar och kuddar där Otis kan hälsa på.",
+            "🌿 Bygg en gömd koja av filtar och kuddar som blir er hemliga plats.",
+            "🔦 Bygg en hemlig koja av filtar och kuddar där ni kan berätta historier.",
+            "🌙 Bygg en mysig nattkoja av filtar och kuddar där Otis kan sova.",
+            "🗺️ Bygg en äventyrskoja av filtar och kuddar som blir er hemliga bas.",
+            "💚 Bygg den mysigaste kojan du kan med filtar och kuddar."
+        ],
+        clay: [
+            "🪨 Forma ett djur av lera.",
+            "🌿 Skapa en liten skatt av lera till Otis.",
+            "🦦 Forma något av lera som kan bo i Otis värld.",
+            "🍄 Skapa en liten figur av lera som du hittar på själv.",
+            "💚 Forma ett hjärta eller en liten gåva av lera.",
+            "🏡 Bygg en liten värld av lera.",
+            "🐾 Forma ett litet djur av lera och hitta på vad det heter.",
+            "🌸 Skapa en fantasiblomma av lera.",
+            "🪨 Forma en magisk sten av lera som Otis kan hitta.",
+            "✨ Skapa något helt eget av lera och bestäm själv vad det blir."
+        ],
+        other: "showOtherBuildMaterials",
+        nature: [
+            "🌿 Bygg något av saker du hittar i naturen.",
+            "🍂 Skapa ett konstverk av löv, pinnar och annat du hittar i naturen.",
+            "🪵 Bygg en liten viloplats åt Otis av naturmaterial.",
+            "🌸 Skapa en bild eller figur av löv, pinnar och andra naturmaterial.",
+            "🐾 Gör ett mönster på marken med löv, pinnar och andra saker du hittar i naturen.",
+            "✨ Hitta några naturmaterial och skapa något helt eget."
+        ],
+        cardboard: [
+            "📦 Bygg något av en kartong.",
+            "✂️ Skapa något av papper och kartong.",
+            "🏠 Bygg ett litet hus av kartong.",
+            "🚗 Bygg ett fordon av kartong och papper.",
+            "🦦 Bygg ett litet hem åt Otis av kartong.",
+            "✨ Förvandla en kartong till något helt annat."
+        ],
+        fabric: [
+            "🧶 Skapa något mjukt av tyg eller garn.",
+            "🏕️ Bygg en mysig plats med tyg och garn.",
+            "🦦 Gör en liten filt eller sovplats åt Otis av tyg.",
+            "🎨 Skapa ett mönster med olika tyger eller garn.",
+            "🪡 Skapa något du kan använda eller leka med av tyg eller garn.",
+            "✨ Blanda tyg och garn och skapa något helt eget."
+        ],
+        recycle: [
+            "♻️ Förvandla något gammalt till något nytt.",
+            "✨ Bygg något av saker som annars skulle slängas.",
+            "📦 Förvandla en gammal förpackning till något roligt.",
+            "🚗 Bygg ett fordon av saker du annars skulle slänga.",
+            "🏠 Skapa ett litet hus av gamla förpackningar och andra saker.",
+            "🦦 Bygg något av gamla saker som Otis skulle kunna använda."
+        ],
+        mixed: [
+            "🌈 Blanda olika material och skapa något helt eget.",
+            "🦦 Bygg något av flera olika material som Otis aldrig har sett förut.",
+            "✨ Använd minst tre olika material och skapa något nytt.",
+            "🏡 Skapa en liten värld med flera olika material.",
+            "🎨 Blanda material, färger och former och se vad det blir.",
+            "🪄 Skapa något magiskt genom att kombinera olika material."
+        ]
+    };
 
 
     const list = ideas[material];
