@@ -29,7 +29,8 @@ function showMainMenu() {
     const actions =
         document.getElementById("actions");
 
-
+    actions.classList.remove("activity-menu");
+    
     actions.innerHTML = `
 
     <button id="present-person-button" class="action-button company">
