@@ -2321,31 +2321,28 @@ if (actionsContainer) {
 }
 
 function paintIdea(randomIdea) {
-
     if (randomIdea) {
-
         const ideas = [
-
             "🎨 Måla något som gör dig glad. ☀️",
-
             "🦦 Rita ditt favoritdjur.",
-
-            "🌸 Måla en vacker blomma.",
-
-            "🌈 Måla med regnbågens alla färger.",
-
-            "🌳 Rita ditt drömträd.",
-
+            "🌸 Måla en blomma som du själv hittar på.",
+            "🌈 Måla en bild med dina favoritfärger.",
+            "🌳 Rita ett träd som ser ut precis som du vill.",
             "🏴‍☠️ Rita en skattkarta till en hemlig plats.",
-
-            "🌊 Måla hur du tror att havets botten ser ut.",
-
-            "✨ Hitta på ett helt nytt djur.",
-
+            "🌊 Måla hur du tror att det ser ut under vattenytan.",
+            "✨ Rita ett helt nytt djur som ingen har sett förut.",
             "😊 Rita någon som får dig att le.",
-
-            "🏡 Rita ett hus där Otis skulle vilja bo."
-
+            "🏡 Rita ett hus där Otis skulle vilja bo.",
+            "🌲 Måla en mysig plats där du skulle vilja vara.",
+            "☁️ Rita vad du tror finns bakom molnen.",
+            "🪄 Måla en magisk värld där allt är möjligt.",
+            "🐾 Rita spår från ett djur och hitta på vart det är på väg.",
+            "🌙 Måla hur du tror att Otis värld ser ut på natten.",
+            "🎈 Rita något som kan flyga, men som egentligen inte kan flyga.",
+            "🍓 Måla din alldeles egna fantasifrukt.",
+            "🏞️ Rita en plats där Otis och du skulle kunna ha ett äventyr.",
+            "💭 Rita något du skulle vilja hitta om du gick på upptäcktsfärd.",
+            "⭐ Måla en bild som du tycker känns lugn och mysig."
         ];
 
         addMessage(
