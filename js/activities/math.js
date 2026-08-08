@@ -38,7 +38,7 @@ actions.classList.remove("activity-menu");
         </button>
 
         <button onclick="startHomeworkActivity()">
-            📝 Jag har en läxa
+            📝 Jag har läxa
         </button>
 
         <button onclick="showMainMenu()">
