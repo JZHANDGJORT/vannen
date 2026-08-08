@@ -64,7 +64,7 @@ function startPlusActivity() {
 
     completed:
 
-        "Bra jobbat! ➕ Du löste en pluskluring tillsammans med mig.",
+        "Bra jobbat! ➕ Du löste en kluring tillsammans med mig.",
 
     skipped:
 
@@ -149,7 +149,7 @@ function startMinusActivity() {
         badgeType: "rakne",
 
         completed:
-            "Bra jobbat! ➖ Du löste en minuskluring tillsammans med mig.",
+            "Bra jobbat! ➖ Du löste en kluring tillsammans med mig.",
 
         skipped:
             "Det gör inget. Vi kan prova igen en annan gång. 💚"
@@ -230,7 +230,7 @@ function startDivideActivity() {
         badgeType: "rakne",
 
         completed:
-            "Bra jobbat! ➗ Du löste en delakluring tillsammans med mig.",
+            "Bra jobbat! ➗ Du löste en kluring tillsammans med mig.",
 
         skipped:
             "Det gör inget. Vi kan prova igen en annan gång. 💚"
@@ -304,7 +304,7 @@ function startMultiplyActivity() {
         badgeType: "rakne",
 
         completed:
-            "Bra jobbat! ✖️ Du löste en gångkluring tillsammans med mig.",
+            "Bra jobbat! ✖️ Du löste en kluring tillsammans med mig.",
 
         skipped:
             "Det gör inget. Vi kan prova igen en annan gång. 💚"
