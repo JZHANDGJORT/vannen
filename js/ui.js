@@ -1,3 +1,4 @@
+let otisAudioContext = null;
 let currentActivity = null;
 
 function updateActionLayout() {
