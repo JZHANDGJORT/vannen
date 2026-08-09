@@ -106,7 +106,6 @@
    Receptbok
 */
 
-
 .backpack-receptbok {
 
     left: 29%;
@@ -115,7 +114,32 @@
 
     width: 210px;
 
-    transform: rotate(3deg);
+    animation: recipeBookFloat 3s ease-in-out infinite;
+
+}
+
+
+@keyframes recipeBookFloat {
+
+    0% {
+
+        transform: rotate(3deg) translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: rotate(3deg) translateY(-8px);
+
+    }
+
+
+    100% {
+
+        transform: rotate(3deg) translateY(0);
+
+    }
 
 }
 
