@@ -1384,7 +1384,7 @@ function startOtisTimer(type = "tidy10") {
         document.getElementById("timer-time");
     timer.classList.remove("activity-hidden");
     timerTime.textContent = "10:00";
-    let seconds = 6;
+    let seconds = 600;
     actions.innerHTML = `
         <button onclick="finishOtisTimer()">
             🌿 Jag är klar
