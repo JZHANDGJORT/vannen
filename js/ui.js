@@ -914,11 +914,15 @@ function simpleActivity(type) {
     // ----------------------------------------
     if (
     type === "breathe" ||
-    type === "senses"
+    type === "senses" ||
+    type === "listen" ||
+    type === "body" ||
+    type === "slow" ||
+    type === "place" ||
+    type === "thoughts" ||
+    type === "pause"
 ) {
-
     guidedCalmActivity(type);
-
     return;
 }
     // ----------------------------------------
