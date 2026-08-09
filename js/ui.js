@@ -1356,94 +1356,59 @@ function discoverBody(activity) {
 
 
 function startOtisTimer(type = "tidy10") {
-
+    if (!otisAudioContext) {
+        otisAudioContext =
+            new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (otisAudioContext.state === "suspended") {
+        otisAudioContext.resume();
+    }
     currentActivity = {
-
         type: type,
-
         badgeType:
             type === "read"
                 ? "lasar"
                 : null,
-
         completed:
             type === "read"
                 ? "Bra jobbat! 📚 Vi läste tillsammans i 10 minuter. 🌟"
                 : "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
-
         skipped:
             "Det gör inget. Vi kan prova en annan gång. 🌿"
-
     };
-
-
     const actions =
         document.getElementById("actions");
-
-
     const timer =
         document.getElementById("activity-timer");
-
-
     const timerTime =
         document.getElementById("timer-time");
-
-
     timer.classList.remove("activity-hidden");
-
-
     timerTime.textContent = "10:00";
-
-
     let seconds = 600;
-
-
     actions.innerHTML = `
-
         <button onclick="finishOtisTimer()">
             🌿 Jag är klar
         </button>
-
         <button onclick="simpleActivitySkipped()">
             🌱 Vi hann inte idag
         </button>
-
     `;
-
-
     window.otisTimer =
         setInterval(() => {
-
             seconds--;
-
-
             const minutes =
                 Math.floor(seconds / 60);
-
-
             const remaining =
                 seconds % 60;
-
-
             timerTime.textContent =
                 `${minutes}:${remaining < 10 ? "0" : ""}${remaining}`;
-
-
             if (seconds <= 0) {
-
                 clearInterval(window.otisTimer);
-
                 timer.classList.add("activity-hidden");
-
                 playOtisTimerSound();
-
                 simpleActivityDone();
-
             }
-
-
         }, 1000);
-
 }
 
 function finishOtisTimer() {
