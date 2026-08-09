@@ -88,9 +88,11 @@ function updateBookPage() {
 
 
     const prefix =
-        currentBookType === "book"
-            ? "storybook"
-            : "factbook";
+    currentBookType === "book"
+        ? "storybook"
+        : currentBookType === "factbook"
+            ? "factbook"
+            : "recipebook";
 
 
 
