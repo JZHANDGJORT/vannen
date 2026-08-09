@@ -478,8 +478,8 @@ function chooseActivityNeed(type) {
                 🌿 Andas en stund
             </button>
 
-            <button onclick="simpleActivity('pause')">
-                💚 Bara vara
+            <button onclick="simpleActivity('senses')">
+                👀 Fem saker du ser
             </button>
 
             <button onclick="showActivity()">
