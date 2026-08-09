@@ -75,6 +75,10 @@ localStorage.setItem(
             ? "block"
             : "none";
 
+  document.getElementById("recipebook").style.display =
+    type === "recipebook"
+        ? "block"
+        : "none";
 
     updateBookPage();
 
