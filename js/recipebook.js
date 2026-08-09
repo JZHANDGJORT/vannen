@@ -20,7 +20,7 @@ const recipeBookData = {
         // Sida 1 - Kryddmuffins
         {
             image:
-            "images/Otis/otis-recept-kryddmuffins.PNG",
+            "images/Otis/recipebook/otis-recept-kryddmuffins.PNG",
             background:
             "images/Otis/otis-backpack-item-receptbok-openr.PNG",
             backgroundClass:
@@ -35,7 +35,7 @@ const recipeBookData = {
         // Sida 2 - Pannkaksbröd
         {
             image:
-            "images/Otis/otis-recept-pannkaksbrod.PNG",
+            "images/Otis/recipebook/otis-recept-pannkaksbrod.PNG",
             background:
             "images/Otis/otis-backpack-item-receptbok-openl.PNG",
             backgroundClass:
