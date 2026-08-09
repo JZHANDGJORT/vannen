@@ -11,7 +11,7 @@ function guidedCalmActivity(type) {
     if (type === "breathe") {
         // Första meddelandet
         addMessage(
-            "Vi provar en lugn andningsövning. 🌿",
+            "Ska vi prova några lugna andetag? 🌿",
             "otis"
         );
         // Inga knappar ännu
