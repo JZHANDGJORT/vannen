@@ -270,7 +270,9 @@ if (!story) {
         const activityMode =
     currentBookType === "book"
         ? bookReadingMode
-        : factBookDiscoverMode;
+        : currentBookType === "factbook"
+            ? factBookDiscoverMode
+            : false;
 
 readButton.style.display =
     activityMode &&
