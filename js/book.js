@@ -339,10 +339,18 @@ function goToFactChapter(chapter) {
 
 }
 
+function goToBookPage(page) {
 
+    currentBookPage = page;
 
+    localStorage.setItem(
+        `${currentBookType}-page`,
+        currentBookPage
+    );
 
+    updateBookPage();
 
+}
 
 
 
