@@ -912,10 +912,15 @@ function simpleActivity(type) {
     // ----------------------------------------
     // Lugna övningar
     // ----------------------------------------
-    if (type === "breathe") {
-        guidedCalmActivity(type);
-        return;
-    }
+    if (
+    type === "breathe" ||
+    type === "senses"
+) {
+
+    guidedCalmActivity(type);
+
+    return;
+}
     // ----------------------------------------
     // Vanligt aktivitetsmeddelande
     // ----------------------------------------
