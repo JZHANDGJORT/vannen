@@ -105,3 +105,42 @@ function finishEveningWithOtis() {
         </button>
     `;
 }
+
+// ========================================
+// VISA KVÄLL MED OTIS MELLAN 18–03
+// ========================================
+
+function updateEveningButton() {
+
+    const button =
+        document.getElementById("evening-button");
+
+    if (!button) return;
+
+
+    const hour = new Date().getHours();
+
+
+    // Kväll: 18:00–23:59
+    // Natt: 00:00–02:59
+
+    const isEvening =
+        hour >= 18 || hour < 3;
+
+
+    button.style.display =
+        isEvening ? "block" : "none";
+}
+
+
+// Kontrollera direkt när sidan laddas
+
+updateEveningButton();
+
+
+// Kontrollera igen varje minut
+
+setInterval(
+    updateEveningButton,
+    60 * 1000
+);
