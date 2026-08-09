@@ -474,19 +474,43 @@ function chooseActivityNeed(type) {
 
         actions.innerHTML = `
 
-            <button onclick="simpleActivity('breathe')">
-                🌿 Andas en stund
-            </button>
+    <button onclick="simpleActivity('breathe')">
+        🌬️ Lugna andetag
+    </button>
 
-            <button onclick="simpleActivity('senses')">
-                👀 Fem saker du ser
-            </button>
+    <button onclick="simpleActivity('senses')">
+        👀 Fem saker du ser
+    </button>
 
-            <button onclick="showActivity()">
-                ⬅️ Tillbaka
-            </button>
+    <button onclick="simpleActivity('listen')">
+        👂 Lyssna en stund
+    </button>
 
-        `;
+    <button onclick="simpleActivity('body')">
+        🤲 Känn efter
+    </button>
+
+    <button onclick="simpleActivity('slow')">
+        🐢 Gör något långsamt
+    </button>
+
+    <button onclick="simpleActivity('place')">
+        🌊 Tänk på en lugn plats
+    </button>
+
+    <button onclick="simpleActivity('thoughts')">
+        ☁️ Låt tankarna vila
+    </button>
+
+    <button onclick="simpleActivity('pause')">
+        💚 Bara vara en stund
+    </button>
+
+    <button onclick="showActivity()">
+        ⬅️ Tillbaka
+    </button>
+
+`;
 
         return;
 
