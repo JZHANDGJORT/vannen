@@ -2744,6 +2744,7 @@ function restoreCurrentView() {
         document.getElementById("backpack-view").style.display = "block";
         document.getElementById("storybook").style.display = "none";
         document.getElementById("factbook").style.display = "none";
+        document.getElementById("recipebook").style.display = "none";
 
 
         updateAllBadges();
@@ -2765,6 +2766,7 @@ function restoreCurrentView() {
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "block";
         document.getElementById("factbook").style.display = "none";
+        document.getElementById("recipebook").style.display = "none";
 
 
 
@@ -2794,12 +2796,43 @@ function restoreCurrentView() {
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "none";
         document.getElementById("factbook").style.display = "block";
+        document.getElementById("recipebook").style.display = "none";
 
 
 
         currentBookPage =
             Number(
                 localStorage.getItem("factbook-page")
+            ) || 0;
+
+
+
+        updateBookPage();
+
+    }
+
+
+
+    else if (hash === "#recipebook") {
+
+
+        currentBookType = "recipebook";
+
+        currentBookData = recipeBookData;
+
+
+
+        document.getElementById("friend-view").style.display = "none";
+        document.getElementById("backpack-view").style.display = "none";
+        document.getElementById("storybook").style.display = "none";
+        document.getElementById("factbook").style.display = "none";
+        document.getElementById("recipebook").style.display = "block";
+
+
+
+        currentBookPage =
+            Number(
+                localStorage.getItem("recipebook-page")
             ) || 0;
 
 
@@ -2817,6 +2850,7 @@ function restoreCurrentView() {
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "none";
         document.getElementById("factbook").style.display = "none";
+        document.getElementById("recipebook").style.display = "none";
 
 
     }
