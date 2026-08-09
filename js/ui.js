@@ -2593,43 +2593,32 @@ function chooseCraft(material) {
             "🌿 Skapa något som påminner om naturen med hjälp av garn."
         ]
     };
-
-
+    const list = ideas[material];
+    // Slumpa fram ett enda pysselförslag
     addMessage(
-        ideas[material],
+        list[Math.floor(Math.random() * list.length)],
         "otis"
     );
-
-
+    // Spara aktiviteten
     currentActivity = {
-
         type: "craft",
         badgeType: "skapar",
         completed:
         "Vad fint du skapade! ✂️ Jag tycker om att pyssla tillsammans med dig.",
-
         skipped:
         "Det gör inget. Vi kan pyssla en annan dag. 💚"
-
     };
-
-
+    // Visa knapparna
     const actions =
         document.getElementById("actions");
-
-
     actions.innerHTML = `
-
         <button onclick="simpleActivityDone()">
             ✅ Vi gjorde det!
         </button>
-
         <button onclick="simpleActivitySkipped()">
             🌿 Vi hann inte idag
         </button>
-
     `;
-
 }
 
 /*
