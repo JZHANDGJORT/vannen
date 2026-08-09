@@ -1434,10 +1434,13 @@ function finishOtisTimer() {
 
 function playOtisTimerSound() {
 
-    const audioContext =
-        new (window.AudioContext || window.webkitAudioContext)();
+    if (!otisAudioContext) return;
 
-    const now = audioContext.currentTime;
+    const audioContext =
+        otisAudioContext;
+
+    const now =
+        audioContext.currentTime;
 
     function playTone(frequency, startTime, duration) {
 
