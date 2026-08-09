@@ -389,6 +389,9 @@ document
     .getElementById("factbook")
     .style.display = "none";
 
+  document
+    .getElementById("recipebook")
+    .style.display = "none";
 
 
     document
