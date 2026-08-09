@@ -569,7 +569,59 @@ style="display:none;">
 
 </section>
 
+<!-- RECEPTBOK -->
 
+<section id="recipebook" style="display:none;">
+
+    <button id="recipebook-close" onclick="closeBook()">
+        🎒 Tillbaka till ryggsäcken
+    </button>
+
+
+    <button id="recipebook-prev" onclick="changeBookPage(-1)">
+        ←
+    </button>
+
+
+    <img
+    id="recipebook-background"
+    src="images/Otis/otis-backpack-item-receptbok-openl.PNG"
+    alt="Receptbok sida">
+
+
+    <img
+    id="recipebook-page"
+    alt="Otis receptbok">
+
+
+    <div id="recipebook-title"></div>
+
+
+    <div id="recipebook-text"></div>
+
+
+    <div id="recipebook-content">
+
+        <h1>Innehåll</h1>
+
+        <button onclick="goToBookPage(1)">
+            Recept<br>
+            <span>Kryddmuffins</span>
+        </button>
+
+        <button onclick="goToBookPage(2)">
+            Recept<br>
+            <span>Pannkaksbröd</span>
+        </button>
+
+    </div>
+
+
+    <button id="recipebook-next" onclick="changeBookPage(1)">
+        →
+    </button>
+
+</section>
 
 </main>
 
