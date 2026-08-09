@@ -165,13 +165,14 @@ function startFriend(friend) {
     restoreCurrentView();
 
     if (
-        window.location.hash === "#backpack" ||
-        window.location.hash === "#book"
-    ) {
+    window.location.hash === "#backpack" ||
+    window.location.hash === "#book" ||
+    window.location.hash === "#recipebook"
+) {
 
-        return;
+    return;
 
-    }
+}
 
 
     if (!otisMemory.owner) {
