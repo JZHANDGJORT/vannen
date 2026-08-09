@@ -22,9 +22,13 @@ function openBook(type) {
     currentBookType = type;
 
     currentBookData =
-        type === "book"
-            ? bookData
-            : factBookData;
+    type === "book"
+        ? bookData
+        : type === "factbook"
+            ? factBookData
+            : type === "recipebook"
+                ? recipeBookData
+                : null;
 
 
     if (!currentBookData) {
