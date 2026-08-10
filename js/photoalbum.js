@@ -17,7 +17,7 @@ const photoAlbumData = {
                     class:
                         "photoalbum-photo photoalbum-photo-01",
                     caption:
-                        "En fin dag"
+                        "En sommar för länge sedan"
                 },
                 {
                     image:
@@ -25,7 +25,7 @@ const photoAlbumData = {
                     class:
                         "photoalbum-photo photoalbum-photo-02",
                     caption:
-                        "Ett fint minne"
+                        "En dag full av bus"
                 },
                 {
                     image:
@@ -33,7 +33,7 @@ const photoAlbumData = {
                     class:
                         "photoalbum-photo photoalbum-photo-03",
                     caption:
-                        "Här var jag"
+                        "Dagen då jag hittade den"
                 }
             ]
         }
