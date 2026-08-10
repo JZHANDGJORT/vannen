@@ -189,23 +189,6 @@
 
 
 /*
-   TALLKOTTE
-*/
-
-.backpack-pinecone {
-
-    left: 60.5%;
-
-    top: 47.5%;
-
-    width: 90px;
-
-    transform: rotate(35deg);
-
-}
-
-
-/*
    Faktabok
 */
 
@@ -330,11 +313,11 @@
 
 .backpack-blackstone {
 
-    left:45%;
+    left: 60.5%;
 
-    top: 54.5%;
+    top: 47.5%;
 
-    width: 95px;
+    width: 90px;
 
     transform: rotate(10deg);
 
