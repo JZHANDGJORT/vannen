@@ -256,7 +256,7 @@ function updatePhotoAlbumPage(story) {
         photo.alt =
             "Foto " + (index + 1);
         photo.className =
-            photoData.className ||
+            photoData.class ||
             "photoalbum-photo";
         container.appendChild(photo);
     });
