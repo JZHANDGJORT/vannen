@@ -49,7 +49,7 @@
 */
 .photoalbum-photo-01 {
     left: 15%;
-    top: 18%;
+    top: 17%;
     transform: rotate(-7deg);
 }
 /*
@@ -64,8 +64,8 @@
    Foto 3
 */
 .photoalbum-photo-03 {
-    left: 50%;
-    top: 65%;
+    left:43%;
+    top: 63%;
     transform: rotate(-5deg);
 }
 /*
