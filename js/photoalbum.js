@@ -1,3 +1,6 @@
+/*
+   Otis Fotoalbum
+*/
 const photoAlbumData = {
     id: "photoalbum",
     title: "Otis Fotoalbum",
