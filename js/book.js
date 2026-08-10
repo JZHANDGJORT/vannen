@@ -249,7 +249,7 @@ function updatePhotoAlbumPage(story) {
     photos.forEach(
         (photoData, index) => {
             /*
-              Behållare för hela Polaroidbilden
+              Behållare för hela Polaroiden
             */
             const photo =
                 document.createElement(
@@ -270,19 +270,22 @@ function updatePhotoAlbumPage(story) {
             image.alt =
                 "Foto " +
                 (index + 1);
+            image.className =
+                "photoalbum-photo-image";
             /*
-              Text under fotografiet
+              Text längst ned på Polaroiden
             */
             const caption =
                 document.createElement(
                     "div"
                 );
             caption.className =
-                "photoalbum-caption";
+                "photoalbum-photo-caption";
             caption.textContent =
                 photoData.caption || "";
             /*
-              Lägg foto + text i Polaroiden
+              Lägg bild + text
+              i Polaroiden
             */
             photo.appendChild(
                 image
@@ -291,7 +294,8 @@ function updatePhotoAlbumPage(story) {
                 caption
             );
             /*
-              Lägg Polaroiden på albumsidan
+              Lägg Polaroiden
+              på albumsidan
             */
             container.appendChild(
                 photo
