@@ -190,6 +190,9 @@ Otis och den magiska stenen
             textClass:
             "story-text-right"
         },
+
+
+      
         // =========================
         // KAPITEL 2
         // =========================
