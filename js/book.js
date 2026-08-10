@@ -221,35 +221,47 @@ function updateBookPage() {
   Fotoalbumets sidor
 */
 function updatePhotoAlbumPage(story) {
+    const background =
+        document.getElementById(
+            "photoalbum-background"
+        );
+    const container =
+        document.getElementById(
+            "photoalbum-photos"
+        );
+    if (!background || !container) {
+        return;
+    }
+    /*
+      Byt bakgrund
+    */
+    background.src =
+        story.background;
+    background.className =
+        story.backgroundClass || "";
+    /*
+      Töm tidigare foton
+    */
+    container.innerHTML = "";
+    /*
+      Lägg in fotona
+    */
     const photos =
         story.photos || [];
-    for (
-        let i = 1;
-        i <= 3;
-        i++
-    ) {
+    photos.forEach((photoData, index) => {
         const photo =
-            document.getElementById(
-                `photoalbum-photo-${i}`
-            );
-        if (!photo) continue;
-        const photoData =
-            photos[i - 1];
-        if (!photoData) {
-            photo.style.display =
-                "none";
-            photo.src = "";
-            continue;
-        }
+            document.createElement("img");
         photo.src =
             photoData.image;
+        photo.alt =
+            "Foto " + (index + 1);
         photo.className =
-            photoData.class || "";
-        photo.style.display =
-            "block";
-    }
-}
-function changeBookPage(direction) {
+            photoData.className ||
+            "photoalbum-photo";
+        container.appendChild(photo);
+    });
+  
+}function changeBookPage(direction) {
     currentBookPage += direction;
     /*
       Hindra att man bläddrar
