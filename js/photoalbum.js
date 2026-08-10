@@ -15,19 +15,19 @@ const photoAlbumData = {
                 {
                     image:
                         "images/Otis/photoalbum/page01-photo01.PNG",
-                    className:
+                    class:
                         "photoalbum-photo photoalbum-photo-01"
                 },
                 {
                     image:
                         "images/Otis/photoalbum/page01-photo02.PNG",
-                    className:
+                    class:
                         "photoalbum-photo photoalbum-photo-02"
                 },
                 {
                     image:
                         "images/Otis/photoalbum/page01-photo03.PNG",
-                    className:
+                    class:
                         "photoalbum-photo photoalbum-photo-03"
                 }
             ]
