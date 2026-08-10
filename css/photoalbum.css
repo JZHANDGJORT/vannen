@@ -1,1 +1,132 @@
-
+/*
+   Otis Fotoalbum
+*/
+#photoalbum {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+/*
+   Fotoalbumets bakgrund
+*/
+#photoalbum-background {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*
+   Behållare för fotografierna
+*/
+#photoalbum-photos {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+/*
+   Polaroidbilder
+*/
+.photoalbum-photo {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    padding: 9px;
+    padding-bottom: 27px;
+    background: white;
+    box-sizing: border-box;
+    object-fit: contain;
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.18);
+}
+/*
+   Foto 1
+*/
+.photoalbum-photo-01 {
+    left: 10%;
+    top: 25%;
+    transform: rotate(-7deg);
+}
+/*
+   Foto 2
+*/
+.photoalbum-photo-02 {
+    left: 38%;
+    top: 18%;
+    transform: rotate(4deg);
+}
+/*
+   Foto 3
+*/
+.photoalbum-photo-03 {
+    left: 66%;
+    top: 28%;
+    transform: rotate(-5deg);
+}
+/*
+   Tillbaka till ryggsäcken
+*/
+#photoalbum-close {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    z-index: 10;
+    padding: 10px 16px;
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    background-color: rgba(255,255,255,0.45);
+    color: #29434A;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+}
+#photoalbum-close:hover {
+    transform: scale(1.05);
+}
+#photoalbum-close:active {
+    transform: scale(0.97);
+}
+/*
+   Bläddringspilar
+*/
+#photoalbum-prev,
+#photoalbum-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border: none;
+    background: rgba(255,255,255,0.55);
+    color: #29434A;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+}
+#photoalbum-prev {
+    left: 15px;
+}
+#photoalbum-next {
+    right: 15px;
+}
+#photoalbum-prev:hover,
+#photoalbum-next:hover {
+    transform:
+        translateY(-50%)
+        scale(1.05);
+}
+#photoalbum-prev:active,
+#photoalbum-next:active {
+    transform:
+        translateY(-50%)
+        scale(0.97);
+}
