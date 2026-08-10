@@ -254,7 +254,6 @@
    Fotoalbum
 */
 
-
 .backpack-fotoalbum {
 
     left: 5%;
@@ -263,7 +262,32 @@
 
     width: 150px;
 
-    transform: rotate(7deg);
+    animation: photoAlbumFloat 4s ease-in-out infinite;
+
+}
+
+
+@keyframes photoAlbumFloat {
+
+    0% {
+
+        transform: rotate(7deg) translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: rotate(7deg) translateY(-4px);
+
+    }
+
+
+    100% {
+
+        transform: rotate(7deg) translateY(0);
+
+    }
 
 }
 
