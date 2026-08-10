@@ -38,8 +38,9 @@ function openBook(type) {
     /*
       Sagobok, faktabok och receptbok
       börjar på innehållsförteckningen.
-      Fotoalbumet har ingen innehållsförteckning
-      och börjar därför direkt på första fotosidan.
+      Fotoalbumet har ingen
+      innehållsförteckning och börjar
+      därför direkt på första fotosidan.
     */
     currentBookPage = 0;
     localStorage.setItem(
@@ -143,8 +144,7 @@ function updateBookPage() {
         if (!story.image) {
             page.style.display =
                 "none";
-        }
-        else {
+        } else {
             page.style.display =
                 "block";
         }
@@ -153,8 +153,7 @@ function updateBookPage() {
                 "block";
             title.innerHTML =
                 story.title;
-        }
-        else {
+        } else {
             title.style.display =
                 "none";
         }
@@ -166,8 +165,7 @@ function updateBookPage() {
                 "block";
             text.style.display =
                 "none";
-        }
-        else {
+        } else {
             content.style.display =
                 "none";
             text.style.display =
@@ -225,7 +223,11 @@ function updatePhotoAlbumPage(story) {
         document.getElementById(
             "photoalbum-background"
         );
-    if (!background) {
+    const container =
+        document.getElementById(
+            "photoalbum-photos"
+        );
+    if (!background || !container) {
         return;
     }
     /*
@@ -236,77 +238,68 @@ function updatePhotoAlbumPage(story) {
     background.className =
         story.backgroundClass || "";
     /*
-      Lägg in fotona i
-      de tre befintliga ramarna
+      Töm tidigare foton
+    */
+    container.innerHTML = "";
+    /*
+      Lägg in fotona
     */
     const photos =
         story.photos || [];
-    for (
-        let i = 1;
-        i <= 3;
-        i++
-    ) {
-        const frame =
-            document.getElementById(
-                `photoalbum-photo-frame-${i}`
-            );
-        const photo =
-            document.getElementById(
-                `photoalbum-photo-${i}`
-            );
-        if (!frame || !photo) {
-            continue;
-        }
-        const photoData =
-            photos[i - 1];
-        /*
-          Om det inte finns något foto
-        */
-        if (!photoData) {
-            photo.style.display =
-                "none";
-            frame.style.display =
-                "none";
-            continue;
-        }
-        /*
-          Visa ramen och fotot
-        */
-        frame.style.display =
-            "block";
-        photo.style.display =
-            "block";
-        photo.src =
-            photoData.image;
-        photo.alt =
-            "Foto " + i;
-        photo.className =
-            photoData.class ||
-            "photoalbum-photo";
-        /*
-          Bildtext
-        */
-        let caption =
-            frame.querySelector(
-                ".photoalbum-caption"
-            );
-        if (!caption) {
-            caption =
+    photos.forEach(
+        (photoData, index) => {
+            /*
+              Behållare för hela Polaroidbilden
+            */
+            const photo =
+                document.createElement(
+                    "div"
+                );
+            photo.className =
+                photoData.class ||
+                "photoalbum-photo";
+            /*
+              Själva fotografiet
+            */
+            const image =
+                document.createElement(
+                    "img"
+                );
+            image.src =
+                photoData.image;
+            image.alt =
+                "Foto " +
+                (index + 1);
+            /*
+              Text under fotografiet
+            */
+            const caption =
                 document.createElement(
                     "div"
                 );
             caption.className =
                 "photoalbum-caption";
-            frame.appendChild(
+            caption.textContent =
+                photoData.caption || "";
+            /*
+              Lägg foto + text i Polaroiden
+            */
+            photo.appendChild(
+                image
+            );
+            photo.appendChild(
                 caption
             );
+            /*
+              Lägg Polaroiden på albumsidan
+            */
+            container.appendChild(
+                photo
+            );
         }
-        caption.textContent =
-            photoData.caption || "";
-    }
+    );
 }
-  
-}function changeBookPage(direction) {
+function changeBookPage(direction) {
     currentBookPage += direction;
     /*
       Hindra att man bläddrar
@@ -407,8 +400,11 @@ function bookReadingDone() {
     updateBookPage();
 }
 function factBookReadingDone() {
-    addBadgeProgress("upptackar");
-    factBookDiscoverMode = false;
+    addBadgeProgress(
+        "upptackar"
+    );
+    factBookDiscoverMode =
+        false;
     localStorage.setItem(
         "factBookDiscoverMode",
         "false"
@@ -420,7 +416,8 @@ function factBookReadingDone() {
     updateBookPage();
 }
 function readOtisFactBook() {
-    factBookDiscoverMode = true;
+    factBookDiscoverMode =
+        true;
     localStorage.setItem(
         "factBookDiscoverMode",
         "true"
