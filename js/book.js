@@ -329,14 +329,21 @@ function changeFactPage(direction) {
     changeBookPage(direction);
 }
 function goToChapter(chapter) {
+
     if (chapter === 1) {
         currentBookPage = 1;
-        localStorage.setItem(
-            `${currentBookType}-page`,
-            1
-        );
-        updateBookPage();
     }
+
+    if (chapter === 2) {
+        currentBookPage = 8;
+    }
+
+    localStorage.setItem(
+        `${currentBookType}-page`,
+        currentBookPage
+    );
+
+    updateBookPage();
 }
 function goToFactChapter(chapter) {
     goToChapter(chapter);
