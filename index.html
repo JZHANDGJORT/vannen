@@ -623,6 +623,53 @@ style="display:none;">
 
 </section>
 
+    <!-- FOTOALBUM -->
+<section id="photoalbum" style="display:none;">
+    <button
+        id="photoalbum-close"
+        onclick="closeBook()">
+        🎒 Tillbaka till ryggsäcken
+    </button>
+    <button
+        id="photoalbum-prev"
+        onclick="changeBookPage(-1)">
+        ←
+    </button>
+    <img
+        id="photoalbum-background"
+        src="images/Otis/otis-backpack-item-fotoalbum-openl.PNG"
+        alt="Fotoalbum vänster sida">
+    <!-- Foto 1 -->
+    <div
+        id="photoalbum-photo-frame-1"
+        class="photoalbum-frame">
+        <img
+            id="photoalbum-photo-1"
+            alt="Foto">
+    </div>
+    <!-- Foto 2 -->
+    <div
+        id="photoalbum-photo-frame-2"
+        class="photoalbum-frame">
+        <img
+            id="photoalbum-photo-2"
+            alt="Foto">
+    </div>
+    <!-- Foto 3 -->
+    <div
+        id="photoalbum-photo-frame-3"
+        class="photoalbum-frame">
+        <img
+            id="photoalbum-photo-3"
+            alt="Foto">
+    </div>
+    <button
+        id="photoalbum-next"
+        onclick="changeBookPage(1)">
+        →
+    </button>
+</section>
+
 </main>
 
 
