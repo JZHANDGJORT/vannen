@@ -34,7 +34,7 @@
 */
 .photoalbum-photo {
     position: absolute;
-    width: 50%;
+    width: 48%;
     height: auto;
     padding: 9px;
     padding-bottom: 27px;
@@ -64,7 +64,7 @@
    Foto 3
 */
 .photoalbum-photo-03 {
-    left:43%;
+    left:19%;
     top: 63%;
     transform: rotate(-5deg);
 }
