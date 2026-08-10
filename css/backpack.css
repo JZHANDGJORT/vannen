@@ -143,7 +143,22 @@
 
 }
 
+/*
+   SVART STEN
+*/
 
+
+.backpack-blackstone {
+
+    left: 60.5%;
+
+    top: 49%;
+
+    width: 90px;
+
+    transform: rotate(25deg);
+
+}
 
 /*
    Sagobok
@@ -306,22 +321,7 @@
 
 
 
-/*
-   SVART STEN
-*/
 
-
-.backpack-blackstone {
-
-    left: 60.5%;
-
-    top: 47.5%;
-
-    width: 90px;
-
-    transform: rotate(10deg);
-
-}
 
 /*
    Hjärtsten
