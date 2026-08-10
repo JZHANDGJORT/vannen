@@ -225,11 +225,7 @@ function updatePhotoAlbumPage(story) {
         document.getElementById(
             "photoalbum-background"
         );
-    const container =
-        document.getElementById(
-            "photoalbum-photos"
-        );
-    if (!background || !container) {
+    if (!background) {
         return;
     }
     /*
@@ -240,26 +236,75 @@ function updatePhotoAlbumPage(story) {
     background.className =
         story.backgroundClass || "";
     /*
-      Töm tidigare foton
-    */
-    container.innerHTML = "";
-    /*
-      Lägg in fotona
+      Lägg in fotona i
+      de tre befintliga ramarna
     */
     const photos =
         story.photos || [];
-    photos.forEach((photoData, index) => {
+    for (
+        let i = 1;
+        i <= 3;
+        i++
+    ) {
+        const frame =
+            document.getElementById(
+                `photoalbum-photo-frame-${i}`
+            );
         const photo =
-            document.createElement("img");
+            document.getElementById(
+                `photoalbum-photo-${i}`
+            );
+        if (!frame || !photo) {
+            continue;
+        }
+        const photoData =
+            photos[i - 1];
+        /*
+          Om det inte finns något foto
+        */
+        if (!photoData) {
+            photo.style.display =
+                "none";
+            frame.style.display =
+                "none";
+            continue;
+        }
+        /*
+          Visa ramen och fotot
+        */
+        frame.style.display =
+            "block";
+        photo.style.display =
+            "block";
         photo.src =
             photoData.image;
         photo.alt =
-            "Foto " + (index + 1);
+            "Foto " + i;
         photo.className =
             photoData.class ||
             "photoalbum-photo";
-        container.appendChild(photo);
-    });
+        /*
+          Bildtext
+        */
+        let caption =
+            frame.querySelector(
+                ".photoalbum-caption"
+            );
+        if (!caption) {
+            caption =
+                document.createElement(
+                    "div"
+                );
+            caption.className =
+                "photoalbum-caption";
+            frame.appendChild(
+                caption
+            );
+        }
+        caption.textContent =
+            photoData.caption || "";
+    }
+}
   
 }function changeBookPage(direction) {
     currentBookPage += direction;
