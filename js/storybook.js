@@ -6,16 +6,32 @@ const bookData = {
     title: "Otis Sagobok",
     pages: [
         // Sida 0 - innehållsförteckning
-        {
-            image: "",
-            background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
-            backgroundClass:
-            "background-left",
-            title: "",
-            text: "",
-            imageClass: ""
-        },
+{
+    image: "",
+
+    background:
+    "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+
+    backgroundClass:
+    "background-left",
+
+    title: "",
+
+    text:
+`
+<p onclick="goToChapter(1)">
+Kapitel 1<br>
+<span>Otis och den magiska stenen</span>
+</p>
+
+<p onclick="goToChapter(2)">
+Kapitel 2<br>
+<span>När Otis mötte Bosse</span>
+</p>
+`,
+
+    imageClass: ""
+},
         // =========================
         // KAPITEL 1
         // =========================
