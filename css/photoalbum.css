@@ -35,14 +35,33 @@
 .photoalbum-photo {
     position: absolute;
     width: 48%;
-    height: auto;
     padding: 9px;
     padding-bottom: 27px;
     background: white;
     box-sizing: border-box;
-    object-fit: contain;
     box-shadow:
         0 3px 8px rgba(0, 0, 0, 0.18);
+}
+/*
+   Själva fotografiet
+*/
+.photoalbum-photo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*
+   Text längst ned på Polaroidbilden
+*/
+.photoalbum-photo-caption {
+    width: 100%;
+    min-height: 18px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: "Patrick Hand", cursive;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #29434A;
 }
 /*
    Foto 1
@@ -64,7 +83,7 @@
    Foto 3
 */
 .photoalbum-photo-03 {
-    left:19%;
+    left: 19%;
     top: 63%;
     transform: rotate(-5deg);
 }
