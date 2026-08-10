@@ -2702,128 +2702,84 @@ function closeBackpackRoom() {
 
 
 function restoreCurrentView() {
-
     const hash = window.location.hash;
-
-
     if (hash === "#backpack") {
-
-
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "block";
         document.getElementById("storybook").style.display = "none";
         document.getElementById("factbook").style.display = "none";
         document.getElementById("recipebook").style.display = "none";
-
-
+        document.getElementById("photoalbum").style.display = "none";
         updateAllBadges();
-
     }
-
-
-
     else if (hash === "#book") {
-
-
         currentBookType = "book";
-
         currentBookData = bookData;
-
-
-
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "block";
         document.getElementById("factbook").style.display = "none";
         document.getElementById("recipebook").style.display = "none";
-
-
-
+        document.getElementById("photoalbum").style.display = "none";
         currentBookPage =
             Number(
                 localStorage.getItem("book-page")
             ) || 0;
-
-
-
         updateBookPage();
-
     }
-
-
-
     else if (hash === "#factbook") {
-
-
         currentBookType = "factbook";
-
         currentBookData = factBookData;
-
-
-
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "none";
         document.getElementById("factbook").style.display = "block";
         document.getElementById("recipebook").style.display = "none";
-
-
-
+        document.getElementById("photoalbum").style.display = "none";
         currentBookPage =
             Number(
                 localStorage.getItem("factbook-page")
             ) || 0;
-
-
-
         updateBookPage();
-
     }
-
-
-
     else if (hash === "#recipebook") {
-
-
         currentBookType = "recipebook";
-
         currentBookData = recipeBookData;
-
-
-
         document.getElementById("friend-view").style.display = "none";
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "none";
         document.getElementById("factbook").style.display = "none";
         document.getElementById("recipebook").style.display = "block";
-
-
-
+        document.getElementById("photoalbum").style.display = "none";
         currentBookPage =
             Number(
                 localStorage.getItem("recipebook-page")
             ) || 0;
-
-
-
         updateBookPage();
-
     }
-
-
-
+    else if (hash === "#photoalbum") {
+        currentBookType = "photoalbum";
+        currentBookData = photoAlbumData;
+        document.getElementById("friend-view").style.display = "none";
+        document.getElementById("backpack-view").style.display = "none";
+        document.getElementById("storybook").style.display = "none";
+        document.getElementById("factbook").style.display = "none";
+        document.getElementById("recipebook").style.display = "none";
+        document.getElementById("photoalbum").style.display = "block";
+        currentBookPage =
+            Number(
+                localStorage.getItem("photoalbum-page")
+            ) || 0;
+        updateBookPage();
+    }
     else {
-
-
         document.getElementById("friend-view").style.display = "block";
         document.getElementById("backpack-view").style.display = "none";
         document.getElementById("storybook").style.display = "none";
         document.getElementById("factbook").style.display = "none";
         document.getElementById("recipebook").style.display = "none";
-
-
+        document.getElementById("photoalbum").style.display = "none";
     }
-
 }
 
 /*
