@@ -221,10 +221,13 @@ När Otis mötte Bosse
 <p>Solen silade mellan träden och det prasslade mjukt i löven när han gick.</p>
 `,
             imageClass:
-"chapter-image-left",
+            "chapter-image-left",
 
-textClass:
-"chapter-text-left"
+            textClass:
+            "chapter-text-left",
+
+            titleClass:
+            "chapter-title-left"
         },
         // Sida 9
         {
