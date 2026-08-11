@@ -122,6 +122,13 @@
 
 }
 
+#storybook-title.chapter-title-left {
+
+    top: 15.5%;
+    left: 12.5%;
+    width: 70%;
+
+}
 
 #storybook-title .chapter-number {
 
