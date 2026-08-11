@@ -45,9 +45,9 @@ const photoAlbumData = {
         */
         {
             background:
-                "images/Otis/otis-backpack-item-fotoalbum-openl.PNG",
+                "images/Otis/otis-backpack-item-fotoalbum-openr.PNG",
             backgroundClass:
-                "background-left",
+                "background-right",
             photos: [
                 {
                     image:
