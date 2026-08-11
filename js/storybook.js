@@ -340,10 +340,6 @@ När Otis mötte Bosse
 <p>”Jag upptäcker”, svarade Otis.</p>
 <p>Bosse log.</p>
 <p>”Det gör jag också.”</p>
-<p>Då fick Bosse syn på pinnen.</p>
-<p>”Vad är det där?”</p>
-<p>Otis tittade ner.</p>
-<p>”En pinne.”</p>
 `,
             imageClass:
             "story-image-right",
@@ -361,6 +357,10 @@ När Otis mötte Bosse
             title: "",
             text:
 `
+<p>Då fick Bosse syn på pinnen.</p>
+<p>”Vad är det där?”</p>
+<p>Otis tittade ner.</p>
+<p>”En pinne.”</p>
 <p>”Vad kan man göra med den?”</p>
 <p>Otis tänkte efter.</p>
 <p>Sedan tog han pinnen i munnen och sprang iväg.</p>
