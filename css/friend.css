@@ -200,7 +200,7 @@
 #actions {
     position: absolute;
     left: 0;
-    bottom: 165px;
+    bottom: 173px;
     z-index: 5;
     width: 100%;
     transform: none;
@@ -219,7 +219,7 @@
 @media (max-height: 700px) and (max-width: 500px) {
 
     #actions {
-        bottom: 135px;
+        bottom: 143px;
     }
 
 }
