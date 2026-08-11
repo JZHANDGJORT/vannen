@@ -217,7 +217,10 @@
    Mycket korta mobilskärmar
 */
 @media (max-height: 700px) and (max-width: 500px) {
+
     #actions {
-        bottom: 155px;
+        bottom: 135px;
     }
+
+}
 }
