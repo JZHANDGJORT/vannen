@@ -335,9 +335,7 @@ När Otis mötte Bosse
             title: "",
             text:
 `
-<p>Bosse tittade på Otis.</p>
-<p>Sedan tittade han på sjön.</p>
-<p>Sedan på Otis igen.</p>
+<p>Bosse tittade på Otis. Sedan tittade han på sjön. Sedan på Otis igen.</p>
 <p>”Vad gör du här?”</p>
 <p>”Jag upptäcker”, svarade Otis.</p>
 <p>Bosse log.</p>
