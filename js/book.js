@@ -149,14 +149,21 @@ function updateBookPage() {
                 "block";
         }
         if (story.title) {
-            title.style.display =
-                "block";
-            title.innerHTML =
-                story.title;
-        } else {
-            title.style.display =
-                "none";
-        }
+    title.style.display =
+        "block";
+
+    title.innerHTML =
+        story.title;
+
+    title.className =
+        story.titleClass || "";
+} else {
+    title.style.display =
+        "none";
+
+    title.className =
+        "";
+}
         /*
           Innehållsförteckning
         */
