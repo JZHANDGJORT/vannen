@@ -364,8 +364,7 @@ När Otis mötte Bosse
 <p>”Vad kan man göra med den?”</p>
 <p>Otis tänkte efter.</p>
 <p>Sedan tog han pinnen i munnen och sprang iväg.</p>
-<p>Bosse blev först alldeles stilla.</p>
-<p>Sedan sprang han efter.</p>
+<p>Bosse blev först alldeles stilla. Sedan sprang han efter.</p>
 <p>Otis sprang mellan träden med pinnen dinglande i munnen.</p>
 <p>Bosse var hack i häl.</p>
 `,
