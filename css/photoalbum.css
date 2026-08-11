@@ -64,9 +64,14 @@
     color: #29434A;
 }
 /*
+   =========================
+   SIDA 1 – VÄNSTER
+   =========================
+*/
+/*
    Foto 1
 */
-.photoalbum-photo-01 {
+.photoalbum-page-left-photo-01 {
     left: 15%;
     top: 17%;
     transform: rotate(-7deg);
@@ -74,7 +79,7 @@
 /*
    Foto 2
 */
-.photoalbum-photo-02 {
+.photoalbum-page-left-photo-02 {
     left: 39%;
     top: 40%;
     transform: rotate(4deg);
@@ -82,10 +87,39 @@
 /*
    Foto 3
 */
-.photoalbum-photo-03 {
+.photoalbum-page-left-photo-03 {
     left: 18%;
     top: 61%;
     transform: rotate(-5deg);
+}
+/*
+   =========================
+   SIDA 2 – HÖGER
+   =========================
+*/
+/*
+   Foto 1
+*/
+.photoalbum-page-right-photo-01 {
+    left: 15%;
+    top: 17%;
+    transform: rotate(7deg);
+}
+/*
+   Foto 2
+*/
+.photoalbum-page-right-photo-02 {
+    left: 39%;
+    top: 40%;
+    transform: rotate(-4deg);
+}
+/*
+   Foto 3
+*/
+.photoalbum-page-right-photo-03 {
+    left: 18%;
+    top: 61%;
+    transform: rotate(5deg);
 }
 /*
    Tillbaka till ryggsäcken
