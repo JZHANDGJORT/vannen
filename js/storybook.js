@@ -364,9 +364,6 @@ När Otis mötte Bosse
 <p>”Vad kan man göra med den?”</p>
 <p>Otis tänkte efter.</p>
 <p>Sedan tog han pinnen i munnen och sprang iväg.</p>
-<p>Bosse blev först alldeles stilla. Sedan sprang han efter.</p>
-<p>Otis sprang mellan träden med pinnen dinglande i munnen.</p>
-<p>Bosse var hack i häl.</p>
 `,
             imageClass:
             "story-image-left",
@@ -384,15 +381,10 @@ När Otis mötte Bosse
             title: "",
             text:
 `
+<p>Bosse blev först alldeles stilla. Sedan sprang han efter.</p>
+<p>Otis sprang mellan träden med pinnen dinglande i munnen.</p>
+<p>Bosse var hack i häl.</p>
 <p>De sprang runt en stor sten och ner mot stranden.</p>
-<p>Till slut släppte Otis pinnen.</p>
-<p>Bosse kastade sig efter den.</p>
-<p>Otis skrattade.</p>
-<p>”Den där pinnen var visst roligare än jag trodde!”</p>
-<p>Bosse höll upp pinnen.</p>
-<p>”Jag tror att den är vår nu.”</p>
-<p>Otis log.</p>
-<p>”Ja.”</p>
 `,
             imageClass:
             "story-image-right",
@@ -410,6 +402,31 @@ När Otis mötte Bosse
             title: "",
             text:
 `
+<p>Till slut släppte Otis pinnen.</p>
+<p>Bosse kastade sig efter den.</p>
+<p>Otis skrattade.</p>
+<p>”Den där pinnen var visst roligare än jag trodde!”</p>
+<p>Bosse höll upp pinnen.</p>
+<p>”Jag tror att den är vår nu.”</p>
+<p>Otis log.</p>
+<p>”Ja.”</p>
+`,
+            imageClass:
+            "story-image-left",
+            textClass:
+            "story-text-left"
+        },
+              // Sida 17
+        {
+            image:
+            "images/Otis/storybook/chapter02/page10.PNG",
+            background:
+            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            backgroundClass:
+            "background-right",
+            title: "",
+            text:
+`
 <p>De blev kvar vid stranden en lång stund den dagen.</p>
 <p>De pratade.</p>
 <p>De lekte.</p>
@@ -421,9 +438,9 @@ När Otis mötte Bosse
 <p>En ny vän.</p>
 `,
             imageClass:
-            "story-image-left",
+            "story-image-right",
             textClass:
-            "story-text-left"
+            "story-text-right"
         }
     ]
 };
