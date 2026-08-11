@@ -431,6 +431,23 @@ När Otis mötte Bosse
 <p>De pratade.</p>
 <p>De lekte.</p>
 <p>Och de upptäckte nya saker tillsammans.</p>
+`,
+            imageClass:
+            "story-image-right",
+            textClass:
+            "story-text-right"
+        },
+              // Sida 18
+        {
+            image:
+            "images/Otis/storybook/chapter02/page11.PNG",
+            background:
+            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            backgroundClass:
+            "background-left",
+            title: "",
+            text:
+`
 <p>När Otis till slut gick hem tänkte han på hur konstigt det var.</p>
 <p>Han hade gått ut för att hitta något nytt.</p>
 <p>Och i stället hade han hittat någon ny.</p>
@@ -438,9 +455,9 @@ När Otis mötte Bosse
 <p>En ny vän.</p>
 `,
             imageClass:
-            "story-image-right",
+            "story-image-left",
             textClass:
-            "story-text-right"
+            "story-text-left"
         }
     ]
 };
