@@ -18,8 +18,15 @@
 
     z-index: 6;
 
-    transform: translateY(-615px);
+    transform: none;
+}
 
+#activity-timer {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 190px;
+    margin: 0;
 }
 
 
