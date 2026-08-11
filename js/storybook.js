@@ -60,8 +60,12 @@ Otis och den magiska stenen
 `,
             imageClass:
             "chapter-image",
+
             textClass:
-            "chapter-text"
+            "chapter-text",
+
+            titleClass:
+            "chapter-title"
         },
         // Sida 2
         {
