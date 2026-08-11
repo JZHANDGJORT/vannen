@@ -259,6 +259,65 @@
 }
 
 /*
+  Kapitelstart - vänstersida
+  Används av kapitel som börjar
+  på vänstersidan
+*/
+
+.chapter-image-left {
+
+    width: 60% !important;
+
+    height: auto !important;
+
+    max-height: 70vh;
+
+    object-fit: contain;
+
+    position: absolute;
+
+    left: 18%;
+
+    top: 26.5%;
+
+    z-index: 2;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    mask-image: radial-gradient(
+        ellipse,
+        black 35%,
+        rgba(0,0,0,0.75) 60%,
+        transparent 100%
+    );
+
+    -webkit-mask-image: radial-gradient(
+        ellipse,
+        black 35%,
+        rgba(0,0,0,0.75) 60%,
+        transparent 100%
+    );
+
+}
+
+
+/*
+  Kapitelstart-text på vänstersida
+*/
+
+.chapter-text-left {
+
+    left: 12.5%;
+
+    bottom: 21%;
+
+    width: 60%;
+
+}
+
+/*
   Sagotext
 */
 
