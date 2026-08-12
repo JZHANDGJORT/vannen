@@ -408,8 +408,7 @@ När Otis mötte Bosse
 <p>”Den där pinnen var visst roligare än jag trodde!”</p>
 <p>Bosse höll upp pinnen.</p>
 <p>”Jag tror att den är vår nu.”</p>
-<p>Otis log.</p>
-<p>”Ja.”</p>
+<p>Otis log. ”Ja.”</p>
 `,
             imageClass:
             "story-image-left",
