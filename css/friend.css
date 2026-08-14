@@ -384,8 +384,7 @@
 
 
 /* ========================================
-   RESPONSIV OTIS – FÖRSTA TEST
-   Gäller endast bredare skärmar
+   RESPONSIV OTIS – TEST 2
 ======================================== */
 
 @media (min-width: 501px) {
@@ -397,7 +396,8 @@
     #friend-character,
     #friend-stone,
     #friend-character-face {
-        bottom: 58%;
+        bottom: auto;
+        top: 350px;
     }
 
 }
