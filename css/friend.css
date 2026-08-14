@@ -381,3 +381,23 @@
     padding: 0 12px;
 
 }
+
+
+/* ========================================
+   RESPONSIV OTIS – FÖRSTA TEST
+   Gäller endast bredare skärmar
+======================================== */
+
+@media (min-width: 501px) {
+
+    #friend-world {
+        height: 120vh;
+    }
+
+    #friend-character,
+    #friend-stone,
+    #friend-character-face {
+        bottom: 58%;
+    }
+
+}
