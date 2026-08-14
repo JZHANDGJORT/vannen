@@ -404,11 +404,12 @@
 @media (min-width: 501px) {
 
     #actions {
-        transform: translateY(-900px);
+        transform: translateY(-1000px);
     }
 
     #chat {
         margin-top: -900px;
+        transform: translateY(-200px);
     }
 
 }
