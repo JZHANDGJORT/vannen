@@ -395,3 +395,20 @@
     }
 
 }
+
+/* ========================================
+   RESPONSIV OTIS – TEST 4
+   Actions + chat
+======================================== */
+
+@media (min-width: 501px) {
+
+    #actions {
+        transform: translateY(-900px);
+    }
+
+    #chat {
+        margin-top: -900px;
+    }
+
+}
