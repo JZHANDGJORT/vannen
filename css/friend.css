@@ -424,13 +424,11 @@
     #friend-character,
     #friend-stone,
     #friend-character-face {
-        width: 360px;
+        width: 380px;
     }
 
     #backpack {
-        width: 145px;
+        width: 150px;
     }
 
 }
-
-
