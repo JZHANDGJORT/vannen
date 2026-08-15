@@ -414,6 +414,23 @@
 
 }
 
+/* ========================================
+   RESPONSIV OTIS – TEST 6
+   Storlek på Otis + ryggsäck
+======================================== */
 
+@media (min-width: 501px) {
+
+    #friend-character,
+    #friend-stone,
+    #friend-character-face {
+        width: 360px;
+    }
+
+    #backpack {
+        width: 145px;
+    }
+
+}
 
 
