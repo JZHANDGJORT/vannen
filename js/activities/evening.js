@@ -125,7 +125,7 @@ function updateEveningButton() {
     // Natt: 00:00–02:59
 
     const isEvening =
-        hour >= 18 || hour < 3;
+        hour >= 8 || hour < 3;
 
 
     button.style.display =
