@@ -186,3 +186,15 @@
 
     z-index: 20;
 }
+
+/* ========================================
+   RESPONSIV OTIS – KVÄLL MED OTIS
+======================================== */
+
+@media (min-width: 501px) {
+
+    #evening-button {
+        top: 500px;
+    }
+
+}
