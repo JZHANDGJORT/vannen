@@ -460,3 +460,24 @@
     }
 
 }
+
+/* ========================================
+   RESPONSIV OTIS – TEST 9
+   Namn + hjärtlinje
+======================================== */
+
+@media (min-width: 501px) {
+
+    #friend-overlay {
+        top: 35px;
+    }
+
+    #friend-name {
+        font-size: 70px;
+    }
+
+    .friend-divider {
+        font-size: 23px;
+    }
+
+}
