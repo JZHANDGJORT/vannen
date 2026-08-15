@@ -432,3 +432,17 @@
     }
 
 }
+
+
+/* ========================================
+   RESPONSIV OTIS – TEST 7
+   Ryggsäckens placering
+======================================== */
+
+@media (min-width: 501px) {
+
+    #backpack {
+        left: 173px;
+    }
+
+}
