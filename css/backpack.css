@@ -406,7 +406,95 @@
 
 }
 
+/* ========================================
+   RESPONSIV RYGGSÄCK – PLATTA
+======================================== */
 
+@media (min-width: 501px) {
+
+    /*
+       Märken
+    */
+
+    .backpack-marke-gralasar,
+    .backpack-marke-grarakne,
+    .backpack-marke-graskapar,
+    .backpack-marke-graupptackar {
+
+        width: 85px;
+
+    }
+
+
+    /*
+       Böcker
+    */
+
+    .backpack-receptbok {
+
+        width: 260px;
+
+    }
+
+
+    .backpack-sagobok {
+
+        width: 225px;
+
+    }
+
+
+    .backpack-faktabok {
+
+        width: 175px;
+
+    }
+
+
+    /*
+       Fotoalbum
+    */
+
+    .backpack-fotoalbum {
+
+        width: 190px;
+
+    }
+
+
+    /*
+       Små föremål
+    */
+
+    .backpack-blackstone {
+
+        width: 110px;
+
+    }
+
+
+    .backpack-heartstone {
+
+        width: 145px;
+
+    }
+
+
+    .backpack-shell {
+
+        width: 105px;
+
+    }
+
+
+    .backpack-oaktwig,
+    .backpack-oaktwig2 {
+
+        width: 140px;
+
+    }
+
+}
 
 
 
