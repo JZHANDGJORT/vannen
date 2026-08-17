@@ -418,7 +418,7 @@
 
     :root {
 
-        --book-shift-x: 0%;
+        --book-shift-x: 5%;
         --book-shift-y: 0%;
 
     }
@@ -431,7 +431,7 @@
 
     .backpack-marke-gralasar {
 
-        left: 37%;
+        left: 39%;
         top: 8%;
 
         width: 110px;
@@ -451,7 +451,7 @@
 
     .backpack-marke-graskapar {
 
-        left: 75%;
+        left: 72%;
         top: 8%;
 
         width: 110px;
@@ -461,7 +461,7 @@
 
     .backpack-marke-graupptackar {
 
-        left: 84%;
+        left: 81%;
         top: 13%;
 
         width: 110px;
