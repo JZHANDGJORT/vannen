@@ -413,13 +413,56 @@
 @media (min-width: 501px) {
 
     /*
-       Märken
+       Förflyttning av hela bokgruppen
     */
 
-    .backpack-marke-gralasar,
-    .backpack-marke-grarakne,
-    .backpack-marke-graskapar,
+    :root {
+
+        --book-shift-x: 0%;
+        --book-shift-y: 0%;
+
+    }
+
+
+    /*
+       Märken
+       Egna positioner
+    */
+
+    .backpack-marke-gralasar {
+
+        left: 37%;
+        top: 8%;
+
+        width: 110px;
+
+    }
+
+
+    .backpack-marke-grarakne {
+
+        left: 50%;
+        top: 8%;
+
+        width: 110px;
+
+    }
+
+
+    .backpack-marke-graskapar {
+
+        left: 75%;
+        top: 8%;
+
+        width: 110px;
+
+    }
+
+
     .backpack-marke-graupptackar {
+
+        left: 84%;
+        top: 13%;
 
         width: 110px;
 
@@ -428,9 +471,13 @@
 
     /*
        Böcker
+       Flyttas tillsammans med book-shift
     */
 
     .backpack-receptbok {
+
+        left: calc(29% + var(--book-shift-x));
+        top: calc(25% + var(--book-shift-y));
 
         width: 330px;
 
@@ -439,6 +486,9 @@
 
     .backpack-sagobok {
 
+        left: calc(12% + var(--book-shift-x));
+        top: calc(34% + var(--book-shift-y));
+
         width: 286px;
 
     }
@@ -446,21 +496,22 @@
 
     .backpack-faktabok {
 
+        left: calc(38% + var(--book-shift-x));
+        top: calc(41.5% + var(--book-shift-y));
+
         width: 232px;
 
     }
 
 
-/*
-
+    /*
        Fotoalbum
-
+       Egen position – redan justerad
     */
 
     .backpack-fotoalbum {
 
         left: 10%;
-
         top: 64.5%;
 
         width: 253px;
@@ -471,32 +522,69 @@
 
 
     /*
-       Små föremål
+       Svarta stenen
+       Egen position
     */
 
     .backpack-blackstone {
+
+        left: 60.5%;
+        top: 50%;
 
         width: 142px;
 
     }
 
 
+    /*
+       Hjärtsten
+       Egen position
+    */
+
     .backpack-heartstone {
+
+        left: 28%;
+        top: 52%;
 
         width: 186px;
 
     }
 
 
+    /*
+       Snäcka
+       Egen position
+    */
+
     .backpack-shell {
+
+        left: 74%;
+        top: 44%;
 
         width: 137px;
 
     }
 
 
-    .backpack-oaktwig,
+    /*
+       Ekkvistar
+       Egna positioner
+    */
+
     .backpack-oaktwig2 {
+
+        left: 72%;
+        top: 35%;
+
+        width: 181px;
+
+    }
+
+
+    .backpack-oaktwig {
+
+        left: 13%;
+        top: 46.5%;
 
         width: 181px;
 
