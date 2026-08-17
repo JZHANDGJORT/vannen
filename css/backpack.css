@@ -451,13 +451,21 @@
     }
 
 
-    /*
+/*
+
        Fotoalbum
+
     */
 
     .backpack-fotoalbum {
 
+        left: 8%;
+
+        top: 64.5%;
+
         width: 253px;
+
+        animation: photoAlbumFloat 4s ease-in-out infinite;
 
     }
 
