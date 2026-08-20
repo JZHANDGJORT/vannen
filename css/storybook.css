@@ -658,9 +658,9 @@
 
     #storybook-title {
 
-        top: 16.5%;
+        top: 17%;
 
-        left: 25%;
+        left: 26%;
 
         width: 60%;
 
@@ -669,7 +669,7 @@
 
     #storybook-title.chapter-title-left {
 
-        top: 15.5%;
+        top: 17%;
 
         left: 24%;
 
@@ -718,7 +718,7 @@
 
     .story-text-right {
 
-        left: 20%;
+        left: 31%;
 
         top: 16.5%;
 
@@ -737,7 +737,7 @@
 
         height: auto !important;
 
-        left: 30%;
+        left: 31.5%;
 
         top: 26%;
 
@@ -746,7 +746,7 @@
 
     .chapter-text {
 
-        left: 30%;
+        left: 31%;
 
         bottom: 20%;
 
@@ -793,7 +793,7 @@
 
         height: auto !important;
 
-        left: 26%;
+        left: 27%;
 
         bottom: 20%;
 
@@ -810,7 +810,7 @@
 
         height: auto !important;
 
-        left: 24%;
+        left: 31.5%;
 
         bottom: 20%;
 
