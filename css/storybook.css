@@ -634,15 +634,15 @@
        2. BAKGRUND
     ---------------------------------------- */
 
-    #storybook-background.background-right {
+#storybook-background.background-right {
 
-    object-position: 100% center;
+    object-position: center center;
 
     transform:
         scale(1.05)
         translateY(-10px);
 
-    }
+}
 
 
     #storybook-background.background-left {
