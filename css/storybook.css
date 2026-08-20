@@ -658,7 +658,7 @@
 
     #storybook-title {
 
-        top: 15.5%;
+        top: 16.5%;
 
         left: 20%;
 
@@ -680,14 +680,14 @@
 
     #storybook-title .chapter-number {
 
-        font-size: 26px;
+        font-size: 30px;
 
     }
 
 
     #storybook-title .chapter-name {
 
-        font-size: 24px;
+        font-size: 28px;
 
     }
 
@@ -698,7 +698,7 @@
 
     #storybook-text {
 
-        font-size: 22px;
+        font-size: 26px;
 
         line-height: 1.3;
 
@@ -707,7 +707,7 @@
 
     .story-text-left {
 
-        left: 24%;
+        left: 25%;
 
         top: 16%;
 
@@ -720,7 +720,7 @@
 
         left: 20%;
 
-        top: 16%;
+        top: 16.5%;
 
         width: 60%;
 
@@ -746,7 +746,7 @@
 
     .chapter-text {
 
-        left: 23%;
+        left: 26%;
 
         bottom: 18%;
 
