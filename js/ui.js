@@ -1292,10 +1292,6 @@ function showBodyDiscover() {
             🤸 Sträck på kroppen
         </button>
 
-        <button onclick="discoverBody('water')">
-            💧 Drick ett glas vatten
-        </button>
-
         <button onclick="discoverBody('listen')">
             👂 Lyssna på kroppen
         </button>
