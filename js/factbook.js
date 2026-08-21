@@ -2,7 +2,6 @@
   Otis Faktabok
 */
 
-
 const factBookData = {
 
     id: "factbook",
