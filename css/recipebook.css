@@ -345,6 +345,23 @@
 
 }
 
+#recipebook-content h2 {
+
+    font-size: 25px;
+
+    font-weight: normal;
+
+    margin: 0 0 10px 0;
+
+}
+
+
+#recipebook-content h2:not(:first-of-type) {
+
+    margin-top: 25px;
+
+}
+
 
 #recipebook-content button {
 
@@ -562,6 +579,20 @@
 
     }
 
+  #recipebook-content h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+
+}
+
+
+#recipebook-content h2:not(:first-of-type) {
+
+    margin-top: 30px;
+
+}
 
     #recipebook-content button {
 
