@@ -128,6 +128,73 @@ showRelationChoice();
 
 }
 
+function changeName() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    const currentName =
+        otisMemory.owner?.name || "";
+
+
+    addMessage(
+        "Vad vill du att jag ska kalla dig? 💚",
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <input
+            id="change-name-input"
+            value="${currentName}"
+            placeholder="Skriv ditt namn"
+        >
+
+        <button onclick="saveChangedName()">
+            Spara 💚
+        </button>
+
+        <button onclick="showMainMenu()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+
+function saveChangedName() {
+
+    const input =
+        document.getElementById("change-name-input");
+
+
+    const name =
+        input.value.trim();
+
+
+    if (!name) return;
+
+
+    otisMemory.owner.name =
+        name;
+
+
+    saveMemory();
+
+
+    addMessage(
+        `Så fint. Då vet jag att jag ska kalla dig ${name}. 💚`,
+        "otis"
+    );
+
+
+    showMainMenu();
+
+}
+
 function showRelationChoice() {
 
     const actions =
