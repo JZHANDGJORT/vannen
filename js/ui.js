@@ -1306,26 +1306,81 @@ function showBodyDiscover() {
 
 function discoverBody(activity) {
 
-    const messages = {
+    const ideas = {
 
-        walk:
-        "Vad härligt! 🚶 Vi tar en liten promenad och ser vad vi upptäcker på vägen.",
+        movement: [
 
-        stretch:
-        "🤸 Då sträcker vi på kroppen en stund. Det brukar kännas skönt.",
+            "🚶 Ta en liten promenad och känn hur fötterna rör sig när du går.",
 
-        water:
-        "💧 Ett glas vatten är en fin present till kroppen.",
+            "🦵 Gör 10 knäböj. Känn hur benen arbetar när du böjer och sträcker dem.",
 
-        listen:
-        "💚 Stanna upp en liten stund och känn efter hur kroppen känns just idag."
+            "👣 Ställ dig på tå 10 gånger. Hur känns det i fötterna och benen?",
+
+            "🦩 Stå på ett ben så länge du kan. Hur länge kan kroppen hålla balansen?",
+
+            "🐸 Hoppa som en groda 5 gånger. Känn hur hela kroppen får följa med.",
+
+            "🙆 Sträck armarna upp och ner 10 gånger. Kan du göra det långsamt?",
+
+            "🔄 Snurra runt tre gånger och stanna sedan helt stilla. Känns det annorlunda i kroppen?"
+        ],
+
+
+        stretch: [
+
+            "🙆 Ställ dig upp och sträck båda armarna så högt du kan, som om du försöker nå ända upp till himlen.",
+
+            "🦶 Sätt dig ner och sträck benen framför dig. Sträck dig försiktigt mot tårna och känn hur det känns.",
+
+            "🙆 Sträck ena armen långt över huvudet och sedan den andra. Kan du känna skillnaden mellan sidorna?",
+
+            "💚 Sträck båda armarna långt fram framför dig. Gör dig sedan så lång du kan.",
+
+            "🌿 Rulla axlarna långsamt bakåt några gånger. Känns axlarna annorlunda efteråt?",
+
+            "↔️ Sträck dig försiktigt åt ena sidan och sedan åt den andra. Vilken sida känns längst?"
+        ],
+
+
+        listen: [
+
+            "💚 Sitt eller stå alldeles stilla en liten stund. Hur känns kroppen just nu?",
+
+            "❤️ Lägg handen på bröstet. Kan du känna hur hjärtat slår?",
+
+            "🌬️ Lägg en hand på magen. Kan du känna hur magen rör sig när du andas?",
+
+            "👂 Blunda en liten stund. Vilket är det första ljudet du hör?",
+
+            "🌡️ Känn efter. Känns kroppen varm eller kall just nu?",
+
+            "💚 Känner du dig pigg, trött eller kanske något mitt emellan?",
+
+            "👣 Känn dina fötter mot golvet. Kan du känna var fötterna har kontakt med marken?",
+
+            "✋ Spänn händerna hårt en liten stund och släpp sedan. Kändes det någon skillnad?"
+        ]
 
     };
 
+
+    const choices =
+        ideas[activity];
+
+
+    const message =
+        choices[
+            Math.floor(
+                Math.random() * choices.length
+            )
+        ];
+
+
     addMessage(
-        messages[activity],
+        message,
         "otis"
     );
+
 
     currentActivity = {
 
@@ -1339,8 +1394,10 @@ function discoverBody(activity) {
 
     };
 
+
     const actions =
         document.getElementById("actions");
+
 
     actions.innerHTML = `
 
@@ -1355,7 +1412,6 @@ function discoverBody(activity) {
     `;
 
 }
-
 
 
 
