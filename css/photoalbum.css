@@ -183,3 +183,174 @@
         translateY(-50%)
         scale(0.97);
 }
+
+/* ========================================
+   RESPONSIVT FOTOALBUM – PLATTA
+   Android / större skärmar
+======================================== */
+
+@media (min-width: 501px) {
+
+    /* ----------------------------------------
+       1. SJÄLVA FOTOALBUMET
+       Använd faktisk synlig höjd på plattan
+    ---------------------------------------- */
+
+    #photoalbum {
+
+        width: 100%;
+
+        height: 100dvh;
+
+        min-height: 0;
+
+        overflow: hidden;
+
+    }
+
+
+    /* ----------------------------------------
+       2. BAKGRUND
+    ---------------------------------------- */
+
+    #photoalbum-background {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center center;
+
+    }
+
+
+    /* ----------------------------------------
+       3. JUSTERBAR STORLEK PÅ POLAROIDER
+    ---------------------------------------- */
+
+    :root {
+
+        --photoalbum-photo-size: 38%;
+
+    }
+
+
+    .photoalbum-photo {
+
+        width: var(--photoalbum-photo-size);
+
+    }
+
+
+    /* ----------------------------------------
+       4. VÄNSTER SIDA
+       Grundpositionerna behålls
+    ---------------------------------------- */
+
+    .photoalbum-page-left-photo-01 {
+
+        left: 15%;
+
+        top: 17%;
+
+    }
+
+
+    .photoalbum-page-left-photo-02 {
+
+        left: 39%;
+
+        top: 40%;
+
+    }
+
+
+    .photoalbum-page-left-photo-03 {
+
+        left: 18%;
+
+        top: 61%;
+
+    }
+
+
+    /* ----------------------------------------
+       5. HÖGER SIDA
+       Grundpositionerna behålls
+    ---------------------------------------- */
+
+    .photoalbum-page-right-photo-01 {
+
+        left: 15%;
+
+        top: 17%;
+
+    }
+
+
+    .photoalbum-page-right-photo-02 {
+
+        left: 40.5%;
+
+        top: 40%;
+
+    }
+
+
+    .photoalbum-page-right-photo-03 {
+
+        left: 18%;
+
+        top: 61%;
+
+    }
+
+
+    /* ----------------------------------------
+       6. TILLBAKA TILL RYGGSÄCKEN
+    ---------------------------------------- */
+
+    #photoalbum-close {
+
+        top: 20px;
+
+        left: 15px;
+
+    }
+
+
+    /* ----------------------------------------
+       7. BLÄDDRINGSPILAR
+       Behåll dem centrerade på sidan
+    ---------------------------------------- */
+
+    #photoalbum-prev,
+    #photoalbum-next {
+
+        top: 50%;
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 30px;
+
+    }
+
+
+    #photoalbum-prev {
+
+        left: 25px;
+
+    }
+
+
+    #photoalbum-next {
+
+        right: 25px;
+
+    }
+
+}
