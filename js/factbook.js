@@ -489,12 +489,6 @@ Grävlingar
 <p>När de blir större börjar de försiktigt upptäcka världen utanför.</p>
 
 <p>Så småningom lär de sig att hitta mat, gräva och klara sig själva.</p>
-
-<p>Nu vet du lite mer om grävlingar!</p>
-
-<p>Kanske finns det en grävling ute i skogen just nu, precis någonstans där du inte kan se den.</p>
-
-<p>/ Otis 🦦</p>
 `,
 
             imageClass:
@@ -502,6 +496,37 @@ Grävlingar
 
             textClass:
             "fact-text-right"
+
+        },
+
+
+        // Sida 15 - Avslutning
+        {
+            image:
+            "images/Otis/factbook/chapter02/page08.PNG",
+
+            background:
+            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+
+            backgroundClass:
+            "background-left",
+
+            title: "",
+
+            text:
+`
+<p>Nu vet du lite mer om grävlingar! 🌿</p>
+
+<p>Nästa gång du går genom skogen kan du tänka på att det kanske finns ett gryt alldeles i närheten, även om du inte kan se det.</p>
+
+<p>/ Otis 🦦</p>
+`,
+
+            imageClass:
+            "fact-image-left",
+
+            textClass:
+            "fact-text-left"
 
         }
 
