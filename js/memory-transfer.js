@@ -84,25 +84,17 @@ function exportOtisMemory() {
 
 function importOtisMemory() {
 
+    addMessage(
+        "Vill du hämta ett sparat Otis-minne? 💚 Det minne som finns på den här enheten kommer att bytas ut mot det sparade minnet.",
+        "otis"
+    );
+
+
     const actions =
         document.getElementById("actions");
 
 
     actions.innerHTML = `
-
-        <div class="memory-transfer-message">
-
-            <strong>
-                Vill du hämta ett sparat Otis-minne? 💚
-            </strong>
-
-            <p>
-                Det minne som finns på den här enheten
-                kommer att bytas ut mot det sparade minnet.
-            </p>
-
-        </div>
-
 
         <button onclick="confirmImportOtisMemory()">
             📥 Ja, hämta minnet
@@ -116,7 +108,6 @@ function importOtisMemory() {
     `;
 
 }
-
 
 // ========================================
 // BEKRÄFTA HÄMTNING
