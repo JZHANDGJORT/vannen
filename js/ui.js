@@ -99,7 +99,7 @@ function showSettings() {
 
         <button onclick="importOtisMemory()">
 
-            📂 Lägg tillbaka Otis minne
+            📂 Hämta Otis minne
 
         </button>
 
