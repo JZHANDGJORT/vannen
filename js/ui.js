@@ -91,6 +91,18 @@ function showSettings() {
             ✏️ Mitt namn
         </button>
 
+        <button onclick="exportOtisMemory()">
+
+            💾 Spara Otis minne
+
+        </button>
+
+        <button onclick="importOtisMemory()">
+
+            📂 Lägg tillbaka Otis minne
+
+        </button>
+
         <button onclick="resetMemoryQuestion()">
             🌊 Återställ minne
         </button>
