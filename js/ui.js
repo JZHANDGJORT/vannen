@@ -1279,17 +1279,19 @@ function showBodyDiscover() {
         "otis"
     );
 
+
     const actions =
         document.getElementById("actions");
 
+
     actions.innerHTML = `
 
-        <button onclick="discoverBody('walk')">
-            🚶 Ta en kort promenad
+        <button onclick="discoverBody('movement')">
+            🚶 Rör på kroppen
         </button>
 
         <button onclick="discoverBody('stretch')">
-            🤸 Sträck på kroppen
+            🙆 Sträck på kroppen
         </button>
 
         <button onclick="discoverBody('listen')">
