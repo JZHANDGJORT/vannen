@@ -87,10 +87,6 @@ function showSettings() {
             👥 Mina vänner
         </button>
 
-        <button onclick="addFriend()">
-            ➕ Presentera någon
-        </button>
-
         <button onclick="changeName()">
             ✏️ Mitt namn
         </button>
