@@ -251,18 +251,18 @@
 
     .photoalbum-page-left-photo-01 {
 
-        left: 15%;
+        left: 20%;
 
-        top: 17%;
+        top: 16%;
 
     }
 
 
     .photoalbum-page-left-photo-02 {
 
-        left: 39%;
+        left: 40%;
 
-        top: 40%;
+        top: 39%;
 
     }
 
@@ -271,7 +271,7 @@
 
         left: 18%;
 
-        top: 61%;
+        top: 62%;
 
     }
 
@@ -283,9 +283,9 @@
 
     .photoalbum-page-right-photo-01 {
 
-        left: 15%;
+        left: 20%;
 
-        top: 17%;
+        top: 16.5%;
 
     }
 
@@ -294,16 +294,16 @@
 
         left: 40.5%;
 
-        top: 40%;
+        top: 39%;
 
     }
 
 
     .photoalbum-page-right-photo-03 {
 
-        left: 18%;
+        left: 18.5%;
 
-        top: 61%;
+        top: 62%;
 
     }
 
