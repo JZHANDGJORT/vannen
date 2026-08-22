@@ -63,7 +63,7 @@ const recipeBookData = {
 
             text:
 `
-<h2>Ananas och mangoglass</h2>
+<h2>Ananas- och mangoglass</h2>
 
 <h3>Ingredienser</h3>
 
