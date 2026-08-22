@@ -51,7 +51,7 @@ const recipeBookData = {
               // Sida 3 - Ananas och mangoglass
         {
             image:
-            "images/Otis/recipebook/otis-recept-ananas-mangoglass.PNG",
+            "images/Otis/recipebook/page03.PNG",
 
             background:
             "images/Otis/otis-backpack-item-receptbok-openr.PNG",
