@@ -46,7 +46,7 @@ const recipeBookData = {
             "recipe-image-left",
             textClass:
             "recipe-text-left"
-        }
+        },
 
               // Sida 3 - Ananas och mangoglass
         {
