@@ -384,100 +384,122 @@
 
 
 /* ========================================
-   RESPONSIV OTIS – TEST 3
-   Bakgrundens position
+   RESPONSIV OTIS
+   Större skärmar / tablet
 ======================================== */
 
 @media (min-width: 501px) {
+
+    /*
+       OTIS VÄRLD
+    */
 
     #friend-world {
         object-position: center top;
     }
 
-}
 
-/* ========================================
-   RESPONSIV OTIS – TEST 4
-   Actions + chat
-======================================== */
-
-@media (min-width: 501px) {
-
-    #actions {
-        transform: translateY(-1000px);
-    }
-
-    #chat {
-        margin-top: -900px;
-        transform: translateY(-370px);
-    }
-
-}
-
-/* ========================================
-   RESPONSIV OTIS – TEST 6
-   Storlek på Otis + ryggsäck
-======================================== */
-
-@media (min-width: 501px) {
+    /*
+       OTIS
+    */
 
     #friend-character,
     #friend-stone,
     #friend-character-face {
-        width: 380px;
+
+        width: clamp(300px, 30vw, 380px);
+
     }
+
+
+    /*
+       RYGGSÄCK
+    */
 
     #backpack {
-        width: 150px;
+
+        width: clamp(115px, 12vw, 150px);
+
+        left: clamp(43px, 13.5vw, 173px);
+
     }
 
-}
 
-
-/* ========================================
-   RESPONSIV OTIS – TEST 7
-   Ryggsäckens placering
-======================================== */
-
-@media (min-width: 501px) {
-
-    #backpack {
-        left: 173px;
-    }
-
-}
-
-/* ========================================
-   RESPONSIV OTIS – TEST 8
-   Pratbubbla
-======================================== */
-
-@media (min-width: 501px) {
+    /*
+       PRATBUBBLA
+    */
 
     #friend-bubble {
-        width: 230px;
-        top: 400px;
-        left: 25%;
+
+        width: clamp(150px, 18vw, 230px);
+
+        top: clamp(120px, 25vh, 400px);
+
+        left: clamp(20%, 25vw, 25%);
+
     }
 
-}
-/* ========================================
-   RESPONSIV OTIS – TEST 9
-   Namn + hjärtlinje
-======================================== */
 
-@media (min-width: 501px) {
+    /*
+       NAMN
+    */
 
     #friend-overlay {
-        top: 35px;
+
+        top: clamp(20px, 3vh, 35px);
+
     }
+
 
     #friend-name {
-        font-size: 70px;
+
+        font-size: clamp(54px, 5.5vw, 70px);
+
     }
 
+
     .friend-divider {
-        font-size: 23px;
+
+        font-size: clamp(18px, 1.8vw, 23px);
+
+    }
+
+
+    /*
+       AKTIVITETSKNAPPAR
+    */
+
+    #actions {
+
+        transform: translateY(-1000px);
+
+    }
+
+
+    /*
+       TIMER
+       
+       Timern ska fortsätta ligga ovanpå
+       aktivitetsknapparna.
+    */
+
+    #activity-timer {
+
+        transform: translateY(-985px);
+
+    }
+
+
+    /*
+       CHAT
+    */
+
+    #chat {
+
+        margin-top: -900px;
+
+        transform: translateY(-370px);
+
     }
 
 }
