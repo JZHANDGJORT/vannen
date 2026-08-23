@@ -108,6 +108,11 @@ Om oss ♡
 
 
 
+<!-- OTIS SCEN -->
+
+<div id="otis-stage">
+
+
 <header id="friend-profile">
 
 
@@ -155,6 +160,18 @@ alt="Otis ryggsäck">
 
 
 
+<nav id="actions">
+
+<!-- Skapas av ui.js -->
+
+</nav>
+
+
+</div>
+
+
+
+
 <div id="activity-timer" class="activity-hidden">
 
 <div id="timer-time">
@@ -169,15 +186,6 @@ Otis är här med dig under tiden 🌿
 
 </div>
 
-
-
-
-
-<nav id="actions">
-
-<!-- Skapas av ui.js -->
-
-</nav>
 
 
 
@@ -567,8 +575,12 @@ style="display:none;">
     </button>
 
 
-    <button id="recipebook-prev" onclick="changeBookPage(-1)">
+    <button
+    id="recipebook-prev"
+    onclick="changeBookPage(-1)">
+
         ←
+
     </button>
 
 
@@ -625,27 +637,40 @@ style="display:none;">
 </section>
 
     <!-- FOTOALBUM -->
+
 <section id="photoalbum" style="display:none;">
+
     <button
         id="photoalbum-close"
         onclick="closeBook()">
+
         🎒 Tillbaka till ryggsäcken
+
     </button>
+
     <button
         id="photoalbum-prev"
         onclick="changeBookPage(-1)">
+
         ←
+
     </button>
+
     <img
         id="photoalbum-background"
         src="images/Otis/otis-backpack-item-fotoalbum-openl.PNG"
         alt="Fotoalbum">
+
     <div id="photoalbum-photos"></div>
+
     <button
         id="photoalbum-next"
         onclick="changeBookPage(1)">
+
         →
+
     </button>
+
 </section>
 
 </main>
