@@ -62,6 +62,21 @@ const recipeBookData = {
             "recipe-image-right",
             textClass:
             "recipe-text-right"
+        },
+              // Sida 4 - Kaneläpplen
+        {
+            image:
+            "images/Otis/recipebook/page04.PNG",
+            background:
+            "images/Otis/otis-backpack-item-receptbok-openl.PNG",
+            backgroundClass:
+            "background-left",
+            title: "",
+            text: "",
+            imageClass:
+            "recipe-image-left",
+            textClass:
+            "recipe-text-left"
         }
     ]
 };
