@@ -1324,7 +1324,9 @@ function discoverBody(activity) {
 
             "🙆 Sträck armarna upp och ner 10 gånger. Kan du göra det långsamt?",
 
-            "🔄 Snurra runt tre gånger och stanna sedan helt stilla. Känns det annorlunda i kroppen?"
+            "🔄 Snurra runt tre gånger och stanna sedan helt stilla. Känns det annorlunda i kroppen?",
+
+            "🎵 Sätt på din favoritlåt och dansa! Hur känns det i kroppen när du rör dig till musiken?"
         ],
 
 
