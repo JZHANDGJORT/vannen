@@ -1119,6 +1119,18 @@ function simpleActivityDone() {
 
 function simpleActivitySkipped() {
 
+    clearInterval(window.otisTimer);
+
+    window.otisTimer = null;
+
+    localStorage.removeItem(
+        "otis-active-timer"
+    );
+
+    document
+        .getElementById("activity-timer")
+        .classList.add("activity-hidden");
+
     saveSkippedActivity(
         currentActivity
     );
@@ -1420,13 +1432,19 @@ function discoverBody(activity) {
 
 
 function startOtisTimer(type = "tidy10") {
+
     if (!otisAudioContext) {
         otisAudioContext =
             new (window.AudioContext || window.webkitAudioContext)();
     }
+
     if (otisAudioContext.state === "suspended") {
         otisAudioContext.resume();
     }
+
+    // Om det redan finns en timer, stoppa den först
+    clearInterval(window.otisTimer);
+
     currentActivity = {
         type: type,
         badgeType:
@@ -1440,59 +1458,183 @@ function startOtisTimer(type = "tidy10") {
         skipped:
             "Det gör inget. Vi kan prova en annan gång. 🌿"
     };
+
+    // Spara exakt när timern ska vara klar
+    const endTime =
+        Date.now() + (10 * 60 * 1000);
+
+    localStorage.setItem(
+        "otis-active-timer",
+        JSON.stringify({
+            type: type,
+            endTime: endTime
+        })
+    );
+
+    showOtisTimer(endTime);
+
+}
+
+
+function showOtisTimer(endTime) {
+
     const actions =
         document.getElementById("actions");
+
     const timer =
         document.getElementById("activity-timer");
+
     const timerTime =
         document.getElementById("timer-time");
+
+    if (!actions || !timer || !timerTime) return;
+
     timer.classList.remove("activity-hidden");
-    timerTime.textContent = "10:00";
-    let seconds = 600;
+
     actions.innerHTML = `
         <button onclick="finishOtisTimer()">
             🌿 Jag är klar
         </button>
+
         <button onclick="simpleActivitySkipped()">
             🌱 Vi hann inte idag
         </button>
     `;
+
+    updateOtisTimer(endTime);
+
     window.otisTimer =
         setInterval(() => {
-            seconds--;
-            const minutes =
-                Math.floor(seconds / 60);
-            const remaining =
-                seconds % 60;
-            timerTime.textContent =
-                `${minutes}:${remaining < 10 ? "0" : ""}${remaining}`;
-            if (seconds <= 0) {
-                clearInterval(window.otisTimer);
-                timer.classList.add("activity-hidden");
-                playOtisTimerSound();
-                simpleActivityDone();
-            }
+            updateOtisTimer(endTime);
         }, 1000);
+
 }
+
+
+function updateOtisTimer(endTime) {
+
+    const timer =
+        document.getElementById("activity-timer");
+
+    const timerTime =
+        document.getElementById("timer-time");
+
+    if (!timer || !timerTime) return;
+
+    const remaining =
+        Math.max(
+            0,
+            Math.ceil(
+                (endTime - Date.now()) / 1000
+            )
+        );
+
+    const minutes =
+        Math.floor(remaining / 60);
+
+    const seconds =
+        remaining % 60;
+
+    timerTime.textContent =
+        `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+
+    if (remaining <= 0) {
+
+        clearInterval(window.otisTimer);
+
+        window.otisTimer = null;
+
+        localStorage.removeItem(
+            "otis-active-timer"
+        );
+
+        timer.classList.add(
+            "activity-hidden"
+        );
+
+        playOtisTimerSound();
+
+        simpleActivityDone();
+    }
+
+}
+
 
 function finishOtisTimer() {
 
     clearInterval(window.otisTimer);
 
+    window.otisTimer = null;
+
+    localStorage.removeItem(
+        "otis-active-timer"
+    );
+
     document
-    .getElementById("activity-timer")
-    .classList.add("activity-hidden");
+        .getElementById("activity-timer")
+        .classList.add("activity-hidden");
 
     addMessage(
         currentActivity.completed,
         "otis"
     );
 
-
     currentActivity = null;
 
-
     showMainMenu();
+
+}
+
+function restoreOtisTimer() {
+
+    const savedTimer =
+        localStorage.getItem(
+            "otis-active-timer"
+        );
+
+    if (!savedTimer) return;
+
+    let data;
+
+    try {
+
+        data =
+            JSON.parse(savedTimer);
+
+    } catch (error) {
+
+        localStorage.removeItem(
+            "otis-active-timer"
+        );
+
+        return;
+    }
+
+    // Timern har redan gått ut
+    if (data.endTime <= Date.now()) {
+
+        localStorage.removeItem(
+            "otis-active-timer"
+        );
+
+        return;
+    }
+
+    currentActivity = {
+        type: data.type,
+        badgeType:
+            data.type === "read"
+                ? "lasar"
+                : null,
+        completed:
+            data.type === "read"
+                ? "Bra jobbat! 📚 Vi läste tillsammans i 10 minuter. 🌟"
+                : "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
+        skipped:
+            "Det gör inget. Vi kan prova en annan gång. 🌿"
+    };
+
+    showOtisTimer(data.endTime);
 
 }
 
@@ -3042,5 +3184,19 @@ function resetOtisView() {
 
 
     showMainMenu();
+
+}
+
+
+if (document.readyState === "loading") {
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        restoreOtisTimer
+    );
+
+} else {
+
+    restoreOtisTimer();
 
 }
