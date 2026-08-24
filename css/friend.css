@@ -403,27 +403,26 @@
        OTIS
     */
 
-    #friend-character,
-    #friend-stone,
-    #friend-character-face {
+#friend-character,
+#friend-stone,
+#friend-character-face {
 
-        width: clamp(300px, 30vw, 380px);
+    width: clamp(320px, 32vw, 400px);
 
-    }
+}
 
 
     /*
        RYGGSÄCK
     */
 
-    #backpack {
+#backpack {
 
-        width: clamp(115px, 12vw, 150px);
+    width: clamp(125px, 13vw, 160px);
 
-        left: clamp(43px, 13.5vw, 173px);
+    left: clamp(43px, 13.5vw, 173px);
 
-    }
-
+}
 
     /*
        PRATBUBBLA
