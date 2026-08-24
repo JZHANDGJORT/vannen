@@ -370,6 +370,10 @@
 
 }
 
+#otis-stage {
+    position: relative;
+}
+
 #actions {
 
     position: relative;
