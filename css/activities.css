@@ -50,3 +50,18 @@
     display: none;
 
 }
+
+/* ========================================
+   RESPONSIV TIMER
+   Större skärmar / tablet
+======================================== */
+
+@media (min-width: 501px) {
+
+    #activity-timer {
+
+        transform: translateY(-1000px);
+
+    }
+
+}
