@@ -407,7 +407,7 @@
 #friend-stone,
 #friend-character-face {
 
-    width: clamp(320px, 32vw, 400px);
+    width: clamp(340px, 34vw, 420px);
 
 }
 
@@ -418,7 +418,7 @@
 
 #backpack {
 
-    width: clamp(125px, 13vw, 160px);
+    width: clamp(135px, 14vw, 170px);
 
     left: clamp(43px, 13.5vw, 173px);
 
