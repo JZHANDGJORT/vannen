@@ -75,12 +75,9 @@ button {
 }
 
 
-
 /*
    Orienteringsvarning
-   Visas endast på tablet i landscape
 */
-
 
 #orientation-warning {
 
@@ -90,19 +87,27 @@ button {
 
 
 
-@media (orientation: landscape) and (min-width: 501px) and (max-width: 1200px) {
+@media (orientation: landscape) and (max-width: 1200px) {
 
     #orientation-warning {
 
         position: fixed;
 
-        inset: 0;
+        top: 0;
+
+        right: 0;
+
+        bottom: 0;
+
+        left: 0;
 
         width: 100vw;
 
         height: 100vh;
 
-        z-index: 9999;
+        min-height: 100vh;
+
+        z-index: 99999;
 
         display: flex;
 
@@ -110,7 +115,9 @@ button {
 
         justify-content: center;
 
-        background: rgba(255,255,255,0.92);
+        background: rgba(255,255,255,0.96);
+
+        color: #29434A;
 
         text-align: center;
 
@@ -120,7 +127,9 @@ button {
 
     .orientation-warning-content {
 
-        width: min(90%, 400px);
+        width: 100%;
+
+        max-width: 400px;
 
         padding: 30px;
 
@@ -132,7 +141,9 @@ button {
 
         font-size: 70px;
 
-        margin-bottom: 10px;
+        line-height: 1;
+
+        margin-bottom: 16px;
 
     }
 
@@ -140,9 +151,13 @@ button {
 
     .orientation-warning-content h2 {
 
-        margin: 0 0 10px;
+        margin: 0 0 12px;
 
         font-size: 28px;
+
+        font-weight: 600;
+
+        color: #29434A;
 
     }
 
@@ -155,6 +170,8 @@ button {
         font-size: 18px;
 
         line-height: 1.5;
+
+        color: #29434A;
 
     }
 
