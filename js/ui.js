@@ -1610,16 +1610,6 @@ function restoreOtisTimer() {
         return;
     }
 
-    // Timern har redan gått ut
-    if (data.endTime <= Date.now()) {
-
-        localStorage.removeItem(
-            "otis-active-timer"
-        );
-
-        return;
-    }
-
     currentActivity = {
         type: data.type,
         badgeType:
@@ -1634,6 +1624,17 @@ function restoreOtisTimer() {
             "Det gör inget. Vi kan prova en annan gång. 🌿"
     };
 
+    // Timern har redan gått ut
+    if (data.endTime <= Date.now()) {
+
+        showOtisTimer(data.endTime);
+
+        updateOtisTimer(data.endTime);
+
+        return;
+    }
+
+    // Timern pågår fortfarande
     showOtisTimer(data.endTime);
 
 }
