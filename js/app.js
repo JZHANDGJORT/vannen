@@ -474,3 +474,22 @@ function startCharacterBlinking() {
     blinkLoop();
 
 }
+
+function updateOrientationWarning() {
+
+    const warning = document.getElementById("orientation-warning");
+
+    if (!warning) return;
+
+    const isLandscape = window.innerWidth > window.innerHeight;
+
+    warning.style.display = isLandscape ? "flex" : "none";
+
+}
+
+
+window.addEventListener("load", updateOrientationWarning);
+
+window.addEventListener("resize", updateOrientationWarning);
+
+window.addEventListener("orientationchange", updateOrientationWarning);
