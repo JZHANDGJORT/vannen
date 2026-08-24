@@ -477,20 +477,6 @@
 
 
     /*
-       TIMER
-       
-       Timern ska fortsätta ligga ovanpå
-       aktivitetsknapparna.
-    */
-
-    #activity-timer {
-
-        transform: translateY(-1000px);
-
-    }
-
-
-    /*
        CHAT
     */
 
