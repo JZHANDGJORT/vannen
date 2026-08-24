@@ -476,18 +476,6 @@
     }
 
 
-    /*
-       TIMER
-       
-       Timern ska fortsätta ligga ovanpå
-       aktivitetsknapparna.
-    */
-
-    #activity-timer {
-
-        transform: translateY(-10px);
-
-    }
 
 
     /*
