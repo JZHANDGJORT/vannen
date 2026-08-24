@@ -370,16 +370,16 @@
 
 }
 
-#otis-stage {
-    position: relative;
-}
-
 #actions {
-    position: absolute;
-    left: 0;
-    width: 100%;
+
+    position: relative;
+
     z-index: 5;
+
+    transform: translateY(-630px);
+
     padding: 0 12px;
+
 }
 
 
@@ -464,6 +464,30 @@
 
     }
 
+
+    /*
+       AKTIVITETSKNAPPAR
+    */
+
+    #actions {
+
+        transform: translateY(-1000px);
+
+    }
+
+
+    /*
+       TIMER
+       
+       Timern ska fortsätta ligga ovanpå
+       aktivitetsknapparna.
+    */
+
+    #activity-timer {
+
+        transform: translateY(-1000px);
+
+    }
 
 
     /*
