@@ -39,6 +39,7 @@ body {
 }
 
 
+
 img {
 
     max-width: 100%;
@@ -63,6 +64,8 @@ button {
 
 }
 
+
+
 #app {
 
     width: 100%;
@@ -71,23 +74,40 @@ button {
 
 }
 
+
+
+/*
+   Orienteringsvarning
+   Visas endast på tablet i landscape
+*/
+
+
 #orientation-warning {
+
     display: none;
+
 }
 
 
-@media (orientation: landscape) and (max-width: 1200px) {
+
+@media (orientation: landscape) and (min-width: 501px) and (max-width: 1200px) {
 
     #orientation-warning {
 
         position: fixed;
+
         inset: 0;
+
+        width: 100vw;
+
+        height: 100vh;
 
         z-index: 9999;
 
         display: flex;
 
         align-items: center;
+
         justify-content: center;
 
         background: rgba(255,255,255,0.92);
@@ -97,13 +117,15 @@ button {
     }
 
 
+
     .orientation-warning-content {
 
-        max-width: 400px;
+        width: min(90%, 400px);
 
         padding: 30px;
 
     }
+
 
 
     .orientation-warning-icon {
@@ -115,6 +137,7 @@ button {
     }
 
 
+
     .orientation-warning-content h2 {
 
         margin: 0 0 10px;
@@ -124,9 +147,10 @@ button {
     }
 
 
+
     .orientation-warning-content p {
 
-        margin: 0 0 10px;
+        margin: 0;
 
         font-size: 18px;
 
@@ -135,5 +159,3 @@ button {
     }
 
 }
-
-
