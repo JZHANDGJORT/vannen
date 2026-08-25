@@ -18,7 +18,7 @@
 
     z-index: 6;
 
-    transform: translateY(-630px);
+    transform: translateY(clamp(-780px, -78vh, -630px));
 
 }
 
