@@ -155,3 +155,15 @@
     gap: 12px;
 
 }
+
+/* Telefon – responsiv placering */
+
+@media (max-width: 500px) {
+
+    #chat {
+
+        margin-top: clamp(-700px, -78vh, -630px);
+
+    }
+
+}
