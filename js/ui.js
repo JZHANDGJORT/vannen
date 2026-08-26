@@ -30,8 +30,40 @@ function showMainMenu() {
     const actions =
         document.getElementById("actions");
 
+    // Om en timer fortfarande är aktiv,
+    // visa timerläget istället för huvudmenyn.
+    const activeTimer =
+        localStorage.getItem("otis-active-timer");
+
+    if (activeTimer) {
+
+        try {
+
+            const data =
+                JSON.parse(activeTimer);
+
+            // Kontrollera att timern faktiskt finns kvar
+            // och att den har en giltig sluttid.
+            if (data.endTime) {
+
+                showOtisTimer(data.endTime);
+
+                return;
+
+            }
+
+        } catch (error) {
+
+            localStorage.removeItem(
+                "otis-active-timer"
+            );
+
+        }
+
+    }
+
     actions.classList.remove("activity-menu");
-    
+
     actions.innerHTML = `
 
     <button id="present-person-button" class="action-button company">
@@ -49,7 +81,7 @@ function showMainMenu() {
         <span>Prata med Otis</span>
     </button>
 
-`;
+    `;
 
 
     document
@@ -66,6 +98,7 @@ function showMainMenu() {
             "click",
             showDialog
         );
+
 
     document
         .getElementById("present-person-button")
