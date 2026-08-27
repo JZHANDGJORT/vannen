@@ -376,7 +376,7 @@
 
     z-index: 5;
 
-    transform: translateY(clamp(-1000px, -90vh, -630px));
+    transform: translateY(clamp(-1000px, -84vh, -630px));
 
     padding: 0 12px;
 
