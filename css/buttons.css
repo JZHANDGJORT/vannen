@@ -170,7 +170,7 @@
     position: absolute;
 
     right: 1px;
-    top: clamp(385px, calc(385px + (100vh - 800px) * 0.15), 405px);
+   top: clamp(385px, calc(385px + (100vh - 800px) * 0.35), 430px);
 
     width: 150px;
     min-height: 60px;
