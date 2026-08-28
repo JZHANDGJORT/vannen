@@ -166,7 +166,6 @@
 ======================================== */
 
 #evening-button {
-
     position: absolute;
 
     right: 1px;
@@ -192,17 +191,15 @@
    RESPONSIV OTIS – KVÄLL MED OTIS
 ======================================== */
 
-/* Högre telefoner */
-@media (min-height: 850px) and (max-width: 500px) {
+@media (max-width: 500px) {
 
     #evening-button {
-        top: 430px;
+        top: clamp(385px, 80vh, 450px);
     }
 
 }
 
 
-/* Platta */
 @media (min-width: 501px) {
 
     #evening-button {
