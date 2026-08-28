@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (/EdgiOS/i.test(navigator.userAgent)) {
+        document.body.classList.add("ios-edge");
+    }
+
+});
+
 let otisAudioContext = null;
 let currentActivity = null;
 
