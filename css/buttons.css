@@ -170,7 +170,7 @@
     position: absolute;
 
     right: 1px;
-   top: clamp(385px, calc(385px + (100vh - 800px) * 0.35), 430px);
+    top: 385px;
 
     width: 150px;
     min-height: 60px;
@@ -192,12 +192,21 @@
    RESPONSIV OTIS – KVÄLL MED OTIS
 ======================================== */
 
+/* Högre telefoner */
+@media (min-height: 850px) and (max-width: 500px) {
+
+    #evening-button {
+        top: 430px;
+    }
+
+}
+
+
+/* Platta */
 @media (min-width: 501px) {
 
     #evening-button {
         top: 800px;
     }
-
-}
 
 }
