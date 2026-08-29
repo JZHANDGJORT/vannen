@@ -491,20 +491,3 @@
 
 }
 
-#viewport-debug {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-
-    z-index: 99999;
-
-    background: white;
-    color: black;
-
-    padding: 10px;
-
-    font-family: monospace;
-    font-size: 14px;
-
-    border: 2px solid black;
-}
