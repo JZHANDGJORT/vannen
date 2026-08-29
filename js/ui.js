@@ -3237,31 +3237,3 @@ if (document.readyState === "loading") {
 
 }
 
-window.addEventListener("load", () => {
-
-    const debug = document.createElement("div");
-
-    debug.id = "viewport-debug";
-
-    function updateDebug() {
-
-        debug.innerHTML = `
-            innerWidth: ${window.innerWidth}<br>
-            innerHeight: ${window.innerHeight}<br>
-            visualWidth: ${window.visualViewport?.width}<br>
-            visualHeight: ${window.visualViewport?.height}<br>
-            devicePixelRatio: ${window.devicePixelRatio}
-        `;
-
-    }
-
-    document.body.appendChild(debug);
-
-    updateDebug();
-
-    window.visualViewport?.addEventListener(
-        "resize",
-        updateDebug
-    );
-
-});
