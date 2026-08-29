@@ -162,7 +162,7 @@
 
     #chat {
 
-        margin-top: -587px;
+        margin-top: clamp(-1000px, -84vh, -630px);
 
     }
 
