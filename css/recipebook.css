@@ -266,7 +266,9 @@
 
     position: absolute;
 
-    bottom: 25px;
+    top: 50%;
+
+    transform: translateY(-50%);
 
     z-index: 10;
 
@@ -632,7 +634,9 @@
     #recipebook-prev,
     #recipebook-next {
 
-        bottom: 20px;
+        top: 50%;
+
+    transform: translateY(-50%);
 
         width: 50px;
 
