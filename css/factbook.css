@@ -782,7 +782,9 @@
     #factbook-prev,
     #factbook-next {
 
-        bottom: 20px;
+        top: 50%;
+
+    transform: translateY(-50%);
 
         width: 50px;
 
