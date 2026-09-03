@@ -44,7 +44,7 @@
 
 #discoverbook-background.background-right {
 
-    object-position: 100% center;
+    object-position: 120% center;
 
     transform:
         scale(1.00)
@@ -114,7 +114,7 @@
 
     position: absolute;
 
-    left: -5%;
+    left: 1%;
 
     bottom: 16%;
 
