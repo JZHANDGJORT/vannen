@@ -22,7 +22,7 @@ const discoverBookData = {
 
         // Sida 1
         {
-            image: "",
+            image: "images/Otis/discoverbook/page01.PNG",
             background:
             "images/Otis/otis-backpack-item-upptackarbok-openr.PNG",
             backgroundClass:
@@ -37,7 +37,7 @@ const discoverBookData = {
 
         // Sida 2
         {
-            image: "",
+            image: "images/Otis/discoverbook/page02.PNG",
             background:
             "images/Otis/otis-backpack-item-upptackarbok-openl.PNG",
             backgroundClass:
@@ -52,7 +52,7 @@ const discoverBookData = {
 
         // Sida 3
         {
-            image: "",
+            image: "images/Otis/discoverbook/page03.PNG",
             background:
             "images/Otis/otis-backpack-item-upptackarbok-openr.PNG",
             backgroundClass:
