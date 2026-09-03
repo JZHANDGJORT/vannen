@@ -107,9 +107,9 @@
 */
 
 .backpack-upptackarbok {
-    left: calc(29% - 5px);
-    top: calc(25% + 5px);
-    width: 210px;
+    left: 40%;
+    top: 25%;
+    width: 150px;
     animation: discoverBookFloat 4s ease-in-out infinite;
 }
 
