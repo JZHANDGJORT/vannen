@@ -1,0 +1,667 @@
+/*
+  Otis Upptäckarbok
+*/
+
+
+#discoverbook {
+
+    width: 100%;
+
+    height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/*
+  Själva boksidan (bakgrund)
+*/
+
+
+#discoverbook-background {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1;
+
+}
+
+
+#discoverbook-background.background-right {
+
+    object-position: 95% center;
+
+    transform:
+        scale(1.05)
+        translateY(-10px);
+
+}
+
+
+#discoverbook-background.background-left {
+
+    object-position: 55% center;
+
+}
+
+
+/*
+  Bild ovanpå boken
+*/
+
+
+#discoverbook-page {
+
+    display: block;
+
+    position: absolute;
+
+    z-index: 2;
+
+}
+
+
+/*
+  Upptäckarbilder
+*/
+
+
+.discover-image-left {
+
+    width: 95% !important;
+
+    height: auto !important;
+
+    max-height: 70vh;
+
+    object-fit: contain;
+
+    position: absolute;
+
+    left: 5%;
+
+    bottom: 16%;
+
+    z-index: 2;
+
+}
+
+
+.discover-image-right {
+
+    width: 93% !important;
+
+    height: auto !important;
+
+    max-height: 70vh;
+
+    object-fit: contain;
+
+    position: absolute;
+
+    left: 1%;
+
+    bottom: 16%;
+
+    z-index: 2;
+
+}
+
+
+/*
+  Upptäckartext
+*/
+
+
+#discoverbook-text {
+
+    position: absolute;
+
+    z-index: 5;
+
+    color: #29434A;
+
+    font-family: "Patrick Hand", cursive;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    display: none;
+
+}
+
+
+.discover-text-left {
+
+    left: 19%;
+
+    top: 16%;
+
+    width: 75%;
+
+}
+
+
+.discover-text-right {
+
+    left: 13%;
+
+    top: 16%;
+
+    width: 70%;
+
+}
+
+
+#discoverbook-text p {
+
+    margin: 0 0 10px 0;
+
+}
+
+
+/*
+  Rubrik
+*/
+
+
+#discoverbook-title {
+
+    position: absolute;
+
+    top: 15.5%;
+
+    left: 12.5%;
+
+    width: 70%;
+
+    z-index: 5;
+
+    color: #29434A;
+
+    font-family: "Patrick Hand", cursive;
+
+    text-align: center;
+
+    display: none;
+
+}
+
+
+/*
+  Tillbaka till ryggsäcken
+*/
+
+
+#discoverbook-close {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 12px;
+
+    z-index: 10;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    width: 170px;
+
+    border: none;
+
+    background-color: rgba(255,255,255,0.45);
+
+    color: #29434A;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(6px);
+
+}
+
+
+#discoverbook-close:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+#discoverbook-close:active {
+
+    transform: scale(0.97);
+
+}
+
+
+/*
+  Bläddringspilar
+*/
+
+
+#discoverbook-prev,
+#discoverbook-next {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background-color: rgba(255,255,255,0.1);
+
+    color: #29434A;
+
+    font-size: 28px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+}
+
+
+#discoverbook-prev {
+
+    left: 25px;
+
+}
+
+
+#discoverbook-next {
+
+    right: 25px;
+
+}
+
+
+#discoverbook-prev:active,
+#discoverbook-next:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/*
+  Innehåll
+*/
+
+
+#discoverbook-content {
+
+    position: absolute;
+
+    top: 17%;
+
+    left: 22%;
+
+    z-index: 5;
+
+    color: #29434A;
+
+    font-family: "Patrick Hand", cursive;
+
+}
+
+
+#discoverbook-content h1 {
+
+    font-size: 34px;
+
+    font-weight: normal;
+
+    margin-bottom: 35px;
+
+}
+
+
+#discoverbook-content h2 {
+
+    font-size: 25px;
+
+    font-weight: normal;
+
+    margin: 0 0 10px 0;
+
+}
+
+
+#discoverbook-content h2:not(:first-of-type) {
+
+    margin-top: 25px;
+
+}
+
+
+#discoverbook-content button {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    margin-left: 20px;
+
+    background: transparent;
+
+    border: none;
+
+    font-family: inherit;
+
+    font-size: 22px;
+
+    color: #29434A;
+
+    text-align: left;
+
+    cursor: pointer;
+
+}
+
+
+#discoverbook-content span {
+
+    font-size: 19px;
+
+}
+
+
+#discoverbook-content button:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+/* ========================================
+   RESPONSIV UPPTÄCKARBOK – PLATTA
+   Android / större skärmar
+======================================== */
+
+@media (min-width: 501px) {
+
+
+    /* ----------------------------------------
+       1. SJÄLVA UPPTÄCKARBOKEN
+       Använd faktisk synlig höjd på plattan
+    ---------------------------------------- */
+
+    #discoverbook {
+
+        width: 100%;
+
+        height: 100dvh;
+
+        min-height: 0;
+
+        overflow: hidden;
+
+    }
+
+
+    /* ----------------------------------------
+       2. BAKGRUND
+    ---------------------------------------- */
+
+    #discoverbook-background.background-right {
+
+        object-position: center center;
+
+        transform:
+            scale(1.05)
+            translateY(-10px);
+
+    }
+
+
+    #discoverbook-background.background-left {
+
+        object-position: center center;
+
+    }
+
+
+    /* ----------------------------------------
+       3. UPPTÄCKARBILD – VÄNSTERSIDA
+    ---------------------------------------- */
+
+    .discover-image-left {
+
+        width: 70% !important;
+
+        height: auto !important;
+
+        max-height: 70vh;
+
+        object-fit: contain;
+
+        position: absolute;
+
+        left: 19.5%;
+
+        bottom: 14%;
+
+        z-index: 2;
+
+    }
+
+
+    /* ----------------------------------------
+       4. UPPTÄCKARBILD – HÖGERSIDA
+    ---------------------------------------- */
+
+    .discover-image-right {
+
+        width: 70% !important;
+
+        height: auto !important;
+
+        max-height: 70vh;
+
+        object-fit: contain;
+
+        position: absolute;
+
+        left: 24%;
+
+        bottom: 14%;
+
+        z-index: 2;
+
+    }
+
+
+    /* ----------------------------------------
+       5. UPPTÄCKARTITEL
+    ---------------------------------------- */
+
+    #discoverbook-title {
+
+        top: 17%;
+
+        left: 26%;
+
+        width: 60%;
+
+        font-size: 30px;
+
+    }
+
+
+    /* ----------------------------------------
+       6. UPPTÄCKARTEXT
+    ---------------------------------------- */
+
+    #discoverbook-text {
+
+        font-size: 28px;
+
+        line-height: 1.3;
+
+    }
+
+
+    .discover-text-left {
+
+        left: 26%;
+
+        top: 16%;
+
+        width: 58%;
+
+    }
+
+
+    .discover-text-right {
+
+        left: 30.5%;
+
+        top: 17%;
+
+        width: 58%;
+
+    }
+
+
+    #discoverbook-text p {
+
+        margin: 0 0 14px 0;
+
+    }
+
+
+    /* ----------------------------------------
+       7. INNEHÅLLSFÖRTECKNING
+    ---------------------------------------- */
+
+    #discoverbook-content {
+
+        top: 17%;
+
+        left: 30%;
+
+    }
+
+
+    #discoverbook-content h1 {
+
+        font-size: 40px;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    #discoverbook-content h2 {
+
+        font-size: 32px;
+
+        margin-bottom: 12px;
+
+    }
+
+
+    #discoverbook-content h2:not(:first-of-type) {
+
+        margin-top: 30px;
+
+    }
+
+
+    #discoverbook-content button {
+
+        font-size: 28px;
+
+        margin-bottom: 18px;
+
+        margin-left: 20px;
+
+    }
+
+
+    #discoverbook-content span {
+
+        font-size: 25px;
+
+    }
+
+
+    /* ----------------------------------------
+       8. TILLBAKA TILL RYGGSÄCKEN
+    ---------------------------------------- */
+
+    #discoverbook-close {
+
+        top: 20px;
+
+        left: 15px;
+
+    }
+
+
+    /* ----------------------------------------
+       9. BLÄDDRINGSPILAR
+    ---------------------------------------- */
+
+    #discoverbook-prev,
+    #discoverbook-next {
+
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 30px;
+
+    }
+
+
+    #discoverbook-prev {
+
+        left: 25px;
+
+    }
+
+
+    #discoverbook-next {
+
+        right: 25px;
+
+    }
+
+}
