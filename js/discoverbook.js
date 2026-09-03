@@ -67,7 +67,7 @@ const discoverBookData = {
 
         // Sida 4
         {
-            image: "",
+            image: "images/Otis/discoverbook/page04.PNG",
             background:
             "images/Otis/otis-backpack-item-upptackarbok-openl.PNG",
             backgroundClass:
