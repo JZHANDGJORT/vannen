@@ -103,6 +103,31 @@
 }
 
 /*
+   Upptäckarbok
+*/
+
+.backpack-upptackarbok {
+    left: calc(29% - 5px);
+    top: calc(25% + 5px);
+    width: 210px;
+    animation: discoverBookFloat 4s ease-in-out infinite;
+}
+
+@keyframes discoverBookFloat {
+    0% {
+        transform: rotate(-3deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translateY(-4px);
+    }
+
+    100% {
+        transform: rotate(-3deg) translateY(0);
+    }
+}
+
+/*
    Receptbok
 */
 
