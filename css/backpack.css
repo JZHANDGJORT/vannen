@@ -108,22 +108,22 @@
 
 .backpack-upptackarbok {
     left: 55%;
-    top: 25%;
+    top: 40%;
     width: 150px;
     animation: discoverBookFloat 4s ease-in-out infinite;
 }
 
 @keyframes discoverBookFloat {
     0% {
-        transform: rotate(-3deg) translateY(0);
+        transform: rotate(3deg) translateY(0);
     }
 
     50% {
-        transform: rotate(-3deg) translateY(-4px);
+        transform: rotate(3deg) translateY(-4px);
     }
 
     100% {
-        transform: rotate(-3deg) translateY(0);
+        transform: rotate(3deg) translateY(0);
     }
 }
 
