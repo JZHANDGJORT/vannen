@@ -107,7 +107,7 @@
 */
 
 .backpack-upptackarbok {
-    left: 55%;
+    left: 56%;
     top: 37%;
     width: 150px;
     animation: discoverBookFloat 4s ease-in-out infinite;
@@ -115,15 +115,15 @@
 
 @keyframes discoverBookFloat {
     0% {
-        transform: rotate(12deg) translateY(0);
+        transform: rotate(15deg) translateY(0);
     }
 
     50% {
-        transform: rotate(12deg) translateY(-4px);
+        transform: rotate(15deg) translateY(-4px);
     }
 
     100% {
-        transform: rotate(12deg) translateY(0);
+        transform: rotate(15deg) translateY(0);
     }
 }
 
@@ -133,9 +133,9 @@
 
 .backpack-receptbok {
 
-    left: 29%;
+    left: 28%;
 
-    top: 25%;
+    top: 24%;
 
     width: 210px;
 
@@ -378,7 +378,7 @@
 
     width: 90px;
 
-    transform: rotate(-30deg);
+    transform: rotate(-35deg);
 
 }
 
