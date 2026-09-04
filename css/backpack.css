@@ -495,8 +495,8 @@
 
 
    .backpack-upptackarbok {
-    left: 58%;
-    top: 37%;
+    left: 63%;
+    top: 39%;
     width: 225px;
 }
 
@@ -509,7 +509,7 @@
 
     .backpack-receptbok {
 
-        left: calc(24% + var(--book-shift-x));
+        left: calc(25% + var(--book-shift-x));
         top: calc(25% + var(--book-shift-y));
 
         width: 330px;
