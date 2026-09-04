@@ -494,6 +494,12 @@
     }
 
 
+   .backpack-upptackarbok {
+    left: 58%;
+    top: 37%;
+    width: 225px;
+}
+
     /*
        Böcker
        Flyttas tillsammans med book-shift
@@ -503,7 +509,7 @@
 
     .backpack-receptbok {
 
-        left: calc(29% + var(--book-shift-x));
+        left: calc(24% + var(--book-shift-x));
         top: calc(25% + var(--book-shift-y));
 
         width: 330px;
