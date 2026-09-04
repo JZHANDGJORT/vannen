@@ -671,6 +671,17 @@
     left: calc(13% + 15px);
 
 }  
-   
+
+       /*
+       Bakgrund för smala/höga skärmar
+    */
+
+    @media (max-aspect-ratio: 9/19) {
+
+        #backpack-world {
+            height: 105vh;
+        }
+
+    }
 
 }
