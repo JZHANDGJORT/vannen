@@ -432,198 +432,120 @@
 }
 
 /* ========================================
-   RESPONSIV RYGGSÄCK – PLATTA
+   RESPONSIV RYGGSÄCK
+   Gemensam skalning med clamp()
 ======================================== */
 
-@media (min-width: 501px) {
 
-    /*
-       Förflyttning av hela bokgruppen
-    */
+/*
+   Märken
+*/
 
-    :root {
+.backpack-marke-gralasar,
+.backpack-marke-grarakne,
+.backpack-marke-graskapar,
+.backpack-marke-graupptackar {
 
-        --book-shift-x: 5%;
-        --book-shift-y: 0%;
-
-    }
-
-
-    /*
-       Märken
-       Egna positioner
-    */
-
-    .backpack-marke-gralasar {
-
-        left: 39%;
-        top: 9%;
-
-        width: 110px;
-
-    }
-
-
-    .backpack-marke-grarakne {
-
-        left: 50%;
-        top: 8%;
-
-        width: 110px;
-
-    }
-
-
-    .backpack-marke-graskapar {
-
-        left: 72%;
-        top: 9%;
-
-        width: 110px;
-
-    }
-
-
-    .backpack-marke-graupptackar {
-
-        left: 80%;
-        top: 13%;
-
-        width: 110px;
-
-    }
-
-
-   .backpack-upptackarbok {
-    left: 60%;
-    top: 39%;
-    width: 225px;
-}
-
-    /*
-       Böcker
-       Flyttas tillsammans med book-shift
-    */
-
-
-
-    .backpack-receptbok {
-
-        left: calc(25% + var(--book-shift-x));
-        top: calc(25% + var(--book-shift-y));
-
-        width: 330px;
-
-    }
-
-
-    .backpack-sagobok {
-
-        left: calc(12% + var(--book-shift-x));
-        top: calc(34% + var(--book-shift-y));
-
-        width: 286px;
-
-    }
-
-
-    .backpack-faktabok {
-
-        left: calc(38% + var(--book-shift-x));
-        top: calc(41.5% + var(--book-shift-y));
-
-        width: 232px;
-
-    }
-
-
-    /*
-       Fotoalbum
-       Egen position – redan justerad
-    */
-
-    .backpack-fotoalbum {
-
-        left: 10%;
-        top: 64.5%;
-
-        width: 253px;
-
-        animation: photoAlbumFloat 4s ease-in-out infinite;
-
-    }
-
-
-    /*
-       Svarta stenen
-       Egen position
-    */
-
-    .backpack-blackstone {
-
-        left: 60%;
-        top: 49%;
-
-        width: 156px;
-
-    }
-
-
-    /*
-       Hjärtsten
-       Egen position
-    */
-
-    .backpack-heartstone {
-
-        left: 33%;
-        top: 52%;
-
-        width: 205px;
-
-    }
-
-
-    /*
-       Snäcka
-       Egen position
-    */
-
-    .backpack-shell {
-
-        left: 74%;
-        top: 83%;
-
-        width: 151px;
-
-    }
-
-
-    /*
-       Ekkvistar
-       Egna positioner
-    */
-
-    .backpack-oaktwig2 {
-
-        left: 72%;
-        top: 35%;
-
-        width: 199px;
-
-    }
-
-
-    .backpack-oaktwig {
-
-        left: 14%;
-        top: 46.5%;
-
-        width: 199px;
-
-    }
+    width: clamp(70px, 17.95vw, 110px);
 
 }
 
 
+/*
+   Upptäckarbok
+*/
 
+.backpack-upptackarbok {
+
+    width: clamp(150px, 38.46vw, 225px);
+
+}
+
+
+/*
+   Receptbok
+*/
+
+.backpack-receptbok {
+
+    width: clamp(210px, 53.85vw, 330px);
+
+}
+
+
+/*
+   Sagobok
+*/
+
+.backpack-sagobok {
+
+    width: clamp(180px, 46.15vw, 286px);
+
+}
+
+
+/*
+   Faktabok
+*/
+
+.backpack-faktabok {
+
+    width: clamp(140px, 35.90vw, 232px);
+
+}
+
+
+/*
+   Fotoalbum
+*/
+
+.backpack-fotoalbum {
+
+    width: clamp(150px, 38.46vw, 253px);
+
+}
+
+
+/*
+   Svart sten
+*/
+
+.backpack-blackstone {
+
+    width: clamp(90px, 23.08vw, 156px);
+
+}
+
+
+/*
+   Hjärtsten
+*/
+
+.backpack-heartstone {
+
+    width: clamp(120px, 30.77vw, 205px);
+
+}
+
+
+/*
+   Snigelsnäcka
+*/
+
+.backpack-shell {
+
+    width: clamp(90px, 23.08vw, 151px);
+
+}
+
+
+/*
+   Ekkvistar
+*/
+
+.backpack-oaktwig,
+.backpack-oaktwig2 {
+
+    width: clamp(120px, 30.77vw, 199px);
+
+}
