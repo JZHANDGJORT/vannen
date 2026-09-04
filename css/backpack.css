@@ -645,7 +645,7 @@
 
 .backpack-marke-graupptackar {
 
-    left: calc(84% - clamp(0px, 2.7vw, 22px));
+    left: calc(84% - clamp(0px, 2.7vw, 22px) - 3px);
 
     top: calc(13% + clamp(0px, 0.9vh, 8px));
 
