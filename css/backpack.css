@@ -672,15 +672,21 @@
 
 }  
 
-       /*
-       Bakgrund för smala/höga skärmar
-    */
+}
 
-    @media (max-aspect-ratio: 9/19) {
+/*
+   Bakgrund på smala/höga skärmar
+*/
 
-        #backpack-world {
-            height: 105vh;
-        }
+@media (min-width: 501px) and (max-aspect-ratio: 9/19) {
+
+    #backpack-world {
+
+        width: 105%;
+
+        height: 100vh;
+
+        margin-left: -2.5%;
 
     }
 
