@@ -575,14 +575,16 @@
 
     left: calc(24% + clamp(0px, 7vw, 55px));
 
+    top: calc(24% + 5px);
+
 }
 
 
-    .backpack-sagobok {
+.backpack-sagobok {
 
-        left: calc(12% + clamp(0px, 3vw, 24px));
+    left: calc(12% + clamp(0px, 3vw, 24px) + 5px);
 
-    }
+}
 
 
     .backpack-faktabok {
