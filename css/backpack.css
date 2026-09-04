@@ -499,11 +499,7 @@
        Flyttas tillsammans med book-shift
     */
 
-   .backpack-upptackarbok {
-    left: calc(29% + var(--book-shift-x));
-    top: calc(25% + var(--book-shift-y));
-    width: 325px;
-}
+
 
     .backpack-receptbok {
 
