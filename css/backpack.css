@@ -602,9 +602,9 @@
 
 .backpack-upptackarbok {
 
-    left: calc(58% + clamp(0px, 3.5vw, 28px) - 3px);
+    left: calc(58% + clamp(0px, 3.5vw, 28px) - 5px);
 
-    top: calc(37% + clamp(0px, 0.9vh, 7px) + 3px);
+    top: calc(37% + clamp(0px, 0.9vh, 7px) + 7px);
 
 }
 
