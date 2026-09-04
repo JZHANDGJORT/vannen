@@ -602,9 +602,9 @@
 
 .backpack-upptackarbok {
 
-    left: calc(58% + clamp(0px, 3.5vw, 28px));
+    left: calc(58% + clamp(0px, 3.5vw, 28px) - 3px);
 
-    top: calc(37% + clamp(0px, 0.9vh, 7px));
+    top: calc(37% + clamp(0px, 0.9vh, 7px) + 3px);
 
 }
 
@@ -650,5 +650,26 @@
     top: calc(13% + clamp(0px, 0.9vh, 8px));
 
 }
+
+    /*
+       hjärtsten - uppåt
+    */
+   
+   .backpack-heartstone {
+
+    top: calc(52% - 3px);
+
+}
+
+      /*
+       ekkvist - höger
+    */
+
+ .backpack-oaktwig {
+
+    left: calc(13% + 5px);
+
+}  
+   
 
 }
