@@ -641,12 +641,12 @@
        3 mm åt vänster + lite nedåt
     */
 
-    .backpack-marke-graupptackar {
+.backpack-marke-graupptackar {
 
-        left: calc(84% - clamp(0px, 2.4vw, 19px));
+    left: calc(84% - clamp(0px, 2.7vw, 22px));
 
-        top: calc(13% + clamp(0px, 0.9vh, 8px));
+    top: calc(13% + clamp(0px, 0.9vh, 8px));
 
-    }
+}
 
 }
