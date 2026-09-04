@@ -571,11 +571,11 @@
        ca 1 cm åt höger
     */
 
-    .backpack-receptbok {
+.backpack-receptbok {
 
-        left: calc(24% + clamp(0px, 4.3vw, 34px));
+    left: calc(24% + clamp(0px, 7vw, 55px));
 
-    }
+}
 
 
     .backpack-sagobok {
