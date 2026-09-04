@@ -484,7 +484,7 @@
 
     .discover-image-right {
 
-        width: 65% !important;
+        width: 67% !important;
 
         height: auto !important;
 
@@ -494,9 +494,9 @@
 
         position: absolute;
 
-        left: 20%;
+        left: 19%;
 
-        bottom: 14%;
+        bottom: 15%;
 
         z-index: 2;
 
