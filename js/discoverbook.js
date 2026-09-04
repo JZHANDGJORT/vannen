@@ -78,6 +78,22 @@ const discoverBookData = {
             "discover-image-left",
             textClass:
             "discover-text-left"
+        },
+      
+        // Sida 5
+        {
+            image: "images/Otis/discoverbook/page05.PNG",
+            background:
+            "images/Otis/otis-backpack-item-upptackarbok-openr.PNG",
+            backgroundClass:
+            "background-right",
+            title: "",
+            text: "",
+            imageClass:
+            "discover-image-right",
+            textClass:
+            "discover-text-right"
         }
+      
     ]
 };
