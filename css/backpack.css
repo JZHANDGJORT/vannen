@@ -598,11 +598,11 @@
        Knappt 0,5 cm åt höger och lite ned
     */
 
-   .backpack-upptackarbok {
+.backpack-upptackarbok {
 
     left: calc(58% + clamp(0px, 3.5vw, 28px));
 
-    top: calc(37% + clamp(0px, 0.35vh, 3px));
+    top: calc(37% + clamp(0px, 0.9vh, 7px));
 
 }
 
