@@ -549,3 +549,83 @@
     width: clamp(120px, 30.77vw, 199px);
 
 }
+
+/* ========================================
+   RESPONSIV RYGGSÄCK
+   Positionsjustering för större skärmar
+======================================== */
+
+
+/*
+   Bokgruppen
+   Receptbok + sagobok + faktabok
+*/
+
+@media (min-width: 501px) {
+
+    .backpack-receptbok {
+
+        left: calc(24% + clamp(0px, 1.3vw, 10px));
+
+    }
+
+
+    .backpack-sagobok {
+
+        left: calc(12% + clamp(0px, 1.3vw, 10px));
+
+    }
+
+
+    .backpack-faktabok {
+
+        left: calc(38% + clamp(0px, 1.3vw, 10px));
+
+    }
+
+
+    /*
+       Upptäckarboken
+    */
+
+    .backpack-upptackarbok {
+
+        left: calc(58% + clamp(0px, 1.3vw, 10px));
+
+    }
+
+
+    /*
+       Läsarmärke
+    */
+
+    .backpack-marke-gralasar {
+
+        left: calc(37% + clamp(0px, 0.8vw, 6px));
+
+    }
+
+
+    /*
+       Skapar- och upptäckarmärke
+       Lite inåt + lite nedåt
+    */
+
+    .backpack-marke-graskapar {
+
+        left: calc(75% - clamp(0px, 0.9vw, 7px));
+
+        top: calc(8% + clamp(0px, 0.4vh, 4px));
+
+    }
+
+
+    .backpack-marke-graupptackar {
+
+        left: calc(84% - clamp(0px, 0.9vw, 7px));
+
+        top: calc(13% + clamp(0px, 0.4vh, 4px));
+
+    }
+
+}
