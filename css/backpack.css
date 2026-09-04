@@ -574,7 +574,7 @@
 
 .backpack-receptbok {
 
-    left: calc(24% + clamp(0px, 7vw, 55px));
+    left: calc(24% + clamp(0px, 7vw, 55px) + 10px);
 
     top: calc(24% + 5px);
 
