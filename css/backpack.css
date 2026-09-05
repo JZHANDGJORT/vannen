@@ -674,34 +674,3 @@
 
 }
 
- /*
-    Pixel – flytta utvalda föremål ca 0,5 cm nedåt
- */
-
-@media (min-width: 400px) and (max-width: 500px) {
-
-    .backpack-receptbok {
-        top: calc(24% + 5px + 14px);
-    }
-
-    .backpack-sagobok {
-        top: calc(34% + 14px);
-    }
-
-    .backpack-faktabok {
-        top: calc(41.5% + 14px);
-    }
-
-    .backpack-upptackarbok {
-        top: calc(37% + 7px + 14px);
-    }
-
-    .backpack-heartstone {
-        top: calc(52% - 3px + 14px);
-    }
-
-    .backpack-oaktwig {
-        top: calc(46.5% + 14px);
-    }
-
-}
