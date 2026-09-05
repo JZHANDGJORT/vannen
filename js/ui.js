@@ -1356,24 +1356,18 @@ function discoverBody(activity) {
     const ideas = {
 
         movement: [
-
-            "🚶 Ta en liten promenad och känn hur fötterna rör sig när du går.",
-
-            "🦵 Gör 10 knäböj. Känn hur benen arbetar när du böjer och sträcker dem.",
-
-            "👣 Ställ dig på tå 10 gånger. Hur känns det i fötterna och benen?",
-
-            "🦩 Stå på ett ben så länge du kan. Hur länge kan kroppen hålla balansen?",
-
-            "🐸 Hoppa som en groda 5 gånger. Känn hur hela kroppen får följa med.",
-
-            "🙆 Sträck armarna upp och ner 10 gånger. Kan du göra det långsamt?",
-
-            "🔄 Snurra runt tre gånger och stanna sedan helt stilla. Känns det annorlunda i kroppen?",
-
-            "🎵 Sätt på din favoritlåt och dansa! Hur känns det i kroppen när du rör dig till musiken?"
-        ],
-
+    "🚶 Ta en liten promenad och känn hur fötterna rör sig när du går.",
+    "🦵 Gör 10 knäböj. Känn hur benen arbetar när du böjer och sträcker dem.",
+    "👣 Ställ dig på tå 10 gånger. Hur känns det i fötterna och benen?",
+    "🦩 Stå på ett ben så länge du kan. Hur länge kan kroppen hålla balansen?",
+    "🐸 Hoppa som en groda 5 gånger. Känn hur hela kroppen får följa med.",
+    "🙆 Sträck armarna upp och ner 10 gånger. Kan du göra det långsamt?",
+    "🔄 Snurra runt tre gånger och stanna sedan helt stilla. Känns det annorlunda i kroppen?",
+    "🎵 Sätt på din favoritlåt och dansa! Hur känns det i kroppen när du rör dig till musiken?",
+    "⚽ Kasta en boll upp i luften och fånga den igen. Kan du hitta på olika sätt att kasta och fånga?",
+    "⚽ Rulla eller studsa en boll mot en vägg och fånga den när den kommer tillbaka. Välj en vägg som är fri från ömtåliga saker.",
+    "🎯 Välj något som mål och se hur nära du kan rulla, sparka eller kasta bollen."
+],
 
         stretch: [
 
