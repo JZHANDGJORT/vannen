@@ -432,142 +432,101 @@
 }
 
 /* ========================================
-   RESPONSIV RYGGSÄCK
-   Gemensam skalning med clamp()
-======================================== */
-/*
-   MÄRKEN
-*/
-.backpack-marke-gralasar,
-.backpack-marke-grarakne,
-.backpack-marke-graskapar,
-.backpack-marke-graupptackar {
-    width: clamp(70px, 17.95vw, 110px);
-}
-/*
-   UPPTÄCKARBOK
-*/
-.backpack-upptackarbok {
-    width: clamp(150px, 38.46vw, 225px);
-}
-/*
-   RECEPTBOK
-*/
-.backpack-receptbok {
-    width: clamp(210px, 53.85vw, 330px);
-}
-/*
-   SAGOBOK
-*/
-.backpack-sagobok {
-    width: clamp(180px, 46.15vw, 286px);
-}
-/*
-   FAKTABOK
-*/
-.backpack-faktabok {
-    width: clamp(140px, 35.90vw, 232px);
-}
-/*
-   FOTOALBUM
-*/
-.backpack-fotoalbum {
-    width: clamp(150px, 38.46vw, 253px);
-}
-/*
-   SVART STEN
-*/
-.backpack-blackstone {
-    width: clamp(90px, 23.08vw, 156px);
-}
-/*
-   HJÄRTSTEN
-*/
-.backpack-heartstone {
-    width: clamp(120px, 30.77vw, 205px);
-}
-/*
-   SNIGELSNÄCKA
-*/
-.backpack-shell {
-    width: clamp(90px, 23.08vw, 151px);
-}
-/*
-   EKKVISTAR
-*/
-.backpack-oaktwig,
-.backpack-oaktwig2 {
-    width: clamp(120px, 30.77vw, 199px);
-}
-/* ========================================
    POSITIONER PÅ STÖRRE SKÄRMAR
 ======================================== */
+
 @media (min-width: 501px) {
+
     /*
        RECEPTBOK
     */
+
     .backpack-receptbok {
         left: calc(24% + clamp(0px, 7vw, 55px) + 10px);
-        top: calc(24% + 5px + clamp(0px, 1.2vh, 20px));
+        top: calc(24% + 5px);
     }
+
+
     /*
        SAGOBOK
     */
+
     .backpack-sagobok {
         left: calc(12% + clamp(0px, 3vw, 24px) + 5px);
-        top: calc(34% + clamp(0px, 1.2vh, 20px));
     }
+
+
     /*
        FAKTABOK
     */
+
     .backpack-faktabok {
         left: calc(38% + clamp(0px, 3vw, 24px));
-        top: calc(41.5% + clamp(0px, 1.2vh, 20px));
     }
+
+
     /*
        UPPTÄCKARBOK
     */
+
     .backpack-upptackarbok {
         left: calc(58% + clamp(0px, 3.5vw, 28px) - 5px);
-        top: calc(37% + clamp(0px, 0.9vh, 7px) + 7px + clamp(0px, 1.2vh, 20px));
+        top: calc(37% + clamp(0px, 0.9vh, 7px) + 7px);
     }
+
+
     /*
        LÄSARMÄRKE
     */
+
     .backpack-marke-gralasar {
         left: calc(37% + clamp(0px, 1.8vw, 14px));
     }
+
+
     /*
        SKAPARMÄRKE
     */
+
     .backpack-marke-graskapar {
         left: calc(75% - clamp(0px, 2vw, 16px));
         top: calc(8% + clamp(0px, 0.9vh, 8px));
     }
+
+
     /*
        UPPTÄCKARMÄRKE
     */
+
     .backpack-marke-graupptackar {
         left: calc(84% - clamp(0px, 2.7vw, 22px) - 3px);
         top: calc(13% + clamp(0px, 0.9vh, 8px));
     }
+
+
     /*
        HJÄRTSTEN
     */
+
     .backpack-heartstone {
-        top: calc(52% - 3px + clamp(0px, 1.2vh, 20px));
+        top: calc(52% - 3px);
     }
+
+
     /*
        VÄNSTRA EKKVISTEN
     */
+
     .backpack-oaktwig {
         left: calc(13% + 15px);
-        top: calc(46.5% + clamp(0px, 1.2vh, 20px));
     }
+
+
     /*
        HÖGRA EKKVISTEN
        Ska inte flyttas
     */
+
     .backpack-oaktwig2 {
         top: 35%;
     }
