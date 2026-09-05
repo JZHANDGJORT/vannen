@@ -864,10 +864,27 @@ style="display:none;">
 
 <div id="device-info"></div>
 
+<style>
+#device-info {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 99999;
+    background: white;
+    color: black;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+</style>
+
 <script>
 function showDeviceInfo() {
     document.getElementById("device-info").innerHTML = `
-        <strong>Enhetsinfo</strong><br>
+        <strong>ENHETSINFO</strong><br>
         Bredd: ${window.innerWidth}px<br>
         Höjd: ${window.innerHeight}px<br>
         DPR: ${window.devicePixelRatio}<br>
