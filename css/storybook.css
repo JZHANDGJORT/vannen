@@ -917,3 +917,46 @@
     }
 
 }
+
+/* ========================================
+   PIXEL 8 PRO
+======================================== */
+@media (min-width: 440px) and (max-width: 455px)
+       and (min-height: 850px) and (max-height: 880px) {
+    /*
+       TOP → NED
+    */
+    #storybook-title {
+        top: calc(15.5% + 38px);
+    }
+    #storybook-title.chapter-title-left {
+        top: calc(15.5% + 38px);
+    }
+    .story-text-left {
+        top: calc(16% + 38px);
+    }
+    .story-text-right {
+        top: calc(16% + 38px);
+    }
+    .chapter-image {
+        top: calc(26.5% + 38px);
+    }
+    .chapter-image-left {
+        top: calc(24% + 38px);
+    }
+    /*
+       BOTTOM → UPP
+    */
+    .chapter-text {
+        bottom: calc(21% + 38px);
+    }
+    .chapter-text-left {
+        bottom: calc(18% + 38px);
+    }
+    .story-image-left {
+        bottom: calc(18.5% + 38px);
+    }
+    .story-image-right {
+        bottom: calc(21% + 38px);
+    }
+}
