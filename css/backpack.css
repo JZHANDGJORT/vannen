@@ -674,48 +674,34 @@
 
 }
 
-/*
-   Bakgrund på smala/höga skärmar
-*/
+ /*
+    Pixel – flytta utvalda föremål ca 0,5 cm nedåt
+ */
 
-@media (min-width: 501px) and (max-aspect-ratio: 9/19) {
-
-    #backpack-world {
-
-        width: 105%;
-
-        height: 100vh;
-
-        margin-left: -2.5%;
-
-    }
-
-}
-
-@media (min-width: 501px) and (max-aspect-ratio: 9/19) {
+@media (min-width: 400px) and (max-width: 500px) {
 
     .backpack-receptbok {
-        top: calc(24% + 5px + 5px);
+        top: calc(24% + 5px + 14px);
     }
 
-    .backpack-upptackarbok {
-        top: calc(37% + clamp(0px, 0.9vh, 7px) + 7px + 5px);
-    }
-
-    .backpack-fotoalbum {
-        top: calc(66% + 5px);
+    .backpack-sagobok {
+        top: calc(34% + 14px);
     }
 
     .backpack-faktabok {
-        top: calc(41.5% + 5px);
+        top: calc(41.5% + 14px);
     }
 
-    .backpack-oaktwig {
-        top: calc(46.5% + 5px);
+    .backpack-upptackarbok {
+        top: calc(37% + 7px + 14px);
     }
 
     .backpack-heartstone {
-        top: calc(52% - 3px + 5px);
+        top: calc(52% - 3px + 14px);
+    }
+
+    .backpack-oaktwig {
+        top: calc(46.5% + 14px);
     }
 
 }
