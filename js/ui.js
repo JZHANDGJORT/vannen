@@ -1255,14 +1255,12 @@ function discoverWorld(type) {
     const ideas = {
 
         nature: [
-
-            "🌿 Hitta ett löv du tycker är extra fint.",
-
-            "🐦 Lyssna efter tre olika fågelläten.",
-
-            "🪨 Hitta en sten som känns speciell."
-
-        ],
+    "🌿 Hitta ett löv du tycker är extra fint.",
+    "🐦 Lyssna efter tre olika fågelläten.",
+    "🪨 Hitta en sten som känns speciell.",
+    "🎨 Hitta något i naturen du kan måla med, till exempel ett löv, en blomma eller ett bär.",
+    "🪨 Hitta en sten och fundera på vad den liknar. Måla den sedan som det du ser."
+],
 
         place: [
 
