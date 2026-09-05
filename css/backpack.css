@@ -501,35 +501,35 @@
 }
 /* ========================================
    POSITIONER PÅ STÖRRE SKÄRMAR
-   ======================================== */
+======================================== */
 @media (min-width: 501px) {
     /*
        RECEPTBOK
     */
     .backpack-receptbok {
         left: calc(24% + clamp(0px, 7vw, 55px) + 10px);
-        top: calc(24% + 5px + clamp(0px, 0.8vh, 14px));
+        top: calc(24% + 5px + clamp(0px, 1.2vh, 20px));
     }
     /*
        SAGOBOK
     */
     .backpack-sagobok {
         left: calc(12% + clamp(0px, 3vw, 24px) + 5px);
-        top: calc(34% + clamp(0px, 0.8vh, 14px));
+        top: calc(34% + clamp(0px, 1.2vh, 20px));
     }
     /*
        FAKTABOK
     */
     .backpack-faktabok {
         left: calc(38% + clamp(0px, 3vw, 24px));
-        top: calc(41.5% + clamp(0px, 0.8vh, 14px));
+        top: calc(41.5% + clamp(0px, 1.2vh, 20px));
     }
     /*
        UPPTÄCKARBOK
     */
     .backpack-upptackarbok {
         left: calc(58% + clamp(0px, 3.5vw, 28px) - 5px);
-        top: calc(37% + clamp(0px, 0.9vh, 7px) + 7px + clamp(0px, 0.8vh, 14px));
+        top: calc(37% + clamp(0px, 0.9vh, 7px) + 7px + clamp(0px, 1.2vh, 20px));
     }
     /*
        LÄSARMÄRKE
@@ -555,14 +555,14 @@
        HJÄRTSTEN
     */
     .backpack-heartstone {
-        top: calc(52% - 3px + clamp(0px, 0.8vh, 14px));
+        top: calc(52% - 3px + clamp(0px, 1.2vh, 20px));
     }
     /*
        VÄNSTRA EKKVISTEN
     */
     .backpack-oaktwig {
         left: calc(13% + 15px);
-        top: calc(46.5% + clamp(0px, 0.8vh, 14px));
+        top: calc(46.5% + clamp(0px, 1.2vh, 20px));
     }
     /*
        HÖGRA EKKVISTEN
