@@ -661,3 +661,16 @@
     }
 
 }
+
+/* ========================================
+   PIXEL 8 PRO
+======================================== */
+
+@media (min-width: 440px) and (max-width: 455px)
+       and (min-height: 850px) and (max-height: 880px) {
+
+    .recipe-image-right {
+        width: calc(93% - 76px) !important;
+    }
+
+}
