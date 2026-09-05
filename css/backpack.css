@@ -722,11 +722,10 @@
     }
 
 
-    .backpack-marke-graskapar {
-
-        left: calc(75% + 12px);
-
-    }
+.backpack-marke-graskapar {
+    left: calc(75% + 12px);
+    top: calc(8% + 13px);
+}
 
     .backpack-marke-graupptackar {
 
