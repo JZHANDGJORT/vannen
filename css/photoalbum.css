@@ -354,3 +354,45 @@
     }
 
 }
+
+/* ========================================
+   PIXEL 8 PRO
+======================================== */
+
+@media (min-width: 440px) and (max-width: 455px)
+       and (min-height: 850px) and (max-height: 880px) {
+
+    /*
+       VÄNSTERSIDA → HÖGER ca 1 cm
+    */
+
+    .photoalbum-page-left-photo-01 {
+        left: calc(15% + 38px);
+    }
+
+    .photoalbum-page-left-photo-02 {
+        left: calc(39% + 38px);
+    }
+
+    .photoalbum-page-left-photo-03 {
+        left: calc(18% + 38px);
+    }
+
+
+    /*
+       HÖGERSIDA → HÖGER ca 0,5 cm
+    */
+
+    .photoalbum-page-right-photo-01 {
+        left: calc(15% + 19px);
+    }
+
+    .photoalbum-page-right-photo-02 {
+        left: calc(40.5% + 19px);
+    }
+
+    .photoalbum-page-right-photo-03 {
+        left: calc(18% + 19px);
+    }
+
+}
