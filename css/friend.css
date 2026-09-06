@@ -491,3 +491,15 @@
 
 }
 
+
+/*
+   Microsoft Edge på iOS
+   Edge ger 40px mindre viewporthöjd än Safari.
+   Eftersom Otis värld är 150vh kompenseras detta med 60px.
+*/
+
+.ios-edge #friend-world {
+    height: calc(150vh + 60px);
+}
+
+
