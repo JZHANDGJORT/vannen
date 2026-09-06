@@ -3268,3 +3268,27 @@ if (document.readyState === "loading") {
 
 }
 
+
+/*
+   Korrigering för Microsoft Edge på iOS
+*/
+
+function detectIosEdge() {
+
+    const isIos =
+        /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    const isEdge =
+        /EdgiOS/i.test(navigator.userAgent);
+
+    if (isIos && isEdge) {
+        document.documentElement.classList.add("ios-edge");
+    }
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", detectIosEdge);
+} else {
+    detectIosEdge();
+}
+
