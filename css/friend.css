@@ -492,14 +492,3 @@
 }
 
 
-/*
-   Microsoft Edge på iOS
-   Skala Otis-ytan något när Edge har mindre
-   vertikalt utrymme än vår referens.
-*/
-
-.ios-edge #otis-foreground {
-    transform: scale(0.97);
-    transform-origin: top center;
-}
-
