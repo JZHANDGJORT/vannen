@@ -675,11 +675,11 @@
        and (min-height: 850px) and (max-height: 880px) {
 
     .discover-image-left {
-        bottom: calc(17% + 76px);
+        bottom: calc(17% + 46px);
     }
 
     .discover-image-right {
-        bottom: calc(17% + 76px);
+        bottom: calc(17% + 46px);
     }
 
 }
