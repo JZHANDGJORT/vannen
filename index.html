@@ -862,58 +862,6 @@ style="display:none;">
 <script src="js/app.js"></script>
 
 
- <!-- TEMPORÄR DIAGNOSTIKRUTA – iPhone 17 Edge -->
-
-<div id="otis-debug-info">
-    <strong>OTIS RESPONSIVITET – DIAGNOSTIK</strong>
-    <div id="debug-content">Laddar...</div>
-</div>
-
-<script>
-(function () {
-
-    function updateDebugInfo() {
-
-        const vv = window.visualViewport;
-
-        const info = {
-            "Browser": navigator.userAgent,
-            "Window width": window.innerWidth,
-            "Window height": window.innerHeight,
-            "Document width": document.documentElement.clientWidth,
-            "Document height": document.documentElement.clientHeight,
-            "Screen width": screen.width,
-            "Screen height": screen.height,
-            "Device pixel ratio": window.devicePixelRatio,
-            "Visual viewport width": vv ? vv.width : "–",
-            "Visual viewport height": vv ? vv.height : "–",
-            "Visual viewport scale": vv ? vv.scale : "–",
-            "Orientation": screen.orientation
-                ? screen.orientation.type
-                : "–"
-        };
-
-        let html = "";
-
-        for (const [key, value] of Object.entries(info)) {
-            html += `<div><b>${key}:</b> ${value}</div>`;
-        }
-
-        document.getElementById("debug-content").innerHTML = html;
-    }
-
-    updateDebugInfo();
-
-    window.addEventListener("resize", updateDebugInfo);
-
-    if (window.visualViewport) {
-        window.visualViewport.addEventListener("resize", updateDebugInfo);
-        window.visualViewport.addEventListener("scroll", updateDebugInfo);
-    }
-
-})();
-</script>
-
 </body>   
 
 
