@@ -457,7 +457,7 @@ Grävlingar
 
 <p>När det börjar bli mörkt lämnar den ofta sitt gryt för att leta efter mat.</p>
 
-<p>Grävlingen har ett bra luktsinne som hjälper den att hitta sådant som gömmer sig i marken.</p>
+<p>Grävlingen har ett väldigt bra luktsinne och kan känna dofter på långt håll.</p>
 `,
 
             imageClass:
