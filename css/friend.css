@@ -497,9 +497,17 @@
    Edge ger 40px mindre viewporthöjd än Safari.
 */
 
-.ios-edge #otis-stage {
+.ios-edge #friend-world {
+    transform: none;
+}
+.ios-edge #friend-character,
+.ios-edge #friend-character-face,
+.ios-edge #friend-stone,
+.ios-edge #friend-bubble,
+.ios-edge #friend-overlay,
+.ios-edge #backpack,
+.ios-edge #actions {
     transform: scale(0.97);
-    transform-origin: top center;
 }
 
 
