@@ -181,7 +181,7 @@
 
     .compact-height #chat {
 
-        margin-top: clamp(-870px, -64vh, -500px);
+        margin-top: clamp(-882px, -64vh, -512px);
 
     }
 
