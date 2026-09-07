@@ -683,3 +683,19 @@
     }
 
 }
+
+
+/* ========================================
+   KOMPAKT LAYOUT – UPPTÄCKARBOK
+   Höger bild 0,5 cm smalare
+   och 0,5 cm åt höger
+======================================== */
+
+@media (max-width: 500px) {
+
+    .compact-height .discover-image-right {
+        width: calc(82% - 5px) !important;
+        left: calc(8% + 5px);
+    }
+
+}
