@@ -65,3 +65,22 @@
     }
 
 }
+
+/* ========================================
+   KOMPAKT LAYOUT
+   Skärmar kortare än referenshöjden
+======================================== */
+
+@media (max-width: 500px) {
+
+    /*
+       TIMER
+    */
+
+    .compact-height #activity-timer {
+
+        transform: translateY(clamp(-882px, -64vh, -512px));
+
+    }
+
+}
