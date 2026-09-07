@@ -688,7 +688,7 @@
 @media (max-width: 500px) {
 
     .compact-height .recipe-image-right {
-        left: calc(1% + 10px);
+        left: calc(1% + 15px);
     }
 
 }
