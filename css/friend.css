@@ -496,15 +496,15 @@
    Skärmar kortare än referenshöjden
 ======================================== */
 
-@media (max-width: 500px) and (max-height: 698px) {
+@media (max-width: 500px) {
 
     /*
        OTIS
     */
 
-    #friend-character,
-    #friend-stone,
-    #friend-character-face {
+    .compact-height #friend-character,
+    .compact-height #friend-stone,
+    .compact-height #friend-character-face {
 
         width: 250px;
 
@@ -515,7 +515,7 @@
        RYGGSÄCK
     */
 
-    #backpack {
+    .compact-height #backpack {
 
         width: 95px;
 
@@ -523,13 +523,14 @@
 
 }
 
+
 /* ========================================
    KOMPAKT LAYOUT – AKTIVITETSKNAPPAR
 ======================================== */
 
-@media (max-width: 500px) and (max-height: 698px) {
+@media (max-width: 500px) {
 
-    #actions {
+    .compact-height #actions {
 
         transform: translateY(clamp(-870px, -64vh, -500px));
 
