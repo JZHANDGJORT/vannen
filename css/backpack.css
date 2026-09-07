@@ -794,3 +794,21 @@
     }
 
 }
+
+@media (max-width: 500px) {
+
+    .compact-height .backpack-marke-gralasar {
+        left: calc(37% + 1px);
+    }
+
+    .compact-height .backpack-marke-graskapar {
+        left: calc(75% - 2px);
+        top: calc(8% + 1px);
+    }
+
+    .compact-height .backpack-marke-graupptackar {
+        left: calc(84% - 2px);
+        top: calc(13% + 1px);
+    }
+
+}
