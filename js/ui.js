@@ -3287,18 +3287,18 @@ if (document.readyState === "loading") {
             const timer = document.getElementById("activity-timer");
 
             if (actions) {
-                const transform = getComputedStyle(actions).transform;
-                actions.style.transform = transform;
+                actions.style.transform =
+                    getComputedStyle(actions).transform;
             }
 
             if (chat) {
-                const marginTop = getComputedStyle(chat).marginTop;
-                chat.style.marginTop = marginTop;
+                chat.style.marginTop =
+                    getComputedStyle(chat).marginTop;
             }
 
             if (timer) {
-                const transform = getComputedStyle(timer).transform;
-                timer.style.transform = transform;
+                timer.style.transform =
+                    getComputedStyle(timer).transform;
             }
 
         });
