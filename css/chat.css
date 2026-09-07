@@ -167,3 +167,22 @@
     }
 
 }
+
+/* ========================================
+   KOMPAKT LAYOUT
+   Skärmar kortare än referenshöjden
+======================================== */
+
+@media (max-width: 500px) {
+
+    /*
+       CHATT
+    */
+
+    .compact-height #chat {
+
+        margin-top: clamp(-870px, -64vh, -500px);
+
+    }
+
+}
