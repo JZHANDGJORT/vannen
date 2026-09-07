@@ -522,3 +522,17 @@
     }
 
 }
+
+/* ========================================
+   KOMPAKT LAYOUT – AKTIVITETSKNAPPAR
+======================================== */
+
+@media (max-width: 500px) and (max-height: 698px) {
+
+    #actions {
+
+        transform: translateY(clamp(-935px, -74vh, -565px));
+
+    }
+
+}
