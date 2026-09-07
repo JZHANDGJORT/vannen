@@ -396,3 +396,17 @@
     }
 
 }
+
+ /* ========================================
+    KOMPAKT LAYOUT – FOTOALBUM
+    Polaroider 85 % av normal storlek
+ ======================================== */
+
+ @media (max-width: 500px) {
+
+     .compact-height .photoalbum-photo {
+         width: 36.55%;
+     }
+
+ }
+
