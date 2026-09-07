@@ -811,4 +811,28 @@
         top: calc(13% + 1px);
     }
 
+       .compact-height .backpack-sagobok {
+
+        left: calc(12% + 2px);
+
+    }
+
+    .compact-height .backpack-faktabok {
+
+        left: calc(38% + 2px);
+
+    }
+
+    .compact-height .backpack-heartstone {
+
+        left: calc(28% + 2px);
+
+    }
+
+    .compact-height .backpack-oaktwig {
+
+        left: calc(13% + 2px);
+
+    }
+
 }
