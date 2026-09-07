@@ -3280,18 +3280,28 @@ if (document.readyState === "loading") {
 
         document.documentElement.classList.add("compact-height");
 
-        const compactOffset = Math.max(
-            -882,
-            Math.min(
-                -512,
-                -window.innerHeight * 0.64
-            )
-        );
+        requestAnimationFrame(function () {
 
-        document.documentElement.style.setProperty(
-            "--compact-offset",
-            `${compactOffset}px`
-        );
+            const actions = document.getElementById("actions");
+            const chat = document.getElementById("chat");
+            const timer = document.getElementById("activity-timer");
+
+            if (actions) {
+                const transform = getComputedStyle(actions).transform;
+                actions.style.transform = transform;
+            }
+
+            if (chat) {
+                const marginTop = getComputedStyle(chat).marginTop;
+                chat.style.marginTop = marginTop;
+            }
+
+            if (timer) {
+                const transform = getComputedStyle(timer).transform;
+                timer.style.transform = transform;
+            }
+
+        });
 
     }
 
