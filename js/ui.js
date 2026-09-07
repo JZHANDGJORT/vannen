@@ -3269,4 +3269,18 @@ if (document.readyState === "loading") {
 }
 
 
+/* ========================================
+   KOMPAKT LAYOUT
+   Lås läget vid sidans start
+======================================== */
+
+(function () {
+
+    if (window.innerHeight <= 698) {
+
+        document.documentElement.classList.add("compact-height");
+
+    }
+
+})();
 
