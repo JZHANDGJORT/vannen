@@ -530,10 +530,10 @@
 
 @media (max-width: 500px) {
 
-    .compact-height #actions {
+  .compact-height #actions {
 
-        transform: translateY(clamp(-870px, -64vh, -500px));
+    transform: translateY(clamp(-874px, -64vh, -504px));
 
-    }
+}
 
 }
