@@ -8,29 +8,29 @@
 
     <title>Vännen</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+<!-- CSS -->
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/friend.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/chat.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/themes.css">
-    <link rel="stylesheet" href="css/activities.css">
-    <link rel="stylesheet" href="css/backpack.css">
-    <link rel="stylesheet" href="css/storybook.css">
-    <link rel="stylesheet" href="css/factbook.css">
-    <link rel="stylesheet" href="css/recipebook.css">
-    <link rel="stylesheet" href="css/discoverbook.css">
-    <link rel="stylesheet" href="css/photoalbum.css">
-
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/friend.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/activities.css">
+<link rel="stylesheet" href="css/backpack.css">
+<link rel="stylesheet" href="css/storybook.css">
+<link rel="stylesheet" href="css/factbook.css">
+<link rel="stylesheet" href="css/recipebook.css">
+<link rel="stylesheet" href="css/discoverbook.css">
+<link rel="stylesheet" href="css/photoalbum.css"> 
+    
 </head>
 
 
@@ -101,23 +101,8 @@ på sitt eget sätt.
 
 <!-- VÄNSIDA -->
 
+
 <section id="friend-view" style="display:none;">
-
-
-<!-- OTIS SCEN -->
-
-<div id="otis-stage">
-
-
-<!-- BAKGRUND – SKA INTE SKALAS -->
-
-<img id="friend-world" src="" alt="">
-
-
-
-<!-- FÖRGRUND SOM KAN SKALAS -->
-
-<div id="otis-foreground">
 
 
 <div class="top-buttons">
@@ -132,12 +117,11 @@ Om oss ♡
 👋 Hej då
 </button>
 
+    <button
+    id="evening-button"
+    onclick="startEveningWithOtis()">
 
-<button
-id="evening-button"
-onclick="startEveningWithOtis()">
-
-🌙 Kväll med Otis
+    🌙 Kväll med Otis
 
 </button>
 
@@ -146,7 +130,15 @@ onclick="startEveningWithOtis()">
 
 
 
+<!-- OTIS SCEN -->
+
+<div id="otis-stage">
+
+
 <header id="friend-profile">
+
+
+<img id="friend-world" src="" alt="">
 
 
 <img id="friend-stone" src="images/Otis/otis-stone.PNG" alt="">
@@ -199,8 +191,6 @@ alt="Otis ryggsäck">
 
 </div>
 
-</div>
-
 
 
 
@@ -217,6 +207,7 @@ Otis är här med dig under tiden 🌿
 
 
 </div>
+
 
 
 
@@ -586,21 +577,20 @@ style="display:none;">
     </div>
 
     <button
-    id="factbook-read"
-    class="storybook-read-button"
-    onclick="factBookReadingDone()"
-    style="display:none;">
+id="factbook-read"
+class="storybook-read-button"
+onclick="factBookReadingDone()"
+style="display:none;">
 
-    🔍 Vi har upptäckt något nytt
+🔍 Vi har upptäckt något nytt
 
-    </button>
+</button>
 
     <button id="factbook-next" onclick="changeFactPage(1)">
         →
     </button>
 
 </section>
-
 
 <!-- RECEPTBOK -->
 
@@ -637,33 +627,33 @@ style="display:none;">
     <div id="recipebook-text"></div>
 
 
-    <div id="recipebook-content">
+<div id="recipebook-content">
 
-        <h1>Innehåll</h1>
-
-
-        <h2>Mellanmål</h2>
-
-        <button onclick="goToBookPage(2)">
-            <span>Bosses Pannkaksbröd</span>
-        </button>
-
-        <button onclick="goToBookPage(4)">
-            <span>Kaneläpplen</span>
-        </button>
+    <h1>Innehåll</h1>
 
 
-        <h2>Fika</h2>
+    <h2>Mellanmål</h2>
 
-        <button onclick="goToBookPage(1)">
-            <span>Otis Kryddmuffins</span>
-        </button>
+    <button onclick="goToBookPage(2)">
+        <span>Bosses Pannkaksbröd</span>
+    </button>
 
-        <button onclick="goToBookPage(3)">
-            <span>Ananas- och mangoglass</span>
-        </button>
+    <button onclick="goToBookPage(4)">
+        <span>Kaneläpplen</span>
+    </button>
 
-    </div>
+
+    <h2>Fika</h2>
+
+    <button onclick="goToBookPage(1)">
+        <span>Otis Kryddmuffins</span>
+    </button>
+
+    <button onclick="goToBookPage(3)">
+        <span>Ananas- och mangoglass</span>
+    </button>
+
+</div>
 
 
     <button id="recipebook-next" onclick="changeBookPage(1)">
@@ -672,8 +662,7 @@ style="display:none;">
 
 </section>
 
-
-<!-- UPPTÄCKARBOK -->
+    <!-- UPPTÄCKARBOK -->
 
 <section id="discoverbook" style="display:none;">
 
@@ -713,24 +702,26 @@ style="display:none;">
         <h1>Innehåll</h1>
 
         <button onclick="goToBookPage(1)">
-            <span>Trolldeg</span>
+        <span>Trolldeg</span>
         </button>
 
-        <button onclick="goToBookPage(2)">
-            <span>Studsbubblor</span>
+       <button onclick="goToBookPage(2)">
+       <span>Studsbubblor</span>
         </button>
 
         <button onclick="goToBookPage(3)">
-            <span>Klisterballonger</span>
+       <span>Klisterballonger</span>
         </button>
 
         <button onclick="goToBookPage(4)">
-            <span>Vänskapsarmband</span>
+       <span>Vänskapsarmband</span>
         </button>
 
+        
         <button onclick="goToBookPage(5)">
-            <span>Odla ärtskott</span>
+       <span>Odla ärtskott</span>
         </button>
+
 
     </div>
 
@@ -741,8 +732,7 @@ style="display:none;">
 
 </section>
 
-
-<!-- FOTOALBUM -->
+    <!-- FOTOALBUM -->
 
 <section id="photoalbum" style="display:none;">
 
@@ -855,7 +845,7 @@ style="display:none;">
 <script src="js/factbook.js"></script>
 
 <script src="js/recipebook.js"></script>
-
+    
 <script src="js/discoverbook.js"></script>
 
 <script src="js/photoalbum.js"></script>
@@ -870,6 +860,8 @@ style="display:none;">
 <script src="js/ui.js"></script>
 
 <script src="js/app.js"></script>
+
+
 
 
 </body>
