@@ -490,3 +490,35 @@
     }
 
 }
+
+/* ========================================
+   KOMPAKT LAYOUT
+   Skärmar kortare än referenshöjden
+======================================== */
+
+@media (max-width: 500px) and (max-height: 698px) {
+
+    /*
+       OTIS
+    */
+
+    #friend-character,
+    #friend-stone,
+    #friend-character-face {
+
+        width: 276px;
+
+    }
+
+
+    /*
+       RYGGSÄCK
+    */
+
+    #backpack {
+
+        width: 110px;
+
+    }
+
+}
