@@ -410,3 +410,31 @@
 
  }
 
+@media (max-width: 500px) {
+
+    .compact-height .photoalbum-page-left-photo-01 {
+        left: calc(15% + 5px);
+    }
+
+    .compact-height .photoalbum-page-left-photo-02 {
+        left: calc(39% + 5px);
+    }
+
+    .compact-height .photoalbum-page-left-photo-03 {
+        left: calc(18% + 5px);
+    }
+
+    .compact-height .photoalbum-page-right-photo-01 {
+        left: calc(15% + 5px);
+    }
+
+    .compact-height .photoalbum-page-right-photo-02 {
+        left: calc(40.5% + 5px);
+    }
+
+    .compact-height .photoalbum-page-right-photo-03 {
+        left: calc(18% + 5px);
+    }
+
+}
+
