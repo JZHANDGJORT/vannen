@@ -682,15 +682,16 @@
 
 /* ========================================
    KOMPAKT LAYOUT – UPPTÄCKARBOK
-   Höger bild 0,5 cm smalare
-   och 0,5 cm åt höger
+   Höger bild ytterligare något mindre
+   och lite längre ned
 ======================================== */
 
 @media (max-width: 500px) {
 
     .compact-height .discover-image-right {
-        width: calc(82% - 5px) !important;
+        width: calc(82% - 10px) !important;
         left: calc(8% + 5px);
+        bottom: calc(17% - 5px);
     }
 
 }
