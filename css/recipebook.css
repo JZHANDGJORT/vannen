@@ -679,3 +679,16 @@
     }
 
 }
+
+/* ========================================
+   KOMPAKT LAYOUT – RECEPTBOK
+   Höger receptbild flyttas 1 cm åt höger
+======================================== */
+
+@media (max-width: 500px) {
+
+    .compact-height .recipe-image-right {
+        left: calc(1% + 10px);
+    }
+
+}
