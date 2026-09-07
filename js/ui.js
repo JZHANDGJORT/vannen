@@ -3280,7 +3280,19 @@ if (document.readyState === "loading") {
 
         document.documentElement.classList.add("compact-height");
 
+        const compactOffset = Math.max(
+            -882,
+            Math.min(
+                -512,
+                -window.innerHeight * 0.64
+            )
+        );
+
+        document.documentElement.style.setProperty(
+            "--compact-offset",
+            `${compactOffset}px`
+        );
+
     }
 
 })();
-
