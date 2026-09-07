@@ -532,7 +532,7 @@
 
 .compact-height #actions {
 
-    transform: translateY(clamp(-878px, -64vh, -508px));
+    transform: translateY(clamp(-882px, -64vh, -512px));
 
 }
 
