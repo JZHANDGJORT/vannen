@@ -744,7 +744,7 @@
 
 /* ========================================
    KOMPAKT LAYOUT – RYGGSÄCK
-   Föremål 95 % av normal storlek
+   Föremål 85 % av normal storlek
 ======================================== */
 
 @media (max-width: 500px) {
@@ -753,44 +753,44 @@
     .compact-height .backpack-marke-grarakne,
     .compact-height .backpack-marke-graskapar,
     .compact-height .backpack-marke-graupptackar {
-        width: clamp(66.5px, 17.05vw, 104.5px);
+        width: clamp(59.5px, 15.26vw, 93.5px);
     }
 
     .compact-height .backpack-upptackarbok {
-        width: clamp(142.5px, 36.54vw, 213.75px);
+        width: clamp(127.5px, 32.69vw, 191.25px);
     }
 
     .compact-height .backpack-receptbok {
-        width: clamp(199.5px, 51.16vw, 313.5px);
+        width: clamp(178.5px, 45.77vw, 280.5px);
     }
 
     .compact-height .backpack-sagobok {
-        width: clamp(171px, 43.84vw, 271.7px);
+        width: clamp(153px, 39.23vw, 243.1px);
     }
 
     .compact-height .backpack-faktabok {
-        width: clamp(133px, 34.11vw, 220.4px);
+        width: clamp(119px, 30.52vw, 197.2px);
     }
 
     .compact-height .backpack-fotoalbum {
-        width: clamp(142.5px, 36.54vw, 240.35px);
+        width: clamp(127.5px, 32.69vw, 215.05px);
     }
 
     .compact-height .backpack-blackstone {
-        width: clamp(85.5px, 21.93vw, 148.2px);
+        width: clamp(76.5px, 19.62vw, 132.6px);
     }
 
     .compact-height .backpack-heartstone {
-        width: clamp(114px, 29.23vw, 194.75px);
+        width: clamp(102px, 26.15vw, 174.25px);
     }
 
     .compact-height .backpack-shell {
-        width: clamp(85.5px, 21.93vw, 143.45px);
+        width: clamp(76.5px, 19.62vw, 128.35px);
     }
 
     .compact-height .backpack-oaktwig,
     .compact-height .backpack-oaktwig2 {
-        width: clamp(114px, 29.23vw, 189.05px);
+        width: clamp(102px, 26.15vw, 169.15px);
     }
 
 }
