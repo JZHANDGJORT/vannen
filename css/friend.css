@@ -531,7 +531,7 @@
 
     #actions {
 
-        transform: translateY(clamp(-935px, -74vh, -565px));
+        transform: translateY(clamp(-870px, -64vh, -500px));
 
     }
 
