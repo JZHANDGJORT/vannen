@@ -960,3 +960,109 @@
         bottom: calc(21% + 38px);
     }
 }
+
+
+/* ========================================
+   KOMPAKT LAYOUT – SAGOBOK
+   Anpassning för kortare skärmar
+======================================== */
+
+@media (max-width: 500px) {
+
+    /*
+       VANLIG BERÄTTELSETEXT
+    */
+
+    .compact-height .story-text-left {
+        left: calc(19% + 5px);
+    }
+
+    .compact-height .story-text-right {
+        left: calc(15% + 15px);
+    }
+
+
+    /*
+       VANLIGA BILDER
+    */
+
+    .compact-height .story-image-left {
+        left: calc(24% + 5px);
+    }
+
+    .compact-height .story-image-right {
+        left: calc(18% + 15px);
+    }
+
+
+    /*
+       KAPITELSTART – BILDER
+    */
+
+    .compact-height .chapter-image {
+        left: calc(18% + 15px);
+    }
+
+    .compact-height .chapter-image-left {
+        left: calc(33% + 5px);
+    }
+
+
+    /*
+       KAPITELSTART – TEXT
+    */
+
+    .compact-height .chapter-text {
+        left: calc(13% + 15px);
+    }
+
+    .compact-height .chapter-text-left {
+        left: calc(19% + 5px);
+    }
+
+
+    /*
+       KAPITELRUBRIK
+    */
+
+    .compact-height #storybook-title.chapter-title-left {
+        left: calc(20% + 5px);
+    }
+
+
+    /*
+       TEXTSTORLEK – HELA SAGOBOKEN
+    */
+
+    .compact-height #storybook-text {
+        font-size: 19px;
+    }
+
+    .compact-height #storybook-title .chapter-number {
+        font-size: 23px;
+    }
+
+    .compact-height #storybook-title .chapter-name {
+        font-size: 21px;
+    }
+
+
+    /*
+       INNEHÅLLSFÖRTECKNING
+       Storlek minskas – placeringen lämnas orörd
+    */
+
+    .compact-height #storybook-content h1 {
+        font-size: 30px;
+    }
+
+    .compact-height #storybook-content button {
+        font-size: 19px;
+    }
+
+    .compact-height #storybook-content span {
+        font-size: 17px;
+    }
+
+}
+
