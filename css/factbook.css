@@ -896,7 +896,7 @@
        BILD – HÖGERSIDA
     */
     .compact-height .fact-image-right {
-        left:calc(13% + 25px);
+        left:calc(13% + 30px);
         width:65%!important;
     }
 
