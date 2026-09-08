@@ -3268,7 +3268,7 @@ if (document.readyState === "loading") {
 
 }
 
-alert("innerHeight: " + window.innerHeight);
+
 /* ========================================
    KOMPAKT LAYOUT
    Lås läget vid sidans start
@@ -3276,7 +3276,7 @@ alert("innerHeight: " + window.innerHeight);
 
 (function () {
 
-    if (window.innerHeight <= 698) {
+    if (window.innerHeight <= 679) {
 
         document.documentElement.classList.add("compact-height");
 
