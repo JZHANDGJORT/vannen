@@ -875,14 +875,14 @@
        TEXT – VÄNSTERSIDA
     */
     .compact-height .fact-text-left {
-        left:calc(19% + 15px);
+        left:calc(19% + 20px);
         width:65%;
     }
     /*
        TEXT – HÖGERSIDA
     */
     .compact-height .fact-text-right {
-        left:calc(13% + 35px);
+        left:calc(13% + 40px);
         width:60%;
     }
     /*
@@ -901,10 +901,10 @@
        KAPITELSTART
     */
     .compact-height .fact-chapter-image {
-        left:calc(18% + 16px);
+        left:calc(18% + 20px);
     }
     .compact-height .fact-chapter-text {
-        left:calc(12.5% + 35px);
+        left:calc(12.5% + 40px);
         width:50%;
     }
     /*
