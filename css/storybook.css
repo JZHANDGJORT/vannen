@@ -1029,6 +1029,10 @@
        KAPITELRUBRIK
     */
 
+    .compact-height #storybook-title {
+        left: calc(12.5% + 15px);
+    }
+
     .compact-height #storybook-title.chapter-title-left {
         left: calc(20% + 5px);
     }
