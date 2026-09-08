@@ -382,6 +382,25 @@
 
 }
 
+/* ========================================
+   STÖRRE MOBILSKÄRMAR
+   Pixel 8 Pro + Samsung S25 Ultra
+======================================== */
+@media (min-width: 440px) and (max-width: 500px)
+       and (min-height: 850px) {
+
+    /* Aktivitetsknappar */
+    #actions {
+        transform: translateY(clamp(-1000px, -84vh, -700px));
+    }
+
+    /* Chatten följer med upp */
+    #chat {
+        margin-top: -900px;
+        transform: translateY(-410px);
+    }
+}
+
 
 /* ========================================
    RESPONSIV OTIS
