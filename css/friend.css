@@ -394,10 +394,10 @@
         transform: translateY(clamp(-1000px, -84vh, -700px));
     }
 
-    /* Chatten följer med upp */
+    /* Chatten – oförändrad */
     #chat {
         margin-top: -900px;
-        transform: translateY(-410px);
+        transform: translateY(-370px);
     }
 }
 
