@@ -899,6 +899,16 @@
         left:calc(13% + 25px);
         width:65%!important;
     }
+
+/*
+   SIDA 6 – STÅENDE BILD
+*/
+
+.compact-height .fact-image-left.page-6 {
+    left:calc(26.5% + 0px);
+    width:55%!important;
+}
+  
     /*
        KAPITELSTART
     */
