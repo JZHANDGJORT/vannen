@@ -974,12 +974,12 @@
     */
 
     .compact-height .story-text-left {
-        left: calc(19% + 5px);
+        left: calc(19% + 8px);
         width: 65%;
     }
 
     .compact-height .story-text-right {
-        left: calc(15% + 15px);
+        left: calc(15% + 23px);
         width: 60%;
     }
 
@@ -993,7 +993,7 @@
     }
 
     .compact-height .story-image-right {
-        left: calc(18% + 15px);
+        left: calc(18% + 18px);
     }
 
 
@@ -1002,7 +1002,7 @@
     */
 
     .compact-height .chapter-image {
-        left: calc(18% + 15px);
+        left: calc(18% + 18px);
     }
 
     .compact-height .chapter-image-left {
@@ -1015,12 +1015,12 @@
     */
 
     .compact-height .chapter-text {
-        left: calc(13% + 15px);
+        left: calc(13% + 25px);
         width: 50%;
     }
 
     .compact-height .chapter-text-left {
-        left: calc(19% + 5px);
+        left: calc(19% + 8px);
         width: 50%;
     }
 
