@@ -905,7 +905,7 @@
 */
 
 .compact-height .fact-image-left.page-6 {
-    left:calc(26.5% + 25px);
+    left:calc(26.5% + 15px);
     width:55%!important;
 }
   
