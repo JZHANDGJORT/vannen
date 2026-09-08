@@ -890,14 +890,14 @@
     */
     .compact-height .fact-image-left {
         left:calc(19% + 5px);
-        width:75%!important;
+        width:70%!important;
     }
     /*
        BILD – HÖGERSIDA
     */
     .compact-height .fact-image-right {
-        left:calc(13% + 20px);
-        width:70%!important;
+        left:calc(13% + 25px);
+        width:65%!important;
     }
     /*
        KAPITELSTART
