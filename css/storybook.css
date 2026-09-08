@@ -975,10 +975,12 @@
 
     .compact-height .story-text-left {
         left: calc(19% + 5px);
+        width: 65%;
     }
 
     .compact-height .story-text-right {
         left: calc(15% + 15px);
+        width: 60%;
     }
 
 
@@ -1014,10 +1016,12 @@
 
     .compact-height .chapter-text {
         left: calc(13% + 15px);
+        width: 50%;
     }
 
     .compact-height .chapter-text-left {
         left: calc(19% + 5px);
+        width: 50%;
     }
 
 
@@ -1065,4 +1069,3 @@
     }
 
 }
-
