@@ -689,9 +689,9 @@
 @media (max-width: 500px) {
 
     .compact-height .discover-image-right {
-        width: calc(82% - 20px) !important;
-        left: calc(8% + 10px);
-        bottom: calc(17% - 10px);
+        width: calc(82% - 30px) !important;
+        left: calc(8% + 15px);
+        bottom: calc(17% - 20px);
     }
 
 }
