@@ -864,3 +864,77 @@
         bottom: calc(21% + 38px);
     }
 }
+
+/* ========================================
+   KOMPAKT LAYOUT – FAKTABOK
+   Anpassning för kortare skärmar
+   Baserad på Sagobokens kompakta layout
+======================================== */
+@media (max-width:500px) {
+    /*
+       TEXT – VÄNSTERSIDA
+    */
+    .compact-height .fact-text-left {
+        left:calc(19% + 15px);
+        width:65%;
+    }
+    /*
+       TEXT – HÖGERSIDA
+    */
+    .compact-height .fact-text-right {
+        left:calc(13% + 35px);
+        width:60%;
+    }
+    /*
+       BILD – VÄNSTERSIDA
+    */
+    .compact-height .fact-image-left {
+        left:calc(19% + 5px);
+    }
+    /*
+       BILD – HÖGERSIDA
+    */
+    .compact-height .fact-image-right {
+        left:calc(13% + 20px);
+    }
+    /*
+       KAPITELSTART
+    */
+    .compact-height .fact-chapter-image {
+        left:calc(18% + 16px);
+    }
+    .compact-height .fact-chapter-text {
+        left:calc(12.5% + 35px);
+        width:50%;
+    }
+    /*
+       KAPITELRUBRIK
+    */
+    .compact-height #factbook-title {
+        left:calc(12.5% + 18px);
+    }
+    /*
+       TEXTSTORLEK
+    */
+    .compact-height #factbook-text {
+        font-size:17px;
+    }
+    .compact-height #factbook-title .chapter-number {
+        font-size:23px;
+    }
+    .compact-height #factbook-title .chapter-name {
+        font-size:21px;
+    }
+    /*
+       INNEHÅLLSFÖRTECKNING
+    */
+    .compact-height #factbook-content h1 {
+        font-size:30px;
+    }
+    .compact-height #factbook-content button {
+        font-size:19px;
+    }
+    .compact-height #factbook-content span {
+        font-size:17px;
+    }
+}
