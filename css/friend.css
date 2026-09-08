@@ -382,24 +382,6 @@
 
 }
 
-/* ========================================
-   STÖRRE MOBILSKÄRMAR
-   Pixel 8 Pro + Samsung S25 Ultra
-======================================== */
-@media (min-width: 440px) and (max-width: 500px)
-       and (min-height: 850px) {
-
-    /* Aktivitetsknappar */
-    #actions {
-        transform: translateY(-500px);
-    }
-    /* Chatten – oförändrad */
-    #chat {
-        margin-top: -900px;
-        transform: translateY(-370px);
-    }
-}
-
 
 /* ========================================
    RESPONSIV OTIS
@@ -554,4 +536,17 @@
 
 }
 
+}
+
+/* ========================================
+   TEST – STÖRRE MOBILSKÄRMAR
+   Pixel 8 Pro + Samsung S25 Ultra
+======================================== */
+@media (min-width: 440px) and (max-width: 500px)
+       and (min-height: 850px) {
+
+    #actions {
+        position: relative;
+        top: -100px;
+    }
 }
