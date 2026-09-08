@@ -690,7 +690,7 @@
 
     .compact-height .discover-image-right {
         width: calc(82% - 30px) !important;
-        left: calc(8% + 15px);
+        left: calc(8% + 18px);
         bottom: calc(17% - 20px);
     }
 
