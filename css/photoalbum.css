@@ -413,27 +413,27 @@
 @media (max-width: 500px) {
 
     .compact-height .photoalbum-page-left-photo-01 {
-        left: calc(15% + 10px);
+        left: calc(15% + 20px);
     }
 
     .compact-height .photoalbum-page-left-photo-02 {
-        left: calc(39% + 10px);
+        left: calc(39% + 20px);
     }
 
     .compact-height .photoalbum-page-left-photo-03 {
-        left: calc(18% + 10px);
+        left: calc(18% + 20px);
     }
 
     .compact-height .photoalbum-page-right-photo-01 {
-        left: calc(15% + 10px);
+        left: calc(15% + 20px);
     }
 
     .compact-height .photoalbum-page-right-photo-02 {
-        left: calc(40.5% + 10px);
+        left: calc(40.5% + 20px);
     }
 
     .compact-height .photoalbum-page-right-photo-03 {
-        left: calc(18% + 10px);
+        left: calc(18% + 20px);
     }
 
 }
