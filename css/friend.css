@@ -391,7 +391,7 @@
 
     /* Aktivitetsknappar */
     #actions {
-        transform: translateY(-750px);
+        transform: translateY(-500px);
     }
     /* Chatten – oförändrad */
     #chat {
