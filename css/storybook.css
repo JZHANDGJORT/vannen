@@ -979,7 +979,7 @@
     }
 
     .compact-height .story-text-right {
-        left: calc(15% + 30px);
+        left: calc(15% + 35px);
         width: 60%;
     }
 
