@@ -383,16 +383,14 @@ function showPresentPerson() {
     const actions =
         document.getElementById("actions");
 
-
     actions.innerHTML = "";
 
-addMessage(
-    "Vem är med dig idag? 💚",
-    "otis"
-);
+    addMessage(
+        "Vem är med dig idag? 💚",
+        currentFriend.id
+    );
 
-
-    otisMemory.friends.forEach((person, index) => {
+    friendMemory.friends.forEach((person, index) => {
 
         actions.innerHTML += `
 
@@ -406,7 +404,6 @@ addMessage(
         `;
 
     });
-
 
     actions.innerHTML += `
 
