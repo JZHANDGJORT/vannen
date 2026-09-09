@@ -139,12 +139,12 @@ function changeName() {
 
 
     const currentName =
-        otisMemory.owner?.name || "";
+        friendMemory.owner?.name || "";
 
 
     addMessage(
         "Vad vill du att jag ska kalla dig? 💚",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -182,7 +182,7 @@ function saveChangedName() {
     if (!name) return;
 
 
-    otisMemory.owner.name =
+    friendMemory.owner.name =
         name;
 
 
@@ -191,7 +191,7 @@ function saveChangedName() {
 
     addMessage(
         `Så fint. Då vet jag att jag ska kalla dig ${name}. 💚`,
-        "otis"
+        currentFriend.id
     );
 
 
