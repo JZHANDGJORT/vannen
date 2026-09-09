@@ -1,5 +1,6 @@
 const friends = [
 
-    otis
+    otis,
+    bosse
 
 ];
