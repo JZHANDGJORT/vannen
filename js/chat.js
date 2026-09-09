@@ -2,7 +2,10 @@ let currentPerson = null;
 
 function addMessage(text, sender) {
 
-    if (sender === "otis") {
+    if (
+        sender === "otis" ||
+        sender === "bosse01"
+    ) {
 
         const bubble =
             document.getElementById("friend-bubble");
@@ -20,6 +23,7 @@ function addMessage(text, sender) {
         checkOtisMood(text);
 
     }
+
 
     const messages =
         document.getElementById("messages");
