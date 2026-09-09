@@ -718,24 +718,24 @@ function forgetCurrentPerson() {
 function showMemoryGreeting() {
 
     const name =
-        otisMemory.owner.name;
+        friendMemory.owner.name;
 
 
-    if (otisMemory.companionToday) {
+    if (friendMemory.companionToday) {
 
         const today =
             new Date().toISOString().split("T")[0];
 
 
-        if (otisMemory.companionToday.date === today) {
+        if (friendMemory.companionToday.date === today) {
 
             const companion =
-                otisMemory.companionToday.name;
+                friendMemory.companionToday.name;
 
 
             addMessage(
-                `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companion}! Jag blev glad att du följde med idag. 🦦`,
-                "otis"
+                `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companion}! Jag blev glad att du följde med idag.`,
+                currentFriend.id
             );
 
 
@@ -747,20 +747,32 @@ function showMemoryGreeting() {
 
 
     const messages =
-    memoryGreetings["otis01"];
+        memoryGreetings[currentFriend.id];
 
 
-const randomMessage =
-    messages[
-        Math.floor(
-            Math.random() * messages.length
-        )
-    ];
+    if (!messages || messages.length === 0) {
+
+        addMessage(
+            `Hej ${name}! 💚 Vad fint att du är här igen.`,
+            currentFriend.id
+        );
+
+        return;
+
+    }
 
 
-addMessage(
-    randomMessage.text.replace("{name}", name),
-    "otis"
-);
+    const randomMessage =
+        messages[
+            Math.floor(
+                Math.random() * messages.length
+            )
+        ];
+
+
+    addMessage(
+        randomMessage.text.replace("{name}", name),
+        currentFriend.id
+    );
 
 }
