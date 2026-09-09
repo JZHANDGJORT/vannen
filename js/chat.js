@@ -108,7 +108,7 @@ function saveName() {
     if (!name) return;
 
 
-    otisMemory.owner = {
+    friendMemory.owner = {
 
         name: name
 
@@ -119,12 +119,12 @@ function saveName() {
 
 
     addMessage(
-    `Vad fint att träffa dig, ${name}. 💚 Jag tror att alla vänskaper blir lite finare när man lär känna varandra. Jag vill gärna veta lite mer om vem jag får lära känna.`,
-    "otis"
-);
+        `Vad fint att träffa dig, ${name}. 💚 Jag tror att alla vänskaper blir lite finare när man lär känna varandra. Jag vill gärna veta lite mer om vem jag får lära känna.`,
+        currentFriend.id
+    );
 
 
-showRelationChoice();
+    showRelationChoice();
 
 }
 
