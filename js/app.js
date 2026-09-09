@@ -132,6 +132,8 @@ function startFriend(friend) {
 
     currentFriend = friend;
 
+    updateEveningButton();
+
     const backpackClose =
     document.getElementById("backpack-close");
 
