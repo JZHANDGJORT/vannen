@@ -5,15 +5,15 @@ const bosse = {
     name: "Bosse",
 
     // Bild som visas på Vännen-startsidan
-    image: "images/Bosse/bosse-character.JPG",
+    image: "images/Bosse/bosse-character.PNG",
 
     // Bild som visas inne i Bosses värld
     worldImage: "images/Bosse/bosse-world.PNG",
 
     // Bosse som transparent figur
-    characterImage: "images/Bosse/bosse-character.JPG",
+    characterImage: "images/Bosse/bosse-character.PNG",
 
-    characterBlinkImage: "images/Bosse/bosse-blink-character.JPG",
+    characterBlinkImage: "images/Bosse/bosse-blink-character.PNG",
     
     cardText:
         "En trygg och nyfiken grävling som tycker om små upptäckter, lugna stunder och att ta det i sin egen takt.",
