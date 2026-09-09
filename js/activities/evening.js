@@ -130,17 +130,16 @@ function updateEveningButton() {
 
     button.style.display =
         isEvening ? "block" : "none";
+
+
+    if (
+        typeof currentFriend !== "undefined" &&
+        currentFriend
+    ) {
+
+        button.innerHTML =
+            `🌙 Kväll med ${currentFriend.name}`;
+
+    }
+
 }
-
-
-// Kontrollera direkt när sidan laddas
-
-updateEveningButton();
-
-
-// Kontrollera igen varje minut
-
-setInterval(
-    updateEveningButton,
-    60 * 1000
-);
