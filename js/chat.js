@@ -632,7 +632,7 @@ function askRememberPerson() {
 
     addMessage(
         `Vad fint att få lära känna ${currentPerson.name}. 💚 Vill du att jag ska komma ihåg ${currentPerson.name} till nästa gång vi ses?`,
-        "otis"
+        currentFriend.id
     );
 
 
