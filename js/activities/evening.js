@@ -143,3 +143,16 @@ function updateEveningButton() {
     }
 
 }
+
+
+// Kontrollera direkt när sidan laddas
+
+updateEveningButton();
+
+
+// Kontrollera igen varje minut
+
+setInterval(
+    updateEveningButton,
+    60 * 1000
+);
