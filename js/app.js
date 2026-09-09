@@ -365,7 +365,7 @@ function smileCharacter(duration = 1500) {
 
     const smileImage =
         currentFriend.id === "bosse01"
-            ? "images/Bosse/bosse-smile-character.JPG"
+            ? "images/Bosse/bosse-smile-character.PNG"
             : "images/Otis/otis-stone-smile-character.PNG";
 
     face.src = smileImage;
@@ -385,7 +385,7 @@ function laughCharacter(duration = 2000) {
 
     const laughImage =
         currentFriend.id === "bosse01"
-            ? "images/Bosse/bosse-laugh-character.JPG"
+            ? "images/Bosse/bosse-laugh-character.PNG"
             : "images/Otis/otis-stone-laugh-character.PNG";
 
     face.src = laughImage;
