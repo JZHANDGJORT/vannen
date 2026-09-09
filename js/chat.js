@@ -591,7 +591,7 @@ function askAdultRelation() {
 
     addMessage(
         `Vem är ${currentPerson.name} för dig? 💚`,
-        "otis"
+        currentFriend.id
     );
 
 
