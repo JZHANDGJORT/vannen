@@ -506,7 +506,7 @@ function askPersonType() {
 
     addMessage(
         `${currentPerson.name} var ett fint namn. 💚 Är ${currentPerson.name} ett barn eller en vuxen?`,
-        "otis"
+        currentFriend.id
     );
 
 
