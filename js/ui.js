@@ -251,7 +251,7 @@ function resetMemoryQuestion() {
         </button>
 
         <button onclick="showMainMenu()">
-            🦦 Nej, fortsätt som vanligt
+            🌿 Nej, fortsätt som vanligt
         </button>
 
     `;
@@ -278,7 +278,7 @@ function showBackpack() {
         </button>
 
         <button onclick="showMainMenu()">
-            🦦 Tillbaka
+            ⬅️ Tillbaka
         </button>
 
     `;
@@ -310,7 +310,7 @@ function askOpenBackpack() {
         </button>
 
         <button onclick="showMainMenu()">
-            🌿 Inte just nu
+            🐾 Inte just nu
         </button>
 
     `;
@@ -330,7 +330,7 @@ function showBackpackChoice() {
         </button>
 
         <button onclick="showMainMenu()">
-            🦦 Inte just nu
+            🐾 Inte just nu
         </button>
 
     `;
@@ -436,7 +436,7 @@ function chooseActivityNeed(type) {
             </button>
 
             <button onclick="showMainMenu()">
-                🦦 Inte idag
+                🐾 Inte idag
             </button>
 
         `;
@@ -465,7 +465,7 @@ function chooseActivityNeed(type) {
         </button>
 
         <button onclick="showMainMenu()">
-            🦦 Inte idag
+            🐾 Inte idag
         </button>
 
     `;
@@ -2291,7 +2291,7 @@ function otisChoice(choice) {
         actions.innerHTML = `
 
             <button onclick="showMainMenu()">
-                🦦 Tillbaka när du vill
+                🐾 Tillbaka när du vill
             </button>
 
         `;
@@ -3078,7 +3078,7 @@ if (otisMemory.companionToday) {
     actions.innerHTML += `
 
         <button onclick="goodbyePerson('both')">
-            🦦 Vi går båda
+           🐾 Vi går båda
         </button>
 
     `;
