@@ -13,18 +13,33 @@ let otisMemory = {
 };
 
 
+let bosseMemory = {
+
+    owner: null,
+
+    friends: [],
+
+    companionToday: null,
+
+    settings: {
+        memoryEnabled: true
+    }
+
+};
+
+
 // Hämta minne från enheten
 
 function loadMemory() {
 
-    const saved =
+    const savedOtis =
         localStorage.getItem("otis-memory");
 
 
-    if (saved) {
+    if (savedOtis) {
 
         const oldMemory =
-            JSON.parse(saved);
+            JSON.parse(savedOtis);
 
 
         otisMemory = {
@@ -45,28 +60,62 @@ function loadMemory() {
 
     }
 
+
+    const savedBosse =
+        localStorage.getItem("bosse-memory");
+
+
+    if (savedBosse) {
+
+        const oldMemory =
+            JSON.parse(savedBosse);
+
+
+        bosseMemory = {
+
+            ...bosseMemory,
+
+            ...oldMemory,
+
+            settings: {
+
+                ...bosseMemory.settings,
+
+                ...oldMemory.settings
+
+            }
+
+        };
+
+    }
+
 }
 
-function clearOldCompanion() {
 
-    if (!otisMemory.companionToday) return;
+function clearOldCompanion(memory) {
+
+    if (!memory.companionToday) return;
 
 
     const today =
         new Date().toISOString().split("T")[0];
 
 
-    if (otisMemory.companionToday.date !== today) {
+    if (memory.companionToday.date !== today) {
 
-        otisMemory.companionToday = null;
+        memory.companionToday = null;
 
-        saveMemory();
+        return true;
 
     }
 
+
+    return false;
+
 }
 
-// Spara minne
+
+// Spara Otis minne
 
 function saveMemory() {
 
@@ -78,8 +127,19 @@ function saveMemory() {
 }
 
 
+// Spara Bosse minne
 
-// Skapa första personen
+function saveBosseMemory() {
+
+    localStorage.setItem(
+        "bosse-memory",
+        JSON.stringify(bosseMemory)
+    );
+
+}
+
+
+// Skapa första personen för Otis
 
 function createPerson(person) {
 
@@ -119,8 +179,47 @@ function createPerson(person) {
 }
 
 
+// Skapa första personen för Bosse
 
-// Hitta person
+function createBossePerson(person) {
+
+    const newPerson = {
+
+        id:
+            Date.now().toString(),
+
+        name:
+            person.name,
+
+        role:
+            person.role || "friend",
+
+        age:
+            person.age || null,
+
+        interests:
+            person.interests || [],
+
+        notes:
+            []
+
+    };
+
+
+    bosseMemory.friends.push(
+        newPerson
+    );
+
+
+    saveBosseMemory();
+
+
+    return newPerson;
+
+}
+
+
+// Hitta person hos Otis
 
 function getPerson(id) {
 
@@ -132,11 +231,21 @@ function getPerson(id) {
 }
 
 
+// Hitta person hos Bosse
+
+function getBossePerson(id) {
+
+    return bosseMemory.friends.find(
+        person =>
+            person.id === id
+    );
+
+}
+
 
 // Lägg till något Otis minns
 
 function addMemory(personId, memory) {
-
 
     const person =
         getPerson(personId);
@@ -160,10 +269,44 @@ function addMemory(personId, memory) {
 
 }
 
+
+// Lägg till något Bosse minns
+
+function addBosseMemory(personId, memory) {
+
+    const person =
+        getBossePerson(personId);
+
+
+    if (!person) return;
+
+
+    person.notes.push({
+
+        text:
+            memory,
+
+        date:
+            new Date().toISOString()
+
+    });
+
+
+    saveBosseMemory();
+
+}
+
+
+// Återställ minnen
+
 function resetMemory() {
 
     localStorage.removeItem(
         "otis-memory"
+    );
+
+    localStorage.removeItem(
+        "bosse-memory"
     );
 
     localStorage.removeItem(
@@ -186,10 +329,38 @@ function resetMemory() {
     };
 
 
+    bosseMemory = {
+
+        owner: null,
+
+        friends: [],
+
+        companionToday: null,
+
+        settings: {
+            memoryEnabled: true
+        }
+
+    };
+
+
     location.reload();
 
 }
 
+
 loadMemory();
 
-clearOldCompanion();
+
+if (clearOldCompanion(otisMemory)) {
+
+    saveMemory();
+
+}
+
+
+if (clearOldCompanion(bosseMemory)) {
+
+    saveBosseMemory();
+
+}
