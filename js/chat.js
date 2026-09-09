@@ -455,7 +455,7 @@ function showNewPersonInput() {
 
     addMessage(
         "Vad roligt att få träffa någon ny! 💚 Vad heter personen?",
-        "otis"
+        currentFriend.id
     );
 
 
