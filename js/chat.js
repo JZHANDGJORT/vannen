@@ -342,12 +342,12 @@ function savePerson(type) {
     if (type === "child") {
 
         person.age =
-    document
-    .getElementById("person-age-input")
-    .value
-    .trim()
-    .replace("år", "")
-    .trim();
+        document
+        .getElementById("person-age-input")
+        .value
+        .trim()
+        .replace("år", "")
+        .trim();
 
     }
 
@@ -363,14 +363,14 @@ function savePerson(type) {
     }
 
 
-    otisMemory.friends.push(person);
+    friendMemory.friends.push(person);
 
     saveMemory();
 
 
     addMessage(
         `Vad roligt att få lära känna ${name}. 💚 Jag ser fram emot att skapa fina stunder tillsammans.`,
-        "otis"
+        currentFriend.id
     );
 
 
