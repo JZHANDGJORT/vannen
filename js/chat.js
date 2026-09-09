@@ -683,7 +683,7 @@ function rememberCurrentPerson() {
 
 function forgetCurrentPerson() {
 
-    otisMemory.companionToday = {
+    friendMemory.companionToday = {
 
         ...currentPerson,
 
@@ -691,19 +691,17 @@ function forgetCurrentPerson() {
 
     };
 
-
     saveMemory();
-
 
     addMessage(
         `Vad roligt att få träffa ${currentPerson.name} idag. Jag blir glad att vi fick ses. 🌿`,
-        "otis"
+        currentFriend.id
     );
-
 
     showMainMenu();
 
 }
+
 // 🦦 När Otis redan känner dig
 
 function showMemoryGreeting() {
