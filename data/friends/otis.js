@@ -5,7 +5,7 @@ const otis = {
     name: "Otis",
 
     // Bild som visas på Vännen-startsidan
-    image: "images/Otis/otis-neutral.PNG",
+    image: "images/Otis/otis-stone-character.PNG",
 
     // Bild som visas inne i Otis värld
 worldImage: "images/Otis/otis-world.PNG",
