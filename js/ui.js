@@ -80,7 +80,7 @@ function showMainMenu() {
 
     <button id="dialog-button" class="action-button talk">
         <span class="action-icon">💬</span>
-        <span>Prata med Otis</span>
+        <span>Prata med ${currentFriend.name}</span>
     </button>
 
     `;
