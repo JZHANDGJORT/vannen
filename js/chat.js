@@ -232,7 +232,7 @@ function chooseRelation(choice) {
 
         addMessage(
             "Vad fint. Då börjar vårt äventyr här, bara du och jag. 🌊",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -246,7 +246,7 @@ function chooseRelation(choice) {
 
         addMessage(
             "Vad roligt! Jag tycker om att få lära känna fler små personer som betyder mycket för dig. Vem vill du att jag ska få träffa?",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -257,7 +257,7 @@ function chooseRelation(choice) {
 if (choice === "person") {
     addMessage(
         "Vad fint. Vem vill du att jag ska få lära känna? 💚",
-        "otis"
+        currentFriend.id
     );
 
     showPersonInput("person");
