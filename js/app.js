@@ -1,4 +1,6 @@
 let currentFriend = null;
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     startApp();
@@ -10,32 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
 function startApp() {
 
 
-    const params =
-        new URLSearchParams(
-            window.location.search
-        );
+    const page =
+        window.location.pathname
+            .split("/")
+            .pop();
 
 
-    const friendId =
-        params.get("id");
-
-    
-
-    // Visa startsida
-
-    if (!friendId) {
+    let friendId = null;
 
 
-        showHomeView();
+    if (page === "otis.html") {
 
-        renderFriends();
-
-        return;
+        friendId = "otis01";
 
     }
 
 
+    if (page === "bosse.html") {
 
+        friendId = "bosse01";
+
+    }
 
 
     // Hitta vän
@@ -46,48 +43,53 @@ function startApp() {
         );
 
 
-
     // Om vän saknas
 
     if (!friend) {
-
-        showHomeView();
-
-        renderFriends();
 
         return;
 
     }
 
 
+    // Visa vänsida
+
+    showFriendView();
+
+    startFriend(friend);
 
 
-
-// Visa vänsida
-
-showFriendView();
-
-startFriend(friend);
+}
 
 
-
-}    
 
 function showHomeView() {
 
 
-    document
-        .getElementById("home-view")
-        .style.display = "block";
+    const homeView =
+        document.getElementById("home-view");
 
 
-    document
-        .getElementById("friend-view")
-        .style.display = "none";
+    const friendView =
+        document.getElementById("friend-view");
+
+
+    if (homeView) {
+
+        homeView.style.display = "block";
+
+    }
+
+
+    if (friendView) {
+
+        friendView.style.display = "none";
+
+    }
 
 
     document.body.className = "home";
-    
+
 }
 
 
@@ -99,19 +101,33 @@ function showHomeView() {
 function showFriendView() {
 
 
-    document
-        .getElementById("home-view")
-        .style.display = "none";
+    const homeView =
+        document.getElementById("home-view");
 
 
-    document
-        .getElementById("friend-view")
-        .style.display = "block";
+    const friendView =
+        document.getElementById("friend-view");
+
+
+    if (homeView) {
+
+        homeView.style.display = "none";
+
+    }
+
+
+    if (friendView) {
+
+        friendView.style.display = "block";
+
+    }
 
 
     document.body.className = "friend";
-    
+
 }
+
+
 
 function startFriend(friend) {
 
@@ -164,15 +180,16 @@ function startFriend(friend) {
 
     restoreCurrentView();
 
+
     if (
-    window.location.hash === "#backpack" ||
-    window.location.hash === "#book" ||
-    window.location.hash === "#recipebook"
-) {
+        window.location.hash === "#backpack" ||
+        window.location.hash === "#book" ||
+        window.location.hash === "#recipebook"
+    ) {
 
-    return;
+        return;
 
-}
+    }
 
 
     if (!otisMemory.owner) {
@@ -198,7 +215,9 @@ function startFriend(friend) {
 function applyTheme(theme) {
 
     if (!document.body.classList.contains("friend")) {
+
         return;
+
     }
 
 
@@ -237,7 +256,7 @@ function renderFriend(friend) {
         document.getElementById("friend-name");
 
 
-    if(nameElement){
+    if (nameElement) {
 
         nameElement.textContent =
             friend.name;
@@ -245,41 +264,47 @@ function renderFriend(friend) {
     }
 
 
-
-
     const worldElement =
-    document.getElementById("friend-world");
+        document.getElementById("friend-world");
 
-if (worldElement) {
 
-    worldElement.src =
-        friend.worldImage;
+    if (worldElement) {
 
-}
+        worldElement.src =
+            friend.worldImage;
 
-const characterElement =
-    document.getElementById("friend-character");
+    }
 
-if (characterElement) {
 
-    characterElement.src =
-        friend.characterImage;
+    const characterElement =
+        document.getElementById("friend-character");
 
-    characterElement.alt =
-        friend.name;
 
-}
+    if (characterElement) {
 
-const faceElement =
-    document.getElementById("friend-character-face");
+        characterElement.src =
+            friend.characterImage;
 
-if (faceElement) {
+        characterElement.alt =
+            friend.name;
 
-    faceElement.src = "";
-    faceElement.alt = friend.name;
-    faceElement.style.opacity = "0";
+    }
 
-}
+
+    const faceElement =
+        document.getElementById("friend-character-face");
+
+
+    if (faceElement) {
+
+        faceElement.src = "";
+
+        faceElement.alt =
+            friend.name;
+
+        faceElement.style.opacity = "0";
+
+    }
 
 
     const subtitleElement =
@@ -292,6 +317,7 @@ if (faceElement) {
             friend.subtitle;
 
     }
+
     
 
 }
@@ -300,10 +326,8 @@ if (faceElement) {
 function showGreeting(friend) {
 
 
-
     const messages =
         greetings[friend.id];
-
 
 
     const randomMessage =
@@ -314,7 +338,6 @@ function showGreeting(friend) {
         ];
 
 
-
     addMessage(
         randomMessage.text,
         friend.id
@@ -323,86 +346,164 @@ function showGreeting(friend) {
 
 }
 
+
 function setPageMode(mode) {
 
     document.body.className = mode;
 
 }
 
+
 function blinkCharacter() {
+
 
     const face =
         document.getElementById("friend-character-face");
 
+
     const otis =
         document.getElementById("friend-character");
 
+
     if (!face || !otis || !currentFriend) return;
 
-    // Blinka inte om Otis är osynlig
+
+    // Blinka inte om vännen är osynlig
+
     if (otis.style.opacity === "0") return;
+
 
     const blinkImage =
         currentFriend.characterBlinkImage;
 
+
     if (!blinkImage) return;
 
-    face.src = blinkImage;
-    face.style.opacity = "1";
+
+    face.src =
+        blinkImage;
+
+    face.style.opacity =
+        "1";
+
 
     setTimeout(() => {
 
-        face.style.opacity = "0";
-        face.src = "";
+        face.style.opacity =
+            "0";
+
+        face.src =
+            "";
 
     }, 250);
 
 }
 
+
+
 function smileCharacter(duration = 1500) {
-    const face = document.getElementById("friend-character-face");
+
+
+    const face =
+        document.getElementById(
+            "friend-character-face"
+        );
+
+
     if (!face || !currentFriend) return;
+
 
     const smileImage =
         currentFriend.id === "bosse01"
+
             ? "images/Bosse/bosse-smile-character.PNG"
+
             : "images/Otis/otis-stone-smile-character.PNG";
 
-    face.src = smileImage;
-    face.style.opacity = "1";
 
-    clearTimeout(window.smileTimeout);
+    face.src =
+        smileImage;
 
-    window.smileTimeout = setTimeout(() => {
-        face.style.opacity = "0";
-        face.src = "";
-    }, duration);
+    face.style.opacity =
+        "1";
+
+
+    clearTimeout(
+        window.smileTimeout
+    );
+
+
+    window.smileTimeout =
+        setTimeout(() => {
+
+            face.style.opacity =
+                "0";
+
+            face.src =
+                "";
+
+        }, duration);
+
 }
 
+
+
 function laughCharacter(duration = 2000) {
-    const face = document.getElementById("friend-character-face");
+
+
+    const face =
+        document.getElementById(
+            "friend-character-face"
+        );
+
+
     if (!face || !currentFriend) return;
+
 
     const laughImage =
         currentFriend.id === "bosse01"
+
             ? "images/Bosse/bosse-laugh-character.PNG"
+
             : "images/Otis/otis-stone-laugh-character.PNG";
 
-    face.src = laughImage;
-    face.style.opacity = "1";
 
-    clearTimeout(window.laughTimeout);
+    face.src =
+        laughImage;
 
-    window.laughTimeout = setTimeout(() => {
-        face.style.opacity = "0";
-        face.src = "";
-    }, duration);
+    face.style.opacity =
+        "1";
+
+
+    clearTimeout(
+        window.laughTimeout
+    );
+
+
+    window.laughTimeout =
+        setTimeout(() => {
+
+            face.style.opacity =
+                "0";
+
+            face.src =
+                "";
+
+        }, duration);
+
 }
+
+
+
 function checkOtisMood(text) {
 
-    const lowerText = text.toLowerCase();
+
+    const lowerText =
+        text.toLowerCase();
+
 
     const happyWords = [
+
         "Vad roligt",
         "Vad fint",
         "Härligt",
@@ -412,9 +513,12 @@ function checkOtisMood(text) {
         "😊",
         "❤️",
         "💚"
+
     ];
 
+
     const seriousWords = [
+
         "ledsen",
         "jobbigt",
         "svårt",
@@ -423,65 +527,123 @@ function checkOtisMood(text) {
         "ensam",
         "saknar",
         "gråter"
+
     ];
 
+
     const isHappy =
-        happyWords.some(word => lowerText.includes(word.toLowerCase()));
+        happyWords.some(
+            word =>
+                lowerText.includes(
+                    word.toLowerCase()
+                )
+        );
+
 
     const isSerious =
-        seriousWords.some(word => lowerText.includes(word));
+        seriousWords.some(
+            word =>
+                lowerText.includes(word)
+        );
 
-    let smileChance = 0.3;
+
+    let smileChance =
+        0.3;
+
 
     if (isHappy) {
-        smileChance = 0.8;
+
+        smileChance =
+            0.8;
+
     }
+
 
     if (isSerious) {
-        smileChance = 0;
+
+        smileChance =
+            0;
+
     }
 
+
     if (Math.random() < smileChance) {
+
         smileCharacter();
+
     }
 
 }
 
+
+
 function startCharacterBlinking() {
+
 
     function blinkLoop() {
 
+
         blinkCharacter();
+
 
         const nextBlink =
             Math.random() * 7000 + 4000;
+
 
         setTimeout(
             blinkLoop,
             nextBlink
         );
 
+
     }
+
 
     blinkLoop();
 
 }
 
+
+
 function updateOrientationWarning() {
 
-    const warning = document.getElementById("orientation-warning");
+
+    const warning =
+        document.getElementById(
+            "orientation-warning"
+        );
+
 
     if (!warning) return;
 
-    const isLandscape = window.innerWidth > window.innerHeight;
 
-    warning.style.display = isLandscape ? "flex" : "none";
+    const isLandscape =
+        window.innerWidth >
+        window.innerHeight;
+
+
+    warning.style.display =
+        isLandscape
+            ? "flex"
+            : "none";
 
 }
 
 
-window.addEventListener("load", updateOrientationWarning);
 
-window.addEventListener("resize", updateOrientationWarning);
+window.addEventListener(
+    "load",
+    updateOrientationWarning
+);
 
-window.addEventListener("orientationchange", updateOrientationWarning);
+
+window.addEventListener(
+    "resize",
+    updateOrientationWarning
+);
+
+
+window.addEventListener(
+    "orientationchange",
+    updateOrientationWarning
+);
