@@ -58,7 +58,6 @@ function startApp() {
 
     startFriend(friend);
 
-
 }
 
 
@@ -175,7 +174,11 @@ function startFriend(friend) {
     }
 
 
+    // Ladda aktuell väns minne
+
     loadMemory();
+
+    clearOldCompanion();
 
 
     restoreCurrentView();
@@ -192,7 +195,7 @@ function startFriend(friend) {
     }
 
 
-    if (!otisMemory.owner) {
+    if (!friendMemory.owner) {
 
         startOnboarding();
 
@@ -205,10 +208,12 @@ function startFriend(friend) {
     }
 
 
+    updateAllBadges();
+
+
     startCharacterBlinking();
 
 }
-
 
 
 
@@ -361,16 +366,20 @@ function blinkCharacter() {
         document.getElementById("friend-character-face");
 
 
-    const otis =
+    const character =
         document.getElementById("friend-character");
 
 
-    if (!face || !otis || !currentFriend) return;
+    if (
+        !face ||
+        !character ||
+        !currentFriend
+    ) return;
 
 
     // Blinka inte om vännen är osynlig
 
-    if (otis.style.opacity === "0") return;
+    if (character.style.opacity === "0") return;
 
 
     const blinkImage =
@@ -572,6 +581,7 @@ function checkOtisMood(text) {
         smileCharacter();
 
     }
+
 
 }
 
