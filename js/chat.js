@@ -549,7 +549,7 @@ function askChildAge() {
 
     addMessage(
         `Hur gammal är ${currentPerson.name}? 🧒`,
-        "otis"
+        currentFriend.id
     );
 
 
