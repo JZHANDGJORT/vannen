@@ -1,25 +1,67 @@
 /*
-  OTIS – MINNESÖVERFÖRING
-  Exportera och importera Otis minne
+  VÄNNEN – MINNESÖVERFÖRING
+  Exportera och importera aktuell väns minne
 */
 
 
 // ========================================
-// EXPORTERA OTIS MINNE
+// AKTUELL VÄN
+// ========================================
+
+function getTransferFriend() {
+
+    if (
+        typeof currentFriend !== "undefined" &&
+        currentFriend
+    ) {
+
+        return currentFriend;
+
+    }
+
+
+    const page =
+        window.location.pathname
+            .split("/")
+            .pop();
+
+
+    if (page === "bosse.html") {
+
+        return bosse;
+
+    }
+
+
+    return otis;
+
+}
+
+
+
+// ========================================
+// EXPORTERA MINNE
 // ========================================
 
 function exportOtisMemory() {
+
+    const friend =
+        getTransferFriend();
+
 
     const badges =
         getBadges();
 
 
-    const otisData = {
+    const friendData = {
 
         version: 1,
 
+        friendId:
+            friend.id,
+
         memory:
-            otisMemory,
+            friendMemory,
 
         badges:
             badges
@@ -29,7 +71,7 @@ function exportOtisMemory() {
 
     const json =
         JSON.stringify(
-            otisData,
+            friendData,
             null,
             2
         );
@@ -57,7 +99,7 @@ function exportOtisMemory() {
 
 
     link.download =
-        "otis-minne.json";
+        `${friend.name.toLowerCase()}-minne.json`;
 
 
     document.body.appendChild(link);
@@ -71,22 +113,27 @@ function exportOtisMemory() {
 
 
     addMessage(
-        "Ditt Otis-minne är sparat. 💚 Du kan nu flytta filen till din nya telefon eller platta.",
-        "otis"
+        `Ditt ${friend.name}-minne är sparat. 💚 Du kan nu flytta filen till din nya telefon eller platta.`,
+        friend.id
     );
 
 }
 
 
+
 // ========================================
-// HÄMTA OTIS MINNE
+// HÄMTA MINNE
 // ========================================
 
 function importOtisMemory() {
 
+    const friend =
+        getTransferFriend();
+
+
     addMessage(
-        "Vill du hämta ett sparat Otis-minne? 💚 Det minne som finns på den här enheten kommer att bytas ut mot det sparade minnet.",
-        "otis"
+        `Vill du hämta ett sparat ${friend.name}-minne? 💚 Det minne som finns på den här enheten kommer att bytas ut mot det sparade minnet.`,
+        friend.id
     );
 
 
@@ -108,6 +155,8 @@ function importOtisMemory() {
     `;
 
 }
+
+
 
 // ========================================
 // BEKRÄFTA HÄMTNING
@@ -138,6 +187,7 @@ function confirmImportOtisMemory() {
 }
 
 
+
 // ========================================
 // LÄS MINNESFILEN
 // ========================================
@@ -166,8 +216,12 @@ function handleMemoryFile(event) {
                     );
 
 
+                const friend =
+                    getTransferFriend();
+
+
                 // Kontrollera att filen
-                // verkligen innehåller Otis-data
+                // innehåller rätt typ av data
 
                 if (
                     !importedData ||
@@ -176,15 +230,30 @@ function handleMemoryFile(event) {
                 ) {
 
                     throw new Error(
-                        "Ogiltig Otis-fil"
+                        "Ogiltig minnesfil"
                     );
 
                 }
 
 
-                // Lägg tillbaka Otis minne
+                // Kontrollera att minnet
+                // tillhör aktuell vän
 
-                otisMemory =
+                if (
+                    importedData.friendId &&
+                    importedData.friendId !== friend.id
+                ) {
+
+                    throw new Error(
+                        "Fel vän"
+                    );
+
+                }
+
+
+                // Lägg tillbaka minnet
+
+                friendMemory =
                     importedData.memory;
 
 
@@ -204,8 +273,8 @@ function handleMemoryFile(event) {
 
 
                 addMessage(
-                    "Vad fint! 💚 Jag har fått tillbaka mitt minne.",
-                    "otis"
+                    `Vad fint! 💚 Jag har fått tillbaka mitt minne.`,
+                    friend.id
                 );
 
 
@@ -215,14 +284,18 @@ function handleMemoryFile(event) {
             } catch (error) {
 
                 console.error(
-                    "Kunde inte läsa Otis-minnet:",
+                    "Kunde inte läsa minnet:",
                     error
                 );
 
 
+                const friend =
+                    getTransferFriend();
+
+
                 addMessage(
-                    "Hmm... jag kunde inte läsa den filen. 🌿 Kontrollera att det är en Otis-minnesfil.",
-                    "otis"
+                    `Hmm... jag kunde inte läsa den filen. 🌿 Kontrollera att det är en ${friend.name}-minnesfil.`,
+                    friend.id
                 );
 
             }
