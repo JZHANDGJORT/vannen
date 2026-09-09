@@ -132,6 +132,15 @@ function startFriend(friend) {
 
     currentFriend = friend;
 
+    const backpackClose =
+    document.getElementById("backpack-close");
+
+if (backpackClose) {
+
+    backpackClose.textContent =
+        `🐾 Tillbaka till ${currentFriend.name}`;
+
+}
 
     const theme =
         themes[friend.home.theme];
