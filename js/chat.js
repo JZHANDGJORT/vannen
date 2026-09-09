@@ -422,16 +422,13 @@ function showPresentPerson() {
 function selectCurrentPerson(index) {
 
     const person =
-        otisMemory.friends[index];
-
+        friendMemory.friends[index];
 
     if (!person) return;
 
-
     currentPerson = person;
 
-
-    otisMemory.companionToday = {
+    friendMemory.companionToday = {
 
         ...person,
 
@@ -439,15 +436,12 @@ function selectCurrentPerson(index) {
 
     };
 
-
     saveMemory();
-
 
     addMessage(
         `Vad roligt att ${person.name} är med idag. 💚 Jag blir glad att få träffa ${person.name} igen.`,
-        "otis"
+        currentFriend.id
     );
-
 
     showMainMenu();
 
