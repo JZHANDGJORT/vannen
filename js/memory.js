@@ -1,4 +1,4 @@
-let otisMemory = {
+let friendMemory = {
 
     owner: null,
 
@@ -13,12 +13,72 @@ let otisMemory = {
 };
 
 
-// Hämta minne från enheten
+// ========================================
+// AKTUELL VÄN
+// ========================================
+
+function getCurrentFriendId() {
+
+    if (
+        typeof currentFriend !== "undefined" &&
+        currentFriend
+    ) {
+
+        return currentFriend.id;
+
+    }
+
+
+    const page =
+        window.location.pathname
+            .split("/")
+            .pop();
+
+
+    if (page === "otis.html") {
+
+        return "otis01";
+
+    }
+
+
+    if (page === "bosse.html") {
+
+        return "bosse01";
+
+    }
+
+
+    return "otis01";
+
+}
+
+
+
+// ========================================
+// STORAGE-NYCKEL
+// ========================================
+
+function getMemoryStorageKey() {
+
+    return getCurrentFriendId() + "-memory";
+
+}
+
+
+
+// ========================================
+// HÄMTA MINNE FRÅN ENHETEN
+// ========================================
 
 function loadMemory() {
 
+    const storageKey =
+        getMemoryStorageKey();
+
+
     const saved =
-        localStorage.getItem("otis-memory");
+        localStorage.getItem(storageKey);
 
 
     if (saved) {
@@ -27,15 +87,15 @@ function loadMemory() {
             JSON.parse(saved);
 
 
-        otisMemory = {
+        friendMemory = {
 
-            ...otisMemory,
+            ...friendMemory,
 
             ...oldMemory,
 
             settings: {
 
-                ...otisMemory.settings,
+                ...friendMemory.settings,
 
                 ...oldMemory.settings
 
@@ -47,18 +107,26 @@ function loadMemory() {
 
 }
 
+
+
+// ========================================
+// RENSAR GAMMAL COMPANION
+// ========================================
+
 function clearOldCompanion() {
 
-    if (!otisMemory.companionToday) return;
+    if (!friendMemory.companionToday) return;
 
 
     const today =
         new Date().toISOString().split("T")[0];
 
 
-    if (otisMemory.companionToday.date !== today) {
+    if (
+        friendMemory.companionToday.date !== today
+    ) {
 
-        otisMemory.companionToday = null;
+        friendMemory.companionToday = null;
 
         saveMemory();
 
@@ -66,20 +134,29 @@ function clearOldCompanion() {
 
 }
 
-// Spara minne
+
+
+// ========================================
+// SPARA MINNE
+// ========================================
 
 function saveMemory() {
 
     localStorage.setItem(
-        "otis-memory",
-        JSON.stringify(otisMemory)
+
+        getMemoryStorageKey(),
+
+        JSON.stringify(friendMemory)
+
     );
 
 }
 
 
 
-// Skapa första personen
+// ========================================
+// SKAPA FÖRSTA PERSONEN
+// ========================================
 
 function createPerson(person) {
 
@@ -106,7 +183,7 @@ function createPerson(person) {
     };
 
 
-    otisMemory.friends.push(
+    friendMemory.friends.push(
         newPerson
     );
 
@@ -120,23 +197,28 @@ function createPerson(person) {
 
 
 
-// Hitta person
+// ========================================
+// HITTA PERSON
+// ========================================
 
 function getPerson(id) {
 
-    return otisMemory.friends.find(
+    return friendMemory.friends.find(
+
         person =>
             person.id === id
+
     );
 
 }
 
 
 
-// Lägg till något Otis minns
+// ========================================
+// LÄGG TILL NÅGOT VÄNNEN MINNS
+// ========================================
 
 function addMemory(personId, memory) {
-
 
     const person =
         getPerson(personId);
@@ -160,18 +242,20 @@ function addMemory(personId, memory) {
 
 }
 
+
+
+// ========================================
+// ÅTERSTÄLL MINNE
+// ========================================
+
 function resetMemory() {
 
     localStorage.removeItem(
-        "otis-memory"
-    );
-
-    localStorage.removeItem(
-        "otis-badges"
+        getMemoryStorageKey()
     );
 
 
-    otisMemory = {
+    friendMemory = {
 
         owner: null,
 
@@ -189,7 +273,3 @@ function resetMemory() {
     location.reload();
 
 }
-
-loadMemory();
-
-clearOldCompanion();
