@@ -655,12 +655,12 @@ function rememberCurrentPerson() {
 
     // Kontrollera att vi inte redan har två sparade vänner
 
-    if (otisMemory.friends.length >= 2) {
+    if (friendMemory.friends.length >= 2) {
 
         addMessage(
-    "Jag kommer redan ihåg två personer åt dig. 💚 Jag träffar gärna nya ändå, även om jag inte sparar dem.",
-    "otis"
-);
+            "Jag kommer redan ihåg två personer åt dig. 💚 Jag träffar gärna nya ändå, även om jag inte sparar dem.",
+            currentFriend.id
+        );
 
         showMainMenu();
 
@@ -668,18 +668,14 @@ function rememberCurrentPerson() {
 
     }
 
-
-    otisMemory.friends.push(currentPerson);
-
+    friendMemory.friends.push(currentPerson);
 
     saveMemory();
 
-
     addMessage(
         `Vad fint. Jag kommer ihåg ${currentPerson.name} till nästa gång vi ses. 💚`,
-        "otis"
+        currentFriend.id
     );
-
 
     showMainMenu();
 
