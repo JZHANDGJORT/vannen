@@ -360,52 +360,44 @@ function blinkCharacter() {
 }
 
 function smileCharacter(duration = 1500) {
+    const face = document.getElementById("friend-character-face");
+    if (!face || !currentFriend) return;
 
-    const face =
-        document.getElementById("friend-character-face");
+    const smileImage =
+        currentFriend.id === "bosse01"
+            ? "images/Bosse/bosse-smile-character.JPG"
+            : "images/Otis/otis-stone-smile-character.PNG";
 
-    if (!face) return;
-
-    face.src = "images/Otis/otis-stone-smile-character.PNG";
+    face.src = smileImage;
     face.style.opacity = "1";
 
     clearTimeout(window.smileTimeout);
 
     window.smileTimeout = setTimeout(() => {
-
         face.style.opacity = "0";
         face.src = "";
-
     }, duration);
-
 }
 
 function laughCharacter(duration = 2000) {
+    const face = document.getElementById("friend-character-face");
+    if (!face || !currentFriend) return;
 
-    const face =
-        document.getElementById("friend-character-face");
+    const laughImage =
+        currentFriend.id === "bosse01"
+            ? "images/Bosse/bosse-laugh-character.JPG"
+            : "images/Otis/otis-stone-laugh-character.PNG";
 
-    if (!face) return;
-
-
-    face.src =
-        "images/Otis/otis-stone-laugh-character.PNG";
-
+    face.src = laughImage;
     face.style.opacity = "1";
-
 
     clearTimeout(window.laughTimeout);
 
-
     window.laughTimeout = setTimeout(() => {
-
         face.style.opacity = "0";
         face.src = "";
-
     }, duration);
-
 }
-
 function checkOtisMood(text) {
 
     const lowerText = text.toLowerCase();
