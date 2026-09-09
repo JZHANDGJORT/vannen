@@ -3271,7 +3271,7 @@ if (document.readyState === "loading") {
 
 /* ========================================
    KOMPAKT LAYOUT
-   Lås storlek och läge vid sidans start
+   Lås läget vid sidans start
 ======================================== */
 
 (function () {
@@ -3283,122 +3283,33 @@ if (document.readyState === "loading") {
         requestAnimationFrame(function () {
 
             const world = document.getElementById("friend-world");
-            const profile = document.getElementById("friend-profile");
-            const character = document.getElementById("friend-character");
-            const stone = document.getElementById("friend-stone");
-            const face = document.getElementById("friend-character-face");
-            const backpack = document.getElementById("backpack");
-            const bubble = document.getElementById("friend-bubble");
             const actions = document.getElementById("actions");
             const chat = document.getElementById("chat");
             const timer = document.getElementById("activity-timer");
 
             /*
-               Lås världens höjd vid sidans start.
-               Hindrar 150vh från att ändras när
-               Edge gömmer adressfältet.
+               Lås världens höjd utifrån hur den
+               såg ut när sidan startade.
             */
 
             if (world) {
-
                 world.style.height =
                     getComputedStyle(world).height;
-
             }
-
-            /*
-               Lås själva Otis-världens höjd.
-            */
-
-            if (profile) {
-
-                profile.style.height =
-                    getComputedStyle(profile).height;
-
-            }
-
-            /*
-               Lås Otis, stenen, ansiktet och ryggsäcken
-               på exakt den pixelposition de hade vid start.
-            */
-
-            if (profile) {
-
-                const profileRect =
-                    profile.getBoundingClientRect();
-
-                [
-                    character,
-                    stone,
-                    face,
-                    backpack
-                ].forEach(function (element) {
-
-                    if (element) {
-
-                        const rect =
-                            element.getBoundingClientRect();
-
-                        element.style.top =
-                            (rect.top - profileRect.top) + "px";
-
-                        element.style.bottom = "auto";
-
-                    }
-
-                });
-
-
-                /*
-                   Lås pratbubblans position.
-                */
-
-                if (bubble) {
-
-                    const rect =
-                        bubble.getBoundingClientRect();
-
-                    bubble.style.top =
-                        (rect.top - profileRect.top) + "px";
-
-                }
-
-            }
-
-            /*
-               Lås aktivitetsknapparnas position.
-            */
 
             if (actions) {
-
                 actions.style.transform =
                     getComputedStyle(actions).transform;
-
             }
-
-            /*
-               Lås chatten.
-            */
 
             if (chat) {
-
                 chat.style.marginTop =
                     getComputedStyle(chat).marginTop;
-
-                chat.style.transform =
-                    getComputedStyle(chat).transform;
-
             }
 
-            /*
-               Lås timerns position.
-            */
-
             if (timer) {
-
                 timer.style.transform =
                     getComputedStyle(timer).transform;
-
             }
 
         });
