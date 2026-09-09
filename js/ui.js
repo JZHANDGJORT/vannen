@@ -128,13 +128,13 @@ function showSettings() {
 
         <button onclick="exportOtisMemory()">
 
-            💾 Spara Otis minne
+            💾 Spara minne
 
         </button>
 
         <button onclick="importOtisMemory()">
 
-            📂 Hämta Otis minne
+            📂 Hämta minne
 
         </button>
 
@@ -239,7 +239,7 @@ function resetMemoryQuestion() {
 
 
     addMessage(
-        "Är du säker? 🌊 Jag kommer att glömma det jag lärt mig om dig, men jag skulle gärna vilja lära känna dig igen. 💚",
+        "Är du säker? Jag kommer att glömma det jag lärt mig om dig, men jag skulle gärna vilja lära känna dig igen. 💚",
         "otis"
     );
 
