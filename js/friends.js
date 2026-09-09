@@ -37,7 +37,7 @@ function renderFriends() {
                 ${friend.cardText}
             </p>
 
-            <a href="?id=${friend.id}">
+            <a href="${friend.id === "otis01" ? "otis.html" : "bosse.html"}">
                 Möt ${friend.name} →
             </a>
 
