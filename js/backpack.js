@@ -1,49 +1,124 @@
-const BADGE_STORAGE_KEY = "otis-badges";
+const BADGE_STORAGE_PREFIX = "badges";
 
+
+// ========================================
+// AKTUELL VÄN
+// ========================================
+
+function getBadgeStorageKey() {
+
+    if (
+        typeof currentFriend !== "undefined" &&
+        currentFriend
+    ) {
+
+        return `${currentFriend.id}-badges`;
+
+    }
+
+
+    const page =
+        window.location.pathname
+            .split("/")
+            .pop();
+
+
+    if (page === "otis.html") {
+
+        return "otis01-badges";
+
+    }
+
+
+    if (page === "bosse.html") {
+
+        return "bosse01-badges";
+
+    }
+
+
+    return "otis01-badges";
+
+}
+
+
+
+// ========================================
+// HÄMTA MÄRKEN
+// ========================================
 
 function getBadges() {
 
     return JSON.parse(
-        localStorage.getItem(BADGE_STORAGE_KEY)
+
+        localStorage.getItem(
+            getBadgeStorageKey()
+        )
+
     ) || {
+
         lasar: 0,
         rakne: 0,
         skapar: 0,
         upptackar: 0
+
     };
 
 }
 
 
 
+// ========================================
+// SPARA MÄRKEN
+// ========================================
+
 function saveBadges(badges) {
 
     localStorage.setItem(
-        BADGE_STORAGE_KEY,
+
+        getBadgeStorageKey(),
+
         JSON.stringify(badges)
+
     );
 
 }
 
 
 
+// ========================================
+// FÄRG PÅ MÄRKE
+// ========================================
+
 function getBadgeColor(count) {
 
     if (count >= 50) {
+
         return "brun";
+
     }
+
 
     if (count >= 20) {
+
         return "rod";
+
     }
+
 
     if (count >= 10) {
+
         return "bla";
+
     }
 
+
     if (count >= 1) {
+
         return "gron";
+
     }
+
 
     return "gra";
 
@@ -51,13 +126,20 @@ function getBadgeColor(count) {
 
 
 
+// ========================================
+// UPPDATERA ETT MÄRKE
+// ========================================
+
 function updateBadge(type) {
 
-    const badges = getBadges();
+    const badges =
+        getBadges();
 
-    const color = getBadgeColor(
-        badges[type]
-    );
+
+    const color =
+        getBadgeColor(
+            badges[type]
+        );
 
 
     const image =
@@ -66,34 +148,79 @@ function updateBadge(type) {
         );
 
 
-    if (image) {
+    if (!image) return;
 
-        image.src =
-        `images/Otis/badge/otis-backpack-item-marke-${type}${color}.PNG`;
 
-    }
+    const friendId =
+        typeof currentFriend !== "undefined" &&
+        currentFriend
+
+            ? currentFriend.id
+
+            : "otis01";
+
+
+    const friendFolder =
+        friendId === "bosse01"
+
+            ? "Bosse"
+
+            : "Otis";
+
+
+    const friendName =
+        friendId === "bosse01"
+
+            ? "bosse"
+
+            : "otis";
+
+
+    image.src =
+        `images/${friendFolder}/badge/${friendName}-backpack-item-marke-${type}${color}.PNG`;
 
 }
 
 
+
+// ========================================
+// LÄGG TILL MÄRKESPOÄNG
+// ========================================
 
 function addBadgeProgress(type) {
 
-    const badges = getBadges();
+    const badges =
+        getBadges();
+
 
     badges[type]++;
 
-    saveBadges(badges);
 
-    updateBadge(type);
+    saveBadges(
+        badges
+    );
+
+
+    updateBadge(
+        type
+    );
 
 }
+
+
+
+// ========================================
+// UPPDATERA ALLA MÄRKEN
+// ========================================
 
 function updateAllBadges() {
 
     updateBadge("lasar");
+
     updateBadge("rakne");
+
     updateBadge("skapar");
+
     updateBadge("upptackar");
 
 }
