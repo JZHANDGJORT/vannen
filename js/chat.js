@@ -56,13 +56,13 @@ function scrollToBottom() {
 
 }
 
-// 🦦 Första mötet med Otis
+// 🦦 Första mötet med Vännen
 
 function startOnboarding() {
 
     addMessage(
         onboarding.firstMeeting.greeting,
-        "otis"
+        currentFriend.id
     );
 
 
