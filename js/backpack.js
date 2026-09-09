@@ -151,38 +151,10 @@ function updateBadge(type) {
     if (!image) return;
 
 
-    const friendId =
-        typeof currentFriend !== "undefined" &&
-        currentFriend
-
-            ? currentFriend.id
-
-            : "otis01";
-
-
-    const friendFolder =
-        friendId === "bosse01"
-
-            ? "Bosse"
-
-            : "Otis";
-
-
-    const friendName =
-        friendId === "bosse01"
-
-            ? "bosse"
-
-            : "otis";
-
-
     image.src =
-        `images/${friendFolder}/badge/${friendName}-backpack-item-marke-${type}${color}.PNG`;
+        `images/Otis/badge/otis-backpack-item-marke-${type}${color}.PNG`;
 
 }
-
-
-
 // ========================================
 // LÄGG TILL MÄRKESPOÄNG
 // ========================================
