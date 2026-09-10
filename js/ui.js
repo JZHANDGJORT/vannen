@@ -3235,11 +3235,16 @@ function friendLeaves() {
         document.getElementById("friend-character-face");
 
 
-    if (!stone || !friend || !face) return;
+    if (!friend || !face) return;
 
 
-    stone.style.opacity =
-        "1";
+    if (stone) {
+
+        stone.style.opacity =
+            "1";
+
+    }
+
 
     friend.style.opacity =
         "0";
@@ -3251,6 +3256,7 @@ function friendLeaves() {
         "";
 
 }
+
 
 
 function resetFriendView() {
@@ -3265,11 +3271,16 @@ function resetFriendView() {
         document.getElementById("friend-character-face");
 
 
-    if (!stone || !friend || !face) return;
+    if (!friend || !face) return;
 
 
-    stone.style.opacity =
-        "0";
+    if (stone) {
+
+        stone.style.opacity =
+            "0";
+
+    }
+
 
     friend.style.opacity =
         "1";
@@ -3284,21 +3295,6 @@ function resetFriendView() {
     showMainMenu();
 
 }
-
-
-if (document.readyState === "loading") {
-
-    document.addEventListener(
-        "DOMContentLoaded",
-        restoreOtisTimer
-    );
-
-} else {
-
-    restoreOtisTimer();
-
-}
-
 
 /* ========================================
    KOMPAKT LAYOUT
