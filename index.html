@@ -107,10 +107,68 @@
 <script>
 
     document.addEventListener("DOMContentLoaded", () => {
-
-        renderFriends();
-
+    renderFriends();
+    /*
+       Bläddring för informationskortet
+    */
+    const wrapper =
+        document.querySelector(
+            "#friend-guide-card .gallery-wrapper"
+        );
+    if (!wrapper) return;
+    const gallery =
+        wrapper.querySelector(".gallery");
+    const images =
+        gallery.querySelectorAll("img");
+    const dotsContainer =
+        wrapper.querySelector(".dots");
+    images.forEach((image, index) => {
+        const dot =
+            document.createElement("span");
+        dot.classList.add("dot");
+        if (index === 0) {
+            dot.classList.add("active");
+        }
+        dotsContainer.appendChild(dot);
     });
+    const dots =
+        dotsContainer.querySelectorAll(".dot");
+    if (images.length <= 1) {
+        dotsContainer.style.display =
+            "none";
+    }
+    gallery.addEventListener("scroll", () => {
+        let closest = 0;
+        let distance = Infinity;
+        images.forEach((image, index) => {
+            const imageCenter =
+                image.offsetLeft +
+                image.offsetWidth / 2;
+            const galleryCenter =
+                gallery.scrollLeft +
+                gallery.offsetWidth / 2;
+            const diff =
+                Math.abs(
+                    imageCenter -
+                    galleryCenter
+                );
+            if (diff < distance) {
+                distance = diff;
+                closest = index;
+            }
+        });
+        dots.forEach(dot => {
+            dot.classList.remove(
+                "active"
+            );
+        });
+        if (dots[closest]) {
+            dots[closest].classList.add(
+                "active"
+            );
+        }
+    });
+});
 
 
     function updateOrientationWarning() {
