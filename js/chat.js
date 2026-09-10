@@ -3,7 +3,7 @@ let currentPerson = null;
 function addMessage(text, sender) {
 
     if (
-        sender === "otis" ||
+        sender === "otis01" ||
         sender === "bosse01"
     ) {
 
