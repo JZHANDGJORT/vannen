@@ -5,7 +5,7 @@ function startMathActivity() {
 
     addMessage(
         "Jag hjälper gärna till! ➕ Vad vill du räkna på idag?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -78,7 +78,7 @@ function startPlusActivity() {
 
     addMessage(
         "➕ " + problem.question,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -161,7 +161,7 @@ function startMinusActivity() {
 
     addMessage(
         "➖ " + problem.question,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -242,7 +242,7 @@ function startDivideActivity() {
 
     addMessage(
         "➗ " + problem.question,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -316,7 +316,7 @@ function startMultiplyActivity() {
 
     addMessage(
         "✖️ " + problem.question,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -384,7 +384,7 @@ function startMathPuzzleActivity() {
 
     addMessage(
         "🧠 " + problem.question,
-        "otis"
+        currentFriend.id
     );
 
     const actions =
@@ -494,7 +494,7 @@ function solveMathProblem() {
 
     addMessage(
         "Vad tror du svaret blir? 😊",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -516,7 +516,7 @@ function helpMathProblem() {
 
     addMessage(
         currentMathProblem.explanation,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -542,7 +542,7 @@ function showMathAnswer() {
 
     addMessage(
         "Svaret är " + currentMathProblem.answer + "! 🌟 Bra kämpat!",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -611,7 +611,7 @@ function startHomeworkActivity() {
 
     addMessage(
         "Klart jag kan sitta här med dig! 🦦 Du behöver inte göra läxan ensam. Vi tar en sak i taget. 💚",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -632,4 +632,3 @@ function startHomeworkActivity() {
     `;
 
 }
-
