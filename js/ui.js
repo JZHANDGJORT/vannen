@@ -3056,14 +3056,14 @@ function restoreCurrentView() {
 }
 
 /*
-   HEJ DÅ OTIS
+   HEJ DÅ VÄNNEN
 */
 
 function showGoodbye() {
 
     addMessage(
         "Ska någon gå hem nu? 💚",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -3073,12 +3073,50 @@ function showGoodbye() {
 
     actions.innerHTML = "";
 
-if (otisMemory.companionToday) {
+
+    if (friendMemory.companionToday) {
+
+        actions.innerHTML += `
+
+            <button onclick="goodbyePerson('both')">
+                🐾 Vi går båda
+            </button>
+
+        `;
+
+    }
+
+
+    if (friendMemory.owner) {
+
+        actions.innerHTML += `
+
+            <button onclick="goodbyePerson('owner')">
+                🌿 ${friendMemory.owner.name} går
+            </button>
+
+        `;
+
+    }
+
+
+    if (friendMemory.companionToday) {
+
+        actions.innerHTML += `
+
+            <button onclick="goodbyePerson('companion')">
+                🌿 ${friendMemory.companionToday.name} går
+            </button>
+
+        `;
+
+    }
+
 
     actions.innerHTML += `
 
-        <button onclick="goodbyePerson('both')">
-           🐾 Vi går båda
+        <button onclick="showMainMenu()">
+            ⬅️ Tillbaka
         </button>
 
     `;
@@ -3086,63 +3124,38 @@ if (otisMemory.companionToday) {
 }
 
 
-    if (otisMemory.owner) {
-
-        actions.innerHTML += `
-
-            <button onclick="goodbyePerson('owner')">
-                🌿 ${otisMemory.owner.name} går
-            </button>
-
-        `;
-
-    }
-
-
-    if (otisMemory.companionToday) {
-
-        actions.innerHTML += `
-
-            <button onclick="goodbyePerson('companion')">
-                🌿 ${otisMemory.companionToday.name} går
-            </button>
-
-        `;
-
-    }
-
-actions.innerHTML += `
-
-    <button onclick="showMainMenu()">
-        ⬅️ Tillbaka
-    </button>
-
-`;
-    
-}
-
 function goodbyePerson(person) {
+
+
+    const friendId =
+        currentFriend.id;
+
+
+    const friendName =
+        currentFriend.name;
 
 
     if (person === "both") {
 
         addMessage(
-            "Då säger jag hej då för idag. 💚 Tack för den här stunden, jag hoppas vi ses snart igen!",
-            "otis"
+            `Då säger jag hej då för idag. 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
+            friendId
         );
 
 
         setTimeout(() => {
 
-            otisLeaves();
+            friendLeaves();
 
         }, 1500);
 
+
         setTimeout(() => {
 
-    resetOtisView();
+            resetFriendView();
 
-}, 12000);
+        }, 12000);
+
 
         return;
 
@@ -3154,44 +3167,50 @@ function goodbyePerson(person) {
 
     if (person === "owner") {
 
-    name = otisMemory.owner.name;
+        name =
+            friendMemory.owner.name;
 
-    if (!otisMemory.companionToday) {
 
-        addMessage(
-            `Hejdå ${name}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
-            "otis"
-        );
+        if (!friendMemory.companionToday) {
 
-        setTimeout(() => {
+            addMessage(
+                `Hejdå ${name}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
+                friendId
+            );
 
-            otisLeaves();
 
-        }, 1500);
+            setTimeout(() => {
 
-        setTimeout(() => {
+                friendLeaves();
 
-    resetOtisView();
+            }, 1500);
 
-}, 12000);
 
-        return;
+            setTimeout(() => {
+
+                resetFriendView();
+
+            }, 12000);
+
+
+            return;
+
+        }
 
     }
-
-}
 
 
     if (person === "companion") {
 
-        name = otisMemory.companionToday.name;
+        name =
+            friendMemory.companionToday.name;
 
     }
 
 
     addMessage(
         `Hejdå ${name}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
-        "otis"
+        friendId
     );
 
 
@@ -3203,51 +3222,63 @@ function goodbyePerson(person) {
 
 }
 
-function otisLeaves() {
+
+function friendLeaves() {
 
     const stone =
         document.getElementById("friend-stone");
 
-    const otis =
+    const friend =
         document.getElementById("friend-character");
 
     const face =
         document.getElementById("friend-character-face");
 
 
-    if (!stone || !otis || !face) return;
+    if (!stone || !friend || !face) return;
 
 
-    stone.style.opacity = "1";
+    stone.style.opacity =
+        "1";
 
-    otis.style.opacity = "0";
+    friend.style.opacity =
+        "0";
 
-    face.style.opacity = "0";
-    face.src = "";
+    face.style.opacity =
+        "0";
+
+    face.src =
+        "";
 
 }
 
-function resetOtisView() {
+
+function resetFriendView() {
 
     const stone =
         document.getElementById("friend-stone");
 
-    const otis =
+    const friend =
         document.getElementById("friend-character");
 
     const face =
         document.getElementById("friend-character-face");
 
 
-    if (!stone || !otis || !face) return;
+    if (!stone || !friend || !face) return;
 
 
-    stone.style.opacity = "0";
+    stone.style.opacity =
+        "0";
 
-    otis.style.opacity = "1";
+    friend.style.opacity =
+        "1";
 
-    face.style.opacity = "0";
-    face.src = "";
+    face.style.opacity =
+        "0";
+
+    face.src =
+        "";
 
 
     showMainMenu();
