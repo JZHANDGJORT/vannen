@@ -1,31 +1,1506 @@
 
 
+let otisAudioContext = null;
+let currentActivity = null;
+
+function updateActionLayout() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    const count =
+        actions.querySelectorAll("button").length;
+
+
+    if (count === 4) {
+
+        actions.style.gridTemplateColumns =
+            "repeat(2, 1fr)";
+
+    } else {
+
+        actions.style.gridTemplateColumns =
+            "repeat(3, 1fr)";
+
+    }
+
+}
+
+function showMainMenu() {
+
+    const actions =
+        document.getElementById("actions");
+
+    // Om en timer fortfarande är aktiv,
+    // visa timerläget istället för huvudmenyn.
+    const activeTimer =
+        localStorage.getItem("otis-active-timer");
+
+    if (activeTimer) {
+
+        try {
+
+            const data =
+                JSON.parse(activeTimer);
+
+            // Kontrollera att timern faktiskt finns kvar
+            // och att den har en giltig sluttid.
+            if (data.endTime) {
+
+                showOtisTimer(data.endTime);
+
+                return;
+
+            }
+
+        } catch (error) {
+
+            localStorage.removeItem(
+                "otis-active-timer"
+            );
+
+        }
+
+    }
+
+    actions.classList.remove("activity-menu");
+
+    actions.innerHTML = `
+
+    <button id="present-person-button" class="action-button company">
+        <span class="action-icon">❤️</span>
+        <span>Sällskap</span>
+    </button>
+
+    <button id="activity-button" class="action-button explore">
+        <span class="action-icon">🌱</span>
+        <span>Hitta på något</span>
+    </button>
+
+    <button id="dialog-button" class="action-button talk">
+        <span class="action-icon">💬</span>
+        <span>Prata med ${currentFriend.name}</span>
+    </button>
+
+    `;
+
+
+    document
+        .getElementById("activity-button")
+        .addEventListener(
+            "click",
+            showActivity
+        );
+
+
+    document
+        .getElementById("dialog-button")
+        .addEventListener(
+            "click",
+            showDialog
+        );
+
+
+    document
+        .getElementById("present-person-button")
+        .addEventListener(
+            "click",
+            showPresentPerson
+        );
+
+}
+
+function showSettings() {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button onclick="showFriends()">
+            👥 Mina vänner
+        </button>
+
+        <button onclick="changeName()">
+            ✏️ Mitt namn
+        </button>
+
+        <button onclick="exportOtisMemory()">
+
+            💾 Spara minne
+
+        </button>
+
+        <button onclick="importOtisMemory()">
+
+            📂 Hämta minne
+
+        </button>
+
+        <button onclick="resetMemoryQuestion()">
+            🌊 Återställ minne
+        </button>
+
+        <button onclick="showMainMenu()">
+            ❌ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function showFriends() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    let html = ``;
+
+
+    // Ägaren
+
+    if (otisMemory.owner) {
+
+        html += `
+
+            <button onclick="showFriendInfo('owner')">
+
+                🌿 ${otisMemory.owner.name}
+
+                <br>
+
+                <small>Min huvudvän</small>
+
+            </button>
+
+        `;
+
+    }
+
+
+    // Övriga personer
+
+    otisMemory.friends.forEach((person, index) => {
+
+        let info = "";
+
+
+        if (person.type === "child") {
+
+    info = person.age
+        ? `${person.age} år`
+        : "Barn";
+
+} else if (person.type === "adult") {
+
+    info = person.role || "Vuxen";
+
+}
+
+
+        html += `
+
+            <button onclick="showFriendInfo(${index})">
+
+                ${person.type === "child" ? "🧒" : "👤"}
+
+                ${person.name}
+
+                <br>
+
+                <small>${info}</small>
+
+            </button>
+
+        `;
+
+    });
+
+
+    html += `
+
+        <button onclick="showSettings()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+
+    actions.innerHTML = html;
+
+}
+
+function resetMemoryQuestion() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    addMessage(
+        "Är du säker? Jag kommer att glömma det jag lärt mig om dig, men jag skulle gärna vilja lära känna dig igen. 💚",
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <button onclick="resetMemory()">
+            🌱 Ja, börja om
+        </button>
+
+        <button onclick="showMainMenu()">
+            🌿 Nej, fortsätt som vanligt
+        </button>
+
+    `;
+
+}
+
+function showBackpack() {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
+        <button>
+            📸 Våra minnen
+        </button>
+
+        <button>
+           ⭐ Våra äventyr
+        </button>
+
+        <button>
+            🪨 Mina skatter
+        </button>
+
+        <button onclick="showMainMenu()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function askOpenBackpack() {
+
+    addMessage(
+        "Vad är det där?",
+        "user"
+    );
+
+
+    addMessage(
+        "Åh, det här är min ryggsäck! Jag brukar ta med mig små saker från mina äventyr. Vill du öppna den?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="openOtisBackpack()">
+            🎒 Ja, öppna den!
+        </button>
+
+        <button onclick="showMainMenu()">
+            🐾 Inte just nu
+        </button>
+
+    `;
+
+}
+
+function showBackpackChoice() {
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="openOtisBackpack()">
+            🎒 Ja, öppna den!
+        </button>
+
+        <button onclick="showMainMenu()">
+            🐾 Inte just nu
+        </button>
+
+    `;
+
+}
+
+function openOtisBackpack() {
+
+    addMessage(
+        "Åh, vad roligt! Jag blir alltid glad när jag får visa vad jag har där i. 💚",
+        "otis"
+    );
+
+    laughCharacter();
+
+    setTimeout(() => {
+
+        openBackpackRoom();
+
+    }, 1500);
+
+}
+
+function showActivity() {
+
+    addMessage(
+        "Vad roligt! 💚 Är det något speciellt du behöver göra idag eller ska vi hitta på något tillsammans?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.classList.add("activity-menu");
+
+
+    actions.innerHTML = `
+
+        <button onclick="suggestActivity()">
+            🌿 Hitta på något
+        </button>
+
+        <button onclick="showDiscover()">
+            🍃 Upptäcka
+        </button>
+
+        <button onclick="chooseActivityNeed('read')">
+            📚 Läsa
+        </button>
+
+        <button onclick="startMathActivity()">
+          ➕ Räkna
+        </button>
+
+        <button onclick="chooseActivityNeed('create')">
+            🎨 Skapa
+        </button>
+
+        <button onclick="chooseActivityNeed('calm')">
+            🧘 Varva ner
+        </button>
+
+        <button onclick="chooseActivityNeed('tidy')">
+            🧹 Röja lite
+        </button>
+
+        <button onclick="showMainMenu()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function chooseActivityNeed(type) {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.classList.remove("activity-menu");
+
+    if (type === "read") {
+
+        addMessage(
+            "Vad mysigt! 📚 Har du en bok som vi kan läsa tillsammans?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="chooseReadTimer()">
+                📖 Ja, jag har en bok
+            </button>
+
+            <button onclick="readOtisStory()">
+                📚 Läs om Otis äventyr
+            </button>
+
+            <button onclick="simpleActivity('later')">
+                🌿 Jag väljer senare
+            </button>
+
+            <button onclick="showMainMenu()">
+                🐾 Inte idag
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    if (type === "math") {
+
+    addMessage(
+        "Jag hjälper gärna till! ➕ Vad vill du göra?",
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <button onclick="startHomeworkActivity()">
+            📝 Jag har en läxa
+        </button>
+
+        <button onclick="startMathActivity()">
+            🔢 Jag vill räkna tillsammans
+        </button>
+
+        <button onclick="showMainMenu()">
+            🐾 Inte idag
+        </button>
+
+    `;
+
+    return;
+
+}
+
+
+    if (type === "create") {
+
+        addMessage(
+            "Vad roligt! 🎨 Jag tycker om att skapa saker tillsammans.",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('paint')">
+                🎨 Måla
+            </button>
+
+            <button onclick="simpleActivity('build')">
+                🧱 Bygga något
+            </button>
+
+            <button onclick="simpleActivity('craft')">
+                ✂️ Pyssla
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    if (type === "calm") {
+
+        addMessage(
+            "Då tar vi det lite lugnt tillsammans. 🌊",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+    <button onclick="simpleActivity('breathe')">
+        🌬️ Lugna andetag
+    </button>
+
+    <button onclick="simpleActivity('senses')">
+        👀 Fem saker du ser
+    </button>
+
+    <button onclick="simpleActivity('listen')">
+        👂 Lyssna en stund
+    </button>
+
+    <button onclick="simpleActivity('body')">
+        🤲 Känn efter
+    </button>
+
+    <button onclick="simpleActivity('slow')">
+        🐢 Gör något långsamt
+    </button>
+
+    <button onclick="simpleActivity('place')">
+        🌊 Tänk på en lugn plats
+    </button>
+
+    <button onclick="simpleActivity('thoughts')">
+        ☁️ Låt tankarna vila
+    </button>
+
+    <button onclick="simpleActivity('pause')">
+        💚 Bara vara en stund
+    </button>
+
+    <button onclick="showActivity()">
+        ⬅️ Tillbaka
+    </button>
+
+`;
+
+        return;
+
+    }
+
+
+    if (type === "tidy") {
+
+        addMessage(
+            "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('five')">
+                ⭐ Plocka undan fem saker
+            </button>
+
+            <button onclick="simpleActivity('tidy10')">
+                ⏱️ Plocka undan i 10 minuter
+            </button>
+
+            <button onclick="simpleActivity('room')">
+                🏡 Göra fint i ett rum
+            </button>
+
+            <button onclick="simpleActivity('box')">
+                📦 Gå igenom en låda eller ett skåp
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+}
+
+function suggestActivity() {
+
+    const activityTypes = [
+    "discover",
+    "read",
+    "math",
+    "create",
+    "calm",
+    "tidy"
+];
+
+
+    const randomType =
+        activityTypes[
+            Math.floor(
+                Math.random() * activityTypes.length
+            )
+        ];
+
+
+    const actions =
+        document.getElementById("actions");
+
+actions.classList.remove("activity-menu");
+    
+    if (randomType === "discover") {
+
+    addMessage(
+        "Jag har en upptäckaridé! 🍃 Ska vi lära oss något nytt tillsammans?",
+        "otis"
+    );
+
+
+    actions.innerHTML = `
+
+        <button onclick="showDiscover()">
+            💚 Ja, det gör vi!
+        </button>
+
+        <button onclick="suggestActivity()">
+            ✨ En annan idé
+        </button>
+
+        <button onclick="showActivity()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+    return;
+
+}
+
+    if (randomType === "read") {
+
+        addMessage(
+            "Hmm... 📚 Jag tycker att vi ska läsa en stund tillsammans! Vad tror du om det?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="chooseActivityNeed('read')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "math") {
+
+        addMessage(
+            "Jag har en idé! ➕ Vad sägs om att räkna på något en liten stund?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="chooseActivityNeed('math')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "create") {
+
+        addMessage(
+            "Vad sägs om att skapa något? 🎨 Jag tror att det skulle vara roligt!",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="startCreateActivity()">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "calm") {
+
+        addMessage(
+            "Jag tycker att vi ska ta det lite lugnt tillsammans. 🌊",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('breathe')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+
+    if (randomType === "tidy") {
+
+        addMessage(
+            "Hmm... 🧹 Ska vi göra en liten hjälteinsats och få undan några saker?",
+            "otis"
+        );
+
+
+        actions.innerHTML = `
+
+            <button onclick="simpleActivity('five')">
+                💚 Ja, det gör vi!
+            </button>
+
+            <button onclick="suggestActivity()">
+                ✨ En annan idé
+            </button>
+
+            <button onclick="showActivity()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+    }
+
+}
+
+function startCreateActivity() {
+
+    const createActivities = [
+        {
+            type: "paint",
+            message:
+                "Vad roligt! 🎨 Ska vi måla något tillsammans? Kanske något vi tycker om eller något vi hittar på?"
+        },
+
+        {
+            type: "build",
+            message:
+                "Vad roligt! 🧱 Ska vi bygga något tillsammans? Kanske en liten koja, ett hus eller något helt eget?"
+        },
+
+        {
+            type: "craft",
+            message:
+                "Vad roligt! ✂️ Ska vi pyssla med något? Vi kan använda papper, färger eller något annat vi hittar hemma."
+        }
+    ];
+
+
+    const activity =
+        createActivities[
+            Math.floor(
+                Math.random() * createActivities.length
+            )
+        ];
+
+
+    addMessage(
+        activity.message,
+        "otis"
+    );
+
+
+    currentActivity = {
+        type: activity.type
+    };
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="continueCreateActivity('${activity.type}')">
+            💚 Ja, det gör vi!
+        </button>
+
+        <button onclick="startCreateActivity()">
+            ✨ En annan idé
+        </button>
+
+        <button onclick="showActivity()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function continueCreateActivity(type) {
+
+
+    if (type === "paint") {
+
+        simpleActivity("paint");
+
+        return;
+
+    }
+
+
+    if (type === "build") {
+
+        startBuildActivity();
+
+        return;
+
+    }
+
+
+    if (type === "craft") {
+
+        startCraftActivity();
+
+        return;
+
+    }
+
+}
+
+function startBuildActivity() {
+
+
+    const buildMaterials = [
+        "lego",
+        "duplo",
+        "blocks",
+        "fort",
+        "clay",
+        "nature",
+        "cardboard",
+        "fabric",
+        "recycle",
+        "mixed"
+    ];
+
+
+    const material =
+        buildMaterials[
+            Math.floor(
+                Math.random() * buildMaterials.length
+            )
+        ];
+
+
+    addMessage(
+        "Vad roligt! 🧱 Jag fick en idé om något vi kan bygga tillsammans.",
+        "otis"
+    );
+
+
+    chooseBuildMaterial(material);
+
+}
+
+function startCraftActivity() {
+
+
+    const craftMaterials = [
+        "beads",
+        "beadplate",
+        "paper",
+        "yarn"
+    ];
+
+
+    const material =
+        craftMaterials[
+            Math.floor(
+                Math.random() * craftMaterials.length
+            )
+        ];
+
+
+    addMessage(
+        "Vad roligt! ✂️ Jag fick en idé om något vi kan pyssla tillsammans.",
+        "otis"
+    );
+
+
+    chooseCraft(material);
+
+}
+
+function simpleActivity(type) {
+    const messages = {
+        read:
+        "Vad mysigt! 📚 Läs för mig en stund, jag finns här och lyssnar.",
+        later:
+        "Det går bra. Jag finns kvar här när du är redo. Så kan vi läsa lite senare när du har hittat något mysigt att läsa tillsammans. 💚",
+        homework:
+        "Jag sitter bredvid dig och hejar på. Du klarar det! 🌿",
+        challenge:
+        "Okej! Vad blir 2 + 3? ➕",
+        paint:
+        "Vad roligt! 🎨 Vet du redan vad du vill måla eller vill du ha en liten idé?",
+        build:
+        "Vad roligt! 🧱 Vad vill du bygga med idag?",
+        craft:
+        "Vad roligt! ✂️ Vad vill du pyssla med idag.",
+        five:
+        "Fem saker räcker! Ett litet steg kan göra stor skillnad. ⭐",
+        tidy10:
+        "Bra idé! 🌿 Vi tar 10 minuter tillsammans och ser hur mycket vi hinner.",
+        room:
+        "Det här är ett större uppdrag. 🏡 Vi gör fint i ett rum tillsammans.",
+        box:
+        "Ett riktigt hjälteuppdrag! 📦 Vi går igenom en låda eller ett skåp och gör det lättare att hitta saker."
+    };
+    // ----------------------------------------
+    // Lugna övningar
+    // ----------------------------------------
+    if (
+    type === "breathe" ||
+    type === "senses" ||
+    type === "listen" ||
+    type === "body" ||
+    type === "slow" ||
+    type === "place" ||
+    type === "thoughts" ||
+    type === "pause"
+) {
+    guidedCalmActivity(type);
+    return;
+}
+    // ----------------------------------------
+    // Vanligt aktivitetsmeddelande
+    // ----------------------------------------
+    addMessage(
+        messages[type],
+        "otis"
+    );
+    // ----------------------------------------
+    // Måla
+    // ----------------------------------------
+    if (type === "paint") {
+        const actions =
+            document.getElementById("actions");
+        actions.innerHTML = `
+            <button onclick="paintIdea(false)">
+                🎨 Jag vet redan
+            </button>
+            <button onclick="paintIdea(true)">
+                ✨ Ge mig en idé
+            </button>
+            <button onclick="chooseActivityNeed('create')">
+                ⬅️ Tillbaka
+            </button>
+        `;
+        return;
+    }
+    // ----------------------------------------
+    // Bygga
+    // ----------------------------------------
+    if (type === "build") {
+        const actions =
+            document.getElementById("actions");
+        actions.innerHTML = `
+            <button onclick="chooseBuildMaterial('lego')">
+                🧱 Lego
+            </button>
+            <button onclick="chooseBuildMaterial('duplo')">
+                🧸 Duplo
+            </button>
+            <button onclick="chooseBuildMaterial('blocks')">
+                🪵 Klossar
+            </button>
+            <button onclick="chooseBuildMaterial('fort')">
+                🏕️ Kuddar & filtar
+            </button>
+            <button onclick="chooseBuildMaterial('clay')">
+                🪨 Lera
+            </button>
+            <button onclick="chooseBuildMaterial('other')">
+                ✨ Något annat
+            </button>
+            <button onclick="chooseActivityNeed('create')">
+                ⬅️ Tillbaka
+            </button>
+        `;
+        return;
+    }
+    // ----------------------------------------
+    // Pyssla
+    // ----------------------------------------
+    if (type === "craft") {
+        const actions =
+            document.getElementById("actions");
+        actions.innerHTML = `
+            <button onclick="chooseCraft('beads')">
+                📿 Pärlor
+            </button>
+            <button onclick="chooseCraft('beadplate')">
+                🟦 Pärlplatta
+            </button>
+            <button onclick="chooseCraft('paper')">
+                📄 Papper
+            </button>
+            <button onclick="chooseCraft('yarn')">
+                🧶 Garn
+            </button>
+            <button onclick="chooseActivityNeed('create')">
+                ⬅️ Tillbaka
+            </button>
+        `;
+        return;
+    }
+    // ----------------------------------------
+    // 10 minuter
+    // ----------------------------------------
+    if (type === "tidy10") {
+        startOtisTimer("tidy10");
+        return;
+    }
+    // ----------------------------------------
+    // Aktivitet
+    // ----------------------------------------
+    currentActivity = {
+        type: type,
+        difficulty:
+            type === "five" ? "lätt" :
+            type === "tidy10" ? "mellan" :
+            type === "room" ? "utmaning" :
+            type === "box" ? "utmaning" :
+            "vanlig",
+        completed:
+            "Vad fint gjort! 💚 Jag tyckte om att få göra det här tillsammans med dig.",
+        skipped:
+            "Det gör inget. Vi kan prova en annan gång. 🌿"
+    };
+    const actions =
+        document.getElementById("actions");
+    actions.innerHTML = `
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+    `;
+}
+
+function simpleActivityDone() {
+
+    addMessage(
+        currentActivity.completed,
+        "otis"
+    );
+
+
+    saveCompletedActivity(
+        currentActivity
+    );
+
+
+    if (currentActivity.type === "read") {
+
+        addBadgeProgress("lasar");
+
+    }
+    
+
+    if (currentActivity.type === "upptackar") {
+
+        addBadgeProgress("upptackar");
+
+    }
+
+    if (currentActivity.badgeType) {
+
+    addBadgeProgress(
+        currentActivity.badgeType
+    );
+
+}
+
+
+    currentActivity = null;
+
+    showMainMenu();
+
+}
+
+
+function simpleActivitySkipped() {
+
+    clearInterval(window.otisTimer);
+
+    window.otisTimer = null;
+
+    localStorage.removeItem(
+        "otis-active-timer"
+    );
+
+    document
+        .getElementById("activity-timer")
+        .classList.add("activity-hidden");
+
+    saveSkippedActivity(
+        currentActivity
+    );
+
+    addMessage(
+        currentActivity.skipped,
+        "otis"
+    );
+
+    currentActivity = null;
+
+    showMainMenu();
+
+}
+
+function showDiscover() {
+
+    addMessage(
+        "Vad roligt! 🌿 Jag älskar att upptäcka nya saker. Vad vill du upptäcka idag?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.classList.remove("activity-menu");
+
+    actions.innerHTML = `
+
+        <button onclick="showWorldDiscover()">
+            🌍 Upptäcka världen
+        </button>
+
+        <button onclick="showBodyDiscover()">
+            💚 Upptäcka kroppen
+        </button>
+
+        <button onclick="readOtisFactBook()">
+        📚 Upptäcka kunskap
+        </button>
+
+        <button onclick="showActivity()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function showWorldDiscover() {
+
+    addMessage(
+        "Då ger vi oss ut på ett litet äventyr! 🌍 Vad skulle du vilja upptäcka idag?",
+        "otis"
+    );
+
+    const actions =
+        document.getElementById("actions");
+
+actions.classList.remove("activity-menu");
+    
+    actions.innerHTML = `
+
+        <button onclick="discoverWorld('nature')">
+            🌳 Naturen
+        </button>
+
+        <button onclick="discoverWorld('place')">
+            🗺️ En ny plats
+        </button>
+
+        <button onclick="discoverWorld('details')">
+            🔍 Titta noga
+        </button>
+
+        <button onclick="showDiscover()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function discoverWorld(type) {
+
+    const ideas = {
+
+        nature: [
+    "🌿 Hitta ett löv du tycker är extra fint.",
+    "🐦 Lyssna efter tre olika fågelläten.",
+    "🪨 Hitta en sten som känns speciell.",
+    "🎨 Hitta något i naturen du kan måla med, till exempel ett löv, en blomma eller ett bär.",
+    "🪨 Hitta en sten och fundera på vad den liknar. Måla den sedan som det du ser."
+],
+
+        place: [
+
+            "🚶 Gå en väg du aldrig gått förut.",
+
+            "🏡 Titta efter ett hus du aldrig lagt märke till.",
+
+            "🌉 Hitta en plats du vill komma tillbaka till."
+
+        ],
+
+        details: [
+
+            "👀 Hitta fem saker som har samma färg.",
+
+            "🦋 Leta efter något riktigt litet.",
+
+            "☁️ Titta upp och beskriv molnen."
+
+        ]
+
+    };
+
+    addMessage(
+        ideas[type][
+            Math.floor(Math.random() * ideas[type].length)
+        ],
+        "otis"
+    );
+
+    currentActivity = {
+
+        type: "upptackar",
+
+        completed:
+            "Vilket spännande äventyr! 🌍 Jag hoppas att du hittade något du aldrig sett förut.",
+
+        skipped:
+            "Det gör inget. Vi kan ge oss ut på upptäcktsfärd en annan dag. 🌿"
+
+    };
+
+    document.getElementById("actions").innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
+
+function showBodyDiscover() {
+
+    addMessage(
+        "Kroppen är fantastisk. 💚 Ska vi upptäcka vad den kan göra idag?",
+        "otis"
+    );
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="discoverBody('movement')">
+            🚶 Rör på kroppen
+        </button>
+
+        <button onclick="discoverBody('stretch')">
+            🙆 Sträck på kroppen
+        </button>
+
+        <button onclick="discoverBody('listen')">
+            👂 Lyssna på kroppen
+        </button>
+
+        <button onclick="showDiscover()">
+            ⬅️ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function discoverBody(activity) {
+
+    const ideas = {
+
+        movement: [
+    "🚶 Ta en liten promenad och känn hur fötterna rör sig när du går.",
+    "🦵 Gör 10 knäböj. Känn hur benen arbetar när du böjer och sträcker dem.",
+    "👣 Ställ dig på tå 10 gånger. Hur känns det i fötterna och benen?",
+    "🦩 Stå på ett ben så länge du kan. Hur länge kan kroppen hålla balansen?",
+    "🐸 Hoppa som en groda 5 gånger. Känn hur hela kroppen får följa med.",
+    "🙆 Sträck armarna upp och ner 10 gånger. Kan du göra det långsamt?",
+    "🔄 Snurra runt tre gånger och stanna sedan helt stilla. Känns det annorlunda i kroppen?",
+    "🎵 Sätt på din favoritlåt och dansa! Hur känns det i kroppen när du rör dig till musiken?",
+    "⚽ Kasta en boll upp i luften och fånga den igen. Kan du hitta på olika sätt att kasta och fånga?",
+    "⚽ Rulla eller studsa en boll mot en vägg och fånga den när den kommer tillbaka. Välj en vägg som är fri från ömtåliga saker.",
+    "🎯 Välj något som mål och se hur nära du kan rulla, sparka eller kasta bollen."
+],
+
+        stretch: [
+
+            "🙆 Ställ dig upp och sträck båda armarna så högt du kan, som om du försöker nå ända upp till himlen.",
+
+            "🦶 Sätt dig ner och sträck benen framför dig. Sträck dig försiktigt mot tårna och känn hur det känns.",
+
+            "🙆 Sträck ena armen långt över huvudet och sedan den andra. Kan du känna skillnaden mellan sidorna?",
+
+            "💚 Sträck båda armarna långt fram framför dig. Gör dig sedan så lång du kan.",
+
+            "🌿 Rulla axlarna långsamt bakåt några gånger. Känns axlarna annorlunda efteråt?",
+
+            "↔️ Sträck dig försiktigt åt ena sidan och sedan åt den andra. Vilken sida känns längst?"
+        ],
+
+
+        listen: [
+
+            "💚 Sitt eller stå alldeles stilla en liten stund. Hur känns kroppen just nu?",
+
+            "❤️ Lägg handen på bröstet. Kan du känna hur hjärtat slår?",
+
+            "🌬️ Lägg en hand på magen. Kan du känna hur magen rör sig när du andas?",
+
+            "👂 Blunda en liten stund. Vilket är det första ljudet du hör?",
+
+            "🌡️ Känn efter. Känns kroppen varm eller kall just nu?",
+
+            "💚 Känner du dig pigg, trött eller kanske något mitt emellan?",
+
+            "👣 Känn dina fötter mot golvet. Kan du känna var fötterna har kontakt med marken?",
+
+            "✋ Spänn händerna hårt en liten stund och släpp sedan. Kändes det någon skillnad?"
+        ]
+
+    };
+
+
+    const choices =
+        ideas[activity];
+
+
+    const message =
+        choices[
+            Math.floor(
+                Math.random() * choices.length
+            )
+        ];
+
+
+    addMessage(
+        message,
+        "otis"
+    );
+
+
+    currentActivity = {
+
+        type: "upptackar",
+
+        completed:
+        "Vad spännande! 🌿 Nu har vi upptäckt något nytt tillsammans.",
+
+        skipped:
+        "Det gör inget. Vi kan upptäcka mer en annan dag. 💚"
+
+    };
+
+
+    const actions =
+        document.getElementById("actions");
+
+
+    actions.innerHTML = `
+
+        <button onclick="simpleActivityDone()">
+            ✅ Vi gjorde det!
+        </button>
+
+        <button onclick="simpleActivitySkipped()">
+            🌿 Vi hann inte idag
+        </button>
+
+    `;
+
+}
 
 
 
+function startOtisTimer(type = "tidy10") {
 
+    if (!otisAudioContext) {
+        otisAudioContext =
+            new (window.AudioContext || window.webkitAudioContext)();
+    }
 
+    if (otisAudioContext.state === "suspended") {
+        otisAudioContext.resume();
+    }
 
+    // Om det redan finns en timer, stoppa den först
+    clearInterval(window.otisTimer);
 
+    currentActivity = {
+        type: type,
+        badgeType:
+            type === "read"
+                ? "lasar"
+                : null,
+        completed:
+            type === "read"
+                ? "Bra jobbat! 📚 Vi läste tillsammans i 10 minuter. 🌟"
+                : "Wow! ⭐ Tio minuter gick fort. Jag är stolt över oss!",
+        skipped:
+            "Det gör inget. Vi kan prova en annan gång. 🌿"
+    };
 
+    // Spara exakt när timern ska vara klar
+    const endTime =
+        Date.now() + (10 * 60 * 1000);
 
+    localStorage.setItem(
+        "otis-active-timer",
+        JSON.stringify({
+            type: type,
+            endTime: endTime
+        })
+    );
 
+    showOtisTimer(endTime);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 function showOtisTimer(endTime) {
