@@ -68,7 +68,3 @@ function renderFriends() {
         );
     });
 }
-
-Viktigt: sökvägarna images/.../kort1.png osv. är bara platshållare tills vi vet vad dina fyra bilder faktiskt heter och var du vill lägga dem.
-
-När vi lägger in nästa del i index.html kan vi använda exakt samma bläddringsprincip som på Studio Lerat.
