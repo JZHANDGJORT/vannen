@@ -152,7 +152,7 @@ function updateBadge(type) {
 
 
     image.src =
-        `images/Otis/badge/otis-backpack-item-marke-${type}${color}.PNG`;
+        `images/Vannen/backpack/badge/otis-backpack-item-marke-${type}${color}.PNG`;
 
 }
 // ========================================
