@@ -5,7 +5,7 @@ const bosse = {
     name: "Bosse",
 
     // Bild som visas på Vännen-startsidan
-    image: "images/Bosse/bosse-character.PNG",
+    image: "images/Bosse/bosse-home.PNG",
 
     // Bild som visas inne i Bosses värld
     worldImage: "images/Bosse/bosse-world.PNG",
