@@ -1,52 +1,74 @@
 function renderFriends() {
-
     const container =
         document.getElementById("friends-list");
-
-
     if (!container) return;
-
-
     container.innerHTML = "";
-
-
+    /*
+       Vännen – informationskort
+    */
+    const guideCard =
+        document.createElement("div");
+    guideCard.classList.add(
+        "project-card"
+    );
+    guideCard.id =
+        "friend-guide-card";
+    guideCard.innerHTML = `
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <img
+                    src="images/.../kort1.png"
+                    alt="Vad är Vännen?"
+                >
+                <img
+                    src="images/.../kort2.png"
+                    alt="Vad kan vi göra?"
+                >
+                <img
+                    src="images/.../kort3.png"
+                    alt="Hur fungerar vänskapen?"
+                >
+                <img
+                    src="images/.../kort4.png"
+                    alt="Vad finns i ryggsäcken?"
+                >
+            </div>
+            <div class="dots"></div>
+        </div>
+    `;
+    container.appendChild(
+        guideCard
+    );
+    /*
+       Vanliga vänkort
+    */
     friends.forEach(friend => {
-
-
         const card =
             document.createElement("div");
-
-
         card.classList.add(
             "project-card"
         );
-
-
         card.innerHTML = `
-
-            <img 
-                src="${friend.image}" 
+            <img
+                src="${friend.image}"
                 alt="${friend.name}"
             >
-
             <h3>
                 ${friend.name}
             </h3>
-
             <p>
                 ${friend.cardText}
             </p>
-
             <a href="${friend.id === "otis01" ? "otis.html" : "bosse.html"}">
                 Möt ${friend.name} →
             </a>
-
         `;
-
-
-        container.appendChild(card);
-
-
+        container.appendChild(
+            card
+        );
     });
-
 }
+
+Viktigt: sökvägarna images/.../kort1.png osv. är bara platshållare tills vi vet vad dina fyra bilder faktiskt heter och var du vill lägga dem.
+
+När vi lägger in nästa del i index.html kan vi använda exakt samma bläddringsprincip som på Studio Lerat.
