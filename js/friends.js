@@ -1,8 +1,18 @@
 function renderFriends() {
-    const container =
-        document.getElementById("friends-list");
-    if (!container) return;
-    container.innerHTML = "";
+    const guideContainer =
+        document.getElementById(
+            "friend-guide-container"
+        );
+    const friendsContainer =
+        document.getElementById(
+            "friends-list"
+        );
+    if (
+        !guideContainer ||
+        !friendsContainer
+    ) return;
+    guideContainer.innerHTML = "";
+    friendsContainer.innerHTML = "";
     /*
        Vännen – informationskort
     */
@@ -36,7 +46,7 @@ function renderFriends() {
             <div class="dots"></div>
         </div>
     `;
-    container.appendChild(
+    guideContainer.appendChild(
         guideCard
     );
     /*
@@ -63,7 +73,7 @@ function renderFriends() {
                 Möt ${friend.name} →
             </a>
         `;
-        container.appendChild(
+        friendsContainer.appendChild(
             card
         );
     });
