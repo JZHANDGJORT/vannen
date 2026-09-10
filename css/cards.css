@@ -112,3 +112,46 @@
     background: #e8dfd5;
 
 }
+
+
+/*
+   Informationskort – bläddring
+*/
+#friend-guide-card .gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    align-items: center;
+}
+#friend-guide-card .gallery::-webkit-scrollbar {
+    display: none;
+}
+#friend-guide-card .gallery img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+    scroll-snap-align: center;
+    border-radius: 16px;
+}
+/*
+   Prickarna
+*/
+#friend-guide-card .dots {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 10px;
+}
+#friend-guide-card .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(77, 67, 61, 0.3);
+}
+#friend-guide-card .dot.active {
+    background: #4d433d;
+}
