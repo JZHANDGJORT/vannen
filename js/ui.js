@@ -240,11 +240,11 @@ function resetMemoryQuestion() {
 
     addMessage(
         "Är du säker? Jag kommer att glömma det jag lärt mig om dig, men jag skulle gärna vilja lära känna dig igen. 💚",
-        "otis"
+        currentFriend.id
     );
 
 
-    actions.innerHTML = `
+    gactions.innerHTML = `
 
         <button onclick="resetMemory()">
             🌱 Ja, börja om
@@ -295,7 +295,7 @@ function askOpenBackpack() {
 
     addMessage(
         "Åh, det här är min ryggsäck! Jag brukar ta med mig små saker från mina äventyr. Vill du öppna den?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -341,7 +341,7 @@ function openOtisBackpack() {
 
     addMessage(
         "Åh, vad roligt! Jag blir alltid glad när jag får visa vad jag har där i. 💚",
-        "otis"
+        currentFriend.id
     );
 
     laughCharacter();
@@ -358,7 +358,7 @@ function showActivity() {
 
     addMessage(
         "Vad roligt! 💚 Är det något speciellt du behöver göra idag eller ska vi hitta på något tillsammans?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -417,7 +417,7 @@ function chooseActivityNeed(type) {
 
         addMessage(
             "Vad mysigt! 📚 Har du en bok som vi kan läsa tillsammans?",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -450,7 +450,7 @@ function chooseActivityNeed(type) {
 
     addMessage(
         "Jag hjälper gärna till! ➕ Vad vill du göra?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -479,7 +479,7 @@ function chooseActivityNeed(type) {
 
         addMessage(
             "Vad roligt! 🎨 Jag tycker om att skapa saker tillsammans.",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -512,7 +512,7 @@ function chooseActivityNeed(type) {
 
         addMessage(
             "Då tar vi det lite lugnt tillsammans. 🌊",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -565,7 +565,7 @@ function chooseActivityNeed(type) {
 
         addMessage(
             "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -628,7 +628,7 @@ actions.classList.remove("activity-menu");
 
     addMessage(
         "Jag har en upptäckaridé! 🍃 Ska vi lära oss något nytt tillsammans?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -656,7 +656,7 @@ actions.classList.remove("activity-menu");
 
         addMessage(
             "Hmm... 📚 Jag tycker att vi ska läsa en stund tillsammans! Vad tror du om det?",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -684,7 +684,7 @@ actions.classList.remove("activity-menu");
 
         addMessage(
             "Jag har en idé! ➕ Vad sägs om att räkna på något en liten stund?",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -712,7 +712,7 @@ actions.classList.remove("activity-menu");
 
         addMessage(
             "Vad sägs om att skapa något? 🎨 Jag tror att det skulle vara roligt!",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -740,7 +740,7 @@ actions.classList.remove("activity-menu");
 
         addMessage(
             "Jag tycker att vi ska ta det lite lugnt tillsammans. 🌊",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -768,7 +768,7 @@ actions.classList.remove("activity-menu");
 
         addMessage(
             "Hmm... 🧹 Ska vi göra en liten hjälteinsats och få undan några saker?",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -915,7 +915,7 @@ function startBuildActivity() {
 
     addMessage(
         "Vad roligt! 🧱 Jag fick en idé om något vi kan bygga tillsammans.",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -944,7 +944,7 @@ function startCraftActivity() {
 
     addMessage(
         "Vad roligt! ✂️ Jag fick en idé om något vi kan pyssla tillsammans.",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -998,7 +998,7 @@ function simpleActivity(type) {
     // ----------------------------------------
     addMessage(
         messages[type],
-        "otis"
+        currentFriend.id
     );
     // ----------------------------------------
     // Måla
@@ -1114,7 +1114,7 @@ function simpleActivityDone() {
 
     addMessage(
         currentActivity.completed,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1172,7 +1172,7 @@ function simpleActivitySkipped() {
 
     addMessage(
         currentActivity.skipped,
-        "otis"
+        currentFriend.id
     );
 
     currentActivity = null;
@@ -1185,7 +1185,7 @@ function showDiscover() {
 
     addMessage(
         "Vad roligt! 🌿 Jag älskar att upptäcka nya saker. Vad vill du upptäcka idag?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1220,7 +1220,7 @@ function showWorldDiscover() {
 
     addMessage(
         "Då ger vi oss ut på ett litet äventyr! 🌍 Vad skulle du vilja upptäcka idag?",
-        "otis"
+        currentFriend.id
     );
 
     const actions =
@@ -1288,7 +1288,7 @@ function discoverWorld(type) {
         ideas[type][
             Math.floor(Math.random() * ideas[type].length)
         ],
-        "otis"
+        currentFriend.id
     );
 
     currentActivity = {
@@ -1321,7 +1321,7 @@ function showBodyDiscover() {
 
     addMessage(
         "Kroppen är fantastisk. 💚 Ska vi upptäcka vad den kan göra idag?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1421,7 +1421,7 @@ function discoverBody(activity) {
 
     addMessage(
         message,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1603,7 +1603,7 @@ function finishOtisTimer() {
 
     addMessage(
         currentActivity.completed,
-        "otis"
+        currentFriend.id
     );
 
     currentActivity = null;
@@ -1722,7 +1722,7 @@ function chooseReadTimer() {
 
     addMessage(
         "Vad mysigt! 📚 Vill du att jag tar tiden åt dig?",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1765,7 +1765,7 @@ function chooseActivityPlace(place) {
 
     addMessage(
         currentActivity.greeting,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1796,7 +1796,7 @@ function beginActivity() {
 
     addMessage(
         currentActivity.start,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1824,7 +1824,7 @@ function activityDone() {
 
     addMessage(
         currentActivity.completed,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1864,7 +1864,7 @@ function activityNotDone() {
 
     addMessage(
         message,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1890,7 +1890,7 @@ document
 
     addMessage(
         "Det är helt okej. Ibland passar det inte just nu. Vi kan prova en annan gång. 💚",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1923,7 +1923,7 @@ function showDialog() {
 
     addMessage(
         message,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1978,7 +1978,7 @@ function dialogAnswer(answer) {
 
         addMessage(
             message,
-            "otis"
+            currentFriend.id
         );
 
 
@@ -2010,7 +2010,7 @@ function dialogAnswer(answer) {
 
         addMessage(
             "Jag är ledsen att höra att det känns jobbigt. 💚 Ibland kan det hjälpa att prata med någon man tycker om och litar på. Jag kan också stanna här och lyssna en stund.",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -2042,7 +2042,7 @@ function dialogAnswer(answer) {
 
         addMessage(
             "Det är helt okej att inte veta. 💚 Ibland behöver man bara stanna upp en stund och känna efter.",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -2093,7 +2093,7 @@ function showDialogMore() {
 
     addMessage(
         message,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -2138,7 +2138,7 @@ function showDialogMoreHappy() {
                 Math.random() * messages.length
             )
         ],
-        "otis"
+        currentFriend.id
     );
 
 
@@ -2173,7 +2173,7 @@ function happyMoreChoice(choice) {
 
         addMessage(
             "Vad fint. 💚 Jag lyssnar gärna. Berätta det du vill dela med mig.",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -2202,7 +2202,7 @@ function happyMoreContinue() {
 
     addMessage(
         "Tack för att du berättade för mig. 💚 Det låter som en fin stund. Jag hoppas att resten av dagen fortsätter lika bra.",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -2229,7 +2229,7 @@ function showDialogMoreQuestion() {
 
     addMessage(
         "Jag lyssnar. 💚 Du behöver inte säga allt på en gång. Berätta bara det du vill dela med mig.",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -2251,7 +2251,7 @@ function dialogMoreChoice() {
 
     addMessage(
         "Tack för att du berättade för mig. 💚 Det kan kännas skönt att få dela sina tankar med någon som lyssnar.",
-        "otis"
+        currentFriend.id
     );
 
 
@@ -2280,7 +2280,7 @@ function otisChoice(choice) {
 
         addMessage(
             "Då gör vi det. 💚 Man behöver inte alltid prata eller göra något. Jag finns här med dig en stund.",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -2304,7 +2304,7 @@ function otisChoice(choice) {
 
         addMessage(
             "Vad roligt! 🌿 Då hittar vi på något tillsammans. Vad är du sugen på?",
-            "otis"
+            currentFriend.id
         );
 
 
@@ -2330,7 +2330,7 @@ function showStory() {
 
     addMessage(
         story.text,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -2363,7 +2363,7 @@ function showSupport() {
 
     addMessage(
         message,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -2459,7 +2459,7 @@ if (backpack) {
 
             addMessage(
     "Åh, det här är min ryggsäck! Jag brukar ta med mig små saker från mina äventyr. Vill du öppna den?",
-    "otis"
+    currentFriend.id
 );
 
 showBackpackChoice();
@@ -2538,14 +2538,14 @@ function paintIdea(randomIdea) {
 
         addMessage(
             ideas[Math.floor(Math.random() * ideas.length)],
-            "otis"
+            currentFriend.id
         );
 
     } else {
 
         addMessage(
             "Vad spännande! 💚 Jag ser fram emot att höra om vad du målade sen.",
-            "otis"
+            currentFriend.id
         );
 
     }
@@ -2694,7 +2694,7 @@ if (list === "showOtherBuildMaterials") {
 
 addMessage(
     list[Math.floor(Math.random() * list.length)],
-    "otis"
+    currentFriend.id
 );
 
 
@@ -2733,7 +2733,7 @@ function showOtherBuildMaterials() {
 
 addMessage(
     "Vad spännande! Ibland kan de bästa idéerna komma från saker man redan har hemma. 💚",
-    "otis"
+    currentFriend.id
 );
     
     const actions =
@@ -2833,7 +2833,7 @@ function chooseCraft(material) {
     // Slumpa fram ett enda pysselförslag
     addMessage(
         list[Math.floor(Math.random() * list.length)],
-        "otis"
+        currentFriend.id
     );
     // Spara aktiviteten
     currentActivity = {
@@ -3139,7 +3139,7 @@ function goodbyePerson(person) {
 
         addMessage(
             `Då säger jag hej då för idag. 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
-            friendId
+            currentFriend.id
         );
 
 
@@ -3175,7 +3175,7 @@ function goodbyePerson(person) {
 
             addMessage(
                 `Hejdå ${name}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
-                friendId
+                currentFriend.id
             );
 
 
@@ -3210,7 +3210,7 @@ function goodbyePerson(person) {
 
     addMessage(
         `Hejdå ${name}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
-        friendId
+        currentFriend.id
     );
 
 
