@@ -1,210 +1,212 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
     <title>Vännen</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
     <link
         href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
         rel="stylesheet"
     >
-
     <!-- CSS -->
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cards.css">
-
 </head>
-
-
 <body class="home">
-
 <main id="app">
-
-
     <!-- ORIENTERINGSVARNING -->
-
     <div id="orientation-warning">
-
         <div class="orientation-warning-content">
-
             <div class="orientation-warning-icon">
                 🦦
             </div>
-
-            <h2>Vänd på din enhet</h2>
-
+            <h2>
+                Vänd på din enhet
+            </h2>
             <p>
                 Vännen fungerar bäst när du håller enheten stående.
             </p>
-
         </div>
-
     </div>
-
-
     <!-- STARTSIDA -->
-
     <section id="home-view">
-
-
         <section id="friend-intro">
-
-            <h1>Vännen</h1>
-        <p>
-              Små vänner som får liv genom tekniken.<br>
-              Vänner att upptäcka, leka, lära och dela små stunder med.<br>
-              Välj en vän att lära känna.
-        </p>
-        <p>
-               Vem vill du träffa?
-        </p>
-
+            <h1>
+                Vännen
+            </h1>
+            <p>
+                Små vänner som får liv genom tekniken.<br>
+                Vänner att upptäcka, leka, lära och dela små stunder med.<br>
+                Välj en vän att lära känna.
+            </p>
+            <p>
+                Vem vill du träffa?
+            </p>
         </section>
-
-
-        <section id="friends" class="projects">
-
-            <h2>Våra vänner</h2>
-
-
-            <div id="friends-list" class="project-grid">
-
-                <!-- Vänkort skapas av friends.js -->
-
-            </div>
-
-
+        <!-- SÅ FUNGERAR VÄNNEN -->
+        <section
+            id="friend-guide"
+            class="projects"
+        >
+            <h2>
+                Så fungerar Vännen
+            </h2>
+            <div
+                id="friend-guide-container"
+                class="project-grid"
+            ></div>
         </section>
-
-
+        <!-- VÅRA VÄNNER -->
+        <section
+            id="friends"
+            class="projects"
+        >
+            <h2>
+                Våra vänner
+            </h2>
+            <div
+                id="friends-list"
+                class="project-grid"
+            ></div>
+        </section>
     </section>
-
-
 </main>
-
-
 <!-- DATA -->
-
 <script src="data/friends/otis.js"></script>
 <script src="data/friends/bosse.js"></script>
 <script src="data/friends/index.js"></script>
-
-
 <!-- STARTSIDANS FUNKTIONER -->
-
 <script src="js/friends.js"></script>
-
-
 <script>
-
-    document.addEventListener("DOMContentLoaded", () => {
-    renderFriends();
-    /*
-       Bläddring för informationskortet
-    */
-    const wrapper =
-        document.querySelector(
-            "#friend-guide-card .gallery-wrapper"
-        );
-    if (!wrapper) return;
-    const gallery =
-        wrapper.querySelector(".gallery");
-    const images =
-        gallery.querySelectorAll("img");
-    const dotsContainer =
-        wrapper.querySelector(".dots");
-    images.forEach((image, index) => {
-        const dot =
-            document.createElement("span");
-        dot.classList.add("dot");
-        if (index === 0) {
-            dot.classList.add("active");
-        }
-        dotsContainer.appendChild(dot);
-    });
-    const dots =
-        dotsContainer.querySelectorAll(".dot");
-    if (images.length <= 1) {
-        dotsContainer.style.display =
-            "none";
-    }
-    gallery.addEventListener("scroll", () => {
-        let closest = 0;
-        let distance = Infinity;
-        images.forEach((image, index) => {
-            const imageCenter =
-                image.offsetLeft +
-                image.offsetWidth / 2;
-            const galleryCenter =
-                gallery.scrollLeft +
-                gallery.offsetWidth / 2;
-            const diff =
-                Math.abs(
-                    imageCenter -
-                    galleryCenter
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+            renderFriends();
+            /*
+               Bläddring för informationskortet
+            */
+            const wrapper =
+                document.querySelector(
+                    "#friend-guide-card .gallery-wrapper"
                 );
-            if (diff < distance) {
-                distance = diff;
-                closest = index;
-            }
-        });
-        dots.forEach(dot => {
-            dot.classList.remove(
-                "active"
+            if (!wrapper) return;
+            const gallery =
+                wrapper.querySelector(
+                    ".gallery"
+                );
+            const images =
+                gallery.querySelectorAll(
+                    "img"
+                );
+            const dotsContainer =
+                wrapper.querySelector(
+                    ".dots"
+                );
+            images.forEach(
+                (image, index) => {
+                    const dot =
+                        document.createElement(
+                            "span"
+                        );
+                    dot.classList.add(
+                        "dot"
+                    );
+                    if (index === 0) {
+                        dot.classList.add(
+                            "active"
+                        );
+                    }
+                    dotsContainer.appendChild(
+                        dot
+                    );
+                }
             );
-        });
-        if (dots[closest]) {
-            dots[closest].classList.add(
-                "active"
+            const dots =
+                dotsContainer.querySelectorAll(
+                    ".dot"
+                );
+            if (images.length <= 1) {
+                dotsContainer.style.display =
+                    "none";
+            }
+            gallery.addEventListener(
+                "scroll",
+                () => {
+                    let closest = 0;
+                    let distance = Infinity;
+                    images.forEach(
+                        (image, index) => {
+                            const imageCenter =
+                                image.offsetLeft +
+                                image.offsetWidth / 2;
+                            const galleryCenter =
+                                gallery.scrollLeft +
+                                gallery.offsetWidth / 2;
+                            const diff =
+                                Math.abs(
+                                    imageCenter -
+                                    galleryCenter
+                                );
+                            if (
+                                diff < distance
+                            ) {
+                                distance = diff;
+                                closest = index;
+                            }
+                        }
+                    );
+                    dots.forEach(
+                        dot => {
+                            dot.classList.remove(
+                                "active"
+                            );
+                        }
+                    );
+                    if (dots[closest]) {
+                        dots[closest].classList.add(
+                            "active"
+                        );
+                    }
+                }
             );
         }
-    });
-});
-
-
+    );
     function updateOrientationWarning() {
-
         const warning =
-            document.getElementById("orientation-warning");
-
+            document.getElementById(
+                "orientation-warning"
+            );
         if (!warning) return;
-
         const isLandscape =
-            window.innerWidth > window.innerHeight;
-
+            window.innerWidth >
+            window.innerHeight;
         warning.style.display =
-            isLandscape ? "flex" : "none";
-
+            isLandscape
+                ? "flex"
+                : "none";
     }
-
-
     window.addEventListener(
         "load",
         updateOrientationWarning
     );
-
     window.addEventListener(
         "resize",
         updateOrientationWarning
     );
-
     window.addEventListener(
         "orientationchange",
         updateOrientationWarning
     );
-
 </script>
-
-
 </body>
-
 </html>
