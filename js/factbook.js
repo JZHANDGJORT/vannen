@@ -21,7 +21,7 @@ const factBookData = {
             image: "",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -45,7 +45,7 @@ const factBookData = {
             "images/Otis/factbook/chapter01/page01.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -86,7 +86,7 @@ Uttrar
             "images/Otis/factbook/chapter01/page02.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -117,7 +117,7 @@ Uttrar
             "images/Otis/factbook/chapter01/page03.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -148,7 +148,7 @@ Uttrar
             "images/Otis/factbook/chapter01/page04.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -179,7 +179,7 @@ Uttrar
             "images/Otis/factbook/chapter01/page05.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -210,7 +210,7 @@ Uttrar
             "images/Otis/factbook/chapter01/page06.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -241,7 +241,7 @@ Uttrar
             "images/Otis/factbook/chapter01/page07.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -277,7 +277,7 @@ Uttrar
             "images/Otis/factbook/chapter02/page01.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -320,7 +320,7 @@ Grävlingar
             "images/Otis/factbook/chapter02/page02.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -351,7 +351,7 @@ Grävlingar
             "images/Otis/factbook/chapter02/page03.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -382,7 +382,7 @@ Grävlingar
             "images/Otis/factbook/chapter02/page04.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -413,7 +413,7 @@ Grävlingar
             "images/Otis/factbook/chapter02/page05.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -444,7 +444,7 @@ Grävlingar
             "images/Otis/factbook/chapter02/page06.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
@@ -475,7 +475,7 @@ Grävlingar
             "images/Otis/factbook/chapter02/page07.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openr.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
 
             backgroundClass:
             "background-right",
@@ -506,7 +506,7 @@ Grävlingar
             "images/Otis/factbook/chapter02/page08.PNG",
 
             background:
-            "images/Otis/otis-backpack-item-faktabok-openl.PNG",
+            "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
 
             backgroundClass:
             "background-left",
