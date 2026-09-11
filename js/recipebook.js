@@ -9,7 +9,7 @@ const recipeBookData = {
         {
             image: "",
             background:
-            "images/Otis/otis-backpack-item-receptbok-openl.PNG",
+            "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -22,7 +22,7 @@ const recipeBookData = {
             image:
             "images/Otis/recipebook/otis-recept-kryddmuffins.PNG",
             background:
-            "images/Otis/otis-backpack-item-receptbok-openr.PNG",
+            "images/Otis/recipebook/otis-backpack-item-receptbok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -37,7 +37,7 @@ const recipeBookData = {
             image:
             "images/Otis/recipebook/otis-recept-pannkaksbrod.PNG",
             background:
-            "images/Otis/otis-backpack-item-receptbok-openl.PNG",
+            "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -53,7 +53,7 @@ const recipeBookData = {
             image:
             "images/Otis/recipebook/page03.PNG",
             background:
-            "images/Otis/otis-backpack-item-receptbok-openr.PNG",
+            "images/Otis/recipebook/otis-backpack-item-receptbok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -68,7 +68,7 @@ const recipeBookData = {
             image:
             "images/Otis/recipebook/page04.PNG",
             background:
-            "images/Otis/otis-backpack-item-receptbok-openl.PNG",
+            "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
