@@ -10,7 +10,7 @@ const bookData = {
     image: "",
 
     background:
-    "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+    "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
 
     backgroundClass:
     "background-left",
@@ -40,7 +40,7 @@ Kapitel 2<br>
             image:
             "images/Otis/storybook/chapter01/page01.JPEG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title:
@@ -72,7 +72,7 @@ Otis och den magiska stenen
             image:
             "images/Otis/storybook/chapter01/page02.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -93,7 +93,7 @@ Otis och den magiska stenen
             image:
             "images/Otis/storybook/chapter01/page03.JPEG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -115,7 +115,7 @@ Otis och den magiska stenen
             image:
             "images/Otis/storybook/chapter01/page04.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -136,7 +136,7 @@ Otis och den magiska stenen
             image:
             "images/Otis/storybook/chapter01/page05.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -158,7 +158,7 @@ Otis och den magiska stenen
             image:
             "images/Otis/storybook/chapter01/page06.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -179,7 +179,7 @@ Otis och den magiska stenen
             image:
             "images/Otis/storybook/chapter01/page07.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -205,7 +205,7 @@ Otis och den magiska stenen
             image:
             "images/Otis/storybook/chapter02/page01.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title:
@@ -238,7 +238,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page02.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -259,7 +259,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page03.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -282,7 +282,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page04.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -304,7 +304,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page05.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -329,7 +329,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page06.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -351,7 +351,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page07.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -375,7 +375,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page08.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -396,7 +396,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page09.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -420,7 +420,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page10.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openr.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -441,7 +441,7 @@ När Otis mötte Bosse
             image:
             "images/Otis/storybook/chapter02/page11.PNG",
             background:
-            "images/Otis/otis-backpack-item-sagobok-openl.PNG",
+            "images/Otis/storybook/otis-backpack-item-sagobok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
