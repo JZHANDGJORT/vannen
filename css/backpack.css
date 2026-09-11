@@ -850,9 +850,9 @@
 */
 .backpack-pinecone {
     left: 28%;
-    top: 52%;
-    width: 100px;
-    transform: rotate(0deg);
+    top: 50%;
+    width: 80px;
+    transform: rotate(25deg);
 }
 /*
    KASTANJ MED SKAL
@@ -869,9 +869,9 @@
    Ersätter svarta stenen
 */
 .backpack-chestnut {
-    left: 60.5%;
+    left: 60%;
     top: 50%;
-    width: 90px;
+    width: 85px;
     transform: rotate(5deg);
 }
 /* ========================================
