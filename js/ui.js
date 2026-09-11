@@ -2362,38 +2362,18 @@ function showSupport() {
 
 }
 
-function showAboutFriend() {
-
-    addMessage(
-        `Vad roligt att du vill veta lite mer om mig. 💚\n\n${currentFriend.about}`,
-        currentFriend.id
-    );
-
-}
-
 function showFriendInfo(person) {
-
-    const actions =
-        document.getElementById("actions");
-
 
     if (person === "owner") {
 
-        actions.innerHTML = `
+        if (!friendMemory.owner) return;
 
-            <p>
-                🌿 ${otisMemory.owner.name}
-            </p>
+        addMessage(
+            `${friendMemory.owner.name} är min huvudvän. 💚 Jag känner henne genom dig.`,
+            currentFriend.id
+        );
 
-            <p>
-                Min huvudvän 💚
-            </p>
-
-            <button onclick="showFriends()">
-                ⬅️ Tillbaka
-            </button>
-
-        `;
+        showFriends();
 
         return;
 
@@ -2401,32 +2381,52 @@ function showFriendInfo(person) {
 
 
     const friend =
-        otisMemory.friends[person];
-
+        friendMemory.friends[person];
 
     if (!friend) return;
 
 
-    actions.innerHTML = `
-
-        <p>
-            ${friend.type === "child" ? "🧒" : "👤"}
-            ${friend.name}
-        </p>
-
-        <p>
-            ${friend.type === "child"
-                ? (friend.age ? `${friend.age} år` : "Barn")
-                : friend.role || ""
-            }
-        </p>
+    let message = "";
 
 
-        <button onclick="showFriends()">
-            ⬅️ Tillbaka
-        </button>
+    if (friend.type === "child") {
 
-    `;
+        if (friend.age) {
+
+            message =
+                `${friend.name} är ${friend.age} år. 💚 Jag vet att ${friend.name} betyder mycket för dig.`;
+
+        } else {
+
+            message =
+                `${friend.name} är ett barn som betyder mycket för dig. 💚`;
+
+        }
+
+    } else {
+
+        if (friend.role) {
+
+            message =
+                `${friend.name} är din ${friend.role}. 💚`;
+
+        } else {
+
+            message =
+                `${friend.name} är någon som betyder mycket för dig. 💚`;
+
+        }
+
+    }
+
+
+    addMessage(
+        message,
+        currentFriend.id
+    );
+
+
+    showFriends();
 
 }
 
