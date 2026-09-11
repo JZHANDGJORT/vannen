@@ -11,7 +11,7 @@ const discoverBookData = {
         {
             image: "",
             background:
-            "images/Otis/otis-backpack-item-upptackarbok-openl.PNG",
+            "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -24,7 +24,7 @@ const discoverBookData = {
         {
             image: "images/Otis/discoverbook/page01.PNG",
             background:
-            "images/Otis/otis-backpack-item-upptackarbok-openr.PNG",
+            "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -39,7 +39,7 @@ const discoverBookData = {
         {
             image: "images/Otis/discoverbook/page02.PNG",
             background:
-            "images/Otis/otis-backpack-item-upptackarbok-openl.PNG",
+            "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -54,7 +54,7 @@ const discoverBookData = {
         {
             image: "images/Otis/discoverbook/page03.PNG",
             background:
-            "images/Otis/otis-backpack-item-upptackarbok-openr.PNG",
+            "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
@@ -69,7 +69,7 @@ const discoverBookData = {
         {
             image: "images/Otis/discoverbook/page04.PNG",
             background:
-            "images/Otis/otis-backpack-item-upptackarbok-openl.PNG",
+            "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
             backgroundClass:
             "background-left",
             title: "",
@@ -84,7 +84,7 @@ const discoverBookData = {
         {
             image: "images/Otis/discoverbook/page05.PNG",
             background:
-            "images/Otis/otis-backpack-item-upptackarbok-openr.PNG",
+            "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
             backgroundClass:
             "background-right",
             title: "",
