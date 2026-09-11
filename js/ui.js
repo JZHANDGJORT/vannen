@@ -161,13 +161,13 @@ function showFriends() {
 
     // Ägaren
 
-    if (otisMemory.owner) {
+    if (friendMemory.owner) {
 
         html += `
 
             <button onclick="showFriendInfo('owner')">
 
-                🌿 ${otisMemory.owner.name}
+                🌿 ${friendMemory.owner.name}
 
                 <br>
 
@@ -182,22 +182,22 @@ function showFriends() {
 
     // Övriga personer
 
-    otisMemory.friends.forEach((person, index) => {
+    friendMemory.friends.forEach((person, index) => {
 
         let info = "";
 
 
         if (person.type === "child") {
 
-    info = person.age
-        ? `${person.age} år`
-        : "Barn";
+            info = person.age
+                ? `${person.age} år`
+                : "Barn";
 
-} else if (person.type === "adult") {
+        } else if (person.type === "adult") {
 
-    info = person.role || "Vuxen";
+            info = person.role || "Vuxen";
 
-}
+        }
 
 
         html += `
