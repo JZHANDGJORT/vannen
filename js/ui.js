@@ -2366,18 +2366,48 @@ function showFriendInfo(person) {
 
     if (person === "owner") {
 
-        if (!friendMemory.owner) return;
+    if (!friendMemory.owner) return;
 
-        addMessage(
-            `${friendMemory.owner.name} är min huvudvän. 💚 Jag känner henne genom dig.`,
-            currentFriend.id
-        );
+    const name =
+        friendMemory.owner.name;
 
-        showFriends();
+    const since =
+        friendMemory.owner.since;
 
-        return;
+    let message = "";
+
+    if (since) {
+
+        const date =
+            new Date(since).toLocaleDateString(
+                "sv-SE",
+                {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                }
+            );
+
+        message =
+            `${name} är min huvudvän. 💚 Vi har känt varandra sedan ${date}.`;
+
+    } else {
+
+        message =
+            `${name} är min huvudvän. 💚`;
 
     }
+
+    addMessage(
+        message,
+        currentFriend.id
+    );
+
+    showFriends();
+
+    return;
+
+}
 
 
     const friend =
