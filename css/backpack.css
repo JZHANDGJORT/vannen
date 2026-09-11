@@ -42,6 +42,7 @@
 
 }
 
+
 /*
    Läsarmärke
 */
@@ -56,6 +57,7 @@
     width: 70px;
 
 }
+
 
 /*
    Räknemärke
@@ -72,6 +74,7 @@
 
 }
 
+
 /*
    Skaparmärke
 */
@@ -86,6 +89,7 @@
     width: 70px;
 
 }
+
 
 /*
    Upptäckarmärke
@@ -102,6 +106,7 @@
 
 }
 
+
 /*
    Upptäckarbok
 */
@@ -117,6 +122,7 @@
     animation: discoverBookFloat 4s ease-in-out infinite;
 
 }
+
 
 @keyframes discoverBookFloat {
 
@@ -139,6 +145,7 @@
     }
 
 }
+
 
 /*
    Receptbok
@@ -181,22 +188,6 @@
 
 }
 
-/*
-   SVART STEN
-*/
-
-
-.backpack-blackstone {
-
-    left: 60.5%;
-
-    top: 50%;
-
-    width: 90px;
-
-    transform: rotate(5deg);
-
-}
 
 /*
    Sagobok
@@ -357,11 +348,11 @@
 
 
 /*
-   Hjärtsten
+   ITEM 1
+   Tidigare: Hjärtsten
 */
 
-
-.backpack-heartstone {
+.backpack-item1 {
 
     left: 28%;
 
@@ -373,12 +364,31 @@
 
 }
 
+
 /*
-   SNIGEL SNÄCKA
+   ITEM 2
+   Tidigare: Svart sten
 */
 
+.backpack-item2 {
 
-.backpack-shell {
+    left: 60.5%;
+
+    top: 50%;
+
+    width: 90px;
+
+    transform: rotate(5deg);
+
+}
+
+
+/*
+   ITEM 3
+   Tidigare: Skal
+*/
+
+.backpack-item3 {
 
     left: 74%;
 
@@ -427,11 +437,13 @@
 
 }
 
+
 #backpack-close:hover {
 
     transform: scale(1.05);
 
 }
+
 
 #backpack-close:active {
 
@@ -439,10 +451,12 @@
 
 }
 
+
 /* ========================================
    RESPONSIV RYGGSÄCK
    Gemensam skalning med clamp()
 ======================================== */
+
 
 /*
    MÄRKEN
@@ -457,6 +471,7 @@
 
 }
 
+
 /*
    UPPTÄCKARBOK
 */
@@ -466,6 +481,7 @@
     width: clamp(150px, 38.46vw, 225px);
 
 }
+
 
 /*
    RECEPTBOK
@@ -477,6 +493,7 @@
 
 }
 
+
 /*
    SAGOBOK
 */
@@ -486,6 +503,7 @@
     width: clamp(180px, 46.15vw, 286px);
 
 }
+
 
 /*
    FAKTABOK
@@ -497,6 +515,7 @@
 
 }
 
+
 /*
    FOTOALBUM
 */
@@ -507,35 +526,42 @@
 
 }
 
+
 /*
-   SVART STEN
+   ITEM 2
+   Tidigare: Svart sten
 */
 
-.backpack-blackstone {
+.backpack-item2 {
 
     width: clamp(90px, 23.08vw, 156px);
 
 }
 
+
 /*
-   HJÄRTSTEN
+   ITEM 1
+   Tidigare: Hjärtsten
 */
 
-.backpack-heartstone {
+.backpack-item1 {
 
     width: clamp(120px, 30.77vw, 205px);
 
 }
 
+
 /*
-   SNIGELSNÄCKA
+   ITEM 3
+   Tidigare: Skal
 */
 
-.backpack-shell {
+.backpack-item3 {
 
     width: clamp(90px, 23.08vw, 151px);
 
 }
+
 
 /*
    EKKVISTAR
@@ -641,10 +667,11 @@
 
 
     /*
-       HJÄRTSTEN
+       ITEM 1
+       Tidigare: Hjärtsten
     */
 
-    .backpack-heartstone {
+    .backpack-item1 {
 
         top: calc(52% - 3px);
 
@@ -674,6 +701,7 @@
     }
 
 }
+
 
 /* ========================================
 
@@ -715,23 +743,28 @@
 
     }
 
-    .backpack-heartstone {
+    .backpack-item1 {
 
         top: calc(52% + 19px);
 
     }
 
 
-.backpack-marke-graskapar {
-    left: calc(75% + 12px);
-    top: calc(8% + 6.5px);
-}
+    .backpack-marke-graskapar {
+
+        left: calc(75% + 12px);
+
+        top: calc(8% + 6.5px);
+
+    }
+
 
     .backpack-marke-graupptackar {
 
         top: calc(13% + 8px);
 
     }
+
 
     .backpack-oaktwig2 {
 
@@ -753,69 +786,111 @@
     .compact-height .backpack-marke-grarakne,
     .compact-height .backpack-marke-graskapar,
     .compact-height .backpack-marke-graupptackar {
+
         width: clamp(59.5px, 15.26vw, 93.5px);
+
     }
+
 
     .compact-height .backpack-upptackarbok {
+
         width: clamp(127.5px, 32.69vw, 191.25px);
+
     }
+
 
     .compact-height .backpack-receptbok {
+
         width: clamp(178.5px, 45.77vw, 280.5px);
+
     }
+
 
     .compact-height .backpack-sagobok {
+
         width: clamp(153px, 39.23vw, 243.1px);
+
     }
+
 
     .compact-height .backpack-faktabok {
+
         width: clamp(119px, 30.52vw, 197.2px);
+
     }
+
 
     .compact-height .backpack-fotoalbum {
+
         width: clamp(127.5px, 32.69vw, 215.05px);
+
     }
 
-    .compact-height .backpack-blackstone {
+
+    .compact-height .backpack-item2 {
+
         width: clamp(76.5px, 19.62vw, 132.6px);
+
     }
 
-    .compact-height .backpack-heartstone {
+
+    .compact-height .backpack-item1 {
+
         width: clamp(102px, 26.15vw, 174.25px);
+
     }
 
-    .compact-height .backpack-shell {
+
+    .compact-height .backpack-item3 {
+
         width: clamp(76.5px, 19.62vw, 128.35px);
+
     }
+
 
     .compact-height .backpack-oaktwig,
     .compact-height .backpack-oaktwig2 {
+
         width: clamp(102px, 26.15vw, 169.15px);
+
     }
 
 }
+
 
 @media (max-width: 500px) {
 
     .compact-height .backpack-marke-gralasar {
+
         left: calc(37% + 1px);
+
     }
+
 
     .compact-height .backpack-marke-graskapar {
-    left: calc(75% - 2px);
-    top: calc(8% + 3px);
-}
 
-    .compact-height .backpack-marke-graupptackar {
-        left: calc(84% - 2px);
-        top: calc(13% + 1px);
+        left: calc(75% - 2px);
+
+        top: calc(8% + 3px);
+
     }
 
-       .compact-height .backpack-sagobok {
+
+    .compact-height .backpack-marke-graupptackar {
+
+        left: calc(84% - 2px);
+
+        top: calc(13% + 1px);
+
+    }
+
+
+    .compact-height .backpack-sagobok {
 
         left: calc(12% + 2px);
 
     }
+
 
     .compact-height .backpack-faktabok {
 
@@ -823,11 +898,13 @@
 
     }
 
-    .compact-height .backpack-heartstone {
+
+    .compact-height .backpack-item1 {
 
         left: calc(28% + 2px);
 
     }
+
 
     .compact-height .backpack-oaktwig {
 
@@ -836,5 +913,3 @@
     }
 
 }
-
-
