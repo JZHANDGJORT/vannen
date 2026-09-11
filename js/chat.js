@@ -100,36 +100,21 @@ function showNameInput() {
 }
 
 function saveName() {
-
     const input =
         document.getElementById("name-input");
-
-
     const name =
         input.value.trim();
-
-
     if (!name) return;
-
-
     friendMemory.owner = {
-
-        name: name
-
+        name: name,
+        since: new Date().toISOString()
     };
-
-
     saveMemory();
-
-
     addMessage(
         `Vad fint att träffa dig, ${name}. 💚 Jag tror att alla vänskaper blir lite finare när man lär känna varandra. Jag vill gärna veta lite mer om vem jag får lära känna.`,
         currentFriend.id
     );
-
-
     showRelationChoice();
-
 }
 
 function changeName() {
