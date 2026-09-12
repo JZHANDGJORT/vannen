@@ -92,7 +92,7 @@ Uttrar
             // Sida 2 - Fantastiska simmare
             {
                 image:
-                    "images/Otis/factbook/chapter01/page02.PNG",
+                    "images/Vannen/factbook/chapter01/page02.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
@@ -123,7 +123,7 @@ Uttrar
             // Sida 3 - Den mjuka pälsen
             {
                 image:
-                    "images/Otis/factbook/chapter01/page03.PNG",
+                    "images/Vannen/factbook/chapter01/page03.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
@@ -154,7 +154,7 @@ Uttrar
             // Sida 4 - Favoritstenen
             {
                 image:
-                    "images/Otis/factbook/chapter01/page04.PNG",
+                    "images/Vannen/factbook/chapter01/page04.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
@@ -185,7 +185,7 @@ Uttrar
             // Sida 5 - Lekfulla uttrar
             {
                 image:
-                    "images/Otis/factbook/chapter01/page05.PNG",
+                    "images/Vannen/factbook/chapter01/page05.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
@@ -216,7 +216,7 @@ Uttrar
             // Sida 6 - Var bor uttrar?
             {
                 image:
-                    "images/Otis/factbook/chapter01/page06.PNG",
+                    "images/Vannen/factbook/chapter01/page06.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
@@ -326,7 +326,7 @@ Grävlingar
             // Sida 9 - Den randiga masken
             {
                 image:
-                    "images/Otis/factbook/chapter02/page02.PNG",
+                    "images/Vannen/factbook/chapter02/page02.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
@@ -357,7 +357,7 @@ Grävlingar
             // Sida 10 - Grävlingens hem
             {
                 image:
-                    "images/Otis/factbook/chapter02/page03.PNG",
+                    "images/Vannen/factbook/chapter02/page03.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
@@ -388,7 +388,7 @@ Grävlingar
             // Sida 11 - Vad äter grävlingen?
             {
                 image:
-                    "images/Otis/factbook/chapter02/page04.PNG",
+                    "images/Vannen/factbook/chapter02/page04.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
@@ -419,7 +419,7 @@ Grävlingar
             // Sida 12 - En riktig grävare
             {
                 image:
-                    "images/Otis/factbook/chapter02/page05.PNG",
+                    "images/Vannen/factbook/chapter02/page05.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
@@ -450,7 +450,7 @@ Grävlingar
             // Sida 13 - När solen går ner
             {
                 image:
-                    "images/Otis/factbook/chapter02/page06.PNG",
+                    "images/Vannen/factbook/chapter02/page06.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
@@ -481,7 +481,7 @@ Grävlingar
             // Sida 14 - Små grävlingar
             {
                 image:
-                    "images/Otis/factbook/chapter02/page07.PNG",
+                    "images/Vannen/factbook/chapter02/page07.PNG",
 
                 background:
                     "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
@@ -639,7 +639,7 @@ Grävlingar
             // Sida 2 - Den randiga masken
             {
                 image:
-                    "images/Otis/factbook/chapter02/page02.PNG",
+                    "images/Vannen/factbook/chapter02/page02.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
@@ -670,7 +670,7 @@ Grävlingar
             // Sida 3 - Grävlingens hem
             {
                 image:
-                    "images/Otis/factbook/chapter02/page03.PNG",
+                    "images/Vannen/factbook/chapter02/page03.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -701,7 +701,7 @@ Grävlingar
             // Sida 4 - Vad äter grävlingen?
             {
                 image:
-                    "images/Otis/factbook/chapter02/page04.PNG",
+                    "images/Vannen/factbook/chapter02/page04.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
@@ -732,7 +732,7 @@ Grävlingar
             // Sida 5 - En riktig grävare
             {
                 image:
-                    "images/Otis/factbook/chapter02/page05.PNG",
+                    "images/Vannen/factbook/chapter02/page05.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -763,7 +763,7 @@ Grävlingar
             // Sida 6 - När solen går ner
             {
                 image:
-                    "images/Otis/factbook/chapter02/page06.PNG",
+                    "images/Vannen/factbook/chapter02/page06.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
@@ -794,7 +794,7 @@ Grävlingar
             // Sida 7 - Små grävlingar
             {
                 image:
-                    "images/Otis/factbook/chapter02/page07.PNG",
+                    "images/Vannen/factbook/chapter02/page07.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -902,7 +902,7 @@ Uttrar
             // Sida 10 - Fantastiska simmare
             {
                 image:
-                    "images/Otis/factbook/chapter01/page02.PNG",
+                    "images/Vannen/factbook/chapter01/page02.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
@@ -933,7 +933,7 @@ Uttrar
             // Sida 11 - Den mjuka pälsen
             {
                 image:
-                    "images/Otis/factbook/chapter01/page03.PNG",
+                    "images/Vannen/factbook/chapter01/page03.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -964,7 +964,7 @@ Uttrar
             // Sida 12 - Favoritstenen
             {
                 image:
-                    "images/Otis/factbook/chapter01/page04.PNG",
+                    "images/Vannen/factbook/chapter01/page04.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
@@ -995,7 +995,7 @@ Uttrar
             // Sida 13 - Lekfulla uttrar
             {
                 image:
-                    "images/Otis/factbook/chapter01/page05.PNG",
+                    "images/Vannen/factbook/chapter01/page05.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -1026,7 +1026,7 @@ Uttrar
             // Sida 14 - Var bor uttrar?
             {
                 image:
-                    "images/Otis/factbook/chapter01/page06.PNG",
+                    "images/Vannen/factbook/chapter01/page06.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
