@@ -24,7 +24,7 @@ const discoverBookData = {
 
             // Sida 1
             {
-                image: "images/Otis/discoverbook/page01.PNG",
+                image: "images/Vannen/discoverbook/page01.PNG",
                 background:
                 "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
@@ -39,7 +39,7 @@ const discoverBookData = {
 
             // Sida 2
             {
-                image: "images/Otis/discoverbook/page02.PNG",
+                image: "images/Vannen/discoverbook/page02.PNG",
                 background:
                 "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
                 backgroundClass:
@@ -54,7 +54,7 @@ const discoverBookData = {
 
             // Sida 3
             {
-                image: "images/Otis/discoverbook/page03.PNG",
+                image: "images/Vannen/discoverbook/page03.PNG",
                 background:
                 "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
@@ -69,7 +69,7 @@ const discoverBookData = {
 
             // Sida 4
             {
-                image: "images/Otis/discoverbook/page04.PNG",
+                image: "images/Vannen/discoverbook/page04.PNG",
                 background:
                 "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
                 backgroundClass:
@@ -84,7 +84,7 @@ const discoverBookData = {
 
             // Sida 5
             {
-                image: "images/Otis/discoverbook/page05.PNG",
+                image: "images/Vannen/discoverbook/page05.PNG",
                 background:
                 "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
@@ -121,7 +121,7 @@ const discoverBookData = {
 
             // Sida 1
             {
-                image: "images/Otis/discoverbook/page01.PNG",
+                image: "images/Vannen/discoverbook/page01.PNG",
                 background:
                 "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
@@ -136,7 +136,7 @@ const discoverBookData = {
 
             // Sida 2
             {
-                image: "images/Otis/discoverbook/page02.PNG",
+                image: "images/Vannen/discoverbook/page02.PNG",
                 background:
                 "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openl.PNG",
                 backgroundClass:
@@ -151,7 +151,7 @@ const discoverBookData = {
 
             // Sida 3
             {
-                image: "images/Otis/discoverbook/page03.PNG",
+                image: "images/Vannen/discoverbook/page03.PNG",
                 background:
                 "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
@@ -166,7 +166,7 @@ const discoverBookData = {
 
             // Sida 4
             {
-                image: "images/Otis/discoverbook/page04.PNG",
+                image: "images/Vannen/discoverbook/page04.PNG",
                 background:
                 "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openl.PNG",
                 backgroundClass:
@@ -181,7 +181,7 @@ const discoverBookData = {
 
             // Sida 5
             {
-                image: "images/Otis/discoverbook/page05.PNG",
+                image: "images/Vannen/discoverbook/page05.PNG",
                 background:
                 "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
