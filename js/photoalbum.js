@@ -147,7 +147,7 @@ const photoAlbumData = {
                 photos: [
                     {
                         image:
-                            "images/Otis/photoalbum/page01-photo01.PNG",
+                            "images/Bosse/photoalbum/page01-photo01.PNG",
 
                         class:
                             "photoalbum-photo photoalbum-page-left-photo-01",
@@ -158,7 +158,7 @@ const photoAlbumData = {
 
                     {
                         image:
-                            "images/Otis/photoalbum/page01-photo02.PNG",
+                            "images/Bosse/photoalbum/page01-photo02.PNG",
 
                         class:
                             "photoalbum-photo photoalbum-page-left-photo-02",
@@ -169,7 +169,7 @@ const photoAlbumData = {
 
                     {
                         image:
-                            "images/Otis/photoalbum/page01-photo03.PNG",
+                            "images/Bosse/photoalbum/page01-photo03.PNG",
 
                         class:
                             "photoalbum-photo photoalbum-page-left-photo-03",
@@ -196,7 +196,7 @@ const photoAlbumData = {
                 photos: [
                     {
                         image:
-                            "images/Otis/photoalbum/page02-photo01.PNG",
+                            "images/Bosse/photoalbum/page02-photo01.PNG",
 
                         class:
                             "photoalbum-photo photoalbum-page-right-photo-01",
@@ -207,7 +207,7 @@ const photoAlbumData = {
 
                     {
                         image:
-                            "images/Otis/photoalbum/page02-photo02.PNG",
+                            "images/Bosse/photoalbum/page02-photo02.PNG",
 
                         class:
                             "photoalbum-photo photoalbum-page-right-photo-02",
@@ -218,7 +218,7 @@ const photoAlbumData = {
 
                     {
                         image:
-                            "images/Otis/photoalbum/page02-photo03.PNG",
+                            "images/Bosse/photoalbum/page02-photo03.PNG",
 
                         class:
                             "photoalbum-photo photoalbum-page-right-photo-03",
