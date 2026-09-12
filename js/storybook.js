@@ -649,7 +649,7 @@ Kapitel 1<br>
 
 <p onclick="goToChapter(2)">
 Kapitel 2<br>
-<span>När Otis mötte Bosse</span>
+<span>När Bosse mötte Otis</span>
 </p>
 `,
 
@@ -664,7 +664,7 @@ Kapitel 2<br>
             // Sida 1 - Kapitel 1
             {
                 image:
-                "images/Bosse/storybook/chapter01/page01.JPEG",
+                "images/Bosse/storybook/chapter01/page01.PNG",
 
                 background:
                 "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
