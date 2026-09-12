@@ -29,7 +29,7 @@ const recipeBookData = {
             // Sida 1 - Kryddmuffins
             {
                 image:
-                    "images/Otis/recipebook/otis-recept-kryddmuffins.PNG",
+                    "images/Vannen/recipebook/otis-recept-kryddmuffins.PNG",
                 background:
                     "images/Otis/recipebook/otis-backpack-item-receptbok-openr.PNG",
                 backgroundClass:
@@ -45,7 +45,7 @@ const recipeBookData = {
             // Sida 2 - Pannkaksbröd
             {
                 image:
-                    "images/Otis/recipebook/otis-recept-pannkaksbrod.PNG",
+                    "images/Vannen/recipebook/otis-recept-pannkaksbrod.PNG",
                 background:
                     "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
                 backgroundClass:
@@ -61,7 +61,7 @@ const recipeBookData = {
             // Sida 3 - Ananas och mangoglass
             {
                 image:
-                    "images/Otis/recipebook/page03.PNG",
+                    "images/Vannen/recipebook/page03.PNG",
                 background:
                     "images/Otis/recipebook/otis-backpack-item-receptbok-openr.PNG",
                 backgroundClass:
@@ -77,7 +77,7 @@ const recipeBookData = {
             // Sida 4 - Kaneläpplen
             {
                 image:
-                    "images/Otis/recipebook/page04.PNG",
+                    "images/Vannen/recipebook/page04.PNG",
                 background:
                     "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
                 backgroundClass:
@@ -124,7 +124,7 @@ const recipeBookData = {
             // Sida 1 - Kryddmuffins
             {
                 image:
-                    "images/Otis/recipebook/otis-recept-kryddmuffins.PNG",
+                    "images/Vannen/recipebook/otis-recept-kryddmuffins.PNG",
                 background:
                     "images/Bosse/recipebook/bosse-backpack-item-receptbok-openr.PNG",
                 backgroundClass:
@@ -140,7 +140,7 @@ const recipeBookData = {
             // Sida 2 - Pannkaksbröd
             {
                 image:
-                    "images/Otis/recipebook/otis-recept-pannkaksbrod.PNG",
+                    "images/Vannen/recipebook/otis-recept-pannkaksbrod.PNG",
                 background:
                     "images/Bosse/recipebook/bosse-backpack-item-receptbok-openl.PNG",
                 backgroundClass:
@@ -156,7 +156,7 @@ const recipeBookData = {
             // Sida 3 - Ananas och mangoglass
             {
                 image:
-                    "images/Otis/recipebook/page03.PNG",
+                    "images/Vannen/recipebook/page03.PNG",
                 background:
                     "images/Bosse/recipebook/bosse-backpack-item-receptbok-openr.PNG",
                 backgroundClass:
@@ -172,7 +172,7 @@ const recipeBookData = {
             // Sida 4 - Kaneläpplen
             {
                 image:
-                    "images/Otis/recipebook/page04.PNG",
+                    "images/Vannen/recipebook/page04.PNG",
                 background:
                     "images/Bosse/recipebook/bosse-backpack-item-receptbok-openl.PNG",
                 backgroundClass:
