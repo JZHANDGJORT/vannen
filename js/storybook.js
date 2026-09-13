@@ -844,17 +844,18 @@ Spåret i skogen
 },
 
 
-            // =========================
+// =========================
 // KAPITEL 2
 // =========================
-// Sida 8 - Kapitel 2
+
+// Sida 9 - Kapitel 2
 {
     image:
     "images/Bosse/storybook/chapter02/page01.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
     backgroundClass:
-    "background-left",
+    "background-right",
     title:
 `
 <span class="chapter-number">
@@ -872,20 +873,21 @@ När Bosse mötte Otis
 <p>Den här dagen hade han gett sig ut för att se vad han kunde hitta.</p>
 `,
     imageClass:
-    "chapter-image-left",
+    "chapter-image-right",
     textClass:
-    "chapter-text-left",
+    "chapter-text-right",
     titleClass:
-    "chapter-title-left"
+    "chapter-title-right"
 },
-// Sida 9
+
+// Sida 10
 {
     image:
     "images/Bosse/storybook/chapter02/page02.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
     backgroundClass:
-    "background-right",
+    "background-left",
     title: "",
     text:
 `
@@ -895,18 +897,19 @@ När Bosse mötte Otis
 <p>Bosse började försiktigt gräva med tassarna.</p>
 `,
     imageClass:
-    "story-image-right",
+    "story-image-left",
     textClass:
-    "story-text-right"
+    "story-text-left"
 },
-// Sida 10
+
+// Sida 11
 {
     image:
     "images/Bosse/storybook/chapter02/page03.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
     backgroundClass:
-    "background-left",
+    "background-right",
     title: "",
     text:
 `
@@ -916,18 +919,19 @@ När Bosse mötte Otis
 <p>Någonstans i närheten hördes ett svagt ljud.</p>
 `,
     imageClass:
-    "story-image-left",
+    "story-image-right",
     textClass:
-    "story-text-left"
+    "story-text-right"
 },
-// Sida 11
+
+// Sida 12
 {
     image:
     "images/Bosse/storybook/chapter02/page04.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
     backgroundClass:
-    "background-right",
+    "background-left",
     title: "",
     text:
 `
@@ -940,18 +944,19 @@ När Bosse mötte Otis
 
 `,
     imageClass:
-    "story-image-right",
+    "story-image-left",
     textClass:
-    "story-text-right"
+    "story-text-left"
 },
-// Sida 12
+
+// Sida 13
 {
     image:
     "images/Bosse/storybook/chapter02/page05.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
     backgroundClass:
-    "background-left",
+    "background-right",
     title: "",
     text:
 `
@@ -965,18 +970,19 @@ När Bosse mötte Otis
 <p>”Jag heter Bosse.”</p>
 `,
     imageClass:
-    "story-image-left",
+    "story-image-right",
     textClass:
-    "story-text-left"
+    "story-text-right"
 },
-// Sida 13
+
+// Sida 14
 {
     image:
     "images/Bosse/storybook/chapter02/page06.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
     backgroundClass:
-    "background-right",
+    "background-left",
     title: "",
     text:
 `
@@ -987,18 +993,19 @@ När Bosse mötte Otis
 <p>”Det gör jag också.”</p>
 `,
     imageClass:
-    "story-image-right",
+    "story-image-left",
     textClass:
-    "story-text-right"
+    "story-text-left"
 },
-// Sida 14
+
+// Sida 15
 {
     image:
     "images/Bosse/storybook/chapter02/page07.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
     backgroundClass:
-    "background-left",
+    "background-right",
     title: "",
     text:
 `
@@ -1011,18 +1018,19 @@ När Bosse mötte Otis
 <p>Sedan tog han pinnen i munnen och sprang iväg.</p>
 `,
     imageClass:
-    "story-image-left",
+    "story-image-right",
     textClass:
-    "story-text-left"
+    "story-text-right"
 },
-// Sida 15
+
+// Sida 16
 {
     image:
     "images/Bosse/storybook/chapter02/page08.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
     backgroundClass:
-    "background-right",
+    "background-left",
     title: "",
     text:
 `
@@ -1032,18 +1040,19 @@ När Bosse mötte Otis
 <p>De sprang runt en stor sten och ner mot stranden.</p>
 `,
     imageClass:
-    "story-image-right",
+    "story-image-left",
     textClass:
-    "story-text-right"
+    "story-text-left"
 },
-// Sida 16
+
+// Sida 17
 {
     image:
     "images/Bosse/storybook/chapter02/page09.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
     backgroundClass:
-    "background-left",
+    "background-right",
     title: "",
     text:
 `
@@ -1056,18 +1065,19 @@ När Bosse mötte Otis
 <p>Otis log. ”Ja.”</p>
 `,
     imageClass:
-    "story-image-left",
+    "story-image-right",
     textClass:
-    "story-text-left"
+    "story-text-right"
 },
-// Sida 17
+
+// Sida 18
 {
     image:
     "images/Bosse/storybook/chapter02/page10.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
     backgroundClass:
-    "background-right",
+    "background-left",
     title: "",
     text:
 `
@@ -1077,18 +1087,19 @@ När Bosse mötte Otis
 <p>Och de upptäckte nya saker tillsammans.</p>
 `,
     imageClass:
-    "story-image-right",
+    "story-image-left",
     textClass:
-    "story-text-right"
+    "story-text-left"
 },
-// Sida 18
+
+// Sida 19
 {
     image:
     "images/Bosse/storybook/chapter02/page11.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
     backgroundClass:
-    "background-left",
+    "background-right",
     title: "",
     text:
 `
@@ -1099,9 +1110,9 @@ När Bosse mötte Otis
 <p>En ny vän.</p>
 `,
     imageClass:
-    "story-image-left",
+    "story-image-right",
     textClass:
-    "story-text-left"
+    "story-text-right"
 }
 
         ]
