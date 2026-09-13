@@ -378,7 +378,7 @@
 */
 
 
-.backpack-shell {
+.backpack-item1 {
 
     left: 74%;
 
@@ -531,7 +531,7 @@
    SNIGELSNÄCKA
 */
 
-.backpack-shell {
+.backpack-item1 {
 
     width: clamp(90px, 23.08vw, 151px);
 
@@ -784,7 +784,7 @@
         width: clamp(102px, 26.15vw, 174.25px);
     }
 
-    .compact-height .backpack-shell {
+    .compact-height .backpack-item1 {
         width: clamp(76.5px, 19.62vw, 128.35px);
     }
 
