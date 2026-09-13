@@ -357,11 +357,11 @@
 
 
 /*
-   Hjärtsten
+   ITEM 3
 */
 
 
-.backpack-heartstone {
+.backpack-item3 {
 
     left: 28%;
 
@@ -518,17 +518,17 @@
 }
 
 /*
-   HJÄRTSTEN
+   ITEM 3
 */
 
-.backpack-heartstone {
+.backpack-item3 {
 
     width: clamp(120px, 30.77vw, 205px);
 
 }
 
 /*
-   SNIGELSNÄCKA
+   ITEM 1
 */
 
 .backpack-item1 {
@@ -641,10 +641,10 @@
 
 
     /*
-       HJÄRTSTEN
+       ITEM 3
     */
 
-    .backpack-heartstone {
+    .backpack-item3 {
 
         top: calc(52% - 3px);
 
@@ -715,7 +715,7 @@
 
     }
 
-    .backpack-heartstone {
+    .backpack-item3 {
 
         top: calc(52% + 19px);
 
@@ -780,7 +780,7 @@
         width: clamp(76.5px, 19.62vw, 132.6px);
     }
 
-    .compact-height .backpack-heartstone {
+    .compact-height .backpack-item3 {
         width: clamp(102px, 26.15vw, 174.25px);
     }
 
@@ -823,7 +823,7 @@
 
     }
 
-    .compact-height .backpack-heartstone {
+    .compact-height .backpack-item3 {
 
         left: calc(28% + 2px);
 
