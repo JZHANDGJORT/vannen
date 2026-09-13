@@ -967,7 +967,6 @@ När Bosse mötte Otis
 <p>Han gick närmare.</p>
 <p>Något rörde sig där inne.</p>
 <p>Bosse tog ett försiktigt steg fram.</p>
-<p><em>Prassel, prassel.</em></p>
 <p>”Hallå?” sa en okänd röst.</p>
 `,
     imageClass:
