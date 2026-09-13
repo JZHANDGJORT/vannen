@@ -1038,3 +1038,9 @@ När Bosse mötte Otis
     imageClass: "story-image-right",
     textClass: "story-text-right"
 },
+
+                  ]
+
+    }
+
+};
