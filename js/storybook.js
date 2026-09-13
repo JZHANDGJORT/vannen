@@ -900,9 +900,13 @@ När Bosse mötte Otis
     backgroundClass: "background-right",
     title: "",
     text: `
-<p>Bosse grävde en liten stund.</p>
-<p>Då fick han syn på en liten sten.</p>
-<p>Just när han skulle undersöka den hörde han ett ljud en bit bort.</p>
+<p>Det låg en liten sten längst ner i gropen.</p>
+
+<p>Bosse petade på den.</p>
+
+<p>Sedan tittade han upp.</p>
+
+<p>Någonstans i närheten hördes ett svagt ljud.</p>
 `,
     imageClass: "story-image-right",
     textClass: "story-text-right"
