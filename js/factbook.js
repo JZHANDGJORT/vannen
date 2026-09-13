@@ -75,7 +75,7 @@ Uttrar
 `
 <p>Hej! 🦦</p>
 
-<p>Jag heter Otis och jag älskar att upptäcka saker vid vattnet.</p>
+<p>Jag älskar att upptäcka saker i naturen.</p>
 
 <p>Visste du att uttrar finns på många platser i världen? Här kommer några spännande fakta!</p>
 `,
@@ -263,7 +263,7 @@ Uttrar
 
 <p>Nästa gång du ser en bäck, en sjö eller havet kan du tänka på alla små äventyr som händer under vattenytan.</p>
 
-<p>/ Otis 🦦</p>
+<p>/ Otis </p>
 `,
 
                 imageClass:
@@ -528,7 +528,7 @@ Grävlingar
 
 <p>Nästa gång du går genom skogen kan du tänka på att det kanske finns ett gryt alldeles i närheten, även om du inte kan se det.</p>
 
-<p>/ Otis 🦦</p>
+<p>/ Otis </p>
 `,
 
                 imageClass:
@@ -618,9 +618,9 @@ Grävlingar
 
                 text:
 `
-<p>Hej igen! 🦡</p>
+<p>Hej! 🦡</p>
 
-<p>Nu ska vi lära känna ett annat djur som finns ute i naturen.</p>
+<p>Jag älskar att upptäcka saker i naturen och nu ska vi lära känna grävlingen bättre</p>
 
 <p>Grävlingen är duktig på att gräva och trivs bäst när det börjar bli kväll.</p>
 
@@ -841,7 +841,7 @@ Grävlingar
 
 <p>Nästa gång du går genom skogen kan du tänka på att det kanske finns ett gryt alldeles i närheten, även om du inte kan se det.</p>
 
-<p>/ Otis 🦦</p>
+<p>/ Bosse</p>
 `,
 
                 imageClass:
@@ -883,9 +883,9 @@ Uttrar
 
                 text:
 `
-<p>Hej! 🦦</p>
+<p>Hej igen! 🦦</p>
 
-<p>Jag heter Otis och jag älskar att upptäcka saker vid vattnet.</p>
+<p>Nu ska vi lära känna ett annat djur som finns ute i naturen.</p>
 
 <p>Visste du att uttrar finns på många platser i världen? Här kommer några spännande fakta!</p>
 `,
@@ -1073,7 +1073,7 @@ Uttrar
 
 <p>Nästa gång du ser en bäck, en sjö eller havet kan du tänka på alla små äventyr som händer under vattenytan.</p>
 
-<p>/ Otis 🦦</p>
+<p>/ Bosse</p>
 `,
 
                 imageClass:
