@@ -175,7 +175,7 @@ const photoAlbumData = {
                             "photoalbum-photo photoalbum-page-left-photo-03",
 
                         caption:
-                            "Dagen då jag hittade den"
+                            "På upptäcktsfärd"
                     }
                 ]
             },
