@@ -202,7 +202,7 @@ const photoAlbumData = {
                             "photoalbum-photo photoalbum-page-right-photo-01",
 
                         caption:
-                            "Mitt första äventyr"
+                            "En dag att minnas"
                     },
 
                     {
