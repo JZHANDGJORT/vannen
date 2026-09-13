@@ -1012,7 +1012,7 @@ När Bosse mötte Otis
     backgroundClass: "background-left",
     title: "",
     text: `
-<p>De stannade kvar en stund vid stranden.</p>
+<p>De blev kvar vid stranden en lång stund den dagen.</p>
 <p>De pratade, lekte och upptäckte saker tillsammans.</p>
 <p>Det kändes roligt att ha någon att dela upptäckterna med.</p>
 `,
@@ -1028,8 +1028,7 @@ När Bosse mötte Otis
     backgroundClass: "background-right",
     title: "",
     text: `
-<p>När det började bli kväll gick Bosse hemåt.</p>
-<p>Han tänkte på allt som hade hänt under dagen.</p>
+<p>När Bosse till slut gick hem tänkte han på hur konstigt det var.</p>
 <p>Han hade gett sig ut för att upptäcka något nytt.</p>
 <p>Och kanske hade han hittat något ännu bättre.</p>
 <p>En ny vän.</p>
