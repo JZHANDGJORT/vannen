@@ -563,15 +563,11 @@ function goToChapter(chapter) {
           Kapitel 2 börjar på sida 8.
 
           Bosse:
-          Grävlingar är kapitel 1 och
-          Uttrar är kapitel 2.
-          Eftersom grävlingkapitlet
-          har en sida mer börjar
-          Bosses kapitel 2 på sida 9.
+          Kapitel 1 har en sida mer.
+          Därför börjar kapitel 2 på sida 9.
         */
 
         if (
-            currentBookType === "factbook" &&
             currentFriend &&
             currentFriend.id === "bosse01"
         ) {
@@ -596,7 +592,6 @@ function goToChapter(chapter) {
     updateBookPage();
 
 }
-
 
 function goToFactChapter(chapter) {
 
