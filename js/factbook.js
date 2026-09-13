@@ -596,7 +596,7 @@ Grävlingar
             // Sida 1 - Kapitelstart
             {
                 image:
-                    "images/Bosse/factbook/chapter02/page01.PNG",
+                    "images/Bosse/factbook/chapter01/page01.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -620,7 +620,7 @@ Grävlingar
 `
 <p>Hej! 🦡</p>
 
-<p>Jag älskar att upptäcka saker i naturen och nu ska vi lära känna grävlingen bättre</p>
+<p>Nu ska vi lära känna grävlingen lite bättre.</p>
 
 <p>Grävlingen är duktig på att gräva och trivs bäst när det börjar bli kväll.</p>
 
@@ -825,7 +825,7 @@ Grävlingar
             // Sida 8 - Avslutning
             {
                 image:
-                    "images/Bosse/factbook/chapter02/page08.PNG",
+                    "images/Bosse/factbook/chapter01/page08.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
@@ -861,7 +861,7 @@ Grävlingar
             // Sida 9 - Kapitelstart
             {
                 image:
-                    "images/Bosse/factbook/chapter01/page01.PNG",
+                    "images/Bosse/factbook/chapter02/page01.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -1057,7 +1057,7 @@ Uttrar
             // Sida 15 - Avslutning
             {
                 image:
-                    "images/Bosse/factbook/chapter01/page07.PNG",
+                    "images/Bosse/factbook/chapter02/page07.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
