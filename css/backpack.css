@@ -182,11 +182,11 @@
 }
 
 /*
-   SVART STEN
+   ITEM 2
 */
 
 
-.backpack-blackstone {
+.backpack-item2 {
 
     left: 60.5%;
 
@@ -374,7 +374,7 @@
 }
 
 /*
-   SNIGEL SNÄCKA
+  ITEM 1
 */
 
 
@@ -508,10 +508,10 @@
 }
 
 /*
-   SVART STEN
+   ITEM 2
 */
 
-.backpack-blackstone {
+.backpack-item2 {
 
     width: clamp(90px, 23.08vw, 156px);
 
@@ -776,7 +776,7 @@
         width: clamp(127.5px, 32.69vw, 215.05px);
     }
 
-    .compact-height .backpack-blackstone {
+    .compact-height .backpack-item2 {
         width: clamp(76.5px, 19.62vw, 132.6px);
     }
 
