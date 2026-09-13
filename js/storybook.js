@@ -920,10 +920,17 @@ När Bosse mötte Otis
     backgroundClass: "background-left",
     title: "",
     text: `
-<p>Bosse stannade upp och lyssnade.</p>
-<p>Det prasslade i buskarna.</p>
-<p>Sedan hördes en röst.</p>
-<p>– Hallå?</p>
+<p>Bosse reste sig och lyssnade.</p>
+
+<p>Det kom från en buske en bit bort.</p>
+
+<p>Han gick närmare.</p>
+
+<p>Något rörde sig där inne.</p>
+
+<p>Bosse tog ett försiktigt steg fram.</p>
+
+<p>”Hallå?” sa en okänd röst.</p>
 `,
     imageClass: "story-image-left",
     textClass: "story-text-left"
@@ -937,10 +944,23 @@ När Bosse mötte Otis
     backgroundClass: "background-right",
     title: "",
     text: `
-<p>Bosse tittade mot buskarna.</p>
-<p>Ut ur grönskan kom en utter.</p>
-<p>Det var Otis.</p>
-<p>De hade aldrig träffats förut.</p>
+<p>Bosse klev ut ur busken.</p>
+
+<p>Där framför honom stod en utter.</p>
+
+<p>”Oj!” sa Bosse och stannade.</p>
+
+<p>Bosse blinkade.</p>
+
+<p>”Hej.”</p>
+
+<p>”Hej”, sa Bosse.</p>
+
+<p>De tittade på varandra en stund.</p>
+
+<p>”Jag heter Otis”, sa Otis.</p>
+
+<p>”Jag heter Bosse.”</p>
 `,
     imageClass: "story-image-right",
     textClass: "story-text-right"
