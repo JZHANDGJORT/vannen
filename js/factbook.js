@@ -596,7 +596,7 @@ Grävlingar
             // Sida 1 - Kapitelstart
             {
                 image:
-                    "images/Otis/factbook/chapter02/page01.PNG",
+                    "images/Bosse/factbook/chapter02/page01.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -825,7 +825,7 @@ Grävlingar
             // Sida 8 - Avslutning
             {
                 image:
-                    "images/Otis/factbook/chapter02/page08.PNG",
+                    "images/Bosse/factbook/chapter02/page08.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
@@ -861,7 +861,7 @@ Grävlingar
             // Sida 9 - Kapitelstart
             {
                 image:
-                    "images/Otis/factbook/chapter01/page01.PNG",
+                    "images/Bosse/factbook/chapter01/page01.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
@@ -1057,7 +1057,7 @@ Uttrar
             // Sida 15 - Avslutning
             {
                 image:
-                    "images/Otis/factbook/chapter01/page07.PNG",
+                    "images/Bosse/factbook/chapter01/page07.PNG",
 
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
