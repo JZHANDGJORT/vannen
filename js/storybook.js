@@ -657,222 +657,191 @@ Kapitel 2<br>
             },
 
 
-            // =========================
-            // KAPITEL 1
-            // =========================
-
-            // Sida 1 - Kapitel 1
-            {
-                image:
-                "images/Bosse/storybook/chapter01/page01.PNG",
-
-                background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
-
-                backgroundClass:
-                "background-right",
-
-                title:
+// =========================
+// KAPITEL 1
+// =========================
+// Sida 1 - Kapitel 1
+{
+    image:
+    "images/Bosse/storybook/chapter01/page01.PNG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title:
 `
 <span class="chapter-number">
 Kapitel 1
 </span>
 <br>
 <span class="chapter-name">
-Otis och den magiska stenen
+Spåret i skogen
 </span>
 `,
-
-                text:
+    text:
 `
-<p>Långt inne bland träden, där skogen mötte det glittrande vattnet, bodde en liten utter som hette Otis.</p>
-<p>Otis var nyfiken på nästan allt.</p>
+<p>Det började bli kväll i skogen.</p>
+<p>Solen hade sjunkit lågt och mellan träden hade ljuset blivit mjukt och varmt.</p>
+<p>Bosse var ute och nosade omkring i skogen.</p>
 `,
-
-                imageClass:
-                "chapter-image",
-
-                textClass:
-                "chapter-text",
-
-                titleClass:
-                "chapter-title"
-            },
-
-
-            // Sida 2
-            {
-                image:
-                "images/Bosse/storybook/chapter01/page02.PNG",
-
-                background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
-
-                backgroundClass:
-                "background-left",
-
-                title: "",
-
-                text:
+    imageClass:
+    "chapter-image",
+    textClass:
+    "chapter-text",
+    titleClass:
+    "chapter-title"
+},
+// Sida 2
+{
+    image:
+    "images/Bosse/storybook/chapter01/page02.PNG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    backgroundClass:
+    "background-left",
+    title: "",
+    text:
 `
-<p>En morgon när solen precis hade börjat värma marken gick Otis ner till stranden.</p>
-<p>Plask!</p>
-<p>Han hoppade i vattnet och simmade en liten stund. Efteråt satte han sig på en varm sten för att vila.</p>
-<p>Då såg han något som låg bland sanden.</p>
+<p>Då fick han syn på något.</p>
+<p>Små märken i jorden.</p>
+<p>Bosse böjde ner nosen och tittade närmare.</p>
+<p>Det var tassavtryck.</p>
+<p>Men de var inte hans egna.</p>
 `,
-
-                imageClass:
-                "story-image-left",
-
-                textClass:
-                "story-text-left"
-            },
-
-
-            // Sida 3
-            {
-                image:
-                "images/Bosse/storybook/chapter01/page03.JPEG",
-
-                background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
-
-                backgroundClass:
-                "background-right",
-
-                title: "",
-
-                text:
+    imageClass:
+    "story-image-left",
+    textClass:
+    "story-text-left"
+},
+// Sida 3
+{
+    image:
+    "images/Bosse/storybook/chapter01/page03.JPEG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text:
 `
-<p>En liten svart sten.</p>
-<p>Den var oval och alldeles len.</p>
-<p>– Vilken fin sten, sa Otis.</p>
-<p>Han vände och vred på den. Den glänste lite i solen, som om den hade en egen liten hemlighet.</p>
-<p>Otis bestämde sig för att ta med stenen hem.</p>
+<p>Vem hade gått här?</p>
+<p>Bosse följde spåret.</p>
+<p>Det slingrade mellan träden och runt en stor sten.</p>
+<p>Ibland blev avtrycken nästan osynliga.</p>
 `,
-
-                imageClass:
-                "story-image-right",
-
-                textClass:
-                "story-text-right"
-            },
-
-
-            // Sida 4
-            {
-                image:
-                "images/Bosse/storybook/chapter01/page04.PNG",
-
-                background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
-
-                backgroundClass:
-                "background-left",
-
-                title: "",
-
-                text:
+    imageClass:
+    "story-image-right",
+    textClass:
+    "story-text-right"
+},
+// Sida 4
+{
+    image:
+    "images/Bosse/storybook/chapter01/page04.PNG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    backgroundClass:
+    "background-left",
+    title: "",
+    text:
 `
-<p>Han lade den i sin ryggsäck och gick tillbaka genom skogen.</p>
-<p>Senare samma dag hände något tråkigt.</p>
-<p>Otis hade byggt en liten koja av pinnar, men när vinden blåste försvann hela kojan.</p>
-<p>– Åh nej, suckade Otis.</p>
+<p>Men Bosse fortsatte att leta.</p>
+<p>Där!</p>
+<p>Han hittade spåret igen.</p>
+<p>Det ledde vidare genom skogen, över en liten glänta och ner mot en plats där träden stod glesare.</p>
 `,
-
-                imageClass:
-                "story-image-left",
-
-                textClass:
-                "story-text-left"
-            },
-
-
-            // Sida 5
-            {
-                image:
-                "images/Bosse/storybook/chapter01/page05.PNG",
-
-                background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
-
-                backgroundClass:
-                "background-right",
-
-                title: "",
-
-                text:
+    imageClass:
+    "story-image-left",
+    textClass:
+    "story-text-left"
+},
+// Sida 5
+{
+    image:
+    "images/Bosse/storybook/chapter01/page05.PNG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text:
 `
-<p>Då kom han ihåg stenen.</p>
-<p>Han tog fram den ur ryggsäcken och höll den i sin tass.</p>
-<p>Stenen var kall och len.</p>
-<p>Efter en liten stund kändes det bättre.</p>
-<p>– Tack, lilla sten, sa Otis.</p>
+<p>Bosse stannade.</p>
+<p>Längre bort kunde han se ett litet hus.</p>
+<p>Han hade kommit närmare människorna.</p>
+<p>Men tassavtrycken fortsatte.</p>
 `,
-
-                imageClass:
-                "story-image-right",
-
-                textClass:
-                "story-text-right"
-            },
-
-
-            // Sida 6
-            {
-                image:
-                "images/Bosse/storybook/chapter01/page06.PNG",
-
-                background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
-
-                backgroundClass:
-                "background-left",
-
-                title: "",
-
-                text:
+    imageClass:
+    "story-image-right",
+    textClass:
+    "story-text-right"
+},
+// Sida 6
+{
+    image:
+    "images/Bosse/storybook/chapter01/page06.PNG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    backgroundClass:
+    "background-left",
+    title: "",
+    text:
 `
-<p>Nästa dag tog Otis med sig stenen när han gav sig ut på äventyr.</p>
-<p>Han visade den sitt favoritträd.</p>
-<p>Han visade den platsen där de små fiskarna brukade simma.</p>
-<p>Han visade den de vackraste blommorna vid stigen.</p>
+<p>Bosse följde dem försiktigt ända fram till huset.</p>
+<p>Där satt en katt.</p>
+<p>Den satt alldeles stilla i kvällsluften och tvättade sina tassar.</p>
+<p>När katten fick syn på Bosse stannade den upp.</p>
 `,
-
-                imageClass:
-                "story-image-left",
-
-                textClass:
-                "story-text-left"
-            },
-
-
-            // Sida 7
-            {
-                image:
-                "images/Bosse/storybook/chapter01/page07.PNG",
-
-                background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
-
-                backgroundClass:
-                "background-right",
-
-                title: "",
-
-                text:
+    imageClass:
+    "story-image-left",
+    textClass:
+    "story-text-left"
+},
+// Sida 7
+{
+    image:
+    "images/Bosse/storybook/chapter01/page07.PNG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text:
 `
-<p>Och sedan dess fick stenen följa med på alla hans äventyr.</p>
-<p>För Otis hade upptäckt något viktigt:</p>
-<p>Ibland kan en liten sak kännas väldigt stor.</p>
+<p>Bosse stod också stilla.</p>
+<p>De tittade på varandra.</p>
+<p>Katten blinkade långsamt.</p>
+<p>Sedan fortsatte den att tvätta sig.</p>
+<p>Bosse tog ett litet steg närmare.</p>
 `,
-
-                imageClass:
-                "story-image-right",
-
-                textClass:
-                "story-text-right"
-            },
+    imageClass:
+    "story-image-right",
+    textClass:
+    "story-text-right"
+},
+// Sida 8
+{
+    image:
+    "images/Bosse/storybook/chapter01/page08.PNG",
+    background:
+    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    backgroundClass:
+    "background-left",
+    title: "",
+    text:
+`
+<p>Då öppnades dörren till huset.</p>
+<p>Katten tittade upp.</p>
+<p>Sedan tittade den en gång till på Bosse.</p>
+<p>Och så sprang den in genom dörren.</p>
+<p>Bosse stod kvar och tittade mot huset.</p>
+<p>De kände inte varandra ännu. Men kanske hade de båda blivit lite nyfikna på den andre.</p>
+`,
+    imageClass:
+    "story-image-left",
+    textClass:
+    "story-text-left"
+},
 
 
             // =========================
