@@ -1004,7 +1004,7 @@ När Bosse mötte Otis
 
 <p>”Vad kan man göra med den?”</p>
 
-<p>Otis tänkte efter.</p>
+<p>Otis stod först tyst.</p>
 
 <p>Sedan tog han pinnen i munnen och sprang iväg.</p>
 `,
