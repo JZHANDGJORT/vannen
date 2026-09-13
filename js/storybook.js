@@ -950,8 +950,6 @@ När Bosse mötte Otis
 
 <p>”Oj!” sa Bosse och stannade.</p>
 
-<p>Bosse blinkade.</p>
-
 <p>”Hej.”</p>
 
 <p>”Hej”, sa Bosse.</p>
