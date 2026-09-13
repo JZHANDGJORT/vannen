@@ -974,9 +974,15 @@ När Bosse mötte Otis
     backgroundClass: "background-left",
     title: "",
     text: `
-<p>De började prata och upptäckte snart att de båda tyckte om att upptäcka saker.</p>
-<p>Bosse berättade om det lilla hålet han hade hittat.</p>
-<p>Otis blev nyfiken och ville följa med.</p>
+<p>Bosse tittade på Otis. Sedan tittade han på sjön. Sedan på Otis igen.</p>
+
+<p>”Vad gör du här?”</p>
+
+<p>”Jag upptäcker”, svarade Otis.</p>
+
+<p>Bosse log.</p>
+
+<p>”Det gör jag också.”</p>
 `,
     imageClass: "story-image-left",
     textClass: "story-text-left"
@@ -990,9 +996,19 @@ När Bosse mötte Otis
     backgroundClass: "background-right",
     title: "",
     text: `
-<p>Plötsligt fick Otis syn på en pinne.</p>
-<p>Han tog tag i den och sprang iväg.</p>
-<p>Bosse tittade förvånat efter honom.</p>
+<p>Då fick Bosse syn på pinnen.</p>
+
+<p>”Vad är det där?”</p>
+
+<p>Otis tittade ner.</p>
+
+<p>”En pinne.”</p>
+
+<p>”Vad kan man göra med den?”</p>
+
+<p>Otis tänkte efter.</p>
+
+<p>Sedan tog han pinnen i munnen och sprang iväg.</p>
 `,
     imageClass: "story-image-right",
     textClass: "story-text-right"
@@ -1006,9 +1022,13 @@ När Bosse mötte Otis
     backgroundClass: "background-left",
     title: "",
     text: `
-<p>Bosse sprang efter.</p>
-<p>Otis sprang snabbare, men Bosse gav inte upp.</p>
-<p>Snart sprang de båda mellan träden och skrattade.</p>
+<p>Bosse blev först alldeles stilla. Sedan sprang han efter.</p>
+
+<p>Otis sprang mellan träden med pinnen dinglande i munnen.</p>
+
+<p>Bosse var hack i häl.</p>
+
+<p>De sprang runt en stor sten och ner mot stranden.</p>
 `,
     imageClass: "story-image-left",
     textClass: "story-text-left"
@@ -1022,11 +1042,19 @@ När Bosse mötte Otis
     backgroundClass: "background-right",
     title: "",
     text: `
-<p>Till slut stannade Otis.</p>
-<p>Bosse kom fram och tittade på pinnen.</p>
-<p>– Den är vår, sa Otis.</p>
-<p>Bosse log.</p>
-<p>– Ja, vår, sa han.</p>
+<p>Till slut släppte Otis pinnen.</p>
+
+<p>Bosse kastade sig efter den.</p>
+
+<p>Otis skrattade.</p>
+
+<p>”Den där pinnen var visst roligare än jag trodde!”</p>
+
+<p>Bosse höll upp pinnen.</p>
+
+<p>”Jag tror att den är vår nu.”</p>
+
+<p>Otis log. ”Ja.”</p>
 `,
     imageClass: "story-image-right",
     textClass: "story-text-right"
@@ -1041,8 +1069,12 @@ När Bosse mötte Otis
     title: "",
     text: `
 <p>De blev kvar vid stranden en lång stund den dagen.</p>
-<p>De pratade, lekte och upptäckte saker tillsammans.</p>
-<p>Det kändes roligt att ha någon att dela upptäckterna med.</p>
+
+<p>De pratade.</p>
+
+<p>De lekte.</p>
+
+<p>Och de upptäckte nya saker tillsammans.</p>
 `,
     imageClass: "story-image-left",
     textClass: "story-text-left"
@@ -1056,9 +1088,14 @@ När Bosse mötte Otis
     backgroundClass: "background-right",
     title: "",
     text: `
-<p>När Bosse till slut gick hem tänkte han på hur konstigt det var.</p>
-<p>Han hade gett sig ut för att upptäcka något nytt.</p>
-<p>Och kanske hade han hittat något ännu bättre.</p>
+<p>När Bosse till slut gick hem tänkte han på dagen.</p>
+
+<p>Han hade gått ut för att upptäcka något nytt.</p>
+
+<p>Och i stället hade han hittat någon ny.</p>
+
+<p>Otis.</p>
+
 <p>En ny vän.</p>
 `,
     imageClass: "story-image-right",
