@@ -950,13 +950,13 @@ När Bosse mötte Otis
 
 <p>”Oj!” sa Bosse och stannade.</p>
 
-<p>”Hej.”</p>
+<p>”Hej.”, sa uttern</p>
 
-<p>”Hej”, sa Bosse.</p>
+<p>”Hej”</p>
 
 <p>De tittade på varandra en stund.</p>
 
-<p>”Jag heter Otis”, sa Otis.</p>
+<p>”Jag heter Otis”, sa uttern.</p>
 
 <p>”Jag heter Bosse.”</p>
 `,
