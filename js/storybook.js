@@ -880,9 +880,13 @@ När Bosse mötte Otis
     backgroundClass: "background-left",
     title: "",
     text: `
-<p>Efter en stund fick Bosse syn på ett litet hål i marken.</p>
-<p>Han blev nyfiken och började försiktigt gräva.</p>
-<p>Kanske fanns det något spännande där under jorden.</p>
+<p>Under några löv fick Bosse syn på något.</p>
+
+<p>Han stannade.</p>
+
+<p>Det såg ut som en liten grop i marken.</p>
+
+<p>Bosse började försiktigt gräva med tassarna.</p>
 `,
     imageClass: "story-image-left",
     textClass: "story-text-left"
