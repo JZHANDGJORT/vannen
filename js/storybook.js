@@ -644,7 +644,7 @@ När Otis mötte Bosse
 `
 <p onclick="goToChapter(1)">
 Kapitel 1<br>
-<span>Otis och den magiska stenen</span>
+<span>Spåret i skogen</span>
 </p>
 
 <p onclick="goToChapter(2)">
