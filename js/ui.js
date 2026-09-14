@@ -419,7 +419,7 @@ function chooseActivityNeed(type) {
             </button>
 
             <button onclick="readOtisStory()">
-                📚 Läs om Otis äventyr
+                📚 Läs om ${getCurrentFriendPossessiveName()} äventyr
             </button>
 
             <button onclick="simpleActivity('later')">
@@ -555,7 +555,7 @@ function chooseActivityNeed(type) {
     if (type === "tidy") {
 
         addMessage(
-            "En liten hjälteinsats! 🦦 Ska vi göra fint tillsammans?",
+            "En liten hjälteinsats! ✨ Ska vi göra fint tillsammans?",
             currentFriend.id
         );
 
@@ -817,7 +817,7 @@ function startCreateActivity() {
 
     addMessage(
         activity.message,
-        "otis"
+        currentFriend.id
     );
 
 
@@ -1357,7 +1357,7 @@ function discoverBody(activity) {
     "🎵 Sätt på din favoritlåt och dansa! Hur känns det i kroppen när du rör dig till musiken?",
     "⚽ Kasta en boll upp i luften och fånga den igen. Kan du hitta på olika sätt att kasta och fånga?",
     "⚽ Rulla eller studsa en boll mot en vägg och fånga den när den kommer tillbaka. Välj en vägg som är fri från ömtåliga saker.",
-    "🎯 Välj något som mål och se hur nära du kan rulla, sparka eller kasta bollen."
+    "🎯 Välj något som mål och se hur nära du kan rulla, sparka eller kasta en boll."
 ],
 
         stretch: [
@@ -1982,7 +1982,7 @@ function dialogAnswer(answer) {
                 </button>
 
                 <button onclick="otisChoice('lugnt')">
-                    🌿 Bara vara med Otis
+                    🌿 Bara vara med ${getCurrentFriendName()}
                 </button>
 
                 <button onclick="otisChoice('aktivitet')">
@@ -2014,7 +2014,7 @@ function dialogAnswer(answer) {
                 </button>
 
                 <button onclick="otisChoice('lugnt')">
-                    🌿 Bara vara med Otis
+                    🌿 Bara vara med ${getCurrentFriendName()}
                 </button>
 
                 <button onclick="otisChoice('aktivitet')">
@@ -2046,7 +2046,7 @@ function dialogAnswer(answer) {
                 </button>
 
                 <button onclick="otisChoice('lugnt')">
-                    🌿 Bara vara med Otis
+                    🌿 Bara vara med ${getCurrentFriendName()}
                 </button>
 
                 <button onclick="otisChoice('aktivitet')">
@@ -2099,7 +2099,7 @@ function showDialogMore() {
         </button>
 
         <button onclick="otisChoice('lugnt')">
-            🌿 Bara vara med Otis
+            🌿 Bara vara med ${getCurrentFriendName()}
         </button>
 
         <button onclick="otisChoice('aktivitet')">
@@ -2145,7 +2145,7 @@ function showDialogMoreHappy() {
 
 
         <button onclick="otisChoice('lugnt')">
-            💚 Bara vara med Otis
+            💚 Bara vara med ${getCurrentFriendName()}
         </button>
 
 
@@ -2175,12 +2175,12 @@ function happyMoreChoice(choice) {
         actions.innerHTML = `
 
             <button onclick="happyMoreContinue()">
-                🌿 Tillbaka till Otis
+                🌿 Tillbaka till ${getCurrentFriendName()}
             </button>
 
 
             <button onclick="otisChoice('lugnt')">
-                💚 Bara vara med Otis
+                💚 Bara vara med ${getCurrentFriendName()}
             </button>
 
         `;
@@ -2204,7 +2204,7 @@ function happyMoreContinue() {
     actions.innerHTML = `
 
         <button onclick="otisChoice('lugnt')">
-            🌿 Bara vara med Otis
+            🌿 Bara vara med ${getCurrentFriendName()}
         </button>
 
 
@@ -2231,7 +2231,7 @@ function showDialogMoreQuestion() {
     actions.innerHTML = `
 
         <button onclick="dialogMoreChoice()">
-            🌿 Tillbaka till Otis
+            🌿 Tillbaka till ${getCurrentFriendName()}
         </button>
 
     `;
@@ -2253,7 +2253,7 @@ function dialogMoreChoice() {
     actions.innerHTML = `
 
         <button onclick="otisChoice('lugnt')">
-            🌿 Bara vara med Otis
+            🌿 Bara vara med ${getCurrentFriendName()}
         </button>
 
         <button onclick="otisChoice('aktivitet')">
@@ -2544,15 +2544,15 @@ function paintIdea(randomIdea) {
             "🌊 Måla hur du tror att det ser ut under vattenytan.",
             "✨ Rita ett helt nytt djur som ingen har sett förut.",
             "😊 Rita någon som får dig att le.",
-            "🏡 Rita ett hus där Otis skulle vilja bo.",
+            "🏡 Rita ett hus där ${getCurrentFriendName()} skulle vilja bo.",
             "🌲 Måla en mysig plats där du skulle vilja vara.",
             "☁️ Rita vad du tror finns bakom molnen.",
             "🪄 Måla en magisk värld där allt är möjligt.",
             "🐾 Rita spår från ett djur och hitta på vart det är på väg.",
-            "🌙 Måla hur du tror att Otis värld ser ut på natten.",
+            "🌙 Måla hur du tror att ${getCurrentFriendName()} värld ser ut på natten.",
             "🎈 Rita något som kan flyga, men som egentligen inte kan flyga.",
             "🍓 Måla din alldeles egna fantasifrukt.",
-            "🏞️ Rita en plats där Otis och du skulle kunna ha ett äventyr.",
+            "🏞️ Rita en plats där ${getCurrentFriendName()} och du skulle kunna ha ett äventyr.",
             "💭 Rita något du skulle vilja hitta om du gick på upptäcktsfärd.",
             "⭐ Måla en bild som du tycker känns lugn och mysig."
         ];
@@ -2598,25 +2598,25 @@ function paintIdea(randomIdea) {
 function chooseBuildMaterial(material) {
     const ideas = {
         lego: [
-            "🧱 Bygg ett hus av LEGO där Otis kan bo.",
-            "🚗 Bygg ett LEGO-fordon som kan ta dig och Otis på äventyr.",
+            "🧱 Bygg ett hus av LEGO där ${getCurrentFriendName()} kan bo.",
+            "🚗 Bygg ett LEGO-fordon som kan ta dig och ${getCurrentFriendName()} på äventyr.",
             "🏰 Bygg ett LEGO-slott med torn och hemliga rum.",
-            "🌉 Bygg en LEGO-bro som Otis kan gå över.",
-            "🦦 Bygg en LEGO-kompis till Otis.",
+            "🌉 Bygg en LEGO-bro som ${getCurrentFriendName()} kan gå över.",
+            "🦦 Bygg en LEGO-kompis till ${getCurrentFriendName()}.",
             "🏝️ Bygg en egen liten värld av LEGO.",
-            "🚀 Bygg en LEGO-maskin som kan ta Otis till en hemlig plats.",
+            "🚀 Bygg en LEGO-maskin som kan ta ${getCurrentFriendName()} till en hemlig plats.",
             "🐾 Bygg ett hem av LEGO åt ett djur.",
-            "🌲 Bygg en liten LEGO-skog där Otis kan utforska.",
-            "✨ Bygg något helt eget av LEGO som Otis aldrig har sett förut."
+            "🌲 Bygg en liten LEGO-skog där ${getCurrentFriendName()} kan utforska.",
+            "✨ Bygg något helt eget av LEGO som ${getCurrentFriendName()} aldrig har sett förut."
         ],
         duplo: [
-            "🏠 Bygg ett mysigt hem av DUPLO där Otis kan bo.",
+            "🏠 Bygg ett mysigt hem av DUPLO där ${getCurrentFriendName()} kan bo.",
             "🦦 Bygg en plats av DUPLO där ett djur kan trivas.",
             "🌳 Bygg en liten naturvärld av DUPLO.",
             "🚜 Bygg ett DUPLO-fordon som kan åka på äventyr.",
             "🏥 Bygg en plats av DUPLO där någon kan få hjälp.",
-            "🏰 Bygg en spännande plats av DUPLO som Otis kan upptäcka.",
-            "🌊 Bygg en DUPLO-värld vid vattnet där Otis kan leka.",
+            "🏰 Bygg en spännande plats av DUPLO som ${getCurrentFriendName()} kan upptäcka.",
+            "🌊 Bygg en DUPLO-värld vid vattnet där ${getCurrentFriendName()} kan leka.",
             "🐾 Bygg ett litet djurhem av DUPLO.",
             "🌈 Bygg en färgglad värld av DUPLO där du bestämmer vad som finns.",
             "✨ Bygg något helt eget av DUPLO och bestäm själv vad det ska bli."
@@ -2627,41 +2627,41 @@ function chooseBuildMaterial(material) {
             "🏡 Bygg ett eget litet hus av klossar.",
             "🗼 Bygg ett torn av klossar som nästan når molnen.",
             "🦉 Bygg ett hem av klossar åt ett djur.",
-            "🌊 Bygg något av klossar som passar vid Otis vatten.",
+            "🌊 Bygg något av klossar som passar vid ${getCurrentFriendName()} hem.",
             "🌲 Bygg en liten skog av klossar med egna platser att upptäcka.",
-            "🦦 Bygg en trygg viloplats av klossar där Otis kan vila.",
+            "🦦 Bygg en trygg viloplats av klossar där ${getCurrentFriendName()} kan vila.",
             "🚂 Bygg ett fordon av klossar som kan ta sig genom din värld.",
             "✨ Bygg något helt eget av klossar och bestäm själv vad det ska vara."
         ],
         fort: [
-            "🏕️ Bygg en mysig koja av filtar och kuddar där du och Otis kan vila.",
+            "🏕️ Bygg en mysig koja av filtar och kuddar där du och ${getCurrentFriendName()} kan vila.",
             "✨ Bygg en hemlig koja av filtar och kuddar för ett litet äventyr.",
             "📚 Bygg en mysig läshörna av filtar och kuddar.",
             "🌧️ Bygg en koja av filtar och kuddar där man kan mysa när det regnar.",
-            "🦦 Bygg en liten koja av filtar och kuddar där Otis kan hälsa på.",
+            "🦦 Bygg en liten koja av filtar och kuddar där ${getCurrentFriendName()} kan hälsa på.",
             "🌿 Bygg en gömd koja av filtar och kuddar som blir er hemliga plats.",
             "🔦 Bygg en hemlig koja av filtar och kuddar där ni kan berätta historier.",
-            "🌙 Bygg en mysig nattkoja av filtar och kuddar där Otis kan sova.",
+            "🌙 Bygg en mysig nattkoja av filtar och kuddar där ${getCurrentFriendName()} kan sova.",
             "🗺️ Bygg en äventyrskoja av filtar och kuddar som blir er hemliga bas.",
             "💚 Bygg den mysigaste kojan du kan med filtar och kuddar."
         ],
         clay: [
             "🪨 Forma ett djur av lera.",
-            "🌿 Skapa en liten skatt av lera till Otis.",
-            "🦦 Forma något av lera som kan bo i Otis värld.",
+            "🌿 Skapa en liten skatt av lera till ${getCurrentFriendName()}.",
+            "🦦 Forma något av lera som kan bo i ${getCurrentFriendName()} värld.",
             "🍄 Skapa en liten figur av lera som du hittar på själv.",
             "💚 Forma ett hjärta eller en liten gåva av lera.",
             "🏡 Bygg en liten värld av lera.",
             "🐾 Forma ett litet djur av lera och hitta på vad det heter.",
             "🌸 Skapa en fantasiblomma av lera.",
-            "🪨 Forma en magisk sten av lera som Otis kan hitta.",
+            "🪨 Forma en magisk sten av lera som ${getCurrentFriendName()} kan hitta.",
             "✨ Skapa något helt eget av lera och bestäm själv vad det blir."
         ],
         other: "showOtherBuildMaterials",
         nature: [
             "🌿 Bygg något av saker du hittar i naturen.",
             "🍂 Skapa ett konstverk av löv, pinnar och annat du hittar i naturen.",
-            "🪵 Bygg en liten viloplats åt Otis av naturmaterial.",
+            "🪵 Bygg en liten viloplats åt ${getCurrentFriendName()} av naturmaterial.",
             "🌸 Skapa en bild eller figur av löv, pinnar och andra naturmaterial.",
             "🐾 Gör ett mönster på marken med löv, pinnar och andra saker du hittar i naturen.",
             "✨ Hitta några naturmaterial och skapa något helt eget."
@@ -2671,13 +2671,13 @@ function chooseBuildMaterial(material) {
             "✂️ Skapa något av papper och kartong.",
             "🏠 Bygg ett litet hus av kartong.",
             "🚗 Bygg ett fordon av kartong och papper.",
-            "🦦 Bygg ett litet hem åt Otis av kartong.",
+            "🦦 Bygg ett litet hem åt ${getCurrentFriendName()} av kartong.",
             "✨ Förvandla en kartong till något helt annat."
         ],
         fabric: [
             "🧶 Skapa något mjukt av tyg eller garn.",
             "🏕️ Bygg en mysig plats med tyg och garn.",
-            "🦦 Gör en liten filt eller sovplats åt Otis av tyg.",
+            "🦦 Gör en liten filt eller sovplats åt ${getCurrentFriendName()} av tyg.",
             "🎨 Skapa ett mönster med olika tyger eller garn.",
             "🪡 Skapa något du kan använda eller leka med av tyg eller garn.",
             "✨ Blanda tyg och garn och skapa något helt eget."
@@ -2688,11 +2688,11 @@ function chooseBuildMaterial(material) {
             "📦 Förvandla en gammal förpackning till något roligt.",
             "🚗 Bygg ett fordon av saker du annars skulle slänga.",
             "🏠 Skapa ett litet hus av gamla förpackningar och andra saker.",
-            "🦦 Bygg något av gamla saker som Otis skulle kunna använda."
+            "🦦 Bygg något av gamla saker som ${getCurrentFriendName()} skulle kunna använda."
         ],
         mixed: [
             "🌈 Blanda olika material och skapa något helt eget.",
-            "🦦 Bygg något av flera olika material som Otis aldrig har sett förut.",
+            "🦦 Bygg något av flera olika material som ${getCurrentFriendName()} aldrig har sett förut.",
             "✨ Använd minst tre olika material och skapa något nytt.",
             "🏡 Skapa en liten värld med flera olika material.",
             "🎨 Blanda material, färger och former och se vad det blir.",
@@ -2799,7 +2799,7 @@ function chooseCraft(material) {
             "🌈 Gör ett färgglatt mönster med pärlor.",
             "💚 Gör ett hjärta av pärlor.",
             "🌸 Skapa en blomma av pärlor.",
-            "🦦 Gör något av pärlor som Otis skulle tycka om.",
+            "🦦 Gör något av pärlor som ${getCurrentFriendName()} skulle tycka om.",
             "⭐ Skapa en stjärna av pärlor.",
             "🐾 Gör ett litet djur av pärlor.",
             "🎨 Blanda olika färger av pärlor och skapa något helt eget.",
@@ -2814,7 +2814,7 @@ function chooseCraft(material) {
             "🌸 Gör en blomma på pärlplattan.",
             "🦋 Skapa en fjäril på pärlplattan.",
             "⭐ Gör en stjärna på pärlplattan.",
-            "🦦 Gör en bild av Otis på pärlplattan.",
+            "🦦 Gör en bild av ${getCurrentFriendName()} på pärlplattan.",
             "🐾 Skapa ett eget djur på pärlplattan.",
             "🏠 Gör ett litet hus på pärlplattan.",
             "🌳 Skapa ett träd eller en liten skog på pärlplattan.",
@@ -2825,7 +2825,7 @@ function chooseCraft(material) {
             "📄 Gör ett kort av papper till någon du tycker om.",
             "🦋 Vik eller klipp en fjäril av papper.",
             "🌸 Klipp eller rita en blomma på papper.",
-            "🦦 Gör en liten Otis-figur av papper.",
+            "🦦 Gör en liten ${getCurrentFriendName()}-figur av papper.",
             "🏠 Skapa ett litet hus av papper.",
             "🐾 Gör ett djur av papper.",
             "🌈 Skapa ett färgglatt konstverk av papper.",
@@ -2840,7 +2840,7 @@ function chooseCraft(material) {
             "🌈 Gör ett färgglatt mönster med garn.",
             "💚 Skapa ett litet hjärta av garn.",
             "🌸 Gör en enkel blomma av garn.",
-            "🦦 Skapa något av garn som Otis skulle kunna använda.",
+            "🦦 Skapa något av garn som ${getCurrentFriendName()} skulle kunna använda.",
             "🐾 Gör en liten figur av garn.",
             "🎨 Blanda olika färger av garn och skapa något eget.",
             "⭐ Skapa en stjärna eller annan form av garn.",
