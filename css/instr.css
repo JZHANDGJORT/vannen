@@ -1,0 +1,63 @@
+#instruction-view {
+    width: min(90%, 760px);
+    margin: 0 auto;
+    padding: 24px 0 50px;
+}
+.instruction-header {
+    text-align: center;
+    margin-bottom: 42px;
+}
+.instruction-header h1 {
+    margin: 24px 0 10px;
+}
+.instruction-header p {
+    margin: 0 auto;
+    max-width: 620px;
+}
+.instruction-back {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+.instruction-section {
+    margin-bottom: 38px;
+}
+.instruction-section h2 {
+    margin: 0 0 12px;
+}
+.instruction-section p {
+    margin: 0 0 14px;
+}
+.instruction-section p:last-child {
+    margin-bottom: 0;
+}
+.instruction-philosophy {
+    margin-top: 48px;
+}
+.instruction-bottom {
+    text-align: center;
+    margin-top: 50px;
+}
+@media (max-width: 600px) {
+    #instruction-view {
+        width: 90%;
+        padding-top: 18px;
+        padding-bottom: 40px;
+    }
+    .instruction-header {
+        margin-bottom: 34px;
+    }
+    .instruction-header h1 {
+        margin-top: 20px;
+    }
+    .instruction-section {
+        margin-bottom: 32px;
+    }
+    .instruction-philosophy {
+        margin-top: 40px;
+    }
+    .instruction-bottom {
+        margin-top: 40px;
+    }
+}
