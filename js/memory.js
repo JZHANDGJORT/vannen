@@ -53,6 +53,28 @@ function getCurrentFriendId() {
 
 }
 
+// ========================================
+// AKTUELL VÄNS NAMN
+// ========================================
+
+function getCurrentFriendName() {
+
+    const friendId =
+        getCurrentFriendId();
+
+
+    const friend =
+        friends.find(
+            friend =>
+                friend.id === friendId
+        );
+
+
+    return friend
+        ? friend.name
+        : "vännen";
+
+}
 
 
 // ========================================
