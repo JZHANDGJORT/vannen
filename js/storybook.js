@@ -834,7 +834,7 @@ Spåret i skogen
 <p>Katten tittade upp.</p>
 <p>Sedan tittade den en gång till på Bosse.</p>
 <p>Och så sprang den in genom dörren.</p>
-<pBosse stod kvar och såg dörren långsamt stängas.</p>
+<p>Bosse stod kvar och såg dörren långsamt stängas.</p>
 `,
     imageClass:
     "story-image-left",
