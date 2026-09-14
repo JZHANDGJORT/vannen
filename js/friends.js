@@ -45,6 +45,9 @@ function renderFriends() {
             </div>
             <div class="dots"></div>
         </div>
+        <a href="instr.html">
+    Läs mer om Vännen →
+</a>
     `;
     guideContainer.appendChild(
         guideCard
