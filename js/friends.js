@@ -24,31 +24,18 @@ function renderFriends() {
     guideCard.id =
         "friend-guide-card";
     guideCard.innerHTML = `
-        <div class="gallery-wrapper">
-            <div class="gallery">
-                <img
-                    src="images/Vannen/vannen-concept.jpeg"
-                    alt="Vad är Vännen?"
-                >
-                <img
-                    src="images/.../kort2.png"
-                    alt="Vad kan vi göra?"
-                >
-                <img
-                    src="images/.../kort3.png"
-                    alt="Hur fungerar vänskapen?"
-                >
-                <img
-                    src="images/.../kort4.png"
-                    alt="Vad finns i ryggsäcken?"
-                >
-            </div>
-            <div class="dots"></div>
+    <div class="gallery-wrapper">
+        <div class="gallery">
+            <img
+                src="images/Vannen/vannen-concept.jpeg"
+                alt="Vad är Vännen?"
+            >
         </div>
-        <a href="instr.html">
-    Läs mer om Vännen →
-</a>
-    `;
+    </div>
+    <a href="instr.html">
+        Läs mer om Vännen →
+    </a>
+`;
     guideContainer.appendChild(
         guideCard
     );
