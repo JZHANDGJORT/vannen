@@ -76,6 +76,22 @@ function getCurrentFriendName() {
 
 }
 
+function getCurrentFriendPossessiveName() {
+
+    const name =
+        getCurrentFriendName();
+
+
+    if (name.endsWith("s")) {
+
+        return name;
+
+    }
+
+
+    return name + "s";
+
+}
 
 // ========================================
 // STORAGE-NYCKEL
