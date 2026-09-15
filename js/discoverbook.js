@@ -95,6 +95,21 @@ const discoverBookData = {
                 "discover-image-right",
                 textClass:
                 "discover-text-right"
+            },
+
+                      // Sida 6
+            {
+                image: "images/Vannen/discoverbook/page06.PNG",
+                background:
+                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
+                backgroundClass:
+                "background-left",
+                title: "",
+                text: "",
+                imageClass:
+                "discover-image-left",
+                textClass:
+                "discover-text-left"
             }
 
         ]
@@ -192,6 +207,21 @@ const discoverBookData = {
                 "discover-image-right",
                 textClass:
                 "discover-text-right"
+            },
+
+                      // Sida 6
+            {
+                image: "images/Vannen/discoverbook/page06.PNG",
+                background:
+                "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openl.PNG",
+                backgroundClass:
+                "background-left",
+                title: "",
+                text: "",
+                imageClass:
+                "discover-image-left",
+                textClass:
+                "discover-text-left"
             }
 
         ]
