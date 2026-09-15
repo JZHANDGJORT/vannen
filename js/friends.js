@@ -27,7 +27,7 @@ function renderFriends() {
     <div class="gallery-wrapper">
         <div class="gallery">
             <img
-                src="images/Vannen/vannen-concept.jpeg"
+                src="images/Vannen/vannen-concept.PNG"
                 alt="Vad är Vännen?"
             >
         </div>
