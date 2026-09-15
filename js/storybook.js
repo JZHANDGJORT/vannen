@@ -716,7 +716,7 @@ Spåret i skogen
 // Sida 3
 {
     image:
-    "images/Bosse/storybook/chapter01/page03.JPEG",
+    "images/Bosse/storybook/chapter01/page03.PNG",
     background:
     "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
     backgroundClass:
