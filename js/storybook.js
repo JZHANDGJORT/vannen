@@ -931,6 +931,8 @@ När Bosse mötte Otis
 <p>Bosse tog ett försiktigt steg fram.</p>
 
 <p>”Hallå?” sa en okänd röst.</p>
+
+<p>Bosse tog några steg till och klev ut ur busken.</p>
 `,
     imageClass: "story-image-left",
     textClass: "story-text-left"
@@ -944,7 +946,6 @@ När Bosse mötte Otis
     backgroundClass: "background-right",
     title: "",
     text: `
-<p>Bosse klev ut ur busken.</p>
 
 <p>Där framför honom stod en utter.</p>
 
