@@ -355,7 +355,7 @@
 
     left: 13%;
 
-    bottom:18%;
+    bottom: 18%;
 
     width: 60%;
 
@@ -948,7 +948,7 @@
        BOTTOM → UPP
     */
     .chapter-text {
-        bottom: calc(21% + 38px);
+        bottom: calc(18% + 38px);
     }
     .chapter-text-left {
         bottom: calc(18% + 38px);
