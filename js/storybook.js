@@ -538,10 +538,8 @@ När Otis mötte Bosse
 `
 <p>Till slut släppte Otis pinnen.</p>
 <p>Bosse kastade sig efter den.</p>
-<p>Otis skrattade.</p>
-<p>”Den där pinnen var visst roligare än jag trodde!”</p>
-<p>Bosse höll upp pinnen.</p>
-<p>”Jag tror att den är vår nu.”</p>
+<p>Otis skrattade. ”Den där pinnen var visst roligare än jag trodde!”</p>
+<p>Bosse höll upp pinnen. ”Jag tror att den är vår nu.”</p>
 <p>Otis log. ”Ja.”</p>
 `,
 
@@ -1040,17 +1038,9 @@ När Bosse mötte Otis
     title: "",
     text: `
 <p>Till slut släppte Otis pinnen.</p>
-
 <p>Bosse kastade sig efter den.</p>
-
-<p>Otis skrattade.</p>
-
-<p>”Den där pinnen var visst roligare än jag trodde!”</p>
-
-<p>Bosse höll upp pinnen.</p>
-
-<p>”Jag tror att den är vår nu.”</p>
-
+<p>Otis skrattade. ”Den där pinnen var visst roligare än jag trodde!”</p>
+<p>Bosse höll upp pinnen. ”Jag tror att den är vår nu.”</p>
 <p>Otis log. ”Ja.”</p>
 `,
     imageClass: "story-image-right",
