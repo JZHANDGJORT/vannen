@@ -930,7 +930,7 @@ När Bosse mötte Otis
 
 <p>”Hallå?” sa en okänd röst.</p>
 
-<p>Bosse tog några steg till och klev ut ur busken.</p>
+<p>Bosse tog några steg till och klev ut ur busken på andra sidan.</p>
 `,
     imageClass: "story-image-left",
     textClass: "story-text-left"
