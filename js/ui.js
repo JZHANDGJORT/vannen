@@ -126,24 +126,43 @@ function showSettings() {
             ✏️ Mitt namn
         </button>
 
+        <button onclick="showMemoryMenu()">
+            💾 Minne
+        </button>
+
+        <button onclick="showInstructions()">
+            📖 Information
+        </button>
+
+        <button onclick="showMainMenu()">
+            ❌ Tillbaka
+        </button>
+
+    `;
+
+}
+
+function showMemoryMenu() {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = `
+
         <button onclick="exportOtisMemory()">
-
             💾 Spara minne
-
         </button>
 
         <button onclick="importOtisMemory()">
-
             📂 Hämta minne
-
         </button>
 
         <button onclick="resetMemoryQuestion()">
             🌊 Återställ minne
         </button>
 
-        <button onclick="showMainMenu()">
-            ❌ Tillbaka
+        <button onclick="showSettings()">
+            ← Tillbaka
         </button>
 
     `;
