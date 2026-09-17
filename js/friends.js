@@ -32,7 +32,7 @@ function renderFriends() {
             >
         </div>
     </div>
-    <a href="instr.html">
+    <a href="instr.html?from=home">
         Läs mer om Vännen →
     </a>
 `;
