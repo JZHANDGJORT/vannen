@@ -169,6 +169,27 @@ function showMemoryMenu() {
 
 }
 
+function showInstructions() {
+
+    const friendId =
+        getCurrentFriendId();
+
+    if (friendId === "otis01") {
+        window.location.href =
+            "instr.html?from=otis";
+        return;
+    }
+
+    if (friendId === "bosse01") {
+        window.location.href =
+            "instr.html?from=bosse";
+        return;
+    }
+
+    window.location.href =
+        "instr.html?from=home";
+}
+
 function showFriends() {
 
     const actions =
