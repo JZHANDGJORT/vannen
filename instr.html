@@ -362,6 +362,30 @@
     </section>
 </main>
 <script>
+    <script>
+    function goBackFromInstructions() {
+
+        const params =
+            new URLSearchParams(window.location.search);
+
+        const from =
+            params.get("from");
+
+        if (from === "otis") {
+            window.location.href = "otis.html";
+            return;
+        }
+
+        if (from === "bosse") {
+            window.location.href = "bosse.html";
+            return;
+        }
+
+        window.location.href = "index.html";
+    }
+
+    function updateOrientationWarning() {
+        
     function updateOrientationWarning() {
         const warning =
             document.getElementById(
