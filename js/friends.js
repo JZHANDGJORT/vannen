@@ -59,9 +59,15 @@ function renderFriends() {
             <p>
                 ${friend.cardText}
             </p>
-            <a href="${friend.id === "otis01" ? "otis.html" : "bosse.html"}">
-                Möt ${friend.name} →
-            </a>
+            <a href="${
+    friend.id === "otis01"
+        ? "otis.html"
+        : friend.id === "bosse01"
+            ? "bosse.html"
+            : "dokka.html"
+}">
+    Möt ${friend.name} →
+</a>
         `;
         friendsContainer.appendChild(
             card
