@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vännen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
-        rel="stylesheet"
-    >
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/friend.css">
-    <link rel="stylesheet" href="css/chat.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/themes.css">
-    <link rel="stylesheet" href="css/activities.css">
-    <link rel="stylesheet" href="css/backpack.css">
-    <link rel="stylesheet" href="css/storybook.css">
-    <link rel="stylesheet" href="css/factbook.css">
-    <link rel="stylesheet" href="css/recipebook.css">
-    <link rel="stylesheet" href="css/discoverbook.css">
-    <link rel="stylesheet" href="css/photoalbum.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vännen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/friend.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/activities.css">
+<link rel="stylesheet" href="css/backpack.css">
+<link rel="stylesheet" href="css/storybook.css">
+<link rel="stylesheet" href="css/factbook.css">
+<link rel="stylesheet" href="css/recipebook.css">
+<link rel="stylesheet" href="css/discoverbook.css">
+<link rel="stylesheet" href="css/photoalbum.css">
 </head>
 <body>
 <main id="app">
 <!-- ORIENTERINGSVARNING -->
 <div id="orientation-warning">
-    <div class="orientation-warning-content">
-        <div class="orientation-warning-icon">
-            🐶
-        </div>
-        <h2>Vänd på din enhet</h2>
-        <p>
-            Vännen fungerar bäst när du håller enheten stående.
-        </p>
+<div class="orientation-warning-content">
+    <div class="orientation-warning-icon">
+        🐶
     </div>
+    <h2>Vänd på din enhet</h2>
+    <p>
+        Vännen fungerar bäst när du håller enheten stående.
+    </p>
+</div>
 </div>
 <!-- DOKKAS VÄNSIDA -->
 <section id="friend-view">
@@ -47,27 +41,12 @@ Om oss ♡
 <button id="goodbye-button">
 👋 Hej då
 </button>
-<button
-    id="evening-button"
-    onclick="startEveningWithOtis()">
-    🌙 Kväll med
+🌙 Kväll med
 </button>
 </div>
 <!-- DOKKA SCEN -->
 <div id="otis-stage">
 <header id="friend-profile">
-<img
-    id="friend-world"
-    src=""
-    alt="">
-<img
-    id="friend-character"
-    src=""
-    alt="">
-<img
-    id="friend-character-face"
-    src=""
-    alt="">
 <div id="friend-bubble"></div>
 <div id="friend-overlay">
 <h1 id="friend-name"></h1>
@@ -75,10 +54,6 @@ Om oss ♡
 ─── ♡ ───
 </div>
 </div>
-<img
-    id="backpack"
-    src="images/Dokka/dokka-backpack.PNG"
-    alt="Dokka ryggsäck">
 </header>
 <nav id="actions">
 <!-- Skapas av ui.js -->
@@ -98,100 +73,15 @@ Dokka är här med dig under tiden 🌿
 </section>
 <!-- RYGGSÄCKSVY -->
 <section id="backpack-view" style="display:none;">
-<img
-    id="backpack-world"
-    src="images/Dokka/backpack/dokka-backpack-open.PNG"
-    alt="Dokka öppnade ryggsäck">
-<img
-    id="lasar-badge"
-    class="backpack-item backpack-marke-gralasar"
-    src="images/Vannen/backpack/badge/otis-backpack-item-marke-lasargra.PNG"
-    alt="Läsarmärke Grå">
-<img
-    id="rakne-badge"
-    class="backpack-item backpack-marke-grarakne"
-    src="images/Vannen/backpack/badge/otis-backpack-item-marke-raknegra.PNG"
-    alt="Räknemärke Grå">
-<img
-    id="skapar-badge"
-    class="backpack-item backpack-marke-graskapar"
-    src="images/Vannen/backpack/badge/otis-backpack-item-marke-skapargra.PNG"
-    alt="Skaparmärke Grå">
-<img
-    id="upptackar-badge"
-    class="backpack-item backpack-marke-graupptackar"
-    src="images/Vannen/backpack/badge/otis-backpack-item-marke-upptackargra.PNG"
-    alt="Upptäckarmärke Grå">
-<img
-    class="backpack-item backpack-oaktwig2"
-    src="images/Vannen/backpack/vannen-backpack-item-oaktwig2.PNG"
-    alt="Ek kvist2">
-<img
-    class="backpack-item backpack-upptackarbok"
-    src="images/Dokka/backpack/dokka-backpack-item-upptackarbok.PNG"
-    alt="Upptäckarbok"
-    onclick="openBook('discoverbook')">
-<img
-    class="backpack-item backpack-receptbok"
-    src="images/Vannen/backpack/vannen-backpack-item-receptbok.PNG"
-    alt="Grön receptbok"
-    onclick="openBook('recipebook')">
-<img
-    class="backpack-item backpack-sagobok"
-    src="images/Dokka/backpack/dokka-backpack-item-sagobok.PNG"
-    alt="Dokka sagobok"
-    onclick="openBook('book')">
-<img
-    class="backpack-item backpack-item1"
-    src="images/Dokka/backpack/dokka-backpack-item-kastanjskal.PNG"
-    alt="Item 1">
-<img
-    class="backpack-item backpack-item2"
-    src="images/Dokka/backpack/dokka-backpack-item-kastanj.PNG"
-    alt="Item 2">
-<img
-    class="backpack-item backpack-faktabok"
-    src="images/Dokka/backpack/dokka-backpack-item-faktabok.PNG"
-    alt="Faktabok"
-    onclick="openBook('factbook')">
-<img
-    class="backpack-item backpack-fotoalbum"
-    src="images/Dokka/backpack/dokka-backpack-item-fotoalbum.PNG"
-    alt="Fotoalbum"
-    onclick="openBook('photoalbum')">
-<img
-    class="backpack-item backpack-oaktwig"
-    src="images/Vannen/backpack/vannen-backpack-item-oaktwig.PNG"
-    alt="Ek kvist">
-<img
-    class="backpack-item backpack-item3"
-    src="images/Dokka/backpack/dokka-backpack-item-pinecone.PNG"
-    alt="Item 3">
-<button
-    id="backpack-close"
-    onclick="closeBackpackRoom()">
-    🐾 Tillbaka till
+🐾 Tillbaka till
 </button>
 </section>
 <!-- SAGOBOK -->
 <section id="storybook" style="display:none;">
-<button
-    id="storybook-close"
-    onclick="closeBook()">
-    🎒 Tillbaka till ryggsäcken
+🎒 Tillbaka till ryggsäcken
 </button>
-<button
-    id="storybook-prev"
-    onclick="changeBookPage(-1)">
-    ←
+←
 </button>
-<img
-    id="storybook-background"
-    src="images/Dokka/storybook/dokka-backpack-item-sagobok-openl.PNG"
-    alt="Boksida">
-<img
-    id="storybook-page"
-    alt="Dokka sagobok">
 <!-- Kapitelrubrik -->
 <div id="storybook-title"></div>
 <!-- Text på boksidor -->
@@ -204,13 +94,13 @@ Innehållsförteckning
 <button onclick="goToChapter(1)">
 Kapitel 1<br>
 <span>
-Kommer snart
+Spåret i skogen
 </span>
 </button>
-<button onclick="showComingSoon()">
+<button onclick="goToChapter(2)">
 Kapitel 2<br>
 <span>
-Kommer snart
+När Bosse mötte Otis
 </span>
 </button>
 <button onclick="showComingSoon()">
@@ -220,161 +110,174 @@ Kommer snart
 </span>
 </button>
 </div>
-<button
-    id="storybook-read"
-    class="storybook-read-button"
-    onclick="bookReadingDone()"
-    style="display:none;">
-    📚 Vi har läst en stund
+📚 Vi har läst en stund
 </button>
-<button
-    id="storybook-next"
-    onclick="changeBookPage(1)">
-    →
+→
 </button>
 </section>
 <!-- FAKTABOK -->
 <section id="factbook" style="display:none;">
-    <button
-        id="factbook-close"
-        onclick="closeFactBook()">
-        🎒 Tillbaka till ryggsäcken
+<button
+    id="factbook-close"
+    onclick="closeFactBook()">
+    🎒 Tillbaka till ryggsäcken
+</button>
+<button
+    id="factbook-prev"
+    onclick="changeFactPage(-1)">
+    ←
+</button>
+<img
+    id="factbook-background"
+    src="images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG"
+    alt="Faktabok sida">
+<img
+    id="factbook-page"
+    alt="Dokka faktabok">
+<div id="factbook-title"></div>
+<div id="factbook-text"></div>
+<div id="factbook-content">
+    <h1>Innehållsförteckning</h1>
+    <button onclick="goToFactChapter(1)">
+        Kapitel 1<br>
+        <span>Grävlingar</span>
     </button>
-    <button
-        id="factbook-prev"
-        onclick="changeFactPage(-1)">
-        ←
+    <button onclick="goToFactChapter(2)">
+        Kapitel 2<br>
+        <span>Uttrar</span>
     </button>
-    <img
-        id="factbook-background"
-        src="images/Dokka/factbook/dokka-backpack-item-faktabok-openl.PNG"
-        alt="Faktabok sida">
-    <img
-        id="factbook-page"
-        alt="Dokka faktabok">
-    <div id="factbook-title"></div>
-    <div id="factbook-text"></div>
-    <div id="factbook-content">
-        <h1>Innehållsförteckning</h1>
-        <button onclick="goToFactChapter(1)">
-            Kapitel 1<br>
-            <span>Finska lapphundar</span>
-        </button>
-        <button onclick="showComingSoon()">
-            Kapitel 2<br>
-            <span>Kommer snart</span>
-        </button>
-        <button onclick="showComingSoon()">
-            Kapitel 3<br>
-            <span>Kommer snart</span>
-        </button>
-    </div>
-    <button
-        id="factbook-read"
-        class="storybook-read-button"
-        onclick="factBookReadingDone()"
-        style="display:none;">
-        🔍 Vi har upptäckt något nytt
+    <button onclick="showComingSoon()">
+        Kapitel 3<br>
+        <span>Kommer snart</span>
     </button>
-    <button
-        id="factbook-next"
-        onclick="changeFactPage(1)">
-        →
-    </button>
+</div>
+<button
+    id="factbook-read"
+    class="storybook-read-button"
+    onclick="factBookReadingDone()"
+    style="display:none;">
+    🔍 Vi har upptäckt något nytt
+</button>
+<button
+    id="factbook-next"
+    onclick="changeFactPage(1)">
+    →
+</button>
 </section>
 <!-- RECEPTBOK -->
 <section id="recipebook" style="display:none;">
-    <button
-        id="recipebook-close"
-        onclick="closeBook()">
-        🎒 Tillbaka till ryggsäcken
+<button
+    id="recipebook-close"
+    onclick="closeBook()">
+    🎒 Tillbaka till ryggsäcken
+</button>
+<button
+    id="recipebook-prev"
+    onclick="changeBookPage(-1)">
+    ←
+</button>
+<img
+    id="recipebook-background"
+    src="images/Bosse/recipebook/bosse-backpack-item-receptbok-openl.PNG"
+    alt="Receptbok sida">
+<img
+    id="recipebook-page"
+    alt="Dokka receptbok">
+<div id="recipebook-title"></div>
+<div id="recipebook-text"></div>
+<div id="recipebook-content">
+    <h1>Innehåll</h1>
+    <h2>Mellanmål</h2>
+    <button onclick="goToBookPage(2)">
+        <span>Bosses Pannkaksbröd</span>
     </button>
-    <button
-        id="recipebook-prev"
-        onclick="changeBookPage(-1)">
-        ←
+    <button onclick="goToBookPage(4)">
+        <span>Kaneläpplen</span>
     </button>
-    <img
-        id="recipebook-background"
-        src="images/Dokka/recipebook/dokka-backpack-item-receptbok-openl.PNG"
-        alt="Receptbok sida">
-    <img
-        id="recipebook-page"
-        alt="Dokka receptbok">
-    <div id="recipebook-title"></div>
-    <div id="recipebook-text"></div>
-    <div id="recipebook-content">
-        <h1>Innehåll</h1>
-        <h2>Mellanmål</h2>
-        <button onclick="showComingSoon()">
-            <span>Kommer snart</span>
-        </button>
-        <h2>Fika</h2>
-        <button onclick="showComingSoon()">
-            <span>Kommer snart</span>
-        </button>
-    </div>
-    <button
-        id="recipebook-next"
-        onclick="changeBookPage(1)">
-        →
+    <h2>Fika</h2>
+    <button onclick="goToBookPage(1)">
+        <span>Otis Kryddmuffins</span>
     </button>
+    <button onclick="goToBookPage(3)">
+        <span>Ananas- och mangoglass</span>
+    </button>
+</div>
+<button
+    id="recipebook-next"
+    onclick="changeBookPage(1)">
+    →
+</button>
 </section>
 <!-- UPPTÄCKARBOK -->
 <section id="discoverbook" style="display:none;">
-    <button
-        id="discoverbook-close"
-        onclick="closeBook()">
-        🎒 Tillbaka till ryggsäcken
+<button
+    id="discoverbook-close"
+    onclick="closeBook()">
+    🎒 Tillbaka till ryggsäcken
+</button>
+<button
+    id="discoverbook-prev"
+    onclick="changeBookPage(-1)">
+    ←
+</button>
+<img
+    id="discoverbook-background"
+    src="images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openl.PNG"
+    alt="Upptäckarbok sida">
+<img
+    id="discoverbook-page"
+    alt="Dokka upptäckarbok">
+<div id="discoverbook-title"></div>
+<div id="discoverbook-text"></div>
+<div id="discoverbook-content">
+    <h1>Innehåll</h1>
+    <button onclick="goToBookPage(1)">
+        <span>Trolldeg</span>
     </button>
-    <button
-        id="discoverbook-prev"
-        onclick="changeBookPage(-1)">
-        ←
+    <button onclick="goToBookPage(2)">
+        <span>Studsbubblor</span>
     </button>
-    <img
-        id="discoverbook-background"
-        src="images/Dokka/discoverbook/dokka-backpack-item-upptackarbok-openl.PNG"
-        alt="Upptäckarbok sida">
-    <img
-        id="discoverbook-page"
-        alt="Dokka upptäckarbok">
-    <div id="discoverbook-title"></div>
-    <div id="discoverbook-text"></div>
-    <div id="discoverbook-content">
-        <h1>Innehåll</h1>
-        <button onclick="showComingSoon()">
-            <span>Kommer snart</span>
-        </button>
-    </div>
-    <button
-        id="discoverbook-next"
-        onclick="changeBookPage(1)">
-        →
+    <button onclick="goToBookPage(3)">
+        <span>Klisterballonger</span>
     </button>
+    <button onclick="goToBookPage(4)">
+        <span>Vänskapsarmband</span>
+    </button>
+    <button onclick="goToBookPage(5)">
+        <span>Odla ärtskott</span>
+    </button>
+    <button onclick="goToBookPage(6)">
+        <span>Hoppa hage</span>
+    </button>
+</div>
+<button
+    id="discoverbook-next"
+    onclick="changeBookPage(1)">
+    →
+</button>
 </section>
 <!-- FOTOALBUM -->
 <section id="photoalbum" style="display:none;">
-    <button
-        id="photoalbum-close"
-        onclick="closeBook()">
-        🎒 Tillbaka till ryggsäcken
-    </button>
-    <button
-        id="photoalbum-prev"
-        onclick="changeBookPage(-1)">
-        ←
-    </button>
-    <img
-        id="photoalbum-background"
-        src="images/Dokka/photoalbum/dokka-backpack-item-fotoalbum-openl.PNG"
-        alt="Fotoalbum">
-    <div id="photoalbum-photos"></div>
-    <button
-        id="photoalbum-next"
-        onclick="changeBookPage(1)">
-        →
-    </button>
+<button
+    id="photoalbum-close"
+    onclick="closeBook()">
+    🎒 Tillbaka till ryggsäcken
+</button>
+<button
+    id="photoalbum-prev"
+    onclick="changeBookPage(-1)">
+    ←
+</button>
+<img
+    id="photoalbum-background"
+    src="images/Bosse/photoalbum/bosse-backpack-item-fotoalbum-openl.PNG"
+    alt="Fotoalbum">
+<div id="photoalbum-photos"></div>
+<button
+    id="photoalbum-next"
+    onclick="changeBookPage(1)">
+    →
+</button>
 </section>
 </main>
 <!-- DATA -->
