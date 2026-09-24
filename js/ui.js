@@ -186,6 +186,12 @@ function showInstructions() {
         return;
     }
 
+    if (friendId === "dokka01") {
+        window.location.href =
+            "instr.html?from=dokka";
+        return;
+    }
+
     window.location.href =
         "instr.html?from=home";
 }
