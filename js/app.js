@@ -34,6 +34,12 @@ function startApp() {
 
     }
 
+    if (page === "dokka.html") {
+
+    friendId = "dokka01";
+
+    }
+
 
     // Hitta vän
 
