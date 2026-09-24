@@ -444,7 +444,11 @@ function smileCharacter(duration = 1500) {
 
             ? "images/Bosse/bosse-smile-character.PNG"
 
-            : "images/Otis/otis-stone-smile-character.PNG";
+            : currentFriend.id === "dokka01"
+
+                ? "images/Dokka/dokka-smile-character.png"
+
+                : "images/Otis/otis-stone-smile-character.PNG";
 
 
     face.src =
@@ -491,7 +495,11 @@ function laughCharacter(duration = 2000) {
 
             ? "images/Bosse/bosse-laugh-character.PNG"
 
-            : "images/Otis/otis-stone-laugh-character.PNG";
+            : currentFriend.id === "dokka01"
+
+                ? "images/Dokka/dokka-laugh-character.png"
+
+                : "images/Otis/otis-stone-laugh-character.PNG";
 
 
     face.src =
