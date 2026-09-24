@@ -3,9 +3,10 @@ let currentPerson = null;
 function addMessage(text, sender) {
 
     if (
-        sender === "otis01" ||
-        sender === "bosse01"
-    ) {
+    sender === "otis01" ||
+    sender === "bosse01" ||
+    sender === "dokka01"
+) {
 
         const bubble =
             document.getElementById("friend-bubble");
