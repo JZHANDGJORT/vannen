@@ -1,12 +1,13 @@
 let currentPerson = null;
 
+
 function addMessage(text, sender) {
 
     if (
-    sender === "otis01" ||
-    sender === "bosse01" ||
-    sender === "dokka01"
-) {
+        sender === "otis01" ||
+        sender === "bosse01" ||
+        sender === "dokka01"
+    ) {
 
         const bubble =
             document.getElementById("friend-bubble");
@@ -46,16 +47,17 @@ function addMessage(text, sender) {
 
 }
 
+
 function scrollToBottom() {
 
     const chat =
         document.getElementById("chat");
 
-
     chat.scrollTop =
         chat.scrollHeight;
 
 }
+
 
 // 🦦 Första mötet med Vännen
 
@@ -66,16 +68,15 @@ function startOnboarding() {
         currentFriend.id
     );
 
-
     showNameInput();
 
 }
+
 
 function showNameInput() {
 
     const actions =
         document.getElementById("actions");
-
 
     actions.innerHTML = `
 
@@ -90,7 +91,6 @@ function showNameInput() {
 
     `;
 
-
     document
         .getElementById("save-name-button")
         .addEventListener(
@@ -100,39 +100,50 @@ function showNameInput() {
 
 }
 
+
 function saveName() {
+
     const input =
         document.getElementById("name-input");
+
     const name =
         input.value.trim();
+
     if (!name) return;
+
     friendMemory.owner = {
+
         name: name,
-        since: new Date().toISOString()
+
+        since:
+            new Date().toISOString()
+
     };
+
     saveMemory();
+
     addMessage(
         `Vad fint att träffa dig, ${name}. 💚 Jag tror att alla vänskaper blir lite finare när man lär känna varandra. Jag vill gärna veta lite mer om vem jag får lära känna.`,
         currentFriend.id
     );
+
     showRelationChoice();
+
 }
+
 
 function changeName() {
 
     const actions =
         document.getElementById("actions");
 
-
     const currentName =
         friendMemory.owner?.name || "";
-
 
     addMessage(
         "Vad vill du att jag ska kalla dig? 💚",
         currentFriend.id
     );
-
 
     actions.innerHTML = `
 
@@ -160,59 +171,51 @@ function saveChangedName() {
     const input =
         document.getElementById("change-name-input");
 
-
     const name =
         input.value.trim();
 
-
     if (!name) return;
-
 
     friendMemory.owner.name =
         name;
 
-
     saveMemory();
-
 
     addMessage(
         `Så fint. Då vet jag att jag ska kalla dig ${name}. 💚`,
         currentFriend.id
     );
 
-
     showMainMenu();
 
 }
+
 
 function showRelationChoice() {
 
     const actions =
         document.getElementById("actions");
 
-
     actions.innerHTML = `
 
-    <button onclick="chooseRelation('self')">
-        🌿 Det är jag
-    </button>
+        <button onclick="chooseRelation('self')">
+            🌿 Det är jag
+        </button>
 
+        <button onclick="chooseRelation('child')">
+            🧒 Jag har någon med mig
+        </button>
 
-    <button onclick="chooseRelation('child')">
-        🧒 Jag har någon med mig
-    </button>
+        <button onclick="chooseRelation('person')">
+            👥 Jag vill presentera någon annan
+        </button>
 
-
-    <button onclick="chooseRelation('person')">
-        👥 Jag vill presentera någon annan
-    </button>
-
-`;
+    `;
 
 }
 
-function chooseRelation(choice) {
 
+function chooseRelation(choice) {
 
     if (choice === "self") {
 
@@ -221,11 +224,9 @@ function chooseRelation(choice) {
             currentFriend.id
         );
 
-
         showMainMenu();
 
     }
-
 
 
     if (choice === "child") {
@@ -235,10 +236,10 @@ function chooseRelation(choice) {
             currentFriend.id
         );
 
-
         showPersonInput("child");
 
     }
+
 
     if (choice === "person") {
 
@@ -250,8 +251,9 @@ function chooseRelation(choice) {
         showPersonInput("person");
 
     }
-    
+
 }
+
 
 function showPersonInput(type) {
 
@@ -306,6 +308,7 @@ function showPersonInput(type) {
 
 }
 
+
 function savePerson(type) {
 
     const name =
@@ -314,18 +317,18 @@ function savePerson(type) {
         .value
         .trim();
 
-
     if (!name) return;
-
 
     const person = {
 
         id:
             Date.now().toString(),
 
-        name: name,
+        name:
+            name,
 
-        type: type
+        type:
+            type
 
     };
 
@@ -333,12 +336,12 @@ function savePerson(type) {
     if (type === "child") {
 
         person.age =
-        document
-        .getElementById("person-age-input")
-        .value
-        .trim()
-        .replace("år", "")
-        .trim();
+            document
+            .getElementById("person-age-input")
+            .value
+            .trim()
+            .replace("år", "")
+            .trim();
 
     }
 
@@ -354,33 +357,36 @@ function savePerson(type) {
     }
 
 
-    friendMemory.friends.push(person);
+    friendMemory.friends.push(
+        person
+    );
 
     saveMemory();
-
 
     addMessage(
         `Vad roligt att få lära känna ${name}. 💚 Jag ser fram emot att skapa fina stunder tillsammans.`,
         currentFriend.id
     );
 
-
     showMainMenu();
 
 }
 
+
+// ========================================
+// SÄLLSKAP
+// ========================================
 
 function showPresentPerson() {
 
     const actions =
         document.getElementById("actions");
 
-
     actions.innerHTML = "";
 
 
     addMessage(
-        "Vem är med dig idag? Du kan välja upp till två personer. 💚",
+        "Hej! Vem är med dig idag?",
         currentFriend.id
     );
 
@@ -392,7 +398,7 @@ function showPresentPerson() {
     friendMemory.friends.forEach(
         (person, index) => {
 
-            const alreadySelected =
+            const alreadyPresent =
                 selected.some(
                     companion =>
                         companion.personId === person.id
@@ -407,14 +413,15 @@ function showPresentPerson() {
                 `${person.type === "child" ? "🧒" : "👤"} ${person.name}`;
 
 
-            button.onclick =
-                () => selectCurrentPerson(index);
+            if (alreadyPresent) {
 
+                button.disabled =
+                    true;
 
-            if (alreadySelected) {
+            } else {
 
-                button.textContent +=
-                    " ✓";
+                button.onclick =
+                    () => selectCurrentPerson(index);
 
             }
 
@@ -428,48 +435,35 @@ function showPresentPerson() {
     const newButton =
         document.createElement("button");
 
-
     newButton.textContent =
         "➕ Någon ny";
-
 
     newButton.onclick =
         showNewPersonInput;
 
-
     actions.appendChild(newButton);
 
 
-    if (selected.length > 0) {
+    const goodbyeButton =
+        document.createElement("button");
 
-        const doneButton =
-            document.createElement("button");
+    goodbyeButton.textContent =
+        "👋 Hej då";
 
+    goodbyeButton.onclick =
+        showGoodbyePeople;
 
-        doneButton.textContent =
-            "✓ Klart";
-
-
-        doneButton.onclick =
-            showMainMenu;
-
-
-        actions.appendChild(doneButton);
-
-    }
+    actions.appendChild(goodbyeButton);
 
 
     const backButton =
         document.createElement("button");
 
-
     backButton.textContent =
         "⬅️ Tillbaka";
 
-
     backButton.onclick =
         showMainMenu;
-
 
     actions.appendChild(backButton);
 
@@ -481,7 +475,6 @@ function selectCurrentPerson(index) {
     const person =
         friendMemory.friends[index];
 
-
     if (!person) return;
 
 
@@ -489,48 +482,26 @@ function selectCurrentPerson(index) {
         friendMemory.companionsToday || [];
 
 
-    const existingIndex =
-        selected.findIndex(
-            companion =>
-                companion.personId === person.id
+    if (selected.length >= 2) {
+
+        addMessage(
+            "Det går inte att ta med fler just nu.",
+            currentFriend.id
         );
-
-
-    // Om personen redan är vald
-    // tas personen bort
-
-    if (existingIndex !== -1) {
-
-        selected.splice(
-            existingIndex,
-            1
-        );
-
-
-        friendMemory.companionsToday =
-            selected;
-
-
-        saveMemory();
-
-
-        showPresentPerson();
-
 
         return;
 
     }
 
 
-    // Max två personer
-
-    if (selected.length >= 2) {
-
-        addMessage(
-            "Du kan ha med dig högst två personer samtidigt. 💚",
-            currentFriend.id
+    const alreadyPresent =
+        selected.some(
+            companion =>
+                companion.personId === person.id
         );
 
+
+    if (alreadyPresent) {
 
         return;
 
@@ -563,14 +534,130 @@ function selectCurrentPerson(index) {
     friendMemory.companionsToday =
         selected;
 
+    saveMemory();
+
+    showPresentPerson();
+
+}
+
+
+// ========================================
+// HEJ DÅ
+// ========================================
+
+function showGoodbyePeople() {
+
+    const actions =
+        document.getElementById("actions");
+
+    actions.innerHTML = "";
+
+
+    const selected =
+        friendMemory.companionsToday || [];
+
+
+    if (selected.length === 0) {
+
+        addMessage(
+            "Det är ingen med dig just nu.",
+            currentFriend.id
+        );
+
+        actions.innerHTML = `
+
+            <button onclick="showPresentPerson()">
+                ⬅️ Tillbaka
+            </button>
+
+        `;
+
+        return;
+
+    }
+
+
+    addMessage(
+        "Vem ska säga hej då?",
+        currentFriend.id
+    );
+
+
+    selected.forEach(
+        (companion, index) => {
+
+            const button =
+                document.createElement("button");
+
+
+            button.textContent =
+                `${companion.type === "child" ? "🧒" : "👤"} ${companion.name}`;
+
+
+            button.onclick =
+                () => sayGoodbyeToPerson(index);
+
+
+            actions.appendChild(button);
+
+        }
+    );
+
+
+    const backButton =
+        document.createElement("button");
+
+    backButton.textContent =
+        "⬅️ Tillbaka";
+
+    backButton.onclick =
+        showPresentPerson;
+
+    actions.appendChild(backButton);
+
+}
+
+
+function sayGoodbyeToPerson(index) {
+
+    const selected =
+        friendMemory.companionsToday || [];
+
+
+    const person =
+        selected[index];
+
+
+    if (!person) return;
+
+
+    selected.splice(
+        index,
+        1
+    );
+
+
+    friendMemory.companionsToday =
+        selected;
+
 
     saveMemory();
+
+
+    addMessage(
+        `Hej då ${person.name}! Vad fint att du var med idag. 🌿`,
+        currentFriend.id
+    );
 
 
     showPresentPerson();
 
 }
 
+
+// ========================================
+// TILLFÄLLIG PERSON
+// ========================================
 
 function forgetCurrentPerson() {
 
@@ -584,13 +671,11 @@ function forgetCurrentPerson() {
     if (selected.length >= 2) {
 
         addMessage(
-            "Du kan ha med dig högst två personer samtidigt. 💚",
+            "Det går inte att ta med fler just nu.",
             currentFriend.id
         );
 
-
         showPresentPerson();
-
 
         return;
 
@@ -630,10 +715,18 @@ function forgetCurrentPerson() {
     );
 
 
+    currentPerson =
+        null;
+
+
     showPresentPerson();
 
 }
 
+
+// ========================================
+// MINNES-HÄLSNING
+// ========================================
 
 function showMemoryGreeting() {
 
@@ -676,7 +769,9 @@ function showMemoryGreeting() {
             companionText =
                 companionNames.slice(0, -1).join(", ")
                 + " och "
-                + companionNames[companionNames.length - 1];
+                + companionNames[
+                    companionNames.length - 1
+                ];
 
         }
 
@@ -685,7 +780,6 @@ function showMemoryGreeting() {
             `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companionText}! Jag blev glad att ni följde med idag.`,
             currentFriend.id
         );
-
 
         return;
 
@@ -696,13 +790,15 @@ function showMemoryGreeting() {
         memoryGreetings[currentFriend.id];
 
 
-    if (!messages || messages.length === 0) {
+    if (
+        !messages ||
+        messages.length === 0
+    ) {
 
         addMessage(
             `Hej ${name}! 💚 Vad fint att du är här igen.`,
             currentFriend.id
         );
-
 
         return;
 
@@ -718,12 +814,19 @@ function showMemoryGreeting() {
 
 
     addMessage(
-        randomMessage.text.replace("{name}", name),
+        randomMessage.text.replace(
+            "{name}",
+            name
+        ),
         currentFriend.id
     );
 
 }
 
+
+// ========================================
+// NY PERSON
+// ========================================
 
 function showNewPersonInput() {
 
@@ -732,7 +835,7 @@ function showNewPersonInput() {
 
 
     addMessage(
-        "Vad roligt att få träffa någon ny! 💚 Vad heter personen?",
+        "Vad roligt att få träffa någon ny! Vad heter personen?",
         currentFriend.id
     );
 
@@ -756,7 +859,9 @@ function showNewPersonInput() {
 function continueNewPerson() {
 
     const input =
-        document.getElementById("new-person-name-input");
+        document.getElementById(
+            "new-person-name-input"
+        );
 
 
     const name =
@@ -768,7 +873,8 @@ function continueNewPerson() {
 
     currentPerson = {
 
-        name: name,
+        name:
+            name
 
     };
 
@@ -807,7 +913,8 @@ function askPersonType() {
 
 function choosePersonType(type) {
 
-    currentPerson.type = type;
+    currentPerson.type =
+        type;
 
 
     if (type === "child") {
@@ -938,21 +1045,15 @@ function askRememberPerson() {
 
 function rememberCurrentPerson() {
 
-    // Kontrollera att vi inte redan har två sparade vänner
-
     if (friendMemory.friends.length >= 2) {
 
         addMessage(
-            "Jag kommer redan ihåg två personer åt dig. 💚 Jag träffar gärna nya ändå, även om jag inte sparar dem.",
+            "Jag kommer redan ihåg två personer åt dig. Jag tar gärna med den här personen idag ändå.",
             currentFriend.id
         );
 
 
-        // Personen får ändå följa med idag
-        // eftersom den inte kan sparas som registrerad.
-
         forgetCurrentPerson();
-
 
         return;
 
@@ -976,9 +1077,6 @@ function rememberCurrentPerson() {
         currentFriend.id
     );
 
-
-    // Lägg även till personen bland
-    // dagens personer
 
     const selected =
         friendMemory.companionsToday || [];
@@ -1018,6 +1116,10 @@ function rememberCurrentPerson() {
     }
 
 
+    currentPerson =
+        null;
+
+
     showPresentPerson();
 
-}    
+}
