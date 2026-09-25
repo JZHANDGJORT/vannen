@@ -405,6 +405,9 @@ function showPresentPerson() {
                 );
 
 
+            if (alreadyPresent) return;
+
+
             const button =
                 document.createElement("button");
 
@@ -413,17 +416,8 @@ function showPresentPerson() {
                 `${person.type === "child" ? "🧒" : "👤"} ${person.name}`;
 
 
-            if (alreadyPresent) {
-
-                button.disabled =
-                    true;
-
-            } else {
-
-                button.onclick =
-                    () => selectCurrentPerson(index);
-
-            }
+            button.onclick =
+                () => selectCurrentPerson(index);
 
 
             actions.appendChild(button);
@@ -432,28 +426,20 @@ function showPresentPerson() {
     );
 
 
-    const newButton =
-        document.createElement("button");
+    if (selected.length < 2) {
 
-    newButton.textContent =
-        "➕ Någon ny";
+        const newButton =
+            document.createElement("button");
 
-    newButton.onclick =
-        showNewPersonInput;
+        newButton.textContent =
+            "➕ Någon ny";
 
-    actions.appendChild(newButton);
+        newButton.onclick =
+            showNewPersonInput;
 
+        actions.appendChild(newButton);
 
-    const goodbyeButton =
-        document.createElement("button");
-
-    goodbyeButton.textContent =
-        "👋 Hej då";
-
-    goodbyeButton.onclick =
-        showGoodbyePeople;
-
-    actions.appendChild(goodbyeButton);
+    }
 
 
     const backButton =
@@ -501,11 +487,7 @@ function selectCurrentPerson(index) {
         );
 
 
-    if (alreadyPresent) {
-
-        return;
-
-    }
+    if (alreadyPresent) return;
 
 
     selected.push({
@@ -536,16 +518,27 @@ function selectCurrentPerson(index) {
 
     saveMemory();
 
-    showPresentPerson();
+
+    addMessage(
+        `Hej ${person.name}! Vad roligt att du är med idag. 🌿`,
+        currentFriend.id
+    );
+
+
+    if (selected.length >= 2) {
+
+        finishCompanions();
+
+    } else {
+
+        askForAnotherCompanion();
+
+    }
 
 }
 
 
-// ========================================
-// HEJ DÅ
-// ========================================
-
-function showGoodbyePeople() {
+function askForAnotherCompanion() {
 
     const actions =
         document.getElementById("actions");
@@ -553,49 +546,39 @@ function showGoodbyePeople() {
     actions.innerHTML = "";
 
 
-    const selected =
-        friendMemory.companionsToday || [];
-
-
-    if (selected.length === 0) {
-
-        addMessage(
-            "Det är ingen med dig just nu.",
-            currentFriend.id
-        );
-
-        actions.innerHTML = `
-
-            <button onclick="showPresentPerson()">
-                ⬅️ Tillbaka
-            </button>
-
-        `;
-
-        return;
-
-    }
-
-
     addMessage(
-        "Vem ska säga hej då?",
+        "Är det något mer med idag?",
         currentFriend.id
     );
 
 
-    selected.forEach(
-        (companion, index) => {
+    const selected =
+        friendMemory.companionsToday || [];
+
+
+    friendMemory.friends.forEach(
+        (person, index) => {
+
+            const alreadyPresent =
+                selected.some(
+                    companion =>
+                        companion.personId === person.id
+                );
+
+
+            if (alreadyPresent) return;
+
 
             const button =
                 document.createElement("button");
 
 
             button.textContent =
-                `${companion.type === "child" ? "🧒" : "👤"} ${companion.name}`;
+                `${person.type === "child" ? "🧒" : "👤"} ${person.name}`;
 
 
             button.onclick =
-                () => sayGoodbyeToPerson(index);
+                () => selectCurrentPerson(index);
 
 
             actions.appendChild(button);
@@ -604,53 +587,47 @@ function showGoodbyePeople() {
     );
 
 
-    const backButton =
+    const newButton =
         document.createElement("button");
 
-    backButton.textContent =
-        "⬅️ Tillbaka";
+    newButton.textContent =
+        "➕ Någon ny";
 
-    backButton.onclick =
-        showPresentPerson;
+    newButton.onclick =
+        showNewPersonInput;
 
-    actions.appendChild(backButton);
+    actions.appendChild(newButton);
+
+
+    const noButton =
+        document.createElement("button");
+
+    noButton.textContent =
+        "Nej";
+
+    noButton.onclick =
+        finishCompanions;
+
+    actions.appendChild(noButton);
 
 }
 
 
-function sayGoodbyeToPerson(index) {
+function finishCompanions() {
 
-    const selected =
-        friendMemory.companionsToday || [];
+    const actions =
+        document.getElementById("actions");
 
-
-    const person =
-        selected[index];
-
-
-    if (!person) return;
-
-
-    selected.splice(
-        index,
-        1
-    );
-
-
-    friendMemory.companionsToday =
-        selected;
-
-
-    saveMemory();
+    actions.innerHTML = "";
 
 
     addMessage(
-        `Hej då ${person.name}! Vad fint att du var med idag. 🌿`,
+        "Vad kul! Vad ska vi hitta på idag?",
         currentFriend.id
     );
 
 
-    showPresentPerson();
+    showMainMenu();
 
 }
 
@@ -675,7 +652,7 @@ function forgetCurrentPerson() {
             currentFriend.id
         );
 
-        showPresentPerson();
+        showMainMenu();
 
         return;
 
@@ -719,7 +696,15 @@ function forgetCurrentPerson() {
         null;
 
 
-    showPresentPerson();
+    if (selected.length >= 2) {
+
+        finishCompanions();
+
+    } else {
+
+        askForAnotherCompanion();
+
+    }
 
 }
 
@@ -756,32 +741,28 @@ function showMemoryGreeting() {
             );
 
 
-        let companionText;
-
-
         if (companionNames.length === 1) {
 
-            companionText =
-                companionNames[0];
+            addMessage(
+                `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companionNames[0]}! Vad roligt att du är med idag.`,
+                currentFriend.id
+            );
 
-        } else {
-
-            companionText =
-                companionNames.slice(0, -1).join(", ")
-                + " och "
-                + companionNames[
-                    companionNames.length - 1
-                ];
+            return;
 
         }
 
 
-        addMessage(
-            `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companionText}! Jag blev glad att ni följde med idag.`,
-            currentFriend.id
-        );
+        if (companionNames.length === 2) {
 
-        return;
+            addMessage(
+                `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companionNames[0]} och ${companionNames[1]}! Vad roligt att ni är med idag.`,
+                currentFriend.id
+            );
+
+            return;
+
+        }
 
     }
 
@@ -1120,6 +1101,14 @@ function rememberCurrentPerson() {
         null;
 
 
-    showPresentPerson();
+    if (selected.length >= 2) {
+
+        finishCompanions();
+
+    } else {
+
+        askForAnotherCompanion();
+
+    }
 
 }
