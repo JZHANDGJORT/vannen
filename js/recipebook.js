@@ -187,6 +187,91 @@ const recipeBookData = {
 
         ]
 
+    },
+
+      /*
+      DOKKA
+      Samma recept och samma layout
+      som Otis och Bosse.
+      Endast bakgrunderna skiljer.
+    */
+    dokka01: {
+        id: "recipebook",
+        title: "Dokka Receptbok",
+        pages: [
+            // Sida 0 - Innehållsförteckning
+            {
+                image: "",
+                background:
+                    "images/Bosse/recipebook/bosse-backpack-item-receptbok-openl.PNG",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text: "",
+                imageClass: "",
+                textClass: ""
+            },
+            // Sida 1 - Kryddmuffins
+            {
+                image:
+                    "images/Vannen/recipebook/otis-recept-kryddmuffins.PNG",
+                background:
+                    "images/Bosse/recipebook/bosse-backpack-item-receptbok-openr.PNG",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text: "",
+                imageClass:
+                    "recipe-image-right",
+                textClass:
+                    "recipe-text-right"
+            },
+            // Sida 2 - Pannkaksbröd
+            {
+                image:
+                    "images/Vannen/recipebook/otis-recept-pannkaksbrod.PNG",
+                background:
+                    "images/Bosse/recipebook/bosse-backpack-item-receptbok-openl.PNG",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text: "",
+                imageClass:
+                    "recipe-image-left",
+                textClass:
+                    "recipe-text-left"
+            },
+            // Sida 3 - Ananas och mangoglass
+            {
+                image:
+                    "images/Vannen/recipebook/page03.PNG",
+                background:
+                    "images/Bosse/recipebook/bosse-backpack-item-receptbok-openr.PNG",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text: "",
+                imageClass:
+                    "recipe-image-right",
+                textClass:
+                    "recipe-text-right"
+            },
+            // Sida 4 - Kaneläpplen
+            {
+                image:
+                    "images/Vannen/recipebook/page04.PNG",
+                background:
+                    "images/Bosse/recipebook/bosse-backpack-item-receptbok-openl.PNG",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text: "",
+                imageClass:
+                    "recipe-image-left",
+                textClass:
+                    "recipe-text-left"
+            }
+        ]
     }
 
 };
