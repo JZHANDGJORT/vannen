@@ -1118,7 +1118,7 @@ Uttrar
             // Sida 1 - Kapitelstart
             {
                 image:
-                    "images/Dokka/factbook/chapter03/page01.PNG",
+                    "images/Dokka/factbook/chapter02/page01.png",
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
                 backgroundClass:
@@ -1291,7 +1291,7 @@ Grävlingar
             // Sida 9 - Kapitelstart
             {
                 image:
-                    "images/Bosse/factbook/chapter02/page01.PNG",
+                    "images/Dokka/factbook/chapter03/page01.png",
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
                 backgroundClass:
