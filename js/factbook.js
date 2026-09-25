@@ -1113,12 +1113,12 @@ Uttrar
                 imageClass: ""
             },
             // ========================================
-            // KAPITEL 1 – GRÄVLINGAR
+            // KAPITEL 2 – GRÄVLINGAR
             // ========================================
             // Sida 1 - Kapitelstart
             {
                 image:
-                    "images/Dokka/factbook/chapter02/page01.png",
+                    "images/Dokka/factbook/chapter02/page01.PNG",
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
                 backgroundClass:
@@ -1135,7 +1135,7 @@ Grävlingar
 `,
                 text:
 `
-<p>Hej! 🦡</p>
+<p>Hej igen! 🦡</p>
 <p>Nu ska vi lära känna grävlingen lite bättre.</p>
 <p>Grävlingen är duktig på att gräva och trivs bäst när det börjar bli kväll.</p>
 <p>Här kommer några spännande fakta om grävlingar!</p>
@@ -1286,7 +1286,7 @@ Grävlingar
                     "fact-text-left"
             },
             // ========================================
-            // KAPITEL 2 – UTTRAR
+            // KAPITEL 3 – UTTRAR
             // ========================================
             // Sida 9 - Kapitelstart
             {
@@ -1308,7 +1308,7 @@ Uttrar
 `,
                 text:
 `
-<p>Hej igen! 🦦</p>
+<p>Hej hej! 🦦</p>
 <p>Nu ska vi lära känna ett annat djur som finns ute i naturen.</p>
 <p>Visste du att uttrar finns på många platser i världen? Här kommer några spännande fakta!</p>
 `,
