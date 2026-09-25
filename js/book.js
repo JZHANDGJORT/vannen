@@ -565,9 +565,20 @@ function goToChapter(chapter) {
           Bosse:
           Kapitel 1 har en sida mer.
           Därför börjar kapitel 2 på sida 9.
+
+          Dokka:
+          Kapitel 2 börjar på sida 1,
+          eftersom kapitel 1 ännu inte finns.
         */
 
         if (
+            currentFriend &&
+            currentFriend.id === "dokka01"
+        ) {
+
+            currentBookPage = 1;
+
+        } else if (
             currentFriend &&
             currentFriend.id === "bosse01"
         ) {
