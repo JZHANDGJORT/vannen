@@ -558,29 +558,32 @@ function goToChapter(chapter) {
 
     if (chapter === 2) {
 
-        /*
-          Otis:
-          Kapitel 2 börjar på sida 8.
+    /*
+      Otis:
+      Kapitel 2 börjar på sida 8.
 
-          Bosse:
-          Kapitel 1 har en sida mer.
-          Därför börjar kapitel 2 på sida 9.
-        */
+      Bosse och Dokka:
+      Kapitel 1 har en sida mer.
+      Därför börjar kapitel 2 på sida 9.
+    */
 
-        if (
-            currentFriend &&
-            currentFriend.id === "bosse01"
-        ) {
+    if (
+        currentFriend &&
+        (
+            currentFriend.id === "bosse01" ||
+            currentFriend.id === "dokka01"
+        )
+    ) {
 
-            currentBookPage = 9;
+        currentBookPage = 9;
 
-        } else {
+    } else {
 
-            currentBookPage = 8;
-
-        }
+        currentBookPage = 8;
 
     }
+
+}
 
 
     localStorage.setItem(
