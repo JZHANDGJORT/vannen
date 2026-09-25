@@ -1126,7 +1126,7 @@ Uttrar
                 title:
 `
 <span class="chapter-number">
-Kapitel 1
+Kapitel 2
 </span>
 <br>
 <span class="chapter-name">
@@ -1299,7 +1299,7 @@ Grävlingar
                 title:
 `
 <span class="chapter-number">
-Kapitel 2
+Kapitel 3
 </span>
 <br>
 <span class="chapter-name">
