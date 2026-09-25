@@ -231,6 +231,94 @@ const photoAlbumData = {
 
         ]
 
+    },
+
+       /*
+       =========================
+       DOKKA
+       =========================
+       Samma foton som Bosse tills vidare.
+       Endast bakgrunderna är ändrade.
+    */
+    dokka01: {
+        id: "photoalbum",
+        title: "Dokka Fotoalbum",
+        pages: [
+            /*
+               =========================
+               SIDA 1 – VÄNSTER
+               =========================
+            */
+            {
+                background:
+                    "images/Bosse/photoalbum/bosse-backpack-item-fotoalbum-openl.PNG",
+                backgroundClass:
+                    "background-left",
+                photos: [
+                    {
+                        image:
+                            "images/Bosse/photoalbum/page01-photo01.PNG",
+                        class:
+                            "photoalbum-photo photoalbum-page-left-photo-01",
+                        caption:
+                            "En sommar för länge sedan"
+                    },
+                    {
+                        image:
+                            "images/Bosse/photoalbum/page01-photo02.PNG",
+                        class:
+                            "photoalbum-photo photoalbum-page-left-photo-02",
+                        caption:
+                            "En dag full av bus"
+                    },
+                    {
+                        image:
+                            "images/Bosse/photoalbum/page01-photo03.PNG",
+                        class:
+                            "photoalbum-photo photoalbum-page-left-photo-03",
+                        caption:
+                            "På upptäcktsfärd"
+                    }
+                ]
+            },
+            /*
+               =========================
+               SIDA 2 – HÖGER
+               =========================
+            */
+            {
+                background:
+                    "images/Bosse/photoalbum/bosse-backpack-item-fotoalbum-openr.PNG",
+                backgroundClass:
+                    "background-right",
+                photos: [
+                    {
+                        image:
+                            "images/Bosse/photoalbum/page02-photo01.PNG",
+                        class:
+                            "photoalbum-photo photoalbum-page-right-photo-01",
+                        caption:
+                            "En dag att minnas"
+                    },
+                    {
+                        image:
+                            "images/Bosse/photoalbum/page02-photo02.PNG",
+                        class:
+                            "photoalbum-photo photoalbum-page-right-photo-02",
+                        caption:
+                            "En vanlig dag med Bosse"
+                    },
+                    {
+                        image:
+                            "images/Bosse/photoalbum/page02-photo03.PNG",
+                        class:
+                            "photoalbum-photo photoalbum-page-right-photo-03",
+                        caption:
+                            "Min favoritplats"
+                    }
+                ]
+            }
+        ]
     }
 
 };
