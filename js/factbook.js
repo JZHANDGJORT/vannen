@@ -1118,7 +1118,7 @@ Uttrar
             // Sida 1 - Kapitelstart
             {
                 image:
-                    "images/Bosse/factbook/chapter01/page01.PNG",
+                    "images/Dokka/factbook/chapter03/page01.PNG",
                 background:
                     "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
                 backgroundClass:
