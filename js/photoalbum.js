@@ -257,7 +257,7 @@ const photoAlbumData = {
                 photos: [
                     {
                         image:
-                            "images/Bosse/photoalbum/page01-photo01.PNG",
+                            "images/Dokka/photoalbum/page01-photo01.PNG",
                         class:
                             "photoalbum-photo photoalbum-page-left-photo-01",
                         caption:
@@ -265,7 +265,7 @@ const photoAlbumData = {
                     },
                     {
                         image:
-                            "images/Bosse/photoalbum/page01-photo02.PNG",
+                            "images/Dokka/photoalbum/page01-photo02.PNG",
                         class:
                             "photoalbum-photo photoalbum-page-left-photo-02",
                         caption:
@@ -273,7 +273,7 @@ const photoAlbumData = {
                     },
                     {
                         image:
-                            "images/Bosse/photoalbum/page01-photo03.PNG",
+                            "images/Dokka/photoalbum/page01-photo03.PNG",
                         class:
                             "photoalbum-photo photoalbum-page-left-photo-03",
                         caption:
@@ -294,7 +294,7 @@ const photoAlbumData = {
                 photos: [
                     {
                         image:
-                            "images/Bosse/photoalbum/page02-photo01.PNG",
+                            "images/Dokka/photoalbum/page02-photo01.PNG",
                         class:
                             "photoalbum-photo photoalbum-page-right-photo-01",
                         caption:
@@ -302,15 +302,15 @@ const photoAlbumData = {
                     },
                     {
                         image:
-                            "images/Bosse/photoalbum/page02-photo02.PNG",
+                            "images/Dokka/photoalbum/page02-photo02.PNG",
                         class:
                             "photoalbum-photo photoalbum-page-right-photo-02",
                         caption:
-                            "En vanlig dag med Bosse"
+                            "En vanlig dag med Matte"
                     },
                     {
                         image:
-                            "images/Bosse/photoalbum/page02-photo03.PNG",
+                            "images/Dokka/photoalbum/page02-photo03.PNG",
                         class:
                             "photoalbum-photo photoalbum-page-right-photo-03",
                         caption:
