@@ -36,6 +36,12 @@ function getBadgeStorageKey() {
 
     }
 
+    if (page === "dokka.html") {
+
+    return "dokka01-badges";
+
+}
+
 
     return "otis01-badges";
 
