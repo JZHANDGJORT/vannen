@@ -559,54 +559,26 @@ function goToChapter(chapter) {
     if (chapter === 2) {
 
         /*
-          Dokka faktabok:
-          Kapitel 2 börjar på sida 1,
-          eftersom kapitel 1 ännu inte finns.
+          Otis:
+          Kapitel 2 börjar på sida 8.
+
+          Bosse:
+          Kapitel 1 har en sida mer.
+          Därför börjar kapitel 2 på sida 9.
         */
 
         if (
-            currentBookType === "factbook" &&
             currentFriend &&
-            currentFriend.id === "dokka01"
+            currentFriend.id === "bosse01"
         ) {
 
-            currentBookPage = 1;
+            currentBookPage = 9;
 
         } else {
 
-            /*
-              Sagobok:
-              Otis kapitel 2 börjar på sida 8.
-
-              Bosse kapitel 2 börjar på sida 9.
-            */
-
-            if (
-                currentFriend &&
-                currentFriend.id === "bosse01"
-            ) {
-
-                currentBookPage = 9;
-
-            } else {
-
-                currentBookPage = 8;
-
-            }
+            currentBookPage = 8;
 
         }
-
-    }
-
-
-    if (
-        chapter === 3 &&
-        currentBookType === "factbook" &&
-        currentFriend &&
-        currentFriend.id === "dokka01"
-    ) {
-
-        currentBookPage = 9;
 
     }
 
@@ -620,9 +592,44 @@ function goToChapter(chapter) {
     updateBookPage();
 
 }
+
+
 function goToFactChapter(chapter) {
 
-    goToChapter(chapter);
+    if (
+        currentFriend &&
+        currentFriend.id === "dokka01"
+    ) {
+
+        if (chapter === 2) {
+
+            currentBookPage = 1;
+
+        }
+
+
+        if (chapter === 3) {
+
+            currentBookPage = 9;
+
+        }
+
+    } else {
+
+        goToChapter(chapter);
+
+        return;
+
+    }
+
+
+    localStorage.setItem(
+        `${currentBookType}-page`,
+        currentBookPage
+    );
+
+
+    updateBookPage();
 
 }
 
