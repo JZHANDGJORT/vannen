@@ -734,59 +734,63 @@ function saveAdultRelation() {
 
 
 function askRememberPerson() {
-
     const actions =
         document.getElementById("actions");
-
-
     addMessage(
         `Vad fint att få lära känna ${currentPerson.name}. 💚 Vill du att jag ska komma ihåg ${currentPerson.name} till nästa gång vi ses?`,
         currentFriend.id
     );
-
-
     actions.innerHTML = `
-
         <button onclick="rememberCurrentPerson()">
             💚 Ja, kom ihåg personen
         </button>
-
-
         <button onclick="forgetCurrentPerson()">
             🌿 Nej, bara idag
         </button>
-
     `;
-
 }
-
 function rememberCurrentPerson() {
-
     // Kontrollera att vi inte redan har två sparade vänner
-
     if (friendMemory.friends.length >= 2) {
-
         addMessage(
             "Jag kommer redan ihåg två personer åt dig. 💚 Jag träffar gärna nya ändå, även om jag inte sparar dem.",
             currentFriend.id
         );
-
-        showMainMenu();
-
+        // Personen får ändå följa med idag
+        // eftersom den inte kan sparas som registrerad.
+        forgetCurrentPerson();
         return;
-
     }
-
-    friendMemory.friends.push(currentPerson);
-
+    friendMemory.friends.push(
+        currentPerson
+    );
     saveMemory();
-
     addMessage(
         `Vad fint. Jag kommer ihåg ${currentPerson.name} till nästa gång vi ses. 💚`,
         currentFriend.id
     );
-
-    showMainMenu();
-
+    // Lägg även till personen bland
+    // dagens personer
+    const selected =
+        friendMemory.companionsToday || [];
+    if (selected.length < 2) {
+        selected.push({
+            personId:
+                currentPerson.id,
+            name:
+                currentPerson.name,
+            type:
+                currentPerson.type,
+            age:
+                currentPerson.age || null,
+            role:
+                currentPerson.role || null,
+            date:
+                new Date().toISOString().split("T")[0]
+        });
+        friendMemory.companionsToday =
+            selected;
+        saveMemory();
+    }
+    showPresentPerson();
 }
-
