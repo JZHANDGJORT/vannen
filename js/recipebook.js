@@ -17,7 +17,7 @@ const recipeBookData = {
             {
                 image: "",
                 background:
-                    "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
+                    "images/Vannen/recipebook/vannen-backpack-item-receptbok-openl.PNG",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -31,7 +31,7 @@ const recipeBookData = {
                 image:
                     "images/Vannen/recipebook/otis-recept-kryddmuffins.PNG",
                 background:
-                    "images/Otis/recipebook/otis-backpack-item-receptbok-openr.PNG",
+                    "images/Vannen/recipebook/vannen-backpack-item-receptbok-openr.PNG",
                 backgroundClass:
                     "background-right",
                 title: "",
@@ -47,7 +47,7 @@ const recipeBookData = {
                 image:
                     "images/Vannen/recipebook/otis-recept-pannkaksbrod.PNG",
                 background:
-                    "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
+                    "images/Vannen/recipebook/vannen-backpack-item-receptbok-openl.PNG",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -63,7 +63,7 @@ const recipeBookData = {
                 image:
                     "images/Vannen/recipebook/page03.PNG",
                 background:
-                    "images/Otis/recipebook/otis-backpack-item-receptbok-openr.PNG",
+                    "images/Vannen/recipebook/vannen-backpack-item-receptbok-openr.PNG",
                 backgroundClass:
                     "background-right",
                 title: "",
@@ -79,7 +79,7 @@ const recipeBookData = {
                 image:
                     "images/Vannen/recipebook/page04.PNG",
                 background:
-                    "images/Otis/recipebook/otis-backpack-item-receptbok-openl.PNG",
+                    "images/Vannen/recipebook/vannen-backpack-item-receptbok-openl.PNG",
                 backgroundClass:
                     "background-left",
                 title: "",
