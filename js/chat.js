@@ -385,14 +385,41 @@ function showPresentPerson() {
     actions.innerHTML = "";
 
 
+    const selected =
+        friendMemory.companionsToday || [];
+
+
+    // Huvudvän + två andra vänner = tre personer totalt
+    if (selected.length >= 2) {
+
+        addMessage(
+            "Hej! Du har redan två vänner med dig idag.",
+            currentFriend.id
+        );
+
+
+        const backButton =
+            document.createElement("button");
+
+        backButton.textContent =
+            "⬅️ Tillbaka";
+
+        backButton.onclick =
+            showMainMenu;
+
+        actions.appendChild(
+            backButton
+        );
+
+        return;
+
+    }
+
+
     addMessage(
         "Hej! Vem är med dig idag?",
         currentFriend.id
     );
-
-
-    const selected =
-        friendMemory.companionsToday || [];
 
 
     friendMemory.friends.forEach(
@@ -420,26 +447,26 @@ function showPresentPerson() {
                 () => selectCurrentPerson(index);
 
 
-            actions.appendChild(button);
+            actions.appendChild(
+                button
+            );
 
         }
     );
 
 
-    if (selected.length < 2) {
+    const newButton =
+        document.createElement("button");
 
-        const newButton =
-            document.createElement("button");
+    newButton.textContent =
+        "➕ Någon ny";
 
-        newButton.textContent =
-            "➕ Någon ny";
+    newButton.onclick =
+        showNewPersonInput;
 
-        newButton.onclick =
-            showNewPersonInput;
-
-        actions.appendChild(newButton);
-
-    }
+    actions.appendChild(
+        newButton
+    );
 
 
     const backButton =
@@ -451,7 +478,9 @@ function showPresentPerson() {
     backButton.onclick =
         showMainMenu;
 
-    actions.appendChild(backButton);
+    actions.appendChild(
+        backButton
+    );
 
 }
 
@@ -525,15 +554,39 @@ function selectCurrentPerson(index) {
     );
 
 
-    if (selected.length >= 2) {
+    const actions =
+        document.getElementById("actions");
 
-        finishCompanions();
+    actions.innerHTML = "";
 
-    } else {
 
-        askForAnotherCompanion();
+    continueAfterCompanionAdded();
 
-    }
+}
+
+
+function continueAfterCompanionAdded() {
+
+    const selected =
+        friendMemory.companionsToday || [];
+
+
+    setTimeout(
+        () => {
+
+            if (selected.length >= 2) {
+
+                finishCompanions();
+
+            } else {
+
+                askForAnotherCompanion();
+
+            }
+
+        },
+        3500
+    );
 
 }
 
@@ -581,7 +634,9 @@ function askForAnotherCompanion() {
                 () => selectCurrentPerson(index);
 
 
-            actions.appendChild(button);
+            actions.appendChild(
+                button
+            );
 
         }
     );
@@ -596,7 +651,9 @@ function askForAnotherCompanion() {
     newButton.onclick =
         showNewPersonInput;
 
-    actions.appendChild(newButton);
+    actions.appendChild(
+        newButton
+    );
 
 
     const noButton =
@@ -608,7 +665,9 @@ function askForAnotherCompanion() {
     noButton.onclick =
         finishCompanions;
 
-    actions.appendChild(noButton);
+    actions.appendChild(
+        noButton
+    );
 
 }
 
@@ -696,15 +755,13 @@ function forgetCurrentPerson() {
         null;
 
 
-    if (selected.length >= 2) {
+    const actions =
+        document.getElementById("actions");
 
-        finishCompanions();
+    actions.innerHTML = "";
 
-    } else {
 
-        askForAnotherCompanion();
-
-    }
+    continueAfterCompanionAdded();
 
 }
 
@@ -1101,14 +1158,12 @@ function rememberCurrentPerson() {
         null;
 
 
-    if (selected.length >= 2) {
+    const actions =
+        document.getElementById("actions");
 
-        finishCompanions();
+    actions.innerHTML = "";
 
-    } else {
 
-        askForAnotherCompanion();
-
-    }
+    continueAfterCompanionAdded();
 
 }
