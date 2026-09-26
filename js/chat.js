@@ -769,17 +769,14 @@ function forgetCurrentPerson() {
 // ========================================
 // MINNES-HÄLSNING
 // ========================================
-
 function showMemoryGreeting() {
-
-    const name =
-        friendMemory.owner.name;
-
-
+    const owner =
+        friendMemory.owner;
+    const ownerPresent =
+        owner &&
+        !friendMemory.ownerGoneToday;
     const today =
         new Date().toISOString().split("T")[0];
-
-
     const companions =
         (
             friendMemory.companionsToday || []
@@ -787,80 +784,84 @@ function showMemoryGreeting() {
             companion =>
                 companion.date === today
         );
-
-
+    /*
+       DU ÄR KVAR
+    */
+    if (ownerPresent) {
+        if (companions.length > 0) {
+            const companionNames =
+                companions.map(
+                    companion =>
+                        companion.name
+                );
+            if (companionNames.length === 1) {
+                addMessage(
+                    `Hej ${owner.name}! 💚 Vad fint att du är här igen. Och hej ${companionNames[0]}! Vad roligt att du är med idag.`,
+                    currentFriend.id
+                );
+                return;
+            }
+            if (companionNames.length === 2) {
+                addMessage(
+                    `Hej ${owner.name}! 💚 Vad fint att du är här igen. Och hej ${companionNames[0]} och ${companionNames[1]}! Vad roligt att ni är med idag.`,
+                    currentFriend.id
+                );
+                return;
+            }
+        }
+        const messages =
+            memoryGreetings[currentFriend.id];
+        if (
+            !messages ||
+            messages.length === 0
+        ) {
+            addMessage(
+                `Hej ${owner.name}! 💚 Vad fint att du är här igen.`,
+                currentFriend.id
+            );
+            return;
+        }
+        const randomMessage =
+            messages[
+                Math.floor(
+                    Math.random() * messages.length
+                )
+            ];
+        addMessage(
+            randomMessage.text.replace(
+                "{name}",
+                owner.name
+            ),
+            currentFriend.id
+        );
+        return;
+    }
+    /*
+       DU HAR GÅTT HEM
+       → HÄLSA BARA PÅ DE SOM ÄR KVAR
+    */
     if (companions.length > 0) {
-
         const companionNames =
             companions.map(
                 companion =>
                     companion.name
             );
-
-
         if (companionNames.length === 1) {
-
             addMessage(
-                `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companionNames[0]}! Vad roligt att du är med idag.`,
+                `Hej ${companionNames[0]}! 💚 Vad roligt att du är här idag.`,
                 currentFriend.id
             );
-
             return;
-
         }
-
-
         if (companionNames.length === 2) {
-
             addMessage(
-                `Hej ${name}! 💚 Vad fint att du är här igen. Och hej ${companionNames[0]} och ${companionNames[1]}! Vad roligt att ni är med idag.`,
+                `Hej ${companionNames[0]} och ${companionNames[1]}! 💚 Vad roligt att ni är här idag.`,
                 currentFriend.id
             );
-
             return;
-
         }
-
     }
-
-
-    const messages =
-        memoryGreetings[currentFriend.id];
-
-
-    if (
-        !messages ||
-        messages.length === 0
-    ) {
-
-        addMessage(
-            `Hej ${name}! 💚 Vad fint att du är här igen.`,
-            currentFriend.id
-        );
-
-        return;
-
-    }
-
-
-    const randomMessage =
-        messages[
-            Math.floor(
-                Math.random() * messages.length
-            )
-        ];
-
-
-    addMessage(
-        randomMessage.text.replace(
-            "{name}",
-            name
-        ),
-        currentFriend.id
-    );
-
 }
-
 
 // ========================================
 // NY PERSON
