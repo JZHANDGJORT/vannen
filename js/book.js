@@ -154,11 +154,6 @@ function updateBookPage() {
             `${prefix}-background`
         );
 
-  const environment =
-    document.getElementById(
-        `${prefix}-environment`
-    );
-
 
     const title =
         document.getElementById(
@@ -192,10 +187,7 @@ function updateBookPage() {
         return;
     }
 
-  if (environment) {
-    environment.src =
-        currentBookData.bookBackground;
-}
+
 
     /*
       Bakgrund
