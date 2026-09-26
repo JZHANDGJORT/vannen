@@ -3340,502 +3340,393 @@ function restoreCurrentView() {
 /*
    HEJ DÅ VÄNNEN
 */
-
 function showGoodbye() {
-
     const owner =
         friendMemory.owner;
-
     const companions =
         friendMemory.companionsToday || [];
-
     const ownerPresent =
         owner && !friendMemory.ownerGoneToday;
-
     addMessage(
         "Ska någon gå hem nu? 💚",
         currentFriend.id
     );
-
     const actions =
         document.getElementById("actions");
-
     actions.innerHTML = "";
-
-
     /*
        HUVUDVÄNNEN GÅR
     */
-
     if (ownerPresent) {
-
         actions.innerHTML += `
             <button onclick="goodbyePerson('owner')">
                 🌿 ${owner.name} går
             </button>
         `;
     }
-
-
     /*
        EN ENSKILD KOMPANJON GÅR
     */
-
     companions.forEach((person, index) => {
-
         actions.innerHTML += `
             <button onclick="goodbyePerson('companion', ${index})">
                 🌿 ${person.name} går
             </button>
         `;
     });
-
-
     /*
        HUVUDVÄNNEN + EN KOMPANJON
     */
-
     if (ownerPresent && companions.length === 1) {
-
         actions.innerHTML += `
             <button onclick="goodbyeTogether('owner', 0)">
                 🐾 ${owner.name} och ${companions[0].name} går
             </button>
         `;
     }
-
-
     /*
        HUVUDVÄNNEN + EN AV TVÅ KOMPANJONER
     */
-
     if (ownerPresent && companions.length === 2) {
-
         actions.innerHTML += `
             <button onclick="goodbyeTogether('owner', 0)">
                 🐾 ${owner.name} och ${companions[0].name} går
             </button>
         `;
-
         actions.innerHTML += `
             <button onclick="goodbyeTogether('owner', 1)">
                 🐾 ${owner.name} och ${companions[1].name} går
             </button>
         `;
     }
-
-
     /*
        DE TVÅ KOMPANJONERNA GÅR TILLSAMMANS
     */
-
     if (companions.length === 2) {
-
         actions.innerHTML += `
             <button onclick="goodbyeTogether('companions')">
                 🐾 ${companions[0].name} och ${companions[1].name} går
             </button>
         `;
     }
-
-
     /*
        ALLA SOM ÄR KVAR GÅR
     */
-
     const totalPresent =
         (ownerPresent ? 1 : 0) +
         companions.length;
-
     if (totalPresent >= 2) {
-
         actions.innerHTML += `
             <button onclick="goodbyeAll()">
                 🐾 Vi går alla
             </button>
         `;
     }
-
-
+    /*
+       OM INGEN PERSON FINNS I MINNET
+       KAN HUVUDPERSONEN ÄNDÅ GÅ
+    */
+    if (!ownerPresent && companions.length === 0) {
+        actions.innerHTML += `
+            <button onclick="goodbyeAlone()">
+                🌿 Jag går hem
+            </button>
+        `;
+    }
     /*
        TILLBAKA
     */
-
     actions.innerHTML += `
         <button onclick="showMainMenu()">
             ⬅️ Tillbaka
         </button>
     `;
 }
-
-
 /*
    EN PERSON GÅR
 */
-
 function goodbyePerson(person, index) {
-
     const owner =
         friendMemory.owner;
-
     const companions =
         friendMemory.companionsToday || [];
-
-
     /*
        HUVUDVÄNNEN
     */
-
     if (person === "owner") {
-
         const name =
             owner.name;
-
         friendMemory.ownerGoneToday =
             true;
-
         saveMemory();
-
         addMessage(
             `Hejdå ${name}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
             currentFriend.id
         );
-
-
-        if (companions.length === 0) {
-
+        /*
+           OM NÅGON ANNAN ÄR KVAR
+           SKA VÄNNEN STANNA
+        */
+        if (companions.length > 0) {
             setTimeout(() => {
-                friendLeaves();
-            }, 1500);
-
-            setTimeout(() => {
-                resetFriendView();
-            }, 12000);
-
+                showMainMenu();
+            }, 2000);
             return;
         }
-
-
+        /*
+           INGEN ÄR KVAR
+        */
         setTimeout(() => {
-            showMainMenu();
-        }, 2000);
-
+            friendLeaves();
+        }, 1500);
+        setTimeout(() => {
+            resetFriendView();
+        }, 12000);
         return;
     }
-
-
     /*
        KOMPANJON
     */
-
     if (person === "companion") {
-
         const leaving =
             companions[index];
-
         if (!leaving) return;
-
         const name =
             leaving.name;
-
         friendMemory.companionsToday =
             companions.filter(
                 (_, i) => i !== index
             );
-
         saveMemory();
-
         addMessage(
             `Hejdå ${name}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
             currentFriend.id
         );
-
-
+        /*
+           DU ÄR FORTFARANDE KVAR
+           OM HUVUDPERSONEN INTE GÅTT
+        */
         const ownerStillPresent =
             owner &&
             !friendMemory.ownerGoneToday;
-
         const companionsLeft =
             friendMemory.companionsToday.length;
-
-
+        /*
+           OM NÅGON ÄR KVAR SKA VÄNNEN STANNA
+        */
         if (
-            !ownerStillPresent &&
-            companionsLeft === 0
+            ownerStillPresent ||
+            companionsLeft > 0
         ) {
-
             setTimeout(() => {
-                friendLeaves();
-            }, 1500);
-
-            setTimeout(() => {
-                resetFriendView();
-            }, 12000);
-
+                showMainMenu();
+            }, 2000);
             return;
         }
-
-
+        /*
+           INGEN ÄR KVAR
+        */
         setTimeout(() => {
-            showMainMenu();
-        }, 2000);
+            friendLeaves();
+        }, 1500);
+        setTimeout(() => {
+            resetFriendView();
+        }, 12000);
     }
 }
-
-
 /*
    TVÅ PERSONER GÅR TILLSAMMANS
 */
-
 function goodbyeTogether(first, second) {
-
     const owner =
         friendMemory.owner;
-
     const companions =
         friendMemory.companionsToday || [];
-
-
     /*
        HUVUDVÄNNEN + EN KOMPANJON
     */
-
     if (
         first === "owner" &&
         typeof second === "number"
     ) {
-
         const companion =
             companions[second];
-
         if (!companion) return;
-
         const ownerName =
             owner.name;
-
         const companionName =
             companion.name;
-
-
         friendMemory.ownerGoneToday =
             true;
-
         friendMemory.companionsToday =
             companions.filter(
                 (_, i) => i !== second
             );
-
         saveMemory();
-
-
         addMessage(
             `Hejdå ${ownerName} och ${companionName}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
             currentFriend.id
         );
-
-
+        /*
+           OM NÅGON ANNAN ÄR KVAR
+           SKA VÄNNEN STANNA
+        */
         if (
-            friendMemory.companionsToday.length === 0
+            friendMemory.companionsToday.length > 0
         ) {
-
             setTimeout(() => {
-                friendLeaves();
-            }, 1500);
-
-            setTimeout(() => {
-                resetFriendView();
-            }, 12000);
-
+                showMainMenu();
+            }, 2000);
             return;
         }
-
-
+        /*
+           INGEN ÄR KVAR
+        */
         setTimeout(() => {
-            showMainMenu();
-        }, 2000);
-
+            friendLeaves();
+        }, 1500);
+        setTimeout(() => {
+            resetFriendView();
+        }, 12000);
         return;
     }
-
-
     /*
        DE TVÅ KOMPANJONERNA
     */
-
     if (first === "companions") {
-
         if (companions.length !== 2) return;
-
         const name1 =
             companions[0].name;
-
         const name2 =
             companions[1].name;
-
-
         friendMemory.companionsToday =
             [];
-
         saveMemory();
-
-
         addMessage(
             `Hejdå ${name1} och ${name2}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
             currentFriend.id
         );
-
-
+        /*
+           HUVUDPERSONEN ÄR KVAR
+           → VÄNNEN SKA STANNA
+        */
         const ownerStillPresent =
             owner &&
             !friendMemory.ownerGoneToday;
-
-
-        if (!ownerStillPresent) {
-
+        if (ownerStillPresent) {
             setTimeout(() => {
-                friendLeaves();
-            }, 1500);
-
-            setTimeout(() => {
-                resetFriendView();
-            }, 12000);
-
+                showMainMenu();
+            }, 2000);
             return;
         }
-
-
+        /*
+           INGEN ÄR KVAR
+        */
         setTimeout(() => {
-            showMainMenu();
-        }, 2000);
+            friendLeaves();
+        }, 1500);
+        setTimeout(() => {
+            resetFriendView();
+        }, 12000);
     }
 }
-
-
 /*
    ALLA SOM ÄR KVAR GÅR
 */
-
 function goodbyeAll() {
-
     const owner =
         friendMemory.owner;
-
     const companions =
         friendMemory.companionsToday || [];
-
     const ownerPresent =
         owner &&
         !friendMemory.ownerGoneToday;
-
-
     let names = [];
-
-
     if (ownerPresent) {
         names.push(owner.name);
     }
-
-
     companions.forEach(person => {
         names.push(person.name);
     });
-
-
     if (names.length === 0) {
         return;
     }
-
-
     friendMemory.ownerGoneToday =
         true;
-
     friendMemory.companionsToday =
         [];
-
     saveMemory();
-
-
     addMessage(
         `Hejdå ${names.join(" och ")}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
         currentFriend.id
     );
-
-
     setTimeout(() => {
         friendLeaves();
     }, 1500);
-
     setTimeout(() => {
         resetFriendView();
     }, 12000);
 }
-
-
+/*
+   HUVUDPERSONEN GÅR ENSAM
+*/
+function goodbyeAlone() {
+    friendMemory.ownerGoneToday =
+        true;
+    saveMemory();
+    addMessage(
+        "Hejdå! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!",
+        currentFriend.id
+    );
+    setTimeout(() => {
+        friendLeaves();
+    }, 1500);
+    setTimeout(() => {
+        resetFriendView();
+    }, 12000);
+}
 /*
    VÄNNEN FÖRSVINNER
 */
-
 function friendLeaves() {
-
     const stone =
         document.getElementById("friend-stone");
-
     const friend =
         document.getElementById("friend-character");
-
     const face =
         document.getElementById("friend-character-face");
-
     if (!friend || !face) return;
-
     if (stone) {
         stone.style.opacity = "1";
     }
-
     friend.style.opacity =
         "0";
-
     face.style.opacity =
         "0";
-
     face.src = "";
 }
-
-
 /*
    VÄNNEN KOMMER TILLBAKA
 */
-
 function resetFriendView() {
-
     const stone =
         document.getElementById("friend-stone");
-
     const friend =
         document.getElementById("friend-character");
-
     const face =
         document.getElementById("friend-character-face");
-
     if (!friend || !face) return;
-
     if (stone) {
         stone.style.opacity = "0";
     }
-
     friend.style.opacity =
         "1";
-
     face.style.opacity =
         "0";
-
     face.src = "";
-
     friendMemory.ownerGoneToday =
         false;
-
     saveMemory();
-
     showMainMenu();
 }
 
