@@ -23,7 +23,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Otis/photoalbum/otis-backpack-item-fotoalbum-openl.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openl.PNG",
 
                 backgroundClass:
                     "background-left",
@@ -72,7 +72,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Otis/photoalbum/otis-backpack-item-fotoalbum-openr.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.PNG",
 
                 backgroundClass:
                     "background-right",
