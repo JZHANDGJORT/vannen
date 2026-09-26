@@ -1268,7 +1268,7 @@ Grävlingar
             // Sida 8 - Avslutning
             {
                 image:
-                    "images/Bosse/factbook/chapter01/page08.PNG",
+                    "images/Dokka/factbook/chapter02/page08.png",
                 background:
                     "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
@@ -1420,7 +1420,7 @@ Uttrar
             // Sida 15 - Avslutning
             {
                 image:
-                    "images/Bosse/factbook/chapter02/page07.PNG",
+                    "images/Dokka/factbook/chapter03/page07.png",
                 background:
                     "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
