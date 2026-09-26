@@ -139,7 +139,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Bosse/photoalbum/bosse-backpack-item-fotoalbum-openl.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openl.PNG",
 
                 backgroundClass:
                     "background-left",
@@ -188,7 +188,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Bosse/photoalbum/bosse-backpack-item-fotoalbum-openr.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.PNG",
 
                 backgroundClass:
                     "background-right",
@@ -251,7 +251,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Bosse/photoalbum/bosse-backpack-item-fotoalbum-openl.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openl.PNG",
                 backgroundClass:
                     "background-left",
                 photos: [
@@ -288,7 +288,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Bosse/photoalbum/bosse-backpack-item-fotoalbum-openr.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.PNG",
                 backgroundClass:
                     "background-right",
                 photos: [
