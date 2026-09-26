@@ -785,6 +785,24 @@ function showMemoryGreeting() {
                 companion.date === today
         );
     /*
+       ALLA HAR GÅTT HEM
+       → NY START MED HUVUDVÄNNEN
+    */
+    if (
+        owner &&
+        friendMemory.ownerGoneToday &&
+        companions.length === 0
+    ) {
+        friendMemory.ownerGoneToday =
+            false;
+        saveMemory();
+        addMessage(
+            `Hej ${owner.name}! 💚 Vad fint att du är här igen.`,
+            currentFriend.id
+        );
+        return;
+    }
+    /*
        DU ÄR KVAR
     */
     if (ownerPresent) {
