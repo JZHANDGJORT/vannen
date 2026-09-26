@@ -72,7 +72,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -188,7 +188,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -288,7 +288,7 @@ const photoAlbumData = {
             */
             {
                 background:
-                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.PNG",
+                    "images/Vannen/photoalbum/vannen-backpack-item-fotoalbum-openr.png",
                 backgroundClass:
                     "background-right",
                 photos: [
