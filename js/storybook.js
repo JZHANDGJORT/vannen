@@ -14,6 +14,9 @@ const bookData = {
 
         title: "Otis Sagobok",
 
+      bookBackground:
+    "images/Otis/storybook/otis-storybook-background.PNG",
+
         pages: [
 
             // Sida 0 - innehållsförteckning
