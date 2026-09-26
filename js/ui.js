@@ -3494,15 +3494,13 @@ function goodbyePerson(person, index) {
         friendMemory.ownerGoneToday =
             true;
 
+        saveMemory();
+
         addMessage(
             `Hejdå ${name}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
             currentFriend.id
         );
 
-
-        /*
-           Om ingen annan är kvar
-        */
 
         if (companions.length === 0) {
 
@@ -3517,10 +3515,6 @@ function goodbyePerson(person, index) {
             return;
         }
 
-
-        /*
-           Någon annan är kvar
-        */
 
         setTimeout(() => {
             showMainMenu();
@@ -3544,25 +3538,18 @@ function goodbyePerson(person, index) {
         const name =
             leaving.name;
 
-        addMessage(
-            `Hejdå ${name}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
-            currentFriend.id
-        );
-
-
-        /*
-           Ta bort just den personen
-        */
-
         friendMemory.companionsToday =
             companions.filter(
                 (_, i) => i !== index
             );
 
+        saveMemory();
 
-        /*
-           Om ingen alls är kvar
-        */
+        addMessage(
+            `Hejdå ${name}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
+            currentFriend.id
+        );
+
 
         const ownerStillPresent =
             owner &&
@@ -3570,6 +3557,7 @@ function goodbyePerson(person, index) {
 
         const companionsLeft =
             friendMemory.companionsToday.length;
+
 
         if (
             !ownerStillPresent &&
@@ -3587,10 +3575,6 @@ function goodbyePerson(person, index) {
             return;
         }
 
-
-        /*
-           Någon är kvar
-        */
 
         setTimeout(() => {
             showMainMenu();
@@ -3641,16 +3625,14 @@ function goodbyeTogether(first, second) {
                 (_, i) => i !== second
             );
 
+        saveMemory();
+
 
         addMessage(
             `Hejdå ${ownerName} och ${companionName}! 💚 Tack för den här stunden, jag hoppas vi ses snart igen!`,
             currentFriend.id
         );
 
-
-        /*
-           Om ingen är kvar
-        */
 
         if (
             friendMemory.companionsToday.length === 0
@@ -3667,10 +3649,6 @@ function goodbyeTogether(first, second) {
             return;
         }
 
-
-        /*
-           Den andra kompankjonen är kvar
-        */
 
         setTimeout(() => {
             showMainMenu();
@@ -3698,6 +3676,8 @@ function goodbyeTogether(first, second) {
         friendMemory.companionsToday =
             [];
 
+        saveMemory();
+
 
         addMessage(
             `Hejdå ${name1} och ${name2}! 💚 Tack för att jag fick vara med en stund. Vi ses snart igen.`,
@@ -3705,13 +3685,10 @@ function goodbyeTogether(first, second) {
         );
 
 
-        /*
-           Om huvudvännen redan gått
-        */
-
         const ownerStillPresent =
             owner &&
             !friendMemory.ownerGoneToday;
+
 
         if (!ownerStillPresent) {
 
@@ -3726,10 +3703,6 @@ function goodbyeTogether(first, second) {
             return;
         }
 
-
-        /*
-           Huvudvännen är kvar
-        */
 
         setTimeout(() => {
             showMainMenu();
@@ -3773,15 +3746,13 @@ function goodbyeAll() {
     }
 
 
-    /*
-       Alla lämnar
-    */
-
     friendMemory.ownerGoneToday =
         true;
 
     friendMemory.companionsToday =
         [];
+
+    saveMemory();
 
 
     addMessage(
@@ -3862,6 +3833,8 @@ function resetFriendView() {
 
     friendMemory.ownerGoneToday =
         false;
+
+    saveMemory();
 
     showMainMenu();
 }
