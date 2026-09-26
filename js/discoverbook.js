@@ -138,7 +138,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page01.PNG",
                 background:
-                "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -168,7 +168,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page03.PNG",
                 background:
-                "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -198,7 +198,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page05.PNG",
                 background:
-                "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -247,7 +247,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page01.PNG",
                 background:
-                "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -275,7 +275,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page03.PNG",
                 background:
-                "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -303,7 +303,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page05.PNG",
                 background:
-                "images/Bosse/discoverbook/bosse-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
