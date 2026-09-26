@@ -13,7 +13,7 @@ const discoverBookData = {
             {
                 image: "",
                 background:
-                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openl.png",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -26,7 +26,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page01.PNG",
                 background:
-                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.png",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -41,7 +41,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page02.PNG",
                 background:
-                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openl.png",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -56,7 +56,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page03.PNG",
                 background:
-                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.png",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -71,7 +71,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page04.PNG",
                 background:
-                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openl.png",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -86,7 +86,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page05.PNG",
                 background:
-                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openr.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.png",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -101,7 +101,7 @@ const discoverBookData = {
             {
                 image: "images/Vannen/discoverbook/page06.PNG",
                 background:
-                "images/Otis/discoverbook/otis-backpack-item-upptackarbok-openl.PNG",
+                "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openl.png",
                 backgroundClass:
                 "background-left",
                 title: "",
