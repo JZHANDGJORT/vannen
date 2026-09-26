@@ -631,7 +631,7 @@ När Otis mötte Bosse
                 image: "",
 
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
 
                 backgroundClass:
                 "background-left",
@@ -663,7 +663,7 @@ Kapitel 2<br>
     image:
     "images/Bosse/storybook/chapter01/page01.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass:
     "background-right",
     title:
@@ -694,7 +694,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter01/page02.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass:
     "background-left",
     title: "",
@@ -716,7 +716,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter01/page03.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass:
     "background-right",
     title: "",
@@ -737,7 +737,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter01/page04.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass:
     "background-left",
     title: "",
@@ -758,7 +758,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter01/page05.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass:
     "background-right",
     title: "",
@@ -779,7 +779,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter01/page06.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass:
     "background-left",
     title: "",
@@ -800,7 +800,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter01/page07.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass:
     "background-right",
     title: "",
@@ -822,7 +822,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter01/page08.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass:
     "background-left",
     title: "",
@@ -849,7 +849,7 @@ Spåret i skogen
     image:
     "images/Bosse/storybook/chapter02/page01.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass: "background-right",
     title: `
 <span class="chapter-number">
@@ -874,7 +874,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page02.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass: "background-left",
     title: "",
     text: `
@@ -894,7 +894,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page03.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass: "background-right",
     title: "",
     text: `
@@ -914,7 +914,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page04.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass: "background-left",
     title: "",
     text: `
@@ -940,7 +940,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page05.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass: "background-right",
     title: "",
     text: `
@@ -967,7 +967,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page06.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass: "background-left",
     title: "",
     text: `
@@ -989,7 +989,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page07.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass: "background-right",
     title: "",
     text: `
@@ -1013,7 +1013,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page08.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass: "background-left",
     title: "",
     text: `
@@ -1033,7 +1033,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page09.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass: "background-right",
     title: "",
     text: `
@@ -1051,7 +1051,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page10.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
     backgroundClass: "background-left",
     title: "",
     text: `
@@ -1071,7 +1071,7 @@ När Bosse mötte Otis
     image:
     "images/Bosse/storybook/chapter02/page11.PNG",
     background:
-    "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+    "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
     backgroundClass: "background-right",
     title: "",
     text: `
@@ -1104,7 +1104,7 @@ När Bosse mötte Otis
             {
                 image: "",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1129,7 +1129,7 @@ Kapitel 2<br>
                 image:
                 "images/Bosse/storybook/chapter01/page01.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title:
@@ -1160,7 +1160,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter01/page02.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1182,7 +1182,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter01/page03.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -1203,7 +1203,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter01/page04.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1224,7 +1224,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter01/page05.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -1245,7 +1245,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter01/page06.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1266,7 +1266,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter01/page07.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -1288,7 +1288,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter01/page08.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1313,7 +1313,7 @@ Spåret i skogen
                 image:
                 "images/Bosse/storybook/chapter02/page01.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title:
@@ -1344,7 +1344,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page02.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1365,7 +1365,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page03.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -1386,7 +1386,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page04.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1410,7 +1410,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page05.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -1434,7 +1434,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page06.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1456,7 +1456,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page07.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -1479,7 +1479,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page08.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1500,7 +1500,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page09.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
@@ -1522,7 +1522,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page10.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openl.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-left",
                 title: "",
@@ -1543,7 +1543,7 @@ När Bosse mötte Otis
                 image:
                 "images/Bosse/storybook/chapter02/page11.PNG",
                 background:
-                "images/Bosse/storybook/bosse-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
