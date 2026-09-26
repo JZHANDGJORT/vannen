@@ -30,7 +30,7 @@ const factBookData = {
                 image: "",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -54,7 +54,7 @@ const factBookData = {
                     "images/Otis/factbook/chapter01/page01.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -95,7 +95,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page02.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -126,7 +126,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page03.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -157,7 +157,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page04.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -188,7 +188,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page05.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -219,7 +219,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page06.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -250,7 +250,7 @@ Uttrar
                     "images/Otis/factbook/chapter01/page07.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -286,7 +286,7 @@ Uttrar
                     "images/Otis/factbook/chapter02/page01.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -329,7 +329,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page02.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -360,7 +360,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page03.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -391,7 +391,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page04.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -422,7 +422,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page05.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -453,7 +453,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page06.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -484,7 +484,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page07.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -515,7 +515,7 @@ Grävlingar
                     "images/Otis/factbook/chapter02/page08.PNG",
 
                 background:
-                    "images/Otis/factbook/otis-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
