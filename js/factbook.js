@@ -575,7 +575,7 @@ Grävlingar
                 image: "",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -599,7 +599,7 @@ Grävlingar
                     "images/Bosse/factbook/chapter01/page01.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -642,7 +642,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page02.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -673,7 +673,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page03.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -704,7 +704,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page04.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -735,7 +735,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page05.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -766,7 +766,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page06.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -797,7 +797,7 @@ Grävlingar
                     "images/Vannen/factbook/chapter02/page07.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -828,7 +828,7 @@ Grävlingar
                     "images/Bosse/factbook/chapter01/page08.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -864,7 +864,7 @@ Grävlingar
                     "images/Bosse/factbook/chapter02/page01.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -905,7 +905,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page02.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -936,7 +936,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page03.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -967,7 +967,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page04.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -998,7 +998,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page05.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -1029,7 +1029,7 @@ Uttrar
                     "images/Vannen/factbook/chapter01/page06.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
 
                 backgroundClass:
                     "background-left",
@@ -1060,7 +1060,7 @@ Uttrar
                     "images/Bosse/factbook/chapter02/page07.PNG",
 
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
 
                 backgroundClass:
                     "background-right",
@@ -1105,7 +1105,7 @@ Uttrar
             {
                 image: "",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1120,7 +1120,7 @@ Uttrar
                 image:
                     "images/Dokka/factbook/chapter02/page01.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title:
@@ -1150,7 +1150,7 @@ Grävlingar
                 image:
                     "images/Vannen/factbook/chapter02/page02.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1170,7 +1170,7 @@ Grävlingar
                 image:
                     "images/Vannen/factbook/chapter02/page03.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title: "",
@@ -1190,7 +1190,7 @@ Grävlingar
                 image:
                     "images/Vannen/factbook/chapter02/page04.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1210,7 +1210,7 @@ Grävlingar
                 image:
                     "images/Vannen/factbook/chapter02/page05.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title: "",
@@ -1230,7 +1230,7 @@ Grävlingar
                 image:
                     "images/Vannen/factbook/chapter02/page06.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1250,7 +1250,7 @@ Grävlingar
                 image:
                     "images/Vannen/factbook/chapter02/page07.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title: "",
@@ -1270,7 +1270,7 @@ Grävlingar
                 image:
                     "images/Bosse/factbook/chapter01/page08.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1293,7 +1293,7 @@ Grävlingar
                 image:
                     "images/Dokka/factbook/chapter03/page01.png",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title:
@@ -1322,7 +1322,7 @@ Uttrar
                 image:
                     "images/Vannen/factbook/chapter01/page02.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1342,7 +1342,7 @@ Uttrar
                 image:
                     "images/Vannen/factbook/chapter01/page03.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title: "",
@@ -1362,7 +1362,7 @@ Uttrar
                 image:
                     "images/Vannen/factbook/chapter01/page04.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1382,7 +1382,7 @@ Uttrar
                 image:
                     "images/Vannen/factbook/chapter01/page05.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title: "",
@@ -1402,7 +1402,7 @@ Uttrar
                 image:
                     "images/Vannen/factbook/chapter01/page06.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openl.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
                     "background-left",
                 title: "",
@@ -1422,7 +1422,7 @@ Uttrar
                 image:
                     "images/Bosse/factbook/chapter02/page07.PNG",
                 background:
-                    "images/Bosse/factbook/bosse-backpack-item-faktabok-openr.PNG",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
                     "background-right",
                 title: "",
