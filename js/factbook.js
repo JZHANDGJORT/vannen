@@ -562,7 +562,7 @@ Finska lapphundar
 `,
                 text:
 `
-<p>Hej hej! 🐕</p>
+<p>Hej! 🐕</p>
 <p>Nu ska vi lära känna hundrasen Finsk lapphund lite bättre.</p>
 <p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
 <p>Här kommer några spännande fakta om finska lapphundar!</p>
@@ -704,7 +704,7 @@ Finska lapphundar
 `
 <p>Nu vet du lite mer om finska lapphundar! 🌿</p>
 <p>Nästa gång du träffar en hund kan du titta efter den yviga svansen, den tjocka pälsen och kanske de små ögonbrynen.</p>
-<p>/ Dokka</p>
+<p>/ Otis</p>
 `,
                 imageClass:
                     "fact-image-left",
@@ -1281,7 +1281,7 @@ Finska lapphundar
 `,
                 text:
 `
-<p>Hej hej! 🐕</p>
+<p>Hej! 🐕</p>
 <p>Nu ska vi lära känna hundrasen Finsk lapphund lite bättre.</p>
 <p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
 <p>Här kommer några spännande fakta om finska lapphundar!</p>
@@ -1429,7 +1429,7 @@ titleClass:
 `
 <p>Nu vet du lite mer om finska lapphundar! 🌿</p>
 <p>Nästa gång du träffar en hund kan du titta efter den yviga svansen, den tjocka pälsen och kanske de små ögonbrynen.</p>
-<p>/ Dokka</p>
+<p>/ Bosse</p>
 `,
                 imageClass:
                     "fact-image-right",
@@ -1490,7 +1490,7 @@ Finska lapphundar
 `,
                 text:
 `
-<p>Hej hej! 🐕</p>
+<p>Hej! 🐕</p>
 <p>Nu ska vi lära känna hundrasen Finsk lapphund lite bättre.</p>
 <p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
 <p>Här kommer några spännande fakta om finska lapphundar!</p>
