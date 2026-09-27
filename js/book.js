@@ -601,59 +601,19 @@ function goToChapter(chapter) {
 
 function goToFactChapter(chapter) {
 
-    if (
-        currentFriend &&
-        currentFriend.id === "dokka01"
-    ) {
+    currentBookPage =
+        chapter;
 
-        // Dokka
-        // Kapitel 1 – Finska lapphundar: sida 1
-        // Kapitel 2 – Grävlingar: sida 9
-        // Kapitel 3 – Uttrar: sida 17
-
-        currentBookPage = chapter;
-
-    } else if (
-        currentFriend &&
-        (
-            currentFriend.id === "otis01" ||
-            currentFriend.id === "bosse01"
-        )
-    ) {
-
-        // Otis och Bosse
-        // Kapitel 1: sida 1
-        // Kapitel 2: sida 9
-        // Kapitel 3 – Finska lapphundar: sida 16
-
-        if (chapter === 1) {
-            currentBookPage = 1;
-        }
-
-        if (chapter === 9) {
-            currentBookPage = 9;
-        }
-
-        if (chapter === 17) {
-            currentBookPage = 16;
-        }
-
-    } else {
-
-        goToChapter(chapter);
-        return;
-
-    }
 
     localStorage.setItem(
         `${currentBookType}-page`,
         currentBookPage
     );
 
+
     updateBookPage();
+
 }
-
-
 
 function goToBookPage(page) {
 
