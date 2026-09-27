@@ -1138,7 +1138,7 @@ Finska lapphundar
                 text:
 `
 <p>Hej hej! 🐕</p>
-<p>Nu ska vi lära känna en hundras som har en lång historia i norra Norden.</p>
+<p>Nu ska vi lära känna hundrasen Finsk lapphund lite bättre.</p>
 <p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
 <p>Här kommer några spännande fakta om finska lapphundar!</p>
 `,
@@ -1178,7 +1178,7 @@ Finska lapphundar
                 title: "",
                 text:
 `
-<p>Finska lapphundar kan ha många olika pälsfärger, till exempel svart, brun, gräddvit och sobel. 🐕</p>
+<p>Finska lapphundar kan ha många olika pälsfärger, till exempel svart, brun, gräddvit och sobel.</p>
 <p>Vissa har ljusa teckningar ovanför ögonen som ser ut som små ögonbryn.</p>
 <p>Andra har enfärgad päls eller helt andra teckningar. Därför kan hundarna se väldigt olika ut!</p>
 `,
@@ -1220,7 +1220,6 @@ Finska lapphundar
 `
 <p>Finska lapphundar är ofta glada, nyfikna och uppmärksamma hundar. 🐾</p>
 <p>De är intelligenta och tycker om att lära sig nya saker. Många är också lekfulla och har lätt för att hitta på egna små upptåg.</p>
-<p>Alla hundar är egna individer och kan ha olika personligheter och behov.</p>
 `,
                 imageClass:
                     "fact-image-right",
@@ -1260,7 +1259,7 @@ Finska lapphundar
 `
 <p>Finska lapphundsvalpar föds små och hjälplösa. 🐶</p>
 <p>De växer upp tillsammans med sin mamma och sina syskon och börjar så småningom utforska världen.</p>
-<p>Genom lek och upptäckter lär de sig nya saker och utvecklar sina sinnen och sin förmåga att röra sig.</p>
+<p>Genom lek lär de sig nya saker och utvecklar sina sinnen och sin förmåga att röra sig.</p>
 `,
                 imageClass:
                     "fact-image-right",
@@ -1280,7 +1279,6 @@ Finska lapphundar
 `
 <p>Nu vet du lite mer om finska lapphundar! 🌿</p>
 <p>Nästa gång du träffar en hund kan du titta efter den yviga svansen, den tjocka pälsen och kanske de små ögonbrynen.</p>
-<p>Tänk vad många olika utseenden och personligheter det kan finnas hos hundar!</p>
 <p>/ Dokka</p>
 `,
                 imageClass:
