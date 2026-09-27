@@ -613,26 +613,44 @@ function goToFactChapter(chapter) {
 
         currentBookPage = chapter;
 
+    } else if (
+        currentFriend &&
+        (
+            currentFriend.id === "otis01" ||
+            currentFriend.id === "bosse01"
+        )
+    ) {
+
+        // Otis och Bosse
+        // Kapitel 1: sida 1
+        // Kapitel 2: sida 9
+        // Kapitel 3 – Finska lapphundar: sida 16
+
+        if (chapter === 1) {
+            currentBookPage = 1;
+        }
+
+        if (chapter === 9) {
+            currentBookPage = 9;
+        }
+
+        if (chapter === 17) {
+            currentBookPage = 16;
+        }
+
     } else {
 
-        // Behåll befintlig funktion
-        // för övriga vänner.
-
         goToChapter(chapter);
-
         return;
 
     }
-
 
     localStorage.setItem(
         `${currentBookType}-page`,
         currentBookPage
     );
 
-
     updateBookPage();
-
 }
 
 
