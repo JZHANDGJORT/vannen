@@ -598,6 +598,7 @@ function goToChapter(chapter) {
 }
 
 
+
 function goToFactChapter(chapter) {
 
     if (
@@ -605,20 +606,17 @@ function goToFactChapter(chapter) {
         currentFriend.id === "dokka01"
     ) {
 
-        if (chapter === 2) {
+        // Dokka
+        // Kapitel 1 – Finska lapphundar: sida 1
+        // Kapitel 2 – Grävlingar: sida 9
+        // Kapitel 3 – Uttrar: sida 17
 
-            currentBookPage = 1;
-
-        }
-
-
-        if (chapter === 3) {
-
-            currentBookPage = 9;
-
-        }
+        currentBookPage = chapter;
 
     } else {
+
+        // Behåll befintlig funktion
+        // för övriga vänner.
 
         goToChapter(chapter);
 
@@ -636,6 +634,7 @@ function goToFactChapter(chapter) {
     updateBookPage();
 
 }
+
 
 
 function goToBookPage(page) {
