@@ -1286,10 +1286,12 @@ Finska lapphundar
 <p>Här kommer några spännande fakta om finska lapphundar!</p>
 `,
                 imageClass:
-                    "fact-chapter-image",
+                "fact-chapter-image-left",
+
                 textClass:
-                    "fact-chapter-text"
+                "fact-chapter-text-left"
             },
+        
             // Sida 2 - En hund från norr (höger)
             {
                 image:
