@@ -724,6 +724,7 @@ Finska lapphundar
 
       Kapitel 1 = GRÄVLINGAR
       Kapitel 2 = UTTRAR
+      Kapitel 3 = FINSKA LAPPHUNDAR
 
       Samma bilder och texter som Otis.
       Endast kapitelordningen och bakgrunderna
@@ -1285,11 +1286,15 @@ Finska lapphundar
 <p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
 <p>Här kommer några spännande fakta om finska lapphundar!</p>
 `,
-                imageClass:
-                "fact-chapter-image-left",
 
-                textClass:
-                "fact-chapter-text-left"
+imageClass:
+"fact-chapter-image-left",
+
+textClass:
+"fact-chapter-text-left",
+
+titleClass:
+"chapter-title-left"
             },
         
             // Sida 2 - En hund från norr (höger)
