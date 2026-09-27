@@ -1287,7 +1287,7 @@ Finska lapphundar
                     "fact-image-left",
                 textClass:
                     "fact-text-left"
-            }
+            },
 
             // ========================================
             // KAPITEL 2 – GRÄVLINGAR
