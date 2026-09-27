@@ -537,6 +537,179 @@ Grävlingar
                 textClass:
                     "fact-text-left"
 
+            },
+
+            // ========================================
+            // KAPITEL 3 – FINSKA LAPPHUNDAR
+            // ========================================
+            // Sida 1 - Kapitelstart
+            {
+                image:
+                    "images/Dokka/factbook/chapter01/page01.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title:
+`
+<span class="chapter-number">
+Kapitel 1
+</span>
+<br>
+<span class="chapter-name">
+Finska lapphundar
+</span>
+`,
+                text:
+`
+<p>Hej hej! 🐕</p>
+<p>Nu ska vi lära känna hundrasen Finsk lapphund lite bättre.</p>
+<p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
+<p>Här kommer några spännande fakta om finska lapphundar!</p>
+`,
+                imageClass:
+                    "fact-chapter-image",
+                textClass:
+                    "fact-chapter-text"
+            },
+            // Sida 2 - En hund från norr
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page02.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har länge levt tillsammans med samerna i norra Norden. 🌲</p>
+<p>Förr i tiden hjälpte de till att valla renar och hålla ihop renhjordarna.</p>
+<p>Hundarna behövde vara tåliga och klara av både kyla, snö och långa dagar utomhus.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 3 - Många färger och teckningar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page03.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundar kan ha många olika pälsfärger, till exempel svart, brun, gräddvit och sobel.</p>
+<p>Vissa har ljusa teckningar ovanför ögonen som ser ut som små ögonbryn.</p>
+<p>Andra har enfärgad päls eller helt andra teckningar. Därför kan hundarna se väldigt olika ut!</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 4 - Den tjocka pälsen och yviga svansen
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page04.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har en tjock päls som skyddar mot kyla. ❄️</p>
+<p>Pälsen består av två lager och hjälper hunden att hålla värmen även under kalla vinterdagar.</p>
+<p>Den yviga svansen bärs ofta ringlad över ryggen och är ett av rasens typiska kännetecken.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 5 - En klok och nyfiken hund
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page05.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundar är ofta glada, nyfikna och uppmärksamma hundar. 🐾</p>
+<p>De är intelligenta och tycker om att lära sig nya saker. Många är också lekfulla och har lätt för att hitta på egna små upptåg.</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 6 - Att valla renar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page06.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har länge arbetat med att valla renar. 🦌</p>
+<p>De kunde springa runt renhjorden, skälla och hjälpa till att styra renarna åt rätt håll.</p>
+<p>Än idag används vissa finska lapphundar till vallning, även om många numera lever som sällskapshundar.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 7 - Lekfulla valpar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page07.png",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundsvalpar föds små och hjälplösa. 🐶</p>
+<p>De växer upp tillsammans med sin mamma och sina syskon och börjar så småningom utforska världen.</p>
+<p>Genom lek lär de sig nya saker och utvecklar sina sinnen och sin förmåga att röra sig.</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 8 - Avslutning
+            {
+                image:
+                    "images/Dokka/factbook/chapter01/page08.png",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Nu vet du lite mer om finska lapphundar! 🌿</p>
+<p>Nästa gång du träffar en hund kan du titta efter den yviga svansen, den tjocka pälsen och kanske de små ögonbrynen.</p>
+<p>/ Dokka</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
             }
 
         ]
@@ -1082,6 +1255,179 @@ Uttrar
                 textClass:
                     "fact-text-right"
 
+            },
+
+            // ========================================
+            // KAPITEL 3 – FINSKA LAPPHUNDAR
+            // ========================================
+            // Sida 1 - Kapitelstart
+            {
+                image:
+                    "images/Dokka/factbook/chapter01/page01.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title:
+`
+<span class="chapter-number">
+Kapitel 1
+</span>
+<br>
+<span class="chapter-name">
+Finska lapphundar
+</span>
+`,
+                text:
+`
+<p>Hej hej! 🐕</p>
+<p>Nu ska vi lära känna hundrasen Finsk lapphund lite bättre.</p>
+<p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
+<p>Här kommer några spännande fakta om finska lapphundar!</p>
+`,
+                imageClass:
+                    "fact-chapter-image",
+                textClass:
+                    "fact-chapter-text"
+            },
+            // Sida 2 - En hund från norr
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page02.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har länge levt tillsammans med samerna i norra Norden. 🌲</p>
+<p>Förr i tiden hjälpte de till att valla renar och hålla ihop renhjordarna.</p>
+<p>Hundarna behövde vara tåliga och klara av både kyla, snö och långa dagar utomhus.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 3 - Många färger och teckningar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page03.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundar kan ha många olika pälsfärger, till exempel svart, brun, gräddvit och sobel.</p>
+<p>Vissa har ljusa teckningar ovanför ögonen som ser ut som små ögonbryn.</p>
+<p>Andra har enfärgad päls eller helt andra teckningar. Därför kan hundarna se väldigt olika ut!</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 4 - Den tjocka pälsen och yviga svansen
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page04.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har en tjock päls som skyddar mot kyla. ❄️</p>
+<p>Pälsen består av två lager och hjälper hunden att hålla värmen även under kalla vinterdagar.</p>
+<p>Den yviga svansen bärs ofta ringlad över ryggen och är ett av rasens typiska kännetecken.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 5 - En klok och nyfiken hund
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page05.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundar är ofta glada, nyfikna och uppmärksamma hundar. 🐾</p>
+<p>De är intelligenta och tycker om att lära sig nya saker. Många är också lekfulla och har lätt för att hitta på egna små upptåg.</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 6 - Att valla renar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page06.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har länge arbetat med att valla renar. 🦌</p>
+<p>De kunde springa runt renhjorden, skälla och hjälpa till att styra renarna åt rätt håll.</p>
+<p>Än idag används vissa finska lapphundar till vallning, även om många numera lever som sällskapshundar.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 7 - Lekfulla valpar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page07.png",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundsvalpar föds små och hjälplösa. 🐶</p>
+<p>De växer upp tillsammans med sin mamma och sina syskon och börjar så småningom utforska världen.</p>
+<p>Genom lek lär de sig nya saker och utvecklar sina sinnen och sin förmåga att röra sig.</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 8 - Avslutning
+            {
+                image:
+                    "images/Dokka/factbook/chapter01/page08.png",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Nu vet du lite mer om finska lapphundar! 🌿</p>
+<p>Nästa gång du träffar en hund kan du titta efter den yviga svansen, den tjocka pälsen och kanske de små ögonbrynen.</p>
+<p>/ Dokka</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
             }
 
         ]
