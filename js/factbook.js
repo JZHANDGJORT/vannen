@@ -545,7 +545,7 @@ Grävlingar
             // Sida 1 - Kapitelstart
             {
                 image:
-                    "images/Dokka/factbook/chapter01/page01.PNG",
+                    "images/Otis/factbook/chapter03/page01.png",
                 background:
                     "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
@@ -694,7 +694,7 @@ Finska lapphundar
             // Sida 8 - Avslutning
             {
                 image:
-                    "images/Dokka/factbook/chapter01/page08.png",
+                    "images/Otis/factbook/chapter03/page08.png",
                 background:
                     "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
@@ -1263,7 +1263,7 @@ Uttrar
             // Sida 1 - Kapitelstart (vänster)
             {
                 image:
-                    "images/Dokka/factbook/chapter01/page01.PNG",
+                    "images/Bosse/factbook/chapter03/page01.png",
                 background:
                     "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
@@ -1412,7 +1412,7 @@ Finska lapphundar
             // Sida 8 - Avslutning (höger)
             {
                 image:
-                    "images/Dokka/factbook/chapter01/page08.png",
+                    "images/Bosse/factbook/chapter03/page08.png",
                 background:
                     "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
