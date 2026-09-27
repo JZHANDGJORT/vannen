@@ -1260,14 +1260,14 @@ Uttrar
             // ========================================
             // KAPITEL 3 – FINSKA LAPPHUNDAR
             // ========================================
-            // Sida 1 - Kapitelstart
+            // Sida 1 - Kapitelstart (vänster)
             {
                 image:
                     "images/Dokka/factbook/chapter01/page01.PNG",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
-                    "background-right",
+                    "background-left",
                 title:
 `
 <span class="chapter-number">
@@ -1290,14 +1290,14 @@ Finska lapphundar
                 textClass:
                     "fact-chapter-text"
             },
-            // Sida 2 - En hund från norr
+            // Sida 2 - En hund från norr (höger)
             {
                 image:
                     "images/Vannen/factbook/chapter03/page02.PNG",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
-                    "background-left",
+                    "background-right",
                 title: "",
                 text:
 `
@@ -1306,18 +1306,18 @@ Finska lapphundar
 <p>Hundarna behövde vara tåliga och klara av både kyla, snö och långa dagar utomhus.</p>
 `,
                 imageClass:
-                    "fact-image-left",
+                    "fact-image-right",
                 textClass:
-                    "fact-text-left"
+                    "fact-text-right"
             },
-            // Sida 3 - Många färger och teckningar
+            // Sida 3 - Många färger och teckningar (vänster)
             {
                 image:
                     "images/Vannen/factbook/chapter03/page03.PNG",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
-                    "background-right",
+                    "background-left",
                 title: "",
                 text:
 `
@@ -1326,18 +1326,18 @@ Finska lapphundar
 <p>Andra har enfärgad päls eller helt andra teckningar. Därför kan hundarna se väldigt olika ut!</p>
 `,
                 imageClass:
-                    "fact-image-right",
+                    "fact-image-left",
                 textClass:
-                    "fact-text-right"
+                    "fact-text-left"
             },
-            // Sida 4 - Den tjocka pälsen och yviga svansen
+            // Sida 4 - Den tjocka pälsen och yviga svansen (höger)
             {
                 image:
                     "images/Vannen/factbook/chapter03/page04.PNG",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
-                    "background-left",
+                    "background-right",
                 title: "",
                 text:
 `
@@ -1346,18 +1346,18 @@ Finska lapphundar
 <p>Den yviga svansen bärs ofta ringlad över ryggen och är ett av rasens typiska kännetecken.</p>
 `,
                 imageClass:
-                    "fact-image-left",
+                    "fact-image-right",
                 textClass:
-                    "fact-text-left"
+                    "fact-text-right"
             },
-            // Sida 5 - En klok och nyfiken hund
+            // Sida 5 - En klok och nyfiken hund (vänster)
             {
                 image:
                     "images/Vannen/factbook/chapter03/page05.PNG",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
-                    "background-right",
+                    "background-left",
                 title: "",
                 text:
 `
@@ -1365,18 +1365,18 @@ Finska lapphundar
 <p>De är intelligenta och tycker om att lära sig nya saker. Många är också lekfulla och har lätt för att hitta på egna små upptåg.</p>
 `,
                 imageClass:
-                    "fact-image-right",
+                    "fact-image-left",
                 textClass:
-                    "fact-text-right"
+                    "fact-text-left"
             },
-            // Sida 6 - Att valla renar
+            // Sida 6 - Att valla renar (höger)
             {
                 image:
                     "images/Vannen/factbook/chapter03/page06.PNG",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
-                    "background-left",
+                    "background-right",
                 title: "",
                 text:
 `
@@ -1385,18 +1385,18 @@ Finska lapphundar
 <p>Än idag används vissa finska lapphundar till vallning, även om många numera lever som sällskapshundar.</p>
 `,
                 imageClass:
-                    "fact-image-left",
+                    "fact-image-right",
                 textClass:
-                    "fact-text-left"
+                    "fact-text-right"
             },
-            // Sida 7 - Lekfulla valpar
+            // Sida 7 - Lekfulla valpar (vänster)
             {
                 image:
                     "images/Vannen/factbook/chapter03/page07.png",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
                 backgroundClass:
-                    "background-right",
+                    "background-left",
                 title: "",
                 text:
 `
@@ -1405,18 +1405,18 @@ Finska lapphundar
 <p>Genom lek lär de sig nya saker och utvecklar sina sinnen och sin förmåga att röra sig.</p>
 `,
                 imageClass:
-                    "fact-image-right",
+                    "fact-image-left",
                 textClass:
-                    "fact-text-right"
+                    "fact-text-left"
             },
-            // Sida 8 - Avslutning
+            // Sida 8 - Avslutning (höger)
             {
                 image:
                     "images/Dokka/factbook/chapter01/page08.png",
                 background:
-                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
                 backgroundClass:
-                    "background-left",
+                    "background-right",
                 title: "",
                 text:
 `
@@ -1425,9 +1425,9 @@ Finska lapphundar
 <p>/ Dokka</p>
 `,
                 imageClass:
-                    "fact-image-left",
+                    "fact-image-right",
                 textClass:
-                    "fact-text-left"
+                    "fact-text-right"
             }
 
         ]
