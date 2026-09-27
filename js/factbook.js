@@ -1112,10 +1112,187 @@ Uttrar
                 text: "",
                 imageClass: ""
             },
+
+          
+            // ========================================
+            // KAPITEL 1 – FINSKA LAPPHUNDAR
+            // ========================================
+            // Sida 1 - Kapitelstart
+            {
+                image:
+                    "images/Dokka/factbook/chapter01/page01.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title:
+`
+<span class="chapter-number">
+Kapitel 4
+</span>
+<br>
+<span class="chapter-name">
+Finska lapphundar
+</span>
+`,
+                text:
+`
+<p>Hej hej! 🐕</p>
+<p>Nu ska vi lära känna en hundras som har en lång historia i norra Norden.</p>
+<p>Finska lapphundar är kända för sin tjocka päls, yviga svans och sitt nyfikna sätt.</p>
+<p>Här kommer några spännande fakta om finska lapphundar!</p>
+`,
+                imageClass:
+                    "fact-chapter-image",
+                textClass:
+                    "fact-chapter-text"
+            },
+            // Sida 2 - En hund från norr
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page02.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har länge levt tillsammans med samerna i norra Norden. 🌲</p>
+<p>Förr i tiden hjälpte de till att valla renar och hålla ihop renhjordarna.</p>
+<p>Hundarna behövde vara tåliga och klara av både kyla, snö och långa dagar utomhus.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 3 - Många färger och teckningar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page03.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundar kan ha många olika pälsfärger, till exempel svart, brun, gräddvit och sobel. 🐕</p>
+<p>Vissa har ljusa teckningar ovanför ögonen som ser ut som små ögonbryn.</p>
+<p>Andra har enfärgad päls eller helt andra teckningar. Därför kan hundarna se väldigt olika ut!</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 4 - Den tjocka pälsen och yviga svansen
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page04.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har en tjock päls som skyddar mot kyla. ❄️</p>
+<p>Pälsen består av två lager och hjälper hunden att hålla värmen även under kalla vinterdagar.</p>
+<p>Den yviga svansen bärs ofta ringlad över ryggen och är ett av rasens typiska kännetecken.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 5 - En klok och nyfiken hund
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page05.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundar är ofta glada, nyfikna och uppmärksamma hundar. 🐾</p>
+<p>De är intelligenta och tycker om att lära sig nya saker. Många är också lekfulla och har lätt för att hitta på egna små upptåg.</p>
+<p>Alla hundar är egna individer och kan ha olika personligheter och behov.</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 6 - Att valla renar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page06.PNG",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Finska lapphundar har länge arbetat med att valla renar. 🦌</p>
+<p>De kunde springa runt renhjorden, skälla och hjälpa till att styra renarna åt rätt håll.</p>
+<p>Än idag används vissa finska lapphundar till vallning, även om många numera lever som sällskapshundar.</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            },
+            // Sida 7 - Lekfulla valpar
+            {
+                image:
+                    "images/Vannen/factbook/chapter03/page07.png",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openr.png",
+                backgroundClass:
+                    "background-right",
+                title: "",
+                text:
+`
+<p>Finska lapphundsvalpar föds små och hjälplösa. 🐶</p>
+<p>De växer upp tillsammans med sin mamma och sina syskon och börjar så småningom utforska världen.</p>
+<p>Genom lek och upptäckter lär de sig nya saker och utvecklar sina sinnen och sin förmåga att röra sig.</p>
+`,
+                imageClass:
+                    "fact-image-right",
+                textClass:
+                    "fact-text-right"
+            },
+            // Sida 8 - Avslutning
+            {
+                image:
+                    "images/Dokka/factbook/chapter01/page08.png",
+                background:
+                    "images/Vannen/factbook/vannen-backpack-item-faktabok-openl.png",
+                backgroundClass:
+                    "background-left",
+                title: "",
+                text:
+`
+<p>Nu vet du lite mer om finska lapphundar! 🌿</p>
+<p>Nästa gång du träffar en hund kan du titta efter den yviga svansen, den tjocka pälsen och kanske de små ögonbrynen.</p>
+<p>Tänk vad många olika utseenden och personligheter det kan finnas hos hundar!</p>
+<p>/ Dokka</p>
+`,
+                imageClass:
+                    "fact-image-left",
+                textClass:
+                    "fact-text-left"
+            }
+
             // ========================================
             // KAPITEL 2 – GRÄVLINGAR
             // ========================================
-            // Sida 1 - Kapitelstart
+            // Sida 9 - Kapitelstart
             {
                 image:
                     "images/Dokka/factbook/chapter02/page01.PNG",
@@ -1145,7 +1322,7 @@ Grävlingar
                 textClass:
                     "fact-chapter-text"
             },
-            // Sida 2 - Den randiga masken
+            // Sida 10 - Den randiga masken
             {
                 image:
                     "images/Vannen/factbook/chapter02/page02.PNG",
@@ -1165,7 +1342,7 @@ Grävlingar
                 textClass:
                     "fact-text-left"
             },
-            // Sida 3 - Grävlingens hem
+            // Sida 11 - Grävlingens hem
             {
                 image:
                     "images/Vannen/factbook/chapter02/page03.PNG",
@@ -1185,7 +1362,7 @@ Grävlingar
                 textClass:
                     "fact-text-right"
             },
-            // Sida 4 - Vad äter grävlingen?
+            // Sida 12 - Vad äter grävlingen?
             {
                 image:
                     "images/Vannen/factbook/chapter02/page04.PNG",
@@ -1205,7 +1382,7 @@ Grävlingar
                 textClass:
                     "fact-text-left"
             },
-            // Sida 5 - En riktig grävare
+            // Sida 13 - En riktig grävare
             {
                 image:
                     "images/Vannen/factbook/chapter02/page05.PNG",
@@ -1225,7 +1402,7 @@ Grävlingar
                 textClass:
                     "fact-text-right"
             },
-            // Sida 6 - När solen går ner
+            // Sida 14 - När solen går ner
             {
                 image:
                     "images/Vannen/factbook/chapter02/page06.PNG",
@@ -1245,7 +1422,7 @@ Grävlingar
                 textClass:
                     "fact-text-left"
             },
-            // Sida 7 - Små grävlingar
+            // Sida 15 - Små grävlingar
             {
                 image:
                     "images/Vannen/factbook/chapter02/page07.PNG",
@@ -1265,7 +1442,7 @@ Grävlingar
                 textClass:
                     "fact-text-right"
             },
-            // Sida 8 - Avslutning
+            // Sida 16 - Avslutning
             {
                 image:
                     "images/Dokka/factbook/chapter02/page08.png",
@@ -1288,7 +1465,7 @@ Grävlingar
             // ========================================
             // KAPITEL 3 – UTTRAR
             // ========================================
-            // Sida 9 - Kapitelstart
+            // Sida 17 - Kapitelstart
             {
                 image:
                     "images/Dokka/factbook/chapter03/page01.png",
@@ -1317,7 +1494,7 @@ Uttrar
                 textClass:
                     "fact-chapter-text"
             },
-            // Sida 10 - Fantastiska simmare
+            // Sida 18 - Fantastiska simmare
             {
                 image:
                     "images/Vannen/factbook/chapter01/page02.PNG",
@@ -1337,7 +1514,7 @@ Uttrar
                 textClass:
                     "fact-text-left"
             },
-            // Sida 11 - Den mjuka pälsen
+            // Sida 19 - Den mjuka pälsen
             {
                 image:
                     "images/Vannen/factbook/chapter01/page03.PNG",
@@ -1357,7 +1534,7 @@ Uttrar
                 textClass:
                     "fact-text-right"
             },
-            // Sida 12 - Favoritstenen
+            // Sida 20 - Favoritstenen
             {
                 image:
                     "images/Vannen/factbook/chapter01/page04.PNG",
@@ -1377,7 +1554,7 @@ Uttrar
                 textClass:
                     "fact-text-left"
             },
-            // Sida 13 - Lekfulla uttrar
+            // Sida 21 - Lekfulla uttrar
             {
                 image:
                     "images/Vannen/factbook/chapter01/page05.PNG",
@@ -1397,7 +1574,7 @@ Uttrar
                 textClass:
                     "fact-text-right"
             },
-            // Sida 14 - Var bor uttrar?
+            // Sida 22 - Var bor uttrar?
             {
                 image:
                     "images/Vannen/factbook/chapter01/page06.PNG",
@@ -1417,7 +1594,7 @@ Uttrar
                 textClass:
                     "fact-text-left"
             },
-            // Sida 15 - Avslutning
+            // Sida 23 - Avslutning
             {
                 image:
                     "images/Dokka/factbook/chapter03/page07.png",
