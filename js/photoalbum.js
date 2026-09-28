@@ -265,7 +265,7 @@ const photoAlbumData = {
                     },
                     {
                         image:
-                            "images/Dokka/photoalbum/page01-photo02.png",
+                            "images/Dokka/photoalbum/page01-photo02.PNG",
                         class:
                             "photoalbum-photo photoalbum-page-left-photo-02",
                         caption:
