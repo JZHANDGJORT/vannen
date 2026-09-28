@@ -446,7 +446,7 @@ function smileCharacter(duration = 1500) {
 
             : currentFriend.id === "dokka01"
 
-                ? "images/Dokka/dokka-smile-character.png"
+                ? "images/Dokka/dokka-smile-character.PNG"
 
                 : "images/Otis/otis-stone-smile-character.PNG";
 
@@ -497,7 +497,7 @@ function laughCharacter(duration = 2000) {
 
             : currentFriend.id === "dokka01"
 
-                ? "images/Dokka/dokka-laugh-character.png"
+                ? "images/Dokka/dokka-laugh-character.PNG"
 
                 : "images/Otis/otis-stone-laugh-character.PNG";
 
