@@ -2,7 +2,7 @@ const dokka = {
     id: "dokka01",
     name: "Dokka",
     // Bild som visas på Vännen-startsidan
-    image: "images/Dokka/dokka-home.png",
+    image: "images/Dokka/dokka-home.PNG",
     // Bild som visas inne i Dokkas värld
     worldImage: "images/Dokka/dokka-world.png",
     // Dokka som transparent figur
