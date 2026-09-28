@@ -7,7 +7,7 @@ const dokka = {
     worldImage: "images/Dokka/dokka-world.png",
     // Dokka som transparent figur
     characterImage: "images/Dokka/dokka-character.PNG",
-    characterBlinkImage: "images/Dokka/dokka-blink-character.png",
+    characterBlinkImage: "images/Dokka/dokka-blink-character.PNG",
     
     cardText:
         "En snäll och nyfiken finsk lapphund som tycker om lugna stunder, att vara med och att ta saker i sin egen takt.",
