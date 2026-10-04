@@ -650,17 +650,30 @@
     }
 
 
-    /* ----------------------------------------
-       8. TILLBAKA TILL RYGGSÄCKEN
-    ---------------------------------------- */
+/* ----------------------------------------
+   8. BOKNAVIGATION
+---------------------------------------- */
 
-    #discoverbook-close {
+#discoverbook-close,
+#discoverbook-contents {
 
-        top: 20px;
+    left: 15px;
 
-        left: 15px;
+}
 
-    }
+
+#discoverbook-close {
+
+    top: 10px;
+
+}
+
+
+#discoverbook-contents {
+
+    top: 55px;
+
+}
 
 
     /* ----------------------------------------
