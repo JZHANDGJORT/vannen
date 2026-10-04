@@ -110,7 +110,37 @@ const discoverBookData = {
                 "discover-image-left",
                 textClass:
                 "discover-text-left"
-            }
+            },
+
+          // Sida 7
+{
+    image: "images/Vannen/discoverbook/page07.png",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-right",
+    textClass:
+    "discover-text-right"
+},
+
+// Sida 8
+{
+    image: "images/Vannen/discoverbook/page08.png",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openl.png",
+    backgroundClass:
+    "background-left",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-left",
+    textClass:
+    "discover-text-left"
+}
 
         ]
     },
@@ -222,7 +252,37 @@ const discoverBookData = {
                 "discover-image-left",
                 textClass:
                 "discover-text-left"
-            }
+            },
+
+          // Sida 7
+{
+    image: "images/Vannen/discoverbook/page07.png",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-right",
+    textClass:
+    "discover-text-right"
+},
+
+// Sida 8
+{
+    image: "images/Vannen/discoverbook/page08.png",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openl.png",
+    backgroundClass:
+    "background-left",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-left",
+    textClass:
+    "discover-text-left"
+}
 
         ]
     },
@@ -326,7 +386,36 @@ const discoverBookData = {
                 "discover-image-left",
                 textClass:
                 "discover-text-left"
-            }
+            },
+          // Sida 7
+{
+    image: "images/Vannen/discoverbook/page07.png",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-right",
+    textClass:
+    "discover-text-right"
+},
+
+// Sida 8
+{
+    image: "images/Vannen/discoverbook/page08.png",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openl.png",
+    backgroundClass:
+    "background-left",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-left",
+    textClass:
+    "discover-text-left"
+}
         ]
     }
 
