@@ -1127,7 +1127,7 @@ Kapitel 2<br>
             // Sida 1 - Kapitel 1
             {
                 image:
-                "images/Dokka/storybook/chapter01/page01.PNG",
+                "images/Dokka/storybook/chapter01/page01.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1158,7 +1158,7 @@ Dokka och Ekorren
             // Sida 2
             {
                 image:
-                "images/Dokka/storybook/chapter01/page02.PNG",
+                "images/Dokka/storybook/chapter01/page02.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1181,7 +1181,7 @@ Dokka och Ekorren
             // Sida 3
             {
                 image:
-                "images/Dokka/storybook/chapter01/page03.PNG",
+                "images/Dokka/storybook/chapter01/page03.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1203,7 +1203,7 @@ Dokka och Ekorren
             // Sida 4
             {
                 image:
-                "images/Dokka/storybook/chapter01/page04.PNG",
+                "images/Dokka/storybook/chapter01/page04.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1225,7 +1225,7 @@ Dokka och Ekorren
             // Sida 5
             {
                 image:
-                "images/Dokka/storybook/chapter01/page05.PNG",
+                "images/Dokka/storybook/chapter01/page05.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1248,7 +1248,7 @@ Dokka och Ekorren
             // Sida 6
             {
                 image:
-                "images/Dokka/storybook/chapter01/page06.PNG",
+                "images/Dokka/storybook/chapter01/page06.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1273,7 +1273,7 @@ Dokka och Ekorren
             // Sida 7
             {
                 image:
-                "images/Dokka/storybook/chapter01/page07.PNG",
+                "images/Dokka/storybook/chapter01/page07.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1297,7 +1297,7 @@ Dokka och Ekorren
             // Sida 8
             {
                 image:
-                "images/Dokka/storybook/chapter01/page08.PNG",
+                "images/Dokka/storybook/chapter01/page08.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1321,7 +1321,7 @@ Dokka och Ekorren
             // Sida 9
             {
                 image:
-                "images/Dokka/storybook/chapter01/page09.PNG",
+                "images/Dokka/storybook/chapter01/page09.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1345,7 +1345,7 @@ Dokka och Ekorren
             // Sida 10
             {
                 image:
-                "images/Dokka/storybook/chapter01/page10.PNG",
+                "images/Dokka/storybook/chapter01/page10.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1367,7 +1367,7 @@ Dokka och Ekorren
             // Sida 11
             {
                 image:
-                "images/Dokka/storybook/chapter01/page11.PNG",
+                "images/Dokka/storybook/chapter01/page11.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1388,7 +1388,7 @@ Dokka och Ekorren
             // Sida 12
             {
                 image:
-                "images/Dokka/storybook/chapter01/page12.PNG",
+                "images/Dokka/storybook/chapter01/page12.png",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
