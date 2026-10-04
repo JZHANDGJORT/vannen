@@ -224,15 +224,14 @@
 
 
 /*
-  Tillbaka till ryggsäcken
+  Boknavigation
 */
 
 
-#discoverbook-close {
+#discoverbook-close,
+#discoverbook-contents {
 
     position: absolute;
-
-    top: 20px;
 
     left: 12px;
 
@@ -261,19 +260,34 @@
 }
 
 
-#discoverbook-close:hover {
+#discoverbook-close {
+
+    top: 10px;
+
+}
+
+
+#discoverbook-contents {
+
+    top: 55px;
+
+}
+
+
+#discoverbook-close:hover,
+#discoverbook-contents:hover {
 
     transform: scale(1.05);
 
 }
 
 
-#discoverbook-close:active {
+#discoverbook-close:active,
+#discoverbook-contents:active {
 
     transform: scale(0.97);
 
 }
-
 
 /*
   Bläddringspilar
