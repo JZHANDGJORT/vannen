@@ -413,15 +413,14 @@
 }
 
 /*
-  Tillbaka till ryggsäcken
+  Boknavigation
 */
 
 
-#storybook-close {
+#storybook-close,
+#storybook-contents {
 
     position: absolute;
-
-    top: 20px;
 
     left: 12px;
 
@@ -450,14 +449,30 @@
 }
 
 
-#storybook-close:hover {
+#storybook-close {
+
+    top: 10px;
+
+}
+
+
+#storybook-contents {
+
+    top: 55px;
+
+}
+
+
+#storybook-close:hover,
+#storybook-contents:hover {
 
     transform: scale(1.05);
 
 }
 
 
-#storybook-close:active {
+#storybook-close:active,
+#storybook-contents:active {
 
     transform: scale(0.97);
 
@@ -879,17 +894,30 @@
     }
 
 
-    /* ----------------------------------------
-       10. TILLBAKA TILL RYGGSÄCKEN
-    ---------------------------------------- */
+/* ----------------------------------------
+   10. BOKNAVIGATION
+---------------------------------------- */
 
-    #storybook-close {
+#storybook-close,
+#storybook-contents {
 
-        top: 20px;
+    left: 15px;
 
-        left: 15px;
+}
 
-    }
+
+#storybook-close {
+
+    top: 10px;
+
+}
+
+
+#storybook-contents {
+
+    top: 55px;
+
+}
 
 
     /* ----------------------------------------
