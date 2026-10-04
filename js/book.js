@@ -630,6 +630,20 @@ function goToBookPage(page) {
 
 }
 
+function goToBookContents() {
+
+    currentBookPage = 0;
+
+
+    localStorage.setItem(
+        `${currentBookType}-page`,
+        0
+    );
+
+
+    updateBookPage();
+
+}
 
 function closeBook() {
 
