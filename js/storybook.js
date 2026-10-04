@@ -1127,7 +1127,7 @@ Kapitel 2<br>
             // Sida 1 - Kapitel 1
             {
                 image:
-                "images/Bosse/storybook/chapter01/page01.PNG",
+                "images/Dokka/storybook/chapter01/page01.PNG",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1139,14 +1139,14 @@ Kapitel 1
 </span>
 <br>
 <span class="chapter-name">
-Spåret i skogen
+Dokka och Ekorren
 </span>
 `,
                 text:
 `
-<p>Det började bli kväll i skogen.</p>
-<p>Solen hade sjunkit lågt och mellan träden hade ljuset blivit mjukt och varmt.</p>
-<p>Bosse var ute och nosade omkring i skogen.</p>
+<p>Dokka tyckte om att ta det lugnt.</p>
+<p>Ofta låg hon på gräset på framsidan av huset, alldeles intill grusgången som ledde upp till dörren.</p>
+<p>Där kunde hon ligga länge och bara lyssna.</p>
 `,
                 imageClass:
                 "chapter-image",
@@ -1158,7 +1158,7 @@ Spåret i skogen
             // Sida 2
             {
                 image:
-                "images/Bosse/storybook/chapter01/page02.PNG",
+                "images/Dokka/storybook/chapter01/page02.PNG",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1166,11 +1166,12 @@ Spåret i skogen
                 title: "",
                 text:
 `
-<p>Då fick han syn på något.</p>
-<p>Små märken i jorden.</p>
-<p>Bosse böjde ner nosen och tittade närmare.</p>
-<p>Det var tassavtryck.</p>
-<p>Men de var inte hans egna.</p>
+<p>På fåglarna.</p>
+<p>På vinden i träden.</p>
+<p>På ljuden från vägen långt bort.</p>
+<p>Och ibland på ljud som nästan ingen annan hörde.</p>
+<p>En dag hörde Dokka något.</p>
+<p>Hon lyfte huvudet.</p>
 `,
                 imageClass:
                 "story-image-left",
@@ -1180,7 +1181,7 @@ Spåret i skogen
             // Sida 3
             {
                 image:
-                "images/Bosse/storybook/chapter01/page03.PNG",
+                "images/Dokka/storybook/chapter01/page03.PNG",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1188,10 +1189,11 @@ Spåret i skogen
                 title: "",
                 text:
 `
-<p>Vem hade gått här?</p>
-<p>Bosse följde spåret.</p>
-<p>Det slingrade mellan träden och runt en stor sten.</p>
-<p>Ibland blev avtrycken nästan osynliga.</p>
+<p>Uppe i tallen mellan husen satt en ekorre.</p>
+<p>Dokka tittade på den.</p>
+<p>Ekorren hoppade mellan grenarna och över till elstolpen intill.</p>
+<p>Dokka följde den med blicken.</p>
+<p>Ekorren klättrade snabbt ned för stolpen och sprang över den smala grusvägen och försvann in bland granarna på andra sidan.</p>
 `,
                 imageClass:
                 "story-image-right",
@@ -1201,7 +1203,7 @@ Spåret i skogen
             // Sida 4
             {
                 image:
-                "images/Bosse/storybook/chapter01/page04.PNG",
+                "images/Dokka/storybook/chapter01/page04.PNG",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1209,10 +1211,11 @@ Spåret i skogen
                 title: "",
                 text:
 `
-<p>Men Bosse fortsatte att leta.</p>
-<p>Där!</p>
-<p>Han hittade spåret igen.</p>
-<p>Det ledde vidare genom skogen, över en liten glänta och ner mot en plats där träden stod glesare.</p>
+<p>Dokka låg kvar en liten stund.</p>
+<p>Sedan reste hon sig.</p>
+<p>Hon gick över vägen och tittade in bland granarna.</p>
+<p>Gräset där var högt.</p>
+<p>Dokka tyckte inte särskilt mycket om att gå genom högt gräs.</p>
 `,
                 imageClass:
                 "story-image-left",
@@ -1222,7 +1225,7 @@ Spåret i skogen
             // Sida 5
             {
                 image:
-                "images/Bosse/storybook/chapter01/page05.PNG",
+                "images/Dokka/storybook/chapter01/page05.PNG",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
@@ -1230,10 +1233,12 @@ Spåret i skogen
                 title: "",
                 text:
 `
-<p>Bosse stannade.</p>
-<p>Längre bort kunde han se ett litet hus.</p>
-<p>Han hade kommit närmare människorna.</p>
-<p>Men tassavtrycken fortsatte.</p>
+<p>Det var lätt att snubbla när man inte såg vad som fanns under allt det gröna.</p>
+<p>Men en liten stig gick genom gräset.</p>
+<p>Den såg ut att vara upptrampad av någon som gått där många gånger.</p>
+<p>Dokka satte en tass på stigen.</p>
+<p>Sedan en till.</p>
+<p>Hon följde efter ekorren.</p>
 `,
                 imageClass:
                 "story-image-right",
@@ -1243,7 +1248,7 @@ Spåret i skogen
             // Sida 6
             {
                 image:
-                "images/Bosse/storybook/chapter01/page06.PNG",
+                "images/Dokka/storybook/chapter01/page06.PNG",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1251,10 +1256,14 @@ Spåret i skogen
                 title: "",
                 text:
 `
-<p>Bosse följde dem försiktigt ända fram till huset.</p>
-<p>Där satt en katt.</p>
-<p>Den satt alldeles stilla i kvällsluften och tvättade sina tassar.</p>
-<p>När katten fick syn på Bosse stannade den upp.</p>
+<p>Först hörde hon ingenting.</p>
+<p>Sedan hörde hon ett litet prassel.</p>
+<p>Dokka stannade och lyssnade.</p>
+<p>Där!</p>
+<p>Hon gick vidare.</p>
+<p>In under en gran.</p>
+<p>Ut igen.</p>
+<p>In under nästa.</p>
 `,
                 imageClass:
                 "story-image-left",
@@ -1264,19 +1273,21 @@ Spåret i skogen
             // Sida 7
             {
                 image:
-                "images/Bosse/storybook/chapter01/page07.PNG",
+                "images/Dokka/storybook/chapter01/page07.PNG",
                 background:
-                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
                 "background-right",
                 title: "",
                 text:
 `
-<p>Bosse stod också stilla.</p>
-<p>De tittade på varandra.</p>
-<p>Katten blinkade långsamt.</p>
-<p>Sedan fortsatte den att tvätta sig.</p>
-<p>Bosse tog ett litet steg närmare.</p>
+<p>Hon följde ljudet och den lilla doften som ekorren lämnat efter sig.</p>
+<p>Till slut stannade Dokka.</p>
+<p>Där.</p>
+<p>Framför henne stod en stor gran.</p>
+<p>Dokka tittade upp.</p>
+<p>Hon kunde inte se någon ekorre.</p>
+<p>Men något sa henne att hon hade kommit rätt.</p>
 `,
                 imageClass:
                 "story-image-right",
@@ -1286,7 +1297,7 @@ Spåret i skogen
             // Sida 8
             {
                 image:
-                "images/Bosse/storybook/chapter01/page08.PNG",
+                "images/Dokka/storybook/chapter01/page08.PNG",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
                 backgroundClass:
@@ -1294,17 +1305,108 @@ Spåret i skogen
                 title: "",
                 text:
 `
-<p>Då öppnades dörren till huset.</p>
-<p>Katten tittade upp.</p>
-<p>Sedan tittade den en gång till på Bosse.</p>
-<p>Och så sprang den in genom dörren.</p>
-<p>Bosse stod kvar och såg dörren långsamt stängas.</p>
+<p>Hon lade sig ner i gräset och väntade.</p>
+<p>Hon väntade länge.</p>
+<p>Sedan rörde sig en gren.</p>
+<p>Försiktigt kikade en ekorre fram.</p>
+<p>Den tittade åt ena hållet.</p>
+<p>Sedan åt det andra.</p>
+<p>När den verkade nöjd med att allt var lugnt klättrade den ut på en gren.</p>
 `,
                 imageClass:
                 "story-image-left",
                 textClass:
                 "story-text-left"
             },
+            // Sida 9
+            {
+                image:
+                "images/Dokka/storybook/chapter01/page09.PNG",
+                background:
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
+                backgroundClass:
+                "background-right",
+                title: "",
+                text:
+`
+<p>Dokka låg alldeles stilla.</p>
+<p>Hon ville inte skrämma bort den.</p>
+<p>Då hände något bakom ekorren.</p>
+<p>Ett litet huvud tittade fram.</p>
+<p>Och sedan ett till.</p>
+<p>Och ett till.</p>
+<p>Dokka spärrade upp ögonen.</p>
+`,
+                imageClass:
+                "story-image-right",
+                textClass:
+                "story-text-right"
+            },
+            // Sida 10
+            {
+                image:
+                "images/Dokka/storybook/chapter01/page10.PNG",
+                background:
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
+                backgroundClass:
+                "background-left",
+                title: "",
+                text:
+`
+<p>Tre små ekorrungar satt tätt tillsammans på grenen.</p>
+<p>De var så små.</p>
+<p>Och så söta.</p>
+<p>Dokka låg kvar en stund och tittade på dem när de busade bland grenarna.</p>
+<p>Sedan reste hon sig försiktigt.</p>
+`,
+                imageClass:
+                "story-image-left",
+                textClass:
+                "story-text-left"
+            },
+            // Sida 11
+            {
+                image:
+                "images/Dokka/storybook/chapter01/page11.PNG",
+                background:
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
+                backgroundClass:
+                "background-right",
+                title: "",
+                text:
+`
+<p>Hon hade sett det hon kom för att se.</p>
+<p>Hon följde den lilla stigen tillbaka genom det höga gräset.</p>
+<p>Över vägen och hem igen.</p>
+<p>Där lade hon sig ner på gräset, alldeles intill grusgången.</p>
+`,
+                imageClass:
+                "story-image-right",
+                textClass:
+                "story-text-right"
+            },
+            // Sida 12
+            {
+                image:
+                "images/Dokka/storybook/chapter01/page12.PNG",
+                background:
+                "images/Vannen/storybook/vannen-backpack-item-sagobok-openl.PNG",
+                backgroundClass:
+                "background-left",
+                title: "",
+                text:
+`
+<p>Hon blundade.</p>
+<p>Men öronen lyssnade fortfarande.</p>
+<p>Kanske skulle hon få höra ekorrarna igen nästa gång hon låg där.</p>
+`,
+                imageClass:
+                "story-image-left",
+                textClass:
+                "story-text-left"
+            },
+
+          
             // =========================
             // KAPITEL 2
             // =========================
