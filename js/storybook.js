@@ -1146,7 +1146,6 @@ Dokka och Ekorren
 `
 <p>Dokka tyckte om att ta det lugnt.</p>
 <p>Ofta låg hon på gräset på framsidan av huset, alldeles intill grusgången som ledde upp till dörren.</p>
-<p>Där kunde hon ligga länge och bara lyssna.</p>
 `,
                 imageClass:
                 "chapter-image",
@@ -1166,8 +1165,8 @@ Dokka och Ekorren
                 title: "",
                 text:
 `
-<p>På fåglarna.</p>
-<p>På vinden i träden.</p>
+<p>Där kunde hon ligga länge och bara lyssna.</p>
+<p>På fåglarna. På vinden i träden.</p>
 <p>På ljuden från vägen långt bort.</p>
 <p>Och ibland på ljud som nästan ingen annan hörde.</p>
 <p>En dag hörde Dokka något.</p>
