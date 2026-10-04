@@ -228,15 +228,14 @@
 
 
 /*
-  Tillbaka till ryggsäcken
+  Boknavigation
 */
 
 
-#recipebook-close {
+#recipebook-close,
+#recipebook-contents {
 
     position: absolute;
-
-    top: 20px;
 
     left: 12px;
 
@@ -265,19 +264,34 @@
 }
 
 
-#recipebook-close:hover {
+#recipebook-close {
+
+    top: 10px;
+
+}
+
+
+#recipebook-contents {
+
+    top: 55px;
+
+}
+
+
+#recipebook-close:hover,
+#recipebook-contents:hover {
 
     transform: scale(1.05);
 
 }
 
 
-#recipebook-close:active {
+#recipebook-close:active,
+#recipebook-contents:active {
 
     transform: scale(0.97);
 
 }
-
 
 /*
   Bläddringspilar
@@ -637,17 +651,30 @@
     }
 
 
-    /* ----------------------------------------
-       8. TILLBAKA TILL RYGGSÄCKEN
-    ---------------------------------------- */
+/* ----------------------------------------
+   8. BOKNAVIGATION
+---------------------------------------- */
 
-    #recipebook-close {
+#recipebook-close,
+#recipebook-contents {
 
-        top: 20px;
+    left: 15px;
 
-        left: 15px;
+}
 
-    }
+
+#recipebook-close {
+
+    top: 10px;
+
+}
+
+
+#recipebook-contents {
+
+    top: 55px;
+
+}
 
 
     /* ----------------------------------------
