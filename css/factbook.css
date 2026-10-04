@@ -408,15 +408,14 @@
 
 
 /*
-  Tillbaka till ryggsäcken
+  Boknavigation
 */
 
 
-#factbook-close {
+#factbook-close,
+#factbook-contents {
 
     position: absolute;
-
-    top: 20px;
 
     left: 12px;
 
@@ -445,12 +444,34 @@
 }
 
 
-#factbook-close:hover {
+#factbook-close {
+
+    top: 10px;
+
+}
+
+
+#factbook-contents {
+
+    top: 55px;
+
+}
+
+
+#factbook-close:hover,
+#factbook-contents:hover {
 
     transform: scale(1.05);
 
 }
 
+
+#factbook-close:active,
+#factbook-contents:active {
+
+    transform: scale(0.97);
+
+}
 
 /*
   Bläddringspilar
@@ -883,17 +904,30 @@
     }
 
 
-    /* ----------------------------------------
-       10. TILLBAKA TILL RYGGSÄCKEN
-    ---------------------------------------- */
+/* ----------------------------------------
+   10. BOKNAVIGATION
+---------------------------------------- */
 
-    #factbook-close {
+#factbook-close,
+#factbook-contents {
 
-        top: 20px;
+    left: 15px;
 
-        left: 15px;
+}
 
-    }
+
+#factbook-close {
+
+    top: 10px;
+
+}
+
+
+#factbook-contents {
+
+    top: 55px;
+
+}
 
 
     /* ----------------------------------------
