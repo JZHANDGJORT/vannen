@@ -1271,11 +1271,9 @@ Dokka och Ekorren
                 text:
 `
 <p>Hon följde ljudet och den lilla doften som ekorren lämnat efter sig.</p>
-<p>Till slut stannade Dokka.</p>
-<p>Där.</p>
+<p>Till slut stannade Dokka. Där.</p>
 <p>Framför henne stod en stor gran.</p>
-<p>Dokka tittade upp.</p>
-<p>Hon kunde inte se någon ekorre.</p>
+<p>Dokka tittade upp. Hon kunde inte se någon ekorre.</p>
 <p>Men något sa henne att hon hade kommit rätt.</p>
 `,
                 imageClass:
