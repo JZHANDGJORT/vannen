@@ -1217,7 +1217,7 @@ Dokka och Ekorren
             // Sida 5
             {
                 image:
-                "images/Dokka/storybook/chapter01/page05.png",
+                "",
                 background:
                 "images/Vannen/storybook/vannen-backpack-item-sagobok-openr.PNG",
                 backgroundClass:
