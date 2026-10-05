@@ -1292,12 +1292,10 @@ Dokka och Ekorren
                 title: "",
                 text:
 `
-<p>Hon lade sig ner i gräset och väntade.</p>
-<p>Hon väntade länge.</p>
-<p>Sedan rörde sig en gren.</p>
+<p>Hon lade sig ner i gräset och väntade. Hon väntade länge.</p>
+<p>Plötsligt rörde sig en gren.</p>
 <p>Försiktigt kikade en ekorre fram.</p>
-<p>Den tittade åt ena hållet.</p>
-<p>Sedan åt det andra.</p>
+<p>Den tittade åt ena hållet. Sedan åt det andra.</p>
 <p>När den verkade nöjd med att allt var lugnt klättrade den ut på en gren.</p>
 `,
                 imageClass:
@@ -1320,8 +1318,7 @@ Dokka och Ekorren
 <p>Hon ville inte skrämma bort den.</p>
 <p>Då hände något bakom ekorren.</p>
 <p>Ett litet huvud tittade fram.</p>
-<p>Och sedan ett till.</p>
-<p>Och ett till.</p>
+<p>Och sedan ett till. Och ett till.</p>
 <p>Dokka spärrade upp ögonen.</p>
 `,
                 imageClass:
