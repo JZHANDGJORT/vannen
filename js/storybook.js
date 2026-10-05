@@ -1270,7 +1270,7 @@ Dokka och Ekorren
                 title: "",
                 text:
 `
-<p>Hon följde ljudet och den lilla doften som ekorren lämnat efter sig.</p>
+<p>Hon följde ljudet och den svaga doften som ekorren lämnat efter sig.</p>
 <p>Till slut stannade Dokka. Där.</p>
 <p>Framför henne stod en stor gran.</p>
 <p>Dokka tittade upp. Hon kunde inte se någon ekorre.</p>
