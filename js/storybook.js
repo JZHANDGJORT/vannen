@@ -1192,7 +1192,6 @@ Dokka och Ekorren
 <p>Dokka tittade på den.</p>
 <p>Ekorren hoppade mellan grenarna och över till elstolpen intill.</p>
 <p>Dokka följde den med blicken.</p>
-<p>Ekorren klättrade snabbt ned för stolpen och sprang över den smala grusvägen och försvann in bland granarna på andra sidan.</p>
 `,
                 imageClass:
                 "story-image-right",
@@ -1210,10 +1209,9 @@ Dokka och Ekorren
                 title: "",
                 text:
 `
-<p>Dokka låg kvar en liten stund.</p>
-<p>Sedan reste hon sig.</p>
-<p>Hon gick över vägen och tittade in bland granarna.</p>
-<p>Gräset där var högt.</p>
+<p>Ekorren klättrade snabbt ned för stolpen och sprang över den smala grusvägen och försvann in bland granarna på andra sidan.</p>
+<p>Dokka låg kvar en liten stund. Sedan reste hon sig.</p>
+<p>Hon gick över vägen och tittade in bland granarna. Gräset där var högt.</p>
 <p>Dokka tyckte inte särskilt mycket om att gå genom högt gräs.</p>
 `,
                 imageClass:
