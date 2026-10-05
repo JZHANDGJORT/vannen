@@ -1112,11 +1112,7 @@ När Bosse mötte Otis
 `
 <p onclick="goToChapter(1)">
 Kapitel 1<br>
-<span>Spåret i skogen</span>
-</p>
-<p onclick="goToChapter(2)">
-Kapitel 2<br>
-<span>När Bosse mötte Otis</span>
+<span>Dokka och Ekorren</span>
 </p>
 `,
                 imageClass: ""
