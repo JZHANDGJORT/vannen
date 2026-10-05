@@ -1250,12 +1250,9 @@ Dokka och Ekorren
 `
 <p>Först hörde hon ingenting.</p>
 <p>Sedan hörde hon ett litet prassel.</p>
-<p>Dokka stannade och lyssnade.</p>
-<p>Där!</p>
-<p>Hon gick vidare.</p>
-<p>In under en gran.</p>
-<p>Ut igen.</p>
-<p>In under nästa.</p>
+<p>Dokka stannade och lyssnade. Där!</p>
+<p>Hon gick vidare. In under en gran.</p>
+<p>Ut igen. Och in under nästa.</p>
 `,
                 imageClass:
                 "story-image-left",
