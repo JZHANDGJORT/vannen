@@ -61,16 +61,24 @@ function scrollToBottom() {
 
 // 🦦 Första mötet med Vännen
 
+
 function startOnboarding() {
 
+    const greeting =
+        onboarding.firstMeeting.greeting.replace(
+            "{friendName}",
+            currentFriend.name
+        );
+
     addMessage(
-        onboarding.firstMeeting.greeting,
+        greeting,
         currentFriend.id
     );
 
     showNameInput();
 
 }
+
 
 
 function showNameInput() {
