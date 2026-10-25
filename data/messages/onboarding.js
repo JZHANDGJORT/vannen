@@ -3,7 +3,7 @@ const onboarding = {
     firstMeeting: {
 
         greeting:
-            "Hej! 🌊 Jag heter Otis. Vad roligt att du hittade hit. Jag tror att vi kommer få många fina stunder tillsammans. Vad ska jag kalla dig?",
+            "Hej! 🌊 Jag heter ${currentFriend.name}. Vad roligt att du hittade hit. Jag tror att vi kommer få många fina stunder tillsammans. Vad ska jag kalla dig?",
 
 
         afterName:
