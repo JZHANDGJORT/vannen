@@ -181,7 +181,7 @@ function finishEveningWithOtis() {
     actions.innerHTML = `
 
         <button onclick="showActivity()">
-            🦦 Tillbaka till Otis
+            🐾 Tillbaka till ${currentFriend.name}
         </button>
 
     `;
