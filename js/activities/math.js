@@ -41,6 +41,11 @@ actions.classList.remove("activity-menu");
             📝 Jag har läxa
         </button>
 
+         <button onclick="startMathTipsActivity()">
+
+            📖 Räknetips
+</button>
+
         <button onclick="showMainMenu()">
             🦦 Inte idag
         </button>
