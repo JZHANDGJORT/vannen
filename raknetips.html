@@ -25,7 +25,6 @@
             margin: 0 auto;
             padding: 22px 22px 36px;
         }
-        /* Tillbaka */
         .back-button {
             display: inline-flex;
             align-items: center;
@@ -42,7 +41,6 @@
             width: 20px;
             height: 20px;
         }
-        /* Rubrik */
         .intro {
             margin-top: 22px;
             margin-bottom: 27px;
@@ -65,7 +63,6 @@
             font-size: 20px;
             line-height: 1.4;
         }
-        /* Själva räknepappret */
         .paper {
             padding: 25px 19px;
             background: #FFFCF5;
@@ -85,7 +82,6 @@
             text-align: center;
             font-size: 19px;
         }
-        /* Uppdelningen av talet */
         .split-diagram {
             display: block;
             width: 100%;
@@ -99,7 +95,6 @@
             margin: 22px 0;
             background: #E5DCCB;
         }
-        /* Förklaringsstegen */
         .step {
             display: flex;
             align-items: flex-start;
@@ -138,7 +133,6 @@
             font-size: 18px;
             line-height: 1.4;
         }
-        /* Kom ihåg */
         .remember {
             margin-top: 25px;
             padding: 15px 17px;
@@ -157,7 +151,6 @@
             font-size: 18px;
             line-height: 1.4;
         }
-        /* Bläddra mellan räknetips */
         .tip-navigation {
             display: flex;
             align-items: center;
@@ -187,6 +180,12 @@
             color: #647B58;
             font-size: 17px;
             white-space: nowrap;
+        }
+        .not-ready {
+            padding: 22px 8px;
+            text-align: center;
+            font-size: 21px;
+            line-height: 1.5;
         }
         @media (max-width: 380px) {
             .page {
@@ -226,14 +225,15 @@
             Tillbaka
         </button>
         <header class="intro">
-            <p class="eyebrow">Räknetips · Plus</p>
-            <h1>Gör ett tiotal!</h1>
+            <p class="eyebrow" id="eyebrow">Räknetips · Plus</p>
+            <h1 id="page-heading">Gör ett tiotal!</h1>
             <p class="intro-text" id="intro-text">
                 Vi ska räkna 8 + 6. Kan vi dela upp talet
                 så att det blir lättare?
             </p>
         </header>
         <section class="paper"
+                 id="tips-content"
                  aria-label="Räknetips: Gör ett tiotal">
             <div class="main-problem" id="main-problem">
                 8 + 6 = 14
@@ -242,6 +242,7 @@
                 Vi delar upp 6 i 2 och 4.
             </p>
             <svg class="split-diagram"
+                 id="split-diagram"
                  viewBox="0 0 280 100"
                  xmlns="http://www.w3.org/2000/svg"
                  role="img"
@@ -310,24 +311,25 @@
                     2
                 </div>
                 <div class="step-content">
-                    <h2>Sedan lägger vi till resten.</h2>
+                    <h2 id="step-two-heading">Sedan lägger vi till resten.</h2>
                     <p class="equation" id="step-two-equation">
                         10 + 4 = 14
                     </p>
                     <p class="step-description" id="step-two-description">
-                        Vi har 4 kvar av sexan.
-                        Då blir svaret 14!
+                        Vi har 4 kvar av sexan. Då blir svaret 14!
                     </p>
                 </div>
             </section>
-            <div class="remember">
-                <h2>Kom ihåg!</h2>
-                <p>
+            <div class="remember" id="remember-box">
+                <h2 id="remember-heading">Kom ihåg!</h2>
+                <p id="remember-text">
                     Gör först ett tiotal.
                     Lägg sedan till det som blir över.
                 </p>
             </div>
-            <nav class="tip-navigation" aria-label="Bläddra mellan räknetips">
+            <nav class="tip-navigation"
+                 id="tip-navigation"
+                 aria-label="Bläddra mellan räknetips">
                 <button class="tip-button"
                         id="previous-button"
                         type="button"
@@ -346,88 +348,139 @@
         </section>
     </main>
     <script>
-        // Alla fem räknetips
-        const tips = [
-            {
-                first: 8,
-                second: 6,
-                answer: 14,
-                splitLeft: 2,
-                splitRight: 4,
-                ten: 10,
-                firstDescription:
-                    "Vi tar 2 från sexan och lägger till åttan. Då får vi ett helt tiotal!",
-                secondDescription:
-                    "Vi har 4 kvar av sexan. Då blir svaret 14!"
+        const tipsByType = {
+            plus: {
+                label: "Plus",
+                heading: "Gör ett tiotal!",
+                tips: [
+                    {
+                        first: 8,
+                        second: 6,
+                        answer: 14,
+                        splitLeft: 2,
+                        splitRight: 4,
+                        ten: 10,
+                        firstDescription:
+                            "Vi tar 2 från sexan och lägger till åttan. Då får vi ett helt tiotal!",
+                        secondDescription:
+                            "Vi har 4 kvar av sexan. Då blir svaret 14!"
+                    },
+                    {
+                        first: 7,
+                        second: 5,
+                        answer: 12,
+                        splitLeft: 3,
+                        splitRight: 2,
+                        ten: 10,
+                        firstDescription:
+                            "Vi tar 3 från femman och lägger till sjuan. Då får vi ett helt tiotal!",
+                        secondDescription:
+                            "Vi har 2 kvar av femman. Då blir svaret 12!"
+                    },
+                    {
+                        first: 17,
+                        second: 6,
+                        answer: 23,
+                        splitLeft: 3,
+                        splitRight: 3,
+                        ten: 20,
+                        firstDescription:
+                            "Vi tar 3 från sexan och lägger till sjutton. Då kommer vi till nästa tiotal!",
+                        secondDescription:
+                            "Vi har 3 kvar av sexan. Då blir svaret 23!"
+                    },
+                    {
+                        first: 28,
+                        second: 7,
+                        answer: 35,
+                        splitLeft: 2,
+                        splitRight: 5,
+                        ten: 30,
+                        firstDescription:
+                            "Vi tar 2 från sjuan och lägger till tjugoåtta. Då kommer vi till nästa tiotal!",
+                        secondDescription:
+                            "Vi har 5 kvar av sjuan. Då blir svaret 35!"
+                    },
+                    {
+                        first: 138,
+                        second: 6,
+                        answer: 144,
+                        splitLeft: 2,
+                        splitRight: 4,
+                        ten: 140,
+                        firstDescription:
+                            "Vi tar 2 från sexan och lägger till 138. Då kommer vi till nästa tiotal!",
+                        secondDescription:
+                            "Vi har 4 kvar av sexan. Då blir svaret 144!"
+                    }
+                ]
             },
-            {
-                first: 7,
-                second: 5,
-                answer: 12,
-                splitLeft: 3,
-                splitRight: 2,
-                ten: 10,
-                firstDescription:
-                    "Vi tar 3 från femman och lägger till sjuan. Då får vi ett helt tiotal!",
-                secondDescription:
-                    "Vi har 2 kvar av femman. Då blir svaret 12!"
+            minus: {
+                label: "Minus",
+                heading: "Räknetips för minus",
+                tips: []
             },
-            {
-                first: 17,
-                second: 6,
-                answer: 23,
-                splitLeft: 3,
-                splitRight: 3,
-                ten: 20,
-                firstDescription:
-                    "Vi tar 3 från sexan och lägger till sjutton. Då kommer vi till nästa tiotal!",
-                secondDescription:
-                    "Vi har 3 kvar av sexan. Då blir svaret 23!"
+            ganger: {
+                label: "Gånger",
+                heading: "Räknetips för gånger",
+                tips: []
             },
-            {
-                first: 28,
-                second: 7,
-                answer: 35,
-                splitLeft: 2,
-                splitRight: 5,
-                ten: 30,
-                firstDescription:
-                    "Vi tar 2 från sjuan och lägger till tjugoåtta. Då kommer vi till nästa tiotal!",
-                secondDescription:
-                    "Vi har 5 kvar av sjuan. Då blir svaret 35!"
-            },
-            {
-                first: 138,
-                second: 6,
-                answer: 144,
-                splitLeft: 2,
-                splitRight: 4,
-                ten: 140,
-                firstDescription:
-                    "Vi tar 2 från sexan och lägger till 138. Då kommer vi till nästa tiotal!",
-                secondDescription:
-                    "Vi har 4 kvar av sexan. Då blir svaret 144!"
+            dela: {
+                label: "Dela",
+                heading: "Räknetips för att dela",
+                tips: []
             }
-        ];
+        };
+        const params = new URLSearchParams(window.location.search);
+        const requestedType = params.get("typ") || "plus";
+        const selectedType = tipsByType[requestedType]
+            ? requestedType
+            : "plus";
+        const selectedData = tipsByType[selectedType];
         let currentTip = 0;
+        const eyebrow = document.getElementById("eyebrow");
+        const pageHeading = document.getElementById("page-heading");
         const introText = document.getElementById("intro-text");
+        const tipsContent = document.getElementById("tips-content");
         const mainProblem = document.getElementById("main-problem");
         const splitCaption = document.getElementById("split-caption");
         const splitTotal = document.getElementById("split-total");
         const splitLeft = document.getElementById("split-left");
         const splitRight = document.getElementById("split-right");
-        const splitDiagram = document.querySelector(".split-diagram");
+        const splitDiagram = document.getElementById("split-diagram");
+        const stepOneHeading = document.getElementById("step-one-heading");
         const stepOneEquation = document.getElementById("step-one-equation");
         const stepOneDescription = document.getElementById("step-one-description");
+        const stepTwoHeading = document.getElementById("step-two-heading");
         const stepTwoEquation = document.getElementById("step-two-equation");
         const stepTwoDescription = document.getElementById("step-two-description");
+        const rememberBox = document.getElementById("remember-box");
+        const tipNavigation = document.getElementById("tip-navigation");
         const previousButton = document.getElementById("previous-button");
         const nextButton = document.getElementById("next-button");
         const tipCounter = document.getElementById("tip-counter");
+        function showUnavailableTips() {
+            eyebrow.textContent = "Räknetips · " + selectedData.label;
+            pageHeading.textContent = selectedData.heading;
+            introText.textContent =
+                "Här kommer vi att samla tips som hjälper dig att räkna.";
+            tipsContent.innerHTML = `
+                <div class="not-ready">
+                    <p>Vi har inte lagt till de här räknetipsen ännu.</p>
+                    <p>Kom tillbaka snart!</p>
+                </div>
+            `;
+        }
         function updateTip() {
-            const tip = tips[currentTip];
+            const tip = selectedData.tips[currentTip];
+            if (!tip) {
+                showUnavailableTips();
+                return;
+            }
             const firstPart = tip.first + tip.splitLeft;
             const secondPart = tip.ten + tip.splitRight;
+            eyebrow.textContent = "Räknetips · " + selectedData.label;
+            pageHeading.textContent = selectedData.heading;
             mainProblem.textContent =
                 `${tip.first} + ${tip.second} = ${tip.answer}`;
             introText.textContent =
@@ -441,16 +494,19 @@
                 "aria-label",
                 `${tip.second} delas upp i ${tip.splitLeft} och ${tip.splitRight}`
             );
+            stepOneHeading.textContent = "Först gör vi ett tiotal.";
             stepOneEquation.textContent =
                 `${tip.first} + ${tip.splitLeft} = ${firstPart}`;
             stepOneDescription.textContent = tip.firstDescription;
+            stepTwoHeading.textContent = "Sedan lägger vi till resten.";
             stepTwoEquation.textContent =
                 `${tip.ten} + ${tip.splitRight} = ${secondPart}`;
             stepTwoDescription.textContent = tip.secondDescription;
             tipCounter.textContent =
-                `Tips ${currentTip + 1} av ${tips.length}`;
+                `Tips ${currentTip + 1} av ${selectedData.tips.length}`;
             previousButton.disabled = currentTip === 0;
-            nextButton.disabled = currentTip === tips.length - 1;
+            nextButton.disabled =
+                currentTip === selectedData.tips.length - 1;
         }
         previousButton.addEventListener("click", function () {
             if (currentTip > 0) {
@@ -459,12 +515,16 @@
             }
         });
         nextButton.addEventListener("click", function () {
-            if (currentTip < tips.length - 1) {
+            if (currentTip < selectedData.tips.length - 1) {
                 currentTip++;
                 updateTip();
             }
         });
-        updateTip();
+        if (selectedData.tips.length === 0) {
+            showUnavailableTips();
+        } else {
+            updateTip();
+        }
     </script>
 </body>
 </html>
