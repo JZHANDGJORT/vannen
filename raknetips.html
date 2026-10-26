@@ -228,7 +228,7 @@
 
         <header class="intro">
             <p class="eyebrow" id="eyebrow">Räknetips · Plus</p>
-            <h1 id="page-heading">Gör ett tiotal!</h1>
+            <h1 id="page-heading">Räkna via ett tiotal!</h1>
             <p class="intro-text" id="intro-text">
                 Vi ska räkna 8 + 6. Kan vi dela upp talet
                 så att det blir lättare?
@@ -571,7 +571,8 @@
                 operation: "−",
                 tips: minusTips,
                 intro: tip =>
-                    `Vi ska räkna ${tip.first} − ${tip.second}. Kan vi dela upp talet vi tar bort?`,
+                    `Vi ska räkna ${tip.first} − ${tip.second}. Kan vi dela upp talet
+                så att det blir lättare?`,
                 caption: tip => tip.splitLast !== undefined
                     ? `Vi tar bort ${tip.splitLeft}, sedan ${tip.splitRight} och till sist ${tip.splitLast}.`
                     : `Vi delar upp ${tip.second} i ${tip.splitLeft} och ${tip.splitRight}.`,
