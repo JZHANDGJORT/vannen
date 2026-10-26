@@ -637,3 +637,32 @@ function startHomeworkActivity() {
     `;
 
 }
+
+function startMathTipsActivity() {
+    addMessage(
+        "Vill du utforska några räknetips? 📖 Vad vill du lära dig mer om?",
+        currentFriend.id
+    );
+    const actions = document.getElementById("actions");
+    actions.classList.remove("activity-menu");
+    actions.innerHTML = `
+        <button onclick="openMathTips('plus')">
+            ➕ Plus
+        </button>
+        <button onclick="openMathTips('minus')">
+            ➖ Minus
+        </button>
+        <button onclick="openMathTips('ganger')">
+            ✖️ Gånger
+        </button>
+        <button onclick="openMathTips('dela')">
+            ➗ Dela
+        </button>
+        <button onclick="startMathActivity()">
+            ↩️ Tillbaka
+        </button>
+    `;
+}
+function openMathTips(typ) {
+    window.location.href = "raknetips.html?typ=" + typ;
+}
