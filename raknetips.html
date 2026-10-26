@@ -630,101 +630,155 @@
             `;
         }
 
-        function updateDiagram(tip) {
-            splitTotal.textContent = tip.second;
+function updateDiagram(tip) {
 
-            if (selectedType === "minus" && tip.splitLast !== undefined) {
-                splitDiagram.setAttribute("viewBox", "0 0 280 100");
-                splitCaption.textContent =
-                    `Vi delar upp 27 i 3, 20 och 4.`;
-                splitTotal.textContent = tip.second;
+    const isSpecialSubtraction =
+        selectedType === "minus" &&
+        tip.first === 43 &&
+        tip.second === 27;
 
-                splitLineLeft.setAttribute("d", "M140 31 L140 43 L55 59");
-                splitLineRight.setAttribute("d", "M140 43 L225 59");
-                splitBoxLeft.setAttribute("x", "30");
-                splitBoxRight.setAttribute("x", "200");
-                splitLeft.setAttribute("x", "55");
-                splitRight.setAttribute("x", "225");
-                splitLeft.textContent = "3";
-                splitRight.textContent = "4";
+    if (isSpecialSubtraction) {
 
-                // Visa att 20 också är en del av uppdelningen.
-                let middleBox = document.getElementById("split-box-middle");
-                let middleText = document.getElementById("split-middle");
-                let middleLine = document.getElementById("split-line-middle");
+        splitCaption.textContent =
+            "Vi delar först upp 27 i 20 och 7. Sedan delar vi upp 7 i 3 och 4.";
 
-                if (!middleBox) {
-                    middleLine = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                    middleLine.id = "split-line-middle";
-                    middleLine.setAttribute("d", "M140 43 L140 59");
-                    middleLine.setAttribute("fill", "none");
-                    middleLine.setAttribute("stroke", "#718B68");
-                    middleLine.setAttribute("stroke-width", "2.5");
-                    middleLine.setAttribute("stroke-linecap", "round");
-                    splitDiagram.appendChild(middleLine);
+        splitDiagram.setAttribute("viewBox", "0 0 280 155");
 
-                    middleBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-                    middleBox.id = "split-box-middle";
-                    middleBox.setAttribute("x", "115");
-                    middleBox.setAttribute("y", "55");
-                    middleBox.setAttribute("width", "50");
-                    middleBox.setAttribute("height", "35");
-                    middleBox.setAttribute("rx", "11");
-                    middleBox.setAttribute("fill", "#E8E8D9");
-                    splitDiagram.appendChild(middleBox);
+        splitDiagram.setAttribute(
+            "aria-label",
+            "27 delas upp i 20 och 7. Sedan delas 7 upp i 3 och 4."
+        );
 
-                    middleText = document.createElementNS("http://www.w3.org/2000/svg", "text");
-                    middleText.id = "split-middle";
-                    middleText.setAttribute("x", "140");
-                    middleText.setAttribute("y", "79");
-                    middleText.setAttribute("font-size", "23");
-                    middleText.setAttribute("text-anchor", "middle");
-                    middleText.setAttribute("fill", "#52664B");
-                    splitDiagram.appendChild(middleText);
-                }
+        splitDiagram.innerHTML = `
+            <text x="140" y="20"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#383A32">27</text>
 
-                middleLine.style.display = "";
-                middleBox.style.display = "";
-                middleText.style.display = "";
-                middleText.textContent = "20";
-                splitBoxLeft.setAttribute("x", "30");
-                splitBoxRight.setAttribute("x", "200");
-                splitLineLeft.setAttribute("d", "M140 31 L140 43 L55 59");
-                splitLineRight.setAttribute("d", "M140 43 L225 59");
-                splitLeft.setAttribute("x", "55");
-                splitRight.setAttribute("x", "225");
-                splitDiagram.setAttribute("aria-label", "27 delas upp i 3, 20 och 4");
-                return;
-            }
+            <path d="M140 27 L140 35 L90 48"
+                  fill="none"
+                  stroke="#718B68"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
 
-            const middleBox = document.getElementById("split-box-middle");
-            const middleText = document.getElementById("split-middle");
-            const middleLine = document.getElementById("split-line-middle");
-            if (middleBox) middleBox.style.display = "none";
-            if (middleText) middleText.style.display = "none";
-            if (middleLine) middleLine.style.display = "none";
+            <path d="M140 35 L190 48"
+                  fill="none"
+                  stroke="#718B68"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
 
-            splitBoxLeft.setAttribute("x", "65");
-            splitBoxRight.setAttribute("x", "165");
-            splitLeft.setAttribute("x", "90");
-            splitRight.setAttribute("x", "190");
-            splitLineLeft.setAttribute("d", "M140 31 L140 43 L90 59");
-            splitLineRight.setAttribute("d", "M140 43 L190 59");
-            splitLeft.textContent = tip.splitLeft;
-            splitRight.textContent = tip.splitRight;
-            splitDiagram.setAttribute(
-                "aria-label",
-                `${tip.second} delas upp i ${tip.splitLeft} och ${tip.splitRight}`
-            );
+            <rect x="65" y="44"
+                  width="50" height="35"
+                  rx="11"
+                  fill="#DCE7D4"/>
 
-            if (selectedType === "minus") {
-                splitCaption.textContent =
-                    `Vi delar upp ${tip.second} i ${tip.splitLeft} och ${tip.splitRight}.`;
-            } else {
-                splitCaption.textContent =
-                    `Vi delar upp ${tip.second} i ${tip.splitLeft} och ${tip.splitRight}.`;
-            }
-        }
+            <rect x="165" y="44"
+                  width="50" height="35"
+                  rx="11"
+                  fill="#F0DFCC"/>
+
+            <text x="90" y="68"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#3D5D3C">20</text>
+
+            <text x="190" y="68"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#805A39">7</text>
+
+            <path d="M190 79 L190 91 L155 105"
+                  fill="none"
+                  stroke="#718B68"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+
+            <path d="M190 91 L225 105"
+                  fill="none"
+                  stroke="#718B68"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+
+            <rect x="135" y="101"
+                  width="40" height="35"
+                  rx="11"
+                  fill="#DCE7D4"/>
+
+            <rect x="205" y="101"
+                  width="40" height="35"
+                  rx="11"
+                  fill="#F0DFCC"/>
+
+            <text x="155" y="125"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#3D5D3C">3</text>
+
+            <text x="225" y="125"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#805A39">4</text>
+        `;
+
+        return;
+    }
+
+    // Vanlig uppdelning för övriga räknetips.
+    splitDiagram.setAttribute("viewBox", "0 0 280 100");
+
+    splitCaption.textContent =
+        `Vi delar upp ${tip.second} i ${tip.splitLeft} och ${tip.splitRight}.`;
+
+    splitDiagram.setAttribute(
+        "aria-label",
+        `${tip.second} delas upp i ${tip.splitLeft} och ${tip.splitRight}.`
+    );
+
+    splitDiagram.innerHTML = `
+        <text x="140" y="22"
+              font-size="23"
+              text-anchor="middle"
+              fill="#383A32">${tip.second}</text>
+
+        <path d="M140 31 L140 43 L90 59"
+              fill="none"
+              stroke="#718B68"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+
+        <path d="M140 43 L190 59"
+              fill="none"
+              stroke="#718B68"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+
+        <rect x="65" y="55"
+              width="50" height="35"
+              rx="11"
+              fill="#DCE7D4"/>
+
+        <rect x="165" y="55"
+              width="50" height="35"
+              rx="11"
+              fill="#F0DFCC"/>
+
+        <text x="90" y="79"
+              font-size="23"
+              text-anchor="middle"
+              fill="#3D5D3C">${tip.splitLeft}</text>
+
+        <text x="190" y="79"
+              font-size="23"
+              text-anchor="middle"
+              fill="#805A39">${tip.splitRight}</text>
+    `;
+}
 
         function updateSteps(tip) {
             stepsContainer.innerHTML = "";
