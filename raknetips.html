@@ -362,9 +362,11 @@
     </main>
 
     <script>
+        
         // ==================================================
         // RÄKNETIPS – PLUS
         // ==================================================
+        
         const plusTips = [
             {
                 first: 8,
@@ -431,6 +433,7 @@
         // ==================================================
         // RÄKNETIPS – MINUS
         // ==================================================
+       
         const minusTips = [
             {
                 first: 14,
@@ -508,31 +511,33 @@
                     }
                 ]
             },
-            {
-                first: 43,
-                second: 27,
-                answer: 16,
-                splitLeft: 3,
-                splitRight: 20,
-                splitLast: 4,
-                steps: [
-                    {
-                        heading: "Först kommer vi ner till fyrtio.",
-                        equation: "43 − 3 = 40",
-                        description: "Vi tar bort 3 av de 27. Då kommer vi från 43 ner till 40."
-                    },
-                    {
-                        heading: "Sedan tar vi bort tjugo.",
-                        equation: "40 − 20 = 20",
-                        description: "Nu tar vi bort 20. Då har vi 4 kvar att ta bort."
-                    },
-                    {
-                        heading: "Till sist tar vi bort fyra.",
-                        equation: "20 − 4 = 16",
-                        description: "Vi tar bort de sista 4. Då blir svaret 16!"
-                    }
-                ]
-            }
+{
+    first: 43,
+    second: 27,
+    answer: 16,
+    splitLeft: 20,
+    splitRight: 7,
+    steps: [
+        {
+            heading: "Först tar vi bort tjugo.",
+            equation: "43 − 20 = 23",
+            description:
+                "Vi delar upp 27 i 20 och 7. När vi tar bort 20 har vi 23 kvar att räkna från."
+        },
+        {
+            heading: "Sedan delar vi upp sju.",
+            equation: "7 = 3 + 4",
+            description:
+                "Vi delar upp de 7 som är kvar i 3 och 4. Först tar vi bort 3 för att komma ner till 20."
+        },
+        {
+            heading: "Till sist tar vi bort fyra.",
+            equation: "20 − 4 = 16",
+            description:
+                "Vi har 4 kvar att ta bort. Då blir svaret 16!"
+        }
+    ]
+}
         ];
 
         // ==================================================
