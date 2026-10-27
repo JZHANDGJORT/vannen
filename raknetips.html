@@ -1240,7 +1240,7 @@ function updateDiagram(tip) {
         `Vi ska räkna ${tip.first} ${selectedData.operation} ${tip.second}. Kan vi göra uträkningen lättare?`;
          }
 
-                        if (selectedType === "minus" || selectedType === "ganger") {
+        if (selectedType === "minus" || selectedType === "ganger" || selectedType === "dela") {
                 updateDiagram(tip);
                 updateSteps(tip);
                 rememberText.textContent = tip.remember || selectedData.remember;
