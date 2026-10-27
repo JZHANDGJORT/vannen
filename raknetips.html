@@ -778,6 +778,59 @@
 
 function updateDiagram(tip) {
 
+        if (selectedType === "ganger") {
+        splitCaption.textContent = tip.caption;
+
+        splitDiagram.setAttribute("viewBox", "0 0 280 100");
+        splitDiagram.setAttribute(
+            "aria-label",
+            `${tip.diagramTotal} delas upp i ${tip.splitLeft} och ${tip.splitRight}.`
+        );
+
+        splitDiagram.innerHTML = `
+            <text x="140" y="22"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#383A32">${tip.diagramTotal}</text>
+
+            <path d="M140 31 L140 43 L90 59"
+                  fill="none"
+                  stroke="#718B68"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+
+            <path d="M140 43 L190 59"
+                  fill="none"
+                  stroke="#718B68"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+
+            <rect x="65" y="55"
+                  width="50" height="35"
+                  rx="11"
+                  fill="#DCE7D4"/>
+
+            <rect x="165" y="55"
+                  width="50" height="35"
+                  rx="11"
+                  fill="#F0DFCC"/>
+
+            <text x="90" y="79"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#3D5D3C">${tip.splitLeft}</text>
+
+            <text x="190" y="79"
+                  font-size="23"
+                  text-anchor="middle"
+                  fill="#805A39">${tip.splitRight}</text>
+        `;
+
+        return;
+    }
+    
     const isSpecialSubtraction =
         selectedType === "minus" &&
         tip.first === 43 &&
