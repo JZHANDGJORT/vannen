@@ -544,7 +544,152 @@
         // RÄKNETIPS – GÅNGER
         // Fylls på senare.
         // ==================================================
-        const gangerTips = [];
+        const gangerTips = [
+    {
+        first: 5,
+        second: 88,
+        answer: 440,
+        diagramTotal: 10,
+        splitLeft: 5,
+        splitRight: 5,
+        caption: "Vi dubblar 5 så att det blir 10.",
+        remember: "När vi multiplicerar med 5 kan vi multiplicera med 10 och sedan halvera svaret.",
+        steps: [
+            {
+                heading: "Först multiplicerar vi med tio.",
+                equation: "88 × 10 = 880",
+                description:
+                    "Vi dubblar 5 till 10. Då blir uträkningen 88 gånger 10."
+            },
+            {
+                heading: "Sedan halverar vi svaret.",
+                equation: "880 ÷ 2 = 440",
+                description:
+                    "Eftersom vi dubblerade 5 behöver vi halvera svaret igen. Då får vi 440!"
+            }
+        ]
+    },
+    {
+        first: 5,
+        second: 62,
+        answer: 310,
+        diagramTotal: 10,
+        splitLeft: 5,
+        splitRight: 5,
+        caption: "Vi dubblar 5 så att det blir 10.",
+        remember: "Multiplicera med 10 och halvera sedan svaret.",
+        steps: [
+            {
+                heading: "Först multiplicerar vi med tio.",
+                equation: "62 × 10 = 620",
+                description:
+                    "Vi dubblar 5 till 10. Då blir uträkningen 62 gånger 10."
+            },
+            {
+                heading: "Sedan halverar vi svaret.",
+                equation: "620 ÷ 2 = 310",
+                description:
+                    "Vi halverar 620 eftersom vi egentligen skulle multiplicera med 5. Då får vi 310!"
+            }
+        ]
+    },
+    {
+        first: 11,
+        second: 53,
+        answer: 583,
+        diagramTotal: 11,
+        splitLeft: 10,
+        splitRight: 1,
+        caption: "Vi delar upp 11 i 10 och 1.",
+        remember: "Multiplicera varje del för sig och lägg sedan ihop svaren.",
+        steps: [
+            {
+                heading: "Först multiplicerar vi med tio.",
+                equation: "53 × 10 = 530",
+                description:
+                    "Vi delar upp 11 i 10 och 1. Först räknar vi 53 gånger 10."
+            },
+            {
+                heading: "Sedan multiplicerar vi med ett.",
+                equation: "53 × 1 = 53",
+                description:
+                    "Nu räknar vi den andra delen. 53 gånger 1 är 53."
+            },
+            {
+                heading: "Till sist lägger vi ihop.",
+                equation: "530 + 53 = 583",
+                description:
+                    "Vi lägger ihop de båda svaren. Då blir 11 gånger 53 lika med 583!"
+            }
+        ]
+    },
+    {
+        first: 14,
+        second: 23,
+        answer: 322,
+        diagramTotal: 14,
+        splitLeft: 10,
+        splitRight: 4,
+        caption: "Vi delar upp 14 i 10 och 4.",
+        remember: "Dela upp ett tal i mindre delar som är lättare att multiplicera.",
+        steps: [
+            {
+                heading: "Först multiplicerar vi med tio.",
+                equation: "23 × 10 = 230",
+                description:
+                    "Vi delar upp 14 i 10 och 4. Först räknar vi 23 gånger 10."
+            },
+            {
+                heading: "Sedan multiplicerar vi med fyra.",
+                equation: "23 × 4 = 92",
+                description:
+                    "Nu räknar vi den andra delen. 23 gånger 4 är 92."
+            },
+            {
+                heading: "Till sist lägger vi ihop.",
+                equation: "230 + 92 = 322",
+                description:
+                    "Vi lägger ihop de båda svaren. Då blir 14 gånger 23 lika med 322!"
+            }
+        ]
+    },
+    {
+        first: 25,
+        second: 14,
+        answer: 350,
+        diagramTotal: 14,
+        splitLeft: 10,
+        splitRight: 4,
+        caption: "Vi byter plats på talen och delar upp 14 i 10 och 4.",
+        remember: "Vi kan byta plats på talen i en multiplikation utan att svaret ändras.",
+        steps: [
+            {
+                heading: "Först byter vi plats på talen.",
+                equation: "25 × 14 = 14 × 25",
+                description:
+                    "Det blir samma svar oavsett vilket tal som står först. Nu delar vi upp 14 i 10 och 4."
+            },
+            {
+                heading: "Sedan multiplicerar vi med tio.",
+                equation: "25 × 10 = 250",
+                description:
+                    "Vi räknar den första delen. 25 gånger 10 är 250."
+            },
+            {
+                heading: "Nu multiplicerar vi med fyra.",
+                equation: "25 × 4 = 100",
+                description:
+                    "Vi räknar den andra delen. 25 gånger 4 är 100."
+            },
+            {
+                heading: "Till sist lägger vi ihop.",
+                equation: "250 + 100 = 350",
+                description:
+                    "Vi lägger ihop de båda svaren. Då blir 25 gånger 14 lika med 350!"
+            }
+        ]
+    }
+];
 
         // ==================================================
         // RÄKNETIPS – DELA
