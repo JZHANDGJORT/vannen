@@ -1231,7 +1231,7 @@ function updateDiagram(tip) {
             eyebrow.textContent = "Räknetips · " + selectedData.label;
             pageHeading.textContent = selectedData.heading;
             mainProblem.textContent =
-                `${tip.first} ${selectedData.operation} ${tip.second} = ${tip.answer}`;
+    `${tip.first} ${selectedData.operation} ${tip.second} = ?`;
 
          if (selectedData.intro) {
          introText.textContent = selectedData.intro(tip);
