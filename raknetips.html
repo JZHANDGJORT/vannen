@@ -1038,10 +1038,10 @@ function updateDiagram(tip) {
                 introText.textContent = selectedData.intro(tip);
             }
 
-            if (selectedType === "minus") {
+                        if (selectedType === "minus" || selectedType === "ganger") {
                 updateDiagram(tip);
                 updateSteps(tip);
-                rememberText.textContent = selectedData.remember;
+                rememberText.textContent = tip.remember || selectedData.remember;
             } else {
                 splitTotal.textContent = tip.second;
                 splitLeft.textContent = tip.splitLeft;
