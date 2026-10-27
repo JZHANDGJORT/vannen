@@ -1034,9 +1034,12 @@ function updateDiagram(tip) {
             mainProblem.textContent =
                 `${tip.first} ${selectedData.operation} ${tip.second} = ${tip.answer}`;
 
-            if (selectedData.intro) {
-                introText.textContent = selectedData.intro(tip);
-            }
+         if (selectedData.intro) {
+         introText.textContent = selectedData.intro(tip);
+         } else if (selectedType === "ganger") {
+         introText.textContent =
+        `Vi ska räkna ${tip.first} × ${tip.second}. Kan vi göra uträkningen lättare?`;
+         }
 
                         if (selectedType === "minus" || selectedType === "ganger") {
                 updateDiagram(tip);
