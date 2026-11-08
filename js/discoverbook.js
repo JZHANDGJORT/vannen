@@ -140,6 +140,21 @@ const discoverBookData = {
     "discover-image-left",
     textClass:
     "discover-text-left"
+},
+
+                    // Sida 9
+{
+    image: "images/Vannen/discoverbook/page09.PNG",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-right",
+    textClass:
+    "discover-text-right"
 }
 
         ]
@@ -282,6 +297,21 @@ const discoverBookData = {
     "discover-image-left",
     textClass:
     "discover-text-left"
+},
+
+                              // Sida 9
+{
+    image: "images/Vannen/discoverbook/page09.PNG",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-right",
+    textClass:
+    "discover-text-right"
 }
 
         ]
@@ -415,6 +445,21 @@ const discoverBookData = {
     "discover-image-left",
     textClass:
     "discover-text-left"
+},
+
+                              // Sida 9
+{
+    image: "images/Vannen/discoverbook/page09.PNG",
+    background:
+    "images/Vannen/discoverbook/vannen-backpack-item-upptackarbok-openr.PNG",
+    backgroundClass:
+    "background-right",
+    title: "",
+    text: "",
+    imageClass:
+    "discover-image-right",
+    textClass:
+    "discover-text-right"
 }
         ]
     }
